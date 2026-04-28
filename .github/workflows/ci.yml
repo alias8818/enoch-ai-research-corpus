@@ -1,0 +1,31 @@
+name: Corpus CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild index
+        run: python3 scripts/build_index.py
+      - name: Run quality scan
+        run: python3 scripts/quality_scan.py
+      - name: Verify generated indexes are current
+        run: git diff --exit-code -- papers/index.json papers/index.md quality/quality_report.json quality/quality_report.md
+  secret-scan:
+    name: secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

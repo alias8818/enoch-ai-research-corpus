@@ -1,0 +1,12 @@
+{
+  "claims": [],
+  "limitations": [
+    "Model-authored draft; human claim audit required."
+  ],
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "8680e1a1547240dba801743f8de22c36"
+  }
+}

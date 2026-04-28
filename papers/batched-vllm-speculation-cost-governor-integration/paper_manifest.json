@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-04-22T18:02:20.310Z",
+  "paper_id": "source-record-redacted:source-record-redacted:arxiv_draft:publication_v1",
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "154cad76aca3454d9c272ce25ac6646e"
+  }
+}

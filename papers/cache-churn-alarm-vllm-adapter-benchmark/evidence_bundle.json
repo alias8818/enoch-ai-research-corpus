@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-18T07:36:47.992650+00:00"
   },
   "decision_action": "finalize_positive",
@@ -26,13 +26,13 @@
   "recommended_next_action": "Finalize this branch as positive real-vLLM evidence; if queued later, replicate across more seeds/models and add direct online KV-usage sampling, but do not create a generic successor branch now.",
   "run_notes_tail": [
     "## 2026-04-18 real-endpoint pilot plan",
-    "1. Reuse the known-good local vLLM environment at `/home/jeremy/projects/vllm/.venv` and cached `Qwen/Qwen2.5-0.5B-Instruct` weights from the Hugging Face cache.",
+    "1. Reuse the known-good local vLLM environment at `[redacted-local-vllm-checkout]` and cached `Qwen/Qwen2.5-0.5B-Instruct` weights from the Hugging Face cache.",
     "2. Patch the adapter harness so vLLM Prometheus metrics with labels are parsed and each policy can be run after a clean server restart for fair A/B evidence.",
     "3. Launch vLLM from `/tmp/cache_churn_alarm_services`, verify `/v1/models`, `/v1/chat/completions`, and `/metrics`, run a short concurrency calibration, then run memory-blind and cache-churn-alarm pilots into `results/real_endpoint_pilot`.",
     "4. Stop helper servers, persist logs/metrics/probes, summarize whether this branch has real-endpoint support or needs more constrained KV pressure.",
     "## 2026-04-18 real vLLM endpoint pilot",
     "- Patched `scripts/benchmark_cache_churn_adapter.py` so Prometheus metrics with labels (vLLM's normal format) are parsed instead of skipped, added `num_preemptions` as a churn proxy, and added `--policies` so each policy can be run after a clean server restart.",
-    "- Reused `/home/jeremy/projects/vllm/.venv` (`vLLM 0.15.0rc2.dev51`, CUDA PyTorch cu130) and cached `Qwen/Qwen2.5-1.5B-Instruct` weights.",
+    "- Reused `[redacted-local-vllm-checkout]` (`vLLM 0.15.0rc2.dev51`, CUDA PyTorch cu130) and cached `Qwen/Qwen2.5-1.5B-Instruct` weights.",
     "- Calibration: `Qwen/Qwen2.5-0.5B-Instruct`, repeats=1/concurrency=2, p95 412.77 ms, 4279 tok/s, GPU snapshot 94%, helper launched from `/tmp/cache_churn_alarm_services`.",
     "- Memory-pressure serving attempt: `Qwen/Qwen2.5-1.5B-Instruct --gpu-memory-utilization 0.035` failed with vLLM `No available memory for the cache blocks`; `0.045` started successfully. vLLM reported 26,080 KV tokens on the memory-blind start and 15,888 KV tokens on the alarm start, so this is pilot evidence rather than a perfectly controlled final A/B.",
     "- Real endpoint benchmark artifacts: `results/real_endpoint_pilot/` including probes, per-policy request CSVs, final Prometheus metrics, `combined_summary.json`, and `summary.md`.",
@@ -88,13 +88,13 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "## 2026-04-18 real-endpoint pilot plan",
-      "1. Reuse the known-good local vLLM environment at `/home/jeremy/projects/vllm/.venv` and cached `Qwen/Qwen2.5-0.5B-Instruct` weights from the Hugging Face cache.",
+      "1. Reuse the known-good local vLLM environment at `[redacted-local-vllm-checkout]` and cached `Qwen/Qwen2.5-0.5B-Instruct` weights from the Hugging Face cache.",
       "2. Patch the adapter harness so vLLM Prometheus metrics with labels are parsed and each policy can be run after a clean server restart for fair A/B evidence.",
       "3. Launch vLLM from `/tmp/cache_churn_alarm_services`, verify `/v1/models`, `/v1/chat/completions`, and `/metrics`, run a short concurrency calibration, then run memory-blind and cache-churn-alarm pilots into `results/real_endpoint_pilot`.",
       "4. Stop helper servers, persist logs/metrics/probes, summarize whether this branch has real-endpoint support or needs more constrained KV pressure.",
       "## 2026-04-18 real vLLM endpoint pilot",
       "- Patched `scripts/benchmark_cache_churn_adapter.py` so Prometheus metrics with labels (vLLM's normal format) are parsed instead of skipped, added `num_preemptions` as a churn proxy, and added `--policies` so each policy can be run after a clean server restart.",
-      "- Reused `/home/jeremy/projects/vllm/.venv` (`vLLM 0.15.0rc2.dev51`, CUDA PyTorch cu130) and cached `Qwen/Qwen2.5-1.5B-Instruct` weights.",
+      "- Reused `[redacted-local-vllm-checkout]` (`vLLM 0.15.0rc2.dev51`, CUDA PyTorch cu130) and cached `Qwen/Qwen2.5-1.5B-Instruct` weights.",
       "- Calibration: `Qwen/Qwen2.5-0.5B-Instruct`, repeats=1/concurrency=2, p95 412.77 ms, 4279 tok/s, GPU snapshot 94%, helper launched from `/tmp/cache_churn_alarm_services`.",
       "- Memory-pressure serving attempt: `Qwen/Qwen2.5-1.5B-Instruct --gpu-memory-utilization 0.035` failed with vLLM `No available memory for the cache blocks`; `0.045` started successfully. vLLM reported 26,080 KV tokens on the memory-blind start and 15,888 KV tokens on the alarm start, so this is pilot evidence rather than a perfectly controlled final A/B.",
       "- Real endpoint benchmark artifacts: `results/real_endpoint_pilot/` including probes, per-policy request CSVs, final Prometheus metrics, `combined_summary.json`, and `summary.md`.",
@@ -149,7 +149,7 @@
       "session_id": "omx-1776497187298-0twetw",
       "started_at": "2026-04-18T07:26:27.319Z",
       "ended_at": "2026-04-18T07:37:15.747Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 549186
     },
     "project_decision": {
@@ -164,7 +164,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-18T07:36:47.992650+00:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T00:40:24.383455+00:00"
   },
   "decision_action": "finalize_positive",
@@ -28,7 +28,7 @@
     "Acquired parent artifacts into this branch instead of creating another successor: `src/digit_head/`, `src/lbrc/`, the passing `artifacts/digit_head_residue_gate.pt`, gate metrics, and the generated LBRC eval examples. Reused the existing CUDA `.venv` via a branch-local symlink.",
     "Implemented `src/lbrc/train_residue_teacher_distill.py`, which trains on the exact downstream measurement surface: for each generated LBRC prompt, score only next-token digit logits `0..6` and minimize cross-entropy to the passing residue-head teacher target. The script verifies the residue-head teacher before training by loading `artifacts/digit_head_residue_gate.pt` and probing all 7^3 digit combinations.",
     "Direct distillation pilot:",
-    "- Base model: inherited parent checkpoint `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/artifacts/smol_retrieval_summary_sft_digitgate_2k_l80`.",
+    "- Base model: inherited parent checkpoint `[redacted-source-project-root]/artifacts/smol_retrieval_summary_sft_digitgate_2k_l80`.",
     "- Main bounded run: `artifacts/smol_residue_teacher_digitlogit_1k_l140_train_metrics.json` / checkpoint `artifacts/smol_residue_teacher_digitlogit_1k_l140`.",
     "- Training: 1,000 examples, 140 update steps, `max_length=256`, batch 16, lr 2e-4, 36.861s, 3.798 steps/s, 15,388.6 tokens/s, mean GPU util 91.2%, peak RSS 1,955.4 MB.",
     "- Teacher gate precondition: JSON gate passed, all-combo probe loss 0.001439, all-combo accuracy 1.0.",
@@ -94,7 +94,7 @@
       "Acquired parent artifacts into this branch instead of creating another successor: `src/digit_head/`, `src/lbrc/`, the passing `artifacts/digit_head_residue_gate.pt`, gate metrics, and the generated LBRC eval examples. Reused the existing CUDA `.venv` via a branch-local symlink.",
       "Implemented `src/lbrc/train_residue_teacher_distill.py`, which trains on the exact downstream measurement surface: for each generated LBRC prompt, score only next-token digit logits `0..6` and minimize cross-entropy to the passing residue-head teacher target. The script verifies the residue-head teacher before training by loading `artifacts/digit_head_residue_gate.pt` and probing all 7^3 digit combinations.",
       "Direct distillation pilot:",
-      "- Base model: inherited parent checkpoint `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/artifacts/smol_retrieval_summary_sft_digitgate_2k_l80`.",
+      "- Base model: inherited parent checkpoint `[redacted-source-project-root]/artifacts/smol_retrieval_summary_sft_digitgate_2k_l80`.",
       "- Main bounded run: `artifacts/smol_residue_teacher_digitlogit_1k_l140_train_metrics.json` / checkpoint `artifacts/smol_residue_teacher_digitlogit_1k_l140`.",
       "- Training: 1,000 examples, 140 update steps, `max_length=256`, batch 16, lr 2e-4, 36.861s, 3.798 steps/s, 15,388.6 tokens/s, mean GPU util 91.2%, peak RSS 1,955.4 MB.",
       "- Teacher gate precondition: JSON gate passed, all-combo probe loss 0.001439, all-combo accuracy 1.0.",
@@ -157,7 +157,7 @@
       "session_id": "omx-1776645134881-1pulc4",
       "started_at": "2026-04-20T00:32:14.902Z",
       "ended_at": "2026-04-20T00:40:47.986Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1647506
     },
     "project_decision": {
@@ -172,7 +172,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T00:40:24.383455+00:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-14T08:08:39.378027+00:00"
   },
   "decision_action": "finalize_positive",
@@ -40,7 +40,7 @@
     "## 2026-04-14 live local endpoint run",
     "- Reviewed existing artifacts and appended an execution plan before continuing.",
     "- Installed project-local runtime dependencies into `.venv` (`torch` CUDA 13.0 wheel, `transformers`, `accelerate`, `fastapi`, `uvicorn`) using `uv pip install --python .venv/bin/python ...`.",
-    "- Found cached model snapshot `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775`; verified it loads on CUDA with Transformers.",
+    "- Found cached model snapshot `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775`; verified it loads on CUDA with Transformers.",
     "- Added `scripts/openai_transformers_shim.py`, a minimal OpenAI-compatible `/v1/models` and `/v1/chat/completions` shim backed by the cached Transformers model.",
     "- Launched the shim from neutral directory `/tmp/fcsa_services` on `127.0.0.1:18000`, verified `/v1/models`, and verified `/v1/chat/completions` with a JSON test prompt.",
     "- First live run exposed a practical model-output issue: Qwen wrapped JSON in markdown fences, so `scripts/run_openai_compatible.py` recorded JSON parse errors. Updated the runner to tolerate fenced/extraneous JSON objects and preserve `raw_content` for auditability.",
@@ -92,7 +92,7 @@
       "## 2026-04-14 live local endpoint run",
       "- Reviewed existing artifacts and appended an execution plan before continuing.",
       "- Installed project-local runtime dependencies into `.venv` (`torch` CUDA 13.0 wheel, `transformers`, `accelerate`, `fastapi`, `uvicorn`) using `uv pip install --python .venv/bin/python ...`.",
-      "- Found cached model snapshot `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775`; verified it loads on CUDA with Transformers.",
+      "- Found cached model snapshot `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775`; verified it loads on CUDA with Transformers.",
       "- Added `scripts/openai_transformers_shim.py`, a minimal OpenAI-compatible `/v1/models` and `/v1/chat/completions` shim backed by the cached Transformers model.",
       "- Launched the shim from neutral directory `/tmp/fcsa_services` on `127.0.0.1:18000`, verified `/v1/models`, and verified `/v1/chat/completions` with a JSON test prompt.",
       "- First live run exposed a practical model-output issue: Qwen wrapped JSON in markdown fences, so `scripts/run_openai_compatible.py` recorded JSON parse errors. Updated the runner to tolerate fenced/extraneous JSON objects and preserve `raw_content` for auditability.",
@@ -129,7 +129,7 @@
       "session_id": "omx-1776153881727-06c8zf",
       "started_at": "2026-04-14T08:04:41.748Z",
       "ended_at": "2026-04-14T08:08:51.595Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 15542
     },
     "project_decision": {
@@ -144,7 +144,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-14T08:08:39.378027+00:00"
     },
     "decision_error": ""

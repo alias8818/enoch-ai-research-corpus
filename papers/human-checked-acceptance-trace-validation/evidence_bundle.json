@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-17T13:45:00-05:00"
   },
   "decision_action": "finalize_positive",
@@ -30,7 +30,7 @@
     "- Copied parent `experiments/*.py`, `data/*.jsonl`, and `results/*.json` into this branch.",
     "## 2026-04-17 stronger cached-model validation results",
     "- Created project-local `.venv` and installed `transformers` + `torch`.",
-    "- Confirmed cached Hugging Face models under `/mnt/usb/home/jeremy/.cache/huggingface/hub`; loaded `Qwen/Qwen2.5-0.5B-Instruct` with `local_files_only=True`.",
+    "- Confirmed cached Hugging Face models under `[redacted-local-hf-cache]/hub`; loaded `Qwen/Qwen2.5-0.5B-Instruct` with `local_files_only=True`.",
     "- Attempted a 20-task/domain Qwen run first; stopped it after ~2.5 minutes because CPU scoring was too slow for the turn budget and no partial output had been written. Re-ran a bounded 4-task/domain validation.",
     "- Generated `data/qwen05_trace_slice.jsonl` with 64 examples (4 tasks/domain x 4 domains x 4 LLM ranking systems) using the parent finalized schema.",
     "- Wrote `results/qwen05_trace_summary.json`:",
@@ -46,7 +46,7 @@
     "## 2026-04-17 validation commands",
     "- `uv venv --python /usr/bin/python3 .venv`",
     "- `uv pip install --python .venv/bin/python transformers torch --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple`",
-    "- `HF_HOME=/mnt/usb/home/jeremy/.cache/huggingface .venv/bin/python experiments/llm_trace_slice.py --model Qwen/Qwen2.5-0.5B-Instruct --n-tasks-per-domain 4 --max-new-tokens 0 --out data/qwen05_trace_slice.jsonl --summary results/qwen05_trace_summary.json`",
+    "- `HF_HOME=[redacted-local-hf-cache] .venv/bin/python experiments/llm_trace_slice.py --model Qwen/Qwen2.5-0.5B-Instruct --n-tasks-per-domain 4 --max-new-tokens 0 --out data/qwen05_trace_slice.jsonl --summary results/qwen05_trace_summary.json`",
     "- `.venv/bin/python experiments/compare_validation.py`",
     "- `.venv/bin/python -m py_compile experiments/acceptance_trace_mve.py experiments/real_trace_slice.py experiments/llm_trace_slice.py experiments/compare_validation.py`",
     "## 2026-04-17 conclusion",
@@ -85,7 +85,7 @@
       "- Copied parent `experiments/*.py`, `data/*.jsonl`, and `results/*.json` into this branch.",
       "## 2026-04-17 stronger cached-model validation results",
       "- Created project-local `.venv` and installed `transformers` + `torch`.",
-      "- Confirmed cached Hugging Face models under `/mnt/usb/home/jeremy/.cache/huggingface/hub`; loaded `Qwen/Qwen2.5-0.5B-Instruct` with `local_files_only=True`.",
+      "- Confirmed cached Hugging Face models under `[redacted-local-hf-cache]/hub`; loaded `Qwen/Qwen2.5-0.5B-Instruct` with `local_files_only=True`.",
       "- Attempted a 20-task/domain Qwen run first; stopped it after ~2.5 minutes because CPU scoring was too slow for the turn budget and no partial output had been written. Re-ran a bounded 4-task/domain validation.",
       "- Generated `data/qwen05_trace_slice.jsonl` with 64 examples (4 tasks/domain x 4 domains x 4 LLM ranking systems) using the parent finalized schema.",
       "- Wrote `results/qwen05_trace_summary.json`:",
@@ -101,7 +101,7 @@
       "## 2026-04-17 validation commands",
       "- `uv venv --python /usr/bin/python3 .venv`",
       "- `uv pip install --python .venv/bin/python transformers torch --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple`",
-      "- `HF_HOME=/mnt/usb/home/jeremy/.cache/huggingface .venv/bin/python experiments/llm_trace_slice.py --model Qwen/Qwen2.5-0.5B-Instruct --n-tasks-per-domain 4 --max-new-tokens 0 --out data/qwen05_trace_slice.jsonl --summary results/qwen05_trace_summary.json`",
+      "- `HF_HOME=[redacted-local-hf-cache] .venv/bin/python experiments/llm_trace_slice.py --model Qwen/Qwen2.5-0.5B-Instruct --n-tasks-per-domain 4 --max-new-tokens 0 --out data/qwen05_trace_slice.jsonl --summary results/qwen05_trace_summary.json`",
       "- `.venv/bin/python experiments/compare_validation.py`",
       "- `.venv/bin/python -m py_compile experiments/acceptance_trace_mve.py experiments/real_trace_slice.py experiments/llm_trace_slice.py experiments/compare_validation.py`",
       "## 2026-04-17 conclusion",
@@ -135,7 +135,7 @@
       "session_id": "omx-1776432329750-e0h2uq",
       "started_at": "2026-04-17T13:25:29.775Z",
       "ended_at": "2026-04-17T13:32:10.993Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 158487
     },
     "project_decision": {
@@ -150,7 +150,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-17T13:45:00-05:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-12T22:51:34-05:00"
   },
   "decision_action": "finalize_positive",
@@ -26,11 +26,11 @@
   "recommended_next_action": "Finalize this branch; optional future work is replication on additional model families or repeated cold/warm timing runs.",
   "run_notes_tail": [
     "```bash",
-    "UV_CACHE_DIR=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.uv-cache uv venv --python /usr/bin/python3 .venv",
-    "UV_CACHE_DIR=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.uv-cache uv pip install --python .venv/bin/python torch transformers numpy",
+    "UV_CACHE_DIR=[redacted-source-project-root]/.uv-cache uv venv --python /usr/bin/python3 .venv",
+    "UV_CACHE_DIR=[redacted-source-project-root]/.uv-cache uv pip install --python .venv/bin/python torch transformers numpy",
     ".venv/bin/python -m unittest discover -s tests -v",
     ".venv/bin/python -m py_compile scripts/*.py tests/test_representation_seed.py",
-    "HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.cache/huggingface HF_HUB_DISABLE_XET=1 TRANSFORMERS_CACHE=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.cache/huggingface .venv/bin/python scripts/benchmark_hf_block_scan_throughput.py --model gpt2-medium --probes data/probes.jsonl --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --out results/gpt2_medium_wall_clock_throughput.json --device cuda --dtype float16 --warmup-intervals 2 --top-k 20",
+    "HF_HOME=[redacted-source-project-root]/.cache/huggingface HF_HUB_DISABLE_XET=1 TRANSFORMERS_CACHE=[redacted-source-project-root]/.cache/huggingface .venv/bin/python scripts/benchmark_hf_block_scan_throughput.py --model gpt2-medium --probes data/probes.jsonl --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --out results/gpt2_medium_wall_clock_throughput.json --device cuda --dtype float16 --warmup-intervals 2 --top-k 20",
     ".venv/bin/python scripts/evaluate_seed_recall.py --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --winners results/gpt2_medium_block_winners.json --out results/gpt2_medium_block_winner_eval_budget_pruned_calibrated_rerun.json",
     "```",
     "Durable artifacts added/refreshed:",
@@ -77,11 +77,11 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "```bash",
-      "UV_CACHE_DIR=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.uv-cache uv venv --python /usr/bin/python3 .venv",
-      "UV_CACHE_DIR=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.uv-cache uv pip install --python .venv/bin/python torch transformers numpy",
+      "UV_CACHE_DIR=[redacted-source-project-root]/.uv-cache uv venv --python /usr/bin/python3 .venv",
+      "UV_CACHE_DIR=[redacted-source-project-root]/.uv-cache uv pip install --python .venv/bin/python torch transformers numpy",
       ".venv/bin/python -m unittest discover -s tests -v",
       ".venv/bin/python -m py_compile scripts/*.py tests/test_representation_seed.py",
-      "HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.cache/huggingface HF_HUB_DISABLE_XET=1 TRANSFORMERS_CACHE=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.cache/huggingface .venv/bin/python scripts/benchmark_hf_block_scan_throughput.py --model gpt2-medium --probes data/probes.jsonl --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --out results/gpt2_medium_wall_clock_throughput.json --device cuda --dtype float16 --warmup-intervals 2 --top-k 20",
+      "HF_HOME=[redacted-source-project-root]/.cache/huggingface HF_HUB_DISABLE_XET=1 TRANSFORMERS_CACHE=[redacted-source-project-root]/.cache/huggingface .venv/bin/python scripts/benchmark_hf_block_scan_throughput.py --model gpt2-medium --probes data/probes.jsonl --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --out results/gpt2_medium_wall_clock_throughput.json --device cuda --dtype float16 --warmup-intervals 2 --top-k 20",
       ".venv/bin/python scripts/evaluate_seed_recall.py --seed-report results/gpt2_medium_seed_report_budget_pruned_calibrated.json --winners results/gpt2_medium_block_winners.json --out results/gpt2_medium_block_winner_eval_budget_pruned_calibrated_rerun.json",
       "```",
       "Durable artifacts added/refreshed:",
@@ -127,7 +127,7 @@
       "session_id": "omx-1776052037252-849ob9",
       "started_at": "2026-04-13T03:47:17.272Z",
       "ended_at": "2026-04-13T03:51:49.266Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2774555
     },
     "project_decision": {
@@ -142,7 +142,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-12T22:51:34-05:00"
     },
     "decision_error": ""

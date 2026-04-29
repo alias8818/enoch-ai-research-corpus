@@ -35,7 +35,7 @@ Two llama.cpp OpenAI-compatible server configurations were provisioned from a si
 | `llama_cpp_phi4_cpu_layers0_ctx4096` | 0 (full CPU offload) | 4096 | 18110 |
 | `llama_cpp_phi4_cuda_all_layers_ctx4096` | 999 (full CUDA offload) | 4096 | 18111 |
 
-Both configurations serve the same model: `Phi-4-mini-instruct-Q4_K_M.gguf` from the `lmstudio-community` GGUF cache. The llama.cpp server binary was located at `/home/jeremy/projects/llama.cpp/build/bin/llama-server`. Each configuration was launched from `/tmp`, verified through both the `/v1/models` and `/v1/chat/completions` endpoints, evaluated sequentially, and stopped before yielding control. No helper server process persisted after evaluation.
+Both configurations serve the same model: `Phi-4-mini-instruct-Q4_K_M.gguf` from the `lmstudio-community` GGUF cache. The llama.cpp server binary was located at `llama-server`. Each configuration was launched from `/tmp`, verified through both the `/v1/models` and `/v1/chat/completions` endpoints, evaluated sequentially, and stopped before yielding control. No helper server process persisted after evaluation.
 
 ### 2.3 Evaluation Harness
 
@@ -98,7 +98,7 @@ The CPU-offload and CUDA-offload configurations produced identical accuracy valu
 |---|---|---|
 | Model identifier specified | Yes | `lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` |
 | Quantization specified | Yes | Q4_K_M |
-| Serving binary specified | Yes | `/home/jeremy/projects/llama.cpp/build/bin/llama-server` |
+| Serving binary specified | Yes | `llama-server` |
 | Server launch parameters recorded | Yes | `--n-gpu-layers` (0 or 999), context 4096, ports 18110/18111 |
 | Dataset file identified | Yes | `data/segment_order_sensitivity_synthetic.jsonl` |
 | Evaluation script identified | Yes | `scripts/neural_endpoint_segment_order_eval.py` |

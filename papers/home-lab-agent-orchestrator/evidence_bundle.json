@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-24T22:58:54.478948+00:00"
   },
   "decision_action": "finalize_positive",
@@ -37,7 +37,7 @@
     "Verification:",
     "- `.venv/bin/python -m pytest -q` => 12 passed.",
     "- `.venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_fake.json` using the project-local fake OpenAI-compatible endpoint => all raw/reduced lanes diagnosis_accuracy=1.0 and unsafe_action_block_rate=1.0.",
-    "- Launched `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from `/tmp/homelab-llama-service` with cached `Phi-4-mini-instruct-Q4_K_M.gguf`, verified `/v1/models`, and ran `HOMELAB_OPENAI_BASE_URL=http://127.0.0.1:18080 HOMELAB_OPENAI_TIMEOUT_SECONDS=120 .venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_real_phi.json`.",
+    "- Launched `llama-server` from `/tmp/homelab-llama-service` with cached `Phi-4-mini-instruct-Q4_K_M.gguf`, verified `/v1/models`, and ran `HOMELAB_OPENAI_BASE_URL=http://127.0.0.1:18080 HOMELAB_OPENAI_TIMEOUT_SECONDS=120 .venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_real_phi.json`.",
     "- Copied `results/smoke_eval_evidence_reduced_real_phi.json` to `results/smoke_eval.json` as the latest primary benchmark and rewrote `results/summary.md`.",
     "- Stopped the llama.cpp helper server before yielding; `curl http://127.0.0.1:18080/v1/models` now fails to connect as expected.",
     "Measured real-model evidence-reduction results:",
@@ -93,7 +93,7 @@
       "Verification:",
       "- `.venv/bin/python -m pytest -q` => 12 passed.",
       "- `.venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_fake.json` using the project-local fake OpenAI-compatible endpoint => all raw/reduced lanes diagnosis_accuracy=1.0 and unsafe_action_block_rate=1.0.",
-      "- Launched `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from `/tmp/homelab-llama-service` with cached `Phi-4-mini-instruct-Q4_K_M.gguf`, verified `/v1/models`, and ran `HOMELAB_OPENAI_BASE_URL=http://127.0.0.1:18080 HOMELAB_OPENAI_TIMEOUT_SECONDS=120 .venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_real_phi.json`.",
+      "- Launched `llama-server` from `/tmp/homelab-llama-service` with cached `Phi-4-mini-instruct-Q4_K_M.gguf`, verified `/v1/models`, and ran `HOMELAB_OPENAI_BASE_URL=http://127.0.0.1:18080 HOMELAB_OPENAI_TIMEOUT_SECONDS=120 .venv/bin/python -m harness.run_eval --out results/smoke_eval_evidence_reduced_real_phi.json`.",
       "- Copied `results/smoke_eval_evidence_reduced_real_phi.json` to `results/smoke_eval.json` as the latest primary benchmark and rewrote `results/summary.md`.",
       "- Stopped the llama.cpp helper server before yielding; `curl http://127.0.0.1:18080/v1/models` now fails to connect as expected.",
       "Measured real-model evidence-reduction results:",
@@ -137,7 +137,7 @@
       "session_id": "omx-1777070685580-isy3ie",
       "started_at": "2026-04-24T22:44:45.603Z",
       "ended_at": "2026-04-24T22:59:11.708Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 938815
     },
     "project_decision": {
@@ -152,7 +152,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-24T22:58:54.478948+00:00"
     },
     "decision_error": ""

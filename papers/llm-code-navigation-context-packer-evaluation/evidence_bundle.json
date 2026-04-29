@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-19T18:43:32.364095Z"
   },
   "decision_action": "finalize_positive",
@@ -26,12 +26,12 @@
   "recommended_next_action": "Use the saved LLM evaluation artifacts to guide stronger-model or calibration work only if a separate, concrete benchmark is explicitly desired.",
   "run_notes_tail": [
     "Environment/model:",
-    "- Local model: `Qwen/Qwen2.5-3B-Instruct` resolved from cached Hugging Face snapshot `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
+    "- Local model: `Qwen/Qwen2.5-3B-Instruct` resolved from cached Hugging Face snapshot `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
     "- Runtime: 890.33s wall-clock, 0.472 packer-items/s, 2,149 total tokens/s.",
     "- Latency: p50 1.97s, p95 2.18s per generation (batch-normalized).",
     "- Resource snapshot: `nvidia-smi` GPU utilization sampled at 95%; `/proc/meminfo` reported MemAvailable during run completion; process max RSS captured in the JSON report.",
     "Gold spot checks:",
-    "- Checked 30 stratified weak labels against `/home/jeremy/projects/vllm` source.",
+    "- Checked 30 stratified weak labels against `[redacted-local-vllm-checkout]` source.",
     "- 30/30 labels had the requested `def`/`class` near the labelled target line, so no weak-label kill condition was triggered.",
     "LLM answer-generation metrics:",
     "| Packer | Strict file-line acc | ±2-line acc | Signature+path acc | Exact signature acc | Answerable abstain | No-answer abstain | False answer on no-answer | Brier |",
@@ -76,12 +76,12 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "Environment/model:",
-      "- Local model: `Qwen/Qwen2.5-3B-Instruct` resolved from cached Hugging Face snapshot `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
+      "- Local model: `Qwen/Qwen2.5-3B-Instruct` resolved from cached Hugging Face snapshot `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
       "- Runtime: 890.33s wall-clock, 0.472 packer-items/s, 2,149 total tokens/s.",
       "- Latency: p50 1.97s, p95 2.18s per generation (batch-normalized).",
       "- Resource snapshot: `nvidia-smi` GPU utilization sampled at 95%; `/proc/meminfo` reported MemAvailable during run completion; process max RSS captured in the JSON report.",
       "Gold spot checks:",
-      "- Checked 30 stratified weak labels against `/home/jeremy/projects/vllm` source.",
+      "- Checked 30 stratified weak labels against `[redacted-local-vllm-checkout]` source.",
       "- 30/30 labels had the requested `def`/`class` near the labelled target line, so no weak-label kill condition was triggered.",
       "LLM answer-generation metrics:",
       "| Packer | Strict file-line acc | ±2-line acc | Signature+path acc | Exact signature acc | Answerable abstain | No-answer abstain | False answer on no-answer | Brier |",
@@ -125,7 +125,7 @@
       "session_id": "omx-1776622695620-8s12u3",
       "started_at": "2026-04-19T18:18:15.645Z",
       "ended_at": "2026-04-19T18:43:58.439Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1438042
     },
     "project_decision": {
@@ -140,7 +140,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-19T18:43:32.364095Z"
     },
     "decision_error": ""

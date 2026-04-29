@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T13:51:02.626938+00:00"
   },
   "decision_action": "finalize_positive",
@@ -28,7 +28,7 @@
     "# Run Notes - Partial-Evidence Audited SFT Recall-Preservation Ablation",
     "## 2026-04-20 initial inspection and execution plan",
     "- Current successor directory initially contained only OMX metadata/prompts; no local executable corpus or harness.",
-    "- Parent project artifacts found at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` with `data/human_graded_hardening_set.jsonl`, live model predictions, and benchmark scripts.",
+    "- Parent project artifacts found at `[redacted-source-project-root]` with `data/human_graded_hardening_set.jsonl`, live model predictions, and benchmark scripts.",
     "- Branch-specific kill condition: finalize_negative if an audited SFT/LoRA pilot on the partial-evidence hard negatives cannot reduce partial-refusal over-answer on the Phi-like target by at least 10 pp, or if it reduces full-evidence answer recall by more than 5 pp versus the base model. For tiny smoke/calibration runs, do not judge the hypothesis until a real adapter checkpoint and before/after evaluation exist.",
     "- Plan: (1) copy the parent audited corpus and scoring harness into this branch; (2) build a reproducible LoRA SFT ablation script that trains on partial-refusal hard negatives while retaining full-answer examples; (3) run a small correctness smoke and throughput/memory calibration before longer training; (4) evaluate base vs adapter on held-out audited examples and record recall/over-answer deltas; (5) update the decision artifact from durable metrics.",
     "## 2026-04-20 LoRA SFT ablation execution",
@@ -85,7 +85,7 @@
       "# Run Notes - Partial-Evidence Audited SFT Recall-Preservation Ablation",
       "## 2026-04-20 initial inspection and execution plan",
       "- Current successor directory initially contained only OMX metadata/prompts; no local executable corpus or harness.",
-      "- Parent project artifacts found at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` with `data/human_graded_hardening_set.jsonl`, live model predictions, and benchmark scripts.",
+      "- Parent project artifacts found at `[redacted-source-project-root]` with `data/human_graded_hardening_set.jsonl`, live model predictions, and benchmark scripts.",
       "- Branch-specific kill condition: finalize_negative if an audited SFT/LoRA pilot on the partial-evidence hard negatives cannot reduce partial-refusal over-answer on the Phi-like target by at least 10 pp, or if it reduces full-evidence answer recall by more than 5 pp versus the base model. For tiny smoke/calibration runs, do not judge the hypothesis until a real adapter checkpoint and before/after evaluation exist.",
       "- Plan: (1) copy the parent audited corpus and scoring harness into this branch; (2) build a reproducible LoRA SFT ablation script that trains on partial-refusal hard negatives while retaining full-answer examples; (3) run a small correctness smoke and throughput/memory calibration before longer training; (4) evaluate base vs adapter on held-out audited examples and record recall/over-answer deltas; (5) update the decision artifact from durable metrics.",
       "## 2026-04-20 LoRA SFT ablation execution",
@@ -139,7 +139,7 @@
       "session_id": "omx-1776692681982-ryiz98",
       "started_at": "2026-04-20T13:44:42.008Z",
       "ended_at": "2026-04-20T13:51:26.540Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2111342
     },
     "project_decision": {
@@ -154,7 +154,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T13:51:02.626938+00:00"
     },
     "decision_error": ""

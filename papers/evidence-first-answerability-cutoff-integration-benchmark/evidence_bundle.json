@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T03:19:55.907084+00:00"
   },
   "decision_action": "finalize_positive",
@@ -29,8 +29,8 @@
     "5. If calibration throughput is acceptable, run the full 144-case endpoint benchmark; otherwise record the bottleneck and leave the project as `continue` with concrete tuning next steps.",
     "## 2026-04-20 Qwen endpoint repair, calibration, and full production benchmark",
     "Repaired the llama-server readiness issue by launching the cached Qwen GGUF from a neutral service directory with `setsid` so the server survived the readiness wrapper exit:",
-    "- Binary: `/home/jeremy/projects/llama.cpp/build/bin/llama-server`.",
-    "- Model: `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf`.",
+    "- Binary: `llama-server`.",
+    "- Model: `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf`.",
     "- Serving flags: `--host 127.0.0.1 --port 18082 -c 2048 -ngl all -np 2 -b 512 -ub 256 --metrics --slots`.",
     "- Verified `/models` and `/chat/completions`; smoke response correctly returned `Nightly reconciliation.` with 43 prompt tokens and 5 completion tokens.",
     "Calibration subset:",
@@ -96,8 +96,8 @@
       "5. If calibration throughput is acceptable, run the full 144-case endpoint benchmark; otherwise record the bottleneck and leave the project as `continue` with concrete tuning next steps.",
       "## 2026-04-20 Qwen endpoint repair, calibration, and full production benchmark",
       "Repaired the llama-server readiness issue by launching the cached Qwen GGUF from a neutral service directory with `setsid` so the server survived the readiness wrapper exit:",
-      "- Binary: `/home/jeremy/projects/llama.cpp/build/bin/llama-server`.",
-      "- Model: `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf`.",
+      "- Binary: `llama-server`.",
+      "- Model: `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf`.",
       "- Serving flags: `--host 127.0.0.1 --port 18082 -c 2048 -ngl all -np 2 -b 512 -ub 256 --metrics --slots`.",
       "- Verified `/models` and `/chat/completions`; smoke response correctly returned `Nightly reconciliation.` with 43 prompt tokens and 5 completion tokens.",
       "Calibration subset:",
@@ -159,7 +159,7 @@
       "session_id": "omx-1776654636882-98456y",
       "started_at": "2026-04-20T03:10:36.909Z",
       "ended_at": "2026-04-20T03:20:10.246Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1737339
     },
     "project_decision": {
@@ -174,7 +174,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T03:19:55.907084+00:00"
     },
     "decision_error": ""

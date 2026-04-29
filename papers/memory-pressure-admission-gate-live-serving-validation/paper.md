@@ -101,8 +101,8 @@ Peak server RSS increased by 6.4% under the gate condition. This is a negative r
 
 | Item | Status |
 |---|---|
-| Model identifier and source | Phi-4-mini-instruct Q4_K_M GGUF, lmstudio-community distribution, local cache at `/home/jeremy/.lmstudio/models/` |
-| Server binary and version | llama.cpp `llama-server`, build at `/home/jeremy/projects/llama.cpp/build/bin/llama-server` |
+| Model identifier and source | Phi-4-mini-instruct Q4_K_M GGUF, lmstudio-community distribution, local cache at `[redacted-local-model-cache]/` |
+| Server binary and version | llama.cpp `llama-server`, build at `llama-server` |
 | Server launch command | `llama-server -c 8192 -np 4 --metrics --slots --cache-reuse 256` |
 | Benchmark harness | `src/live_memory_gate_bench.py`, stdlib-first, no external dependencies beyond `openai` client |
 | Benchmark command | `python3 src/live_memory_gate_bench.py --base-url http://127.0.0.1:8011 --port 8011 --outdir results/live_llama_cpp_ctx8192` |

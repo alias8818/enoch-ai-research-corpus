@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-19T11:14:25.657566+00:00"
   },
   "decision_action": "finalize_positive",
@@ -25,7 +25,7 @@
   "confidence": "high",
   "recommended_next_action": "Finalize this branch and, if needed later, promote the monotonic-dwell vLLM patch plus real-vLLM benchmark harness into an upstreamable integration hardening task.",
   "run_notes_tail": [
-    "- Patched `/home/jeremy/projects/vllm/vllm/v1/request.py`, `scripts/install_vllm_spec_governor_patch.py`, and `patches/vllm_spec_governor_contract.patch` so the dwell deadline uses `time.monotonic() + bounded_dwell`.",
+    "- Patched `[redacted-local-vllm-checkout]/vllm/v1/request.py`, `scripts/install_vllm_spec_governor_patch.py`, and `patches/vllm_spec_governor_contract.patch` so the dwell deadline uses `time.monotonic() + bounded_dwell`.",
     "- Updated `tests/test_vllm_spec_governor_patch_contract.py` to lock the monotonic-clock invariant.",
     "- Hardened `scripts/benchmark_openai_governor_endpoint.py`:",
     "  - timeout/URL errors now become per-request error rows instead of aborting the whole benchmark;",
@@ -93,7 +93,7 @@
     "current_activity": "wake_ready",
     "gate_state": "wake_ready",
     "run_notes_tail": [
-      "- Patched `/home/jeremy/projects/vllm/vllm/v1/request.py`, `scripts/install_vllm_spec_governor_patch.py`, and `patches/vllm_spec_governor_contract.patch` so the dwell deadline uses `time.monotonic() + bounded_dwell`.",
+      "- Patched `[redacted-local-vllm-checkout]/vllm/v1/request.py`, `scripts/install_vllm_spec_governor_patch.py`, and `patches/vllm_spec_governor_contract.patch` so the dwell deadline uses `time.monotonic() + bounded_dwell`.",
       "- Updated `tests/test_vllm_spec_governor_patch_contract.py` to lock the monotonic-clock invariant.",
       "- Hardened `scripts/benchmark_openai_governor_endpoint.py`:",
       "  - timeout/URL errors now become per-request error rows instead of aborting the whole benchmark;",
@@ -161,7 +161,7 @@
       "session_id": "omx-1776596756795-bxxnvt",
       "started_at": "2026-04-19T11:05:56.817Z",
       "ended_at": "2026-04-19T11:14:54.995Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1202565
     },
     "project_decision": {
@@ -176,7 +176,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-19T11:14:25.657566+00:00"
     },
     "decision_error": ""

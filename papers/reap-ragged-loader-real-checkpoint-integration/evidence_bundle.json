@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-14T16:18:32.017490+00:00"
   },
   "decision_action": "finalize_positive",
@@ -46,7 +46,7 @@
     "## 2026-04-14 verification",
     "- Created local env: `uv venv --python /usr/bin/python3 .venv`; installed `pytest` and `safetensors`.",
     "- Unit tests: `.venv/bin/python -m pytest -q tests` -> `4 passed`.",
-    "- Topology smoke test with sibling CUDA PyTorch env: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/verify_topology.py` -> `topology smoke test passed`.",
+    "- Topology smoke test with sibling CUDA PyTorch env: `[redacted-source-project-root]/.venv/bin/python scripts/verify_topology.py` -> `topology smoke test passed`.",
     "- Real checkpoint preflight: `.venv/bin/python scripts/verify_real_checkpoint_integration.py hf_probe/cerebras-Qwen3-Coder-REAP-25B-A3B --out artifacts/real_checkpoint_integration/qwen3_25b_preflight.json` -> exit 0 and supported=true.",
     "## 2026-04-14 interpretation",
     "- The real-checkpoint integration hypothesis is partially supported: the loader can now consume real REAP HF metadata, derive a load plan, and identify supported ModuleList-style checkpoints without downloading full weights.",
@@ -97,7 +97,7 @@
       "## 2026-04-14 verification",
       "- Created local env: `uv venv --python /usr/bin/python3 .venv`; installed `pytest` and `safetensors`.",
       "- Unit tests: `.venv/bin/python -m pytest -q tests` -> `4 passed`.",
-      "- Topology smoke test with sibling CUDA PyTorch env: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/verify_topology.py` -> `topology smoke test passed`.",
+      "- Topology smoke test with sibling CUDA PyTorch env: `[redacted-source-project-root]/.venv/bin/python scripts/verify_topology.py` -> `topology smoke test passed`.",
       "- Real checkpoint preflight: `.venv/bin/python scripts/verify_real_checkpoint_integration.py hf_probe/cerebras-Qwen3-Coder-REAP-25B-A3B --out artifacts/real_checkpoint_integration/qwen3_25b_preflight.json` -> exit 0 and supported=true.",
       "## 2026-04-14 interpretation",
       "- The real-checkpoint integration hypothesis is partially supported: the loader can now consume real REAP HF metadata, derive a load plan, and identify supported ModuleList-style checkpoints without downloading full weights.",
@@ -127,7 +127,7 @@
       "session_id": "omx-1776183270803-592vli",
       "started_at": "2026-04-14T16:14:30.825Z",
       "ended_at": "2026-04-14T16:19:11.908Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 99066
     },
     "project_decision": {
@@ -142,7 +142,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-14T16:18:32.017490+00:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-13T02:52:33.984167+00:00"
   },
   "decision_action": "finalize_positive",
@@ -44,7 +44,7 @@
     "  - `reports/live/mock_compressed_report.json`: 0/27, score 0.0, gate fail.",
     "  - `reports/live/mock_comparison.json`: retention gate fail, delta -1.0 across all categories.",
     "- Real local endpoint smoke:",
-    "  - Started llama.cpp server from `/tmp` with `/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`.",
+    "  - Started llama.cpp server from `/tmp` with `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`.",
     "  - Verified `/v1/models` and `/v1/chat/completions` contract for model `Phi-4-mini-instruct-Q4_K_M.gguf`.",
     "  - Ran 3 exact-copy prompts; runner failures 0, but scored 0/3 due nonsensical model outputs.",
     "  - Artifacts: `reports/live/llama_models.json`, `reports/live/phi4_q4_live_responses.jsonl`, `reports/live/phi4_q4_live_report_limit3.json`, `reports/live/llama_server.log`.",
@@ -92,7 +92,7 @@
       "  - `reports/live/mock_compressed_report.json`: 0/27, score 0.0, gate fail.",
       "  - `reports/live/mock_comparison.json`: retention gate fail, delta -1.0 across all categories.",
       "- Real local endpoint smoke:",
-      "  - Started llama.cpp server from `/tmp` with `/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`.",
+      "  - Started llama.cpp server from `/tmp` with `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`.",
       "  - Verified `/v1/models` and `/v1/chat/completions` contract for model `Phi-4-mini-instruct-Q4_K_M.gguf`.",
       "  - Ran 3 exact-copy prompts; runner failures 0, but scored 0/3 due nonsensical model outputs.",
       "  - Artifacts: `reports/live/llama_models.json`, `reports/live/phi4_q4_live_responses.jsonl`, `reports/live/phi4_q4_live_report_limit3.json`, `reports/live/llama_server.log`.",
@@ -121,7 +121,7 @@
       "session_id": "omx-1776048450708-k48u7a",
       "started_at": "2026-04-13T02:47:30.733Z",
       "ended_at": "2026-04-13T02:52:53.331Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2751663
     },
     "project_decision": {
@@ -136,7 +136,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-13T02:52:33.984167+00:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-18T01:41:17.725491+00:00"
   },
   "decision_action": "finalize_positive",
@@ -35,7 +35,7 @@
     "3. Run validation that produces durable metrics/artifacts, update notes, and refresh `.omx/project_decision.json` with the next concrete state.",
     "## Execution Notes - 2026-04-18 Resume",
     "- Found no useful already-running OpenAI-compatible inference endpoint on ports 8000/8080/8787/11000; `/v1/models` probes returned non-OpenAI dashboard/not-found responses.",
-    "- Found an installed vLLM environment at `/home/jeremy/projects/vllm/.venv/bin/vllm` and launched a temporary neutral-directory vLLM service from `/tmp/enoch_local_serving_harness_vllm` using `Qwen/Qwen2.5-0.5B-Instruct`, `--enable-prefix-caching`, `--served-model-name local-model`, and `/metrics` enabled.",
+    "- Found an installed vLLM environment at `vllm` and launched a temporary neutral-directory vLLM service from `/tmp/enoch_local_serving_harness_vllm` using `Qwen/Qwen2.5-0.5B-Instruct`, `--enable-prefix-caching`, `--served-model-name local-model`, and `/metrics` enabled.",
     "- Fixed `src/local_serving_harness.py` telemetry parsing so GB10 `nvidia-smi` power readings are retained even when memory is reported as `[N/A]`; also made endpoint connection failures produce structured probe errors instead of crashing before an artifact can be written.",
     "- Verified syntax and shim regression after the telemetry fix: `python3 -m py_compile src/local_serving_harness.py` and `python3 src/local_serving_harness.py smoke --requests 40 --concurrency 4 --shim-cache-capacity 8 --scenarios enterprise_faq_local --outdir results/local_serving_smoke_after_energy_fix`.",
     "- Ran the harness against the real temporary vLLM endpoint: `python3 src/local_serving_harness.py run --base-url http://127.0.0.1:38082/v1 --metrics-url http://127.0.0.1:38082/metrics --model local-model --requests 60 --concurrency 4 --max-tokens 24 --timeout 120 --scenarios enterprise_faq_local,high_prefix_sharing,mixed_workload --outdir results/local_serving_vllm_qwen05b_energy`.",
@@ -90,7 +90,7 @@
       "3. Run validation that produces durable metrics/artifacts, update notes, and refresh `.omx/project_decision.json` with the next concrete state.",
       "## Execution Notes - 2026-04-18 Resume",
       "- Found no useful already-running OpenAI-compatible inference endpoint on ports 8000/8080/8787/11000; `/v1/models` probes returned non-OpenAI dashboard/not-found responses.",
-      "- Found an installed vLLM environment at `/home/jeremy/projects/vllm/.venv/bin/vllm` and launched a temporary neutral-directory vLLM service from `/tmp/enoch_local_serving_harness_vllm` using `Qwen/Qwen2.5-0.5B-Instruct`, `--enable-prefix-caching`, `--served-model-name local-model`, and `/metrics` enabled.",
+      "- Found an installed vLLM environment at `vllm` and launched a temporary neutral-directory vLLM service from `/tmp/enoch_local_serving_harness_vllm` using `Qwen/Qwen2.5-0.5B-Instruct`, `--enable-prefix-caching`, `--served-model-name local-model`, and `/metrics` enabled.",
       "- Fixed `src/local_serving_harness.py` telemetry parsing so GB10 `nvidia-smi` power readings are retained even when memory is reported as `[N/A]`; also made endpoint connection failures produce structured probe errors instead of crashing before an artifact can be written.",
       "- Verified syntax and shim regression after the telemetry fix: `python3 -m py_compile src/local_serving_harness.py` and `python3 src/local_serving_harness.py smoke --requests 40 --concurrency 4 --shim-cache-capacity 8 --scenarios enterprise_faq_local --outdir results/local_serving_smoke_after_energy_fix`.",
       "- Ran the harness against the real temporary vLLM endpoint: `python3 src/local_serving_harness.py run --base-url http://127.0.0.1:38082/v1 --metrics-url http://127.0.0.1:38082/metrics --model local-model --requests 60 --concurrency 4 --max-tokens 24 --timeout 120 --scenarios enterprise_faq_local,high_prefix_sharing,mixed_workload --outdir results/local_serving_vllm_qwen05b_energy`.",
@@ -135,7 +135,7 @@
       "session_id": "omx-1776476153163-y5zjq9",
       "started_at": "2026-04-18T01:35:53.183Z",
       "ended_at": "2026-04-18T01:41:37.355Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 400674
     },
     "project_decision": {
@@ -150,7 +150,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-18T01:41:17.725491+00:00"
     },
     "decision_error": ""

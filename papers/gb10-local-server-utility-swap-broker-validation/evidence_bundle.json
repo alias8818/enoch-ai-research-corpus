@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-19T17:29:19.352913+00:00"
   },
   "decision_action": "finalize_positive",
@@ -32,7 +32,7 @@
     "- Added `src/mock_openai_server.py`, a tiny OpenAI-compatible mock server used only to smoke-test the harness without claiming model-serving evidence.",
     "- Verified both scripts compile with `python3 -m py_compile`.",
     "- Mock smoke (`artifacts/mock_smoke`) completed 8 sessions / 15 requests per policy with 0 errors; as expected, mock evidence showed no meaningful policy separation because it has no real KV/server scheduler.",
-    "- Live smoke (`artifacts/llama_phi_smoke`) launched `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from `/tmp` against cached model `/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`, with `-ngl all -c 2048 -np 2 -cb --metrics --jinja`, verified `/v1/models`, replayed 6 sessions / 10 requests per policy, captured `/metrics` and `/slots`, then stopped the helper server.",
+    "- Live smoke (`artifacts/llama_phi_smoke`) launched `llama-server` from `/tmp` against cached model `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`, with `-ngl all -c 2048 -np 2 -cb --metrics --jinja`, verified `/v1/models`, replayed 6 sessions / 10 requests per policy, captured `/metrics` and `/slots`, then stopped the helper server.",
     "- Live smoke results: utility broker request p95 latency 0.231s vs FIFO 0.250s (7.4% reduction), session p95 1.637s vs 1.649s (0.7% reduction), throughput 1.405 vs 1.406 completion tok/s (flat), scheduler churn 6 vs 6, no request errors, no deadline misses. Mean sampled GPU utilization was very low (1.26% FIFO, 2.80% utility), so this is harness validation and throughput calibration, not sufficient final hypothesis evidence.",
     "- Durable artifacts now include `artifacts/llama_phi_smoke/summary.json`, `requests.csv`, telemetry CSVs, `llama_metrics.prom`, `slots.json`, and server log `artifacts/logs/llama_server_phi.log`.",
     "## Interpretation after first live smoke",
@@ -96,7 +96,7 @@
       "- Added `src/mock_openai_server.py`, a tiny OpenAI-compatible mock server used only to smoke-test the harness without claiming model-serving evidence.",
       "- Verified both scripts compile with `python3 -m py_compile`.",
       "- Mock smoke (`artifacts/mock_smoke`) completed 8 sessions / 15 requests per policy with 0 errors; as expected, mock evidence showed no meaningful policy separation because it has no real KV/server scheduler.",
-      "- Live smoke (`artifacts/llama_phi_smoke`) launched `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from `/tmp` against cached model `/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`, with `-ngl all -c 2048 -np 2 -cb --metrics --jinja`, verified `/v1/models`, replayed 6 sessions / 10 requests per policy, captured `/metrics` and `/slots`, then stopped the helper server.",
+      "- Live smoke (`artifacts/llama_phi_smoke`) launched `llama-server` from `/tmp` against cached model `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`, with `-ngl all -c 2048 -np 2 -cb --metrics --jinja`, verified `/v1/models`, replayed 6 sessions / 10 requests per policy, captured `/metrics` and `/slots`, then stopped the helper server.",
       "- Live smoke results: utility broker request p95 latency 0.231s vs FIFO 0.250s (7.4% reduction), session p95 1.637s vs 1.649s (0.7% reduction), throughput 1.405 vs 1.406 completion tok/s (flat), scheduler churn 6 vs 6, no request errors, no deadline misses. Mean sampled GPU utilization was very low (1.26% FIFO, 2.80% utility), so this is harness validation and throughput calibration, not sufficient final hypothesis evidence.",
       "- Durable artifacts now include `artifacts/llama_phi_smoke/summary.json`, `requests.csv`, telemetry CSVs, `llama_metrics.prom`, `slots.json`, and server log `artifacts/logs/llama_server_phi.log`.",
       "## Interpretation after first live smoke",
@@ -153,7 +153,7 @@
       "session_id": "omx-1776619051358-c9lmlm",
       "started_at": "2026-04-19T17:17:31.380Z",
       "ended_at": "2026-04-19T17:29:37.182Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1401598
     },
     "project_decision": {
@@ -168,7 +168,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-19T17:29:19.352913+00:00"
     },
     "decision_error": ""

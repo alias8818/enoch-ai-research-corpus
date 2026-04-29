@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-18T20:58:19.383713+00:00"
   },
   "decision_action": "finalize_positive",
@@ -26,8 +26,8 @@
   "recommended_next_action": "Package the synthetic and real-log harnesses as a reusable cluster-balanced evaluator and apply them to the next real verifier-log dataset with broader task domains.",
   "run_notes_tail": [
     "Implemented `src/real_log_cluster_analysis.py` and ran it over:",
-    "- Baseline/retrieval verifier log: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/results/baseline_natural_pilot_1000_summary_predictions.jsonl`",
-    "- Real Qwen output log: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/results/qwen25_3b_full_1000_summary_predictions.jsonl`",
+    "- Baseline/retrieval verifier log: `[redacted-source-project-root]/results/baseline_natural_pilot_1000_summary_predictions.jsonl`",
+    "- Real Qwen output log: `[redacted-source-project-root]/results/qwen25_3b_full_1000_summary_predictions.jsonl`",
     "Artifacts produced:",
     "- `data/real_log_predictions.jsonl` (18000 normalized prediction rows)",
     "- `results/real_log_summary.json`",
@@ -79,8 +79,8 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "Implemented `src/real_log_cluster_analysis.py` and ran it over:",
-      "- Baseline/retrieval verifier log: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/results/baseline_natural_pilot_1000_summary_predictions.jsonl`",
-      "- Real Qwen output log: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/results/qwen25_3b_full_1000_summary_predictions.jsonl`",
+      "- Baseline/retrieval verifier log: `[redacted-source-project-root]/results/baseline_natural_pilot_1000_summary_predictions.jsonl`",
+      "- Real Qwen output log: `[redacted-source-project-root]/results/qwen25_3b_full_1000_summary_predictions.jsonl`",
       "Artifacts produced:",
       "- `data/real_log_predictions.jsonl` (18000 normalized prediction rows)",
       "- `results/real_log_summary.json`",
@@ -131,7 +131,7 @@
       "session_id": "omx-1776545697868-o2kq7n",
       "started_at": "2026-04-18T20:54:57.894Z",
       "ended_at": "2026-04-18T20:58:41.223Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 824952
     },
     "project_decision": {
@@ -146,7 +146,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-18T20:58:19.383713+00:00"
     },
     "decision_error": ""

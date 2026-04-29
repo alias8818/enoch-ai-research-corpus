@@ -48,7 +48,7 @@ The Qwen validation was executed as follows:
 - A bounded 4-task/domain run was then executed, producing 64 examples (4 tasks × 4 domains × 4 LLM ranking systems).
 - The command used was:
   ```
-  HF_HOME=/mnt/usb/home/jeremy/.cache/huggingface \
+  HF_HOME=[redacted-local-hf-cache] \
     .venv/bin/python experiments/llm_trace_slice.py \
     --model Qwen/Qwen2.5-0.5B-Instruct \
     --n-tasks-per-domain 4 \

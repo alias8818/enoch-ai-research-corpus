@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-13T09:03:44.613631+00:00"
   },
   "decision_action": "finalize_positive",
@@ -37,8 +37,8 @@
     "## Run results (2026-04-13)",
     "- Acquired parent harness artifacts from `source-record-redacted`: `scripts/local_model_endpoint.py`, `tests/test_contract_harness.py`, manifests, README, and prior endpoint artifact.",
     "- Added `scripts/build_wake_gate_integration.py`, which discovers cached HF snapshots and emits wake-gate `/prepare-project` + `/dispatch` JSON plus a materialized autonomous child project for endpoint validation.",
-    "- Created `artifacts/wake_gate_integration/20260413T090207Z/` with vLLM queue artifacts for cached `Qwen/Qwen2.5-3B-Instruct` at `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
-    "- Created `artifacts/wake_gate_integration/llama_cpp_queue/` and `autonomous_llama_cpp_endpoint_project/` as the concrete quick autonomous wake-gate child run using cached GGUF `/mnt/usb/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` and `/mnt/usb/home/jeremy/projects/llama.cpp/build/bin/llama-server`.",
+    "- Created `artifacts/wake_gate_integration/20260413T090207Z/` with vLLM queue artifacts for cached `Qwen/Qwen2.5-3B-Instruct` at `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
+    "- Created `artifacts/wake_gate_integration/llama_cpp_queue/` and `autonomous_llama_cpp_endpoint_project/` as the concrete quick autonomous wake-gate child run using cached GGUF `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` and `llama-server`.",
     "- Installed project-local vLLM/Transformers/Torch environment in `.venv` with `uv pip install --python .venv/bin/python vllm`; this makes the vLLM queue artifact actionable.",
     "- Validated the parent harness against the real cached llama.cpp backend: `.omx/endpoints/wake-gate-llama-cpp-cached.endpoint.json` has `contract_probe.ok=true`; explicit reprobe saved to `artifacts/wake_gate_integration/manual/llama_cpp_probe.json` also has `ok=true` for `/models` and `/chat/completions`.",
     "- Stopped the llama.cpp service; `artifacts/wake_gate_integration/manual/llama_cpp_status_after_stop.json` reports `alive=false`, so no helper server remains running from this project.",
@@ -98,8 +98,8 @@
       "## Run results (2026-04-13)",
       "- Acquired parent harness artifacts from `source-record-redacted`: `scripts/local_model_endpoint.py`, `tests/test_contract_harness.py`, manifests, README, and prior endpoint artifact.",
       "- Added `scripts/build_wake_gate_integration.py`, which discovers cached HF snapshots and emits wake-gate `/prepare-project` + `/dispatch` JSON plus a materialized autonomous child project for endpoint validation.",
-      "- Created `artifacts/wake_gate_integration/20260413T090207Z/` with vLLM queue artifacts for cached `Qwen/Qwen2.5-3B-Instruct` at `/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
-      "- Created `artifacts/wake_gate_integration/llama_cpp_queue/` and `autonomous_llama_cpp_endpoint_project/` as the concrete quick autonomous wake-gate child run using cached GGUF `/mnt/usb/home/jeremy/.lmstudio/models/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` and `/mnt/usb/home/jeremy/projects/llama.cpp/build/bin/llama-server`.",
+      "- Created `artifacts/wake_gate_integration/20260413T090207Z/` with vLLM queue artifacts for cached `Qwen/Qwen2.5-3B-Instruct` at `[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-3B-Instruct/snapshots/aa8e72537993ba99e69dfaafa59ed015b17504d1`.",
+      "- Created `artifacts/wake_gate_integration/llama_cpp_queue/` and `autonomous_llama_cpp_endpoint_project/` as the concrete quick autonomous wake-gate child run using cached GGUF `[redacted-local-model-cache]/lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` and `llama-server`.",
       "- Installed project-local vLLM/Transformers/Torch environment in `.venv` with `uv pip install --python .venv/bin/python vllm`; this makes the vLLM queue artifact actionable.",
       "- Validated the parent harness against the real cached llama.cpp backend: `.omx/endpoints/wake-gate-llama-cpp-cached.endpoint.json` has `contract_probe.ok=true`; explicit reprobe saved to `artifacts/wake_gate_integration/manual/llama_cpp_probe.json` also has `ok=true` for `/models` and `/chat/completions`.",
       "- Stopped the llama.cpp service; `artifacts/wake_gate_integration/manual/llama_cpp_status_after_stop.json` reports `alive=false`, so no helper server remains running from this project.",
@@ -147,7 +147,7 @@
       "session_id": "omx-1776070733914-t1ccqv",
       "started_at": "2026-04-13T08:58:53.934Z",
       "ended_at": "2026-04-13T09:04:02.474Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2884736
     },
     "project_decision": {
@@ -162,7 +162,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-13T09:03:44.613631+00:00"
     },
     "decision_error": ""

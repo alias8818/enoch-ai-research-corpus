@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-17T10:13:48.812096+00:00"
   },
   "decision_action": "finalize_positive",
@@ -28,8 +28,8 @@
     "4. Run evaluator/tests, update reports and notes, stop helper servers, and write the mandatory decision artifact.",
     "## 2026-04-17 third-model execution results",
     "Ran the prior concrete follow-up by adding a third cached local instruction model instead of branching:",
-    "- Found `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/models/Qwen3-0.6B-Q4_K_M.gguf`.",
-    "- Served it through `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from neutral `/tmp/schema_drift_services` on port 18082, verified `/v1/models`, collected 200 requested-schema drift predictions and 200 canonical stable-schema predictions, then stopped the server.",
+    "- Found `[redacted-source-project-root]/models/Qwen3-0.6B-Q4_K_M.gguf`.",
+    "- Served it through `llama-server` from neutral `/tmp/schema_drift_services` on port 18082, verified `/v1/models`, collected 200 requested-schema drift predictions and 200 canonical stable-schema predictions, then stopped the server.",
     "- Generated `data/qwen3_0_6b_drift_schema_t0_predictions_200.jsonl` and `data/qwen3_0_6b_stable_schema_t0_predictions_200.jsonl`.",
     "- Re-evaluated the three-model cohort into `reports/live_model_drift_comparison_3models_200.json`, `reports/live_model_stable_comparison_3models_200.json`, and `reports/live_model_rank_comparison_3models_200.json`.",
     "Three-model strict leaf accuracy:",
@@ -71,8 +71,8 @@
       "4. Run evaluator/tests, update reports and notes, stop helper servers, and write the mandatory decision artifact.",
       "## 2026-04-17 third-model execution results",
       "Ran the prior concrete follow-up by adding a third cached local instruction model instead of branching:",
-      "- Found `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/models/Qwen3-0.6B-Q4_K_M.gguf`.",
-      "- Served it through `/home/jeremy/projects/llama.cpp/build/bin/llama-server` from neutral `/tmp/schema_drift_services` on port 18082, verified `/v1/models`, collected 200 requested-schema drift predictions and 200 canonical stable-schema predictions, then stopped the server.",
+      "- Found `[redacted-source-project-root]/models/Qwen3-0.6B-Q4_K_M.gguf`.",
+      "- Served it through `llama-server` from neutral `/tmp/schema_drift_services` on port 18082, verified `/v1/models`, collected 200 requested-schema drift predictions and 200 canonical stable-schema predictions, then stopped the server.",
       "- Generated `data/qwen3_0_6b_drift_schema_t0_predictions_200.jsonl` and `data/qwen3_0_6b_stable_schema_t0_predictions_200.jsonl`.",
       "- Re-evaluated the three-model cohort into `reports/live_model_drift_comparison_3models_200.json`, `reports/live_model_stable_comparison_3models_200.json`, and `reports/live_model_rank_comparison_3models_200.json`.",
       "Three-model strict leaf accuracy:",
@@ -111,7 +111,7 @@
       "session_id": "omx-1776419984432-7ewpkf",
       "started_at": "2026-04-17T09:59:44.459Z",
       "ended_at": "2026-04-17T10:14:08.529Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 75129
     },
     "project_decision": {
@@ -126,7 +126,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-17T10:13:48.812096+00:00"
     },
     "decision_error": ""

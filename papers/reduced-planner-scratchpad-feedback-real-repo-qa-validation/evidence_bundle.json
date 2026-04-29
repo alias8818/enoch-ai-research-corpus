@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T22:56:39.477113+00:00"
   },
   "decision_action": "finalize_positive",
@@ -35,7 +35,7 @@
     "## 2026-04-20 real-repo validation completed",
     "- Acquired parent harness primitives into this project and added `scripts/real_repo_qa_feedback_benchmark.py`, a live OpenAI-compatible benchmark that builds QA/extraction labels from actual local repository files instead of synthetic templates.",
     "- Verification: `python3 -m py_compile scripts/real_repo_qa_feedback_benchmark.py scripts/scratchpad_context_benchmark.py` passed before live runs.",
-    "- Smoke: `results/real_repo_qwen7b_smoke` completed 4 cases / 24 live answer trials against `/home/jeremy/projects/llama.cpp` with Qwen2.5-7B GGUF and confirmed server/run cleanup.",
+    "- Smoke: `results/real_repo_qwen7b_smoke` completed 4 cases / 24 live answer trials against `[redacted-local-llama.cpp-checkout]` with Qwen2.5-7B GGUF and confirmed server/run cleanup.",
     "- Atomic real-repo run: `results/real_repo_qwen7b_reduced_planner` completed 24 cases across 8 source-file groups and 288 answer trials. The amortized 6-token planner matched vanilla 190-token and 260-token baselines with feedback budget 90, all-in prompt-like deltas -38.6% and -58.2% respectively; per-question planning also met the >=15% all-in savings gate on those baselines. At the tight 90/130 baselines, fixed planner overhead still prevented all-in savings despite equal or near-equal quality.",
     "- Hard paired-evidence run: `results/real_repo_qwen7b_pair_hard` completed 16 paired cases across 8 groups and 192 answer trials, requiring two source facts per answer. Amortized feedback improved equal-budget F1 by +24.7 points at 90 tokens and +10.2 points at 130 tokens, with evidence-recall gains of +62.5 and +65.6 points. Cost-normalized matches met the success gate: vanilla 190 F1 0.953 matched by amortized feedback 90 F1 0.969 with -18.9% all-in prompt-like tokens; vanilla 260 F1 0.974 matched by amortized feedback 130 F1 0.984 with -31.0% all-in tokens. Per-question feedback also met the gate for 190/260 baselines, though amortization was cheaper.",
     "- Performance/utilization: Qwen2.5-7B live answer calls averaged roughly 39-42 completion tok/s. Atomic run CPU mean ~5.56%, GPU mean ~95.8%, RSS ~0.75-2.07 GB, MemAvailable after run 115.6 GB. Pair run CPU mean ~5.55%, GPU mean ~95.7%, RSS ~0.76-1.81 GB, MemAvailable after run 115.9 GB. No helper `llama-server` process remained after completion.",
@@ -91,7 +91,7 @@
       "## 2026-04-20 real-repo validation completed",
       "- Acquired parent harness primitives into this project and added `scripts/real_repo_qa_feedback_benchmark.py`, a live OpenAI-compatible benchmark that builds QA/extraction labels from actual local repository files instead of synthetic templates.",
       "- Verification: `python3 -m py_compile scripts/real_repo_qa_feedback_benchmark.py scripts/scratchpad_context_benchmark.py` passed before live runs.",
-      "- Smoke: `results/real_repo_qwen7b_smoke` completed 4 cases / 24 live answer trials against `/home/jeremy/projects/llama.cpp` with Qwen2.5-7B GGUF and confirmed server/run cleanup.",
+      "- Smoke: `results/real_repo_qwen7b_smoke` completed 4 cases / 24 live answer trials against `[redacted-local-llama.cpp-checkout]` with Qwen2.5-7B GGUF and confirmed server/run cleanup.",
       "- Atomic real-repo run: `results/real_repo_qwen7b_reduced_planner` completed 24 cases across 8 source-file groups and 288 answer trials. The amortized 6-token planner matched vanilla 190-token and 260-token baselines with feedback budget 90, all-in prompt-like deltas -38.6% and -58.2% respectively; per-question planning also met the >=15% all-in savings gate on those baselines. At the tight 90/130 baselines, fixed planner overhead still prevented all-in savings despite equal or near-equal quality.",
       "- Hard paired-evidence run: `results/real_repo_qwen7b_pair_hard` completed 16 paired cases across 8 groups and 192 answer trials, requiring two source facts per answer. Amortized feedback improved equal-budget F1 by +24.7 points at 90 tokens and +10.2 points at 130 tokens, with evidence-recall gains of +62.5 and +65.6 points. Cost-normalized matches met the success gate: vanilla 190 F1 0.953 matched by amortized feedback 90 F1 0.969 with -18.9% all-in prompt-like tokens; vanilla 260 F1 0.974 matched by amortized feedback 130 F1 0.984 with -31.0% all-in tokens. Per-question feedback also met the gate for 190/260 baselines, though amortization was cheaper.",
       "- Performance/utilization: Qwen2.5-7B live answer calls averaged roughly 39-42 completion tok/s. Atomic run CPU mean ~5.56%, GPU mean ~95.8%, RSS ~0.75-2.07 GB, MemAvailable after run 115.6 GB. Pair run CPU mean ~5.55%, GPU mean ~95.7%, RSS ~0.76-1.81 GB, MemAvailable after run 115.9 GB. No helper `llama-server` process remained after completion.",
@@ -137,7 +137,7 @@
       "session_id": "omx-1776724501287-ndlv40",
       "started_at": "2026-04-20T22:35:01.313Z",
       "ended_at": "2026-04-20T22:57:00.253Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2386933
     },
     "project_decision": {
@@ -152,7 +152,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T22:56:39.477113+00:00"
     },
     "decision_error": ""

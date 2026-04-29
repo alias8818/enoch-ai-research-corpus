@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-17T03:43:04.325222+00:00"
   },
   "decision_action": "finalize_positive",
@@ -28,7 +28,7 @@
     "5. Stop any helper servers, run tests/smoke verification, and refresh the decision artifact.",
     "## Initial inspection",
     "- Branch directory started as a routing artifact with `.omx/` metadata and `prompts/` only; no benchmark code, data, or results existed locally.",
-    "- Parent project at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` contains the complete cache-reentry harness, 1k dataset, deterministic/serving baselines, model-backed shim results, and tests.",
+    "- Parent project at `[redacted-source-project-root]` contains the complete cache-reentry harness, 1k dataset, deterministic/serving baselines, model-backed shim results, and tests.",
     "## Production endpoint validation pass (2026-04-16)",
     "- Copied the parent benchmark harness, tests, 1k dataset, deterministic summary, and key parent Qwen0.5B comparison summaries into this branch so the routing artifact became executable locally.",
     "- Created a branch-local `.venv` and installed vLLM 0.19.0. The first vLLM import failed with CPU Torch (`ImportError: libtorch_cuda.so`), and the first CUDA repair to Torch 2.11.0+cu130 exposed an ABI mismatch (`undefined symbol: _ZN3c1013MessageLoggerC1EPKciib`). Pinning to vLLM's required CUDA Torch line (`torch==2.10.0+cu130`, `torchvision==0.25.0+cu130`, `torchaudio==2.10.0+cu130`) fixed the launch path.",
@@ -85,7 +85,7 @@
       "5. Stop any helper servers, run tests/smoke verification, and refresh the decision artifact.",
       "## Initial inspection",
       "- Branch directory started as a routing artifact with `.omx/` metadata and `prompts/` only; no benchmark code, data, or results existed locally.",
-      "- Parent project at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` contains the complete cache-reentry harness, 1k dataset, deterministic/serving baselines, model-backed shim results, and tests.",
+      "- Parent project at `[redacted-source-project-root]` contains the complete cache-reentry harness, 1k dataset, deterministic/serving baselines, model-backed shim results, and tests.",
       "## Production endpoint validation pass (2026-04-16)",
       "- Copied the parent benchmark harness, tests, 1k dataset, deterministic summary, and key parent Qwen0.5B comparison summaries into this branch so the routing artifact became executable locally.",
       "- Created a branch-local `.venv` and installed vLLM 0.19.0. The first vLLM import failed with CPU Torch (`ImportError: libtorch_cuda.so`), and the first CUDA repair to Torch 2.11.0+cu130 exposed an ABI mismatch (`undefined symbol: _ZN3c1013MessageLoggerC1EPKciib`). Pinning to vLLM's required CUDA Torch line (`torch==2.10.0+cu130`, `torchvision==0.25.0+cu130`, `torchaudio==2.10.0+cu130`) fixed the launch path.",
@@ -139,7 +139,7 @@
       "session_id": "omx-1776395742897-55e8rm",
       "started_at": "2026-04-17T03:15:42.922Z",
       "ended_at": "2026-04-17T03:43:17.925Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 8964
     },
     "project_decision": {
@@ -154,7 +154,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-17T03:43:04.325222+00:00"
     },
     "decision_error": ""

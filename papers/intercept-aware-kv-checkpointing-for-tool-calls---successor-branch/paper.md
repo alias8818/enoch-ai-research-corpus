@@ -155,7 +155,7 @@ The surrogate (non-model) timing backend correctly preserves all low one-step re
 - [x] **Benchmark matrix publicly specified.** The 12-scenario matrix is defined in `data/checkpoint_gate_matrix.csv` with per-case fields: case ID, weighted replay tokens, expected resume count, one-step flag, and expected admission/rejection label.
 - [x] **Admission policy formula documented.** The policy formula, threshold values, and one-step safeguard are specified in `docs/admission_policy.md`.
 - [x] **Evaluation scripts available.** All evaluator, sensitivity, timing, adapter, break-even, and margin-comparison scripts are present under `scripts/`.
-- [x] **Timing probe source available.** The C++ direct-state probe source is `scripts/libllama_state_probe.cpp`, built against the llama.cpp library at `/home/jeremy/projects/llama.cpp`.
+- [x] **Timing probe source available.** The C++ direct-state probe source is `scripts/libllama_state_probe.cpp`, built against the llama.cpp library at `[redacted-local-llama.cpp-checkout]`.
 - [x] **Model identified.** Phi-4-mini-instruct Q4_K_M GGUF from `lmstudio-community` on the local filesystem.
 - [x] **Result artifacts persisted.** All JSON and CSV result files are listed in the artifact manifest (Section: Referenced Artifacts).
 - [x] **Kill condition specified a priori.** The ≥90% one-step rejection, ≥80% high-replay admission, and positive-net admitted requirements were documented before evaluation.

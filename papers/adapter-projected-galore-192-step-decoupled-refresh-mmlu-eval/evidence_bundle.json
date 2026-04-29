@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-13T02:44:01.754416+00:00"
   },
   "decision_action": "finalize_positive",
@@ -26,13 +26,13 @@
   "recommended_next_action": "Finalize this branch; if more budget is allocated, repeat the same 192-step MMLU/cloze transfer eval across seeds 23 and 31 rather than spawning another generic successor.",
   "run_notes_tail": [
     "3. Matched LoRA 192-step checkpoint:",
-    "   - Command: `HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/hf_cpt_harness.py --model-id Qwen/Qwen3-0.6B --text-file artifacts/domain_multistep_corpus.txt --max-tokens 32768 --eval-tokens 4096 --eval-steps 8 --device cuda --torch-dtype bfloat16 --steps 192 --batch-size 1 --seq-len 64 --lr 3e-4 --weight-decay 0.0 --lora-rank 16 --lora-alpha 32.0 --seed 17 --mode lora --checkpoint-dir artifacts/qwen_192step_decoupled_checkpoints --out artifacts/qwen_192step_lora_train_metrics.json`",
+    "   - Command: `HF_HOME=[redacted-source-project-root]/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/hf_cpt_harness.py --model-id Qwen/Qwen3-0.6B --text-file artifacts/domain_multistep_corpus.txt --max-tokens 32768 --eval-tokens 4096 --eval-steps 8 --device cuda --torch-dtype bfloat16 --steps 192 --batch-size 1 --seq-len 64 --lr 3e-4 --weight-decay 0.0 --lora-rank 16 --lora-alpha 32.0 --seed 17 --mode lora --checkpoint-dir artifacts/qwen_192step_decoupled_checkpoints --out artifacts/qwen_192step_lora_train_metrics.json`",
     "   - Result: completed and wrote LoRA checkpoint/metrics.",
     "4. Adapter-projected LoRA-GaLore 192-step decoupled-refresh checkpoint:",
     "   - Command: same harness with `--mode lora_galore --rank-start 8 --rank-end 4 --rank-schedule-mode staircase --staircase-rungs 4 --update-gap 16 --projection-method lowrank --projection-oversampling 2 --projection-niter 0 --no-refresh-on-rank-change --out artifacts/qwen_192step_norefresh_gap16_train_metrics.json`",
     "   - Result: completed and wrote adapter-projected checkpoint/metrics.",
     "5. MMLU/cloze eval:",
-    "   - Command: `HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/domain_cloze_eval.py --model-id Qwen/Qwen3-0.6B --examples-json artifacts/mmlu_validation_256_cloze_examples.json --checkpoints artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt --include-base --device cuda --torch-dtype bfloat16 --out artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json`",
+    "   - Command: `HF_HOME=[redacted-source-project-root]/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/domain_cloze_eval.py --model-id Qwen/Qwen3-0.6B --examples-json artifacts/mmlu_validation_256_cloze_examples.json --checkpoints artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt --include-base --device cuda --torch-dtype bfloat16 --out artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json`",
     "   - Result: completed base + both checkpoints over 256 examples.",
     "6. Artifact validation and final regression suite:",
     "   - Command: `python3 -m json.tool artifacts/qwen_192step_decoupled_mmlu256_summary.json >/dev/null && PYTHONPATH=src:. .venv/bin/python -m pytest -q`",
@@ -95,13 +95,13 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "3. Matched LoRA 192-step checkpoint:",
-      "   - Command: `HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/hf_cpt_harness.py --model-id Qwen/Qwen3-0.6B --text-file artifacts/domain_multistep_corpus.txt --max-tokens 32768 --eval-tokens 4096 --eval-steps 8 --device cuda --torch-dtype bfloat16 --steps 192 --batch-size 1 --seq-len 64 --lr 3e-4 --weight-decay 0.0 --lora-rank 16 --lora-alpha 32.0 --seed 17 --mode lora --checkpoint-dir artifacts/qwen_192step_decoupled_checkpoints --out artifacts/qwen_192step_lora_train_metrics.json`",
+      "   - Command: `HF_HOME=[redacted-source-project-root]/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/hf_cpt_harness.py --model-id Qwen/Qwen3-0.6B --text-file artifacts/domain_multistep_corpus.txt --max-tokens 32768 --eval-tokens 4096 --eval-steps 8 --device cuda --torch-dtype bfloat16 --steps 192 --batch-size 1 --seq-len 64 --lr 3e-4 --weight-decay 0.0 --lora-rank 16 --lora-alpha 32.0 --seed 17 --mode lora --checkpoint-dir artifacts/qwen_192step_decoupled_checkpoints --out artifacts/qwen_192step_lora_train_metrics.json`",
       "   - Result: completed and wrote LoRA checkpoint/metrics.",
       "4. Adapter-projected LoRA-GaLore 192-step decoupled-refresh checkpoint:",
       "   - Command: same harness with `--mode lora_galore --rank-start 8 --rank-end 4 --rank-schedule-mode staircase --staircase-rungs 4 --update-gap 16 --projection-method lowrank --projection-oversampling 2 --projection-niter 0 --no-refresh-on-rank-change --out artifacts/qwen_192step_norefresh_gap16_train_metrics.json`",
       "   - Result: completed and wrote adapter-projected checkpoint/metrics.",
       "5. MMLU/cloze eval:",
-      "   - Command: `HF_HOME=/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/domain_cloze_eval.py --model-id Qwen/Qwen3-0.6B --examples-json artifacts/mmlu_validation_256_cloze_examples.json --checkpoints artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt --include-base --device cuda --torch-dtype bfloat16 --out artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json`",
+      "   - Command: `HF_HOME=[redacted-source-project-root]/.hf_cache HF_HUB_DISABLE_XET=1 PYTHONPATH=src:. .venv/bin/python scripts/domain_cloze_eval.py --model-id Qwen/Qwen3-0.6B --examples-json artifacts/mmlu_validation_256_cloze_examples.json --checkpoints artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt --include-base --device cuda --torch-dtype bfloat16 --out artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json`",
       "   - Result: completed base + both checkpoints over 256 examples.",
       "6. Artifact validation and final regression suite:",
       "   - Command: `python3 -m json.tool artifacts/qwen_192step_decoupled_mmlu256_summary.json >/dev/null && PYTHONPATH=src:. .venv/bin/python -m pytest -q`",
@@ -163,7 +163,7 @@
       "session_id": "omx-1776047962801-2rl5r9",
       "started_at": "2026-04-13T02:39:22.822Z",
       "ended_at": "2026-04-13T02:44:21.725Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2747332
     },
     "project_decision": {
@@ -178,7 +178,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-13T02:44:01.754416+00:00"
     },
     "decision_error": ""

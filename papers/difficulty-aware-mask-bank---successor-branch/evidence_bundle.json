@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-13T03:16:01.586742Z"
   },
   "decision_action": "finalize_positive",
@@ -161,7 +161,7 @@
       "session_id": "omx-1776049934975-6kghxn",
       "started_at": "2026-04-13T03:12:14.996Z",
       "ended_at": "2026-04-13T03:16:18.917Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2762782
     },
     "project_decision": {
@@ -176,7 +176,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-13T03:16:01.586742Z"
     },
     "decision_error": ""

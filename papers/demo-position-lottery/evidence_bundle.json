@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-17T18:30:25.434171+00:00"
   },
   "decision_action": "finalize_positive",
@@ -125,7 +125,7 @@
       "session_id": "omx-1776450218266-ibonfb",
       "started_at": "2026-04-17T18:23:38.288Z",
       "ended_at": "2026-04-17T18:30:43.237Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 261985
     },
     "project_decision": {
@@ -140,7 +140,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-17T18:30:25.434171+00:00"
     },
     "decision_error": ""

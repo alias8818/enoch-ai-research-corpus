@@ -191,7 +191,7 @@ The margin is narrow: the winning configuration earns savings primarily by compr
 | Deterministic offline benchmark reproducible | Yes (`PYTHONPATH=src python scripts/run_benchmark.py --cases-per-task 40`) |
 | Live benchmark scripts available | Yes (`run_live_inference_benchmark.py`, `run_semireal_live_benchmark.py`) |
 | Model files specified | Yes (Phi-4-mini-instruct-Q4_K_M.gguf, Qwen2.5-7B-Instruct-Q4_K_M.gguf) |
-| llama.cpp build path specified | Yes (`/mnt/usb/home/jeremy/projects/llama.cpp/build/bin/llama-server`) |
+| llama.cpp build path specified | Yes (`llama-server`) |
 | Server launch parameters documented | Yes (`--host 127.0.0.1 --port 18080 -c 4096 -ngl 0`) |
 | Result CSV/JSON artifacts saved | Yes (see Referenced Artifacts) |
 | Random seeds or determinism guarantee | Synthetic benchmark is deterministic; live inference depends on model sampling |

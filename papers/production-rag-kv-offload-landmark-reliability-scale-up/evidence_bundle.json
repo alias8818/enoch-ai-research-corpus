@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T11:27:09.132496+00:00"
   },
   "decision_action": "finalize_positive",
@@ -29,7 +29,7 @@
     "Finalize this routing branch without a new benchmark if it has no concrete production RAG or KV-offload serving stack target, workload, concurrency sweep, or telemetry plan beyond the optional parent follow-on. Only branch or continue if there is a materially specified implementation target and benchmark plan.",
     "## Directory review",
     "The current branch initially contained only OMX metadata/log state and `prompts/initial.md` / `prompts/resume.md`; there were no benchmark scripts, datasets, production serving configs, or executable RAG/KV-offload stack definitions in this directory.",
-    "The parent project at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` contains durable benchmark artifacts for the underlying model-backed landmark reliability validation. I copied the key evidence into this branch under `evidence/`:",
+    "The parent project at `[redacted-source-project-root]` contains durable benchmark artifacts for the underlying model-backed landmark reliability validation. I copied the key evidence into this branch under `evidence/`:",
     "- `evidence/parent_model_backed/model_backed_summary.json`",
     "- `evidence/parent_model_backed/model_backed_report_qwen7b_per8.md`",
     "- `evidence/parent_model_backed/model_backed_metrics_qwen7b_per8.json`",
@@ -72,7 +72,7 @@
       "Finalize this routing branch without a new benchmark if it has no concrete production RAG or KV-offload serving stack target, workload, concurrency sweep, or telemetry plan beyond the optional parent follow-on. Only branch or continue if there is a materially specified implementation target and benchmark plan.",
       "## Directory review",
       "The current branch initially contained only OMX metadata/log state and `prompts/initial.md` / `prompts/resume.md`; there were no benchmark scripts, datasets, production serving configs, or executable RAG/KV-offload stack definitions in this directory.",
-      "The parent project at `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted` contains durable benchmark artifacts for the underlying model-backed landmark reliability validation. I copied the key evidence into this branch under `evidence/`:",
+      "The parent project at `[redacted-source-project-root]` contains durable benchmark artifacts for the underlying model-backed landmark reliability validation. I copied the key evidence into this branch under `evidence/`:",
       "- `evidence/parent_model_backed/model_backed_summary.json`",
       "- `evidence/parent_model_backed/model_backed_report_qwen7b_per8.md`",
       "- `evidence/parent_model_backed/model_backed_metrics_qwen7b_per8.json`",
@@ -111,7 +111,7 @@
       "session_id": "omx-1776684351467-lje62u",
       "started_at": "2026-04-20T11:25:51.492Z",
       "ended_at": "2026-04-20T11:27:28.213Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 2011648
     },
     "project_decision": {
@@ -126,7 +126,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T11:27:09.132496+00:00"
     },
     "decision_error": ""

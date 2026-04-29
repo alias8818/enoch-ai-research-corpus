@@ -145,7 +145,7 @@ The low-sharing scenario on Qwen2.5-0.5B showed an 8.68% p95 latency regression 
 |---|---|---|
 | Code available | Present in project | `scripts/run_llama_validation.py`; `python3 -m py_compile` passed |
 | Model files specified | Yes | SmolLM2-135M-Instruct-Q4_K_M.gguf, Qwen2.5-0.5B-Instruct-Q4_K_M.gguf (symlinks to cached files) |
-| Server binary specified | Yes | `/home/jeremy/projects/llama.cpp/build/bin/llama-server` |
+| Server binary specified | Yes | `llama-server` |
 | Server flags documented | Yes | `--metrics`, `--slots`, `--slot-prompt-similarity 0.55` |
 | Scenario parameters documented | Yes | 12 requests/scenario, max_tokens=10, wait=35 ms |
 | Raw result files preserved | Yes | See Referenced Artifacts |

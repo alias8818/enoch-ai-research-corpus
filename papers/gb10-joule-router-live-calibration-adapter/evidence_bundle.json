@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-18T01:23:38.559251+00:00"
   },
   "decision_action": "finalize_positive",
@@ -41,7 +41,7 @@
     "- If no vLLM/llama.cpp endpoint is already live, run a bounded project-local OpenAI-compatible shim or documented setup attempt, verify `/models` and `/chat/completions`, then rerun the adapter with `--probe --live`.",
     "- Persist live/probe artifacts, run tests, and update the decision artifact with the observed evidence.",
     "## 2026-04-17 live GB10 llama.cpp shadow-routing execution",
-    "- Found reusable GB10-capable llama.cpp builds at `/home/jeremy/projects/nemotron-super/llama.cpp/build/bin/llama-server` and cached GGUF models including `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/models/Qwen3-0.6B-Q4_K_M.gguf`.",
+    "- Found reusable GB10-capable llama.cpp builds at `llama-server` and cached GGUF models including `[redacted-source-project-root]/models/Qwen3-0.6B-Q4_K_M.gguf`.",
     "- Started `llama-server` from neutral directory `/tmp/gb10_joule_router_service` on `127.0.0.1:18240` with GPU offload (`-ngl 99`) and model alias `Qwen3-0.6B-Q4_K_M`; verified it reported CUDA device `NVIDIA GB10` and served OpenAI-compatible `/v1/models` plus `/v1/chat/completions`.",
     "- Ran live adapter shadow benchmark: `results/gb10_live_llama_cpp_shadow.json`. Primary live llama.cpp endpoint completed all 3 sample chat requests; actual latencies were about 0.324 s, 0.509 s, and 0.471 s. A non-live calibrated reference endpoint was intentionally present and probe-gated as unavailable.",
     "- Ran a second live shadow-policy validation with two probe-passing endpoint specs backed by the same live llama.cpp server but different quality metadata: `results/gb10_live_llama_cpp_quality_shadow.json`. Both specs passed `/v1/models` and `/v1/chat/completions`; all 3 live requests succeeded; the router shadow policy changed route on 2/3 requests (66.7%) when quality metadata made the primary insufficient.",
@@ -98,7 +98,7 @@
       "- If no vLLM/llama.cpp endpoint is already live, run a bounded project-local OpenAI-compatible shim or documented setup attempt, verify `/models` and `/chat/completions`, then rerun the adapter with `--probe --live`.",
       "- Persist live/probe artifacts, run tests, and update the decision artifact with the observed evidence.",
       "## 2026-04-17 live GB10 llama.cpp shadow-routing execution",
-      "- Found reusable GB10-capable llama.cpp builds at `/home/jeremy/projects/nemotron-super/llama.cpp/build/bin/llama-server` and cached GGUF models including `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/models/Qwen3-0.6B-Q4_K_M.gguf`.",
+      "- Found reusable GB10-capable llama.cpp builds at `llama-server` and cached GGUF models including `[redacted-source-project-root]/models/Qwen3-0.6B-Q4_K_M.gguf`.",
       "- Started `llama-server` from neutral directory `/tmp/gb10_joule_router_service` on `127.0.0.1:18240` with GPU offload (`-ngl 99`) and model alias `Qwen3-0.6B-Q4_K_M`; verified it reported CUDA device `NVIDIA GB10` and served OpenAI-compatible `/v1/models` plus `/v1/chat/completions`.",
       "- Ran live adapter shadow benchmark: `results/gb10_live_llama_cpp_shadow.json`. Primary live llama.cpp endpoint completed all 3 sample chat requests; actual latencies were about 0.324 s, 0.509 s, and 0.471 s. A non-live calibrated reference endpoint was intentionally present and probe-gated as unavailable.",
       "- Ran a second live shadow-policy validation with two probe-passing endpoint specs backed by the same live llama.cpp server but different quality metadata: `results/gb10_live_llama_cpp_quality_shadow.json`. Both specs passed `/v1/models` and `/v1/chat/completions`; all 3 live requests succeeded; the router shadow policy changed route on 2/3 requests (66.7%) when quality metadata made the primary insufficient.",
@@ -139,7 +139,7 @@
       "session_id": "omx-1776475215037-vaxf1o",
       "started_at": "2026-04-18T01:20:15.058Z",
       "ended_at": "2026-04-18T01:24:16.830Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 394456
     },
     "project_decision": {
@@ -154,7 +154,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-18T01:23:38.559251+00:00"
     },
     "decision_error": ""

@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-19T04:42:26.192699+00:00"
   },
   "decision_action": "finalize_positive",
@@ -26,7 +26,7 @@
   "recommended_next_action": "Finalize this branch positive and use the schema-constrained Qwen/Phi evidence as the baseline for any future larger-corpus replication.",
   "run_notes_tail": [
     "### Qwen2.5 real-reader attempt",
-    "- Served cached `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` with the same llama.cpp CUDA stack, verified `/v1/models`, and stopped the helper server before yielding.",
+    "- Served cached `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` with the same llama.cpp CUDA stack, verified `/v1/models`, and stopped the helper server before yielding.",
     "- Qwen produced malformed/degenerate JSON-like text under both prompt-only and `response_format=json_object` attempts. A simple direct sanity check also returned malformed JSON (`{\"answer4\": ...}`), so this is currently a reader/serving-stack issue rather than a packing-retention issue.",
     "- Full result: `results/real_corpus_rowid_citation_results_qwen.json`; summary: `results/real_corpus_rowid_citation_summary_qwen.md`; metrics: `results/qwen_real_corpus_benchmark_metrics.json`.",
     "- Despite table-aware retaining 0.875 row recall, Qwen scored 0.000 schema validity and 0.000 answer+citation across budgets; this means the project has not yet satisfied the \"two stable instruction readers\" part of the target.",
@@ -36,7 +36,7 @@
     "- The branch is not ready to finalize positive because the second cached instruction reader is currently unstable/malformed on this schema task. The next same-project step is to stabilize a second reader (different cached model, Qwen serving flags/build, grammar-constrained llama.cpp mode, or a Transformers/vLLM path) without changing the benchmark science.",
     "## 2026-04-19 Qwen schema-constrained rerun",
     "- Execution plan update: stabilize the second instruction reader without changing the WikiSQL fixture or scoring; first verify simple JSON under a constrained serving path, then rerun the same 8-case / 3-budget benchmark and record utilization/latency evidence.",
-    "- Launched cached `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` from neutral `/tmp/enoch_services/...` using `/home/jeremy/projects/nemotron-super/llama.cpp/build/bin/llama-server` with `--chat-template chatml` plus a global `--json-schema-file` grammar for `{answer: string, citations: string[]}`.",
+    "- Launched cached `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` from neutral `/tmp/enoch_services/...` using `llama-server` with `--chat-template chatml` plus a global `--json-schema-file` grammar for `{answer: string, citations: string[]}`.",
     "- Simple sanity artifact `results/qwen_schema_simple_test.json` returned valid JSON (`{\"answer\": \"4\", \"citations\": []}`), confirming the malformed-json failure was serving/decoding configuration rather than inherent model inability.",
     "- Full rerun artifacts landed:",
     "  - `results/real_corpus_rowid_citation_results_qwen_schema.json`",
@@ -95,7 +95,7 @@
     "gate_state": "wake_ready",
     "run_notes_tail": [
       "### Qwen2.5 real-reader attempt",
-      "- Served cached `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` with the same llama.cpp CUDA stack, verified `/v1/models`, and stopped the helper server before yielding.",
+      "- Served cached `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` with the same llama.cpp CUDA stack, verified `/v1/models`, and stopped the helper server before yielding.",
       "- Qwen produced malformed/degenerate JSON-like text under both prompt-only and `response_format=json_object` attempts. A simple direct sanity check also returned malformed JSON (`{\"answer4\": ...}`), so this is currently a reader/serving-stack issue rather than a packing-retention issue.",
       "- Full result: `results/real_corpus_rowid_citation_results_qwen.json`; summary: `results/real_corpus_rowid_citation_summary_qwen.md`; metrics: `results/qwen_real_corpus_benchmark_metrics.json`.",
       "- Despite table-aware retaining 0.875 row recall, Qwen scored 0.000 schema validity and 0.000 answer+citation across budgets; this means the project has not yet satisfied the \"two stable instruction readers\" part of the target.",
@@ -105,7 +105,7 @@
       "- The branch is not ready to finalize positive because the second cached instruction reader is currently unstable/malformed on this schema task. The next same-project step is to stabilize a second reader (different cached model, Qwen serving flags/build, grammar-constrained llama.cpp mode, or a Transformers/vLLM path) without changing the benchmark science.",
       "## 2026-04-19 Qwen schema-constrained rerun",
       "- Execution plan update: stabilize the second instruction reader without changing the WikiSQL fixture or scoring; first verify simple JSON under a constrained serving path, then rerun the same 8-case / 3-budget benchmark and record utilization/latency evidence.",
-      "- Launched cached `/home/jeremy/.lmstudio/models/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` from neutral `/tmp/enoch_services/...` using `/home/jeremy/projects/nemotron-super/llama.cpp/build/bin/llama-server` with `--chat-template chatml` plus a global `--json-schema-file` grammar for `{answer: string, citations: string[]}`.",
+      "- Launched cached `[redacted-local-model-cache]/bartowski/Qwen2.5-7B-Instruct-GGUF/Qwen2.5-7B-Instruct-Q4_K_M.gguf` from neutral `/tmp/enoch_services/...` using `llama-server` with `--chat-template chatml` plus a global `--json-schema-file` grammar for `{answer: string, citations: string[]}`.",
       "- Simple sanity artifact `results/qwen_schema_simple_test.json` returned valid JSON (`{\"answer\": \"4\", \"citations\": []}`), confirming the malformed-json failure was serving/decoding configuration rather than inherent model inability.",
       "- Full rerun artifacts landed:",
       "  - `results/real_corpus_rowid_citation_results_qwen_schema.json`",
@@ -163,7 +163,7 @@
       "session_id": "omx-1776573546079-1uykex",
       "started_at": "2026-04-19T04:39:06.105Z",
       "ended_at": "2026-04-19T04:42:52.323Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1002148
     },
     "project_decision": {
@@ -178,7 +178,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-19T04:42:26.192699+00:00"
     },
     "decision_error": ""

@@ -42,7 +42,7 @@ Two distinct serving paths were prepared:
 
 **vLLM path.** Queue artifacts were generated for the cached model `Qwen/Qwen2.5-3B-Instruct` (snapshot `aa8e72537993ba99e69dfaafa59ed015b17504d1`). A project-local virtual environment (`.venv`) was created and populated with `vllm`, `transformers`, and `torch` via `uv pip install`. This path was dependency-ready but was not separately started, because the branch success criterion was already satisfied by the llama.cpp path.
 
-**llama.cpp path.** Queue artifacts and an autonomous child project (`autonomous_llama_cpp_endpoint_project/`) were generated for the cached GGUF model `Phi-4-mini-instruct-Q4_K_M.gguf` (from `lmstudio-community`), served via `/mnt/usb/home/jeremy/projects/llama.cpp/build/bin/llama-server`. This path was executed and validated.
+**llama.cpp path.** Queue artifacts and an autonomous child project (`autonomous_llama_cpp_endpoint_project/`) were generated for the cached GGUF model `Phi-4-mini-instruct-Q4_K_M.gguf` (from `lmstudio-community`), served via `llama-server`. This path was executed and validated.
 
 ### 2.4 Validation Protocol
 
@@ -114,8 +114,8 @@ These payloads are structurally complete but have not been consumed by a live wa
 | Item | Status |
 |------|--------|
 | Model identifier and source specified | Yes: `lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` |
-| Model cache path recorded | Yes: `/mnt/usb/home/jeremy/.lmstudio/models/...` |
-| Server binary path recorded | Yes: `/mnt/usb/home/jeremy/projects/llama.cpp/build/bin/llama-server` |
+| Model cache path recorded | Yes: `[redacted-local-model-cache]/...` |
+| Server binary path recorded | Yes: `llama-server` |
 | Endpoint manifest preserved | Yes: `.omx/endpoints/wake-gate-llama-cpp-cached.endpoint.json` and `artifacts/wake_gate_integration/manual/cached_llama_cpp_endpoint.json` |
 | Contract probe result preserved | Yes: `artifacts/wake_gate_integration/manual/llama_cpp_probe.json` |
 | Service shutdown confirmed | Yes: `artifacts/wake_gate_integration/manual/llama_cpp_status_after_stop.json` (`alive=false`) |

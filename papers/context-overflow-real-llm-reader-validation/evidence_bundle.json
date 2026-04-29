@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-18T06:43:52.392903+00:00"
   },
   "decision_action": "finalize_positive",
@@ -27,7 +27,7 @@
   "run_notes_tail": [
     "- Verified with `.venv/bin/python -m py_compile src/real_llm_reader_validation.py src/context_overflow_benchmark.py`.",
     "## 2026-04-18 real-reader smoke/calibration results",
-    "- Local endpoint scan found no usable OpenAI-compatible `/v1/models` + `/chat/completions` server; proceeded with cached Hugging Face models under `/home/jeremy/.cache/huggingface/hub`.",
+    "- Local endpoint scan found no usable OpenAI-compatible `/v1/models` + `/chat/completions` server; proceeded with cached Hugging Face models under `[redacted-local-hf-cache]/hub`.",
     "- Qwen2.5-0.5B-Instruct smoke on 20 stratified examples: 20/20 exact accuracy, 4.22 samples/sec, p50 0.205s, p95 0.337s, ~15.46k total model tokens/sec.",
     "- Qwen2.5-0.5B-Instruct calibrated 100-example stratified pilot: 88/100 exact accuracy, parseable rate 0.89, p50 0.205s, p95 0.339s, 4.56 samples/sec, ~17.17k total model tokens/sec.",
     "- 0.5B same-subset comparison: tied sklearn TF-IDF at 0.88, below lexical retriever 0.92 and boundary_probe_4096 0.95, above truncate_4096 0.85 and entity-similarity decoy retriever 0.0. Failures were mostly unparseable technical-kernel strings from natural distractor text plus one wrong ANS decoy.",
@@ -86,7 +86,7 @@
     "run_notes_tail": [
       "- Verified with `.venv/bin/python -m py_compile src/real_llm_reader_validation.py src/context_overflow_benchmark.py`.",
       "## 2026-04-18 real-reader smoke/calibration results",
-      "- Local endpoint scan found no usable OpenAI-compatible `/v1/models` + `/chat/completions` server; proceeded with cached Hugging Face models under `/home/jeremy/.cache/huggingface/hub`.",
+      "- Local endpoint scan found no usable OpenAI-compatible `/v1/models` + `/chat/completions` server; proceeded with cached Hugging Face models under `[redacted-local-hf-cache]/hub`.",
       "- Qwen2.5-0.5B-Instruct smoke on 20 stratified examples: 20/20 exact accuracy, 4.22 samples/sec, p50 0.205s, p95 0.337s, ~15.46k total model tokens/sec.",
       "- Qwen2.5-0.5B-Instruct calibrated 100-example stratified pilot: 88/100 exact accuracy, parseable rate 0.89, p50 0.205s, p95 0.339s, 4.56 samples/sec, ~17.17k total model tokens/sec.",
       "- 0.5B same-subset comparison: tied sklearn TF-IDF at 0.88, below lexical retriever 0.92 and boundary_probe_4096 0.95, above truncate_4096 0.85 and entity-similarity decoy retriever 0.0. Failures were mostly unparseable technical-kernel strings from natural distractor text plus one wrong ANS decoy.",
@@ -143,7 +143,7 @@
       "session_id": "omx-1776493333211-ajez7p",
       "started_at": "2026-04-18T06:22:13.237Z",
       "ended_at": "2026-04-18T06:44:08.939Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 523246
     },
     "project_decision": {
@@ -158,7 +158,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-18T06:43:52.392903+00:00"
     },
     "decision_error": ""

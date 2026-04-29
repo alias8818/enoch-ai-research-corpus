@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-20T00:58:15.302982+00:00"
   },
   "decision_action": "finalize_positive",
@@ -43,9 +43,9 @@
     "- Failure shape: the un-packed baseline failed 4/8 examples, all caused by long full-context prompts being truncated to 8192 tokens before the canonical JSON; the packed policy had zero failures and zero truncation.",
     "- Helper servers were launched from `/tmp` and terminated after each policy. A post-run process check found no remaining `openai_prefill_packing_server.py` benchmark server; only unrelated pre-existing uvicorn services were present.",
     "## Verification (server-side generation turn)",
-    "- `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python -m py_compile scripts/openai_prefill_packing_server.py scripts/benchmark_server_prefill_generation.py` passed.",
-    "- Smoke: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 1 --max-tokens 128 --out-dir results/server_prefill_generation_smoke --startup-timeout 420 --request-timeout 240` completed.",
-    "- Calibrated bounded generation benchmark: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 8 --max-tokens 128 --out-dir results/server_prefill_generation --startup-timeout 420 --request-timeout 240` completed.",
+    "- `[redacted-source-project-root]/.venv/bin/python -m py_compile scripts/openai_prefill_packing_server.py scripts/benchmark_server_prefill_generation.py` passed.",
+    "- Smoke: `[redacted-source-project-root]/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 1 --max-tokens 128 --out-dir results/server_prefill_generation_smoke --startup-timeout 420 --request-timeout 240` completed.",
+    "- Calibrated bounded generation benchmark: `[redacted-source-project-root]/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 8 --max-tokens 128 --out-dir results/server_prefill_generation --startup-timeout 420 --request-timeout 240` completed.",
     "- `python3 -m py_compile scripts/*.py artifacts_parent/scripts/*.py artifacts_parent/src/*.py` passed.",
     "- `PYTHONPATH=artifacts_parent/src python3 -m unittest discover -s artifacts_parent/tests -v` passed 4 tests.",
     "## Final conclusion",
@@ -102,9 +102,9 @@
       "- Failure shape: the un-packed baseline failed 4/8 examples, all caused by long full-context prompts being truncated to 8192 tokens before the canonical JSON; the packed policy had zero failures and zero truncation.",
       "- Helper servers were launched from `/tmp` and terminated after each policy. A post-run process check found no remaining `openai_prefill_packing_server.py` benchmark server; only unrelated pre-existing uvicorn services were present.",
       "## Verification (server-side generation turn)",
-      "- `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python -m py_compile scripts/openai_prefill_packing_server.py scripts/benchmark_server_prefill_generation.py` passed.",
-      "- Smoke: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 1 --max-tokens 128 --out-dir results/server_prefill_generation_smoke --startup-timeout 420 --request-timeout 240` completed.",
-      "- Calibrated bounded generation benchmark: `/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 8 --max-tokens 128 --out-dir results/server_prefill_generation --startup-timeout 420 --request-timeout 240` completed.",
+      "- `[redacted-source-project-root]/.venv/bin/python -m py_compile scripts/openai_prefill_packing_server.py scripts/benchmark_server_prefill_generation.py` passed.",
+      "- Smoke: `[redacted-source-project-root]/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 1 --max-tokens 128 --out-dir results/server_prefill_generation_smoke --startup-timeout 420 --request-timeout 240` completed.",
+      "- Calibrated bounded generation benchmark: `[redacted-source-project-root]/.venv/bin/python scripts/benchmark_server_prefill_generation.py --limit 8 --max-tokens 128 --out-dir results/server_prefill_generation --startup-timeout 420 --request-timeout 240` completed.",
       "- `python3 -m py_compile scripts/*.py artifacts_parent/scripts/*.py artifacts_parent/src/*.py` passed.",
       "- `PYTHONPATH=artifacts_parent/src python3 -m unittest discover -s artifacts_parent/tests -v` passed 4 tests.",
       "## Final conclusion",
@@ -143,7 +143,7 @@
       "session_id": "omx-1776646369148-xv8ovk",
       "started_at": "2026-04-20T00:52:49.174Z",
       "ended_at": "2026-04-20T00:58:32.895Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 1658521
     },
     "project_decision": {
@@ -158,7 +158,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-20T00:58:15.302982+00:00"
     },
     "decision_error": ""

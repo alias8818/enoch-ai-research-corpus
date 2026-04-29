@@ -71,7 +71,7 @@ A local OpenAI-compatible shim (`scripts/openai_transformers_shim.py`) was imple
 The evaluated model is **Qwen2.5-0.5B-Instruct** (0.5 billion parameters), loaded from:
 
 ```
-/home/jeremy/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775
+[redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775
 ```
 
 The shim was launched on `127.0.0.1:18000` and verified functional before benchmark execution. Runtime dependencies included PyTorch with CUDA 13.0 support, Transformers, Accelerate, FastAPI, and uvicorn.

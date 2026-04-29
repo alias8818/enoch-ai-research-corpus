@@ -16,7 +16,7 @@
     "branch_project_name": null,
     "branch_reason": null,
     "decision_source": "codex_turn",
-    "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
     "updated_at": "2026-04-19T03:28:43.947735+00:00"
   },
   "decision_action": "finalize_positive",
@@ -25,7 +25,7 @@
   "confidence": "medium",
   "recommended_next_action": "Integrate a guarded shared-prefix scheduler into a production server path with a no-wait cold-start guard and rerun a larger quality-scored workload.",
   "run_notes_tail": [
-    "- Used existing `/home/jeremy/projects/llama.cpp/build/bin/llama-server` with `--metrics`, `--slots`, and `--slot-prompt-similarity 0.55` so overlapping prompts can use llama.cpp's real prompt/KV slot reuse path.",
+    "- Used existing `llama-server` with `--metrics`, `--slots`, and `--slot-prompt-similarity 0.55` so overlapping prompts can use llama.cpp's real prompt/KV slot reuse path.",
     "- Verified `/v1/models` before benchmarks in the harness.",
     "- Server logs in each result directory show prompt-cache activity, including `found better prompt with f_keep = 0.964, sim = 1.000` and prompt evals of 1 token for reused prompts.",
     "- No helper `llama-server` process remained after the run.",
@@ -83,7 +83,7 @@
     "current_activity": "wake_ready",
     "gate_state": "wake_ready",
     "run_notes_tail": [
-      "- Used existing `/home/jeremy/projects/llama.cpp/build/bin/llama-server` with `--metrics`, `--slots`, and `--slot-prompt-similarity 0.55` so overlapping prompts can use llama.cpp's real prompt/KV slot reuse path.",
+      "- Used existing `llama-server` with `--metrics`, `--slots`, and `--slot-prompt-similarity 0.55` so overlapping prompts can use llama.cpp's real prompt/KV slot reuse path.",
       "- Verified `/v1/models` before benchmarks in the harness.",
       "- Server logs in each result directory show prompt-cache activity, including `found better prompt with f_keep = 0.964, sim = 1.000` and prompt evals of 1 token for reused prompts.",
       "- No helper `llama-server` process remained after the run.",
@@ -141,7 +141,7 @@
       "session_id": "omx-1776568997582-41xwfm",
       "started_at": "2026-04-19T03:23:17.608Z",
       "ended_at": "2026-04-19T03:29:11.944Z",
-      "cwd": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted",
+      "cwd": "[redacted-source-project-root]",
       "pid": 974126
     },
     "project_decision": {
@@ -156,7 +156,7 @@
       "branch_project_name": null,
       "branch_reason": null,
       "decision_source": "codex_turn",
-      "source_path": "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/source-record-redacted/.omx/project_decision.json",
+      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
       "updated_at": "2026-04-19T03:28:43.947735+00:00"
     },
     "decision_error": ""

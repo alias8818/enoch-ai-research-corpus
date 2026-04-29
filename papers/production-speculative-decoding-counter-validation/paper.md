@@ -111,7 +111,7 @@ The 3-task, 9-row smoke test at 2 slots / concurrency 2 produced the same rankin
 
 ### 3.5 vLLM Attempt
 
-The local vLLM checkout at `/home/jeremy/projects/vllm` failed to serve due to an ABI mismatch between the compiled vLLM extension (`vllm/_C.abi3.so`) and the installed PyTorch version. This negative result is recorded: vLLM-based validation was not achieved in this run.
+The local vLLM checkout at `[redacted-local-vllm-checkout]` failed to serve due to an ABI mismatch between the compiled vLLM extension (`vllm/_C.abi3.so`) and the installed PyTorch version. This negative result is recorded: vLLM-based validation was not achieved in this run.
 
 ---
 

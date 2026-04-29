@@ -631,7 +631,7 @@
       "words": 2354
     },
     {
-      "bytes": 13945,
+      "bytes": 13939,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -686,7 +686,7 @@
       "words": 3019
     },
     {
-      "bytes": 13155,
+      "bytes": 13141,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -694,7 +694,7 @@
       "paper_path": "papers/human-checked-acceptance-trace-validation/paper.md",
       "passes": true,
       "slug": "human-checked-acceptance-trace-validation",
-      "words": 1817
+      "words": 1815
     },
     {
       "bytes": 12677,
@@ -708,7 +708,7 @@
       "words": 1851
     },
     {
-      "bytes": 19227,
+      "bytes": 19231,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -774,7 +774,7 @@
       "words": 2117
     },
     {
-      "bytes": 11897,
+      "bytes": 11854,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -782,7 +782,7 @@
       "paper_path": "papers/memory-pressure-admission-gate-live-serving-validation/paper.md",
       "passes": true,
       "slug": "memory-pressure-admission-gate-live-serving-validation",
-      "words": 1683
+      "words": 1676
     },
     {
       "bytes": 16294,
@@ -818,7 +818,7 @@
       "words": 2030
     },
     {
-      "bytes": 13975,
+      "bytes": 13891,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -826,7 +826,7 @@
       "paper_path": "papers/neural-endpoint-segment-order-sensitivity-validation/paper.md",
       "passes": true,
       "slug": "neural-endpoint-segment-order-sensitivity-validation",
-      "words": 1874
+      "words": 1860
     },
     {
       "bytes": 16383,
@@ -961,7 +961,7 @@
       "words": 1484
     },
     {
-      "bytes": 14975,
+      "bytes": 14979,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1170,7 +1170,7 @@
       "words": 1763
     },
     {
-      "bytes": 15065,
+      "bytes": 15023,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1178,7 +1178,7 @@
       "paper_path": "papers/shared-prompt-batcher-local-server-validation/paper.md",
       "passes": true,
       "slug": "shared-prompt-batcher-local-server-validation",
-      "words": 2118
+      "words": 2111
     },
     {
       "bytes": 19058,
@@ -1214,7 +1214,7 @@
       "words": 2271
     },
     {
-      "bytes": 19734,
+      "bytes": 19684,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1222,7 +1222,7 @@
       "paper_path": "papers/token-rent-for-examples/paper.md",
       "passes": true,
       "slug": "token-rent-for-examples",
-      "words": 2724
+      "words": 2715
     },
     {
       "bytes": 17317,
@@ -1291,7 +1291,7 @@
       "words": 2101
     },
     {
-      "bytes": 13277,
+      "bytes": 13168,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1299,7 +1299,7 @@
       "paper_path": "papers/wake-gate-local-endpoint-harness-integration/paper.md",
       "passes": true,
       "slug": "wake-gate-local-endpoint-harness-integration",
-      "words": 1743
+      "words": 1723
     },
     {
       "bytes": 12147,

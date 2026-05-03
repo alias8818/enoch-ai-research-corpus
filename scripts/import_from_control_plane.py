@@ -2,15 +2,15 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
-import hashlib
 import re
 import sys
 import urllib.parse
 import urllib.request
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 ROOT = Path(__file__).resolve().parents[1]
 PAPERS = ROOT / "papers"
@@ -20,6 +20,20 @@ ARTIFACT_FIELDS = [
     "claim_ledger_path",
     "manifest_path",
 ]
+TARGET_NAMES = {
+    "draft_markdown_path": "paper.md",
+    "evidence_bundle_path": "evidence_bundle.json",
+    "claim_ledger_path": "claim_ledger.json",
+    "manifest_path": "paper_manifest.json",
+}
+TOKEN_PATTERNS = [
+    re.compile(r"(?<![A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}"),
+    re.compile(r"(?<![A-Za-z0-9])gh[pousr]_[A-Za-z0-9_]{20,}"),
+    re.compile(r"(?<![A-Za-z0-9])xox[baprs]-[A-Za-z0-9-]{20,}"),
+]
+PRIVATE_IP_RE = re.compile(r"\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})\b")
+SOURCE_RECORD_RE = re.compile(r"\b(?:idea-)?[0-9a-f]{32}(?:-[0-9]{14})?\b")
+PUBLIC_ID_RE = re.compile(r"^enoch-paper-(\d{4,})$")
 
 
 def slugify(value: str, fallback: str) -> str:
@@ -27,10 +41,27 @@ def slugify(value: str, fallback: str) -> str:
     return (slug or fallback)[:120]
 
 
-def sanitize_public_content(content: str) -> str:
-    content = re.sub(r"idea-[0-9a-f]{32}(?:-[0-9]{14})?", "source-record-redacted", content)
-    content = content.replace("/var/lib/enoch-control-plane/projects", "<control-plane-projects>")
-    content = content.replace("/var/lib/enoch-control-plane", "<control-plane-state>")
+def source_fingerprint(paper_id: str) -> str:
+    return hashlib.sha256(paper_id.encode("utf-8")).hexdigest()[:16]
+
+
+def sanitize_public_content(content: str, *, redactions: Iterable[str] = ()) -> str:
+    for raw in sorted({r for r in redactions if r}, key=len, reverse=True):
+        content = content.replace(raw, "source-record-redacted")
+    content = SOURCE_RECORD_RE.sub("source-record-redacted", content)
+    control_state = "/" + "var/lib/enoch-control-plane"
+    replacements = {
+        f"{control_state}/projects": "<control-plane-projects>",
+        control_state: "<control-plane-state>",
+        "/" + "opt/omx-wake-gate": "<control-plane-app>",
+        "/" + "opt/enoch-agentic-research-system": "<control-plane-app>",
+    }
+    for before, after in replacements.items():
+        content = content.replace(before, after)
+    content = re.sub(r"/(?:home|root)/[^\s\"'`<>),]+", "<local-path-redacted>", content)
+    content = PRIVATE_IP_RE.sub("<private-ip-redacted>", content)
+    for pattern in TOKEN_PATTERNS:
+        content = pattern.sub("<secret-redacted>", content)
     return content
 
 
@@ -40,81 +71,163 @@ def request_json(base_url: str, token: str, path: str) -> dict[str, Any]:
         return json.loads(resp.read())
 
 
+def existing_by_fingerprint() -> dict[str, Path]:
+    rows: dict[str, Path] = {}
+    for meta_path in sorted(PAPERS.glob("*/metadata.json")):
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        fp = str(meta.get("source_record_fingerprint") or "")
+        if fp:
+            rows[fp] = meta_path.parent
+    return rows
+
+
+def next_public_number() -> int:
+    max_seen = 0
+    for meta_path in PAPERS.glob("*/metadata.json"):
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        match = PUBLIC_ID_RE.match(str(meta.get("public_id") or ""))
+        if match:
+            max_seen = max(max_seen, int(match.group(1)))
+    return max_seen + 1
+
+
+def read_metadata(path: Path) -> dict[str, Any]:
+    try:
+        return json.loads((path / "metadata.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def choose_paper_dir(project_name: str, paper_id: str, fingerprint: str, known: dict[str, Path], *, allow_title_duplicates: bool) -> tuple[Path, str]:
+    if fingerprint in known:
+        return known[fingerprint], "fingerprint"
+    base_slug = slugify(project_name, fingerprint)
+    paper_dir = PAPERS / base_slug
+    if (paper_dir / "metadata.json").exists():
+        existing = read_metadata(paper_dir)
+        if existing.get("source_record_fingerprint") != fingerprint:
+            if not allow_title_duplicates:
+                return paper_dir, "slug"
+            suffix = hashlib.sha1(paper_id.encode("utf-8")).hexdigest()[:10]
+            paper_dir = PAPERS / f"{base_slug[:109]}-{suffix}"
+    return paper_dir, "new"
+
+
+def iter_rows(base_url: str, token: str, *, page_size: int, review_status: str, paper_status: str, search: str) -> Iterable[dict[str, Any]]:
+    page = 1
+    while True:
+        query = {
+            "page": page,
+            "page_size": page_size,
+            "review_status": review_status,
+            "paper_status": paper_status,
+            "search": search,
+            "include_rank_reasons": "false",
+        }
+        listing = request_json(base_url, token, f"/control/api/paper-reviews?{urllib.parse.urlencode(query)}")
+        rows = listing.get("rows") or []
+        if not rows:
+            return
+        yield from rows
+        total = int((listing.get("page") or {}).get("total") or page * page_size)
+        if page * page_size >= total:
+            return
+        page += 1
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Import generated paper artifacts from the Enoch control plane API.")
+    parser = argparse.ArgumentParser(description="Import sanitized generated paper artifacts from the Enoch control plane API.")
     parser.add_argument("--control-url", default=os.environ.get("ENOCH_CONTROL_URL", "http://127.0.0.1:8787"))
     parser.add_argument("--token", default=os.environ.get("ENOCH_CONTROL_TOKEN", ""))
     parser.add_argument("--page-size", type=int, default=200)
     parser.add_argument("--limit", type=int, default=0, help="Optional maximum papers to import")
-    parser.add_argument("--paper-status", default="publication_draft")
+    parser.add_argument("--paper-status", default="", help="Optional paper_status filter; empty imports all paper states")
+    parser.add_argument("--review-status", default="finalized", help="Review status to import; defaults to finalized")
+    parser.add_argument("--search", default="")
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force", action="store_true", help="Rewrite artifacts for already imported source records")
+    parser.add_argument("--allow-title-duplicates", action="store_true", help="Import a same-title source record under a hash-suffixed slug instead of treating the existing slug as already published")
     args = parser.parse_args()
     if not args.token:
         print("Set --token or ENOCH_CONTROL_TOKEN", file=sys.stderr)
         return 2
     PAPERS.mkdir(parents=True, exist_ok=True)
-    imported = 0
-    page = 1
-    while True:
-        qs = urllib.parse.urlencode({"page": page, "page_size": args.page_size, "paper_status": args.paper_status, "include_rank_reasons": "false"})
-        listing = request_json(args.control_url, args.token, f"/control/api/paper-reviews?{qs}")
-        rows = listing.get("rows") or []
-        if not rows:
+    known = existing_by_fingerprint()
+    next_number = next_public_number()
+    imported = updated = skipped = skipped_existing_slug = failed = seen = 0
+    errors: list[dict[str, str]] = []
+    for row in iter_rows(args.control_url, args.token, page_size=args.page_size, review_status=args.review_status, paper_status=args.paper_status, search=args.search):
+        if args.limit and seen >= args.limit:
             break
-        for row in rows:
-            paper_id = str(row.get("paper_id") or "")
-            project_name = str(row.get("project_name") or paper_id)
-            project_id = str(row.get("project_id") or "")
-            base_slug = slugify(project_name, project_id or paper_id[:16])
-            slug = base_slug
-            paper_dir = PAPERS / slug
-            if (paper_dir / "metadata.json").exists():
-                try:
-                    existing = json.loads((paper_dir / "metadata.json").read_text(encoding="utf-8"))
-                except Exception:
-                    existing = {}
-                if existing.get("paper_id") != paper_id:
-                    suffix = hashlib.sha1(paper_id.encode("utf-8")).hexdigest()[:10]
-                    slug = f"{base_slug[:109]}-{suffix}"
-                    paper_dir = PAPERS / slug
+        seen += 1
+        paper_id = str(row.get("paper_id") or "")
+        project_name = str(row.get("project_name") or paper_id or "Untitled Paper")
+        project_id = str(row.get("project_id") or "")
+        run_id = str(row.get("run_id") or "")
+        fp = source_fingerprint(paper_id)
+        existed = fp in known
+        paper_dir, match_kind = choose_paper_dir(project_name, paper_id, fp, known, allow_title_duplicates=args.allow_title_duplicates)
+        if match_kind == "slug":
+            # Same public slug/title already exists with a different source
+            # fingerprint. Treat it as already published by default even when
+            # --force is set; --force may refresh exact source-record matches,
+            # but it must not overwrite historical public entries for a
+            # same-title record. Use --allow-title-duplicates to publish a
+            # same-title source under a hash-suffixed slug.
+            skipped_existing_slug += 1
+            continue
+        if existed and not args.force:
+            skipped += 1
+            continue
+        existing = read_metadata(paper_dir)
+        public_id = existing.get("public_id") or f"enoch-paper-{next_number:04d}"
+        if not existing.get("public_id"):
+            next_number += 1
+        metadata = {
+            "public_id": public_id,
+            "source_record_fingerprint": fp,
+            "title": project_name,
+            "generated_at": row.get("generated_at") or row.get("updated_at") or "",
+            "ai_generated": True,
+            "generated_by": "Enoch Agentic Research Pipeline",
+            "released_by_role": "system operator and corpus maintainer",
+            "human_authorship_claimed": False,
+            "review_status": "AI-generated research artifact",
+            "source_system": "Enoch control plane export",
+        }
+        if args.dry_run:
+            imported += 0 if existed else 1
+            updated += 1 if existed else 0
+            known[fp] = paper_dir
+            continue
+        try:
             paper_dir.mkdir(parents=True, exist_ok=True)
-            public_id = f"enoch-paper-{imported + 1:04d}"
-            metadata = {
-                "public_id": public_id,
-                "source_record_fingerprint": hashlib.sha256(paper_id.encode("utf-8")).hexdigest()[:16],
-                "title": project_name,
-                "generated_at": row.get("generated_at") or row.get("updated_at") or "",
-                "ai_generated": True,
-                "generated_by": "Enoch Agentic Research Pipeline",
-                "released_by_role": "system operator and corpus maintainer",
-                "human_authorship_claimed": False,
-                "review_status": "AI-generated research artifact",
-                "source_system": "Enoch control plane export",
-            }
             (paper_dir / "metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+            redactions = {paper_id, project_id, run_id}
             for field in ARTIFACT_FIELDS:
                 try:
                     artifact = request_json(args.control_url, args.token, f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}/artifact/{field}")
-                except Exception as exc:  # keep partial imports inspectable
+                except Exception as exc:
                     (paper_dir / f"{field}.missing.txt").write_text(f"missing {field}: {type(exc).__name__}: {exc}\n", encoding="utf-8")
                     continue
-                content = sanitize_public_content(str(artifact.get("content") or ""))
-                target_name = {
-                    "draft_markdown_path": "paper.md",
-                    "evidence_bundle_path": "evidence_bundle.json",
-                    "claim_ledger_path": "claim_ledger.json",
-                    "manifest_path": "paper_manifest.json",
-                }[field]
-                (paper_dir / target_name).write_text(content, encoding="utf-8")
-            imported += 1
-            if args.limit and imported >= args.limit:
-                print(json.dumps({"imported": imported}, indent=2))
-                return 0
-        total = int((listing.get("page") or {}).get("total") or imported)
-        if page * args.page_size >= total:
-            break
-        page += 1
-    print(json.dumps({"imported": imported}, indent=2))
-    return 0
+                content = sanitize_public_content(str(artifact.get("content") or ""), redactions=redactions)
+                (paper_dir / TARGET_NAMES[field]).write_text(content, encoding="utf-8")
+            known[fp] = paper_dir
+            if existed:
+                updated += 1
+            else:
+                imported += 1
+        except Exception as exc:  # keep batch progress visible
+            failed += 1
+            errors.append({"paper_id_fingerprint": fp, "project_name": project_name, "error": f"{type(exc).__name__}: {exc}"})
+    print(json.dumps({"seen": seen, "imported": imported, "updated": updated, "skipped": skipped, "skipped_existing_slug": skipped_existing_slug, "failed": failed, "errors": errors}, indent=2, sort_keys=True))
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

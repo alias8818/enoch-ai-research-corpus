@@ -1,5 +1,5 @@
 {
-  "count": 120,
+  "count": 159,
   "papers": [
     {
       "ai_generated": true,
@@ -123,6 +123,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/anti-collapse-expert-immune-system/claim_ledger.json",
+      "evidence_bundle_path": "papers/anti-collapse-expert-immune-system/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:38:28.457370+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/anti-collapse-expert-immune-system/paper.md",
+      "public_id": "enoch-paper-0122",
+      "slug": "anti-collapse-expert-immune-system",
+      "source_record_fingerprint": "cae50dae064a33a5",
+      "title": "Anti-Collapse Expert Immune System"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/applicability-gated-abstention-calibration-policy/claim_ledger.json",
       "evidence_bundle_path": "papers/applicability-gated-abstention-calibration-policy/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -159,6 +171,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/audio-room-measurement-planner/claim_ledger.json",
+      "evidence_bundle_path": "papers/audio-room-measurement-planner/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:31:24.664787+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/audio-room-measurement-planner/paper.md",
+      "public_id": "enoch-paper-0134",
+      "slug": "audio-room-measurement-planner",
+      "source_record_fingerprint": "d867b46ec4670aa5",
+      "title": "Audio Room Measurement Planner"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/batched-reader-qets-mixed-domain-scaling-validation/claim_ledger.json",
       "evidence_bundle_path": "papers/batched-reader-qets-mixed-domain-scaling-validation/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -180,6 +204,18 @@
       "slug": "batched-vllm-speculation-cost-governor-integration",
       "source_record_fingerprint": "4caebcee540c866d",
       "title": "Batched vLLM Speculation-Cost Governor Integration"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/benchmark-explorer-agent/claim_ledger.json",
+      "evidence_bundle_path": "papers/benchmark-explorer-agent/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:32:02.463035+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/benchmark-explorer-agent/paper.md",
+      "public_id": "enoch-paper-0133",
+      "slug": "benchmark-explorer-agent",
+      "source_record_fingerprint": "69a3e908f46a530f",
+      "title": "Benchmark Explorer Agent"
     },
     {
       "ai_generated": true,
@@ -264,6 +300,18 @@
       "slug": "cache-reentry-production-endpoint-validation",
       "source_record_fingerprint": "7d9edf21e882bc29",
       "title": "Cache Reentry Production Endpoint Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/canoe-route-risk-planner/claim_ledger.json",
+      "evidence_bundle_path": "papers/canoe-route-risk-planner/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:28:04.793067+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/canoe-route-risk-planner/paper.md",
+      "public_id": "enoch-paper-0139",
+      "slug": "canoe-route-risk-planner",
+      "source_record_fingerprint": "17423f99e94fd946",
+      "title": "Canoe Route Risk Planner"
     },
     {
       "ai_generated": true,
@@ -363,6 +411,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/compiler-flag-search-agent/claim_ledger.json",
+      "evidence_bundle_path": "papers/compiler-flag-search-agent/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:30:54.403963+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/compiler-flag-search-agent/paper.md",
+      "public_id": "enoch-paper-0136",
+      "slug": "compiler-flag-search-agent",
+      "source_record_fingerprint": "080917f8e9ca3f15",
+      "title": "Compiler Flag Search Agent"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/compress-then-answer-benchmark/claim_ledger.json",
       "evidence_bundle_path": "papers/compress-then-answer-benchmark/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -375,6 +435,30 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/compression-gap-penalty/claim_ledger.json",
+      "evidence_bundle_path": "papers/compression-gap-penalty/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:19:48.338388+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/compression-gap-penalty/paper.md",
+      "public_id": "enoch-paper-0154",
+      "slug": "compression-gap-penalty",
+      "source_record_fingerprint": "121a38c6c7467036",
+      "title": "Compression Gap Penalty"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/configuration-entropy-reducer/claim_ledger.json",
+      "evidence_bundle_path": "papers/configuration-entropy-reducer/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:24:52.655629+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/configuration-entropy-reducer/paper.md",
+      "public_id": "enoch-paper-0144",
+      "slug": "configuration-entropy-reducer",
+      "source_record_fingerprint": "a33289c2dfa2df9c",
+      "title": "Configuration Entropy Reducer"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/contention-aware-single-medium-backend-broker-benchmark/claim_ledger.json",
       "evidence_bundle_path": "papers/contention-aware-single-medium-backend-broker-benchmark/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -384,6 +468,18 @@
       "slug": "contention-aware-single-medium-backend-broker-benchmark",
       "source_record_fingerprint": "bc73db6935fe74f8",
       "title": "Contention-Aware Single-Medium Backend Broker Benchmark"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/context-digest-auxiliary-reconstruction/claim_ledger.json",
+      "evidence_bundle_path": "papers/context-digest-auxiliary-reconstruction/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:30:35.811601+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/context-digest-auxiliary-reconstruction/paper.md",
+      "public_id": "enoch-paper-0135",
+      "slug": "context-digest-auxiliary-reconstruction",
+      "source_record_fingerprint": "dc43835e2c6cfaba",
+      "title": "Context Digest Auxiliary Reconstruction"
     },
     {
       "ai_generated": true,
@@ -435,6 +531,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/counterfactual-eviction-labels/claim_ledger.json",
+      "evidence_bundle_path": "papers/counterfactual-eviction-labels/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:18:45.653186+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/counterfactual-eviction-labels/paper.md",
+      "public_id": "enoch-paper-0156",
+      "slug": "counterfactual-eviction-labels",
+      "source_record_fingerprint": "bf37fddf280ce555",
+      "title": "Counterfactual Eviction Labels"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/cpu-offload-stress-harness-real-server-scaleup/claim_ledger.json",
       "evidence_bundle_path": "papers/cpu-offload-stress-harness-real-server-scaleup/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -468,6 +576,18 @@
       "slug": "cuad-dense-retriever-productionization-with-cached-vector-index",
       "source_record_fingerprint": "943ad4a65f3ccaa5",
       "title": "CUAD Dense Retriever Productionization with Cached Vector Index"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/data-center-airflow-toy-twin/claim_ledger.json",
+      "evidence_bundle_path": "papers/data-center-airflow-toy-twin/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:33:24.766817+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/data-center-airflow-toy-twin/paper.md",
+      "public_id": "enoch-paper-0131",
+      "slug": "data-center-airflow-toy-twin",
+      "source_record_fingerprint": "3cb38a92728f739b",
+      "title": "Data Center Airflow Toy Twin"
     },
     {
       "ai_generated": true,
@@ -579,6 +699,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/draft-token-value-distill/claim_ledger.json",
+      "evidence_bundle_path": "papers/draft-token-value-distill/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:17:18.171749+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/draft-token-value-distill/paper.md",
+      "public_id": "enoch-paper-0158",
+      "slug": "draft-token-value-distill",
+      "source_record_fingerprint": "174055f33d0ad430",
+      "title": "Draft Token Value Distill"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/draft-value-router/claim_ledger.json",
       "evidence_bundle_path": "papers/draft-value-router/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -600,6 +732,30 @@
       "slug": "dual-trace-memory-encoder",
       "source_record_fingerprint": "08d4a9e9862e05cb",
       "title": "Dual-Trace Memory Encoder"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/dynamic-window-fine-tune/claim_ledger.json",
+      "evidence_bundle_path": "papers/dynamic-window-fine-tune/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:21:37.900790+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/dynamic-window-fine-tune/paper.md",
+      "public_id": "enoch-paper-0151",
+      "slug": "dynamic-window-fine-tune",
+      "source_record_fingerprint": "d81da3ceabc0fd9b",
+      "title": "Dynamic Window Fine-Tune"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/elastic-expert-budget-during-cpt/claim_ledger.json",
+      "evidence_bundle_path": "papers/elastic-expert-budget-during-cpt/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:37:54.960495+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/elastic-expert-budget-during-cpt/paper.md",
+      "public_id": "enoch-paper-0123",
+      "slug": "elastic-expert-budget-during-cpt",
+      "source_record_fingerprint": "5a9ace0ce8e75779",
+      "title": "Elastic Expert Budget During CPT"
     },
     {
       "ai_generated": true,
@@ -663,6 +819,54 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/evidence-recall-auxiliary-head/claim_ledger.json",
+      "evidence_bundle_path": "papers/evidence-recall-auxiliary-head/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:19:00.113767+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/evidence-recall-auxiliary-head/paper.md",
+      "public_id": "enoch-paper-0155",
+      "slug": "evidence-recall-auxiliary-head",
+      "source_record_fingerprint": "b257c273aa5ffed2",
+      "title": "Evidence Recall Auxiliary Head"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/experiment-autopsy-agent/claim_ledger.json",
+      "evidence_bundle_path": "papers/experiment-autopsy-agent/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:26:24.255317+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/experiment-autopsy-agent/paper.md",
+      "public_id": "enoch-paper-0142",
+      "slug": "experiment-autopsy-agent",
+      "source_record_fingerprint": "fa06052f17d482c7",
+      "title": "Experiment Autopsy Agent"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/expert-upcycling-for-verification-models/claim_ledger.json",
+      "evidence_bundle_path": "papers/expert-upcycling-for-verification-models/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:34:18.803678+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/expert-upcycling-for-verification-models/paper.md",
+      "public_id": "enoch-paper-0130",
+      "slug": "expert-upcycling-for-verification-models",
+      "source_record_fingerprint": "000213f5bedccffb",
+      "title": "Expert Upcycling for Verification Models"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/field-importance-multi-task-tuning/claim_ledger.json",
+      "evidence_bundle_path": "papers/field-importance-multi-task-tuning/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:44:57.833644+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/field-importance-multi-task-tuning/paper.md",
+      "public_id": "enoch-paper-0121",
+      "slug": "field-importance-multi-task-tuning",
+      "source_record_fingerprint": "5c9466f4f9dfe53d",
+      "title": "Field Importance Multi-Task Tuning"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/fieldwise-recall-probe-real-trace-multi-model-validation/claim_ledger.json",
       "evidence_bundle_path": "papers/fieldwise-recall-probe-real-trace-multi-model-validation/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -672,6 +876,18 @@
       "slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
       "source_record_fingerprint": "d532372f4180e8b9",
       "title": "Fieldwise Recall Probe Real-Trace Multi-Model Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/firmware-diff-explainer/claim_ledger.json",
+      "evidence_bundle_path": "papers/firmware-diff-explainer/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:22:24.543043+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/firmware-diff-explainer/paper.md",
+      "public_id": "enoch-paper-0149",
+      "slug": "firmware-diff-explainer",
+      "source_record_fingerprint": "8c0e1eef1368359f",
+      "title": "Firmware Diff Explainer"
     },
     {
       "ai_generated": true,
@@ -720,6 +936,18 @@
       "slug": "gb10-local-server-utility-swap-broker-validation",
       "source_record_fingerprint": "7340c4ce8f30eab0",
       "title": "GB10 Local Server Utility Swap Broker Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/head-importance-self-labeling/claim_ledger.json",
+      "evidence_bundle_path": "papers/head-importance-self-labeling/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:16:22.356965+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/head-importance-self-labeling/paper.md",
+      "public_id": "enoch-paper-0159",
+      "slug": "head-importance-self-labeling",
+      "source_record_fingerprint": "f4b8f601854b2783",
+      "title": "Head Importance Self-Labeling"
     },
     {
       "ai_generated": true,
@@ -831,6 +1059,30 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/load-balancer-free-symmetry-breaker/claim_ledger.json",
+      "evidence_bundle_path": "papers/load-balancer-free-symmetry-breaker/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:35:58.762855+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/load-balancer-free-symmetry-breaker/paper.md",
+      "public_id": "enoch-paper-0127",
+      "slug": "load-balancer-free-symmetry-breaker",
+      "source_record_fingerprint": "4fe7cc2fba5364f4",
+      "title": "Load-Balancer-Free Symmetry Breaker"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/log-compression-with-causal-handles/claim_ledger.json",
+      "evidence_bundle_path": "papers/log-compression-with-causal-handles/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:25:36.639152+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/log-compression-with-causal-handles/paper.md",
+      "public_id": "enoch-paper-0143",
+      "slug": "log-compression-with-causal-handles",
+      "source_record_fingerprint": "e390297ab9b50457",
+      "title": "Log Compression With Causal Handles"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/long-tail-entity-boost-mix/claim_ledger.json",
       "evidence_bundle_path": "papers/long-tail-entity-boost-mix/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -888,6 +1140,18 @@
       "slug": "near-miss-tool-call-dataset",
       "source_record_fingerprint": "2178abd7fb7183ec",
       "title": "Near-Miss Tool Call Dataset"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/network-path-curiosity-agent/claim_ledger.json",
+      "evidence_bundle_path": "papers/network-path-curiosity-agent/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:32:31.920520+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/network-path-curiosity-agent/paper.md",
+      "public_id": "enoch-paper-0132",
+      "slug": "network-path-curiosity-agent",
+      "source_record_fingerprint": "d904c6bf8505cfc0",
+      "title": "Network Path Curiosity Agent"
     },
     {
       "ai_generated": true,
@@ -975,6 +1239,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/physical-experiment-doe-agent/claim_ledger.json",
+      "evidence_bundle_path": "papers/physical-experiment-doe-agent/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:24:33.165845+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/physical-experiment-doe-agent/paper.md",
+      "public_id": "enoch-paper-0145",
+      "slug": "physical-experiment-doe-agent",
+      "source_record_fingerprint": "4bb823bf3f498a3a",
+      "title": "Physical Experiment DOE Agent"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/precision-filtered-evidence-anchors-for-distractor-robust-qa/claim_ledger.json",
       "evidence_bundle_path": "papers/precision-filtered-evidence-anchors-for-distractor-robust-qa/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -1056,6 +1332,18 @@
       "slug": "production-speculative-decoding-counter-validation",
       "source_record_fingerprint": "c463525bb5f2b0f6",
       "title": "Production Speculative Decoding Counter Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/protocol-compliance-judge/claim_ledger.json",
+      "evidence_bundle_path": "papers/protocol-compliance-judge/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:27:04.488339+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/protocol-compliance-judge/paper.md",
+      "public_id": "enoch-paper-0141",
+      "slug": "protocol-compliance-judge",
+      "source_record_fingerprint": "c8abc79050b67a4f",
+      "title": "Protocol Compliance Judge"
     },
     {
       "ai_generated": true,
@@ -1179,6 +1467,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/rehydration-guide-student/claim_ledger.json",
+      "evidence_bundle_path": "papers/rehydration-guide-student/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:18:26.237406+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/rehydration-guide-student/paper.md",
+      "public_id": "enoch-paper-0157",
+      "slug": "rehydration-guide-student",
+      "source_record_fingerprint": "db370ca6ced3c559",
+      "title": "Rehydration Guide Student"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/rejection-mode-targeted-abstention-refusal-tuning/claim_ledger.json",
       "evidence_bundle_path": "papers/rejection-mode-targeted-abstention-refusal-tuning/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -1227,6 +1527,42 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/retrieval-conditioned-expert-expansion/claim_ledger.json",
+      "evidence_bundle_path": "papers/retrieval-conditioned-expert-expansion/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:36:23.344778+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/retrieval-conditioned-expert-expansion/paper.md",
+      "public_id": "enoch-paper-0126",
+      "slug": "retrieval-conditioned-expert-expansion",
+      "source_record_fingerprint": "9efde9fe6c85e745",
+      "title": "Retrieval-Conditioned Expert Expansion"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/reuse-fingerprint-student/claim_ledger.json",
+      "evidence_bundle_path": "papers/reuse-fingerprint-student/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:22:05.265945+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/reuse-fingerprint-student/paper.md",
+      "public_id": "enoch-paper-0150",
+      "slug": "reuse-fingerprint-student",
+      "source_record_fingerprint": "056c7d9c853a5cb9",
+      "title": "Reuse-Fingerprint Student"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/robotic-procedure-verifier/claim_ledger.json",
+      "evidence_bundle_path": "papers/robotic-procedure-verifier/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:24:02.733391+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/robotic-procedure-verifier/paper.md",
+      "public_id": "enoch-paper-0146",
+      "slug": "robotic-procedure-verifier",
+      "source_record_fingerprint": "9441aead3c3d21d7",
+      "title": "Robotic Procedure Verifier"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/router-distilled-triton-mlp-full-model-integration/claim_ledger.json",
       "evidence_bundle_path": "papers/router-distilled-triton-mlp-full-model-integration/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -1239,6 +1575,18 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/safety-interlock-synthesizer/claim_ledger.json",
+      "evidence_bundle_path": "papers/safety-interlock-synthesizer/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:23:24.562476+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/safety-interlock-synthesizer/paper.md",
+      "public_id": "enoch-paper-0147",
+      "slug": "safety-interlock-synthesizer",
+      "source_record_fingerprint": "fd7b8a50a7e9e5f1",
+      "title": "Safety Interlock Synthesizer"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/salience-backed-candidate-top-1-kv-prefill-packing-benchmark/claim_ledger.json",
       "evidence_bundle_path": "papers/salience-backed-candidate-top-1-kv-prefill-packing-benchmark/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -1248,6 +1596,18 @@
       "slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark",
       "source_record_fingerprint": "135cfd31ea90cedb",
       "title": "Salience-Backed Candidate Top-1 KV Prefill Packing Benchmark"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/schema-anchor-adapter-tuning/claim_ledger.json",
+      "evidence_bundle_path": "papers/schema-anchor-adapter-tuning/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:21:02.601833+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/schema-anchor-adapter-tuning/paper.md",
+      "public_id": "enoch-paper-0152",
+      "slug": "schema-anchor-adapter-tuning",
+      "source_record_fingerprint": "804f30bf7aa5e20b",
+      "title": "Schema-Anchor Adapter Tuning"
     },
     {
       "ai_generated": true,
@@ -1299,6 +1659,30 @@
     },
     {
       "ai_generated": true,
+      "claim_ledger_path": "papers/sink-token-stabilization/claim_ledger.json",
+      "evidence_bundle_path": "papers/sink-token-stabilization/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:20:29.524853+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/sink-token-stabilization/paper.md",
+      "public_id": "enoch-paper-0153",
+      "slug": "sink-token-stabilization",
+      "source_record_fingerprint": "e1d52e3ec4fbdae9",
+      "title": "Sink Token Stabilization"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/slo-narrative-compressor/claim_ledger.json",
+      "evidence_bundle_path": "papers/slo-narrative-compressor/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:27:22.313561+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/slo-narrative-compressor/paper.md",
+      "public_id": "enoch-paper-0140",
+      "slug": "slo-narrative-compressor",
+      "source_record_fingerprint": "c50a453da46e2b58",
+      "title": "SLO Narrative Compressor"
+    },
+    {
+      "ai_generated": true,
       "claim_ledger_path": "papers/small-model-persona-context-orderer-generation-validation/claim_ledger.json",
       "evidence_bundle_path": "papers/small-model-persona-context-orderer-generation-validation/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -1320,6 +1704,54 @@
       "slug": "structured-noise-injection-suite",
       "source_record_fingerprint": "1425ba5d64800c4a",
       "title": "Structured Noise Injection Suite"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/synthetic-user-load-negotiator/claim_ledger.json",
+      "evidence_bundle_path": "papers/synthetic-user-load-negotiator/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:28:49.559012+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/synthetic-user-load-negotiator/paper.md",
+      "public_id": "enoch-paper-0138",
+      "slug": "synthetic-user-load-negotiator",
+      "source_record_fingerprint": "74b62df7c1c5adc3",
+      "title": "Synthetic User Load Negotiator"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/task-class-expert-reproduction/claim_ledger.json",
+      "evidence_bundle_path": "papers/task-class-expert-reproduction/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:36:57.690708+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/task-class-expert-reproduction/paper.md",
+      "public_id": "enoch-paper-0125",
+      "slug": "task-class-expert-reproduction",
+      "source_record_fingerprint": "27053b507065f8c8",
+      "title": "Task-Class Expert Reproduction"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/test-rig-self-maintainer/claim_ledger.json",
+      "evidence_bundle_path": "papers/test-rig-self-maintainer/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:23:00.724248+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/test-rig-self-maintainer/paper.md",
+      "public_id": "enoch-paper-0148",
+      "slug": "test-rig-self-maintainer",
+      "source_record_fingerprint": "65117da2f7430253",
+      "title": "Test Rig Self-Maintainer"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/thermal-policy-optimizer/claim_ledger.json",
+      "evidence_bundle_path": "papers/thermal-policy-optimizer/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:29:33.379036+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/thermal-policy-optimizer/paper.md",
+      "public_id": "enoch-paper-0137",
+      "slug": "thermal-policy-optimizer",
+      "source_record_fingerprint": "306fb792bef85ae1",
+      "title": "Thermal Policy Optimizer"
     },
     {
       "ai_generated": true,
@@ -1356,6 +1788,42 @@
       "slug": "tokenized-tiny-lm-duplicate-ratio-ablation",
       "source_record_fingerprint": "2c55452f149bd0e7",
       "title": "Tokenized Tiny-LM Duplicate Ratio Ablation"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/upcycle-router-cold-start-benchmark/claim_ledger.json",
+      "evidence_bundle_path": "papers/upcycle-router-cold-start-benchmark/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:37:19.575128+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/upcycle-router-cold-start-benchmark/paper.md",
+      "public_id": "enoch-paper-0124",
+      "slug": "upcycle-router-cold-start-benchmark",
+      "source_record_fingerprint": "661d45c227e804c3",
+      "title": "Upcycle Router Cold-Start Benchmark"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/upcycled-expert-distillation-collapse/claim_ledger.json",
+      "evidence_bundle_path": "papers/upcycled-expert-distillation-collapse/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:35:34.641248+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/upcycled-expert-distillation-collapse/paper.md",
+      "public_id": "enoch-paper-0128",
+      "slug": "upcycled-expert-distillation-collapse",
+      "source_record_fingerprint": "831437e66ba0b6ab",
+      "title": "Upcycled Expert Distillation Collapse"
+    },
+    {
+      "ai_generated": true,
+      "claim_ledger_path": "papers/upcycled-lora-expert-grafting/claim_ledger.json",
+      "evidence_bundle_path": "papers/upcycled-lora-expert-grafting/evidence_bundle.json",
+      "generated_at": "2026-05-03T09:34:43.540454+00:00",
+      "human_authorship_claimed": false,
+      "paper_path": "papers/upcycled-lora-expert-grafting/paper.md",
+      "public_id": "enoch-paper-0129",
+      "slug": "upcycled-lora-expert-grafting",
+      "source_record_fingerprint": "27f39f1cbd61f445",
+      "title": "Upcycled LoRA Expert Grafting"
     },
     {
       "ai_generated": true,

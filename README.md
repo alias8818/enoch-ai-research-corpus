@@ -6,7 +6,7 @@ Release repository for AI-generated research artifacts produced by the Enoch age
 
 This corpus contains AI-generated technical reports and the evidence artifacts that grounded them: run notes, evidence bundles, claim ledgers, reproducibility metadata, and generated artifact drafts.
 
-Start with [`papers/index.md`](papers/index.md) for the full artifact list and [`quality/quality_report.md`](quality/quality_report.md) for packaging-gate status.
+Start with [`papers/index.md`](papers/index.md) for the full artifact list and [`quality/packaging_provenance_report.md`](quality/packaging_provenance_report.md) for packaging/provenance gate status. The compatibility report remains available at [`quality/quality_report.md`](quality/quality_report.md).
 
 For source-grounded operator and reviewer docs across the system and corpus, see [Enoch Docs](https://solo-09d10f60.mintlify.app/) ([source](https://github.com/alias8818/enoch-docs)).
 
@@ -30,17 +30,23 @@ papers/
     evidence_bundle.json
     claim_ledger.json
 quality/
-  quality_report.json
-  quality_report.md
+  quality_report.json                 # compatibility copy
+  quality_report.md                   # compatibility copy
+  packaging_provenance_report.json
+  packaging_provenance_report.md
 ```
 
-## Release gates
+## Packaging/provenance gate
 
-- No live credentials or private service tokens.
-- No `TODO`, placeholder citations, or fake citations in paper text.
-- Each paper has provenance metadata.
+The release gate is a packaging/provenance lint gate, not a scientific-validity or peer-review claim. It checks that:
+
+- No live credentials or private service tokens are present.
+- No `TODO`, placeholder citations, or fake-citation patterns are detected in paper text.
+- Each paper has AI provenance metadata.
 - Each paper links to available evidence and claim ledger artifacts.
 - Public README clearly states AI-generated / no-human-authorship framing.
+
+The gate does **not** validate scientific correctness, external replication, statistical power, semantic output quality, citation accuracy, or peer review.
 
 ## License
 

@@ -17,6 +17,24 @@ patterns = {
 peer_review_rx = re.compile(r"peer[- ]reviewed", re.I)
 peer_review_negation_rx = re.compile(r"\b(not|no|never|unreviewed)\b.{0,80}peer[- ]reviewed|peer[- ]reviewed.{0,80}\b(not|no|never)\b", re.I)
 rows = []
+GATE_NAME = "packaging_provenance_gate"
+GATE_VERSION = "1.0"
+VALIDATED = [
+    "ai_provenance_notice_present",
+    "no_placeholder_citation_patterns",
+    "no_unsupported_human_authorship_claim",
+    "no_unsupported_peer_review_claim",
+    "evidence_bundle_present",
+    "claim_ledger_present",
+]
+NOT_VALIDATED = [
+    "peer_review",
+    "scientific_correctness",
+    "external_replication",
+    "statistical_power",
+    "semantic_output_quality",
+    "citation_accuracy",
+]
 for paper in sorted(PAPERS.glob("*/paper.md")):
     text = paper.read_text(encoding="utf-8", errors="replace")
     issues = {name: len(rx.findall(text)) for name, rx in patterns.items()}
@@ -42,10 +60,35 @@ for paper in sorted(PAPERS.glob("*/paper.md")):
         "passes": has_provenance and not issues and (paper.parent / "evidence_bundle.json").exists() and (paper.parent / "claim_ledger.json").exists(),
     }
     rows.append(row)
-report = {"count": len(rows), "passed": sum(1 for r in rows if r["passes"]), "failed": sum(1 for r in rows if not r["passes"]), "rows": rows}
+report = {
+    "gate_name": GATE_NAME,
+    "gate_version": GATE_VERSION,
+    "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
+    "validated": VALIDATED,
+    "not_validated": NOT_VALIDATED,
+    "count": len(rows),
+    "passed": sum(1 for r in rows if r["passes"]),
+    "failed": sum(1 for r in rows if not r["passes"]),
+    "rows": rows,
+}
 (QUALITY / "quality_report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-lines = ["# Corpus quality report", "", f"Passed: {report['passed']} / {report['count']}", "", "| Paper | Passes | Issues |", "|---|---:|---|"]
+(QUALITY / "packaging_provenance_report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+lines = [
+    "# Corpus packaging/provenance report",
+    "",
+    f"Packaging/provenance passed: {report['passed']} / {report['count']}",
+    "",
+    "This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and required evidence/claim metadata. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, or citation accuracy.",
+    "",
+    "## Validated",
+    "",
+]
+lines.extend(f"- `{item}`" for item in VALIDATED)
+lines.extend(["", "## Not validated", ""])
+lines.extend(f"- `{item}`" for item in NOT_VALIDATED)
+lines.extend(["", "| Paper | Passes | Issues |", "|---|---:|---|"])
 for row in rows:
     lines.append(f"| `{row['slug']}` | {row['passes']} | {json.dumps(row['issues'], sort_keys=True)} |")
 (QUALITY / "quality_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+(QUALITY / "packaging_provenance_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 print(json.dumps({k: report[k] for k in ("count", "passed", "failed")}, indent=2))

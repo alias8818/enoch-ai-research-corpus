@@ -6,7 +6,9 @@ Release repository for AI-generated research artifacts produced by the Enoch age
 
 This corpus contains AI-generated technical reports and the evidence artifacts that grounded them: run notes, evidence bundles, claim ledgers, reproducibility metadata, and generated artifact drafts.
 
-Start with [`papers/index.md`](papers/index.md) for the full artifact list and [`quality/quality_report.md`](quality/quality_report.md) for packaging-gate status. For source-grounded operator and reviewer docs across the system and corpus, see [`enoch-docs`](https://github.com/alias8818/enoch-docs).
+Start with [`papers/index.md`](papers/index.md) for the full artifact list and [`quality/quality_report.md`](quality/quality_report.md) for packaging-gate status.
+
+For source-grounded operator and reviewer docs across the system and corpus, see [Enoch Docs](https://solo-09d10f60.mintlify.app/) ([source](https://github.com/alias8818/enoch-docs)).
 
 ## What this is not
 

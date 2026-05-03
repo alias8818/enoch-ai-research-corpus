@@ -1,4 +1,14 @@
 {
+  "claim_evidence_audit": {
+    "claim_ledgers_empty": 159,
+    "count": 159,
+    "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
+    "gate_name": "strict_claim_evidence_audit",
+    "result_file_refs": 1425,
+    "result_file_refs_missing": 1425,
+    "status": "blocked_audit_gaps",
+    "strict_claim_evidence_pass_count": 0
+  },
   "count": 159,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
@@ -10,7 +20,8 @@
     "external_replication",
     "statistical_power",
     "semantic_output_quality",
-    "citation_accuracy"
+    "citation_accuracy",
+    "strict_claim_evidence_audit"
   ],
   "passed": 159,
   "rows": [

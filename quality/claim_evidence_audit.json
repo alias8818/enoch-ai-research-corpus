@@ -1,0 +1,4056 @@
+{
+  "claim_ledgers_empty": 159,
+  "count": 159,
+  "featured_artifacts_checked": 1,
+  "featured_artifacts_strict_pass_count": 0,
+  "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
+  "gate_name": "strict_claim_evidence_audit",
+  "gate_scope": "strict claim-ledger schema, non-empty claim evidence references, and public availability of evidence result_file references",
+  "gate_version": "1.0",
+  "not_validated": [
+    "scientific_correctness",
+    "peer_review",
+    "independent_replication",
+    "statistical_power",
+    "semantic_output_quality",
+    "citation_accuracy"
+  ],
+  "result_file_refs": 1425,
+  "result_file_refs_missing": 1425,
+  "result_file_refs_public_present": 0,
+  "rows": [
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/qwen_192step_decoupled_mmlu256_summary.json",
+        "artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json",
+        "artifacts/qwen_192step_norefresh_gap16_train_metrics.json",
+        "artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt",
+        "artifacts/qwen_192step_lora_train_metrics.json",
+        "artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt",
+        "artifacts/qwen_adapter_multiseed_192_profile.run.log",
+        "artifacts/qwen_adapter_multiseed_192_profile.json",
+        "artifacts/qwen_adapter_multiseed_192_profile_seed31_norefresh_gap16.log",
+        "artifacts/qwen_adapter_multiseed_192_profile_seed31_norefresh_gap16.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adaptive-boundary-colorization-gate/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adaptive-boundary-colorization-gate/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/adaptive_gate_selection_counts.json",
+        "results/adaptive_squad_summary.json",
+        "results/adaptive_technical_doc_summary.json",
+        "results/adaptive_squad_retrieval_budget220.log",
+        "results/adaptive_squad_retrieval_budget220/summary.json",
+        "results/adaptive_squad_retrieval_budget220/benchmark_rows.csv",
+        "results/adaptive_squad_retrieval_budget160.log",
+        "results/adaptive_squad_retrieval_budget160/summary.json",
+        "results/adaptive_squad_retrieval_budget160/benchmark_rows.csv",
+        "results/adaptive_squad_stress_budget160.log"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "adaptive-boundary-colorization-gate",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adaptive-budget-aware-lim-reserve-sampler/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adaptive-budget-aware-lim-reserve-sampler/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/adaptive_experiment_summary.md",
+        "artifacts/adaptive_public_squad_benchmark_rows.csv",
+        "artifacts/adaptive_public_squad_benchmark.json",
+        "artifacts/adaptive_public_squad_smoke_rows.csv",
+        "artifacts/adaptive_public_squad_smoke.json",
+        "artifacts/experiment_summary.md",
+        "artifacts/public_squad_benchmark_rows.csv",
+        "artifacts/public_squad_benchmark.json",
+        "artifacts/public_squad_smoke_rows.csv",
+        "artifacts/public_squad_smoke.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "adaptive-budget-aware-lim-reserve-sampler",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adaptive-claim-first-top-k-router/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adaptive-claim-first-top-k-router/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/adaptive_qwen05_longbench_scaled/interpretation.md",
+        "results/adaptive_qwen05_longbench_scaled/llm_eval_summary.json",
+        "results/adaptive_qwen05_longbench_scaled/llm_eval_rows.csv",
+        "results/adaptive_llm_smoke/llm_eval_summary.json",
+        "results/adaptive_llm_smoke/llm_eval_rows.csv",
+        "results/adaptive_offline/benchmark_summary.json",
+        "results/adaptive_offline/benchmark_rows.csv"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "adaptive-claim-first-top-k-router",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adaptive-evidence-packer-rag-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adaptive-evidence-packer-rag-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/README.md",
+        "results/rag_integration_safe_budget_sweep.json",
+        "results/rag_integration_budget220_safe.log",
+        "results/rag_integration_budget220_safe/summary.json",
+        "results/rag_integration_budget220_safe/benchmark_rows.csv",
+        "results/rag_integration_budget160_safe.log",
+        "results/rag_integration_budget160_safe/summary.json",
+        "results/rag_integration_budget160_safe/benchmark_rows.csv",
+        "results/rag_integration_budget120_safe/summary.json",
+        "results/rag_integration_budget120_safe.log"
+      ],
+      "result_file_ref_count": 13,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 13,
+      "result_file_refs_public_present": 0,
+      "slug": "adaptive-evidence-packer-rag-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adaptive-prefix-splitter-inference-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adaptive-prefix-splitter-inference-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/integration_monitoring/summary.md",
+        "results/integration_monitoring/summary.json",
+        "results/integration_monitoring/integration_eval_rows.csv"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "adaptive-prefix-splitter-inference-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/adversarial-channel-router/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/adversarial-channel-router/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/adversarial_channel_router_qwen_small_llm.json",
+        "results/adversarial_channel_router_qwen_gpu_poll.csv",
+        "results/adversarial_channel_router_qwen_calibration.json",
+        "results/adversarial_channel_router_openai_shim.json",
+        "results/adversarial_channel_router_agent_harness.json",
+        "results/adversarial_channel_router_smoke.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "adversarial-channel-router",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/agent-app-store-with-repro-sandboxes/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/agent-app-store-with-repro-sandboxes/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/marketplace_smoke.json"
+      ],
+      "result_file_ref_count": 1,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 1,
+      "result_file_refs_public_present": 0,
+      "slug": "agent-app-store-with-repro-sandboxes",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/agent-identity-rotation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/agent-identity-rotation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/identity_rotation_eval.json",
+        "artifacts/identity_rotation_audit.jsonl",
+        "artifacts/local_workflow_workspace/recovery.txt",
+        "artifacts/local_workflow_workspace/src/app.py",
+        "artifacts/local_workflow_workspace/delegated/out.txt",
+        "artifacts/local_workflow_workspace/link_to_outside.txt",
+        "artifacts/outside_symlink_target.txt"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "agent-identity-rotation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/answer-shape-prompt-planner/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/answer-shape-prompt-planner/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_rag_benchmark_llm_qwen15b.md",
+        "results/real_rag_benchmark_llm_qwen15b.json",
+        "results/answer_quality_benchmark.md",
+        "results/answer_quality_benchmark.json",
+        "results/offline_benchmark.json",
+        "results/real_rag_benchmark_llm_qwen05b.md",
+        "results/real_rag_benchmark_llm_qwen05b.json",
+        "results/real_rag_benchmark.md",
+        "results/real_rag_benchmark.json",
+        "results/offline_benchmark.md"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "answer-shape-prompt-planner",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/anti-collapse-expert-immune-system/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/anti-collapse-expert-immune-system/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "anti-collapse-expert-immune-system",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/applicability-gated-abstention-calibration-policy/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/applicability-gated-abstention-calibration-policy/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/applicability_gated_policy_validation_min025/applicability_gated_policy_validation.json",
+        "results/applicability_gated_policy_validation_min025/summary.stdout.json",
+        "results/applicability_gated_policy_validation_min025/summary.json",
+        "results/applicability_gated_policy_validation_min025/qwen25_7b_real_limit100_calibrated_predictions.jsonl",
+        "results/applicability_gated_policy_validation_min025/qwen25_7b_real_limit100_thresholds.csv",
+        "results/applicability_gated_policy_validation_min025/qwen25_3b_real_limit50_calibrated_predictions.jsonl",
+        "results/applicability_gated_policy_validation_min025/qwen25_3b_real_limit50_thresholds.csv",
+        "results/qwen25_7b_real_limit100/endpoint_summary.json",
+        "results/qwen25_7b_real_limit100/endpoint_metrics.csv",
+        "results/qwen25_7b_real_limit100/endpoint_predictions.jsonl"
+      ],
+      "result_file_ref_count": 15,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 15,
+      "result_file_refs_public_present": 0,
+      "slug": "applicability-gated-abstention-calibration-policy",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/aret-hierarchical-multi-virtue-reward-architecture-for-rl/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/aret-hierarchical-multi-virtue-reward-architecture-for-rl/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/arete_compute_matched_channel_tax.md",
+        "results/arete_compute_matched_channel_tax.json",
+        "results/arete_cross_regime_summary.md",
+        "results/arete_cross_regime_summary.json",
+        "results/arete_offline_policy_benchmark.md",
+        "results/arete_offline_policy_benchmark.json",
+        "results/arete_offline_policy_ablation_benchmark.md",
+        "results/arete_offline_policy_ablation_benchmark.json",
+        "results/arete_preference_policy_ablation_benchmark.md",
+        "results/arete_preference_policy_ablation_benchmark.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/attention-loss-shadow-estimator/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/attention-loss-shadow-estimator/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/pytest_after_hybrid.log",
+        "artifacts/pytest_install.log",
+        "artifacts/live_lm_qwen_hybrid_system_snapshot.txt",
+        "artifacts/live_lm_qwen_hybrid_main.log",
+        "artifacts/live_lm_qwen_hybrid_main/summary.json",
+        "artifacts/live_lm_qwen_hybrid_main/summary.csv",
+        "artifacts/live_lm_qwen_hybrid_main/block_labels.jsonl",
+        "artifacts/live_lm_qwen_hybrid_main/raw_rows.jsonl",
+        "artifacts/live_lm_qwen_hybrid_calibration.log",
+        "artifacts/live_lm_qwen_hybrid_calibration/summary.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "attention-loss-shadow-estimator",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/audio-room-measurement-planner/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/audio-room-measurement-planner/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "audio-room-measurement-planner",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/batched-reader-qets-mixed-domain-scaling-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/batched-reader-qets-mixed-domain-scaling-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/time_mixed_domain_batched_320_budget065_b1.txt",
+        "results/mixed_domain_batched_320_budget065_b1.json",
+        "results/time_mixed_domain_batched_320_budget065_b16_v2.txt",
+        "results/gpu_monitor_mixed_batched_320_budget065_b16_v2.csv",
+        "results/mixed_domain_batched_320_budget065_b16_v2.json",
+        "results/time_hotpot_batched_200_budget065_b16.txt",
+        "results/hotpot_batched_200_budget065_b16.json",
+        "results/time_mixed_domain_batched_320_budget065_b16.txt",
+        "results/gpu_monitor_mixed_batched_320_budget065_b16.csv",
+        "results/mixed_domain_batched_320_budget065_b16.json"
+      ],
+      "result_file_ref_count": 14,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 14,
+      "result_file_refs_public_present": 0,
+      "slug": "batched-reader-qets-mixed-domain-scaling-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/batched-vllm-speculation-cost-governor-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/batched-vllm-speculation-cost-governor-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/project_pycompile_final.log",
+        "results/vllm_spec_governor_patch_contract_test_final.log",
+        "results/real_vllm_torch211_vllm_xargs_promptcap_server/meminfo_after.txt",
+        "results/real_vllm_torch211_vllm_xargs_promptcap_server/server.log",
+        "results/real_vllm_torch211_vllm_xargs_dwell_stress_dwellfix_promptcap/server.log",
+        "results/real_vllm_torch211_vllm_xargs_kv_stress_dwellfix_promptcap/server.log",
+        "results/real_vllm_torch211_vllm_xargs_dwell_stress_dwellfix_promptcap/meminfo_after.txt",
+        "results/real_vllm_torch211_vllm_xargs_dwell_stress_dwellfix_promptcap/server_metrics.txt",
+        "results/real_vllm_torch211_vllm_xargs_dwell_stress_dwellfix_promptcap/benchmark_time.txt",
+        "results/real_vllm_torch211_vllm_xargs_dwell_stress_dwellfix_promptcap/benchmark_stdout.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "batched-vllm-speculation-cost-governor-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/benchmark-explorer-agent/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/benchmark-explorer-agent/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "benchmark-explorer-agent",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/benchmark-health-ledger/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/benchmark-health-ledger/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/live_replay_summary.json",
+        "results/live_replay_metrics.csv",
+        "results/smoke_summary.json",
+        "results/smoke_selection_metrics.csv"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "benchmark-health-ledger",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/benchmark-qwen3-non-uniform-reap-manual-fp8-scoring/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/benchmark-qwen3-non-uniform-reap-manual-fp8-scoring/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/run_codeeval64.log",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/qwen3_manual_fp8_prompt_loss_report.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/global_plan_prompt_loss.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/uniform_baseline_plan_prompt_loss.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/prompts.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/run_broader_16prompt.log"
+      ],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 18,
+      "result_file_refs_public_present": 0,
+      "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/run_codeeval64.log",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/qwen3_manual_fp8_prompt_loss_report.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/global_plan_prompt_loss.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/uniform_baseline_plan_prompt_loss.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/prompts.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/run_broader_16prompt.log"
+      ],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 18,
+      "result_file_refs_public_present": 0,
+      "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/bonsai-up-logprob-margin-safeguard-deployment-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/bonsai-up-logprob-margin-safeguard-deployment-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/uncertainty_gates/logprob_margin_deployment_review.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_extended_gate_summary.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_extended_gate_summary.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_gate_summary.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_manifest.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_gate_summary.json",
+        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_manifest.json",
+        "results/uncertainty_gates/smoke_arithmetic_logprob_manifest.json",
+        "results/uncertainty_gates/parent_repeated_sampling_gate_review.json"
+      ],
+      "result_file_ref_count": 9,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 9,
+      "result_file_refs_public_present": 0,
+      "slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/byte-memory-pointer-decoder-for-fragile-spans/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/byte-memory-pointer-decoder-for-fragile-spans/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/pointer_decoder_probe/pointer_decoder_predictions.jsonl",
+        "artifacts/pointer_decoder_probe/bpe_only_predictions.jsonl",
+        "artifacts/pointer_decoder_probe/pointer_mini_bpe_tokenizer.json",
+        "artifacts/pointer_decoder_probe/test_pointer_examples.jsonl",
+        "artifacts/pointer_decoder_probe/train_pointer_examples.jsonl",
+        "artifacts/byte_assist_mvp/detector_predictions.jsonl",
+        "artifacts/byte_assist_mvp/synthetic_fragile_spans.jsonl"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "byte-memory-pointer-decoder-for-fragile-spans",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cache-churn-alarm-vllm-adapter-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cache-churn-alarm-vllm-adapter-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/report.md",
+        "results/pressure_endpoint_pilot/final_ab_isolated/server_stopped_check_memory_blind.txt",
+        "results/pressure_endpoint_pilot/final_ab_isolated/server_stopped_check_cache_churn_alarm.txt",
+        "results/pressure_endpoint_pilot/final_ab_isolated/summary.md",
+        "results/pressure_endpoint_pilot/final_ab_isolated/combined_summary.json",
+        "results/pressure_endpoint_pilot/final_ab_isolated/server_cache_churn_alarm.log",
+        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm_final_metrics.prom",
+        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm_time.txt",
+        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm_stdout.json",
+        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm/latest_summary.txt"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "cache-churn-alarm-vllm-adapter-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cache-reentry-production-endpoint-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cache-reentry-production-endpoint-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/vllm_qwen2_5_3b_instruct_answer_contract_full_predictions.jsonl",
+        "results/vllm_qwen2_5_3b_instruct_answer_contract_full_summary.json",
+        "results/vllm_qwen2_5_3b_instruct_answer_contract_100_predictions.jsonl",
+        "results/vllm_qwen2_5_3b_instruct_answer_contract_100_summary.json",
+        "results/vllm_qwen2_5_3b_instruct_transcript_100_predictions.jsonl",
+        "results/vllm_qwen2_5_3b_instruct_transcript_100_summary.json",
+        "results/parent_qwen2_5_0_5b_instruct_answer_contract_100_summary.json",
+        "results/parent_qwen2_5_0_5b_instruct_transcript_100_summary.json",
+        "results/mvp_summary.json"
+      ],
+      "result_file_ref_count": 9,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 9,
+      "result_file_refs_public_present": 0,
+      "slug": "cache-reentry-production-endpoint-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/canoe-route-risk-planner/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/canoe-route-risk-planner/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "canoe-route-risk-planner",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/capability-retention-sentinel-live-baseline-adapter-run/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/capability-retention-sentinel-live-baseline-adapter-run/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "capability-retention-sentinel-live-baseline-adapter-run",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/capable-planner-segment-firewall-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/capable-planner-segment-firewall-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/capable_planner_validation_report.json",
+        "results/realistic_model_planner_qwen25_3b_10x.json",
+        "results/realistic_model_planner_phi4mini_parallel1.json",
+        "results/realistic_model_planner_probe_no_endpoint.json"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "capable-planner-segment-firewall-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/chain-of-density-evidence-pack/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/chain-of-density-evidence-pack/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/summary.md",
+        "results/benchmark_results.json",
+        "results/real_squad_benchmark_results.json"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "chain-of-density-evidence-pack",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cheap-factual-correction-after-local-sycophancy-rejection/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cheap-factual-correction-after-local-sycophancy-rejection/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/cached_correction_live_qwen3_0p6b_results.json"
+      ],
+      "result_file_ref_count": 1,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 1,
+      "result_file_refs_public_present": 0,
+      "slug": "cheap-factual-correction-after-local-sycophancy-rejection",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/chunk-margin-pruner/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/chunk-margin-pruner/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/spoken_squad_random_150.out",
+        "artifacts/spoken_squad_random_150/squad_benchmark_summary.json",
+        "artifacts/spoken_squad_random_150/squad_benchmark_rows.csv",
+        "artifacts/squad_random_200.out",
+        "artifacts/squad_random_200/squad_benchmark_summary.json",
+        "artifacts/squad_random_200/squad_benchmark_rows.csv",
+        "artifacts/spoken_squad_test_v1.1.json",
+        "artifacts/squad_budget_sweep_summary.json",
+        "artifacts/squad_budget_340.out",
+        "artifacts/squad_budget_340/squad_benchmark_summary.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "chunk-margin-pruner",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/citation-focused-section-ordering/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/citation-focused-section-ordering/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/citation_focus/citation_focus_grouped_deltas.csv",
+        "results/citation_focus/citation_focus_summary.json",
+        "artifacts/parent_README.md",
+        "results/parent_qwen_scaled/llama_server_tail.log",
+        "results/parent_qwen_scaled/llama_server_scaled.log",
+        "results/parent_qwen_scaled/llm_smoke_summary.json",
+        "results/parent_qwen_scaled/llm_smoke_telemetry.json",
+        "results/parent_qwen_scaled/llm_smoke_raw_responses.json",
+        "results/parent_qwen_scaled/llm_smoke_rows.csv"
+      ],
+      "result_file_ref_count": 9,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 9,
+      "result_file_refs_public_present": 0,
+      "slug": "citation-focused-section-ordering",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/citation-locator-metadata-extraction-intervention-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/citation-locator-metadata-extraction-intervention-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/intervention_summary_all_xrefs.md",
+        "results/stratified_manual_audit_all_xrefs.jsonl",
+        "results/locator_intervention_eval_all_xrefs.json",
+        "results/intervention_summary.md",
+        "results/stratified_manual_audit.jsonl",
+        "results/locator_intervention_eval.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "citation-locator-metadata-extraction-intervention-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/commit-level-critic/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/commit-level-critic/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/latest_messy_pilot_results.json",
+        "artifacts/messy_pilot_20260423T053810Z/results.md",
+        "artifacts/messy_pilot_20260423T053810Z/results.json",
+        "artifacts/messy_pilot_20260423T053810Z/codex_logs/commit_strict-positive-quantities.jsonl",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/logs/tmux-hook-2026-04-23.jsonl",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/team-leader-nudge.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/tmux-hook-state.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/hud-state.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/metrics.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/logs/turns-2026-04-23.jsonl"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "commit-level-critic",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/compiler-flag-search-agent/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/compiler-flag-search-agent/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "compiler-flag-search-agent",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/compress-then-answer-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/compress-then-answer-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/cross_seed_report.md",
+        "results/llm_report_100_seed3443678.md",
+        "results/llm_metrics_100_seed3443678.json",
+        "results/llm_predictions_100_seed3443678.jsonl",
+        "results/llm_cache.jsonl",
+        "results/stability_report.md",
+        "results/llm_report_100.md",
+        "results/llm_metrics_100.json",
+        "results/llm_predictions_100.jsonl",
+        "results/llm_report.md"
+      ],
+      "result_file_ref_count": 14,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 14,
+      "result_file_refs_public_present": 0,
+      "slug": "compress-then-answer-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/compression-gap-penalty/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/compression-gap-penalty/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "compression-gap-penalty",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/configuration-entropy-reducer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/configuration-entropy-reducer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "configuration-entropy-reducer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/contention-aware-single-medium-backend-broker-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/contention-aware-single-medium-backend-broker-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/contention_c12_cap_grid_2seed_20260420/cap_grid_summary.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678_stdout.txt",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_small_19080.log",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/benchmark_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_medium_19081.log",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/contention_medium_control_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/shape_broker_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/workload.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473677_stdout.txt",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473677/llama_server_small_19050.log"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "contention-aware-single-medium-backend-broker-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/context-digest-auxiliary-reconstruction/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/context-digest-auxiliary-reconstruction/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "context-digest-auxiliary-reconstruction",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/context-overflow-real-llm-reader-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/context-overflow-real-llm-reader-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/qwen25_3b_full_1000_run.log",
+        "results/qwen25_3b_full_1000_summary.json",
+        "results/qwen25_3b_full_1000_summary_predictions.jsonl",
+        "results/qwen25_3b_smoke_20_summary.json",
+        "results/qwen25_3b_pilot_100_summary.json",
+        "results/qwen25_0p5b_smoke_20_summary.json",
+        "results/qwen25_0p5b_pilot_100_summary.json",
+        "results/qwen25_3b_pilot_100_summary_predictions.jsonl",
+        "results/qwen25_3b_smoke_20_summary_predictions.jsonl",
+        "results/qwen25_0p5b_pilot_100_summary_predictions.jsonl"
+      ],
+      "result_file_ref_count": 13,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 13,
+      "result_file_refs_public_present": 0,
+      "slug": "context-overflow-real-llm-reader-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/context-rehydration-multi-model-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/context-rehydration-multi-model-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/multimodel/aggregate_summary.md",
+        "results/multimodel/aggregate_summary.json",
+        "results/multimodel/tinyllama_1p1b/summary.md",
+        "results/multimodel/tinyllama_1p1b/summary.json",
+        "results/multimodel/tinyllama_1p1b/scorer_spotcheck.jsonl",
+        "results/multimodel/tinyllama_1p1b/predictions.jsonl",
+        "results/multimodel/smollm2_135m/summary.md",
+        "results/multimodel/smollm2_135m/summary.json",
+        "results/multimodel/smollm2_135m/scorer_spotcheck.jsonl",
+        "results/multimodel/smollm2_135m/predictions.jsonl"
+      ],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 18,
+      "result_file_refs_public_present": 0,
+      "slug": "context-rehydration-multi-model-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/context-reuse-clusterer-local-serving-harness/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/context-reuse-clusterer-local-serving-harness/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/local_serving_vllm_qwen05b_energy/digest.json",
+        "results/local_serving_vllm_qwen05b_energy/server_log_path.txt",
+        "results/local_serving_vllm_qwen05b_energy/summary.csv",
+        "results/local_serving_vllm_qwen05b_energy/requests.csv",
+        "results/local_serving_vllm_qwen05b_energy/summary.json",
+        "results/local_serving_smoke_after_energy_fix/summary.csv",
+        "results/local_serving_smoke_after_energy_fix/requests.csv",
+        "results/local_serving_smoke_after_energy_fix/summary.json",
+        "results/local_serving_vllm_qwen05b/server_log_path.txt",
+        "results/local_serving_vllm_qwen05b/summary.csv"
+      ],
+      "result_file_ref_count": 15,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 15,
+      "result_file_refs_public_present": 0,
+      "slug": "context-reuse-clusterer-local-serving-harness",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/counterexample-bank-targeted-mini-sft-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/counterexample-bank-targeted-mini-sft-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/targeted_prompt_policy_report.md",
+        "results/targeted_prompt_policy_predictions.csv",
+        "results/targeted_prompt_policy_metrics.json"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "counterexample-bank-targeted-mini-sft-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/counterfactual-eviction-labels/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/counterfactual-eviction-labels/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "counterfactual-eviction-labels",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cpu-offload-stress-harness-real-server-scaleup/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cpu-offload-stress-harness-real-server-scaleup/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/scaleup_summary.md",
+        "results/scaleup_summary.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/recovery_failure.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/resource_after.txt",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/replay_stdout.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_status.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_report.md",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_comparison.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_summary.csv",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_requests.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "cpu-offload-stress-harness-real-server-scaleup",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cuad-cross-model-legal-answer-quality-replication/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cuad-cross-model-legal-answer-quality-replication/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json",
+        "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv",
+        "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json",
+        "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv",
+        "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json",
+        "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv",
+        "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json",
+        "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv",
+        "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_summary.json",
+        "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_rows.csv"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "cuad-cross-model-legal-answer-quality-replication",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cuad-dense-retriever-productionization-with-cached-vector-index/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cuad-dense-retriever-productionization-with-cached-vector-index/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/cuad_cached_retriever_pilot.time.txt",
+        "artifacts/cuad_cached_retriever_pilot.stdout",
+        "artifacts/cuad_cached_retriever_pilot.md",
+        "artifacts/cuad_cached_retriever_pilot.json",
+        "artifacts/cuad_cached_retriever_smoke.time.txt",
+        "artifacts/cuad_cached_retriever_smoke.stdout",
+        "artifacts/cuad_cached_retriever_smoke.md",
+        "artifacts/cuad_cached_retriever_smoke.json",
+        "artifacts/unittest_cached.txt",
+        "artifacts/compileall_cached.txt"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "cuad-dense-retriever-productionization-with-cached-vector-index",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/data-center-airflow-toy-twin/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/data-center-airflow-toy-twin/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "data-center-airflow-toy-twin",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/deadline-guarded-speculation-live-serving-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/deadline-guarded-speculation-live-serving-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_model_main/transformers_server_metrics_final.json",
+        "results/real_model_main/live_benchmark_report.md",
+        "results/real_model_main/live_summary.csv",
+        "results/real_model_main/live_requests.csv",
+        "results/real_model_main/live_benchmark_results.json",
+        "results/real_model_calib_cap64/live_benchmark_report.md",
+        "results/real_model_calib_cap64/live_summary.csv",
+        "results/real_model_calib_cap64/live_requests.csv",
+        "results/real_model_calib_cap64/live_benchmark_results.json",
+        "results/real_model_calib/live_benchmark_report.md"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "deadline-guarded-speculation-live-serving-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/demo-position-lottery/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/demo-position-lottery/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/model_qa_benchmark_rows.csv",
+        "results/model_qa_benchmark_summary.json",
+        "results/synthetic_benchmark_rows.csv",
+        "results/synthetic_benchmark_summary.json"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "demo-position-lottery",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/developer-workflow-persona-drift-benchmark-against-filegram/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/developer-workflow-persona-drift-benchmark-against-filegram/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/developer_realism_audit.md",
+        "results/developer_realism_audit.json",
+        "results/apples_to_apples_report.md",
+        "results/apples_to_apples_comparison.json",
+        "results/benchmark_report.md",
+        "results/benchmark_results.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "developer-workflow-persona-drift-benchmark-against-filegram",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dflash-code-generation-quality-guard/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dflash-code-generation-quality-guard/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/qwen3_coder_30b_bf16_triton_n8plus_probe_summary.json",
+        "results/dflash_qwen3_coder_30b_bf16_triton_n8plus_guard_report.json",
+        "results/vllm_qwen3_coder_30b_bf16_triton_n8plus_codegen_guard_comparison.json",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.gpu.csv",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.samples.csv",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.summary.json",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.items.json",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_mbpp_codeguard_c1_mt256_n8.gpu.csv",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_mbpp_codeguard_c1_mt256_n8.samples.csv",
+        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_mbpp_codeguard_c1_mt256_n8.summary.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "dflash-code-generation-quality-guard",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dflash-gb10-transformers-smoke/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dflash-gb10-transformers-smoke/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/transformers_benchmark_short_medium/answer_equivalence.json",
+        "artifacts/transformers_benchmark_short_medium/summary.json",
+        "artifacts/transformers_benchmark_short_medium/records.jsonl",
+        "artifacts/transformers_smoke_acceptance/summary.json",
+        "artifacts/transformers_smoke_acceptance/records.jsonl",
+        "artifacts/transformers_smoke/summary.json",
+        "artifacts/transformers_smoke/records.jsonl"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "dflash-gb10-transformers-smoke",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dflash-vllm-sglang-throughput-shootout/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dflash-vllm-sglang-throughput-shootout/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/vllm_qwen3_4b_quality_comparison.json",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.gpu.csv",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.samples.csv",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.summary.json",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.items.json",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.gpu.csv",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.samples.csv",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.summary.json",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.items.json",
+        "results/vllm_dflash_qwen3_4b_math500_quality_c4_mt256_n40.gpu.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "dflash-vllm-sglang-throughput-shootout",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dflash-vs-existing-spec-dec-baseline-harness/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dflash-vs-existing-spec-dec-baseline-harness/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/final_decision_summary.md",
+        "artifacts/final_decision_audit.json",
+        "results/spec_baseline_report.md",
+        "artifacts/spec_baseline_comparison.stdout.json",
+        "results/spec_baseline_comparison.json",
+        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.gpu.csv",
+        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.samples.csv",
+        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.summary.json",
+        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.items.json",
+        "results/vllm_ngram_qwen3_4b_mbpp_existing_spec_c4_mt256_n24.gpu.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "dflash-vs-existing-spec-dec-baseline-harness",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/difficulty-aware-mask-bank---successor-branch/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/difficulty-aware-mask-bank---successor-branch/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy_stdout.json",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/acceptance_report.json",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/eval/split_mask_eval_bucket_metrics.csv",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/eval/split_mask_eval_rows.jsonl",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/eval/split_mask_eval_summary.json",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/outcomes/mask_outcome_summary.json",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/outcomes/mask_predictions.csv",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_acceptance_medium_easy/outcomes/mask_outcomes.jsonl",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512_stdout.json",
+        "results/hf_qwen05b_activation_hard_sparse_mask_gsm8k_teacher_512/hf_activation_sparse_mask_export_summary.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "difficulty-aware-mask-bank---successor-branch",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/document-field-importance-llm-generation-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/document-field-importance-llm-generation-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/squad_generation_field_importance_metrics.json"
+      ],
+      "result_file_ref_count": 1,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 1,
+      "result_file_refs_public_present": 0,
+      "slug": "document-field-importance-llm-generation-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/draft-token-value-distill/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/draft-token-value-distill/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "draft-token-value-distill",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/draft-value-router/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/draft-value-router/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_trace_router_observed_scaffold/draft_value_router_policy_table.csv",
+        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_test.jsonl",
+        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_train.jsonl",
+        "results/real_trace_router_observed_scaffold/draft_value_router_summary.json",
+        "results/observed_scaffold/scaffold_summary.json",
+        "artifacts/acquisition_manifest.json",
+        "results/synthetic_atlas_router/draft_value_router_policy_table.csv",
+        "results/synthetic_atlas_router/draft_value_router_predictions_test.jsonl",
+        "results/synthetic_atlas_router/draft_value_router_predictions_train.jsonl",
+        "results/synthetic_atlas_router/draft_value_router_summary.json"
+      ],
+      "result_file_ref_count": 14,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 14,
+      "result_file_refs_public_present": 0,
+      "slug": "draft-value-router",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dual-trace-memory-encoder/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dual-trace-memory-encoder/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/dual_trace_memory_benchmark.md",
+        "results/dual_trace_memory_benchmark_multiseed.json",
+        "results/dual_trace_memory_benchmark.json"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "dual-trace-memory-encoder",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dynamic-window-fine-tune/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dynamic-window-fine-tune/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "dynamic-window-fine-tune",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/elastic-expert-budget-during-cpt/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/elastic-expert-budget-during-cpt/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "elastic-expert-budget-during-cpt",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/engine-level-prefix-cache-cohort-scheduler/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/engine-level-prefix-cache-cohort-scheduler/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/engine_slot_lcp_parent_sweep/report.md",
+        "results/engine_slot_lcp_parent_sweep/summary.json",
+        "results/engine_slot_lcp_parent_sweep/requests.csv",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p2_adversarial_unrelated.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p2_mixed_chat_extraction.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p2_repeated_system_prompts.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p1_adversarial_unrelated.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p1_mixed_chat_extraction.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p1_repeated_system_prompts.log",
+        "results/engine_slot_lcp_parent_sweep/server_sps_0p05_adversarial_unrelated.log"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "engine-level-prefix-cache-cohort-scheduler",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/entity-neighborhood-windower/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/entity-neighborhood-windower/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/summary.md",
+        "results/cuad_real_benchmark.json",
+        "results/entity_neighborhood_benchmark.json"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "entity-neighborhood-windower",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/evidence-bound-proof-synthesizer-for-tool-ledger/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/evidence-bound-proof-synthesizer-for-tool-ledger/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/tool_ledger.jsonl",
+        "artifacts/benchmark_cases.json",
+        "artifacts/benchmark_report.json",
+        "artifacts/synthesis_tool_ledger.jsonl",
+        "artifacts/synthesized_proofs.jsonl",
+        "artifacts/synthesis_benchmark_report.json",
+        "artifacts/real_transcript_tool_ledger.jsonl",
+        "artifacts/real_transcript_synthesized_proofs.jsonl",
+        "artifacts/real_transcript_synthesis_report.json",
+        "artifacts/parent_benchmark_stdout.json"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "evidence-bound-proof-synthesizer-for-tool-ledger",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/evidence-first-answerability-cutoff-integration-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/evidence-first-answerability-cutoff-integration-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/llama_server_18082_repair_persistent.log",
+        "results/production_qwen_endpoint_summary.json",
+        "results/llama_server_metrics_after_full.prom",
+        "results/meminfo_after_qwen_full.txt",
+        "results/llama_server_process_after_full.txt",
+        "results/production_qwen_endpoint_full_time.txt",
+        "results/production_qwen_endpoint_full_144cases_budget180_paired_deltas.csv",
+        "results/production_qwen_endpoint_full_144cases_budget180_summary.csv",
+        "results/production_qwen_endpoint_full_144cases_budget180.json",
+        "results/llama_server_metrics_after_calibration.prom"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "evidence-first-answerability-cutoff-integration-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/evidence-first-context-ladder-prompt-layout-ablation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/evidence-first-context-ladder-prompt-layout-ablation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/ablation_analysis.md",
+        "results/post_llm_calibration.txt",
+        "results/ablation_llm/repo_qa_llm_summary.md",
+        "results/ablation_llm/repo_qa_llm_results.json",
+        "results/ablation_llm_pilot/repo_qa_llm_summary.md",
+        "results/ablation_llm_pilot/repo_qa_llm_results.json",
+        "results/pre_llm_calibration.txt",
+        "results/ablation_deterministic/repo_qa_summary.md",
+        "results/ablation_deterministic/repo_qa_results.json",
+        "results/parent_baseline_/repo_qa_llm_summary.md"
+      ],
+      "result_file_ref_count": 15,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 15,
+      "result_file_refs_public_present": 0,
+      "slug": "evidence-first-context-ladder-prompt-layout-ablation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/evidence-recall-auxiliary-head/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/evidence-recall-auxiliary-head/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "evidence-recall-auxiliary-head",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/experiment-autopsy-agent/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/experiment-autopsy-agent/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "experiment-autopsy-agent",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/expert-upcycling-for-verification-models/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/expert-upcycling-for-verification-models/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "expert-upcycling-for-verification-models",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/field-importance-multi-task-tuning/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/field-importance-multi-task-tuning/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "field-importance-multi-task-tuning",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/fieldwise-recall-probe-real-trace-multi-model-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/fieldwise-recall-probe-real-trace-multi-model-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/real_trace_multimodel/summary.json",
+        "artifacts/real_trace_multimodel/time_stderr.log",
+        "artifacts/real_trace_multimodel/run_stdout.json",
+        "artifacts/real_trace_multimodel/report.md",
+        "artifacts/real_trace_multimodel/metadata.json",
+        "artifacts/real_trace_multimodel/predictions.csv",
+        "artifacts/real_trace_multimodel/item_pools.json",
+        "artifacts/real_trace_multimodel/trace_examples.jsonl",
+        "artifacts/real_trace_multimodel_smoke/report.md",
+        "artifacts/real_trace_multimodel_smoke/metadata.json"
+      ],
+      "result_file_ref_count": 17,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 17,
+      "result_file_refs_public_present": 0,
+      "slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/firmware-diff-explainer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/firmware-diff-explainer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "firmware-diff-explainer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/sm121_hd128_split_retune_summary.md",
+        "results/sm121_hd128_long_context_comparison_summary.md",
+        "results/sm121_slice64_parallelsoftmax_query_sweep_summary.md",
+        "results/sm121_q16_slice64_split_partial_threads_summary.md",
+        "results/sm121_parallel_split_softmax_summary.md",
+        "results/sm121_q16_slice64_voverlap_summary.md",
+        "results/sm121_q16_slice_sweep_summary.md",
+        "results/sm121_split_group_q2_crossover_recheck_summary.md",
+        "results/sm121_split_group_q16_summary.md",
+        "results/sm121_grouped_query_parallel_q16_summary.md"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/forced-contrastive-self-audit-extraction-trace-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/forced-contrastive-self-audit-extraction-trace-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/model_eval.json",
+        "results/model_outputs.jsonl",
+        "results/sample_eval.json",
+        "results/prompts.jsonl"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "forced-contrastive-self-audit-extraction-trace-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/gb10-joule-router-live-calibration-adapter/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/gb10-joule-router-live-calibration-adapter/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/gb10_live_llama_cpp_quality_shadow.json",
+        "artifacts/live_llama_cpp/endpoints_quality_shadow.json",
+        "artifacts/live_llama_cpp/nvidia_smi_after.csv",
+        "results/gb10_live_llama_cpp_shadow.json",
+        "artifacts/live_llama_cpp/nvidia_smi_before.csv",
+        "artifacts/live_llama_cpp/endpoints.json",
+        "artifacts/sibling_traces/manifest.json",
+        "results/gb10_live_calibration_with_probe_attempts.json",
+        "artifacts/local_endpoint_probe_attempts.json",
+        "results/gb10_live_calibration_adapter.json"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "gb10-joule-router-live-calibration-adapter",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/gb10-local-server-utility-swap-broker-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/gb10-local-server-utility-swap-broker-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/logs/llama_server_pressure_np4_ctx8192.log",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/slots_after_multiseed.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/llama_metrics_after_multiseed.prom",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.md",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.md",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/requests.csv",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/telemetry_utility_broker.csv",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/telemetry_fixed_fifo.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "gb10-local-server-utility-swap-broker-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/head-importance-self-labeling/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/head-importance-self-labeling/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "head-importance-self-labeling",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/home-lab-agent-orchestrator/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/home-lab-agent-orchestrator/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/summary.md",
+        "results/smoke_eval.json",
+        "results/smoke_eval_evidence_reduced_real_phi.json",
+        "results/smoke_eval_evidence_reduced_fake.json",
+        "results/smoke_eval_messy_real_phi.json",
+        "results/smoke_eval_messy_fake.json",
+        "results/smoke_eval_real_phi.json",
+        "results/smoke_eval_container_services.json"
+      ],
+      "result_file_ref_count": 8,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 8,
+      "result_file_refs_public_present": 0,
+      "slug": "home-lab-agent-orchestrator",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/hot-cold-tensor-paging/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/hot-cold-tensor-paging/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/llamacpp_hotcold_residency/llama-bench-hotcold-reuse-pager.patch",
+        "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+        "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_2048mib_gen16_trace.csv",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_1024mib_gen16_trace.csv",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_512mib_gen16_trace.csv",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_largest_layers_gen16_trace.csv",
+        "results/llamacpp_hotcold_residency/all_gpu_control_gen16_trace.csv",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_2048mib_gen8_trace.csv",
+        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_1024mib_gen8_trace.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "hot-cold-tensor-paging",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/human-checked-acceptance-trace-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/human-checked-acceptance-trace-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/human_spot_check_readme.md",
+        "results/validation_report.md",
+        "results/validation_comparison.json",
+        "results/qwen05_trace_summary.json",
+        "results/llm_trace_summary.json",
+        "results/real_trace_summary.json",
+        "results/summary.json"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "human-checked-acceptance-trace-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/humaneval-mbpp-counterexample-harvest-verifier-transfer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/humaneval-mbpp-counterexample-harvest-verifier-transfer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/humaneval_mbpp_transfer_dataset.csv",
+        "artifacts/humaneval_mbpp_transfer_results.json",
+        "artifacts/benchmark_cache/mbpp.jsonl",
+        "artifacts/benchmark_cache/HumanEval.jsonl.gz"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/intercept-aware-kv-checkpointing-for-tool-calls---successor-branch/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/intercept-aware-kv-checkpointing-for-tool-calls---successor-branch/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/README.md",
+        "results/checkpoint_gate_timing_margins_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_timing_margins_llama_state_phi4mini_uncapped.json",
+        "results/checkpoint_gate_matrix_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_eval_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_eval_llama_state_phi4mini_uncapped.json",
+        "results/timing_probe_llama_state_phi4mini_uncapped.json",
+        "results/checkpoint_gate_timing_margins_surrogate.csv",
+        "results/checkpoint_gate_timing_margins_surrogate.json",
+        "results/checkpoint_gate_timing_margins_fixture.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/junction-adapter-broader-rys-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/junction-adapter-broader-rys-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/broader_rys_benchmark_summary.md",
+        "artifacts/broader_rys_benchmark_aggregate_summary.json",
+        "artifacts/generic_broader_rys_qwen05b_run.log",
+        "artifacts/generic_broader_rys_qwen05b_metrics.json",
+        "artifacts/generic_broader_rys_opt125m_cpu_metrics.json",
+        "artifacts/generic_broader_rys_opt125m_cpu_run.log",
+        "artifacts/generic_broader_rys_opt125m_run.log",
+        "artifacts/generic_broader_rys_opt125m_metrics.json",
+        "artifacts/broader_rys_benchmark_distilgpt2_run.log",
+        "artifacts/broader_rys_benchmark_metrics.json"
+      ],
+      "result_file_ref_count": 11,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 11,
+      "result_file_refs_public_present": 0,
+      "slug": "junction-adapter-broader-rys-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/kv-eviction-gold-labels/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/kv-eviction-gold-labels/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/neural_replayed_ablation_spot_checks.md",
+        "artifacts/neural_replayed_ablation_label_preview.json",
+        "artifacts/neural_replayed_ablation_summary.json",
+        "artifacts/neural_replayed_ablation_eval_rows.csv",
+        "artifacts/replayed_ablation_spot_checks.md",
+        "artifacts/replayed_ablation_label_preview.json",
+        "artifacts/replayed_ablation_summary.json",
+        "artifacts/replayed_ablation_eval_rows.csv",
+        "artifacts/spot_check_failures.md",
+        "artifacts/synthetic_gold_label_preview.json"
+      ],
+      "result_file_ref_count": 12,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 12,
+      "result_file_refs_public_present": 0,
+      "slug": "kv-eviction-gold-labels",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/llm-code-navigation-context-packer-evaluation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/llm-code-navigation-context-packer-evaluation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/llm_context_packer_eval_stdout.json",
+        "artifacts/llm_context_packer_eval_qwen3b_batch_smoke_stdout.json",
+        "artifacts/llm_context_packer_eval_qwen3b_smoke_stdout.json",
+        "artifacts/llm_context_packer_eval_smoke2_stdout.json",
+        "artifacts/llm_context_packer_eval_smoke_stdout.json"
+      ],
+      "result_file_ref_count": 5,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 5,
+      "result_file_refs_public_present": 0,
+      "slug": "llm-code-navigation-context-packer-evaluation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/llm-evidence-survival-qa-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/llm-evidence-survival-qa-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/llm_qa_pilot_600/analysis_summary.json",
+        "results/llm_qa_pilot_600/llama_server.log",
+        "results/llm_qa_pilot_600/resource_summary.json",
+        "results/llm_qa_pilot_600/calibration_summary.json",
+        "results/llm_qa_pilot_600/time_v.log",
+        "results/llm_qa_pilot_600/run_stdout.log",
+        "results/llm_qa_pilot_600/llm_qa_summary.json",
+        "results/llm_qa_pilot_600/llm_qa_rows.csv",
+        "results/llm_qa_pilot_600/resource_samples.log",
+        "results/llm_qa_pilot_600/llama_server.pid"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "llm-evidence-survival-qa-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/load-balancer-free-symmetry-breaker/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/load-balancer-free-symmetry-breaker/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "load-balancer-free-symmetry-breaker",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/log-compression-with-causal-handles/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/log-compression-with-causal-handles/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "log-compression-with-causal-handles",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/long-tail-entity-boost-mix/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/long-tail-entity-boost-mix/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/source_backed_real_model_report.md",
+        "artifacts/source_backed_real_model_eval_forced_stdout.json",
+        "artifacts/source_backed_real_model_eval_forced/summary.json",
+        "artifacts/source_backed_real_model_eval_forced/model_predictions.jsonl",
+        "artifacts/source_backed_real_model_eval_forced/model_metrics.csv",
+        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_3b.log",
+        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_0p5b.log",
+        "artifacts/source_backed_real_model_eval_forced/selected_examples.json",
+        "artifacts/source_backed_real_model_eval_stdout.json",
+        "artifacts/source_backed_real_model_eval/summary.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "long-tail-entity-boost-mix",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/memory-pressure-admission-gate-live-serving-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/memory-pressure-admission-gate-live-serving-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/live_llama_cpp_ctx8192/summary.json",
+        "results/live_llama_cpp_ctx8192/memory_gate_responses.json",
+        "results/live_llama_cpp_ctx8192/throughput_only_responses.json",
+        "results/live_llama_cpp/summary.json",
+        "results/live_llama_cpp/memory_gate_responses.json",
+        "results/live_llama_cpp/throughput_only_responses.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "memory-pressure-admission-gate-live-serving-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/memory-pressure-replay-logs/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/memory-pressure-replay-logs/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/transformers_trace_replay_report.md",
+        "artifacts/transformers_trace_replay_results.json",
+        "artifacts/smoke/transformers_trace_replay_report.md",
+        "artifacts/smoke/transformers_trace_replay_results.json",
+        "artifacts/live_serving_trace_replay_report.md",
+        "artifacts/live_serving_trace_replay_results.json",
+        "artifacts/smoke/live_serving_trace_replay_report.md",
+        "artifacts/smoke/live_serving_trace_replay_results.json",
+        "artifacts/memory_pressure_replay_seed_sweep.json",
+        "artifacts/sweeps/seed_348/memory_pressure_replay_report.md"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "memory-pressure-replay-logs",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/multi-model-real-span-boundary-corruption-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/multi-model-real-span-boundary-corruption-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/multi_model_summary.md",
+        "results/multi_model_real_span_eval.json",
+        "results/multi_model_real_span_eval_v2.json",
+        "results/multi_model_real_span_smoke_v2.json",
+        "results/model_acquisition_20260419.log",
+        "results/multi_model_real_span_smoke.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "multi-model-real-span-boundary-corruption-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/near-miss-tool-call-dataset/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/near-miss-tool-call-dataset/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/report.md",
+        "results/metrics.json",
+        "results/predictions.jsonl"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "near-miss-tool-call-dataset",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/network-path-curiosity-agent/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/network-path-curiosity-agent/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "network-path-curiosity-agent",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/neural-endpoint-segment-order-sensitivity-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/neural-endpoint-segment-order-sensitivity-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/neural_endpoint_segment_order_report.md",
+        "results/neural_endpoint_segment_order_metrics.json",
+        "results/neural_endpoint_predictions_llama_cpp_phi4_cuda_all_layers_ctx4096.jsonl",
+        "results/neural_endpoint_predictions_llama_cpp_phi4_cpu_layers0_ctx4096.jsonl"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "neural-endpoint-segment-order-sensitivity-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/open-weight-integrity-twin-agent-sweep/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/open-weight-integrity-twin-agent-sweep/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "open-weight-integrity-twin-agent-sweep",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/openai-compatible-deployment-of-syntax-preserving-rag-adapter/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/openai-compatible-deployment-of-syntax-preserving-rag-adapter/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/http_adapter_rag_syntax-rag-qwen-http_batch4.json",
+        "artifacts/http_adapter_rag_syntax-rag-qwen-http_batch4.csv",
+        "artifacts/http_adapter_rag_syntax-rag-http-smoke_batch4.json",
+        "artifacts/http_adapter_rag_syntax-rag-http-smoke_batch4.csv",
+        "artifacts/serving_adapter_smoke.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new56_batch4.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new48_batch4.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new64_batch8.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new64_batch4.json",
+        "artifacts/rag_integration_local_gold_aware_extractive_new64_batch4.json"
+      ],
+      "result_file_ref_count": 14,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 14,
+      "result_file_refs_public_present": 0,
+      "slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/outcome-calibrated-real-trace-safety-drift-monitor/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/outcome-calibrated-real-trace-safety-drift-monitor/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/scaffold_teacher_outcome_stdout.json",
+        "artifacts/scaffold_teacher_balanced_test_trace_ids.csv",
+        "artifacts/scaffold_teacher_outcome_events.csv",
+        "artifacts/scaffold_teacher_outcome_manifest.csv",
+        "artifacts/scaffold_teacher_outcome_metrics.json",
+        "artifacts/outcome_calibrated_stdout.json",
+        "artifacts/balanced_test_trace_ids.csv",
+        "artifacts/outcome_calibrated_event_sample.csv",
+        "artifacts/outcome_calibrated_manifest.csv",
+        "artifacts/outcome_calibrated_metrics.json"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "outcome-calibrated-real-trace-safety-drift-monitor",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/pair-adaptive-draft-waste-calibration-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/pair-adaptive-draft-waste-calibration-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/pair_adaptive_calibration/run_stdout.json",
+        "results/pair_adaptive_calibration/benchmark_report.md",
+        "results/pair_adaptive_calibration/summary_by_method.csv",
+        "results/pair_adaptive_calibration/summary.json",
+        "results/pair_adaptive_calibration/sample_estimates.jsonl",
+        "results/pair_adaptive_calibration/split_metrics.jsonl"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "pair-adaptive-draft-waste-calibration-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/partial-evidence-audited-sft-recall-preservation-ablation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/partial-evidence-audited-sft-recall-preservation-ablation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/phi_lora_sft_80step/metrics.csv",
+        "results/phi_lora_sft_80step/summary.json",
+        "results/phi_lora_sft_80step/predictions.jsonl",
+        "results/phi_lora_sft_80step/adapter/tokenizer.json",
+        "results/phi_lora_sft_80step/adapter/tokenizer_config.json",
+        "results/phi_lora_sft_80step/adapter/chat_template.jinja",
+        "results/phi_lora_sft_80step/adapter/adapter_config.json",
+        "results/phi_lora_sft_80step/adapter/adapter_model.safetensors",
+        "results/phi_lora_sft_80step/adapter/README.md",
+        "results/phi_lora_sft_80step/eval_rows.jsonl"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "partial-evidence-audited-sft-recall-preservation-ablation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/partial-module-rys/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/partial-module-rys/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/partial_module_rys_layer2_validation_analysis.md",
+        "results/partial_module_rys_layer2_validation_analysis.json",
+        "results/partial_module_rys_layer2_extended60_summary.md",
+        "results/partial_module_rys_layer2_extended60.json",
+        "results/partial_module_rys_single_layer_sweep_summary.md",
+        "results/partial_module_rys_single_layer_sweep.json",
+        "results/partial_module_rys_benchmark_summary.md",
+        "results/partial_module_rys_benchmark.json"
+      ],
+      "result_file_ref_count": 8,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 8,
+      "result_file_refs_public_present": 0,
+      "slug": "partial-module-rys",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/physical-experiment-doe-agent/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/physical-experiment-doe-agent/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "physical-experiment-doe-agent",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/precision-filtered-evidence-anchors-for-distractor-robust-qa/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/precision-filtered-evidence-anchors-for-distractor-robust-qa/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/offline_precision_filtered_run.log",
+        "results/offline_precision_filtered/summary.md",
+        "results/offline_precision_filtered/benchmark_summary.json",
+        "results/offline_precision_filtered/benchmark_rows.jsonl",
+        "results/generative_qwen_24_precision_filtered_run.log",
+        "results/generative_qwen_24_precision_filtered/generative_summary.md",
+        "results/generative_qwen_24_precision_filtered/generative_summary_by_paraphrase.json",
+        "results/generative_qwen_24_precision_filtered/generative_summary_by_budget.json",
+        "results/generative_qwen_24_precision_filtered/generative_rows.jsonl",
+        "results/generative_smoke_v2_run.log"
+      ],
+      "result_file_ref_count": 19,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 19,
+      "result_file_refs_public_present": 0,
+      "slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/prefix-equivalence-targeted-normalizer-uplift/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/prefix-equivalence-targeted-normalizer-uplift/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/results/summary.md",
+        "artifacts/results/prefix_equivalence_metrics.json",
+        "artifacts/data/prefix_equivalence_corpus.jsonl",
+        "artifacts/results/parent_summary.md",
+        "artifacts/results/parent_prefix_equivalence_metrics.json",
+        "artifacts/data/parent_prefix_equivalence_corpus.jsonl"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "prefix-equivalence-targeted-normalizer-uplift",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/prefix-seeder-serving-adapter-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/prefix-seeder-serving-adapter-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/adapter_bench_live_48req.console.log",
+        "artifacts/adapter_bench_live_48req/summary.md",
+        "artifacts/adapter_bench_live_48req/summary.json",
+        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_requests.json",
+        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_metrics.prom",
+        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_llama_server.log",
+        "artifacts/adapter_bench_live_48req/baseline_no_seed_requests.json",
+        "artifacts/adapter_bench_live_48req/baseline_no_seed_metrics.prom",
+        "artifacts/adapter_bench_live_48req/baseline_no_seed_llama_server.log",
+        "artifacts/adapter_bench_live_48req/bench_config.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "prefix-seeder-serving-adapter-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/prefix-share-serving-trace-set/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/prefix-share-serving-trace-set/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "prefix-share-serving-trace-set",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/production-end-task-canonical-first-rys-variant-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/production-end-task-canonical-first-rys-variant-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/end_task_canonical_first_summary.md",
+        "artifacts/end_task_benchmark_gsm8k256_run.log",
+        "results/end_task_gsm8k256_canonical_first_variants_summary.json",
+        "results/end_task_gsm8k256_canonical_first_variants.csv",
+        "artifacts/end_task_benchmark_run.log",
+        "results/end_task_gsm8k_canonical_first_variants_summary.json",
+        "results/end_task_gsm8k_canonical_first_variants.csv"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "production-end-task-canonical-first-rys-variant-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/production-rag-kv-offload-landmark-reliability-scale-up/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/production-rag-kv-offload-landmark-reliability-scale-up/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "production-rag-kv-offload-landmark-reliability-scale-up",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/production-speculative-decoding-counter-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/production-speculative-decoding-counter-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/llama_server_scaled/llama_server_run_output.json",
+        "artifacts/llama_server_scaled/llama_server_reports.json",
+        "artifacts/llama_server_scaled/llama_server_summary.json",
+        "artifacts/llama_server_scaled/llama_server_trace_rows.csv",
+        "artifacts/llama_server_smoke/llama_server_run_output.json",
+        "artifacts/llama_server_smoke/llama_server_reports.json",
+        "artifacts/llama_server_smoke/llama_server_summary.json",
+        "artifacts/llama_server_smoke/llama_server_trace_rows.csv"
+      ],
+      "result_file_ref_count": 8,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 8,
+      "result_file_refs_public_present": 0,
+      "slug": "production-speculative-decoding-counter-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/protocol-compliance-judge/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/protocol-compliance-judge/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "protocol-compliance-judge",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/query-budget-contract-local-server-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/query-budget-contract-local-server-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/llama_cpp_calibration/server_logs/llama-small.log",
+        "results/llama_cpp_calibration/server_logs/llama-large.log",
+        "results/llama_cpp_calibration/comparison.json",
+        "results/llama_cpp_calibration/responses.csv",
+        "results/llama_cpp_calibration/host.json",
+        "results/llama_cpp_calibration/metrics.json",
+        "results/llama_cpp_calibration/server_logs/broker.log",
+        "results/llama_cpp_calibration/server_logs/dual-backend.log",
+        "results/llama_cpp_smoke/server_logs/llama-small.log",
+        "results/llama_cpp_smoke/server_logs/llama-large.log"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "query-budget-contract-local-server-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-corpus-row-id-citation-qa-integration-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-corpus-row-id-citation-qa-integration-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/qwen_schema_llama_stdout.log",
+        "results/qwen_schema_llama_server.log",
+        "results/qwen_schema_real_corpus_benchmark_metrics.json",
+        "results/real_corpus_qwen_schema_time.txt",
+        "results/real_corpus_qwen_schema_stdout.json",
+        "results/real_corpus_rowid_citation_summary_qwen_schema.md",
+        "results/real_corpus_rowid_citation_results_qwen_schema.json",
+        "results/qwen_schema_real_corpus_server_monitor.jsonl",
+        "results/qwen_schema_models.json",
+        "results/qwen_schema_simple_test.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "real-corpus-row-id-citation-qa-integration-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-document-retrieval-compression-teacher-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-document-retrieval-compression-teacher-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/annotation_audit.json",
+        "results/failure_coverage.json",
+        "results/ranking_stability.json",
+        "results/per_example_rows.jsonl",
+        "results/metrics.json"
+      ],
+      "result_file_ref_count": 5,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 5,
+      "result_file_refs_public_present": 0,
+      "slug": "real-document-retrieval-compression-teacher-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-model-negative-exit-controller-on-math-and-code-search-traces/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-model-negative-exit-controller-on-math-and-code-search-traces/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/qwen25_3b_50x8_metrics.json",
+        "artifacts/qwen25_3b_50x8_stdout.txt",
+        "artifacts/qwen25_3b_50x8_traces.json",
+        "artifacts/qwen25_3b_main_stdout.txt",
+        "artifacts/qwen25_3b_main_metrics.json",
+        "artifacts/qwen25_3b_main_traces.json",
+        "artifacts/qwen25_3b_smoke_metrics.json",
+        "artifacts/qwen25_3b_smoke_stdout.txt",
+        "artifacts/qwen25_3b_smoke_traces.json",
+        "artifacts/qwen06_smoke_metrics.json"
+      ],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 18,
+      "result_file_refs_public_present": 0,
+      "slug": "real-model-negative-exit-controller-on-math-and-code-search-traces",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-rag-answer-abstention-boundary-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-rag-answer-abstention-boundary-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/summary.md",
+        "results/real_rag_metrics.json",
+        "results/real_rag_predictions.jsonl",
+        "results/smoke/summary.md",
+        "results/smoke/real_rag_metrics.json",
+        "results/smoke/real_rag_predictions.jsonl"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "real-rag-answer-abstention-boundary-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/gpt2_medium_wall_clock_summary.json",
+        "results/gpt2_medium_block_winner_eval_budget_pruned_calibrated_rerun.json",
+        "results/gpt2_medium_wall_clock_throughput.json",
+        "results/gpt2_medium_budget_pruned_calibration.json",
+        "results/gpt2_medium_block_winner_eval_budget_pruned_calibrated.json",
+        "results/gpt2_medium_block_winners.json",
+        "results/gpt2_medium_seed_report_budget_pruned_calibrated.json"
+      ],
+      "result_file_ref_count": 7,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 7,
+      "result_file_refs_public_present": 0,
+      "slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-task-context-compression-pareto-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-task-context-compression-pareto-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/llm_judge_sample_comparison.json",
+        "artifacts/claude_llm_judge_sample_output.json",
+        "artifacts/llm_judge_sample_input.json",
+        "artifacts/real_task_pareto_summary.json",
+        "artifacts/real_task_predictions.jsonl",
+        "artifacts/real_task_pareto_metrics.csv",
+        "artifacts/real_rag_squad_examples.jsonl",
+        "artifacts/squad_dev_v1.1.json"
+      ],
+      "result_file_ref_count": 8,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 8,
+      "result_file_refs_public_present": 0,
+      "slug": "real-task-context-compression-pareto-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/real-trace-near-miss-refusal-adapter-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/real-trace-near-miss-refusal-adapter-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/real_trace_refusal_stdout.json",
+        "artifacts/real_trace_refusal_features.json",
+        "artifacts/real_trace_refusal_results.json",
+        "artifacts/real_trace_refusal_corpus.csv"
+      ],
+      "result_file_ref_count": 4,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 4,
+      "result_file_refs_public_present": 0,
+      "slug": "real-trace-near-miss-refusal-adapter-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/reap-ragged-loader-real-checkpoint-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/reap-ragged-loader-real-checkpoint-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/real_checkpoint_integration/reap_collection_preflight_compact.json",
+        "artifacts/real_checkpoint_integration/qwen3_25b_preflight.json"
+      ],
+      "result_file_ref_count": 2,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 2,
+      "result_file_refs_public_present": 0,
+      "slug": "reap-ragged-loader-real-checkpoint-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/reduced-planner-scratchpad-feedback-real-repo-qa-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/reduced-planner-scratchpad-feedback-real-repo-qa-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_repo_qwen7b_pair_hard/llama_server.log",
+        "results/real_repo_qwen7b_pair_hard/live_report.md",
+        "results/real_repo_qwen7b_pair_hard/live_summary.json",
+        "results/real_repo_qwen7b_pair_hard/scratchpads.json",
+        "results/real_repo_qwen7b_pair_hard/live_trial_results.csv",
+        "results/real_repo_qwen7b_pair_hard/cases.json",
+        "results/real_repo_qwen7b_reduced_planner/llama_server.log",
+        "results/real_repo_qwen7b_reduced_planner/live_report.md",
+        "results/real_repo_qwen7b_reduced_planner/live_summary.json",
+        "results/real_repo_qwen7b_reduced_planner/scratchpads.json"
+      ],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 18,
+      "result_file_refs_public_present": 0,
+      "slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/rehydration-guide-student/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/rehydration-guide-student/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "rehydration-guide-student",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/rejection-mode-targeted-abstention-refusal-tuning/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/rejection-mode-targeted-abstention-refusal-tuning/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/promptfix_report.md",
+        "results/promptfix_summary.json",
+        "results/server_ps_after_control_promptfix.txt",
+        "results/mem_after_promptfix.txt",
+        "results/qwen_control_promptfix_full.stderr",
+        "results/qwen_control_promptfix_full.stdout",
+        "results/qwen_control_promptfix_full.jsonl",
+        "results/gpu_util_promptfix_control.csv",
+        "results/gpu_util_promptfix_control.err",
+        "results/server_ps_after_targeted_promptfix.txt"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "rejection-mode-targeted-abstention-refusal-tuning",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/residue-head-teacher-distillation-for-lbrc/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/residue-head-teacher-distillation-for-lbrc/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/residue_teacher_branch_summary.json",
+        "artifacts/residue_constrained_decoder_smol_l140_records.jsonl",
+        "artifacts/residue_constrained_decoder_smol_l140_metrics.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140_train_metrics.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer_config.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/chat_template.jinja",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/model.safetensors",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/generation_config.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/config.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "residue-head-teacher-distillation-for-lbrc",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/resource-bounded-agent-kernel/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/resource-bounded-agent-kernel/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/subprocess_replay/summary_stdout.json",
+        "artifacts/subprocess_replay/summary.json",
+        "artifacts/subprocess_replay/results.csv",
+        "artifacts/subprocess_replay/results.json",
+        "artifacts/subprocess_replay/workspaces/subprocess_resource_kernel_cpu_runaway_jyqd8yui/trace.log.1335184",
+        "artifacts/subprocess_replay/workspaces/subprocess_resource_kernel_cpu_runaway_jyqd8yui/long_task.py",
+        "artifacts/subprocess_replay/workspaces/subprocess_baseline_cpu_runaway_p5_sd7t3/result.txt",
+        "artifacts/subprocess_replay/workspaces/subprocess_baseline_cpu_runaway_p5_sd7t3/long_task.py",
+        "artifacts/subprocess_replay/workspaces/subprocess_resource_kernel_wall_runaway_foyzj6m6/trace.log.1335174",
+        "artifacts/subprocess_replay/workspaces/subprocess_resource_kernel_wall_runaway_foyzj6m6/long_task.py"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "resource-bounded-agent-kernel",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/retrieval-aware-evidence-packer-arbitration-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/retrieval-aware-evidence-packer-arbitration-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/arbitration_full48_analysis/arbitration_comparison_full48.md",
+        "results/arbitration_full48_analysis/threshold_sensitivity_sweep.csv",
+        "results/arbitration_full48_analysis/arbitration_comparison_full48.json",
+        "results/arbitration_qwen7b_hard_decoy48/external_citation_benchmark_summary.md",
+        "results/arbitration_qwen7b_hard_decoy48/llama_server.log",
+        "results/arbitration_qwen7b_hard_decoy48/external_citation_benchmark_summary.json",
+        "results/arbitration_qwen7b_hard_decoy48/external_citation_benchmark_rows.csv",
+        "results/arbitration_qwen7b_hard_decoy48/external_citation_system_metrics.csv",
+        "results/arbitration_qwen7b_reranked48/llama_server.log",
+        "results/arbitration_qwen7b_reranked48/external_citation_benchmark_summary.md"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "retrieval-aware-evidence-packer-arbitration-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/retrieval-conditioned-expert-expansion/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/retrieval-conditioned-expert-expansion/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "retrieval-conditioned-expert-expansion",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/reuse-fingerprint-student/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/reuse-fingerprint-student/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "reuse-fingerprint-student",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/robotic-procedure-verifier/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/robotic-procedure-verifier/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "robotic-procedure-verifier",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/router-distilled-triton-mlp-full-model-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/router-distilled-triton-mlp-full-model-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/decoder_layer_prefill_parent_keep/metrics.csv",
+        "results/decoder_layer_prefill_parent_keep/aggregate_summary.json",
+        "results/decoder_layer_prefill_parent_keep/summary_b1_s2048.json",
+        "results/decoder_layer_prefill_parent_keep/summary_b4_s256.json",
+        "results/decoder_layer_prefill_parent_keep/summary_b2_s512.json",
+        "results/decoder_layer_prefill_parent_keep/summary_b1_s1024.json",
+        "results/decoder_layer_smoke/metrics.csv",
+        "results/decoder_layer_smoke/aggregate_summary.json",
+        "results/decoder_layer_smoke/summary_b1_s128.json",
+        "results/device_count_module_scratch_parent_keep_bt32/metrics.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "router-distilled-triton-mlp-full-model-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/safety-interlock-synthesizer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/safety-interlock-synthesizer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "safety-interlock-synthesizer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/salience-backed-candidate-top-1-kv-prefill-packing-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/salience-backed-candidate-top-1-kv-prefill-packing-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/server_prefill_generation/summary.md",
+        "results/server_prefill_generation/metrics.json",
+        "results/server_prefill_generation/server_salience_candidate_top1.log",
+        "results/server_prefill_generation/server_none.log",
+        "results/server_prefill_generation_smoke/summary.md",
+        "results/server_prefill_generation_smoke/metrics.json",
+        "results/server_prefill_generation_smoke/server_salience_candidate_top1.log",
+        "results/server_prefill_generation_smoke/server_none.log",
+        "results/prefill_packing/summary.md",
+        "results/prefill_packing/metrics.json"
+      ],
+      "result_file_ref_count": 12,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 12,
+      "result_file_refs_public_present": 0,
+      "slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/schema-anchor-adapter-tuning/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/schema-anchor-adapter-tuning/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "schema-anchor-adapter-tuning",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/schema-drift-json-corpus/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/schema-drift-json-corpus/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "schema-drift-json-corpus",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/semantic-overlap-tax-generative-llm-public-rag-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/semantic-overlap-tax-generative-llm-public-rag-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/final_branch_evidence_summary.json",
+        "artifacts/current_branch_smoke/public_qa_rag_summary.json",
+        "artifacts/current_branch_smoke-summary.stdout.json",
+        "artifacts/current_branch_smoke/public_qa_rag_paired_deltas.jsonl",
+        "artifacts/current_branch_smoke/public_qa_rag_rows.jsonl",
+        "artifacts/public_qa_rag_200/public_qa_rag_summary.json",
+        "artifacts/public_qa_rag_200/public_qa_rag_paired_deltas.jsonl",
+        "artifacts/public_qa_rag_200/public_qa_rag_rows.jsonl",
+        "artifacts/public_qa_rag/public_qa_rag_summary.json",
+        "artifacts/public_qa_rag/public_qa_rag_paired_deltas.jsonl"
+      ],
+      "result_file_ref_count": 12,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 12,
+      "result_file_refs_public_present": 0,
+      "slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/shared-prompt-batcher-local-server-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/shared-prompt-batcher-local-server-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/local_server_qwen05_20260419/llama_server.log",
+        "results/local_server_qwen05_20260419/summary.csv",
+        "results/local_server_qwen05_20260419/validation_results.json",
+        "results/local_server_20260419/summary.csv",
+        "results/local_server_20260419/llama_server.log",
+        "results/local_server_20260419/validation_results.json",
+        "results/local_server_calibration_20260419/llama_server.log",
+        "results/local_server_calibration_20260419/summary.csv",
+        "results/local_server_calibration_20260419/validation_results.json",
+        "results/local_server_smoke2_20260419/summary.csv"
+      ],
+      "result_file_ref_count": 15,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 15,
+      "result_file_refs_public_present": 0,
+      "slug": "shared-prompt-batcher-local-server-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/short-train-long-eval-prompt-robust-tuning/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/short-train-long-eval-prompt-robust-tuning/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/phi_prompt_robust_decoding_recommendation.md",
+        "results/system_snapshot_record_candidate_full.txt",
+        "results/time_phi_prompt_sweep_record_candidate_full.txt",
+        "results/phi_prompt_sweep_record_candidate_full_stdout.json",
+        "results/phi_prompt_sweep_record_candidate_full_metrics.json",
+        "results/llama_server_phi_prompt_record_candidate_full.log",
+        "results/system_snapshot_abstention_pilot.txt",
+        "results/phi_abstention_pilot_summary.md",
+        "results/time_phi_prompt_sweep_record_candidate_confirm64.txt",
+        "results/phi_prompt_sweep_record_candidate_confirm64_stdout.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "short-train-long-eval-prompt-robust-tuning",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/sink-token-stabilization/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/sink-token-stabilization/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "sink-token-stabilization",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/slo-narrative-compressor/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/slo-narrative-compressor/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "slo-narrative-compressor",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/small-model-persona-context-orderer-generation-validation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/small-model-persona-context-orderer-generation-validation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/generation_summary.json",
+        "artifacts/generation_benchmark_hotpot_flan_t5_base_limit80.json",
+        "artifacts/generation_benchmark_squad_flan_t5_base_limit80.json",
+        "artifacts/generation_benchmark_hotpot_flan_t5_base_limit8.json",
+        "artifacts/generation_benchmark_flan_t5_base_limit8.json",
+        "artifacts/generation_smoke.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "small-model-persona-context-orderer-generation-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/structured-noise-injection-suite/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/structured-noise-injection-suite/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/llm_qwen05b_120_run.log",
+        "results/llm_qwen05b_120/summary.md",
+        "results/llm_qwen05b_120/summary.json",
+        "results/llm_qwen05b_120/predictions.csv",
+        "results/llm_qwen05b_smoke/summary.md",
+        "results/llm_qwen05b_smoke/summary.json",
+        "results/llm_qwen05b_smoke/predictions.csv",
+        "results/summary.md",
+        "results/summary.json",
+        "results/baseline_predictions.csv"
+      ],
+      "result_file_ref_count": 10,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 10,
+      "result_file_refs_public_present": 0,
+      "slug": "structured-noise-injection-suite",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/synthetic-user-load-negotiator/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/synthetic-user-load-negotiator/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "synthetic-user-load-negotiator",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/task-class-expert-reproduction/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/task-class-expert-reproduction/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "task-class-expert-reproduction",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/test-rig-self-maintainer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/test-rig-self-maintainer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "test-rig-self-maintainer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/thermal-policy-optimizer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/thermal-policy-optimizer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "thermal-policy-optimizer",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/token-rent-for-examples/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/token-rent-for-examples/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/benchmark_summary.json",
+        "results/benchmark_rows.csv",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_time.txt",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_stdout.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_summary.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_rows.csv",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_time.txt",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_stdout.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_summary.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_rows.csv"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "token-rent-for-examples",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/token-type-importance-labels/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/token-type-importance-labels/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_retrieval/system_summary.csv",
+        "results/real_retrieval/latest_run_stdout.json",
+        "results/real_retrieval/metrics.json",
+        "results/real_retrieval/spot_check_75.jsonl",
+        "results/real_retrieval/predictions.jsonl",
+        "results/system_summary.csv",
+        "results/latest_run_stdout.json",
+        "results/metrics.json",
+        "results/predictions.jsonl"
+      ],
+      "result_file_ref_count": 9,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 9,
+      "result_file_refs_public_present": 0,
+      "slug": "token-type-importance-labels",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/tokenized-tiny-lm-duplicate-ratio-ablation/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/tokenized-tiny-lm-duplicate-ratio-ablation/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/full_sequence_tiny_lm_duplicate_ablation/summary.json",
+        "results/full_sequence_tiny_lm_duplicate_ablation/run.log",
+        "results/full_sequence_tiny_lm_duplicate_ablation/per_run_metrics.csv",
+        "results/full_sequence_tiny_lm_duplicate_ablation_debug/summary.json",
+        "results/full_sequence_tiny_lm_duplicate_ablation_debug/per_run_metrics.csv",
+        "results/tokenized_tiny_lm_duplicate_ablation/summary.json",
+        "results/tokenized_tiny_lm_duplicate_ablation/per_run_metrics.csv",
+        "results/tokenized_tiny_lm_duplicate_ablation_smoke/summary.json",
+        "results/tokenized_tiny_lm_duplicate_ablation_smoke/per_run_metrics.csv"
+      ],
+      "result_file_ref_count": 9,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 9,
+      "result_file_refs_public_present": 0,
+      "slug": "tokenized-tiny-lm-duplicate-ratio-ablation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/upcycle-router-cold-start-benchmark/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/upcycle-router-cold-start-benchmark/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "upcycle-router-cold-start-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/upcycled-expert-distillation-collapse/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/upcycled-expert-distillation-collapse/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "upcycled-expert-distillation-collapse",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/upcycled-lora-expert-grafting/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/upcycled-lora-expert-grafting/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "upcycled-lora-expert-grafting",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/utr-conflict-update-final-answer-schema-hardening/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/utr-conflict-update-final-answer-schema-hardening/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/conflict_guard_vs_parent.json",
+        "results/conflict_guard_schema_fixes.json",
+        "results/conflict_guard_failures.json",
+        "results/conflict_guard_resource_summary.json",
+        "results/conflict_guard_predictions.jsonl",
+        "results/conflict_guard_eval.json",
+        "results/conflict_guard_resource_samples.csv",
+        "results/conflict_guard_resource_monitor.log",
+        "results/conflict_vs_parent.json",
+        "results/conflict_hardening_failures.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "utr-conflict-update-final-answer-schema-hardening",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/value-per-joule-broker-online-canary-on-gb10-endpoints/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/value-per-joule-broker-online-canary-on-gb10-endpoints/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/live_frontier_llama_server.log",
+        "results/live_small_llama_server.log",
+        "results/online_canary_live_summary.md",
+        "results/online_canary_live_decisions.csv",
+        "results/online_canary_live.json",
+        "results/endpoint_discovery.json",
+        "results/online_canary_summary.md",
+        "results/online_canary_decisions.csv",
+        "results/online_canary_replay.json",
+        "results/large_calibrated_summary.md"
+      ],
+      "result_file_ref_count": 13,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 13,
+      "result_file_refs_public_present": 0,
+      "slug": "value-per-joule-broker-online-canary-on-gb10-endpoints",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/verification-failure-clusters/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/verification-failure-clusters/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/real_log_stdout.json",
+        "results/real_log_cluster_report.csv",
+        "results/real_log_summary.json",
+        "results/cluster_report.csv",
+        "results/run_stdout.json",
+        "results/summary.json"
+      ],
+      "result_file_ref_count": 6,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 6,
+      "result_file_refs_public_present": 0,
+      "slug": "verification-failure-clusters",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/vllm_0.19.1_attention_sink_retention_review_bundle.tgz",
+        "results/qwen25_3b_openai_calibrated_sweep_summary.md",
+        "results/qwen25_3b_openai_calibrated_sweep_summary.json",
+        "results/qwen25_3b_openai_server_long_foreground_20260420T001441Z.log",
+        "results/qwen25_3b_openai_retention_latency_n256_c16_1024x128_trial1.json",
+        "results/qwen25_3b_openai_baseline_latency_n256_c16_1024x128_trial1.json",
+        "results/qwen25_3b_openai_server_long_20260420T001419Z.log",
+        "results/qwen25_3b_openai_server_long_20260420T001353Z.log",
+        "results/qwen25_3b_openai_retention_latency_n128_c16_1024x64_trial1.json",
+        "results/qwen25_3b_openai_baseline_latency_n128_c16_1024x64_trial1.json"
+      ],
+      "result_file_ref_count": 20,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 20,
+      "result_file_refs_public_present": 0,
+      "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/wake-gate-local-endpoint-harness-integration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/wake-gate-local-endpoint-harness-integration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/wake_gate_integration/llama_cpp_queue/summary.json",
+        "artifacts/wake_gate_integration/llama_cpp_queue/dispatch_request.json",
+        "artifacts/wake_gate_integration/llama_cpp_queue/prepare_project_request.json",
+        "artifacts/wake_gate_integration/latest_builder_stdout.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/summary.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/README.md",
+        "artifacts/wake_gate_integration/20260413T090207Z/autonomous_project_prompt.md",
+        "artifacts/wake_gate_integration/20260413T090207Z/dispatch_request.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/prepare_project_request.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/mock_endpoint.json"
+      ],
+      "result_file_ref_count": 15,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 15,
+      "result_file_refs_public_present": 0,
+      "slug": "wake-gate-local-endpoint-harness-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/weak-wikipedia-generative-answer-flattening-pilot/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/weak-wikipedia-generative-answer-flattening-pilot/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "results/report.md",
+        "results/metrics.json",
+        "results/raw_runs.csv"
+      ],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 3,
+      "result_file_refs_public_present": 0,
+      "slug": "weak-wikipedia-generative-answer-flattening-pilot",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/web-state-replay-benchmark-for-rewindable-sandboxes/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/web-state-replay-benchmark-for-rewindable-sandboxes/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims",
+        "evidence_result_files_missing_public_artifacts"
+      ],
+      "missing_result_file_refs_sample": [
+        "artifacts/realistic_web_state_summary.json",
+        "artifacts/realistic_web_state_trace.json"
+      ],
+      "result_file_ref_count": 2,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 2,
+      "result_file_refs_public_present": 0,
+      "slug": "web-state-replay-benchmark-for-rewindable-sandboxes",
+      "strict_pass": false
+    }
+  ],
+  "status": "blocked_audit_gaps",
+  "strict_claim_evidence_failed_count": 159,
+  "strict_claim_evidence_pass_count": 0,
+  "validated": [
+    "claim_ledger_schema_parseable",
+    "claims_non_empty",
+    "claims_reference_evidence",
+    "evidence_result_file_refs_public_or_declared_unavailable"
+  ]
+}

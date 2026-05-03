@@ -2,7 +2,7 @@
 
 Packaging/provenance passed: 159 / 159
 
-This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and required evidence/claim metadata. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, or citation accuracy.
+This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, citation accuracy, or strict claim/evidence auditability.
 
 ## Validated
 
@@ -21,6 +21,13 @@ This gate checks artifact packaging, provenance language, placeholder/overclaim 
 - `statistical_power`
 - `semantic_output_quality`
 - `citation_accuracy`
+- `strict_claim_evidence_audit`
+
+## Strict claim/evidence audit
+
+Strict claim/evidence passed: 0 / 159
+Status: `blocked_audit_gaps`
+Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
 | Paper | Passes | Issues |
 |---|---:|---|

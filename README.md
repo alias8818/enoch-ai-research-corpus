@@ -6,7 +6,7 @@ Release repository for AI-generated research artifacts produced by the Enoch age
 
 This corpus contains AI-generated technical reports and the evidence artifacts that grounded them: run notes, evidence bundles, claim ledgers, reproducibility metadata, and generated artifact drafts.
 
-Start with [`papers/index.md`](papers/index.md) for the full artifact list and [`quality/packaging_provenance_report.md`](quality/packaging_provenance_report.md) for packaging/provenance gate status. The compatibility report remains available at [`quality/quality_report.md`](quality/quality_report.md).
+Start with [`papers/index.md`](papers/index.md) for the full artifact list, [`quality/packaging_provenance_report.md`](quality/packaging_provenance_report.md) for packaging/provenance lint status, and [`quality/claim_evidence_audit.md`](quality/claim_evidence_audit.md) for the stricter claim/evidence audit. The compatibility report remains available at [`quality/quality_report.md`](quality/quality_report.md).
 
 For source-grounded operator and reviewer docs across the system and corpus, see [Enoch Docs](https://solo-09d10f60.mintlify.app/) ([source](https://github.com/alias8818/enoch-docs)).
 
@@ -34,6 +34,8 @@ quality/
   quality_report.md                   # compatibility copy
   packaging_provenance_report.json
   packaging_provenance_report.md
+  claim_evidence_audit.json
+  claim_evidence_audit.md
 ```
 
 ## Packaging/provenance gate
@@ -43,10 +45,16 @@ The release gate is a packaging/provenance lint gate, not a scientific-validity 
 - No live credentials or private service tokens are present.
 - No `TODO`, placeholder citations, or fake-citation patterns are detected in paper text.
 - Each paper has AI provenance metadata.
-- Each paper links to available evidence and claim ledger artifacts.
+- Each paper includes evidence-bundle and claim-ledger files.
 - Public README clearly states AI-generated / no-human-authorship framing.
 
-The gate does **not** validate scientific correctness, external replication, statistical power, semantic output quality, citation accuracy, or peer review.
+The gate does **not** validate scientific correctness, external replication, statistical power, semantic output quality, citation accuracy, peer review, or deep claim/evidence auditability.
+
+## Strict claim/evidence audit
+
+The strict audit is intentionally separate from the packaging/provenance lint. Current status: **0 / 159 artifacts pass**. The audit reports **159 empty claim ledgers** and **1,425 missing public `result_files` references**. That is an explicit public gap, not a scientific failure verdict and not something hidden by the packaging/provenance pass count.
+
+Do not cite `159/159` without saying it is only the packaging/provenance lint. Use the strict audit when reviewing whether a particular generated claim can be traced to public result files.
 
 ## License
 

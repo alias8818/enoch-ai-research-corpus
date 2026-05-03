@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import importlib.util
 import json
 import re
 from pathlib import Path
@@ -34,7 +35,21 @@ NOT_VALIDATED = [
     "statistical_power",
     "semantic_output_quality",
     "citation_accuracy",
+    "strict_claim_evidence_audit",
 ]
+
+
+def _run_claim_evidence_audit() -> dict:
+    module_path = ROOT / "scripts" / "audit_claim_evidence_contract.py"
+    spec = importlib.util.spec_from_file_location("claim_evidence_audit", module_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"cannot load {module_path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    audit = module.build_report()
+    (QUALITY / "claim_evidence_audit.json").write_text(json.dumps(audit, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    module.write_markdown(audit, QUALITY / "claim_evidence_audit.md")
+    return audit
 for paper in sorted(PAPERS.glob("*/paper.md")):
     text = paper.read_text(encoding="utf-8", errors="replace")
     issues = {name: len(rx.findall(text)) for name, rx in patterns.items()}
@@ -60,6 +75,7 @@ for paper in sorted(PAPERS.glob("*/paper.md")):
         "passes": has_provenance and not issues and (paper.parent / "evidence_bundle.json").exists() and (paper.parent / "claim_ledger.json").exists(),
     }
     rows.append(row)
+claim_evidence_audit = _run_claim_evidence_audit()
 report = {
     "gate_name": GATE_NAME,
     "gate_version": GATE_VERSION,
@@ -69,6 +85,16 @@ report = {
     "count": len(rows),
     "passed": sum(1 for r in rows if r["passes"]),
     "failed": sum(1 for r in rows if not r["passes"]),
+    "claim_evidence_audit": {
+        "gate_name": claim_evidence_audit["gate_name"],
+        "status": claim_evidence_audit["status"],
+        "strict_claim_evidence_pass_count": claim_evidence_audit["strict_claim_evidence_pass_count"],
+        "count": claim_evidence_audit["count"],
+        "claim_ledgers_empty": claim_evidence_audit["claim_ledgers_empty"],
+        "result_file_refs": claim_evidence_audit["result_file_refs"],
+        "result_file_refs_missing": claim_evidence_audit["result_file_refs_missing"],
+        "gap_summary": claim_evidence_audit["gap_summary"],
+    },
     "rows": rows,
 }
 (QUALITY / "quality_report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -78,7 +104,7 @@ lines = [
     "",
     f"Packaging/provenance passed: {report['passed']} / {report['count']}",
     "",
-    "This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and required evidence/claim metadata. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, or citation accuracy.",
+    "This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, citation accuracy, or strict claim/evidence auditability.",
     "",
     "## Validated",
     "",
@@ -86,7 +112,17 @@ lines = [
 lines.extend(f"- `{item}`" for item in VALIDATED)
 lines.extend(["", "## Not validated", ""])
 lines.extend(f"- `{item}`" for item in NOT_VALIDATED)
-lines.extend(["", "| Paper | Passes | Issues |", "|---|---:|---|"])
+lines.extend([
+    "",
+    "## Strict claim/evidence audit",
+    "",
+    f"Strict claim/evidence passed: {claim_evidence_audit['strict_claim_evidence_pass_count']} / {claim_evidence_audit['count']}",
+    f"Status: `{claim_evidence_audit['status']}`",
+    f"Gap summary: {claim_evidence_audit['gap_summary']}",
+    "",
+    "| Paper | Passes | Issues |",
+    "|---|---:|---|",
+])
 for row in rows:
     lines.append(f"| `{row['slug']}` | {row['passes']} | {json.dumps(row['issues'], sort_keys=True)} |")
 (QUALITY / "quality_report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

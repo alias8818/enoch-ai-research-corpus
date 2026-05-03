@@ -31,7 +31,7 @@ Strict claim/evidence passed: 0 / 159
 Status: `blocked_audit_gaps`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
-| Paper | Passes | Issues |
+| Paper | Packaging/provenance lint pass | Packaging issues |
 |---|---:|---|
 | `adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval` | True | {} |
 | `adaptive-boundary-colorization-gate` | True | {} |

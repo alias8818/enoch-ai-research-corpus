@@ -122,7 +122,7 @@ lines.extend([
     f"Status: `{claim_evidence_audit['status']}`",
     f"Gap summary: {claim_evidence_audit['gap_summary']}",
     "",
-    "| Paper | Passes | Issues |",
+    "| Paper | Packaging/provenance lint pass | Packaging issues |",
     "|---|---:|---|",
 ])
 for row in rows:

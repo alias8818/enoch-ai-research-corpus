@@ -131,6 +131,9 @@ def check_absolute_path_refs_do_not_pass() -> None:
         incomplete = {"unavailable_result_files": [{"path": str(private_file), "reason": "private"}]}
         if audit.is_declared_unavailable(incomplete, str(private_file)):
             fail("strict audit accepted private unavailability metadata without hash/bytes/surrogate")
+        string_only = {"unavailable_result_files": [str(private_file)]}
+        if audit.is_declared_unavailable(string_only, str(private_file)):
+            fail("strict audit accepted string-only unavailable_result_files without hash/bytes/surrogate")
 
 
 def main() -> int:

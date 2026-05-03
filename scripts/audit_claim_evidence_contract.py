@@ -102,8 +102,8 @@ def is_declared_unavailable(value: Any, ref: str) -> bool:
     if not isinstance(unavailable, list):
         return False
     for item in unavailable:
-        if isinstance(item, str) and item.lstrip("./") == ref:
-            return True
+        if isinstance(item, str):
+            continue
         if isinstance(item, dict):
             path = item.get("path") or item.get("file")
             reason = str(item.get("reason") or item.get("status") or "").lower()

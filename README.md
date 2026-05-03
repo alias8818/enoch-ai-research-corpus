@@ -4,7 +4,7 @@ Release repository for AI-generated research artifacts produced by the Enoch age
 
 ## What this is
 
-This corpus contains AI-generated technical reports and the evidence artifacts that grounded them: run notes, evidence bundles, claim ledgers, reproducibility metadata, and generated artifact drafts.
+This corpus contains AI-generated technical reports, evidence bundles, claim-ledger files, reproducibility metadata, generated artifact drafts, and references or summaries for run notes and result artifacts.
 
 Start with [`papers/index.md`](papers/index.md) for the full artifact list, [`quality/packaging_provenance_report.md`](quality/packaging_provenance_report.md) for packaging/provenance lint status, and [`quality/claim_evidence_audit.md`](quality/claim_evidence_audit.md) for the stricter claim/evidence audit. The compatibility report remains available at [`quality/quality_report.md`](quality/quality_report.md).
 

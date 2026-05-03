@@ -129,7 +129,7 @@ The experiment host reported approximately 116 GiB available memory with swap di
 
 6. **No real-world validation.** The scientific closure status of this work is *local synthetic evidence complete; real-log validation needed*. No claims about production performance are warranted.
 
-7. **Claim audit pending.** The claim ledger for this paper contains no formally audited claims at the time of drafting. A human claim audit is noted as a project-level limitation.
+7. **Claim audit pending.** The claim ledger for this paper contains no completed claim-audit entries at the time of drafting. A human claim audit is noted as a project-level limitation.
 
 ## 5. Reproducibility Checklist
 

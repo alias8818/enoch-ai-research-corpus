@@ -1,10 +1,12 @@
-# Corpus packaging/provenance report
+# Corpus public audit reports
 
-Packaging/provenance passed: 159 / 159
+Packaging/provenance lint: 159 / 159 pass
+Strict claim/evidence audit: 0 / 159 pass
+Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
-This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, citation accuracy, or strict claim/evidence auditability.
+This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
 
-## Validated
+## Packaging/provenance lint validated
 
 - `ai_provenance_notice_present`
 - `no_placeholder_citation_patterns`
@@ -13,7 +15,7 @@ This gate checks artifact packaging, provenance language, placeholder/overclaim 
 - `evidence_bundle_present`
 - `claim_ledger_present`
 
-## Not validated
+## Not validated by packaging/provenance lint
 
 - `peer_review`
 - `scientific_correctness`

@@ -100,17 +100,19 @@ report = {
 (QUALITY / "quality_report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 (QUALITY / "packaging_provenance_report.json").write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 lines = [
-    "# Corpus packaging/provenance report",
+    "# Corpus public audit reports",
     "",
-    f"Packaging/provenance passed: {report['passed']} / {report['count']}",
+    f"Packaging/provenance lint: {report['passed']} / {report['count']} pass",
+    f"Strict claim/evidence audit: {claim_evidence_audit['strict_claim_evidence_pass_count']} / {claim_evidence_audit['count']} pass",
+    "Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.",
     "",
-    "This gate checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate scientific correctness, peer review, independent replication, statistical power, semantic output quality, citation accuracy, or strict claim/evidence auditability.",
+    "This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.",
     "",
-    "## Validated",
+    "## Packaging/provenance lint validated",
     "",
 ]
 lines.extend(f"- `{item}`" for item in VALIDATED)
-lines.extend(["", "## Not validated", ""])
+lines.extend(["", "## Not validated by packaging/provenance lint", ""])
 lines.extend(f"- `{item}`" for item in NOT_VALIDATED)
 lines.extend([
     "",

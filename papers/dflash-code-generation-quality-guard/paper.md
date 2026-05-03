@@ -185,7 +185,7 @@ Future work should extend the evaluation to full HumanEval and MBPP benchmarks, 
 - `run_notes.md` — chronological run notes documenting all execution steps, failures, and results
 
 ### Claim audit
-- `papers/source-record-redacted/claim_ledger.json` — audited claims with confidence levels and allowed/forbidden wording
+- `papers/source-record-redacted/claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
 
 ### Evidence bundle
 - `papers/source-record-redacted/evidence_bundle.json` — consolidated evidence including decision, run notes tail, and result file inventory

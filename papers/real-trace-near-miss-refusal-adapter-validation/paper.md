@@ -128,5 +128,5 @@ A meaningful next step would require a materially different experimental targetâ
 | Project decision | `.omx/project_decision.json` | finalize_positive, hypothesis supported, confidence medium |
 | Run notes | `run_notes.md` | Execution plan, results, interpretation |
 | Evidence bundle | `papers/.../evidence_bundle.json` | Aggregated evidence for publication |
-| Claim ledger | `papers/.../claim_ledger.json` | Audited claims with confidence and allowed/forbidden wording |
+| Claim ledger | `papers/.../claim_ledger.json` | Placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted |
 | Metrics | `.omx/metrics.json` | Session metrics |

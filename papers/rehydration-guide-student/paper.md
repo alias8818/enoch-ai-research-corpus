@@ -109,7 +109,7 @@ Results are consistent across seeds. The minimum label accuracy (0.9728) and the
 
 7. **Static heuristic utility derived, not directly reported.** The static heuristic's absolute utility (~0.4995) is derived by subtracting the reported gain (0.3723) from the student utility (0.8718), not reported as a standalone metric. This derivation should be treated with caution.
 
-8. **Claim audit incomplete.** The claim ledger for this draft contains no formally audited claims and flags that a human claim audit is required. All numerical results in this paper should be read as unverified prototype evidence pending independent audit.
+8. **Claim audit incomplete.** The claim ledger for this draft contains no completed claim-audit entries and flags that a human claim audit is required. All numerical results in this paper should be read as unverified prototype evidence pending independent audit.
 
 ## Reproducibility Checklist
 

@@ -182,6 +182,6 @@ The recommended default for this substrate is `--slot-prompt-similarity 0.10`, w
 - `results/engine_slot_lcp_parent_sweep/server_sps_0p2_adversarial_unrelated.log`
 
 ### Paper artifacts
-- `papers/.../claim_ledger.json` — audited claims and allowed/forbidden wording
+- `papers/.../claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
 - `papers/.../evidence_bundle.json` — full evidence bundle with decision, run notes, and file manifest
 - `papers/.../paper_manifest.json` — paper metadata and written artifact list

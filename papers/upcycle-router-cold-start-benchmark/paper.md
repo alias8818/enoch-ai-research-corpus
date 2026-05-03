@@ -118,7 +118,7 @@ The smoke test (2,048 tokens × 1,024 hidden × 8 experts, 20 iterations) comple
 
 8. **Random seed reproducibility.** The synthetic benchmark generates data deterministically from latent directions, but explicit random seed values are not recorded in the metric files. Exact numerical reproducibility may depend on Python and NumPy default seeding behavior.
 
-9. **Claim audit incomplete.** The claim ledger for this paper contains no formally audited claims at time of generation. The paper review checklist records 9 pending items and 0 passed items. Readers should treat all stated results as unaudited.
+9. **Claim audit incomplete.** The claim ledger for this paper contains no completed claim-audit entries at time of generation. The paper review checklist records 9 pending items and 0 passed items. Readers should treat all stated results as unaudited.
 
 ## Reproducibility Checklist
 
@@ -132,7 +132,7 @@ The smoke test (2,048 tokens × 1,024 hidden × 8 experts, 20 iterations) comple
 - [ ] **Explicit random seed recording.** Not performed; reproducers should verify whether Python and NumPy default seeds produce identical results.
 - [ ] **Full MoE training reproduction.** Not applicable; no real MoE training was performed.
 - [ ] **Cross-hardware validation.** Not performed; results are specific to the GB10 host described above.
-- [ ] **Claim audit completion.** The claim ledger contains zero audited claims; the paper review checklist has 9 pending items and 0 passed items.
+- [ ] **Claim audit completion.** The claim ledger contains zero completed claim-audit entries; the paper review checklist has 9 pending items and 0 passed items.
 
 ## Conclusion
 

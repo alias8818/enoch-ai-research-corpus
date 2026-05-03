@@ -247,5 +247,5 @@ The current project artifacts support the finding that token-rent packing with a
 - `run_notes.md` — detailed execution log
 - `.omx/project_decision.json` — final project decision (finalize_positive, confidence: medium)
 - `.omx/metrics.json` — session metrics
-- `papers/.../claim_ledger.json` — audited claims and limitations
+- `papers/.../claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
 - `papers/.../evidence_bundle.json` — structured evidence bundle

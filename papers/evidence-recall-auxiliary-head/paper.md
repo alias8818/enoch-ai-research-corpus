@@ -101,7 +101,7 @@ No negative results were observed in this synthetic setting: all seeds and all a
 
 7. **No GPU utilization calibration.** The experiment is CPU-only (max RSS 46,936 kB, 27.04 s wall time on an NVIDIA GB10 host). No CUDA copy calibration or GPU benchmarking was performed or needed for this experiment.
 
-8. **Claim audit incomplete.** The claim ledger for this draft contains no formally audited claims. The limitation "Model-authored draft; human claim audit required" is noted in the ledger. All reported findings should be treated as provisional pending independent verification.
+8. **Claim audit incomplete.** The claim ledger for this draft contains no completed claim-audit entries. The limitation "Model-authored draft; human claim audit required" is noted in the ledger. All reported findings should be treated as provisional pending independent verification.
 
 ---
 

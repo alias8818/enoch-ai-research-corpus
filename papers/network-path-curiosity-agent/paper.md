@@ -130,7 +130,7 @@ This test confirmed basic probing functionality and hardware telemetry posture. 
 
 7. **Rule-based anomaly detection.** The detection logic uses fixed z-score thresholds, loss clustering heuristics, and route-hash comparison. These are not learned end-to-end and may not adapt well to distributional shift in production traffic.
 
-8. **Unreviewed AI-generated artifact.** This draft and the underlying prototype were produced by an automated research pipeline. The claim ledger contains no audited claims. The results have not undergone independent human review or replication.
+8. **Unreviewed AI-generated artifact.** This draft and the underlying prototype were produced by an automated research pipeline. The claim ledger contains no completed claim-audit entries. The results have not undergone independent human review or replication.
 
 ## Reproducibility Checklist
 
@@ -152,7 +152,7 @@ This test confirmed basic probing functionality and hardware telemetry posture. 
 - **Run notes**: `run_notes.md`
 - **Random seeds**: Explicitly recorded (11–15 for calibration; 21–25 for policy comparison)
 - **Viability threshold**: F1 ≥ 0.65, stated a priori
-- **Claim audit status**: Claim ledger contains no audited claims at time of draft generation
+- **Claim audit status**: Claim ledger contains no completed claim-audit entries at time of draft generation
 
 ## Conclusion
 

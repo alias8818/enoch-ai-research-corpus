@@ -133,7 +133,7 @@ The benchmark ran on a Linux aarch64 host with ~122 GB available memory, zero sw
 
 6. **Single-word-budget configuration.** All evaluations used a 160-word maximum. The sensitivity of fact coverage and narrative quality to the word budget has not been explored.
 
-7. **Model-authored draft; human claim audit required.** This paper and the underlying claim ledger were produced by an automated pipeline. The claim ledger contains no independently audited claims. A human claim audit is needed before the results can be treated as verified.
+7. **Model-authored draft; human claim audit required.** This paper and the underlying claim ledger were produced by an automated pipeline. The claim ledger contains no independently verified claim-audit entries. A human claim audit is needed before the results can be treated as verified.
 
 ---
 

@@ -301,7 +301,7 @@
       "words": 1820
     },
     {
-      "bytes": 17233,
+      "bytes": 17239,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -309,7 +309,7 @@
       "paper_path": "papers/canoe-route-risk-planner/paper.md",
       "passes": true,
       "slug": "canoe-route-risk-planner",
-      "words": 2386
+      "words": 2387
     },
     {
       "bytes": 13924,
@@ -543,7 +543,7 @@
       "words": 2271
     },
     {
-      "bytes": 13562,
+      "bytes": 13617,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -551,7 +551,7 @@
       "paper_path": "papers/cuad-dense-retriever-productionization-with-cached-vector-index/paper.md",
       "passes": true,
       "slug": "cuad-dense-retriever-productionization-with-cached-vector-index",
-      "words": 1877
+      "words": 1885
     },
     {
       "bytes": 16053,
@@ -598,7 +598,7 @@
       "words": 2395
     },
     {
-      "bytes": 19098,
+      "bytes": 19147,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -606,7 +606,7 @@
       "paper_path": "papers/dflash-code-generation-quality-guard/paper.md",
       "passes": true,
       "slug": "dflash-code-generation-quality-guard",
-      "words": 2625
+      "words": 2632
     },
     {
       "bytes": 14134,
@@ -719,7 +719,7 @@
       "words": 2434
     },
     {
-      "bytes": 14526,
+      "bytes": 14598,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -727,7 +727,7 @@
       "paper_path": "papers/engine-level-prefix-cache-cohort-scheduler/paper.md",
       "passes": true,
       "slug": "engine-level-prefix-cache-cohort-scheduler",
-      "words": 1984
+      "words": 1994
     },
     {
       "bytes": 16705,
@@ -774,7 +774,7 @@
       "words": 1739
     },
     {
-      "bytes": 12175,
+      "bytes": 12181,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -782,7 +782,7 @@
       "paper_path": "papers/evidence-recall-auxiliary-head/paper.md",
       "passes": true,
       "slug": "evidence-recall-auxiliary-head",
-      "words": 1787
+      "words": 1788
     },
     {
       "bytes": 16149,
@@ -884,7 +884,7 @@
       "words": 2296
     },
     {
-      "bytes": 14160,
+      "bytes": 14166,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -892,7 +892,7 @@
       "paper_path": "papers/head-importance-self-labeling/paper.md",
       "passes": true,
       "slug": "head-importance-self-labeling",
-      "words": 2124
+      "words": 2125
     },
     {
       "bytes": 19586,
@@ -1005,7 +1005,7 @@
       "words": 2254
     },
     {
-      "bytes": 15228,
+      "bytes": 15234,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1013,7 +1013,7 @@
       "paper_path": "papers/log-compression-with-causal-handles/paper.md",
       "passes": true,
       "slug": "log-compression-with-causal-handles",
-      "words": 2100
+      "words": 2101
     },
     {
       "bytes": 15778,
@@ -1071,7 +1071,7 @@
       "words": 2030
     },
     {
-      "bytes": 15188,
+      "bytes": 15218,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1079,7 +1079,7 @@
       "paper_path": "papers/network-path-curiosity-agent/paper.md",
       "passes": true,
       "slug": "network-path-curiosity-agent",
-      "words": 2074
+      "words": 2078
     },
     {
       "bytes": 13891,
@@ -1159,7 +1159,7 @@
       "words": 2192
     },
     {
-      "bytes": 18170,
+      "bytes": 18188,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1167,7 +1167,7 @@
       "paper_path": "papers/physical-experiment-doe-agent/paper.md",
       "passes": true,
       "slug": "physical-experiment-doe-agent",
-      "words": 2585
+      "words": 2588
     },
     {
       "bytes": 13171,
@@ -1335,7 +1335,7 @@
       "words": 1838
     },
     {
-      "bytes": 12134,
+      "bytes": 12190,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1343,7 +1343,7 @@
       "paper_path": "papers/real-trace-near-miss-refusal-adapter-validation/paper.md",
       "passes": true,
       "slug": "real-trace-near-miss-refusal-adapter-validation",
-      "words": 1641
+      "words": 1649
     },
     {
       "bytes": 11717,
@@ -1368,7 +1368,7 @@
       "words": 1865
     },
     {
-      "bytes": 14909,
+      "bytes": 14915,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1376,7 +1376,7 @@
       "paper_path": "papers/rehydration-guide-student/paper.md",
       "passes": true,
       "slug": "rehydration-guide-student",
-      "words": 2075
+      "words": 2076
     },
     {
       "bytes": 13530,
@@ -1500,7 +1500,7 @@
       "words": 1990
     },
     {
-      "bytes": 15278,
+      "bytes": 15350,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1508,7 +1508,7 @@
       "paper_path": "papers/schema-drift-json-corpus/paper.md",
       "passes": true,
       "slug": "schema-drift-json-corpus",
-      "words": 2001
+      "words": 2011
     },
     {
       "bytes": 12515,
@@ -1555,7 +1555,7 @@
       "words": 2438
     },
     {
-      "bytes": 14504,
+      "bytes": 14518,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1563,7 +1563,7 @@
       "paper_path": "papers/slo-narrative-compressor/paper.md",
       "passes": true,
       "slug": "slo-narrative-compressor",
-      "words": 1982
+      "words": 1984
     },
     {
       "bytes": 12978,
@@ -1632,7 +1632,7 @@
       "words": 2558
     },
     {
-      "bytes": 19684,
+      "bytes": 19770,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1640,7 +1640,7 @@
       "paper_path": "papers/token-rent-for-examples/paper.md",
       "passes": true,
       "slug": "token-rent-for-examples",
-      "words": 2715
+      "words": 2727
     },
     {
       "bytes": 17317,
@@ -1665,7 +1665,7 @@
       "words": 1990
     },
     {
-      "bytes": 16002,
+      "bytes": 16023,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1673,7 +1673,7 @@
       "paper_path": "papers/upcycle-router-cold-start-benchmark/paper.md",
       "passes": true,
       "slug": "upcycle-router-cold-start-benchmark",
-      "words": 2191
+      "words": 2194
     },
     {
       "bytes": 17882,
@@ -1731,7 +1731,7 @@
       "words": 1880
     },
     {
-      "bytes": 16275,
+      "bytes": 16330,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1739,7 +1739,7 @@
       "paper_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md",
       "passes": true,
       "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
-      "words": 2101
+      "words": 2109
     },
     {
       "bytes": 13168,

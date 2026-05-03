@@ -1,6 +1,6 @@
 # Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study
 
-> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no formally audited claims, and the review checklist (9 items) remains entirely in pending status. No human reviewer has endorsed this document.
+> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains entirely in pending status. No human reviewer has endorsed this document.
 
 ---
 
@@ -129,7 +129,7 @@ The DOE agent exhibits substantially lower variance across seeds (SD = 0.36) tha
 
 8. **Incomplete baseline statistics.** Min and max values for safe random and LHS-only baselines were not recorded in the benchmark summary, limiting the ability to assess the full distributional shape of baseline performance.
 
-9. **Unaudited claims.** The claim ledger for this paper contains no formally audited claims. The review checklist (9 items) remains entirely in pending status. The results and interpretations presented here have not undergone independent verification or human expert review.
+9. **Claim audit incomplete.** The claim ledger for this paper contains no completed claim-audit entries. The review checklist (9 items) remains entirely in pending status. The results and interpretations presented here have not undergone independent verification or human expert review.
 
 ## Reproducibility Checklist
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
@@ -67,18 +68,33 @@ def collect_result_file_refs(value: Any) -> list[str]:
 
 
 def ref_exists(paper_dir: Path, ref: str) -> bool:
+    """Return true only for public, repository-relative evidence refs.
+
+    Absolute local paths must never make the public strict audit pass: they can
+    exist on a maintainer machine while remaining absent from the published repo.
+    Represent private/absolute evidence with explicit unavailability metadata
+    instead.
+    """
     ref_path = Path(ref)
-    candidates = [paper_dir / ref_path, ROOT / ref_path]
     if ref_path.is_absolute():
-        candidates.append(ref_path)
-    return any(path.exists() for path in candidates)
+        return False
+    normalized = Path(ref.lstrip("./"))
+    candidates = [(paper_dir / normalized).resolve(), (ROOT / normalized).resolve()]
+    for path in candidates:
+        try:
+            path.relative_to(ROOT)
+        except ValueError:
+            continue
+        if path.exists() and path.is_file():
+            return True
+    return False
 
 
 def is_declared_unavailable(value: Any, ref: str) -> bool:
-    """Return true only for explicit per-reference unavailability records.
+    """Return true only for complete per-reference unavailability records.
 
-    A bundle-level redaction marker is not enough; otherwise public result-file
-    references encoded as strings would incorrectly count as available.
+    Absolute/private refs require reason, sha256, bytes, and public_surrogate so
+    the public audit cannot pass because a private local file happened to exist.
     """
     if not isinstance(value, dict):
         return False
@@ -91,7 +107,21 @@ def is_declared_unavailable(value: Any, ref: str) -> bool:
         if isinstance(item, dict):
             path = item.get("path") or item.get("file")
             reason = str(item.get("reason") or item.get("status") or "").lower()
-            if isinstance(path, str) and path.lstrip("./") == ref and reason in {"not_public", "redacted", "private", "unavailable", "omitted"}:
+            sha256 = item.get("sha256")
+            byte_count = item.get("bytes")
+            surrogate = item.get("public_surrogate")
+            path_matches = isinstance(path, str) and path.lstrip("./") == ref.lstrip("./")
+            has_required_private_metadata = (
+                reason in {"not_public", "redacted", "private", "unavailable", "omitted"}
+                and isinstance(sha256, str)
+                and bool(re.fullmatch(r"[0-9a-fA-F]{64}", sha256))
+                and isinstance(byte_count, int)
+                and byte_count >= 0
+                and isinstance(surrogate, str)
+                and bool(surrogate.strip())
+                and not Path(surrogate).is_absolute()
+            )
+            if path_matches and has_required_private_metadata:
                 return True
     return False
 

@@ -20,8 +20,10 @@ jobs:
         run: python3 scripts/build_index.py
       - name: Run quality scan
         run: python3 scripts/quality_scan.py
-      - name: Verify generated indexes are current
-        run: git diff --exit-code -- papers/index.json papers/index.md quality/quality_report.json quality/quality_report.md
+      - name: Validate public trust surfaces
+        run: python3 scripts/validate_public_trust_surfaces.py
+      - name: Verify generated indexes and reports are current
+        run: git diff --exit-code -- papers/index.json papers/index.md quality/quality_report.json quality/quality_report.md quality/packaging_provenance_report.json quality/packaging_provenance_report.md quality/claim_evidence_audit.json quality/claim_evidence_audit.md
   secret-scan:
     name: secret-scan
     runs-on: ubuntu-latest

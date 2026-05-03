@@ -199,5 +199,5 @@ The Schema-Drift JSON Corpus provides a reproducible 2,000-example diagnostic be
 - `.omx/project_decision.json` — project decision (finalize_positive)
 - `.omx/metrics.json` — session metrics
 - `run_notes.md` — full execution log
-- `papers/.../claim_ledger.json` — audited claims and allowed/forbidden wording
+- `papers/.../claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
 - `papers/.../evidence_bundle.json` — structured evidence summary

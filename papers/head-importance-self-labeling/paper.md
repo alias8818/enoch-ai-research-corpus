@@ -140,7 +140,7 @@ The random-marker version of the synthetic task, where marker positions were not
 - **Smoke test:** Passed before full run (`--mode smoke`).
 - **Output artifacts:** Full summary JSON, head scores CSV, training JSONL log, console log with `/usr/bin/time -v` output.
 - **Exact commands:** Recorded in run notes (see Referenced Artifacts).
-- **Claim audit status:** Claim ledger contains no formally audited claims; draft is in `draft_review` status with review checklist at 0/9 items resolved.
+- **Claim audit status:** Claim ledger contains no completed claim-audit entries; draft is in `draft_review` status with review checklist at 0/9 items resolved.
 
 ## 6. Conclusion
 

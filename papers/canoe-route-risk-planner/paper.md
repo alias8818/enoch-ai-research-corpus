@@ -131,7 +131,7 @@ This feasibility evaluation has several important limitations:
 
 8. **No failure-mode testing.** API timeouts, malformed responses, rate limiting, and missing data were not systematically tested. A production system must handle these gracefully.
 
-9. **Claim audit incomplete.** The claim ledger for this paper contains no formally audited claims at the time of generation. The paper review checklist records all 9 items as pending. The findings reported here should be treated as prototype evidence pending independent verification.
+9. **Claim audit incomplete.** The claim ledger for this paper contains no completed claim-audit entries at the time of generation. The paper review checklist records all 9 items as pending. The findings reported here should be treated as prototype evidence pending independent verification.
 
 ## Reproducibility Checklist
 

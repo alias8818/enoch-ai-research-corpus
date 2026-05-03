@@ -160,5 +160,5 @@ These findings support the hypothesis that precomputing per-contract window feat
 
 ### Paper artifacts
 - `papers/source-record-redacted/evidence_bundle.json` — structured evidence bundle
-- `papers/source-record-redacted/claim_ledger.json` — audited claims with confidence levels and wording constraints
+- `papers/source-record-redacted/claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
 - `papers/source-record-redacted/publication/publication_manifest.json` — publication manifest

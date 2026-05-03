@@ -56,19 +56,23 @@ def check_quality_report_header() -> None:
     path = QUALITY / "quality_report.md"
     lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
     first20 = "\n".join(lines[:20]).lower()
-    required = ["packaging/provenance lint", "159 / 159", "strict claim/evidence", "0 / 159", "not validated"]
+    audit = load_json(QUALITY / "claim_evidence_audit.json")
+    expected_strict = f"{audit.get('strict_claim_evidence_pass_count')} / {audit.get('count')}"
+    required = ["packaging/provenance lint", "159 / 159", "strict claim/evidence", expected_strict, "not validated"]
     for phrase in required:
         if phrase not in first20:
             fail(f"quality/quality_report.md first 20 lines missing {phrase!r}")
 
 
 def check_packaging_pass_has_strict_context() -> None:
+    audit = load_json(QUALITY / "claim_evidence_audit.json")
+    expected_strict = rf"{audit.get('strict_claim_evidence_pass_count')}\s*/\s*{audit.get('count')}"
     for path in [QUALITY / "quality_report.md", QUALITY / "packaging_provenance_report.md", ROOT / "README.md"]:
         text = path.read_text(encoding="utf-8", errors="replace")
         rel = path.relative_to(ROOT)
         for match in PACKAGING_PASS.finditer(text):
             window = text[max(0, match.start() - 300):match.end() + 300].lower()
-            if "packaging/provenance lint" not in window or "strict claim/evidence" not in window or not re.search(r"0\s*/\s*159", window):
+            if "packaging/provenance lint" not in window or "strict claim/evidence" not in window or not re.search(expected_strict, window):
                 fail(f"{rel}:{line_for(text, match.start())} 159/159 packaging pass lacks nearby strict audit context")
 
 

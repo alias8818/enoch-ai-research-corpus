@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 0 / 159
+Strict claim/evidence passed: 1 / 159
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,11 +8,11 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 159 / 159
+- Empty claim ledgers: 158 / 159
 - Evidence `result_files` references: 1425
 - Publicly present result-file references: 0
-- Missing result-file references: 1425
-- Featured artifacts strict-pass count: 0 / 1
+- Missing result-file references: 1405
+- Featured artifacts strict-pass count: 1 / 1
 
 ## Validated
 
@@ -189,7 +189,7 @@ Status: `blocked_audit_gaps`
 | `utr-conflict-update-final-answer-schema-hardening` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `value-per-joule-broker-online-canary-on-gb10-endpoints` | False | 0 | 13 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `verification-failure-clusters` | False | 0 | 6 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
-| `vllm-attention-sink-retention-3b-continuous-serving-stress-campaign` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `vllm-attention-sink-retention-3b-continuous-serving-stress-campaign` | True | 5 | 0 | [] |
 | `wake-gate-local-endpoint-harness-integration` | False | 0 | 15 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `weak-wikipedia-generative-answer-flattening-pilot` | False | 0 | 3 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `web-state-replay-benchmark-for-rewindable-sandboxes` | False | 0 | 2 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |

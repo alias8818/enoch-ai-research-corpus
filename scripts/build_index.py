@@ -19,6 +19,7 @@ def _load_claim_audit() -> dict[str, dict]:
 
 
 claim_audit_rows = _load_claim_audit()
+strict_pass_count = sum(1 for row in claim_audit_rows.values() if row.get("strict_pass"))
 rows = []
 for meta_path in sorted(PAPERS.glob("*/metadata.json")):
     try:
@@ -51,7 +52,7 @@ lines = [
     "",
     f"Count: {len(rows)}",
     "",
-    "This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and 0/159 strict claim/evidence audit pass.",
+    f"This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and {strict_pass_count}/159 strict claim/evidence audit pass.",
     "",
     "| Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |",
     "|---|---|---:|---:|---:|---:|---:|",

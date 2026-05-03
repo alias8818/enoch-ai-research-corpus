@@ -2328,17 +2328,17 @@
     },
     {
       "ai_generated": true,
-      "claim_count": 0,
+      "claim_count": 5,
       "claim_ledger_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/claim_ledger.json",
       "evidence_bundle_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
       "human_authorship_claimed": false,
-      "missing_result_refs": 20,
+      "missing_result_refs": 0,
       "paper_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md",
       "public_id": "enoch-paper-0060",
       "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
       "source_record_fingerprint": "1f07f7cef7ffb258",
-      "strict_audit_pass": false,
+      "strict_audit_pass": true,
       "title": "vLLM Attention-Sink Retention 3B Continuous-Serving Stress Campaign"
     },
     {

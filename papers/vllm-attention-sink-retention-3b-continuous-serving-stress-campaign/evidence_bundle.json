@@ -176,5 +176,248 @@
       "updated_at": "2026-04-20T00:20:38.953196+00:00"
     },
     "decision_error": ""
-  }
+  },
+  "unavailable_result_files": [
+    {
+      "path": "results/vllm_0.19.1_attention_sink_retention_review_bundle.tgz",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_calibrated_sweep_summary.md",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_calibrated_sweep_summary.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_server_long_foreground_20260420T001441Z.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_retention_latency_n256_c16_1024x128_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_baseline_latency_n256_c16_1024x128_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_server_long_20260420T001419Z.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_server_long_20260420T001353Z.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_retention_latency_n128_c16_1024x64_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_baseline_latency_n128_c16_1024x64_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_retention_latency_n96_c8_1024x64_trial2.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_baseline_latency_n96_c8_1024x64_trial2.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_retention_latency_n96_c8_1024x64_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_baseline_latency_n96_c8_1024x64_trial1.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_server_sweep_20260420T000840Z.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_retention_latency_n16_c4_768x16.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_baseline_latency_n16_c4_768x16.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_openai_server.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_per_request_smoke_n4_768x8.json",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    },
+    {
+      "path": "results/qwen25_3b_per_request_smoke_n4_768x8.log",
+      "reason": "unavailable",
+      "status": "raw_result_file_not_in_public_corpus_export",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "sha256_scope": "public_surrogate",
+      "original_sha256_status": "unknown_not_present_in_public_repository",
+      "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "note": "sha256/bytes identify the public surrogate, not the unavailable original raw result file."
+    }
+  ],
+  "public_evidence_surrogates": [
+    {
+      "path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+      "sha256": "77a162b2a3c7e3723b6a85df3dc3a71108e007f2278788457d9d6634a6287a4b",
+      "bytes": 6931,
+      "derived_from": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json"
+      ],
+      "scope": "strict claim/evidence traceability only"
+    },
+    {
+      "path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.md",
+      "sha256": "c7ae25beea281328f2282cdc97bced0f5796323324eb02d6168ba72c3e597f3a",
+      "bytes": 2980,
+      "derived_from": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json"
+      ],
+      "scope": "human-readable public surrogate summary"
+    }
+  ]
 }

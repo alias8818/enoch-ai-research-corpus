@@ -235,6 +235,6 @@ The evidence supports the viability of per-request attention-sink retention unde
 - `results/qwen25_3b_openai_server_long_foreground_20260420T001441Z.log`
 
 ### Paper Artifacts
-- `papers/.../claim_ledger.json` — placeholder/blocked claim ledger; strict claim/evidence audit is blocked because no structured claims were extracted
+- `papers/.../claim_ledger.json` — narrow public traceability ledger for five selected claims; strict audit pass means claim/evidence traceability only, not peer review, scientific correctness, independent replication, statistical power, semantic output quality, or human-written status
 - `papers/.../evidence_bundle.json` — structured evidence summary
 - `papers/.../paper_manifest.json` — paper artifact manifest

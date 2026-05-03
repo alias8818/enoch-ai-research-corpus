@@ -1,0 +1,123 @@
+{
+  "schema": "enoch_public_strict_claim_evidence_surrogate_v1",
+  "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+  "created_at": "2026-05-03T00:00:00Z",
+  "purpose": "Public surrogate evidence derived only from already-public paper.md and evidence_bundle.json so the strict claim/evidence audit can trace selected claims without implying raw private result files are present.",
+  "source_public_files": [
+    {
+      "path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md",
+      "sha256": "43ad709fa120b142f1cdba02f6f243ba5505814b77ea6537610013782927117b",
+      "bytes": 16465
+    },
+    {
+      "path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+      "sha256_before_surrogate_metadata_update": "94c41e0bf1e9906b57d3434ad598d44420b68cfcff0941d26c1bbc9581622945",
+      "bytes_before_surrogate_metadata_update": 13373
+    }
+  ],
+  "raw_result_files_public_status": {
+    "status": "not_in_public_corpus_export",
+    "count": 20,
+    "note": "Original result/log/archive files named by the generated evidence bundle are not present in this repository. This surrogate does not recreate raw outputs; it preserves the public extracted metrics and caveats already present in the bundle and paper.",
+    "paths": [
+      "results/vllm_0.19.1_attention_sink_retention_review_bundle.tgz",
+      "results/qwen25_3b_openai_calibrated_sweep_summary.md",
+      "results/qwen25_3b_openai_calibrated_sweep_summary.json",
+      "results/qwen25_3b_openai_server_long_foreground_20260420T001441Z.log",
+      "results/qwen25_3b_openai_retention_latency_n256_c16_1024x128_trial1.json",
+      "results/qwen25_3b_openai_baseline_latency_n256_c16_1024x128_trial1.json",
+      "results/qwen25_3b_openai_server_long_20260420T001419Z.log",
+      "results/qwen25_3b_openai_server_long_20260420T001353Z.log",
+      "results/qwen25_3b_openai_retention_latency_n128_c16_1024x64_trial1.json",
+      "results/qwen25_3b_openai_baseline_latency_n128_c16_1024x64_trial1.json",
+      "results/qwen25_3b_openai_retention_latency_n96_c8_1024x64_trial2.json",
+      "results/qwen25_3b_openai_baseline_latency_n96_c8_1024x64_trial2.json",
+      "results/qwen25_3b_openai_retention_latency_n96_c8_1024x64_trial1.json",
+      "results/qwen25_3b_openai_baseline_latency_n96_c8_1024x64_trial1.json",
+      "results/qwen25_3b_openai_server_sweep_20260420T000840Z.log",
+      "results/qwen25_3b_openai_retention_latency_n16_c4_768x16.json",
+      "results/qwen25_3b_openai_baseline_latency_n16_c4_768x16.json",
+      "results/qwen25_3b_openai_server.log",
+      "results/qwen25_3b_per_request_smoke_n4_768x8.json",
+      "results/qwen25_3b_per_request_smoke_n4_768x8.log"
+    ]
+  },
+  "strict_audit_meaning": "Traceability only: non-empty claim ledger entries point to public repo-local evidence or explicit unavailability metadata. This is not peer review, scientific correctness, independent replication, statistical power, semantic output quality, or human-written status.",
+  "claims": [
+    {
+      "id": "vllm-sink-001",
+      "claim": "The calibrated OpenAI-compatible continuous-serving sweep used a patched vLLM 0.19.1 install serving Qwen/Qwen2.5-3B-Instruct with float16, max_model_len=1024, max_num_batched_tokens=4096, max_num_seqs=16, and gpu_memory_utilization=0.50.",
+      "evidence_summary": "The public evidence bundle run-notes tail records the server configuration and retention policy used for the calibrated sweep.",
+      "source_fields": [
+        "evidence_bundle.json:run_notes_tail[0:4]",
+        "paper.md:Section 2.2"
+      ],
+      "audit_scope": "configuration_traceability_only",
+      "not_validated": [
+        "environment_recreation",
+        "vLLM patch correctness",
+        "model cache integrity"
+      ]
+    },
+    {
+      "id": "vllm-sink-002",
+      "claim": "Across the four calibrated paired baseline/retention trials, the public bundle reports zero request errors and no retention p95 latency regression over the 10% kill gate; the worst reported p95 delta is +0.30%.",
+      "evidence_summary": "The run-notes tail lists p95 deltas for n96/c8/out64 trials 1-2, n128/c16/out64, and n256/c16/out128, and states that no calibrated pair triggered the kill gate.",
+      "source_fields": [
+        "evidence_bundle.json:run_notes_tail Key results",
+        "evidence_bundle.json:run_notes_tail Kill-gate evaluation",
+        "paper.md:Sections 3.3-3.4"
+      ],
+      "audit_scope": "reported_metric_traceability_only",
+      "not_validated": [
+        "statistical_power",
+        "independent_replication",
+        "scientific_correctness"
+      ]
+    },
+    {
+      "id": "vllm-sink-003",
+      "claim": "The same public evidence reports non-zero output preview differences in all calibrated pairs: 2/96, 3/96, 7/128, and 17/256, so this artifact does not establish semantic equivalence.",
+      "evidence_summary": "The run-notes tail explicitly cautions that output preview differences were low but non-zero and that only output previews, not full semantic grading, were compared.",
+      "source_fields": [
+        "evidence_bundle.json:run_notes_tail Output preview differences",
+        "paper.md:Sections 3.3 and 4"
+      ],
+      "audit_scope": "limitation_traceability_only",
+      "not_validated": [
+        "semantic_output_quality",
+        "human_evaluation",
+        "full_output_equivalence"
+      ]
+    },
+    {
+      "id": "vllm-sink-004",
+      "claim": "The public evidence reports high GPU utilization during calibrated load (90-96% mean, 96% peak), engine RSS around 2.34-2.42 GB, and MemAvailable roughly 54.6-55.6 GB after warmup.",
+      "evidence_summary": "These resource ranges are stated in the public run-notes tail and repeated in the paper resource-utilization subsection.",
+      "source_fields": [
+        "evidence_bundle.json:run_notes_tail resource utilization",
+        "paper.md:Section 3.3"
+      ],
+      "audit_scope": "reported_resource_metric_traceability_only",
+      "not_validated": [
+        "hardware_generalization",
+        "long-duration_memory_leak_behavior"
+      ]
+    },
+    {
+      "id": "vllm-sink-005",
+      "claim": "The project decision in the public bundle is finalize_positive with hypothesis_status supported, confidence medium, and evidence_strength strong for the latency kill-gate dimension.",
+      "evidence_summary": "The evidence bundle decision and status_json.project_decision fields carry the same decision/status/confidence/evidence-strength values and a stop reason tied to the latency kill gate.",
+      "source_fields": [
+        "evidence_bundle.json:decision",
+        "evidence_bundle.json:status_json.project_decision"
+      ],
+      "audit_scope": "decision_metadata_traceability_only",
+      "not_validated": [
+        "peer_review",
+        "external_acceptance",
+        "scientific_correctness"
+      ]
+    }
+  ]
+}

@@ -95,6 +95,9 @@ def is_declared_unavailable(value: Any, ref: str) -> bool:
 
     Absolute/private refs require reason, sha256, bytes, and public_surrogate so
     the public audit cannot pass because a private local file happened to exist.
+    When metadata hashes the public surrogate rather than the unavailable
+    original file, require an explicit sha256_scope and verify the surrogate
+    file's current digest and byte count.
     """
     if not isinstance(value, dict):
         return False
@@ -110,8 +113,9 @@ def is_declared_unavailable(value: Any, ref: str) -> bool:
             sha256 = item.get("sha256")
             byte_count = item.get("bytes")
             surrogate = item.get("public_surrogate")
+            sha256_scope = item.get("sha256_scope")
             path_matches = isinstance(path, str) and path.lstrip("./") == ref.lstrip("./")
-            has_required_private_metadata = (
+            has_base_metadata = (
                 reason in {"not_public", "redacted", "private", "unavailable", "omitted"}
                 and isinstance(sha256, str)
                 and bool(re.fullmatch(r"[0-9a-fA-F]{64}", sha256))
@@ -121,7 +125,29 @@ def is_declared_unavailable(value: Any, ref: str) -> bool:
                 and bool(surrogate.strip())
                 and not Path(surrogate).is_absolute()
             )
-            if path_matches and has_required_private_metadata:
+            if not (path_matches and has_base_metadata):
+                continue
+
+            surrogate_path = (ROOT / surrogate.lstrip("./")).resolve()
+            try:
+                surrogate_path.relative_to(ROOT)
+            except ValueError:
+                continue
+            if not surrogate_path.exists() or not surrogate_path.is_file():
+                continue
+
+            if sha256_scope == "public_surrogate":
+                import hashlib
+
+                data = surrogate_path.read_bytes()
+                if hashlib.sha256(data).hexdigest().lower() != sha256.lower():
+                    continue
+                if len(data) != byte_count:
+                    continue
+            elif sha256_scope not in {None, "original_result_file"}:
+                continue
+
+            if path_matches:
                 return True
     return False
 

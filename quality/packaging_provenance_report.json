@@ -1,13 +1,13 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 159,
+    "claim_ledgers_empty": 158,
     "count": 159,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1425,
-    "result_file_refs_missing": 1425,
+    "result_file_refs_missing": 1405,
     "status": "blocked_audit_gaps",
-    "strict_claim_evidence_pass_count": 0
+    "strict_claim_evidence_pass_count": 1
   },
   "count": 159,
   "failed": 0,
@@ -1731,7 +1731,7 @@
       "words": 1880
     },
     {
-      "bytes": 16330,
+      "bytes": 16465,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -1739,7 +1739,7 @@
       "paper_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md",
       "passes": true,
       "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
-      "words": 2109
+      "words": 2125
     },
     {
       "bytes": 13168,

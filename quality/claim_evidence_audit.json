@@ -1,8 +1,8 @@
 {
-  "claim_ledgers_empty": 159,
+  "claim_ledgers_empty": 158,
   "count": 159,
   "featured_artifacts_checked": 1,
-  "featured_artifacts_strict_pass_count": 0,
+  "featured_artifacts_strict_pass_count": 1,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
   "gate_name": "strict_claim_evidence_audit",
   "gate_scope": "strict claim-ledger schema, non-empty claim evidence references, and public availability of evidence result_file references",
@@ -16,7 +16,7 @@
     "citation_accuracy"
   ],
   "result_file_refs": 1425,
-  "result_file_refs_missing": 1425,
+  "result_file_refs_missing": 1405,
   "result_file_refs_public_present": 0,
   "rows": [
     {
@@ -3939,34 +3939,20 @@
       "strict_pass": false
     },
     {
-      "audit_status": "blocked_empty_claims",
-      "claim_count": 0,
-      "claim_ledger_empty": true,
+      "audit_status": "strict_pass",
+      "claim_count": 5,
+      "claim_ledger_empty": false,
       "claim_ledger_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/claim_ledger.json",
-      "claim_ledger_schema_status": "blocked_empty_claims",
+      "claim_ledger_schema_status": "claims_reference_evidence",
       "evidence_bundle_path": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-      "issues": [
-        "claim_ledger_empty_claims",
-        "evidence_result_files_missing_public_artifacts"
-      ],
-      "missing_result_file_refs_sample": [
-        "results/vllm_0.19.1_attention_sink_retention_review_bundle.tgz",
-        "results/qwen25_3b_openai_calibrated_sweep_summary.md",
-        "results/qwen25_3b_openai_calibrated_sweep_summary.json",
-        "results/qwen25_3b_openai_server_long_foreground_20260420T001441Z.log",
-        "results/qwen25_3b_openai_retention_latency_n256_c16_1024x128_trial1.json",
-        "results/qwen25_3b_openai_baseline_latency_n256_c16_1024x128_trial1.json",
-        "results/qwen25_3b_openai_server_long_20260420T001419Z.log",
-        "results/qwen25_3b_openai_server_long_20260420T001353Z.log",
-        "results/qwen25_3b_openai_retention_latency_n128_c16_1024x64_trial1.json",
-        "results/qwen25_3b_openai_baseline_latency_n128_c16_1024x64_trial1.json"
-      ],
+      "issues": [],
+      "missing_result_file_refs_sample": [],
       "result_file_ref_count": 20,
-      "result_file_refs_declared_unavailable": 0,
-      "result_file_refs_missing": 20,
+      "result_file_refs_declared_unavailable": 20,
+      "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
-      "strict_pass": false
+      "strict_pass": true
     },
     {
       "audit_status": "blocked_empty_claims",
@@ -4045,8 +4031,8 @@
     }
   ],
   "status": "blocked_audit_gaps",
-  "strict_claim_evidence_failed_count": 159,
-  "strict_claim_evidence_pass_count": 0,
+  "strict_claim_evidence_failed_count": 158,
+  "strict_claim_evidence_pass_count": 1,
   "validated": [
     "claim_ledger_schema_parseable",
     "claims_non_empty",

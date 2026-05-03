@@ -2,7 +2,7 @@
 
 Count: 159
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and 0/159 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and 1/159 strict claim/evidence audit pass.
 
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
@@ -161,7 +161,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [UTR Conflict-Update Final-Answer Schema Hardening](utr-conflict-update-final-answer-schema-hardening/paper.md) | `enoch-paper-0092` | yes | yes | 0 | false | 20 |
 | [Value-per-Joule Broker Online Canary on GB10 Endpoints](value-per-joule-broker-online-canary-on-gb10-endpoints/paper.md) | `enoch-paper-0012` | yes | yes | 0 | false | 13 |
 | [Verification Failure Clusters](verification-failure-clusters/paper.md) | `enoch-paper-0069` | yes | yes | 0 | false | 6 |
-| [vLLM Attention-Sink Retention 3B Continuous-Serving Stress Campaign](vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md) | `enoch-paper-0060` | yes | yes | 0 | false | 20 |
+| [vLLM Attention-Sink Retention 3B Continuous-Serving Stress Campaign](vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md) | `enoch-paper-0060` | yes | yes | 5 | true | 0 |
 | [Wake-Gate Local Endpoint Harness Integration](wake-gate-local-endpoint-harness-integration/paper.md) | `enoch-paper-0023` | yes | yes | 0 | false | 15 |
 | [Weak-Wikipedia Generative Answer Flattening Pilot](weak-wikipedia-generative-answer-flattening-pilot/paper.md) | `enoch-paper-0050` | yes | yes | 0 | false | 3 |
 | [Web-State Replay Benchmark for Rewindable Sandboxes](web-state-replay-benchmark-for-rewindable-sandboxes/paper.md) | `enoch-paper-0094` | yes | yes | 0 | false | 2 |

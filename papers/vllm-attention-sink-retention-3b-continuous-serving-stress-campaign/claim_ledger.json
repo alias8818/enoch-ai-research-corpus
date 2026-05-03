@@ -1,8 +1,104 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "schema": "enoch_claim_ledger_v1",
+  "audit_status": "strict_traceability_pass_candidate",
+  "audit_scope": "strict claim/evidence traceability only; not peer review, scientific correctness, independent replication, statistical power, semantic output quality, citation accuracy, or human-written status",
+  "claims": [
+    {
+      "id": "vllm-sink-001",
+      "claim": "The calibrated OpenAI-compatible continuous-serving sweep used a patched vLLM 0.19.1 install serving Qwen/Qwen2.5-3B-Instruct with float16, max_model_len=1024, max_num_batched_tokens=4096, max_num_seqs=16, and gpu_memory_utilization=0.50.",
+      "support": "supported_by_public_surrogate_trace",
+      "evidence_refs": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-001",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+      ],
+      "evidence_summary": "The public evidence bundle run-notes tail records the server configuration and retention policy used for the calibrated sweep.",
+      "audit_scope": "configuration_traceability_only",
+      "not_validated": [
+        "environment_recreation",
+        "vLLM patch correctness",
+        "model cache integrity"
+      ]
+    },
+    {
+      "id": "vllm-sink-002",
+      "claim": "Across the four calibrated paired baseline/retention trials, the public bundle reports zero request errors and no retention p95 latency regression over the 10% kill gate; the worst reported p95 delta is +0.30%.",
+      "support": "supported_by_public_surrogate_trace",
+      "evidence_refs": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-002",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+      ],
+      "evidence_summary": "The run-notes tail lists p95 deltas for n96/c8/out64 trials 1-2, n128/c16/out64, and n256/c16/out128, and states that no calibrated pair triggered the kill gate.",
+      "audit_scope": "reported_metric_traceability_only",
+      "not_validated": [
+        "statistical_power",
+        "independent_replication",
+        "scientific_correctness"
+      ]
+    },
+    {
+      "id": "vllm-sink-003",
+      "claim": "The same public evidence reports non-zero output preview differences in all calibrated pairs: 2/96, 3/96, 7/128, and 17/256, so this artifact does not establish semantic equivalence.",
+      "support": "supported_by_public_surrogate_trace",
+      "evidence_refs": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-003",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+      ],
+      "evidence_summary": "The run-notes tail explicitly cautions that output preview differences were low but non-zero and that only output previews, not full semantic grading, were compared.",
+      "audit_scope": "limitation_traceability_only",
+      "not_validated": [
+        "semantic_output_quality",
+        "human_evaluation",
+        "full_output_equivalence"
+      ]
+    },
+    {
+      "id": "vllm-sink-004",
+      "claim": "The public evidence reports high GPU utilization during calibrated load (90-96% mean, 96% peak), engine RSS around 2.34-2.42 GB, and MemAvailable roughly 54.6-55.6 GB after warmup.",
+      "support": "supported_by_public_surrogate_trace",
+      "evidence_refs": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-004",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+      ],
+      "evidence_summary": "These resource ranges are stated in the public run-notes tail and repeated in the paper resource-utilization subsection.",
+      "audit_scope": "reported_resource_metric_traceability_only",
+      "not_validated": [
+        "hardware_generalization",
+        "long-duration_memory_leak_behavior"
+      ]
+    },
+    {
+      "id": "vllm-sink-005",
+      "claim": "The project decision in the public bundle is finalize_positive with hypothesis_status supported, confidence medium, and evidence_strength strong for the latency kill-gate dimension.",
+      "support": "supported_by_public_surrogate_trace",
+      "evidence_refs": [
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-005",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
+        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+      ],
+      "evidence_summary": "The evidence bundle decision and status_json.project_decision fields carry the same decision/status/confidence/evidence-strength values and a stop reason tied to the latency kill gate.",
+      "audit_scope": "decision_metadata_traceability_only",
+      "not_validated": [
+        "peer_review",
+        "external_acceptance",
+        "scientific_correctness"
+      ]
+    }
   ],
+  "limitations": [
+    "Model-authored draft; no human reviewer endorsement is implied.",
+    "Raw result JSON/log/archive files named by the generated evidence bundle are not present in this public repository.",
+    "The public surrogate evidence is derived from paper.md and evidence_bundle.json; it supports traceability of selected claims, not independent reproduction.",
+    "Output quality is not semantically validated; non-zero output preview divergence is explicitly preserved as a limitation."
+  ],
+  "raw_result_file_status": {
+    "status": "not_in_public_corpus_export",
+    "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
+    "unavailable_result_file_count": 20
+  },
   "writer_provider": {
     "base_url": "https://api.synthetic.new/openai/v1",
     "model": "hf:zai-org/GLM-5.1",

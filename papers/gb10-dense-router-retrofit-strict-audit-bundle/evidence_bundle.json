@@ -60,9 +60,9 @@
       "sha256": "77af366e2f1ee348ccb25963a3bb080c109fa7a1d9ef24df0b1b8a3e54daf260"
     },
     {
-      "bytes": 1043,
+      "bytes": 1040,
       "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/metrics.csv",
-      "sha256": "d7a4391ca23b3da209dfe4124fb924834dda320740ebe7034dfbfb23980f2ea9"
+      "sha256": "773ca544809269d88fe2c87bf60b63a0703fae2da2b8d721a4187ea88b13934c"
     },
     {
       "bytes": 3599,
@@ -105,19 +105,19 @@
       "sha256": "7f3d06a31ef29c6fcbc1419e5309e37fc8469685791924af631a67e15b54d9ca"
     },
     {
-      "bytes": 1034,
+      "bytes": 1029,
       "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__decoder_layer_prefill_parent_keep__metrics.csv",
-      "sha256": "8dd19b9b4d01e0a778ead36faf3d4cd134e6212f5a683e936c7ead5ee2823696"
+      "sha256": "9688619e047c03bc96fb65c4490cc4466b2cd69a624004c48a403f79996e1d1c"
     },
     {
-      "bytes": 1391,
+      "bytes": 1387,
       "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__router_integrated_parent_keep_bt32__metrics.csv",
-      "sha256": "176d593202aa773a77ac560f3dda95c4d29ca6f1c2a9185ec0a8ad2ba1f9fc9e"
+      "sha256": "83715ad278ee0527123655a766baed1f6dd634ae1039ffe590508176f04f8c43"
     },
     {
-      "bytes": 1046,
+      "bytes": 1043,
       "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__smoke_router_integrated__metrics.csv",
-      "sha256": "ba090551c584df1c761de2b97eaa5ab4baf434af770924b4a9cc64deaf5fc497"
+      "sha256": "257f971e1701b2c567680d568a3338eee955e89c76a391709bbe4b94911ccc1e"
     },
     {
       "bytes": 7086,

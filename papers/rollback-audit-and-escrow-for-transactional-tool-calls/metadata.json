@@ -1,0 +1,12 @@
+{
+  "ai_generated": true,
+  "generated_at": "2026-05-04T01:30:52.688729+00:00",
+  "generated_by": "Enoch Agentic Research Pipeline",
+  "human_authorship_claimed": false,
+  "public_id": "enoch-paper-0239",
+  "released_by_role": "system operator and corpus maintainer",
+  "review_status": "AI-generated research artifact",
+  "source_record_fingerprint": "0eab01b7a7613cdb",
+  "source_system": "Enoch control plane export",
+  "title": "Rollback Audit and Escrow for Transactional Tool Calls"
+}

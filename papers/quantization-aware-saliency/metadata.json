@@ -1,0 +1,12 @@
+{
+  "ai_generated": true,
+  "generated_at": "2026-05-04T14:34:54.330812+00:00",
+  "generated_by": "Enoch Agentic Research Pipeline",
+  "human_authorship_claimed": false,
+  "public_id": "enoch-paper-0186",
+  "released_by_role": "system operator and corpus maintainer",
+  "review_status": "AI-generated research artifact",
+  "source_record_fingerprint": "1b69601d4d9b8ae8",
+  "source_system": "Enoch control plane export",
+  "title": "Quantization-Aware Saliency"
+}

@@ -26,4 +26,4 @@ Validation snapshot:
 - `python3 scripts/validate_public_trust_surfaces.py` -> PASS.
 
 Follow-up caveat:
-- Corpus-level strict audit remains blocked overall because 158 artifacts still have empty claim ledgers and 1,405 public result-file references remain missing/unavailable without strict-pass claim ledgers.
+- Corpus-level strict audit remains blocked overall because 296 artifacts still have empty claim ledgers and 1,405 public result-file references remain missing/unavailable without strict-pass claim ledgers.

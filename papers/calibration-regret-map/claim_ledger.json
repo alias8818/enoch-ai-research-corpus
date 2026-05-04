@@ -1,0 +1,18 @@
+{
+  "audit_status": "blocked_empty_claims",
+  "claims": [],
+  "limitations": [
+    "No structured claims were extracted for this artifact.",
+    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260430T060248624047+0000",
+  "schema_version": "claim_ledger.v1",
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "source-record-redacted"
+  }
+}

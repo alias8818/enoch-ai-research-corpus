@@ -1,0 +1,7 @@
+{
+  "claims": [],
+  "limitations": [
+    "MVP draft; human review required."
+  ],
+  "writer_provider": "deterministic fallback after Synthetic.new/GLM-5.1 failure"
+}

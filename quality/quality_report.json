@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 158,
-    "count": 160,
+    "claim_ledgers_empty": 296,
+    "count": 298,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1443,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 2
   },
-  "count": 160,
+  "count": 298,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 160,
+  "passed": 298,
   "rows": [
     {
       "bytes": 15144,
@@ -114,6 +114,17 @@
       "words": 1499
     },
     {
+      "bytes": 17302,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/agent-budget-parliament/paper.md",
+      "passes": true,
+      "slug": "agent-budget-parliament",
+      "words": 2465
+    },
+    {
       "bytes": 14182,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -123,6 +134,39 @@
       "passes": true,
       "slug": "agent-identity-rotation",
       "words": 1904
+    },
+    {
+      "bytes": 13815,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/agent-runner-black-box-integration-benchmark/paper.md",
+      "passes": true,
+      "slug": "agent-runner-black-box-integration-benchmark",
+      "words": 1857
+    },
+    {
+      "bytes": 15090,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/agentic-benchmark-autogenerator/paper.md",
+      "passes": true,
+      "slug": "agentic-benchmark-autogenerator",
+      "words": 2071
+    },
+    {
+      "bytes": 13355,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/agents.md-linter-task-lift-validation/paper.md",
+      "passes": true,
+      "slug": "agents.md-linter-task-lift-validation",
+      "words": 1824
     },
     {
       "bytes": 17801,
@@ -169,6 +213,39 @@
       "words": 2149
     },
     {
+      "bytes": 15082,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/asymmetric-k-v-adapter-training/paper.md",
+      "passes": true,
+      "slug": "asymmetric-k-v-adapter-training",
+      "words": 2125
+    },
+    {
+      "bytes": 12954,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/async-selective-kv-lease-backend-prototype/paper.md",
+      "passes": true,
+      "slug": "async-selective-kv-lease-backend-prototype",
+      "words": 1874
+    },
+    {
+      "bytes": 15596,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/attention-budget-controller/paper.md",
+      "passes": true,
+      "slug": "attention-budget-controller",
+      "words": 2262
+    },
+    {
       "bytes": 19559,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -189,6 +266,17 @@
       "passes": true,
       "slug": "audio-room-measurement-planner",
       "words": 1776
+    },
+    {
+      "bytes": 14996,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/backend-switched-verifier-pretraining/paper.md",
+      "passes": true,
+      "slug": "backend-switched-verifier-pretraining",
+      "words": 2015
     },
     {
       "bytes": 12275,
@@ -257,6 +345,28 @@
       "words": 1956
     },
     {
+      "bytes": 19550,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/bfi-dflash-bonus-feature-imputation/paper.md",
+      "passes": true,
+      "slug": "bfi-dflash-bonus-feature-imputation",
+      "words": 2860
+    },
+    {
+      "bytes": 14851,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/blackboard-with-proof-obligations/paper.md",
+      "passes": true,
+      "slug": "blackboard-with-proof-obligations",
+      "words": 2160
+    },
+    {
       "bytes": 13667,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -290,6 +400,17 @@
       "words": 2551
     },
     {
+      "bytes": 15152,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/cache-quantization-awareness-training/paper.md",
+      "passes": true,
+      "slug": "cache-quantization-awareness-training",
+      "words": 2248
+    },
+    {
       "bytes": 12908,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -299,6 +420,28 @@
       "passes": true,
       "slug": "cache-reentry-production-endpoint-validation",
       "words": 1820
+    },
+    {
+      "bytes": 849,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/calibrated-citation-governance-benchmark/paper.md",
+      "passes": true,
+      "slug": "calibrated-citation-governance-benchmark",
+      "words": 121
+    },
+    {
+      "bytes": 16856,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/calibration-regret-map/paper.md",
+      "passes": true,
+      "slug": "calibration-regret-map",
+      "words": 2441
     },
     {
       "bytes": 17239,
@@ -334,6 +477,28 @@
       "words": 1974
     },
     {
+      "bytes": 13518,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/cenf-full-pdf-citation-accuracy-benchmark/paper.md",
+      "passes": true,
+      "slug": "cenf-full-pdf-citation-accuracy-benchmark",
+      "words": 1820
+    },
+    {
+      "bytes": 14192,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/cera-capacity-enhanced-rank-adaptation-via-silu-gated-parallel-adapter/paper.md",
+      "passes": true,
+      "slug": "cera-capacity-enhanced-rank-adaptation-via-silu-gated-parallel-adapter",
+      "words": 2139
+    },
+    {
       "bytes": 11345,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -367,6 +532,17 @@
       "words": 2099
     },
     {
+      "bytes": 13077,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ci-log-cost-gated-failure-signature-sentinel/paper.md",
+      "passes": true,
+      "slug": "ci-log-cost-gated-failure-signature-sentinel",
+      "words": 1799
+    },
+    {
       "bytes": 12242,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -389,6 +565,50 @@
       "words": 2074
     },
     {
+      "bytes": 11448,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/citation-span-robustness-tuning/paper.md",
+      "passes": true,
+      "slug": "citation-span-robustness-tuning",
+      "words": 1543
+    },
+    {
+      "bytes": 13789,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/clean-core-agent-harness/paper.md",
+      "passes": true,
+      "slug": "clean-core-agent-harness",
+      "words": 1892
+    },
+    {
+      "bytes": 14592,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/cmc-dflash-conditional-marginal-coupling-for-dflash/paper.md",
+      "passes": true,
+      "slug": "cmc-dflash-conditional-marginal-coupling-for-dflash",
+      "words": 2044
+    },
+    {
+      "bytes": 18166,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/codebase-cartographer-real-repo-validation/paper.md",
+      "passes": true,
+      "slug": "codebase-cartographer-real-repo-validation",
+      "words": 2501
+    },
+    {
       "bytes": 17673,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -398,6 +618,17 @@
       "passes": true,
       "slug": "commit-level-critic",
       "words": 2387
+    },
+    {
+      "bytes": 12668,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/compiler-error-curriculum-real-workflow-scale-validation/paper.md",
+      "passes": true,
+      "slug": "compiler-error-curriculum-real-workflow-scale-validation",
+      "words": 1668
     },
     {
       "bytes": 15935,
@@ -422,6 +653,17 @@
       "words": 1969
     },
     {
+      "bytes": 16321,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/compression-aware-microlm/paper.md",
+      "passes": true,
+      "slug": "compression-aware-microlm",
+      "words": 2442
+    },
+    {
       "bytes": 15600,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -431,6 +673,17 @@
       "passes": true,
       "slug": "compression-gap-penalty",
       "words": 2315
+    },
+    {
+      "bytes": 15943,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/confidence-triggered-reread-training/paper.md",
+      "passes": true,
+      "slug": "confidence-triggered-reread-training",
+      "words": 2353
     },
     {
       "bytes": 14948,
@@ -444,6 +697,17 @@
       "words": 2005
     },
     {
+      "bytes": 13305,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/consent-receipt-engine/paper.md",
+      "passes": true,
+      "slug": "consent-receipt-engine",
+      "words": 1813
+    },
+    {
       "bytes": 14504,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -453,6 +717,28 @@
       "passes": true,
       "slug": "contention-aware-single-medium-backend-broker-benchmark",
       "words": 1838
+    },
+    {
+      "bytes": 15396,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-budget-dropout/paper.md",
+      "passes": true,
+      "slug": "context-budget-dropout",
+      "words": 2193
+    },
+    {
+      "bytes": 15778,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-capital-allocator/paper.md",
+      "passes": true,
+      "slug": "context-capital-allocator",
+      "words": 2338
     },
     {
       "bytes": 14573,
@@ -488,6 +774,17 @@
       "words": 1900
     },
     {
+      "bytes": 14719,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-rehydration-student/paper.md",
+      "passes": true,
+      "slug": "context-rehydration-student",
+      "words": 2081
+    },
+    {
       "bytes": 13237,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -497,6 +794,72 @@
       "passes": true,
       "slug": "context-reuse-clusterer-local-serving-harness",
       "words": 1765
+    },
+    {
+      "bytes": 14862,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-skeleton-distillation/paper.md",
+      "passes": true,
+      "slug": "context-skeleton-distillation",
+      "words": 2110
+    },
+    {
+      "bytes": 16923,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/continuous-phase-memory-bench/paper.md",
+      "passes": true,
+      "slug": "continuous-phase-memory-bench",
+      "words": 2356
+    },
+    {
+      "bytes": 12939,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/contrastive-chunk-ordering-loss/paper.md",
+      "passes": true,
+      "slug": "contrastive-chunk-ordering-loss",
+      "words": 1942
+    },
+    {
+      "bytes": 16923,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/controller-integrated-uncertainty-heatmap-ranker/paper.md",
+      "passes": true,
+      "slug": "controller-integrated-uncertainty-heatmap-ranker",
+      "words": 2364
+    },
+    {
+      "bytes": 15273,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/core-only-distillation/paper.md",
+      "passes": true,
+      "slug": "core-only-distillation",
+      "words": 2111
+    },
+    {
+      "bytes": 17151,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/council-gated-memory-promotion/paper.md",
+      "passes": true,
+      "slug": "council-gated-memory-promotion",
+      "words": 2389
     },
     {
       "bytes": 12575,
@@ -519,6 +882,17 @@
       "passes": true,
       "slug": "counterfactual-eviction-labels",
       "words": 2518
+    },
+    {
+      "bytes": 14980,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/coverage-guided-security-patch-red-team-real-repo-benchmark/paper.md",
+      "passes": true,
+      "slug": "coverage-guided-security-patch-red-team-real-repo-benchmark",
+      "words": 2008
     },
     {
       "bytes": 17981,
@@ -565,6 +939,17 @@
       "words": 2212
     },
     {
+      "bytes": 12737,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dataset-genealogy-index---successor-branch/paper.md",
+      "passes": true,
+      "slug": "dataset-genealogy-index---successor-branch",
+      "words": 1663
+    },
+    {
       "bytes": 18918,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -576,6 +961,17 @@
       "words": 2630
     },
     {
+      "bytes": 13658,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/delta-prefill-alignment-loss/paper.md",
+      "passes": true,
+      "slug": "delta-prefill-alignment-loss",
+      "words": 1943
+    },
+    {
       "bytes": 16587,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -585,6 +981,61 @@
       "passes": true,
       "slug": "demo-position-lottery",
       "words": 2424
+    },
+    {
+      "bytes": 17120,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dense-mask-distillation-from-moe/paper.md",
+      "passes": true,
+      "slug": "dense-mask-distillation-from-moe",
+      "words": 2454
+    },
+    {
+      "bytes": 16006,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dense-prune-harness-benchmark/paper.md",
+      "passes": true,
+      "slug": "dense-prune-harness-benchmark",
+      "words": 2274
+    },
+    {
+      "bytes": 17685,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dense-router-retrofit/paper.md",
+      "passes": true,
+      "slug": "dense-router-retrofit",
+      "words": 2570
+    },
+    {
+      "bytes": 15304,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dense-to-moe-upcycling-retrofit/paper.md",
+      "passes": true,
+      "slug": "dense-to-moe-upcycling-retrofit",
+      "words": 2226
+    },
+    {
+      "bytes": 15383,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dense-to-sparse-curriculum/paper.md",
+      "passes": true,
+      "slug": "dense-to-sparse-curriculum",
+      "words": 2196
     },
     {
       "bytes": 18281,
@@ -642,6 +1093,17 @@
       "words": 2094
     },
     {
+      "bytes": 16316,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/diff-hygiene-budgeter-real-repo-validation/paper.md",
+      "passes": true,
+      "slug": "diff-hygiene-budgeter-real-repo-validation",
+      "words": 2207
+    },
+    {
       "bytes": 19173,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -662,6 +1124,28 @@
       "passes": true,
       "slug": "document-field-importance-llm-generation-validation",
       "words": 1622
+    },
+    {
+      "bytes": 16126,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/domain-gated-speculative-waste-minimizer/paper.md",
+      "passes": true,
+      "slug": "domain-gated-speculative-waste-minimizer",
+      "words": 2342
+    },
+    {
+      "bytes": 16191,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/draft-length-predictor-tuning/paper.md",
+      "passes": true,
+      "slug": "draft-length-predictor-tuning",
+      "words": 2300
     },
     {
       "bytes": 16886,
@@ -708,6 +1192,17 @@
       "words": 1908
     },
     {
+      "bytes": 13107,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/eagle-3-bigger-drafter-pareto-sweep/paper.md",
+      "passes": true,
+      "slug": "eagle-3-bigger-drafter-pareto-sweep",
+      "words": 1944
+    },
+    {
       "bytes": 16530,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -719,6 +1214,17 @@
       "words": 2434
     },
     {
+      "bytes": 13500,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/energy-aware-small-model-distill/paper.md",
+      "passes": true,
+      "slug": "energy-aware-small-model-distill",
+      "words": 2004
+    },
+    {
       "bytes": 14598,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -728,6 +1234,28 @@
       "passes": true,
       "slug": "engine-level-prefix-cache-cohort-scheduler",
       "words": 1994
+    },
+    {
+      "bytes": 16184,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/enoch-dag-scheduler-shadow-router/paper.md",
+      "passes": true,
+      "slug": "enoch-dag-scheduler-shadow-router",
+      "words": 2274
+    },
+    {
+      "bytes": 14437,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/enoch-experiment-lifecycle-gate-integration/paper.md",
+      "passes": true,
+      "slug": "enoch-experiment-lifecycle-gate-integration",
+      "words": 1921
     },
     {
       "bytes": 16705,
@@ -785,6 +1313,39 @@
       "words": 1788
     },
     {
+      "bytes": 15577,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/evidence-recall-mini-teacher/paper.md",
+      "passes": true,
+      "slug": "evidence-recall-mini-teacher",
+      "words": 2228
+    },
+    {
+      "bytes": 13220,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/evidence-span-boundary-loss/paper.md",
+      "passes": true,
+      "slug": "evidence-span-boundary-loss",
+      "words": 1886
+    },
+    {
+      "bytes": 16549,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/executive-worker-model-split/paper.md",
+      "passes": true,
+      "slug": "executive-worker-model-split",
+      "words": 2309
+    },
+    {
       "bytes": 16149,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -807,6 +1368,17 @@
       "words": 2413
     },
     {
+      "bytes": 16801,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/fact-frequency-flattener/paper.md",
+      "passes": true,
+      "slug": "fact-frequency-flattener",
+      "words": 2336
+    },
+    {
       "bytes": 14666,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -827,6 +1399,17 @@
       "passes": true,
       "slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
       "words": 1883
+    },
+    {
+      "bytes": 12890,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/file-delta-personalization-tuning/paper.md",
+      "passes": true,
+      "slug": "file-delta-personalization-tuning",
+      "words": 1849
     },
     {
       "bytes": 17752,
@@ -862,6 +1445,28 @@
       "words": 1913
     },
     {
+      "bytes": 19453,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/frozen-prompt-archive-real-workflow-integration/paper.md",
+      "passes": true,
+      "slug": "frozen-prompt-archive-real-workflow-integration",
+      "words": 2599
+    },
+    {
+      "bytes": 15339,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/garbage-token-tax/paper.md",
+      "passes": true,
+      "slug": "garbage-token-tax",
+      "words": 2261
+    },
+    {
       "bytes": 2723,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -871,6 +1476,17 @@
       "passes": true,
       "slug": "gb10-dense-router-retrofit-strict-audit-bundle",
       "words": 354
+    },
+    {
+      "bytes": 14451,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/gb10-expert-upcycling-reproduction-harness/paper.md",
+      "passes": true,
+      "slug": "gb10-expert-upcycling-reproduction-harness",
+      "words": 2040
     },
     {
       "bytes": 13730,
@@ -893,6 +1509,50 @@
       "passes": true,
       "slug": "gb10-local-server-utility-swap-broker-validation",
       "words": 2296
+    },
+    {
+      "bytes": 13638,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/generalized-codex-tool-policy-event-rollout/paper.md",
+      "passes": true,
+      "slug": "generalized-codex-tool-policy-event-rollout",
+      "words": 1870
+    },
+    {
+      "bytes": 15035,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/gguf-lora-gpu-switch-benchmark-on-non-moe-models/paper.md",
+      "passes": true,
+      "slug": "gguf-lora-gpu-switch-benchmark-on-non-moe-models",
+      "words": 2170
+    },
+    {
+      "bytes": 14912,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ghost-route-policy-evaluator/paper.md",
+      "passes": true,
+      "slug": "ghost-route-policy-evaluator",
+      "words": 2087
+    },
+    {
+      "bytes": 14138,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/goal-shard-manager/paper.md",
+      "passes": true,
+      "slug": "goal-shard-manager",
+      "words": 2007
     },
     {
       "bytes": 14166,
@@ -950,6 +1610,28 @@
       "words": 1851
     },
     {
+      "bytes": 13335,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/hypothesis-ledger-admission-gate-a-b-trial/paper.md",
+      "passes": true,
+      "slug": "hypothesis-ledger-admission-gate-a-b-trial",
+      "words": 1868
+    },
+    {
+      "bytes": 16809,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/interactive-trust-tier-side-effect-trace-benchmark/paper.md",
+      "passes": true,
+      "slug": "interactive-trust-tier-side-effect-trace-benchmark",
+      "words": 2358
+    },
+    {
       "bytes": 19231,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -972,6 +1654,17 @@
       "words": 1721
     },
     {
+      "bytes": 16223,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/kv-aware-agent-planner/paper.md",
+      "passes": true,
+      "slug": "kv-aware-agent-planner",
+      "words": 2357
+    },
+    {
       "bytes": 17694,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -981,6 +1674,94 @@
       "passes": true,
       "slug": "kv-eviction-gold-labels",
       "words": 2480
+    },
+    {
+      "bytes": 17688,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/kv-saliency-student/paper.md",
+      "passes": true,
+      "slug": "kv-saliency-student",
+      "words": 2641
+    },
+    {
+      "bytes": 840,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/kv-spill-top-3-learned-reranker/paper.md",
+      "passes": true,
+      "slug": "kv-spill-top-3-learned-reranker",
+      "words": 123
+    },
+    {
+      "bytes": 13569,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lab-protocol-lockfile-multi-turn-tool-calling-replay/paper.md",
+      "passes": true,
+      "slug": "lab-protocol-lockfile-multi-turn-tool-calling-replay",
+      "words": 1698
+    },
+    {
+      "bytes": 16525,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/latency-to-value-scheduler-real-model-tier-validation/paper.md",
+      "passes": true,
+      "slug": "latency-to-value-scheduler-real-model-tier-validation",
+      "words": 2281
+    },
+    {
+      "bytes": 14445,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/layer-skip-under-memory-pressure/paper.md",
+      "passes": true,
+      "slug": "layer-skip-under-memory-pressure",
+      "words": 2160
+    },
+    {
+      "bytes": 16430,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/paper.md",
+      "passes": true,
+      "slug": "llama.cpp-gguf-hot-warm-cold-mmap-instrumentation",
+      "words": 2278
+    },
+    {
+      "bytes": 13703,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/llama.cpp-in-place-kv-compaction-for-importance-retention/paper.md",
+      "passes": true,
+      "slug": "llama.cpp-in-place-kv-compaction-for-importance-retention",
+      "words": 1935
+    },
+    {
+      "bytes": 13277,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/llm-backed-log-to-patch-memory-benchmark/paper.md",
+      "passes": true,
+      "slug": "llm-backed-log-to-patch-memory-benchmark",
+      "words": 1866
     },
     {
       "bytes": 14726,
@@ -1003,6 +1784,17 @@
       "passes": true,
       "slug": "llm-evidence-survival-qa-validation",
       "words": 2330
+    },
+    {
+      "bytes": 15680,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/llm-mcp-mutation-proxy-benchmark/paper.md",
+      "passes": true,
+      "slug": "llm-mcp-mutation-proxy-benchmark",
+      "words": 2272
     },
     {
       "bytes": 15096,
@@ -1038,6 +1830,72 @@
       "words": 2117
     },
     {
+      "bytes": 15365,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/long-to-short-compression-training/paper.md",
+      "passes": true,
+      "slug": "long-to-short-compression-training",
+      "words": 2221
+    },
+    {
+      "bytes": 14467,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lookup-aware-toolformer-toy/paper.md",
+      "passes": true,
+      "slug": "lookup-aware-toolformer-toy",
+      "words": 2154
+    },
+    {
+      "bytes": 14951,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lost-in-middle-reversal-curriculum/paper.md",
+      "passes": true,
+      "slug": "lost-in-middle-reversal-curriculum",
+      "words": 2147
+    },
+    {
+      "bytes": 16287,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lost-middle-rescue-student/paper.md",
+      "passes": true,
+      "slug": "lost-middle-rescue-student",
+      "words": 2324
+    },
+    {
+      "bytes": 18030,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/low-rank-kv-compensation-adapter/paper.md",
+      "passes": true,
+      "slug": "low-rank-kv-compensation-adapter",
+      "words": 2725
+    },
+    {
+      "bytes": 12806,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/low-rank-patch-after-prune/paper.md",
+      "passes": true,
+      "slug": "low-rank-patch-after-prune",
+      "words": 1875
+    },
+    {
       "bytes": 11854,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1060,6 +1918,28 @@
       "words": 2154
     },
     {
+      "bytes": 15491,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/memory-quarantine-queue-real-llm-workflow-benchmark/paper.md",
+      "passes": true,
+      "slug": "memory-quarantine-queue-real-llm-workflow-benchmark",
+      "words": 2108
+    },
+    {
+      "bytes": 15953,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/memory-topology-arena/paper.md",
+      "passes": true,
+      "slug": "memory-topology-arena",
+      "words": 2209
+    },
+    {
       "bytes": 16892,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1069,6 +1949,39 @@
       "passes": true,
       "slug": "multi-model-real-span-boundary-corruption-benchmark",
       "words": 2309
+    },
+    {
+      "bytes": 13883,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/multi-objective-throughput-reward/paper.md",
+      "passes": true,
+      "slug": "multi-objective-throughput-reward",
+      "words": 1884
+    },
+    {
+      "bytes": 16847,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/n-m-quant-prune-joint-search/paper.md",
+      "passes": true,
+      "slug": "n-m-quant-prune-joint-search",
+      "words": 2543
+    },
+    {
+      "bytes": 13370,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/native-tool-call-capability-lease-wrapper/paper.md",
+      "passes": true,
+      "slug": "native-tool-call-capability-lease-wrapper",
+      "words": 1818
     },
     {
       "bytes": 14475,
@@ -1104,6 +2017,50 @@
       "words": 1860
     },
     {
+      "bytes": 15892,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/noisy-web-distillation-gauntlet/paper.md",
+      "passes": true,
+      "slug": "noisy-web-distillation-gauntlet",
+      "words": 2253
+    },
+    {
+      "bytes": 14399,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/null-result-memory-real-workflow-replay-benchmark/paper.md",
+      "passes": true,
+      "slug": "null-result-memory-real-workflow-replay-benchmark",
+      "words": 1983
+    },
+    {
+      "bytes": 14787,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/omx-guarded-trust-weighted-memory-store-integration/paper.md",
+      "passes": true,
+      "slug": "omx-guarded-trust-weighted-memory-store-integration",
+      "words": 2021
+    },
+    {
+      "bytes": 13451,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/omx-skill-bond-registry-prototype/paper.md",
+      "passes": true,
+      "slug": "omx-skill-bond-registry-prototype",
+      "words": 1845
+    },
+    {
       "bytes": 16383,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1137,6 +2094,17 @@
       "words": 2171
     },
     {
+      "bytes": 11705,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/output-aware-terminal-recovery-reset-gate/paper.md",
+      "passes": true,
+      "slug": "output-aware-terminal-recovery-reset-gate",
+      "words": 1666
+    },
+    {
       "bytes": 12916,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1146,6 +2114,17 @@
       "passes": true,
       "slug": "pair-adaptive-draft-waste-calibration-benchmark",
       "words": 1835
+    },
+    {
+      "bytes": 15020,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/paper-club-swarm-blind-full-paper-validation/paper.md",
+      "passes": true,
+      "slug": "paper-club-swarm-blind-full-paper-validation",
+      "words": 1910
     },
     {
       "bytes": 12834,
@@ -1170,6 +2149,28 @@
       "words": 2192
     },
     {
+      "bytes": 16371,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/partition-aware-cascade-distillation/paper.md",
+      "passes": true,
+      "slug": "partition-aware-cascade-distillation",
+      "words": 2205
+    },
+    {
+      "bytes": 16938,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/partition-local-confidence-cascade/paper.md",
+      "passes": true,
+      "slug": "partition-local-confidence-cascade",
+      "words": 2277
+    },
+    {
       "bytes": 18188,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1179,6 +2180,17 @@
       "passes": true,
       "slug": "physical-experiment-doe-agent",
       "words": 2588
+    },
+    {
+      "bytes": 13292,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/plan-ast/paper.md",
+      "passes": true,
+      "slug": "plan-ast",
+      "words": 1769
     },
     {
       "bytes": 13171,
@@ -1203,6 +2215,17 @@
       "words": 1501
     },
     {
+      "bytes": 16456,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/prefix-reuse-consistency-loss/paper.md",
+      "passes": true,
+      "slug": "prefix-reuse-consistency-loss",
+      "words": 2342
+    },
+    {
       "bytes": 17389,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1223,6 +2246,17 @@
       "passes": true,
       "slug": "prefix-share-serving-trace-set",
       "words": 1916
+    },
+    {
+      "bytes": 11981,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/production-codex-omx-typed-event-recorder/paper.md",
+      "passes": true,
+      "slug": "production-codex-omx-typed-event-recorder",
+      "words": 1704
     },
     {
       "bytes": 12915,
@@ -1258,6 +2292,17 @@
       "words": 2068
     },
     {
+      "bytes": 17977,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/project-kill-switch-council/paper.md",
+      "passes": true,
+      "slug": "project-kill-switch-council",
+      "words": 2333
+    },
+    {
       "bytes": 16397,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1269,6 +2314,72 @@
       "words": 2184
     },
     {
+      "bytes": 12675,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/prune-then-upcycle-recovery-loop/paper.md",
+      "passes": true,
+      "slug": "prune-then-upcycle-recovery-loop",
+      "words": 1816
+    },
+    {
+      "bytes": 15746,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/public-fastapi-typer-compatibility-oracle-validation/paper.md",
+      "passes": true,
+      "slug": "public-fastapi-typer-compatibility-oracle-validation",
+      "words": 2213
+    },
+    {
+      "bytes": 17318,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/q2-to-q4-calibration-regret-block-promotion-runtime-prototype/paper.md",
+      "passes": true,
+      "slug": "q2-to-q4-calibration-regret-block-promotion-runtime-prototype",
+      "words": 2475
+    },
+    {
+      "bytes": 16355,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/quant-spectrum-cross-model-downstream-validation/paper.md",
+      "passes": true,
+      "slug": "quant-spectrum-cross-model-downstream-validation",
+      "words": 2124
+    },
+    {
+      "bytes": 16847,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/quantization-aware-expert-upcycling/paper.md",
+      "passes": true,
+      "slug": "quantization-aware-expert-upcycling",
+      "words": 2521
+    },
+    {
+      "bytes": 16161,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/quantization-aware-saliency/paper.md",
+      "passes": true,
+      "slug": "quantization-aware-saliency",
+      "words": 2241
+    },
+    {
       "bytes": 14429,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1278,6 +2389,17 @@
       "passes": true,
       "slug": "query-budget-contract-local-server-benchmark",
       "words": 2025
+    },
+    {
+      "bytes": 17219,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/qwen32b-speculative-workflow-robustness-suite/paper.md",
+      "passes": true,
+      "slug": "qwen32b-speculative-workflow-robustness-suite",
+      "words": 2595
     },
     {
       "bytes": 16725,
@@ -1302,6 +2424,17 @@
       "words": 1684
     },
     {
+      "bytes": 13813,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/real-mode-stress-regularization/paper.md",
+      "passes": true,
+      "slug": "real-mode-stress-regularization",
+      "words": 1977
+    },
+    {
       "bytes": 14023,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1322,6 +2455,17 @@
       "passes": true,
       "slug": "real-rag-answer-abstention-boundary-benchmark",
       "words": 1544
+    },
+    {
+      "bytes": 13668,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/real-repo-docstring-property-gate-integration/paper.md",
+      "passes": true,
+      "slug": "real-repo-docstring-property-gate-integration",
+      "words": 1709
     },
     {
       "bytes": 11228,
@@ -1368,6 +2512,28 @@
       "words": 1563
     },
     {
+      "bytes": 17008,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/reasoning-aware-quant-router-policy-v2/paper.md",
+      "passes": true,
+      "slug": "reasoning-aware-quant-router-policy-v2",
+      "words": 2455
+    },
+    {
+      "bytes": 13638,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/recap-token-supervision/paper.md",
+      "passes": true,
+      "slug": "recap-token-supervision",
+      "words": 1961
+    },
+    {
       "bytes": 13565,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1399,6 +2565,61 @@
       "passes": true,
       "slug": "rejection-mode-targeted-abstention-refusal-tuning",
       "words": 1719
+    },
+    {
+      "bytes": 12456,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/repo-pulse-index-real-repo-pilot/paper.md",
+      "passes": true,
+      "slug": "repo-pulse-index-real-repo-pilot",
+      "words": 1655
+    },
+    {
+      "bytes": 14454,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/research-agent-treaty-protocol/paper.md",
+      "passes": true,
+      "slug": "research-agent-treaty-protocol",
+      "words": 1991
+    },
+    {
+      "bytes": 14821,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/research-claim-unit-tests/paper.md",
+      "passes": true,
+      "slug": "research-claim-unit-tests",
+      "words": 2084
+    },
+    {
+      "bytes": 12457,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/research-council-agenda-compiler-weekly-pilot/paper.md",
+      "passes": true,
+      "slug": "research-council-agenda-compiler-weekly-pilot",
+      "words": 1748
+    },
+    {
+      "bytes": 12920,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/residual-conservation-pruner/paper.md",
+      "passes": true,
+      "slug": "residual-conservation-pruner",
+      "words": 1800
     },
     {
       "bytes": 14207,
@@ -1467,6 +2688,17 @@
       "words": 2199
     },
     {
+      "bytes": 13020,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/rollback-audit-and-escrow-for-transactional-tool-calls/paper.md",
+      "passes": true,
+      "slug": "rollback-audit-and-escrow-for-transactional-tool-calls",
+      "words": 1796
+    },
+    {
       "bytes": 16264,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1498,6 +2730,39 @@
       "passes": true,
       "slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark",
       "words": 2083
+    },
+    {
+      "bytes": 16161,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/saliency-distillation-targets/paper.md",
+      "passes": true,
+      "slug": "saliency-distillation-targets",
+      "words": 2355
+    },
+    {
+      "bytes": 17086,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sandbox-risk-oracle-live-harness-calibration/paper.md",
+      "passes": true,
+      "slug": "sandbox-risk-oracle-live-harness-calibration",
+      "words": 2366
+    },
+    {
+      "bytes": 12202,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/scaffold-only-revision-mode/paper.md",
+      "passes": true,
+      "slug": "scaffold-only-revision-mode",
+      "words": 1710
     },
     {
       "bytes": 13588,
@@ -1533,6 +2798,17 @@
       "words": 1763
     },
     {
+      "bytes": 15014,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/serving-boundary-context-compression-kv-benchmark/paper.md",
+      "passes": true,
+      "slug": "serving-boundary-context-compression-kv-benchmark",
+      "words": 2104
+    },
+    {
       "bytes": 15023,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1542,6 +2818,17 @@
       "passes": true,
       "slug": "shared-prompt-batcher-local-server-validation",
       "words": 2111
+    },
+    {
+      "bytes": 13455,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/short-model-long-task-distillation/paper.md",
+      "passes": true,
+      "slug": "short-model-long-task-distillation",
+      "words": 1911
     },
     {
       "bytes": 19058,
@@ -1566,6 +2853,28 @@
       "words": 2438
     },
     {
+      "bytes": 14712,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/skill-preflight-gate-integration/paper.md",
+      "passes": true,
+      "slug": "skill-preflight-gate-integration",
+      "words": 1915
+    },
+    {
+      "bytes": 14821,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/skill-to-dataset-compiler/paper.md",
+      "passes": true,
+      "slug": "skill-to-dataset-compiler",
+      "words": 2106
+    },
+    {
       "bytes": 14518,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1588,6 +2897,72 @@
       "words": 1796
     },
     {
+      "bytes": 17444,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sobd-survival-optimized-block-diffusion/paper.md",
+      "passes": true,
+      "slug": "sobd-survival-optimized-block-diffusion",
+      "words": 2511
+    },
+    {
+      "bytes": 17605,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/spec-decoder-domain-router/paper.md",
+      "passes": true,
+      "slug": "spec-decoder-domain-router",
+      "words": 2528
+    },
+    {
+      "bytes": 15206,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/speculation-friendly-lm-head-tuning/paper.md",
+      "passes": true,
+      "slug": "speculation-friendly-lm-head-tuning",
+      "words": 2220
+    },
+    {
+      "bytes": 15518,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/speculation-tree-student/paper.md",
+      "passes": true,
+      "slug": "speculation-tree-student",
+      "words": 2255
+    },
+    {
+      "bytes": 16557,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/specvocab-hybrid-for-eagle-3-and-dflash/paper.md",
+      "passes": true,
+      "slug": "specvocab-hybrid-for-eagle-3-and-dflash",
+      "words": 2477
+    },
+    {
+      "bytes": 11461,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/strong-draft-weak-reviewer-transfer/paper.md",
+      "passes": true,
+      "slug": "strong-draft-weak-reviewer-transfer",
+      "words": 1672
+    },
+    {
       "bytes": 16502,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1597,6 +2972,28 @@
       "passes": true,
       "slug": "structured-noise-injection-suite",
       "words": 2271
+    },
+    {
+      "bytes": 15858,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/swarm-heartbeat-bus/paper.md",
+      "passes": true,
+      "slug": "swarm-heartbeat-bus",
+      "words": 2284
+    },
+    {
+      "bytes": 16070,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sycophancy-sensitive-escalation/paper.md",
+      "passes": true,
+      "slug": "sycophancy-sensitive-escalation",
+      "words": 2262
     },
     {
       "bytes": 16267,
@@ -1621,6 +3018,28 @@
       "words": 2186
     },
     {
+      "bytes": 13609,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/task-gated-thinking-retention-controller/paper.md",
+      "passes": true,
+      "slug": "task-gated-thinking-retention-controller",
+      "words": 1967
+    },
+    {
+      "bytes": 16046,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/task-routed-context-allocation-extractive-relevance-vs-marginal-utility/paper.md",
+      "passes": true,
+      "slug": "task-routed-context-allocation-extractive-relevance-vs-marginal-utility",
+      "words": 2353
+    },
+    {
       "bytes": 13375,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1641,6 +3060,39 @@
       "passes": true,
       "slug": "thermal-policy-optimizer",
       "words": 2558
+    },
+    {
+      "bytes": 13573,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/thinking-pattern-bridge-adapter/paper.md",
+      "passes": true,
+      "slug": "thinking-pattern-bridge-adapter",
+      "words": 1945
+    },
+    {
+      "bytes": 14745,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/token-conditioned-mlp-thinning/paper.md",
+      "passes": true,
+      "slug": "token-conditioned-mlp-thinning",
+      "words": 2120
+    },
+    {
+      "bytes": 17386,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/token-importance-probe/paper.md",
+      "passes": true,
+      "slug": "token-importance-probe",
+      "words": 2462
     },
     {
       "bytes": 19770,
@@ -1676,6 +3128,39 @@
       "words": 1990
     },
     {
+      "bytes": 16166,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/trace-inspector-warm-session-operator-trial/paper.md",
+      "passes": true,
+      "slug": "trace-inspector-warm-session-operator-trial",
+      "words": 2387
+    },
+    {
+      "bytes": 14081,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/trajectory-rulebook-distillation/paper.md",
+      "passes": true,
+      "slug": "trajectory-rulebook-distillation",
+      "words": 1883
+    },
+    {
+      "bytes": 17195,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/uncertainty-coverage-co-estimator/paper.md",
+      "passes": true,
+      "slug": "uncertainty-coverage-co-estimator",
+      "words": 2222
+    },
+    {
       "bytes": 16023,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1685,6 +3170,17 @@
       "passes": true,
       "slug": "upcycle-router-cold-start-benchmark",
       "words": 2194
+    },
+    {
+      "bytes": 16949,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/upcycle-timing-sweep-law/paper.md",
+      "passes": true,
+      "slug": "upcycle-timing-sweep-law",
+      "words": 2583
     },
     {
       "bytes": 17882,
@@ -1753,6 +3249,17 @@
       "words": 2125
     },
     {
+      "bytes": 18013,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/vram-admission-controller/paper.md",
+      "passes": true,
+      "slug": "vram-admission-controller",
+      "words": 2578
+    },
+    {
       "bytes": 13168,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1784,6 +3291,17 @@
       "passes": true,
       "slug": "web-state-replay-benchmark-for-rewindable-sandboxes",
       "words": 1572
+    },
+    {
+      "bytes": 12884,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/workflow-aware-verifier-router-benchmark/paper.md",
+      "passes": true,
+      "slug": "workflow-aware-verifier-router-benchmark",
+      "words": 1808
     }
   ],
   "validated": [

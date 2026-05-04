@@ -294,7 +294,7 @@
     }
   ]
 }
-	Command being timed: "/mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/355e3677f1c681ba98eff8e9e863a114/../34ae3677f1c681f2ab27e86c496ca7d9/.venv/bin/python /mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/355e3677f1c681ba98eff8e9e863a114/../34ae3677f1c681f2ab27e86c496ca7d9/src/router_integrated_mlp_benchmark.py --out /mnt/usb/home/jeremy/projects/enoch_testing_ground/projects/355e3677f1c681ba98eff8e9e863a114/audit_bundle/live_smoke_router_integrated --tokens 128 --d-model 64 --hidden 256 --block-tokens 16 --active-fractions 0.25,0.5 --warmup 2 --repeats 3"
+	Command being timed: "GB10_LOCAL_PROJECT_PATH_REDACTED/projects/355e3677f1c681ba98eff8e9e863a114/../34ae3677f1c681f2ab27e86c496ca7d9/.venv/bin/python GB10_LOCAL_PROJECT_PATH_REDACTED/projects/355e3677f1c681ba98eff8e9e863a114/../34ae3677f1c681f2ab27e86c496ca7d9/src/router_integrated_mlp_benchmark.py --out GB10_LOCAL_PROJECT_PATH_REDACTED/projects/355e3677f1c681ba98eff8e9e863a114/audit_bundle/live_smoke_router_integrated --tokens 128 --d-model 64 --hidden 256 --block-tokens 16 --active-fractions 0.25,0.5 --warmup 2 --repeats 3"
 	User time (seconds): 2.70
 	System time (seconds): 1.11
 	Percent of CPU this job got: 89%

@@ -1,0 +1,12 @@
+COMMAND: date -Iseconds
+2026-05-03T12:30:34-05:00
+COMMAND: uname -a
+Linux gx10-efe8 6.17.0-1014-nvidia #14-Ubuntu SMP PREEMPT_DYNAMIC Tue Mar 17 19:01:40 UTC 2026 aarch64 aarch64 aarch64 GNU/Linux
+COMMAND: nvidia-smi --query-gpu=name,memory.total,memory.used,utilization.gpu --format=csv,noheader,nounits
+NVIDIA GB10, [N/A], [N/A], 0
+COMMAND: grep -E "MemAvailable|SwapTotal|SwapFree" /proc/meminfo
+MemAvailable:   122735844 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+COMMAND: python3 --version
+Python 3.12.3

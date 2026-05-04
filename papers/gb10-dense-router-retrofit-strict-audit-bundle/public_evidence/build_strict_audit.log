@@ -1,0 +1,30 @@
+{
+  "strict_pass": true,
+  "selected": "Dense Router Retrofit",
+  "criteria": [
+    [
+      "C1_positive_featured_candidate",
+      true
+    ],
+    [
+      "C2_required_artifact_set_present",
+      true
+    ],
+    [
+      "C3_existing_main_metrics_support_claim",
+      true
+    ],
+    [
+      "C4_small_shape_calibration_is_negative_not_overclaimed",
+      true
+    ],
+    [
+      "C5_fresh_live_smoke_executed",
+      true
+    ],
+    [
+      "C6_gb10_memory_posture_recorded",
+      true
+    ]
+  ]
+}

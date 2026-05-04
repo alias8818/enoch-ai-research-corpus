@@ -1,5 +1,5 @@
 {
-  "count": 298,
+  "count": 302,
   "papers": [
     {
       "ai_generated": true,
@@ -229,6 +229,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/anti-encyclopedia-curriculum/claim_ledger.json",
+      "evidence_bundle_path": "papers/anti-encyclopedia-curriculum/evidence_bundle.json",
+      "generated_at": "2026-05-04T20:48:31.350800+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/anti-encyclopedia-curriculum/paper.md",
+      "public_id": "enoch-paper-0300",
+      "slug": "anti-encyclopedia-curriculum",
+      "source_record_fingerprint": "5fdf430815210e70",
+      "strict_audit_pass": false,
+      "title": "Anti-Encyclopedia Curriculum"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/applicability-gated-abstention-calibration-policy/claim_ledger.json",
       "evidence_bundle_path": "papers/applicability-gated-abstention-calibration-policy/evidence_bundle.json",
       "generated_at": "2026-04-28T18:50:52.575149+00:00",
@@ -315,6 +330,21 @@
       "source_record_fingerprint": "191cab9fa908de3f",
       "strict_audit_pass": false,
       "title": "Attention-Loss Shadow Estimator"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/attention-sink-preserving-prune/claim_ledger.json",
+      "evidence_bundle_path": "papers/attention-sink-preserving-prune/evidence_bundle.json",
+      "generated_at": "2026-05-04T20:50:22.711699+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/attention-sink-preserving-prune/paper.md",
+      "public_id": "enoch-paper-0299",
+      "slug": "attention-sink-preserving-prune",
+      "source_record_fingerprint": "7c7b23f9e246f4f6",
+      "strict_audit_pass": false,
+      "title": "Attention Sink Preserving Prune"
     },
     {
       "ai_generated": true,
@@ -795,6 +825,21 @@
       "source_record_fingerprint": "2715e3eb0eb5af35",
       "strict_audit_pass": false,
       "title": "Codebase Cartographer Real-Repo Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/cognitive-core-eval-suite/claim_ledger.json",
+      "evidence_bundle_path": "papers/cognitive-core-eval-suite/evidence_bundle.json",
+      "generated_at": "2026-05-04T20:32:54.182901+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/cognitive-core-eval-suite/paper.md",
+      "public_id": "enoch-paper-0301",
+      "slug": "cognitive-core-eval-suite",
+      "source_record_fingerprint": "71d93d87f498d9fa",
+      "strict_audit_pass": false,
+      "title": "Cognitive Core Eval Suite"
     },
     {
       "ai_generated": true,
@@ -2220,6 +2265,21 @@
       "source_record_fingerprint": "268c5eadcad097a3",
       "strict_audit_pass": false,
       "title": "Junction Adapter Broader RYS Benchmark"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/knowledge-deletion-fine-tune/claim_ledger.json",
+      "evidence_bundle_path": "papers/knowledge-deletion-fine-tune/evidence_bundle.json",
+      "generated_at": "2026-05-04T20:17:21.911880+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/knowledge-deletion-fine-tune/paper.md",
+      "public_id": "enoch-paper-0302",
+      "slug": "knowledge-deletion-fine-tune",
+      "source_record_fingerprint": "315e55b2080aa23c",
+      "strict_audit_pass": false,
+      "title": "Knowledge Deletion Fine-Tune"
     },
     {
       "ai_generated": true,

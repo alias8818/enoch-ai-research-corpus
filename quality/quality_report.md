@@ -1,7 +1,7 @@
 # Corpus public audit reports
 
-Packaging/provenance lint: 298 / 298 pass
-Strict claim/evidence audit: 2 / 298 pass
+Packaging/provenance lint: 302 / 302 pass
+Strict claim/evidence audit: 2 / 302 pass
 Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
 This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
@@ -27,7 +27,7 @@ This compatibility report deliberately shows both counts on the first screen. Th
 
 ## Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 298
+Strict claim/evidence passed: 2 / 302
 Status: `blocked_audit_gaps`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
@@ -48,12 +48,14 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `agents.md-linter-task-lift-validation` | True | {} |
 | `answer-shape-prompt-planner` | True | {} |
 | `anti-collapse-expert-immune-system` | True | {} |
+| `anti-encyclopedia-curriculum` | True | {} |
 | `applicability-gated-abstention-calibration-policy` | True | {} |
 | `aret-hierarchical-multi-virtue-reward-architecture-for-rl` | True | {} |
 | `asymmetric-k-v-adapter-training` | True | {} |
 | `async-selective-kv-lease-backend-prototype` | True | {} |
 | `attention-budget-controller` | True | {} |
 | `attention-loss-shadow-estimator` | True | {} |
+| `attention-sink-preserving-prune` | True | {} |
 | `audio-room-measurement-planner` | True | {} |
 | `backend-switched-verifier-pretraining` | True | {} |
 | `batched-reader-qets-mixed-domain-scaling-validation` | True | {} |
@@ -86,6 +88,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `clean-core-agent-harness` | True | {} |
 | `cmc-dflash-conditional-marginal-coupling-for-dflash` | True | {} |
 | `codebase-cartographer-real-repo-validation` | True | {} |
+| `cognitive-core-eval-suite` | True | {} |
 | `commit-level-critic` | True | {} |
 | `compiler-error-curriculum-real-workflow-scale-validation` | True | {} |
 | `compiler-flag-search-agent` | True | {} |
@@ -181,6 +184,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `interactive-trust-tier-side-effect-trace-benchmark` | True | {} |
 | `intercept-aware-kv-checkpointing-for-tool-calls---successor-branch` | True | {} |
 | `junction-adapter-broader-rys-benchmark` | True | {} |
+| `knowledge-deletion-fine-tune` | True | {} |
 | `kv-aware-agent-planner` | True | {} |
 | `kv-eviction-gold-labels` | True | {} |
 | `kv-saliency-student` | True | {} |

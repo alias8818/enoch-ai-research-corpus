@@ -1,6 +1,6 @@
 {
-  "claim_ledgers_empty": 296,
-  "count": 298,
+  "claim_ledgers_empty": 300,
+  "count": 302,
   "featured_artifacts_checked": 2,
   "featured_artifacts_strict_pass_count": 2,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
@@ -387,6 +387,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/anti-encyclopedia-curriculum/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/anti-encyclopedia-curriculum/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "anti-encyclopedia-curriculum",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/applicability-gated-abstention-calibration-policy/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/applicability-gated-abstention-calibration-policy/evidence_bundle.json",
@@ -525,6 +543,24 @@
       "result_file_refs_missing": 20,
       "result_file_refs_public_present": 0,
       "slug": "attention-loss-shadow-estimator",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/attention-sink-preserving-prune/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/attention-sink-preserving-prune/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "attention-sink-preserving-prune",
       "strict_pass": false
     },
     {
@@ -1243,6 +1279,24 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "codebase-cartographer-real-repo-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/cognitive-core-eval-suite/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/cognitive-core-eval-suite/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "cognitive-core-eval-suite",
       "strict_pass": false
     },
     {
@@ -3335,6 +3389,24 @@
       "result_file_refs_missing": 11,
       "result_file_refs_public_present": 0,
       "slug": "junction-adapter-broader-rys-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/knowledge-deletion-fine-tune/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/knowledge-deletion-fine-tune/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "knowledge-deletion-fine-tune",
       "strict_pass": false
     },
     {
@@ -6531,7 +6603,7 @@
     }
   ],
   "status": "blocked_audit_gaps",
-  "strict_claim_evidence_failed_count": 296,
+  "strict_claim_evidence_failed_count": 300,
   "strict_claim_evidence_pass_count": 2,
   "validated": [
     "claim_ledger_schema_parseable",

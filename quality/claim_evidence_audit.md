@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 298
+Strict claim/evidence passed: 2 / 302
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 296 / 298
+- Empty claim ledgers: 300 / 302
 - Evidence `result_files` references: 1443
 - Publicly present result-file references: 18
 - Missing result-file references: 1405
@@ -49,12 +49,14 @@ Status: `blocked_audit_gaps`
 | `agents.md-linter-task-lift-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `answer-shape-prompt-planner` | False | 0 | 10 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `anti-collapse-expert-immune-system` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `anti-encyclopedia-curriculum` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `applicability-gated-abstention-calibration-policy` | False | 0 | 15 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `aret-hierarchical-multi-virtue-reward-architecture-for-rl` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `asymmetric-k-v-adapter-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `async-selective-kv-lease-backend-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `attention-budget-controller` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `attention-loss-shadow-estimator` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `attention-sink-preserving-prune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `audio-room-measurement-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `backend-switched-verifier-pretraining` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `batched-reader-qets-mixed-domain-scaling-validation` | False | 0 | 14 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -87,6 +89,7 @@ Status: `blocked_audit_gaps`
 | `clean-core-agent-harness` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `cmc-dflash-conditional-marginal-coupling-for-dflash` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `codebase-cartographer-real-repo-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `cognitive-core-eval-suite` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `commit-level-critic` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `compiler-error-curriculum-real-workflow-scale-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `compiler-flag-search-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -182,6 +185,7 @@ Status: `blocked_audit_gaps`
 | `interactive-trust-tier-side-effect-trace-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `intercept-aware-kv-checkpointing-for-tool-calls---successor-branch` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `junction-adapter-broader-rys-benchmark` | False | 0 | 11 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `knowledge-deletion-fine-tune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-aware-agent-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-eviction-gold-labels` | False | 0 | 12 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `kv-saliency-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

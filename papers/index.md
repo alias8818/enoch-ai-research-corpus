@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 298
+Count: 302
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 298/298 packaging/provenance lint pass and 2/298 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 302/302 packaging/provenance lint pass and 2/302 strict claim/evidence audit pass.
 
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
@@ -21,12 +21,14 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [AGENTS.md Linter Task-Lift Validation](agents.md-linter-task-lift-validation/paper.md) | `enoch-paper-0215` | yes | yes | 0 | false | 0 |
 | [Answer-Shape Prompt Planner](answer-shape-prompt-planner/paper.md) | `enoch-paper-0008` | yes | yes | 0 | false | 10 |
 | [Anti-Collapse Expert Immune System](anti-collapse-expert-immune-system/paper.md) | `enoch-paper-0122` | yes | yes | 0 | false | 0 |
+| [Anti-Encyclopedia Curriculum](anti-encyclopedia-curriculum/paper.md) | `enoch-paper-0300` | yes | yes | 0 | false | 0 |
 | [Applicability-Gated Abstention Calibration Policy](applicability-gated-abstention-calibration-policy/paper.md) | `enoch-paper-0061` | yes | yes | 0 | false | 15 |
 | [Aretē: Hierarchical Multi-Virtue Reward Architecture for RL](aret-hierarchical-multi-virtue-reward-architecture-for-rl/paper.md) | `enoch-paper-0028` | yes | yes | 0 | false | 20 |
 | [Asymmetric K/V Adapter Training](asymmetric-k-v-adapter-training/paper.md) | `enoch-paper-0274` | yes | yes | 0 | false | 0 |
 | [Async Selective KV Lease Backend Prototype](async-selective-kv-lease-backend-prototype/paper.md) | `enoch-paper-0247` | yes | yes | 0 | false | 0 |
 | [Attention Budget Controller](attention-budget-controller/paper.md) | `enoch-paper-0183` | yes | yes | 0 | false | 0 |
 | [Attention-Loss Shadow Estimator](attention-loss-shadow-estimator/paper.md) | `enoch-paper-0091` | yes | yes | 0 | false | 20 |
+| [Attention Sink Preserving Prune](attention-sink-preserving-prune/paper.md) | `enoch-paper-0299` | yes | yes | 0 | false | 0 |
 | [Audio Room Measurement Planner](audio-room-measurement-planner/paper.md) | `enoch-paper-0134` | yes | yes | 0 | false | 0 |
 | [Backend-Switched Verifier Pretraining](backend-switched-verifier-pretraining/paper.md) | `enoch-paper-0269` | yes | yes | 0 | false | 0 |
 | [Batched Reader QETS Mixed-Domain Scaling Validation](batched-reader-qets-mixed-domain-scaling-validation/paper.md) | `enoch-paper-0090` | yes | yes | 0 | false | 14 |
@@ -59,6 +61,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Clean-Core Agent Harness](clean-core-agent-harness/paper.md) | `enoch-paper-0170` | yes | yes | 0 | false | 0 |
 | [CMC-DFlash: Conditional Marginal Coupling for DFlash](cmc-dflash-conditional-marginal-coupling-for-dflash/paper.md) | `enoch-paper-0173` | yes | yes | 0 | false | 0 |
 | [Codebase Cartographer Real-Repo Validation](codebase-cartographer-real-repo-validation/paper.md) | `enoch-paper-0211` | yes | yes | 0 | false | 0 |
+| [Cognitive Core Eval Suite](cognitive-core-eval-suite/paper.md) | `enoch-paper-0301` | yes | yes | 0 | false | 0 |
 | [Commit-Level Critic](commit-level-critic/paper.md) | `enoch-paper-0045` | yes | yes | 0 | false | 20 |
 | [Compiler Error Curriculum Real-Workflow Scale Validation](compiler-error-curriculum-real-workflow-scale-validation/paper.md) | `enoch-paper-0209` | yes | yes | 0 | false | 0 |
 | [Compiler Flag Search Agent](compiler-flag-search-agent/paper.md) | `enoch-paper-0136` | yes | yes | 0 | false | 0 |
@@ -154,6 +157,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Interactive Trust-Tier Side-Effect Trace Benchmark](interactive-trust-tier-side-effect-trace-benchmark/paper.md) | `enoch-paper-0165` | yes | yes | 0 | false | 0 |
 | [Intercept-Aware KV Checkpointing for Tool Calls - Successor Branch](intercept-aware-kv-checkpointing-for-tool-calls---successor-branch/paper.md) | `enoch-paper-0021` | yes | yes | 0 | false | 20 |
 | [Junction Adapter Broader RYS Benchmark](junction-adapter-broader-rys-benchmark/paper.md) | `enoch-paper-0101` | yes | yes | 0 | false | 11 |
+| [Knowledge Deletion Fine-Tune](knowledge-deletion-fine-tune/paper.md) | `enoch-paper-0302` | yes | yes | 0 | false | 0 |
 | [KV-Aware Agent Planner](kv-aware-agent-planner/paper.md) | `enoch-paper-0189` | yes | yes | 0 | false | 0 |
 | [KV Eviction Gold Labels](kv-eviction-gold-labels/paper.md) | `enoch-paper-0015` | yes | yes | 0 | false | 12 |
 | [KV-Saliency Student](kv-saliency-student/paper.md) | `enoch-paper-0284` | yes | yes | 0 | false | 0 |

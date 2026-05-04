@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 296,
-    "count": 298,
+    "claim_ledgers_empty": 300,
+    "count": 302,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1443,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 2
   },
-  "count": 298,
+  "count": 302,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 298,
+  "passed": 302,
   "rows": [
     {
       "bytes": 15144,
@@ -191,6 +191,17 @@
       "words": 2110
     },
     {
+      "bytes": 16970,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/anti-encyclopedia-curriculum/paper.md",
+      "passes": true,
+      "slug": "anti-encyclopedia-curriculum",
+      "words": 2230
+    },
+    {
       "bytes": 11429,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -255,6 +266,17 @@
       "passes": true,
       "slug": "attention-loss-shadow-estimator",
       "words": 2701
+    },
+    {
+      "bytes": 14971,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/attention-sink-preserving-prune/paper.md",
+      "passes": true,
+      "slug": "attention-sink-preserving-prune",
+      "words": 2157
     },
     {
       "bytes": 13108,
@@ -607,6 +629,17 @@
       "passes": true,
       "slug": "codebase-cartographer-real-repo-validation",
       "words": 2501
+    },
+    {
+      "bytes": 16523,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/cognitive-core-eval-suite/paper.md",
+      "passes": true,
+      "slug": "cognitive-core-eval-suite",
+      "words": 2411
     },
     {
       "bytes": 17673,
@@ -1652,6 +1685,17 @@
       "passes": true,
       "slug": "junction-adapter-broader-rys-benchmark",
       "words": 1721
+    },
+    {
+      "bytes": 12731,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/knowledge-deletion-fine-tune/paper.md",
+      "passes": true,
+      "slug": "knowledge-deletion-fine-tune",
+      "words": 1747
     },
     {
       "bytes": 16223,

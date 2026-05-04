@@ -15,6 +15,7 @@ STRICT_GATE_NAME = "strict_claim_evidence_audit"
 STRICT_GATE_VERSION = "1.0"
 FEATURED_SLUGS = {
     "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+    "gb10-dense-router-retrofit-strict-audit-bundle",
 }
 
 

@@ -1,0 +1,56 @@
+{
+  "project_id": "34ae3677f1c681f2ab27e86c496ca7d9",
+  "project_name": "Dense Router Retrofit",
+  "decided_at": "2026-04-30T17:31:44.328314+00:00",
+  "decision": "positive_result",
+  "disposition": "viable_for_next_stage",
+  "needs_review": false,
+  "blocker": null,
+  "confidence": "medium",
+  "headline": "A dense MLP retrofitted with actual router logits plus Triton block-sparse execution beats dense router+MLP on GB10 medium transformer shapes and in a Llama-like decoder prefill harness, while preserving a masked dense-router reference.",
+  "primary_metric": {
+    "router_builder_speedup_min": 3.2015915858585027,
+    "router_builder_speedup_mean": 3.2142394183759593,
+    "router_fused_e2e_speedup_min": 1.2438042739571415,
+    "router_module_speedup_min": 1.1550070837656352,
+    "router_module_speedup_mean": 1.1757239540134696,
+    "decoder_layer_speedup_min": 1.2057421227103402,
+    "decoder_layer_speedup_mean": 1.2240015365004524,
+    "decoder_mlp_speedup_min": 1.173205403018584,
+    "decoder_mlp_speedup_mean": 1.3363389961877468,
+    "correctness_all_passed": true,
+    "branch_kill_gates_all_clear": true,
+    "tiny_shape_smoke_module_speedup_max": 0.8487843960546931
+  },
+  "evidence_artifacts": [
+    "run_notes.md",
+    "README.md",
+    "requirements.txt",
+    "src/routed_block_mlp_benchmark.py",
+    "src/router_integrated_mlp_benchmark.py",
+    "src/decoder_layer_integration_benchmark.py",
+    "logs/setup_env.log",
+    "logs/smoke_router_integrated.log",
+    "logs/router_integrated_parent_keep_bt32.log",
+    "logs/decoder_layer_prefill_parent_keep.log",
+    "results/smoke_router_integrated/metrics.csv",
+    "results/smoke_router_integrated/aggregate_summary.json",
+    "results/router_integrated_parent_keep_bt32/metrics.csv",
+    "results/router_integrated_parent_keep_bt32/aggregate_summary.json",
+    "results/decoder_layer_prefill_parent_keep/metrics.csv",
+    "results/decoder_layer_prefill_parent_keep/aggregate_summary.json"
+  ],
+  "limitations": [
+    "The decoder layer is a local Llama-like harness, not a full checkpoint retrofit.",
+    "Correctness is against a masked dense-router reference; original unmasked model quality is not established.",
+    "Router thresholds are calibrated to active-block fractions on synthetic random activations, not trained on language validation loss.",
+    "Very small shapes failed speed gates: the smoke test passed correctness but routed module speedup was below 1.0 because overhead dominated.",
+    "Shorter repeat counts than a publication-grade benchmark; enough for local go/no-go but not final scientific closure."
+  ],
+  "next_steps": [
+    "Integrate the routed module into one real transformer FFN checkpoint or an open MoE-to-dense distillation target and evaluate validation loss/perplexity.",
+    "Train or distill router thresholds/logits on language activations instead of random hidden states.",
+    "Profile kernel launch overhead and fuse router/build/MLP boundaries for small-token regimes, or gate deployment to medium/large prefill shapes.",
+    "Add energy/J-per-token telemetry if choosing between dense and routed paths at serving time."
+  ]
+}

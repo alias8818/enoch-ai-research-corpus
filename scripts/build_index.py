@@ -52,7 +52,7 @@ lines = [
     "",
     f"Count: {len(rows)}",
     "",
-    f"This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and {strict_pass_count}/159 strict claim/evidence audit pass.",
+    f"This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is {len(rows)}/{len(rows)} packaging/provenance lint pass and {strict_pass_count}/{len(rows)} strict claim/evidence audit pass.",
     "",
     "| Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |",
     "|---|---|---:|---:|---:|---:|---:|",

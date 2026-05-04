@@ -15,7 +15,7 @@ FAILURES: list[str] = []
 
 STALE_RELEASE_COUNT = re.compile(r"\b120\s+(?:AI-generated|generated research|artifacts)|120/120[^\n]{0,120}(?:quality gate|packaging|artifact|corpus|release)|(?:quality gate|packaging|artifact|corpus|release)[^\n]{0,120}120/120", re.I)
 UNSCOPED_QUALITY_GATE = re.compile(r"quality gate pass", re.I)
-PACKAGING_PASS = re.compile(r"(?:Packaging/provenance(?: lint)?(?: passed| pass)?:?\s*159\s*/\s*159|159\s*/\s*159[^\n]{0,80}packaging/provenance(?: lint)?)", re.I)
+PACKAGING_PASS = re.compile(r"(?:Packaging/provenance(?: lint)?(?: passed| pass)?:?\s*\d+\s*/\s*\d+|\d+\s*/\s*\d+[^\n]{0,80}packaging/provenance(?: lint)?)", re.I)
 AUDITED_CLAIMS = re.compile(r"(?<!un)audited claims", re.I)
 
 PUBLIC_EXTRA_FILES = [ROOT / "README.md", PAPERS / "index.md"]
@@ -58,7 +58,8 @@ def check_quality_report_header() -> None:
     first20 = "\n".join(lines[:20]).lower()
     audit = load_json(QUALITY / "claim_evidence_audit.json")
     expected_strict = f"{audit.get('strict_claim_evidence_pass_count')} / {audit.get('count')}"
-    required = ["packaging/provenance lint", "159 / 159", "strict claim/evidence", expected_strict, "not validated"]
+    expected_packaging = f"{audit.get('count')} / {audit.get('count')}"
+    required = ["packaging/provenance lint", expected_packaging, "strict claim/evidence", expected_strict, "not validated"]
     for phrase in required:
         if phrase not in first20:
             fail(f"quality/quality_report.md first 20 lines missing {phrase!r}")
@@ -73,7 +74,7 @@ def check_packaging_pass_has_strict_context() -> None:
         for match in PACKAGING_PASS.finditer(text):
             window = text[max(0, match.start() - 300):match.end() + 300].lower()
             if "packaging/provenance lint" not in window or "strict claim/evidence" not in window or not re.search(expected_strict, window):
-                fail(f"{rel}:{line_for(text, match.start())} 159/159 packaging pass lacks nearby strict audit context")
+                fail(f"{rel}:{line_for(text, match.start())} packaging pass lacks nearby strict audit context")
 
 
 def check_index_claim_columns() -> None:

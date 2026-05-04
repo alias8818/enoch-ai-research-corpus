@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 1 / 159
+Strict claim/evidence passed: 2 / 160
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,11 +8,11 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 158 / 159
-- Evidence `result_files` references: 1425
-- Publicly present result-file references: 0
+- Empty claim ledgers: 158 / 160
+- Evidence `result_files` references: 1443
+- Publicly present result-file references: 18
 - Missing result-file references: 1405
-- Featured artifacts strict-pass count: 1 / 1
+- Featured artifacts strict-pass count: 2 / 2
 
 ## Validated
 
@@ -110,6 +110,7 @@ Status: `blocked_audit_gaps`
 | `firmware-diff-explainer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `forced-contrastive-self-audit-extraction-trace-benchmark` | False | 0 | 4 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `gb10-dense-router-retrofit-strict-audit-bundle` | True | 5 | 0 | [] |
 | `gb10-joule-router-live-calibration-adapter` | False | 0 | 10 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `gb10-local-server-utility-swap-broker-validation` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `head-importance-self-labeling` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

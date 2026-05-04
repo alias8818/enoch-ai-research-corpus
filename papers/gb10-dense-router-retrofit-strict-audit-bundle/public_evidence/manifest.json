@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-05-03T17:31:47.642362+00:00",
+  "files": [
+    "audit_bundle/build_strict_audit.py",
+    "audit_bundle/live_smoke_router_integrated/aggregate_summary.json",
+    "audit_bundle/live_smoke_router_integrated/metrics.csv",
+    "audit_bundle/live_smoke_router_integrated/summary_active_0.25.json",
+    "audit_bundle/live_smoke_router_integrated/summary_active_0.5.json",
+    "audit_bundle/selected_artifact/.omx__project_decision.json",
+    "audit_bundle/selected_artifact/README.md",
+    "audit_bundle/selected_artifact/results__decoder_layer_prefill_parent_keep__metrics.csv",
+    "audit_bundle/selected_artifact/results__router_integrated_parent_keep_bt32__metrics.csv",
+    "audit_bundle/selected_artifact/results__smoke_router_integrated__metrics.csv",
+    "audit_bundle/selected_artifact/run_notes.md"
+  ],
+  "selected_project_id": "34ae3677f1c681f2ab27e86c496ca7d9",
+  "strict_pass": true
+}

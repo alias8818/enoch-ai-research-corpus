@@ -1,0 +1,50 @@
+{
+  "blocker": null,
+  "confidence": "high",
+  "decided_at": "2026-05-03T17:32:27.018370+00:00",
+  "decision": "strict_pass",
+  "disposition": "complete_evidence_backed_audit_bundle",
+  "evidence_artifacts": [
+    "run_notes.md",
+    "audit_bundle/strict_audit.json",
+    "audit_bundle/manifest.json",
+    "audit_bundle/build_strict_audit.py",
+    "audit_bundle/live_smoke_router_integrated/metrics.csv",
+    "audit_bundle/live_smoke_router_integrated/aggregate_summary.json",
+    "audit_bundle/selected_artifact/README.md",
+    "audit_bundle/selected_artifact/run_notes.md",
+    "audit_bundle/selected_artifact/.omx__project_decision.json",
+    "logs/audit_environment.log",
+    "logs/live_smoke_router_integrated.log",
+    "logs/build_strict_audit.log"
+  ],
+  "headline": "Built a strict-pass audit bundle for the Dense Router Retrofit Enoch artifact, with existing metric validation, a fresh GB10 live smoke run, environment/memory evidence, manifest, hashes, and run notes.",
+  "limitations": [
+    "This project audits one featured existing Enoch artifact; it does not re-run the selected artifact full medium-shape benchmark because the audit target is bundle strictness, not new scientific benchmarking.",
+    "Fresh live smoke confirms executable correctness and GB10 path health, but intentionally uses tiny shapes where speedup kill gates remain negative as documented by the selected artifact.",
+    "The selected Dense Router Retrofit artifact still requires real checkpoint/language-validation integration for final model-quality closure."
+  ],
+  "needs_review": false,
+  "next_steps": [
+    "If promoting the selected artifact, run its documented real-checkpoint next stage rather than expanding this audit bundle.",
+    "Use audit_bundle/build_strict_audit.py as a template for future featured-artifact gate automation."
+  ],
+  "primary_metric": {
+    "criteria_passed": 6,
+    "criteria_total": 6,
+    "decoder_min_layer_speedup": 1.2057421227103402,
+    "decoder_min_mlp_speedup": 1.173205403018584,
+    "live_smoke_min_builder_speedup": 3.0160919429489983,
+    "router_min_builder_speedup": 3.2015915858585027,
+    "router_min_module_speedup": 1.1550070837656352,
+    "strict_pass": true
+  },
+  "project_id": "355e3677f1c681ba98eff8e9e863a114",
+  "project_name": "Build one strict-pass featured Enoch artifact audit bundle",
+  "selected_artifact": {
+    "path": "GB10_LOCAL_PROJECT_PATH_REDACTED/projects/34ae3677f1c681f2ab27e86c496ca7d9",
+    "project_id": "34ae3677f1c681f2ab27e86c496ca7d9",
+    "project_name": "Dense Router Retrofit",
+    "selection_rationale": "Highest-scoring locally inspectable positive Enoch artifact in the corpus scan: executable code, GB10 logs, CSV/JSON metrics, run notes, and a positive non-review decision."
+  }
+}

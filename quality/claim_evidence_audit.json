@@ -1,8 +1,8 @@
 {
   "claim_ledgers_empty": 158,
-  "count": 159,
-  "featured_artifacts_checked": 1,
-  "featured_artifacts_strict_pass_count": 1,
+  "count": 160,
+  "featured_artifacts_checked": 2,
+  "featured_artifacts_strict_pass_count": 2,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
   "gate_name": "strict_claim_evidence_audit",
   "gate_scope": "strict claim-ledger schema, non-empty claim evidence references, and public availability of evidence result_file references",
@@ -15,9 +15,9 @@
     "semantic_output_quality",
     "citation_accuracy"
   ],
-  "result_file_refs": 1425,
+  "result_file_refs": 1443,
   "result_file_refs_missing": 1405,
-  "result_file_refs_public_present": 0,
+  "result_file_refs_public_present": 18,
   "rows": [
     {
       "audit_status": "blocked_empty_claims",
@@ -1957,6 +1957,22 @@
       "result_file_refs_public_present": 0,
       "slug": "forced-contrastive-self-audit-extraction-trace-benchmark",
       "strict_pass": false
+    },
+    {
+      "audit_status": "strict_pass",
+      "claim_count": 5,
+      "claim_ledger_empty": false,
+      "claim_ledger_path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/claim_ledger.json",
+      "claim_ledger_schema_status": "claims_reference_evidence",
+      "evidence_bundle_path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/evidence_bundle.json",
+      "issues": [],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 18,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 18,
+      "slug": "gb10-dense-router-retrofit-strict-audit-bundle",
+      "strict_pass": true
     },
     {
       "audit_status": "blocked_empty_claims",
@@ -4032,7 +4048,7 @@
   ],
   "status": "blocked_audit_gaps",
   "strict_claim_evidence_failed_count": 158,
-  "strict_claim_evidence_pass_count": 1,
+  "strict_claim_evidence_pass_count": 2,
   "validated": [
     "claim_ledger_schema_parseable",
     "claims_non_empty",

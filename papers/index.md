@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 159
+Count: 160
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 159/159 packaging/provenance lint pass and 1/159 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 160/160 packaging/provenance lint pass and 2/160 strict claim/evidence audit pass.
 
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
@@ -82,6 +82,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Firmware Diff Explainer](firmware-diff-explainer/paper.md) | `enoch-paper-0149` | yes | yes | 0 | false | 0 |
 | [FlashAttention-4 Kernel Pipelining for sm_121 (FA4-sm121)](flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121/paper.md) | `enoch-paper-0029` | yes | yes | 0 | false | 20 |
 | [Forced Contrastive Self-Audit Extraction Trace Benchmark](forced-contrastive-self-audit-extraction-trace-benchmark/paper.md) | `enoch-paper-0019` | yes | yes | 0 | false | 4 |
+| [GB10 Dense Router Retrofit Strict Audit Bundle](gb10-dense-router-retrofit-strict-audit-bundle/paper.md) | `enoch-paper-0160` | yes | yes | 5 | true | 0 |
 | [GB10 Joule Router Live Calibration Adapter](gb10-joule-router-live-calibration-adapter/paper.md) | `enoch-paper-0031` | yes | yes | 0 | false | 10 |
 | [GB10 Local Server Utility Swap Broker Validation](gb10-local-server-utility-swap-broker-validation/paper.md) | `enoch-paper-0083` | yes | yes | 0 | false | 20 |
 | [Head Importance Self-Labeling](head-importance-self-labeling/paper.md) | `enoch-paper-0159` | yes | yes | 0 | false | 0 |

@@ -1,15 +1,15 @@
 {
   "claim_evidence_audit": {
     "claim_ledgers_empty": 158,
-    "count": 159,
+    "count": 160,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
-    "result_file_refs": 1425,
+    "result_file_refs": 1443,
     "result_file_refs_missing": 1405,
     "status": "blocked_audit_gaps",
-    "strict_claim_evidence_pass_count": 1
+    "strict_claim_evidence_pass_count": 2
   },
-  "count": 159,
+  "count": 160,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 159,
+  "passed": 160,
   "rows": [
     {
       "bytes": 15144,
@@ -860,6 +860,17 @@
       "passes": true,
       "slug": "forced-contrastive-self-audit-extraction-trace-benchmark",
       "words": 1913
+    },
+    {
+      "bytes": 2723,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/paper.md",
+      "passes": true,
+      "slug": "gb10-dense-router-retrofit-strict-audit-bundle",
+      "words": 354
     },
     {
       "bytes": 13730,

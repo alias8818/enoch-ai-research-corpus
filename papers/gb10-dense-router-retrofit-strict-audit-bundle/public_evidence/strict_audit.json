@@ -1,0 +1,177 @@
+{
+  "audit_id": "strict-pass-featured-enoch-artifact-audit-bundle",
+  "bundle_files": [
+    "audit_bundle/build_strict_audit.py",
+    "audit_bundle/live_smoke_router_integrated/aggregate_summary.json",
+    "audit_bundle/live_smoke_router_integrated/metrics.csv",
+    "audit_bundle/live_smoke_router_integrated/summary_active_0.25.json",
+    "audit_bundle/live_smoke_router_integrated/summary_active_0.5.json",
+    "audit_bundle/selected_artifact/.omx__project_decision.json",
+    "audit_bundle/selected_artifact/README.md",
+    "audit_bundle/selected_artifact/results__decoder_layer_prefill_parent_keep__metrics.csv",
+    "audit_bundle/selected_artifact/results__router_integrated_parent_keep_bt32__metrics.csv",
+    "audit_bundle/selected_artifact/results__smoke_router_integrated__metrics.csv",
+    "audit_bundle/selected_artifact/run_notes.md"
+  ],
+  "created_at": "2026-05-03T17:31:47.642362+00:00",
+  "criteria": [
+    {
+      "evidence": {
+        "confidence": "medium",
+        "decision": "positive_result",
+        "disposition": "viable_for_next_stage",
+        "needs_review": false
+      },
+      "id": "C1_positive_featured_candidate",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "missing": [],
+        "required_count": 16,
+        "run_notes_bytes": 7086
+      },
+      "id": "C2_required_artifact_set_present",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "decoder_correct_all": true,
+        "decoder_min_layer_speedup": 1.2057421227103402,
+        "decoder_min_mlp_speedup": 1.173205403018584,
+        "router_correct_all": true,
+        "router_min_builder_speedup": 3.2015915858585027,
+        "router_min_module_speedup": 1.1550070837656352
+      },
+      "id": "C3_existing_main_metrics_support_claim",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "all_tiny_branches_killed": true,
+        "tiny_max_module_speedup": 0.8487843960546931,
+        "tiny_rows": 2
+      },
+      "id": "C4_small_shape_calibration_is_negative_not_overclaimed",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "exit_status_0": true,
+        "live_correct_all": true,
+        "live_min_builder_speedup": 3.0160919429489983,
+        "live_rows": 2,
+        "live_small_shape_killed": true
+      },
+      "id": "C5_fresh_live_smoke_executed",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "gb10_seen": true,
+        "live_max_rss_kb": 1450136,
+        "mem_available_kb": 122735844,
+        "swap_disabled": true
+      },
+      "id": "C6_gb10_memory_posture_recorded",
+      "pass": true
+    }
+  ],
+  "evidence_hashes": {
+    "README.md": {
+      "bytes": 617,
+      "sha256": "7f3d06a31ef29c6fcbc1419e5309e37fc8469685791924af631a67e15b54d9ca"
+    },
+    "audit_bundle/live_smoke_router_integrated/aggregate_summary.json": {
+      "bytes": 10141,
+      "sha256": "77af366e2f1ee348ccb25963a3bb080c109fa7a1d9ef24df0b1b8a3e54daf260"
+    },
+    "audit_bundle/live_smoke_router_integrated/metrics.csv": {
+      "bytes": 1043,
+      "sha256": "d7a4391ca23b3da209dfe4124fb924834dda320740ebe7034dfbfb23980f2ea9"
+    },
+    "logs/audit_environment.log": {
+      "bytes": 525,
+      "sha256": "a58b2f10cb867e73740c94d773cf2744617e5edb36925029a3c3f31881883154"
+    },
+    "logs/decoder_layer_prefill_parent_keep.log": {
+      "bytes": 14149,
+      "sha256": "533b078b5171541fabe64fef8218f0b2e7863f7ffe570df838e756cefe0057f2"
+    },
+    "logs/live_smoke_router_integrated.log": {
+      "bytes": 11442,
+      "sha256": "2c0483b56760575424db6e0f75f72fcf85bacb9e0d0a8d69b123069d8f23b14a"
+    },
+    "logs/router_integrated_parent_keep_bt32.log": {
+      "bytes": 16630,
+      "sha256": "ef0e054ad68ba6cb099662bad5e38346a2630c1dbb309d176a0efc8c55f5877f"
+    },
+    "logs/setup_env.log": {
+      "bytes": 81,
+      "sha256": "3393a32ee28879625d996e5ec4c783f1ada6caf27f668dc3d569a24af662d26c"
+    },
+    "logs/smoke_router_integrated.log": {
+      "bytes": 11382,
+      "sha256": "9dfb624a56d9e39a5f698b0284cb0f19453abed8d555ebb22c9a2c8e63b343b9"
+    },
+    "requirements.txt": {
+      "bytes": 64,
+      "sha256": "bfbc707669bc8ad6d46c2a481fa666750c1d8ddc77814503117eeb45edcca4d0"
+    },
+    "results/decoder_layer_prefill_parent_keep/aggregate_summary.json": {
+      "bytes": 12862,
+      "sha256": "dfce146b8cb0bd03db05df49aec8178f0d1f7410747a7532bd116d4947b63838"
+    },
+    "results/decoder_layer_prefill_parent_keep/metrics.csv": {
+      "bytes": 1034,
+      "sha256": "8dd19b9b4d01e0a778ead36faf3d4cd134e6212f5a683e936c7ead5ee2823696"
+    },
+    "results/router_integrated_parent_keep_bt32/aggregate_summary.json": {
+      "bytes": 15336,
+      "sha256": "aab24f50ffec342a4d474b6b5f19c94732fc0855d0c4d0a47c4d4c0e622f2854"
+    },
+    "results/router_integrated_parent_keep_bt32/metrics.csv": {
+      "bytes": 1391,
+      "sha256": "176d593202aa773a77ac560f3dda95c4d29ca6f1c2a9185ec0a8ad2ba1f9fc9e"
+    },
+    "results/smoke_router_integrated/aggregate_summary.json": {
+      "bytes": 10139,
+      "sha256": "70ab21b5e0878a8f86604f001fd984d93787a0a2ee501d817837e060107eb994"
+    },
+    "results/smoke_router_integrated/metrics.csv": {
+      "bytes": 1046,
+      "sha256": "ba090551c584df1c761de2b97eaa5ab4baf434af770924b4a9cc64deaf5fc497"
+    },
+    "run_notes.md": {
+      "bytes": 7086,
+      "sha256": "05ef3889c1588e04625cfa96ba61b1bc71614594bf78685ae058b8bbbc7f0754"
+    },
+    "src/decoder_layer_integration_benchmark.py": {
+      "bytes": 14896,
+      "sha256": "51adbc51dbe4710bfc3f91b0e83cbbc5cf8b82bf1043f4af6cdfd66b908d0cd7"
+    },
+    "src/routed_block_mlp_benchmark.py": {
+      "bytes": 19449,
+      "sha256": "ff55be546a3e53dd631e7576872d65e3d9cf926f1ccc1b2761f77e1e3a9ecf08"
+    },
+    "src/router_integrated_mlp_benchmark.py": {
+      "bytes": 24681,
+      "sha256": "464867705dc98c7f44fda8d146987f7694e0c024bad735ae415c7edc4be34bd8"
+    }
+  },
+  "metric_summary": {
+    "decoder_min_layer_speedup": 1.2057421227103402,
+    "decoder_min_mlp_speedup": 1.173205403018584,
+    "live_smoke_min_builder_speedup": 3.0160919429489983,
+    "router_min_builder_speedup": 3.2015915858585027,
+    "router_min_module_speedup": 1.1550070837656352
+  },
+  "origin_project_id": "355e3677f1c681ba98eff8e9e863a114",
+  "selected_artifact": {
+    "path": "GB10_LOCAL_PROJECT_PATH_REDACTED/projects/34ae3677f1c681f2ab27e86c496ca7d9",
+    "project_id": "34ae3677f1c681f2ab27e86c496ca7d9",
+    "project_name": "Dense Router Retrofit",
+    "selection_rationale": "Highest-scoring locally inspectable positive Enoch artifact in the corpus scan: executable code, GB10 logs, CSV/JSON metrics, run notes, and a positive non-review decision."
+  },
+  "strict_pass": true
+}

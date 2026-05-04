@@ -1,0 +1,170 @@
+{
+  "confidence": "high",
+  "decision": {
+    "confidence": "high",
+    "disposition": "complete_evidence_backed_audit_bundle",
+    "headline": "Built a strict-pass audit bundle for the Dense Router Retrofit Enoch artifact, with existing metric validation, a fresh GB10 live smoke run, environment/memory evidence, manifest, hashes, and run notes.",
+    "limitations": [
+      "This project audits one featured existing Enoch artifact; it does not re-run the selected artifact full medium-shape benchmark because the audit target is bundle strictness, not new scientific benchmarking.",
+      "Fresh live smoke confirms executable correctness and GB10 path health, but intentionally uses tiny shapes where speedup kill gates remain negative as documented by the selected artifact.",
+      "The selected Dense Router Retrofit artifact still requires real checkpoint/language-validation integration for final model-quality closure."
+    ],
+    "needs_review": false,
+    "next_steps": [
+      "If promoting the selected artifact, run its documented real-checkpoint next stage rather than expanding this audit bundle.",
+      "Use audit_bundle/build_strict_audit.py as a template for future featured-artifact gate automation."
+    ],
+    "project_decision": "strict_pass",
+    "selected_artifact": {
+      "path": "GB10_LOCAL_PROJECT_PATH_REDACTED/projects/34ae3677f1c681f2ab27e86c496ca7d9",
+      "project_id": "34ae3677f1c681f2ab27e86c496ca7d9",
+      "project_name": "Dense Router Retrofit",
+      "selection_rationale": "Highest-scoring locally inspectable positive Enoch artifact in the corpus scan: executable code, GB10 logs, CSV/JSON metrics, run notes, and a positive non-review decision."
+    }
+  },
+  "decision_action": "strict_pass",
+  "evidence_strength": "strong_for_traceability_bundle",
+  "generated_at": "2026-05-03T17:32:27.018370+00:00",
+  "hypothesis_status": "audit_bundle_strict_pass",
+  "not_validated": [
+    "peer_review",
+    "scientific_correctness",
+    "independent_replication",
+    "statistical_power",
+    "semantic_output_quality",
+    "citation_accuracy",
+    "real_checkpoint_language_quality_closure"
+  ],
+  "paper_id": "enoch-paper-0160:gb10_audit_bundle:publication_v1",
+  "project_id": "355e3677f1c681ba98eff8e9e863a114",
+  "project_name": "Build one strict-pass featured Enoch artifact audit bundle",
+  "public_evidence_files": [
+    {
+      "bytes": 525,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/audit_environment.log",
+      "sha256": "a58b2f10cb867e73740c94d773cf2744617e5edb36925029a3c3f31881883154"
+    },
+    {
+      "bytes": 502,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/build_strict_audit.log",
+      "sha256": "de53ea67929dec342687fa04777c07f57fc07f99b7ed8f832e39980f23879099"
+    },
+    {
+      "bytes": 7791,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/build_strict_audit.py",
+      "sha256": "ed7b191036dfc6af10027fee084dea3558fd5d6c2c838363560a7ba8c59faed5"
+    },
+    {
+      "bytes": 10141,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/aggregate_summary.json",
+      "sha256": "77af366e2f1ee348ccb25963a3bb080c109fa7a1d9ef24df0b1b8a3e54daf260"
+    },
+    {
+      "bytes": 1043,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/metrics.csv",
+      "sha256": "d7a4391ca23b3da209dfe4124fb924834dda320740ebe7034dfbfb23980f2ea9"
+    },
+    {
+      "bytes": 3599,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/summary_active_0.25.json",
+      "sha256": "ca429633dbd37907bfd231a738604ff84649b662c29a055d3d4698f599067503"
+    },
+    {
+      "bytes": 3597,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/summary_active_0.5.json",
+      "sha256": "fe649dad000fe41b9a16b6c71e483de32b4c1fb876bcf326407081e996e2adc7"
+    },
+    {
+      "bytes": 11442,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated.log",
+      "sha256": "2c0483b56760575424db6e0f75f72fcf85bacb9e0d0a8d69b123069d8f23b14a"
+    },
+    {
+      "bytes": 916,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/manifest.json",
+      "sha256": "b19c1c47ce310c09412d2bba745d9e43144fd84363b2ab8a98ecf0b7746141ac"
+    },
+    {
+      "bytes": 2765,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/project_decision.json",
+      "sha256": "eadd225c702c41acaea19fd226412ad3608345b71e881d6841084d69cb984634"
+    },
+    {
+      "bytes": 4243,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/run_notes.md",
+      "sha256": "dfb1996af1d06398955281048e9303b0846ae16a09d1004b3bbb79100c44fa0f"
+    },
+    {
+      "bytes": 3150,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/.omx__project_decision.json",
+      "sha256": "c0ee22ff99308c3c0b19ff12fcb22b4915a1f821f42f9a66446705751f66f45b"
+    },
+    {
+      "bytes": 617,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/README.md",
+      "sha256": "7f3d06a31ef29c6fcbc1419e5309e37fc8469685791924af631a67e15b54d9ca"
+    },
+    {
+      "bytes": 1034,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__decoder_layer_prefill_parent_keep__metrics.csv",
+      "sha256": "8dd19b9b4d01e0a778ead36faf3d4cd134e6212f5a683e936c7ead5ee2823696"
+    },
+    {
+      "bytes": 1391,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__router_integrated_parent_keep_bt32__metrics.csv",
+      "sha256": "176d593202aa773a77ac560f3dda95c4d29ca6f1c2a9185ec0a8ad2ba1f9fc9e"
+    },
+    {
+      "bytes": 1046,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__smoke_router_integrated__metrics.csv",
+      "sha256": "ba090551c584df1c761de2b97eaa5ab4baf434af770924b4a9cc64deaf5fc497"
+    },
+    {
+      "bytes": 7086,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/run_notes.md",
+      "sha256": "05ef3889c1588e04625cfa96ba61b1bc71614594bf78685ae058b8bbbc7f0754"
+    },
+    {
+      "bytes": 6616,
+      "path": "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/strict_audit.json",
+      "sha256": "7c39fedeeb18450d039e55cd208e265b02a412ac94d4089d5f40e64852801631"
+    }
+  ],
+  "recommended_next_action": "Use this as a public strict-audit bundle example; do not interpret it as language-model quality closure or peer review.",
+  "result_files": [
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/audit_environment.log",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/build_strict_audit.log",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/build_strict_audit.py",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/aggregate_summary.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/metrics.csv",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/summary_active_0.25.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated/summary_active_0.5.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/live_smoke_router_integrated.log",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/manifest.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/project_decision.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/run_notes.md",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/.omx__project_decision.json",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/README.md",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__decoder_layer_prefill_parent_keep__metrics.csv",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__router_integrated_parent_keep_bt32__metrics.csv",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/results__smoke_router_integrated__metrics.csv",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/selected_artifact/run_notes.md",
+    "papers/gb10-dense-router-retrofit-strict-audit-bundle/public_evidence/strict_audit.json"
+  ],
+  "run_id": "355e3677f1c681ba98eff8e9e863a114-20260503T172841356510+0000",
+  "strict_audit_summary": {
+    "criteria_passed": 6,
+    "criteria_total": 6,
+    "primary_metric": {
+      "criteria_passed": 6,
+      "criteria_total": 6,
+      "decoder_min_layer_speedup": 1.2057421227103402,
+      "decoder_min_mlp_speedup": 1.173205403018584,
+      "live_smoke_min_builder_speedup": 3.0160919429489983,
+      "router_min_builder_speedup": 3.2015915858585027,
+      "router_min_module_speedup": 1.1550070837656352,
+      "strict_pass": true
+    },
+    "strict_pass": true
+  }
+}

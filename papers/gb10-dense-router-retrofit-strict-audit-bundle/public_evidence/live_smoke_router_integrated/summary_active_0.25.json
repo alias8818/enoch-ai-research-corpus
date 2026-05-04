@@ -1,0 +1,123 @@
+{
+  "config": {
+    "seed": 11,
+    "tokens": 128,
+    "d_model": 64,
+    "hidden": 256,
+    "block_tokens": 16,
+    "active_fraction": 0.25,
+    "dtype": "float16",
+    "warmup": 2,
+    "repeats": 3,
+    "device": "cuda",
+    "atol": 0.02,
+    "rtol": 0.02
+  },
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.11.0+cu130",
+    "torch_cuda": "13.0",
+    "triton": "3.6.0",
+    "gpu": "NVIDIA GB10",
+    "capability": [
+      12,
+      1
+    ]
+  },
+  "router": {
+    "threshold": 1.69384765625,
+    "active_blocks": 2,
+    "actual_active_fraction": 0.25,
+    "torch_blocks_match_expected": true,
+    "fused_blocks_match_expected": true
+  },
+  "correctness": {
+    "builder_correct": true,
+    "mlp_allclose": true,
+    "counted_mlp_allclose": true,
+    "module_boundary_allclose": true,
+    "max_abs_err": 0.00390625,
+    "max_rel_err": 0.3724710941314697,
+    "counted_max_abs_err": 0.00390625,
+    "counted_max_rel_err": 0.3724710941314697,
+    "module_boundary_max_abs_err": 0.0,
+    "atol": 0.02,
+    "rtol": 0.02
+  },
+  "timing": {
+    "dense_full_router_plus_mlp": {
+      "mean_s": 4.824533313512802e-05,
+      "median_s": 4.620800167322159e-05,
+      "min_s": 4.387199878692627e-05,
+      "max_s": 5.465599894523621e-05
+    },
+    "router_only": {
+      "mean_s": 1.5477333528300126e-05,
+      "median_s": 1.551999989897013e-05,
+      "min_s": 1.5168000012636184e-05,
+      "max_s": 1.5744000673294066e-05
+    },
+    "torch_logits_to_blocks": {
+      "mean_s": 4.22933337589105e-05,
+      "median_s": 4.198399931192398e-05,
+      "min_s": 4.1248001158237455e-05,
+      "max_s": 4.3648000806570054e-05
+    },
+    "triton_fused_logits_to_blocks": {
+      "mean_s": 1.3919999822974204e-05,
+      "median_s": 1.3919999822974206e-05,
+      "min_s": 1.2799999676644803e-05,
+      "max_s": 1.5039999969303607e-05
+    },
+    "routed_generic_router_torch_builder_mlp": {
+      "mean_s": 8.06613340973854e-05,
+      "median_s": 8.032000064849854e-05,
+      "min_s": 7.916799932718277e-05,
+      "max_s": 8.249600231647491e-05
+    },
+    "routed_fused_router_triton_builder_counted_mlp": {
+      "mean_s": 4.9098666757345194e-05,
+      "median_s": 4.896000027656555e-05,
+      "min_s": 4.8735998570919034e-05,
+      "max_s": 4.960000142455101e-05
+    },
+    "module_dense_forward": {
+      "mean_s": 5.2757333964109415e-05,
+      "median_s": 5.267199873924255e-05,
+      "min_s": 5.2064001560211184e-05,
+      "max_s": 5.3536001592874524e-05
+    },
+    "module_routed_forward_device_count": {
+      "mean_s": 6.364799911777179e-05,
+      "median_s": 6.438399851322174e-05,
+      "min_s": 6.195199862122536e-05,
+      "max_s": 6.460800021886826e-05
+    },
+    "dense_full_wall": {
+      "mean_s": 4.1146670506956674e-05,
+      "median_s": 4.118400102015585e-05,
+      "min_s": 4.0992003050632775e-05,
+      "max_s": 4.126400745008141e-05
+    },
+    "routed_fused_wall": {
+      "mean_s": 4.673067208689948e-05,
+      "median_s": 4.676800745073706e-05,
+      "min_s": 4.6528002712875605e-05,
+      "max_s": 4.6896006097085774e-05
+    },
+    "builder_speedup_vs_torch_median": 3.0160919429489983,
+    "generic_speedup_vs_dense_full_median": 0.5752988209678928,
+    "fused_speedup_vs_dense_full_median": 0.9437908785171883,
+    "module_speedup_vs_dense_forward_median": 0.8180914506020616,
+    "fused_minus_torch_builder_us": -28.063999488949776
+  },
+  "kill_condition": {
+    "active_fraction_le_half": true,
+    "builder_under_15us": true,
+    "builder_speedup_ge_2x": true,
+    "speedup_ge_1p15": false,
+    "module_speedup_ge_1p15": false,
+    "correct": true,
+    "branch_killed": true
+  }
+}

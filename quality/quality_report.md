@@ -1,7 +1,7 @@
 # Corpus public audit reports
 
-Packaging/provenance lint: 302 / 302 pass
-Strict claim/evidence audit: 2 / 302 pass
+Packaging/provenance lint: 356 / 356 pass
+Strict claim/evidence audit: 2 / 356 pass
 Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
 This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
@@ -27,7 +27,7 @@ This compatibility report deliberately shows both counts on the first screen. Th
 
 ## Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 302
+Strict claim/evidence passed: 2 / 356
 Status: `blocked_audit_gaps`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
@@ -38,6 +38,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `adaptive-budget-aware-lim-reserve-sampler` | True | {} |
 | `adaptive-claim-first-top-k-router` | True | {} |
 | `adaptive-evidence-packer-rag-integration` | True | {} |
+| `adaptive-landmark-reweighter` | True | {} |
 | `adaptive-prefix-splitter-inference-integration` | True | {} |
 | `adversarial-channel-router` | True | {} |
 | `agent-app-store-with-repro-sandboxes` | True | {} |
@@ -55,8 +56,11 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `async-selective-kv-lease-backend-prototype` | True | {} |
 | `attention-budget-controller` | True | {} |
 | `attention-loss-shadow-estimator` | True | {} |
+| `attention-mlp-joint-pruner` | True | {} |
 | `attention-sink-preserving-prune` | True | {} |
+| `attention-sink-rescue-pool` | True | {} |
 | `audio-room-measurement-planner` | True | {} |
+| `autonomous-project-manager-kernel` | True | {} |
 | `backend-switched-verifier-pretraining` | True | {} |
 | `batched-reader-qets-mixed-domain-scaling-validation` | True | {} |
 | `batched-vllm-speculation-cost-governor-integration` | True | {} |
@@ -66,7 +70,9 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4` | True | {} |
 | `bfi-dflash-bonus-feature-imputation` | True | {} |
 | `blackboard-with-proof-obligations` | True | {} |
+| `block-consequence-probes` | True | {} |
 | `bonsai-up-logprob-margin-safeguard-deployment-benchmark` | True | {} |
+| `branch-shared-kv-fragments` | True | {} |
 | `byte-memory-pointer-decoder-for-fragile-spans` | True | {} |
 | `cache-churn-alarm-vllm-adapter-benchmark` | True | {} |
 | `cache-quantization-awareness-training` | True | {} |
@@ -84,10 +90,12 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `ci-log-cost-gated-failure-signature-sentinel` | True | {} |
 | `citation-focused-section-ordering` | True | {} |
 | `citation-locator-metadata-extraction-intervention-benchmark` | True | {} |
+| `citation-mode-speculation` | True | {} |
 | `citation-span-robustness-tuning` | True | {} |
 | `clean-core-agent-harness` | True | {} |
 | `cmc-dflash-conditional-marginal-coupling-for-dflash` | True | {} |
 | `codebase-cartographer-real-repo-validation` | True | {} |
+| `coder-only-dense-shrinker` | True | {} |
 | `cognitive-core-eval-suite` | True | {} |
 | `commit-level-critic` | True | {} |
 | `compiler-error-curriculum-real-workflow-scale-validation` | True | {} |
@@ -95,6 +103,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `compress-then-answer-benchmark` | True | {} |
 | `compression-aware-microlm` | True | {} |
 | `compression-gap-penalty` | True | {} |
+| `compression-overhead-estimator` | True | {} |
 | `confidence-triggered-reread-training` | True | {} |
 | `configuration-entropy-reducer` | True | {} |
 | `consent-receipt-engine` | True | {} |
@@ -103,9 +112,11 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `context-capital-allocator` | True | {} |
 | `context-digest-auxiliary-reconstruction` | True | {} |
 | `context-overflow-real-llm-reader-validation` | True | {} |
+| `context-provenance-firewall` | True | {} |
 | `context-rehydration-multi-model-validation` | True | {} |
 | `context-rehydration-student` | True | {} |
 | `context-reuse-clusterer-local-serving-harness` | True | {} |
+| `context-role-pruning` | True | {} |
 | `context-skeleton-distillation` | True | {} |
 | `continuous-phase-memory-bench` | True | {} |
 | `contrastive-chunk-ordering-loss` | True | {} |
@@ -121,8 +132,10 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `data-center-airflow-toy-twin` | True | {} |
 | `dataset-genealogy-index---successor-branch` | True | {} |
 | `deadline-guarded-speculation-live-serving-validation` | True | {} |
+| `delegation-simulator` | True | {} |
 | `delta-prefill-alignment-loss` | True | {} |
 | `demo-position-lottery` | True | {} |
+| `denoised-rejection-replay` | True | {} |
 | `dense-mask-distillation-from-moe` | True | {} |
 | `dense-prune-harness-benchmark` | True | {} |
 | `dense-router-retrofit` | True | {} |
@@ -137,6 +150,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `difficulty-aware-mask-bank---successor-branch` | True | {} |
 | `document-field-importance-llm-generation-validation` | True | {} |
 | `domain-gated-speculative-waste-minimizer` | True | {} |
+| `draft-candidate-reordering` | True | {} |
 | `draft-length-predictor-tuning` | True | {} |
 | `draft-token-value-distill` | True | {} |
 | `draft-value-router` | True | {} |
@@ -179,27 +193,38 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `home-lab-agent-orchestrator` | True | {} |
 | `hot-cold-tensor-paging` | True | {} |
 | `human-checked-acceptance-trace-validation` | True | {} |
+| `human-interruptibility-score` | True | {} |
 | `humaneval-mbpp-counterexample-harvest-verifier-transfer` | True | {} |
 | `hypothesis-ledger-admission-gate-a-b-trial` | True | {} |
 | `interactive-trust-tier-side-effect-trace-benchmark` | True | {} |
 | `intercept-aware-kv-checkpointing-for-tool-calls---successor-branch` | True | {} |
+| `json-schema-guided-speculation` | True | {} |
 | `junction-adapter-broader-rys-benchmark` | True | {} |
+| `k-first-approximation-switch` | True | {} |
 | `knowledge-deletion-fine-tune` | True | {} |
 | `kv-aware-agent-planner` | True | {} |
 | `kv-eviction-gold-labels` | True | {} |
 | `kv-saliency-student` | True | {} |
 | `kv-spill-top-3-learned-reranker` | True | {} |
+| `lab-notebook-diff-engine` | True | {} |
 | `lab-protocol-lockfile-multi-turn-tool-calling-replay` | True | {} |
 | `latency-to-value-scheduler-real-model-tier-validation` | True | {} |
+| `layer-asymmetric-cache-budget` | True | {} |
 | `layer-skip-under-memory-pressure` | True | {} |
+| `layerwise-calibration-observer-for-dense` | True | {} |
 | `llama.cpp-gguf-hot-warm-cold-mmap-instrumentation` | True | {} |
 | `llama.cpp-in-place-kv-compaction-for-importance-retention` | True | {} |
 | `llm-backed-log-to-patch-memory-benchmark` | True | {} |
+| `llm-backed-summary-drift-corpus-validation` | True | {} |
 | `llm-code-navigation-context-packer-evaluation` | True | {} |
 | `llm-evidence-survival-qa-validation` | True | {} |
 | `llm-mcp-mutation-proxy-benchmark` | True | {} |
 | `load-balancer-free-symmetry-breaker` | True | {} |
+| `locality-switched-windowing` | True | {} |
 | `log-compression-with-causal-handles` | True | {} |
+| `long-answer-tail-cache-booster` | True | {} |
+| `long-context-trash-compactor` | True | {} |
+| `long-horizon-canary-tasks` | True | {} |
 | `long-tail-entity-boost-mix` | True | {} |
 | `long-to-short-compression-training` | True | {} |
 | `lookup-aware-toolformer-toy` | True | {} |
@@ -207,12 +232,15 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `lost-middle-rescue-student` | True | {} |
 | `low-rank-kv-compensation-adapter` | True | {} |
 | `low-rank-patch-after-prune` | True | {} |
+| `memorization-reasoning-probe-split` | True | {} |
 | `memory-pressure-admission-gate-live-serving-validation` | True | {} |
 | `memory-pressure-replay-logs` | True | {} |
 | `memory-quarantine-queue-real-llm-workflow-benchmark` | True | {} |
 | `memory-topology-arena` | True | {} |
+| `minimum-curriculum-search` | True | {} |
 | `multi-model-real-span-boundary-corruption-benchmark` | True | {} |
 | `multi-objective-throughput-reward` | True | {} |
+| `multi-tenant-cache-fairness-guard` | True | {} |
 | `n-m-quant-prune-joint-search` | True | {} |
 | `native-tool-call-capability-lease-wrapper` | True | {} |
 | `near-miss-tool-call-dataset` | True | {} |
@@ -225,17 +253,21 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `open-weight-integrity-twin-agent-sweep` | True | {} |
 | `openai-compatible-deployment-of-syntax-preserving-rag-adapter` | True | {} |
 | `outcome-calibrated-real-trace-safety-drift-monitor` | True | {} |
+| `outlier-singleton-protection` | True | {} |
 | `output-aware-terminal-recovery-reset-gate` | True | {} |
 | `pair-adaptive-draft-waste-calibration-benchmark` | True | {} |
 | `paper-club-swarm-blind-full-paper-validation` | True | {} |
+| `parametric-memory-budget-meter` | True | {} |
 | `partial-evidence-audited-sft-recall-preservation-ablation` | True | {} |
 | `partial-module-rys` | True | {} |
 | `partition-aware-cascade-distillation` | True | {} |
 | `partition-local-confidence-cascade` | True | {} |
 | `physical-experiment-doe-agent` | True | {} |
 | `plan-ast` | True | {} |
+| `plan-drift-tribunal` | True | {} |
 | `precision-filtered-evidence-anchors-for-distractor-robust-qa` | True | {} |
 | `prefix-equivalence-targeted-normalizer-uplift` | True | {} |
+| `prefix-matched-draft-library` | True | {} |
 | `prefix-reuse-consistency-loss` | True | {} |
 | `prefix-seeder-serving-adapter-benchmark` | True | {} |
 | `prefix-share-serving-trace-set` | True | {} |
@@ -244,6 +276,8 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `production-rag-kv-offload-landmark-reliability-scale-up` | True | {} |
 | `production-speculative-decoding-counter-validation` | True | {} |
 | `project-kill-switch-council` | True | {} |
+| `prompt-compression-aware-drafters` | True | {} |
+| `proof-carrying-prs` | True | {} |
 | `protocol-compliance-judge` | True | {} |
 | `prune-then-upcycle-recovery-loop` | True | {} |
 | `public-fastapi-typer-compatibility-oracle-validation` | True | {} |
@@ -252,6 +286,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `quantization-aware-expert-upcycling` | True | {} |
 | `quantization-aware-saliency` | True | {} |
 | `query-budget-contract-local-server-benchmark` | True | {} |
+| `query-key-retention-map` | True | {} |
 | `qwen32b-speculative-workflow-robustness-suite` | True | {} |
 | `real-corpus-row-id-citation-qa-integration-benchmark` | True | {} |
 | `real-document-retrieval-compression-teacher-validation` | True | {} |
@@ -268,6 +303,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `reduced-planner-scratchpad-feedback-real-repo-qa-validation` | True | {} |
 | `rehydration-guide-student` | True | {} |
 | `rejection-mode-targeted-abstention-refusal-tuning` | True | {} |
+| `rejection-span-distillation` | True | {} |
 | `repo-pulse-index-real-repo-pilot` | True | {} |
 | `research-agent-treaty-protocol` | True | {} |
 | `research-claim-unit-tests` | True | {} |
@@ -277,7 +313,10 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `resource-bounded-agent-kernel` | True | {} |
 | `retrieval-aware-evidence-packer-arbitration-benchmark` | True | {} |
 | `retrieval-conditioned-expert-expansion` | True | {} |
+| `retrieval-honesty-loss` | True | {} |
+| `retrieval-landmark-kv-pins` | True | {} |
 | `reuse-fingerprint-student` | True | {} |
+| `reversible-prune-masks` | True | {} |
 | `robotic-procedure-verifier` | True | {} |
 | `rollback-audit-and-escrow-for-transactional-tool-calls` | True | {} |
 | `router-distilled-triton-mlp-full-model-integration` | True | {} |
@@ -288,23 +327,33 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `scaffold-only-revision-mode` | True | {} |
 | `schema-anchor-adapter-tuning` | True | {} |
 | `schema-drift-json-corpus` | True | {} |
+| `schema-pinned-json-cache` | True | {} |
+| `semantic-channel-naming` | True | {} |
 | `semantic-overlap-tax-generative-llm-public-rag-benchmark` | True | {} |
 | `serving-boundary-context-compression-kv-benchmark` | True | {} |
+| `shared-context-multi-query-speculation` | True | {} |
 | `shared-prompt-batcher-local-server-validation` | True | {} |
 | `short-model-long-task-distillation` | True | {} |
 | `short-train-long-eval-prompt-robust-tuning` | True | {} |
+| `similarity-gated-value-quantization` | True | {} |
 | `sink-token-stabilization` | True | {} |
 | `skill-preflight-gate-integration` | True | {} |
 | `skill-to-dataset-compiler` | True | {} |
 | `slo-narrative-compressor` | True | {} |
 | `small-model-persona-context-orderer-generation-validation` | True | {} |
 | `sobd-survival-optimized-block-diffusion` | True | {} |
+| `source-citation-kv-reserve` | True | {} |
+| `sparse-value-late-materializer` | True | {} |
+| `sparse-verifier-token-check` | True | {} |
 | `spec-decoder-domain-router` | True | {} |
 | `speculation-friendly-lm-head-tuning` | True | {} |
 | `speculation-tree-student` | True | {} |
 | `specvocab-hybrid-for-eagle-3-and-dflash` | True | {} |
+| `stalled-agent-rescuer` | True | {} |
 | `strong-draft-weak-reviewer-transfer` | True | {} |
 | `structured-noise-injection-suite` | True | {} |
+| `sub-8gb-model-zoo-triage` | True | {} |
+| `swarm-counterfactual-logger` | True | {} |
 | `swarm-heartbeat-bus` | True | {} |
 | `sycophancy-sensitive-escalation` | True | {} |
 | `synthetic-user-load-negotiator` | True | {} |
@@ -319,16 +368,21 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `token-rent-for-examples` | True | {} |
 | `token-type-importance-labels` | True | {} |
 | `tokenized-tiny-lm-duplicate-ratio-ablation` | True | {} |
+| `tool-boundary-non-speculate-gate` | True | {} |
 | `trace-inspector-warm-session-operator-trial` | True | {} |
 | `trajectory-rulebook-distillation` | True | {} |
+| `trie-guided-speculative-json` | True | {} |
 | `uncertainty-coverage-co-estimator` | True | {} |
 | `upcycle-router-cold-start-benchmark` | True | {} |
 | `upcycle-timing-sweep-law` | True | {} |
 | `upcycled-expert-distillation-collapse` | True | {} |
 | `upcycled-lora-expert-grafting` | True | {} |
 | `utr-conflict-update-final-answer-schema-hardening` | True | {} |
+| `value-only-cold-storage` | True | {} |
 | `value-per-joule-broker-online-canary-on-gb10-endpoints` | True | {} |
+| `verification-conditional-cache-restore` | True | {} |
 | `verification-failure-clusters` | True | {} |
+| `verifier-feature-acceptance-classifier` | True | {} |
 | `vllm-attention-sink-retention-3b-continuous-serving-stress-campaign` | True | {} |
 | `vram-admission-controller` | True | {} |
 | `wake-gate-local-endpoint-harness-integration` | True | {} |

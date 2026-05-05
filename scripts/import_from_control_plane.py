@@ -34,6 +34,7 @@ TOKEN_PATTERNS = [
 PRIVATE_IP_RE = re.compile(r"\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3})\b")
 SOURCE_RECORD_RE = re.compile(r"\b(?:idea-)?[0-9a-f]{32}(?:-[0-9]{14})?\b")
 PUBLIC_ID_RE = re.compile(r"^enoch-paper-(\d{4,})$")
+DEFAULT_PAPER_STATUS = "publication_draft"
 
 
 def slugify(value: str, fallback: str) -> str:
@@ -180,7 +181,7 @@ def main() -> int:
     parser.add_argument("--token", default=os.environ.get("ENOCH_CONTROL_TOKEN", ""))
     parser.add_argument("--page-size", type=int, default=200)
     parser.add_argument("--limit", type=int, default=0, help="Optional maximum papers to import")
-    parser.add_argument("--paper-status", default="", help="Optional paper_status filter; empty imports all paper states")
+    parser.add_argument("--paper-status", default=DEFAULT_PAPER_STATUS, help="Paper status filter; defaults to publication_draft, the corpus import lane. Use '' only for a deliberate legacy backfill.")
     parser.add_argument("--review-status", default="finalized", help="Review status to import; defaults to finalized")
     parser.add_argument("--search", default="")
     parser.add_argument("--dry-run", action="store_true")

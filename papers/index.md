@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 302
+Count: 356
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 302/302 packaging/provenance lint pass and 2/302 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 356/356 packaging/provenance lint pass and 2/356 strict claim/evidence audit pass.
 
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
@@ -11,6 +11,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Adaptive Budget-Aware LIM Reserve Sampler](adaptive-budget-aware-lim-reserve-sampler/paper.md) | `enoch-paper-0062` | yes | yes | 0 | false | 20 |
 | [Adaptive Claim-First Top-K Router](adaptive-claim-first-top-k-router/paper.md) | `enoch-paper-0003` | yes | yes | 0 | false | 7 |
 | [Adaptive Evidence Packer RAG Integration](adaptive-evidence-packer-rag-integration/paper.md) | `enoch-paper-0078` | yes | yes | 0 | false | 13 |
+| [Adaptive Landmark Reweighter](adaptive-landmark-reweighter/paper.md) | `enoch-paper-0331` | yes | yes | 0 | false | 0 |
 | [Adaptive Prefix Splitter Inference Integration](adaptive-prefix-splitter-inference-integration/paper.md) | `enoch-paper-0073` | yes | yes | 0 | false | 3 |
 | [Adversarial Channel Router](adversarial-channel-router/paper.md) | `enoch-paper-0044` | yes | yes | 0 | false | 6 |
 | [Agent App Store With Repro Sandboxes](agent-app-store-with-repro-sandboxes/paper.md) | `enoch-paper-0043` | yes | yes | 0 | false | 1 |
@@ -28,8 +29,11 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Async Selective KV Lease Backend Prototype](async-selective-kv-lease-backend-prototype/paper.md) | `enoch-paper-0247` | yes | yes | 0 | false | 0 |
 | [Attention Budget Controller](attention-budget-controller/paper.md) | `enoch-paper-0183` | yes | yes | 0 | false | 0 |
 | [Attention-Loss Shadow Estimator](attention-loss-shadow-estimator/paper.md) | `enoch-paper-0091` | yes | yes | 0 | false | 20 |
+| [Attention-MLP Joint Pruner](attention-mlp-joint-pruner/paper.md) | `enoch-paper-0344` | yes | yes | 0 | false | 0 |
 | [Attention Sink Preserving Prune](attention-sink-preserving-prune/paper.md) | `enoch-paper-0299` | yes | yes | 0 | false | 0 |
+| [Attention-Sink Rescue Pool](attention-sink-rescue-pool/paper.md) | `enoch-paper-0322` | yes | yes | 0 | false | 0 |
 | [Audio Room Measurement Planner](audio-room-measurement-planner/paper.md) | `enoch-paper-0134` | yes | yes | 0 | false | 0 |
+| [Autonomous Project Manager Kernel](autonomous-project-manager-kernel/paper.md) | `enoch-paper-0348` | yes | yes | 0 | false | 0 |
 | [Backend-Switched Verifier Pretraining](backend-switched-verifier-pretraining/paper.md) | `enoch-paper-0269` | yes | yes | 0 | false | 0 |
 | [Batched Reader QETS Mixed-Domain Scaling Validation](batched-reader-qets-mixed-domain-scaling-validation/paper.md) | `enoch-paper-0090` | yes | yes | 0 | false | 14 |
 | [Batched vLLM Speculation-Cost Governor Integration](batched-vllm-speculation-cost-governor-integration/paper.md) | `enoch-paper-0079` | yes | yes | 0 | false | 20 |
@@ -39,7 +43,9 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring](benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4/paper.md) | `enoch-paper-0022` | yes | yes | 0 | false | 18 |
 | [BFI-DFlash: Bonus Feature Imputation](bfi-dflash-bonus-feature-imputation/paper.md) | `enoch-paper-0167` | yes | yes | 0 | false | 0 |
 | [Blackboard With Proof Obligations](blackboard-with-proof-obligations/paper.md) | `enoch-paper-0177` | yes | yes | 0 | false | 0 |
+| [Block Consequence Probes](block-consequence-probes/paper.md) | `enoch-paper-0349` | yes | yes | 0 | false | 0 |
 | [Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark](bonsai-up-logprob-margin-safeguard-deployment-benchmark/paper.md) | `enoch-paper-0036` | yes | yes | 0 | false | 9 |
+| [Branch-Shared KV Fragments](branch-shared-kv-fragments/paper.md) | `enoch-paper-0316` | yes | yes | 0 | false | 0 |
 | [Byte-Memory Pointer Decoder for Fragile Spans](byte-memory-pointer-decoder-for-fragile-spans/paper.md) | `enoch-paper-0016` | yes | yes | 0 | false | 7 |
 | [Cache Churn Alarm vLLM Adapter Benchmark](cache-churn-alarm-vllm-adapter-benchmark/paper.md) | `enoch-paper-0120` | yes | yes | 0 | false | 20 |
 | [Cache Quantization Awareness Training](cache-quantization-awareness-training/paper.md) | `enoch-paper-0278` | yes | yes | 0 | false | 0 |
@@ -57,10 +63,12 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [CI-Log Cost-Gated Failure Signature Sentinel](ci-log-cost-gated-failure-signature-sentinel/paper.md) | `enoch-paper-0208` | yes | yes | 0 | false | 0 |
 | [Citation-Focused Section Ordering](citation-focused-section-ordering/paper.md) | `enoch-paper-0051` | yes | yes | 0 | false | 9 |
 | [Citation Locator Metadata Extraction Intervention Benchmark](citation-locator-metadata-extraction-intervention-benchmark/paper.md) | `enoch-paper-0067` | yes | yes | 0 | false | 6 |
+| [Citation-Mode Speculation](citation-mode-speculation/paper.md) | `enoch-paper-0317` | yes | yes | 0 | false | 0 |
 | [Citation Span Robustness Tuning](citation-span-robustness-tuning/paper.md) | `enoch-paper-0281` | yes | yes | 0 | false | 0 |
 | [Clean-Core Agent Harness](clean-core-agent-harness/paper.md) | `enoch-paper-0170` | yes | yes | 0 | false | 0 |
 | [CMC-DFlash: Conditional Marginal Coupling for DFlash](cmc-dflash-conditional-marginal-coupling-for-dflash/paper.md) | `enoch-paper-0173` | yes | yes | 0 | false | 0 |
 | [Codebase Cartographer Real-Repo Validation](codebase-cartographer-real-repo-validation/paper.md) | `enoch-paper-0211` | yes | yes | 0 | false | 0 |
+| [Coder-Only Dense Shrinker](coder-only-dense-shrinker/paper.md) | `enoch-paper-0352` | yes | yes | 0 | false | 0 |
 | [Cognitive Core Eval Suite](cognitive-core-eval-suite/paper.md) | `enoch-paper-0301` | yes | yes | 0 | false | 0 |
 | [Commit-Level Critic](commit-level-critic/paper.md) | `enoch-paper-0045` | yes | yes | 0 | false | 20 |
 | [Compiler Error Curriculum Real-Workflow Scale Validation](compiler-error-curriculum-real-workflow-scale-validation/paper.md) | `enoch-paper-0209` | yes | yes | 0 | false | 0 |
@@ -68,6 +76,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Compress-Then-Answer Benchmark](compress-then-answer-benchmark/paper.md) | `enoch-paper-0014` | yes | yes | 0 | false | 14 |
 | [Compression-Aware MicroLM](compression-aware-microlm/paper.md) | `enoch-paper-0295` | yes | yes | 0 | false | 0 |
 | [Compression Gap Penalty](compression-gap-penalty/paper.md) | `enoch-paper-0154` | yes | yes | 0 | false | 0 |
+| [Compression Overhead Estimator](compression-overhead-estimator/paper.md) | `enoch-paper-0351` | yes | yes | 0 | false | 0 |
 | [Confidence-Triggered Reread Training](confidence-triggered-reread-training/paper.md) | `enoch-paper-0293` | yes | yes | 0 | false | 0 |
 | [Configuration Entropy Reducer](configuration-entropy-reducer/paper.md) | `enoch-paper-0144` | yes | yes | 0 | false | 0 |
 | [Consent Receipt Engine](consent-receipt-engine/paper.md) | `enoch-paper-0194` | yes | yes | 0 | false | 0 |
@@ -76,9 +85,11 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Context Capital Allocator](context-capital-allocator/paper.md) | `enoch-paper-0188` | yes | yes | 0 | false | 0 |
 | [Context Digest Auxiliary Reconstruction](context-digest-auxiliary-reconstruction/paper.md) | `enoch-paper-0135` | yes | yes | 0 | false | 0 |
 | [Context Overflow Real LLM Reader Validation](context-overflow-real-llm-reader-validation/paper.md) | `enoch-paper-0010` | yes | yes | 0 | false | 13 |
+| [Context Provenance Firewall](context-provenance-firewall/paper.md) | `enoch-paper-0353` | yes | yes | 0 | false | 0 |
 | [Context Rehydration Multi-Model Validation](context-rehydration-multi-model-validation/paper.md) | `enoch-paper-0112` | yes | yes | 0 | false | 18 |
 | [Context Rehydration Student](context-rehydration-student/paper.md) | `enoch-paper-0288` | yes | yes | 0 | false | 0 |
 | [Context Reuse Clusterer Local Serving Harness](context-reuse-clusterer-local-serving-harness/paper.md) | `enoch-paper-0030` | yes | yes | 0 | false | 15 |
+| [Context-Role Pruning](context-role-pruning/paper.md) | `enoch-paper-0337` | yes | yes | 0 | false | 0 |
 | [Context Skeleton Distillation](context-skeleton-distillation/paper.md) | `enoch-paper-0287` | yes | yes | 0 | false | 0 |
 | [Continuous-Phase Memory Bench](continuous-phase-memory-bench/paper.md) | `enoch-paper-0264` | yes | yes | 0 | false | 0 |
 | [Contrastive Chunk Ordering Loss](contrastive-chunk-ordering-loss/paper.md) | `enoch-paper-0298` | yes | yes | 0 | false | 0 |
@@ -94,8 +105,10 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Data Center Airflow Toy Twin](data-center-airflow-toy-twin/paper.md) | `enoch-paper-0131` | yes | yes | 0 | false | 0 |
 | [Dataset Genealogy Index - Successor Branch](dataset-genealogy-index---successor-branch/paper.md) | `enoch-paper-0212` | yes | yes | 0 | false | 0 |
 | [Deadline-Guarded Speculation Live Serving Validation](deadline-guarded-speculation-live-serving-validation/paper.md) | `enoch-paper-0080` | yes | yes | 0 | false | 20 |
+| [Delegation Simulator](delegation-simulator/paper.md) | `enoch-paper-0332` | yes | yes | 0 | false | 0 |
 | [Delta-Prefill Alignment Loss](delta-prefill-alignment-loss/paper.md) | `enoch-paper-0297` | yes | yes | 0 | false | 0 |
 | [Demo Position Lottery](demo-position-lottery/paper.md) | `enoch-paper-0117` | yes | yes | 0 | false | 4 |
+| [Denoised Rejection Replay](denoised-rejection-replay/paper.md) | `enoch-paper-0305` | yes | yes | 0 | false | 0 |
 | [Dense Mask Distillation from MoE](dense-mask-distillation-from-moe/paper.md) | `enoch-paper-0164` | yes | yes | 0 | false | 0 |
 | [Dense Prune Harness Benchmark](dense-prune-harness-benchmark/paper.md) | `enoch-paper-0163` | yes | yes | 0 | false | 0 |
 | [Dense Router Retrofit](dense-router-retrofit/paper.md) | `enoch-paper-0203` | yes | yes | 0 | false | 0 |
@@ -110,6 +123,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Difficulty-Aware Mask Bank - Successor Branch](difficulty-aware-mask-bank---successor-branch/paper.md) | `enoch-paper-0026` | yes | yes | 0 | false | 20 |
 | [Document-Field Importance LLM Generation Validation](document-field-importance-llm-generation-validation/paper.md) | `enoch-paper-0034` | yes | yes | 0 | false | 1 |
 | [Domain-Gated Speculative Waste Minimizer](domain-gated-speculative-waste-minimizer/paper.md) | `enoch-paper-0162` | yes | yes | 0 | false | 0 |
+| [Draft Candidate Reordering](draft-candidate-reordering/paper.md) | `enoch-paper-0311` | yes | yes | 0 | false | 0 |
 | [Draft Length Predictor Tuning](draft-length-predictor-tuning/paper.md) | `enoch-paper-0277` | yes | yes | 0 | false | 0 |
 | [Draft Token Value Distill](draft-token-value-distill/paper.md) | `enoch-paper-0158` | yes | yes | 0 | false | 0 |
 | [Draft-Value Router](draft-value-router/paper.md) | `enoch-paper-0037` | yes | yes | 0 | false | 14 |
@@ -152,27 +166,38 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Home Lab Agent Orchestrator](home-lab-agent-orchestrator/paper.md) | `enoch-paper-0041` | yes | yes | 0 | false | 8 |
 | [Hot-Cold Tensor Paging](hot-cold-tensor-paging/paper.md) | `enoch-paper-0039` | yes | yes | 0 | false | 20 |
 | [Human-Checked Acceptance Trace Validation](human-checked-acceptance-trace-validation/paper.md) | `enoch-paper-0111` | yes | yes | 0 | false | 7 |
+| [Human Interruptibility Score](human-interruptibility-score/paper.md) | `enoch-paper-0354` | yes | yes | 0 | false | 0 |
 | [HumanEval MBPP Counterexample-Harvest Verifier Transfer](humaneval-mbpp-counterexample-harvest-verifier-transfer/paper.md) | `enoch-paper-0104` | yes | yes | 0 | false | 4 |
 | [Hypothesis Ledger Admission Gate A/B Trial](hypothesis-ledger-admission-gate-a-b-trial/paper.md) | `enoch-paper-0216` | yes | yes | 0 | false | 0 |
 | [Interactive Trust-Tier Side-Effect Trace Benchmark](interactive-trust-tier-side-effect-trace-benchmark/paper.md) | `enoch-paper-0165` | yes | yes | 0 | false | 0 |
 | [Intercept-Aware KV Checkpointing for Tool Calls - Successor Branch](intercept-aware-kv-checkpointing-for-tool-calls---successor-branch/paper.md) | `enoch-paper-0021` | yes | yes | 0 | false | 20 |
+| [JSON-Schema Guided Speculation](json-schema-guided-speculation/paper.md) | `enoch-paper-0319` | yes | yes | 0 | false | 0 |
 | [Junction Adapter Broader RYS Benchmark](junction-adapter-broader-rys-benchmark/paper.md) | `enoch-paper-0101` | yes | yes | 0 | false | 11 |
+| [K-First Approximation Switch](k-first-approximation-switch/paper.md) | `enoch-paper-0307` | yes | yes | 0 | false | 0 |
 | [Knowledge Deletion Fine-Tune](knowledge-deletion-fine-tune/paper.md) | `enoch-paper-0302` | yes | yes | 0 | false | 0 |
 | [KV-Aware Agent Planner](kv-aware-agent-planner/paper.md) | `enoch-paper-0189` | yes | yes | 0 | false | 0 |
 | [KV Eviction Gold Labels](kv-eviction-gold-labels/paper.md) | `enoch-paper-0015` | yes | yes | 0 | false | 12 |
 | [KV-Saliency Student](kv-saliency-student/paper.md) | `enoch-paper-0284` | yes | yes | 0 | false | 0 |
 | [KV Spill Top-3 Learned Reranker](kv-spill-top-3-learned-reranker/paper.md) | `enoch-paper-0255` | yes | yes | 0 | false | 0 |
+| [Lab Notebook Diff Engine](lab-notebook-diff-engine/paper.md) | `enoch-paper-0338` | yes | yes | 0 | false | 0 |
 | [Lab Protocol Lockfile Multi-Turn Tool-Calling Replay](lab-protocol-lockfile-multi-turn-tool-calling-replay/paper.md) | `enoch-paper-0228` | yes | yes | 0 | false | 0 |
 | [Latency-to-Value Scheduler Real Model Tier Validation](latency-to-value-scheduler-real-model-tier-validation/paper.md) | `enoch-paper-0220` | yes | yes | 0 | false | 0 |
+| [Layer-Asymmetric Cache Budget](layer-asymmetric-cache-budget/paper.md) | `enoch-paper-0323` | yes | yes | 0 | false | 0 |
 | [Layer Skip under Memory Pressure](layer-skip-under-memory-pressure/paper.md) | `enoch-paper-0286` | yes | yes | 0 | false | 0 |
+| [Layerwise Calibration Observer for Dense](layerwise-calibration-observer-for-dense/paper.md) | `enoch-paper-0343` | yes | yes | 0 | false | 0 |
 | [llama.cpp GGUF hot-warm-cold mmap instrumentation](llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/paper.md) | `enoch-paper-0254` | yes | yes | 0 | false | 0 |
 | [llama.cpp In-Place KV Compaction for Importance Retention](llama.cpp-in-place-kv-compaction-for-importance-retention/paper.md) | `enoch-paper-0250` | yes | yes | 0 | false | 0 |
 | [LLM-Backed Log-to-Patch Memory Benchmark](llm-backed-log-to-patch-memory-benchmark/paper.md) | `enoch-paper-0225` | yes | yes | 0 | false | 0 |
+| [LLM-Backed Summary Drift Corpus Validation](llm-backed-summary-drift-corpus-validation/paper.md) | `enoch-paper-0303` | yes | yes | 0 | false | 0 |
 | [LLM Code Navigation Context-Packer Evaluation](llm-code-navigation-context-packer-evaluation/paper.md) | `enoch-paper-0086` | yes | yes | 0 | false | 5 |
 | [LLM Evidence-Survival QA Validation](llm-evidence-survival-qa-validation/paper.md) | `enoch-paper-0053` | yes | yes | 0 | false | 20 |
 | [LLM MCP Mutation Proxy Benchmark](llm-mcp-mutation-proxy-benchmark/paper.md) | `enoch-paper-0218` | yes | yes | 0 | false | 0 |
 | [Load-Balancer-Free Symmetry Breaker](load-balancer-free-symmetry-breaker/paper.md) | `enoch-paper-0127` | yes | yes | 0 | false | 0 |
+| [Locality-Switched Windowing](locality-switched-windowing/paper.md) | `enoch-paper-0321` | yes | yes | 0 | false | 0 |
 | [Log Compression With Causal Handles](log-compression-with-causal-handles/paper.md) | `enoch-paper-0143` | yes | yes | 0 | false | 0 |
+| [Long-Answer Tail Cache Booster](long-answer-tail-cache-booster/paper.md) | `enoch-paper-0312` | yes | yes | 0 | false | 0 |
+| [Long Context Trash Compactor](long-context-trash-compactor/paper.md) | `enoch-paper-0347` | yes | yes | 0 | false | 0 |
+| [Long-Horizon Canary Tasks](long-horizon-canary-tasks/paper.md) | `enoch-paper-0333` | yes | yes | 0 | false | 0 |
 | [Long-Tail Entity Boost Mix](long-tail-entity-boost-mix/paper.md) | `enoch-paper-0064` | yes | yes | 0 | false | 20 |
 | [Long-to-Short Compression Training](long-to-short-compression-training/paper.md) | `enoch-paper-0280` | yes | yes | 0 | false | 0 |
 | [Lookup-Aware Toolformer Toy](lookup-aware-toolformer-toy/paper.md) | `enoch-paper-0179` | yes | yes | 0 | false | 0 |
@@ -180,12 +205,15 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Lost-Middle Rescue Student](lost-middle-rescue-student/paper.md) | `enoch-paper-0294` | yes | yes | 0 | false | 0 |
 | [Low-Rank KV Compensation Adapter](low-rank-kv-compensation-adapter/paper.md) | `enoch-paper-0275` | yes | yes | 0 | false | 0 |
 | [Low-Rank Patch After Prune](low-rank-patch-after-prune/paper.md) | `enoch-paper-0196` | yes | yes | 0 | false | 0 |
+| [Memorization/Reasoning Probe Split](memorization-reasoning-probe-split/paper.md) | `enoch-paper-0342` | yes | yes | 0 | false | 0 |
 | [Memory Pressure Admission Gate Live Serving Validation](memory-pressure-admission-gate-live-serving-validation/paper.md) | `enoch-paper-0115` | yes | yes | 0 | false | 6 |
 | [Memory Pressure Replay Logs](memory-pressure-replay-logs/paper.md) | `enoch-paper-0065` | yes | yes | 0 | false | 20 |
 | [Memory Quarantine Queue Real-LLM Workflow Benchmark](memory-quarantine-queue-real-llm-workflow-benchmark/paper.md) | `enoch-paper-0230` | yes | yes | 0 | false | 0 |
 | [Memory Topology Arena](memory-topology-arena/paper.md) | `enoch-paper-0261` | yes | yes | 0 | false | 0 |
+| [Minimum Curriculum Search](minimum-curriculum-search/paper.md) | `enoch-paper-0350` | yes | yes | 0 | false | 0 |
 | [Multi-Model Real-Span Boundary Corruption Benchmark](multi-model-real-span-boundary-corruption-benchmark/paper.md) | `enoch-paper-0081` | yes | yes | 0 | false | 6 |
 | [Multi-Objective Throughput Reward](multi-objective-throughput-reward/paper.md) | `enoch-paper-0290` | yes | yes | 0 | false | 0 |
+| [Multi-Tenant Cache Fairness Guard](multi-tenant-cache-fairness-guard/paper.md) | `enoch-paper-0309` | yes | yes | 0 | false | 0 |
 | [N:M Quant-Prune Joint Search](n-m-quant-prune-joint-search/paper.md) | `enoch-paper-0201` | yes | yes | 0 | false | 0 |
 | [Native Tool-Call Capability Lease Wrapper](native-tool-call-capability-lease-wrapper/paper.md) | `enoch-paper-0210` | yes | yes | 0 | false | 0 |
 | [Near-Miss Tool Call Dataset](near-miss-tool-call-dataset/paper.md) | `enoch-paper-0066` | yes | yes | 0 | false | 3 |
@@ -198,17 +226,21 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Open-Weight Integrity Twin Agent Sweep](open-weight-integrity-twin-agent-sweep/paper.md) | `enoch-paper-0033` | yes | yes | 0 | false | 0 |
 | [OpenAI-Compatible Deployment of Syntax-Preserving RAG Adapter](openai-compatible-deployment-of-syntax-preserving-rag-adapter/paper.md) | `enoch-paper-0055` | yes | yes | 0 | false | 14 |
 | [Outcome-Calibrated Real-Trace Safety-Drift Monitor](outcome-calibrated-real-trace-safety-drift-monitor/paper.md) | `enoch-paper-0106` | yes | yes | 0 | false | 10 |
+| [Outlier Singleton Protection](outlier-singleton-protection/paper.md) | `enoch-paper-0346` | yes | yes | 0 | false | 0 |
 | [Output-Aware Terminal Recovery Reset Gate](output-aware-terminal-recovery-reset-gate/paper.md) | `enoch-paper-0236` | yes | yes | 0 | false | 0 |
 | [Pair-Adaptive Draft Waste Calibration Benchmark](pair-adaptive-draft-waste-calibration-benchmark/paper.md) | `enoch-paper-0011` | yes | yes | 0 | false | 6 |
 | [Paper Club Swarm Blind Full-Paper Validation](paper-club-swarm-blind-full-paper-validation/paper.md) | `enoch-paper-0185` | yes | yes | 0 | false | 0 |
+| [Parametric Memory Budget Meter](parametric-memory-budget-meter/paper.md) | `enoch-paper-0345` | yes | yes | 0 | false | 0 |
 | [Partial-Evidence Audited SFT Recall-Preservation Ablation](partial-evidence-audited-sft-recall-preservation-ablation/paper.md) | `enoch-paper-0048` | yes | yes | 0 | false | 20 |
 | [Partial-Module RYS](partial-module-rys/paper.md) | `enoch-paper-0100` | yes | yes | 0 | false | 8 |
 | [Partition-Aware Cascade Distillation](partition-aware-cascade-distillation/paper.md) | `enoch-paper-0260` | yes | yes | 0 | false | 0 |
 | [Partition-Local Confidence Cascade](partition-local-confidence-cascade/paper.md) | `enoch-paper-0259` | yes | yes | 0 | false | 0 |
 | [Physical Experiment DOE Agent](physical-experiment-doe-agent/paper.md) | `enoch-paper-0145` | yes | yes | 0 | false | 0 |
 | [Plan AST](plan-ast/paper.md) | `enoch-paper-0180` | yes | yes | 0 | false | 0 |
+| [Plan Drift Tribunal](plan-drift-tribunal/paper.md) | `enoch-paper-0356` | yes | yes | 0 | false | 0 |
 | [Precision-Filtered Evidence Anchors for Distractor-Robust QA](precision-filtered-evidence-anchors-for-distractor-robust-qa/paper.md) | `enoch-paper-0077` | yes | yes | 0 | false | 19 |
 | [Prefix-Equivalence Targeted Normalizer Uplift](prefix-equivalence-targeted-normalizer-uplift/paper.md) | `enoch-paper-0007` | yes | yes | 0 | false | 6 |
+| [Prefix-Matched Draft Library](prefix-matched-draft-library/paper.md) | `enoch-paper-0318` | yes | yes | 0 | false | 0 |
 | [Prefix Reuse Consistency Loss](prefix-reuse-consistency-loss/paper.md) | `enoch-paper-0289` | yes | yes | 0 | false | 0 |
 | [Prefix Seeder Serving Adapter Benchmark](prefix-seeder-serving-adapter-benchmark/paper.md) | `enoch-paper-0052` | yes | yes | 0 | false | 20 |
 | [Prefix-Share Serving Trace Set](prefix-share-serving-trace-set/paper.md) | `enoch-paper-0071` | yes | yes | 0 | false | 0 |
@@ -217,6 +249,8 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Production RAG KV-Offload Landmark Reliability Scale-Up](production-rag-kv-offload-landmark-reliability-scale-up/paper.md) | `enoch-paper-0049` | yes | yes | 0 | false | 0 |
 | [Production Speculative Decoding Counter Validation](production-speculative-decoding-counter-validation/paper.md) | `enoch-paper-0084` | yes | yes | 0 | false | 8 |
 | [Project Kill Switch Council](project-kill-switch-council/paper.md) | `enoch-paper-0181` | yes | yes | 0 | false | 0 |
+| [Prompt-Compression-Aware Drafters](prompt-compression-aware-drafters/paper.md) | `enoch-paper-0314` | yes | yes | 0 | false | 0 |
+| [Proof-Carrying PRs](proof-carrying-prs/paper.md) | `enoch-paper-0339` | yes | yes | 0 | false | 0 |
 | [Protocol Compliance Judge](protocol-compliance-judge/paper.md) | `enoch-paper-0141` | yes | yes | 0 | false | 0 |
 | [Prune-Then-Upcycle Recovery Loop](prune-then-upcycle-recovery-loop/paper.md) | `enoch-paper-0226` | yes | yes | 0 | false | 0 |
 | [Public FastAPI Typer Compatibility Oracle Validation](public-fastapi-typer-compatibility-oracle-validation/paper.md) | `enoch-paper-0214` | yes | yes | 0 | false | 0 |
@@ -225,6 +259,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Quantization-Aware Expert Upcycling](quantization-aware-expert-upcycling/paper.md) | `enoch-paper-0221` | yes | yes | 0 | false | 0 |
 | [Quantization-Aware Saliency](quantization-aware-saliency/paper.md) | `enoch-paper-0186` | yes | yes | 0 | false | 0 |
 | [Query Budget Contract Local Server Benchmark](query-budget-contract-local-server-benchmark/paper.md) | `enoch-paper-0087` | yes | yes | 0 | false | 20 |
+| [Query-Key Retention Map](query-key-retention-map/paper.md) | `enoch-paper-0326` | yes | yes | 0 | false | 0 |
 | [Qwen32B Speculative Workflow Robustness Suite](qwen32b-speculative-workflow-robustness-suite/paper.md) | `enoch-paper-0248` | yes | yes | 0 | false | 0 |
 | [Real-Corpus Row-ID Citation QA Integration Benchmark](real-corpus-row-id-citation-qa-integration-benchmark/paper.md) | `enoch-paper-0074` | yes | yes | 0 | false | 20 |
 | [Real-Document Retrieval Compression Teacher Validation](real-document-retrieval-compression-teacher-validation/paper.md) | `enoch-paper-0114` | yes | yes | 0 | false | 5 |
@@ -241,6 +276,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Reduced-Planner Scratchpad Feedback Real Repo-QA Validation](reduced-planner-scratchpad-feedback-real-repo-qa-validation/paper.md) | `enoch-paper-0095` | yes | yes | 0 | false | 18 |
 | [Rehydration Guide Student](rehydration-guide-student/paper.md) | `enoch-paper-0157` | yes | yes | 0 | false | 0 |
 | [Rejection-Mode Targeted Abstention Refusal Tuning](rejection-mode-targeted-abstention-refusal-tuning/paper.md) | `enoch-paper-0075` | yes | yes | 0 | false | 20 |
+| [Rejection-Span Distillation](rejection-span-distillation/paper.md) | `enoch-paper-0327` | yes | yes | 0 | false | 0 |
 | [Repo Pulse Index Real-Repo Pilot](repo-pulse-index-real-repo-pilot/paper.md) | `enoch-paper-0237` | yes | yes | 0 | false | 0 |
 | [Research Agent Treaty Protocol](research-agent-treaty-protocol/paper.md) | `enoch-paper-0172` | yes | yes | 0 | false | 0 |
 | [Research Claim Unit Tests](research-claim-unit-tests/paper.md) | `enoch-paper-0174` | yes | yes | 0 | false | 0 |
@@ -250,7 +286,10 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Resource-Bounded Agent Kernel](resource-bounded-agent-kernel/paper.md) | `enoch-paper-0040` | yes | yes | 0 | false | 20 |
 | [Retrieval-Aware Evidence Packer Arbitration Benchmark](retrieval-aware-evidence-packer-arbitration-benchmark/paper.md) | `enoch-paper-0097` | yes | yes | 0 | false | 20 |
 | [Retrieval-Conditioned Expert Expansion](retrieval-conditioned-expert-expansion/paper.md) | `enoch-paper-0126` | yes | yes | 0 | false | 0 |
+| [Retrieval Honesty Loss](retrieval-honesty-loss/paper.md) | `enoch-paper-0341` | yes | yes | 0 | false | 0 |
+| [Retrieval-Landmark KV Pins](retrieval-landmark-kv-pins/paper.md) | `enoch-paper-0308` | yes | yes | 0 | false | 0 |
 | [Reuse-Fingerprint Student](reuse-fingerprint-student/paper.md) | `enoch-paper-0150` | yes | yes | 0 | false | 0 |
+| [Reversible Prune Masks](reversible-prune-masks/paper.md) | `enoch-paper-0335` | yes | yes | 0 | false | 0 |
 | [Robotic Procedure Verifier](robotic-procedure-verifier/paper.md) | `enoch-paper-0146` | yes | yes | 0 | false | 0 |
 | [Rollback Audit and Escrow for Transactional Tool Calls](rollback-audit-and-escrow-for-transactional-tool-calls/paper.md) | `enoch-paper-0239` | yes | yes | 0 | false | 0 |
 | [Router-Distilled Triton MLP Full-Model Integration](router-distilled-triton-mlp-full-model-integration/paper.md) | `enoch-paper-0024` | yes | yes | 0 | false | 20 |
@@ -261,23 +300,33 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Scaffold-Only Revision Mode](scaffold-only-revision-mode/paper.md) | `enoch-paper-0270` | yes | yes | 0 | false | 0 |
 | [Schema-Anchor Adapter Tuning](schema-anchor-adapter-tuning/paper.md) | `enoch-paper-0152` | yes | yes | 0 | false | 0 |
 | [Schema-Drift JSON Corpus](schema-drift-json-corpus/paper.md) | `enoch-paper-0109` | yes | yes | 0 | false | 0 |
+| [Schema-Pinned JSON Cache](schema-pinned-json-cache/paper.md) | `enoch-paper-0328` | yes | yes | 0 | false | 0 |
+| [Semantic Channel Naming](semantic-channel-naming/paper.md) | `enoch-paper-0355` | yes | yes | 0 | false | 0 |
 | [Semantic Overlap Tax Generative LLM Public RAG Benchmark](semantic-overlap-tax-generative-llm-public-rag-benchmark/paper.md) | `enoch-paper-0076` | yes | yes | 0 | false | 12 |
 | [Serving-Boundary Context Compression KV Benchmark](serving-boundary-context-compression-kv-benchmark/paper.md) | `enoch-paper-0245` | yes | yes | 0 | false | 0 |
+| [Shared-Context Multi-Query Speculation](shared-context-multi-query-speculation/paper.md) | `enoch-paper-0325` | yes | yes | 0 | false | 0 |
 | [Shared-Prompt Batcher Local-Server Validation](shared-prompt-batcher-local-server-validation/paper.md) | `enoch-paper-0072` | yes | yes | 0 | false | 15 |
 | [Short-Model Long-Task Distillation](short-model-long-task-distillation/paper.md) | `enoch-paper-0272` | yes | yes | 0 | false | 0 |
 | [Short-Train Long-Eval Prompt-Robust Tuning](short-train-long-eval-prompt-robust-tuning/paper.md) | `enoch-paper-0088` | yes | yes | 0 | false | 20 |
+| [Similarity-Gated Value Quantization](similarity-gated-value-quantization/paper.md) | `enoch-paper-0306` | yes | yes | 0 | false | 0 |
 | [Sink Token Stabilization](sink-token-stabilization/paper.md) | `enoch-paper-0153` | yes | yes | 0 | false | 0 |
 | [Skill Preflight Gate Integration](skill-preflight-gate-integration/paper.md) | `enoch-paper-0238` | yes | yes | 0 | false | 0 |
 | [Skill-to-Dataset Compiler](skill-to-dataset-compiler/paper.md) | `enoch-paper-0191` | yes | yes | 0 | false | 0 |
 | [SLO Narrative Compressor](slo-narrative-compressor/paper.md) | `enoch-paper-0140` | yes | yes | 0 | false | 0 |
 | [Small-Model Persona Context Orderer Generation Validation](small-model-persona-context-orderer-generation-validation/paper.md) | `enoch-paper-0004` | yes | yes | 0 | false | 6 |
 | [SOBD: Survival-Optimized Block Diffusion](sobd-survival-optimized-block-diffusion/paper.md) | `enoch-paper-0169` | yes | yes | 0 | false | 0 |
+| [Source-Citation KV Reserve](source-citation-kv-reserve/paper.md) | `enoch-paper-0313` | yes | yes | 0 | false | 0 |
+| [Sparse-Value Late Materializer](sparse-value-late-materializer/paper.md) | `enoch-paper-0315` | yes | yes | 0 | false | 0 |
+| [Sparse-Verifier Token Check](sparse-verifier-token-check/paper.md) | `enoch-paper-0329` | yes | yes | 0 | false | 0 |
 | [Spec Decoder Domain Router](spec-decoder-domain-router/paper.md) | `enoch-paper-0198` | yes | yes | 0 | false | 0 |
 | [Speculation-Friendly LM Head Tuning](speculation-friendly-lm-head-tuning/paper.md) | `enoch-paper-0276` | yes | yes | 0 | false | 0 |
 | [Speculation Tree Student](speculation-tree-student/paper.md) | `enoch-paper-0292` | yes | yes | 0 | false | 0 |
 | [SpecVocab Hybrid for EAGLE-3 and DFlash](specvocab-hybrid-for-eagle-3-and-dflash/paper.md) | `enoch-paper-0200` | yes | yes | 0 | false | 0 |
+| [Stalled Agent Rescuer](stalled-agent-rescuer/paper.md) | `enoch-paper-0340` | yes | yes | 0 | false | 0 |
 | [Strong-Draft Weak-Reviewer Transfer](strong-draft-weak-reviewer-transfer/paper.md) | `enoch-paper-0265` | yes | yes | 0 | false | 0 |
 | [Structured Noise Injection Suite](structured-noise-injection-suite/paper.md) | `enoch-paper-0047` | yes | yes | 0 | false | 10 |
+| [Sub-8GB Model Zoo Triage](sub-8gb-model-zoo-triage/paper.md) | `enoch-paper-0336` | yes | yes | 0 | false | 0 |
+| [Swarm Counterfactual Logger](swarm-counterfactual-logger/paper.md) | `enoch-paper-0334` | yes | yes | 0 | false | 0 |
 | [Swarm Heartbeat Bus](swarm-heartbeat-bus/paper.md) | `enoch-paper-0176` | yes | yes | 0 | false | 0 |
 | [Sycophancy-Sensitive Escalation](sycophancy-sensitive-escalation/paper.md) | `enoch-paper-0263` | yes | yes | 0 | false | 0 |
 | [Synthetic User Load Negotiator](synthetic-user-load-negotiator/paper.md) | `enoch-paper-0138` | yes | yes | 0 | false | 0 |
@@ -292,16 +341,21 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Token Rent for Examples](token-rent-for-examples/paper.md) | `enoch-paper-0002` | yes | yes | 0 | false | 20 |
 | [Token-Type Importance Labels](token-type-importance-labels/paper.md) | `enoch-paper-0096` | yes | yes | 0 | false | 9 |
 | [Tokenized Tiny-LM Duplicate Ratio Ablation](tokenized-tiny-lm-duplicate-ratio-ablation/paper.md) | `enoch-paper-0082` | yes | yes | 0 | false | 9 |
+| [Tool-Boundary Non-Speculate Gate](tool-boundary-non-speculate-gate/paper.md) | `enoch-paper-0324` | yes | yes | 0 | false | 0 |
 | [Trace Inspector Warm Session Operator Trial](trace-inspector-warm-session-operator-trial/paper.md) | `enoch-paper-0232` | yes | yes | 0 | false | 0 |
 | [Trajectory Rulebook Distillation](trajectory-rulebook-distillation/paper.md) | `enoch-paper-0271` | yes | yes | 0 | false | 0 |
+| [Trie-Guided Speculative JSON](trie-guided-speculative-json/paper.md) | `enoch-paper-0330` | yes | yes | 0 | false | 0 |
 | [Uncertainty-Coverage Co-Estimator](uncertainty-coverage-co-estimator/paper.md) | `enoch-paper-0266` | yes | yes | 0 | false | 0 |
 | [Upcycle Router Cold-Start Benchmark](upcycle-router-cold-start-benchmark/paper.md) | `enoch-paper-0124` | yes | yes | 0 | false | 0 |
 | [Upcycle Timing Sweep Law](upcycle-timing-sweep-law/paper.md) | `enoch-paper-0223` | yes | yes | 0 | false | 0 |
 | [Upcycled Expert Distillation Collapse](upcycled-expert-distillation-collapse/paper.md) | `enoch-paper-0128` | yes | yes | 0 | false | 0 |
 | [Upcycled LoRA Expert Grafting](upcycled-lora-expert-grafting/paper.md) | `enoch-paper-0129` | yes | yes | 0 | false | 0 |
 | [UTR Conflict-Update Final-Answer Schema Hardening](utr-conflict-update-final-answer-schema-hardening/paper.md) | `enoch-paper-0092` | yes | yes | 0 | false | 20 |
+| [Value-Only Cold Storage](value-only-cold-storage/paper.md) | `enoch-paper-0320` | yes | yes | 0 | false | 0 |
 | [Value-per-Joule Broker Online Canary on GB10 Endpoints](value-per-joule-broker-online-canary-on-gb10-endpoints/paper.md) | `enoch-paper-0012` | yes | yes | 0 | false | 13 |
+| [Verification-Conditional Cache Restore](verification-conditional-cache-restore/paper.md) | `enoch-paper-0310` | yes | yes | 0 | false | 0 |
 | [Verification Failure Clusters](verification-failure-clusters/paper.md) | `enoch-paper-0069` | yes | yes | 0 | false | 6 |
+| [Verifier-Feature Acceptance Classifier](verifier-feature-acceptance-classifier/paper.md) | `enoch-paper-0304` | yes | yes | 0 | false | 0 |
 | [vLLM Attention-Sink Retention 3B Continuous-Serving Stress Campaign](vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md) | `enoch-paper-0060` | yes | yes | 5 | true | 0 |
 | [VRAM Admission Controller](vram-admission-controller/paper.md) | `enoch-paper-0192` | yes | yes | 0 | false | 0 |
 | [Wake-Gate Local Endpoint Harness Integration](wake-gate-local-endpoint-harness-integration/paper.md) | `enoch-paper-0023` | yes | yes | 0 | false | 15 |

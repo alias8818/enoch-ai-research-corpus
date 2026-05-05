@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 300,
-    "count": 302,
+    "claim_ledgers_empty": 354,
+    "count": 356,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1443,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 2
   },
-  "count": 302,
+  "count": 356,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 302,
+  "passed": 356,
   "rows": [
     {
       "bytes": 15144,
@@ -79,6 +79,17 @@
       "passes": true,
       "slug": "adaptive-evidence-packer-rag-integration",
       "words": 2024
+    },
+    {
+      "bytes": 17511,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/adaptive-landmark-reweighter/paper.md",
+      "passes": true,
+      "slug": "adaptive-landmark-reweighter",
+      "words": 2540
     },
     {
       "bytes": 11177,
@@ -268,6 +279,17 @@
       "words": 2701
     },
     {
+      "bytes": 16471,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/attention-mlp-joint-pruner/paper.md",
+      "passes": true,
+      "slug": "attention-mlp-joint-pruner",
+      "words": 2343
+    },
+    {
       "bytes": 14971,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -279,6 +301,17 @@
       "words": 2157
     },
     {
+      "bytes": 15542,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/attention-sink-rescue-pool/paper.md",
+      "passes": true,
+      "slug": "attention-sink-rescue-pool",
+      "words": 2218
+    },
+    {
       "bytes": 13108,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -288,6 +321,17 @@
       "passes": true,
       "slug": "audio-room-measurement-planner",
       "words": 1776
+    },
+    {
+      "bytes": 13460,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/autonomous-project-manager-kernel/paper.md",
+      "passes": true,
+      "slug": "autonomous-project-manager-kernel",
+      "words": 1847
     },
     {
       "bytes": 14996,
@@ -389,6 +433,17 @@
       "words": 2160
     },
     {
+      "bytes": 13840,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/block-consequence-probes/paper.md",
+      "passes": true,
+      "slug": "block-consequence-probes",
+      "words": 1968
+    },
+    {
       "bytes": 13667,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -398,6 +453,17 @@
       "passes": true,
       "slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark",
       "words": 1807
+    },
+    {
+      "bytes": 14704,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/branch-shared-kv-fragments/paper.md",
+      "passes": true,
+      "slug": "branch-shared-kv-fragments",
+      "words": 2147
     },
     {
       "bytes": 15602,
@@ -587,6 +653,17 @@
       "words": 2074
     },
     {
+      "bytes": 16361,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/citation-mode-speculation/paper.md",
+      "passes": true,
+      "slug": "citation-mode-speculation",
+      "words": 2320
+    },
+    {
       "bytes": 11448,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -629,6 +706,17 @@
       "passes": true,
       "slug": "codebase-cartographer-real-repo-validation",
       "words": 2501
+    },
+    {
+      "bytes": 17419,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/coder-only-dense-shrinker/paper.md",
+      "passes": true,
+      "slug": "coder-only-dense-shrinker",
+      "words": 2438
     },
     {
       "bytes": 16523,
@@ -706,6 +794,17 @@
       "passes": true,
       "slug": "compression-gap-penalty",
       "words": 2315
+    },
+    {
+      "bytes": 16016,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/compression-overhead-estimator/paper.md",
+      "passes": true,
+      "slug": "compression-overhead-estimator",
+      "words": 2148
     },
     {
       "bytes": 15943,
@@ -796,6 +895,17 @@
       "words": 2278
     },
     {
+      "bytes": 18338,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-provenance-firewall/paper.md",
+      "passes": true,
+      "slug": "context-provenance-firewall",
+      "words": 2482
+    },
+    {
       "bytes": 13760,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -827,6 +937,17 @@
       "passes": true,
       "slug": "context-reuse-clusterer-local-serving-harness",
       "words": 1765
+    },
+    {
+      "bytes": 15923,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-role-pruning/paper.md",
+      "passes": true,
+      "slug": "context-role-pruning",
+      "words": 2289
     },
     {
       "bytes": 14862,
@@ -994,6 +1115,17 @@
       "words": 2630
     },
     {
+      "bytes": 14696,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/delegation-simulator/paper.md",
+      "passes": true,
+      "slug": "delegation-simulator",
+      "words": 2090
+    },
+    {
       "bytes": 13658,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1014,6 +1146,17 @@
       "passes": true,
       "slug": "demo-position-lottery",
       "words": 2424
+    },
+    {
+      "bytes": 15907,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/denoised-rejection-replay/paper.md",
+      "passes": true,
+      "slug": "denoised-rejection-replay",
+      "words": 2328
     },
     {
       "bytes": 17120,
@@ -1168,6 +1311,17 @@
       "passes": true,
       "slug": "domain-gated-speculative-waste-minimizer",
       "words": 2342
+    },
+    {
+      "bytes": 14806,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/draft-candidate-reordering/paper.md",
+      "passes": true,
+      "slug": "draft-candidate-reordering",
+      "words": 2055
     },
     {
       "bytes": 16191,
@@ -1632,6 +1786,17 @@
       "words": 1815
     },
     {
+      "bytes": 15731,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/human-interruptibility-score/paper.md",
+      "passes": true,
+      "slug": "human-interruptibility-score",
+      "words": 2187
+    },
+    {
       "bytes": 12677,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1676,6 +1841,17 @@
       "words": 2485
     },
     {
+      "bytes": 15736,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/json-schema-guided-speculation/paper.md",
+      "passes": true,
+      "slug": "json-schema-guided-speculation",
+      "words": 2176
+    },
+    {
       "bytes": 12218,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1685,6 +1861,17 @@
       "passes": true,
       "slug": "junction-adapter-broader-rys-benchmark",
       "words": 1721
+    },
+    {
+      "bytes": 15909,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/k-first-approximation-switch/paper.md",
+      "passes": true,
+      "slug": "k-first-approximation-switch",
+      "words": 2338
     },
     {
       "bytes": 12731,
@@ -1742,6 +1929,17 @@
       "words": 123
     },
     {
+      "bytes": 15583,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lab-notebook-diff-engine/paper.md",
+      "passes": true,
+      "slug": "lab-notebook-diff-engine",
+      "words": 2190
+    },
+    {
       "bytes": 13569,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1764,6 +1962,17 @@
       "words": 2281
     },
     {
+      "bytes": 15536,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/layer-asymmetric-cache-budget/paper.md",
+      "passes": true,
+      "slug": "layer-asymmetric-cache-budget",
+      "words": 2264
+    },
+    {
       "bytes": 14445,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1773,6 +1982,17 @@
       "passes": true,
       "slug": "layer-skip-under-memory-pressure",
       "words": 2160
+    },
+    {
+      "bytes": 16098,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/layerwise-calibration-observer-for-dense/paper.md",
+      "passes": true,
+      "slug": "layerwise-calibration-observer-for-dense",
+      "words": 2195
     },
     {
       "bytes": 16430,
@@ -1806,6 +2026,17 @@
       "passes": true,
       "slug": "llm-backed-log-to-patch-memory-benchmark",
       "words": 1866
+    },
+    {
+      "bytes": 12848,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/llm-backed-summary-drift-corpus-validation/paper.md",
+      "passes": true,
+      "slug": "llm-backed-summary-drift-corpus-validation",
+      "words": 1802
     },
     {
       "bytes": 14726,
@@ -1852,6 +2083,17 @@
       "words": 2254
     },
     {
+      "bytes": 17174,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/locality-switched-windowing/paper.md",
+      "passes": true,
+      "slug": "locality-switched-windowing",
+      "words": 2470
+    },
+    {
       "bytes": 15234,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1861,6 +2103,39 @@
       "passes": true,
       "slug": "log-compression-with-causal-handles",
       "words": 2101
+    },
+    {
+      "bytes": 15141,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/long-answer-tail-cache-booster/paper.md",
+      "passes": true,
+      "slug": "long-answer-tail-cache-booster",
+      "words": 2165
+    },
+    {
+      "bytes": 16141,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/long-context-trash-compactor/paper.md",
+      "passes": true,
+      "slug": "long-context-trash-compactor",
+      "words": 2384
+    },
+    {
+      "bytes": 16542,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/long-horizon-canary-tasks/paper.md",
+      "passes": true,
+      "slug": "long-horizon-canary-tasks",
+      "words": 2319
     },
     {
       "bytes": 15778,
@@ -1940,6 +2215,17 @@
       "words": 1875
     },
     {
+      "bytes": 14196,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/memorization-reasoning-probe-split/paper.md",
+      "passes": true,
+      "slug": "memorization-reasoning-probe-split",
+      "words": 2005
+    },
+    {
       "bytes": 11854,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1984,6 +2270,17 @@
       "words": 2209
     },
     {
+      "bytes": 14991,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/minimum-curriculum-search/paper.md",
+      "passes": true,
+      "slug": "minimum-curriculum-search",
+      "words": 2141
+    },
+    {
       "bytes": 16892,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2004,6 +2301,17 @@
       "passes": true,
       "slug": "multi-objective-throughput-reward",
       "words": 1884
+    },
+    {
+      "bytes": 18170,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/multi-tenant-cache-fairness-guard/paper.md",
+      "passes": true,
+      "slug": "multi-tenant-cache-fairness-guard",
+      "words": 2637
     },
     {
       "bytes": 16847,
@@ -2138,6 +2446,17 @@
       "words": 2171
     },
     {
+      "bytes": 16702,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/outlier-singleton-protection/paper.md",
+      "passes": true,
+      "slug": "outlier-singleton-protection",
+      "words": 2426
+    },
+    {
       "bytes": 11705,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2169,6 +2488,17 @@
       "passes": true,
       "slug": "paper-club-swarm-blind-full-paper-validation",
       "words": 1910
+    },
+    {
+      "bytes": 15817,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/parametric-memory-budget-meter/paper.md",
+      "passes": true,
+      "slug": "parametric-memory-budget-meter",
+      "words": 2192
     },
     {
       "bytes": 12834,
@@ -2237,6 +2567,17 @@
       "words": 1769
     },
     {
+      "bytes": 15265,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/plan-drift-tribunal/paper.md",
+      "passes": true,
+      "slug": "plan-drift-tribunal",
+      "words": 2124
+    },
+    {
       "bytes": 13171,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2257,6 +2598,17 @@
       "passes": true,
       "slug": "prefix-equivalence-targeted-normalizer-uplift",
       "words": 1501
+    },
+    {
+      "bytes": 17920,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/prefix-matched-draft-library/paper.md",
+      "passes": true,
+      "slug": "prefix-matched-draft-library",
+      "words": 2568
     },
     {
       "bytes": 16456,
@@ -2347,6 +2699,28 @@
       "words": 2333
     },
     {
+      "bytes": 17370,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/prompt-compression-aware-drafters/paper.md",
+      "passes": true,
+      "slug": "prompt-compression-aware-drafters",
+      "words": 2486
+    },
+    {
+      "bytes": 12416,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/proof-carrying-prs/paper.md",
+      "passes": true,
+      "slug": "proof-carrying-prs",
+      "words": 1705
+    },
+    {
       "bytes": 16397,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2433,6 +2807,17 @@
       "passes": true,
       "slug": "query-budget-contract-local-server-benchmark",
       "words": 2025
+    },
+    {
+      "bytes": 14663,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/query-key-retention-map/paper.md",
+      "passes": true,
+      "slug": "query-key-retention-map",
+      "words": 2133
     },
     {
       "bytes": 17219,
@@ -2611,6 +2996,17 @@
       "words": 1719
     },
     {
+      "bytes": 14467,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/rejection-span-distillation/paper.md",
+      "passes": true,
+      "slug": "rejection-span-distillation",
+      "words": 2140
+    },
+    {
       "bytes": 12456,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2710,6 +3106,28 @@
       "words": 1995
     },
     {
+      "bytes": 17221,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/retrieval-honesty-loss/paper.md",
+      "passes": true,
+      "slug": "retrieval-honesty-loss",
+      "words": 2469
+    },
+    {
+      "bytes": 17834,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/retrieval-landmark-kv-pins/paper.md",
+      "passes": true,
+      "slug": "retrieval-landmark-kv-pins",
+      "words": 2647
+    },
+    {
       "bytes": 18559,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2719,6 +3137,17 @@
       "passes": true,
       "slug": "reuse-fingerprint-student",
       "words": 2484
+    },
+    {
+      "bytes": 18549,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/reversible-prune-masks/paper.md",
+      "passes": true,
+      "slug": "reversible-prune-masks",
+      "words": 2611
     },
     {
       "bytes": 16258,
@@ -2831,6 +3260,28 @@
       "words": 2011
     },
     {
+      "bytes": 14363,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/schema-pinned-json-cache/paper.md",
+      "passes": true,
+      "slug": "schema-pinned-json-cache",
+      "words": 1991
+    },
+    {
+      "bytes": 13624,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/semantic-channel-naming/paper.md",
+      "passes": true,
+      "slug": "semantic-channel-naming",
+      "words": 1829
+    },
+    {
       "bytes": 12515,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2851,6 +3302,17 @@
       "passes": true,
       "slug": "serving-boundary-context-compression-kv-benchmark",
       "words": 2104
+    },
+    {
+      "bytes": 16799,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/shared-context-multi-query-speculation/paper.md",
+      "passes": true,
+      "slug": "shared-context-multi-query-speculation",
+      "words": 2233
     },
     {
       "bytes": 15023,
@@ -2884,6 +3346,17 @@
       "passes": true,
       "slug": "short-train-long-eval-prompt-robust-tuning",
       "words": 2382
+    },
+    {
+      "bytes": 16271,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/similarity-gated-value-quantization/paper.md",
+      "passes": true,
+      "slug": "similarity-gated-value-quantization",
+      "words": 2407
     },
     {
       "bytes": 16609,
@@ -2952,6 +3425,39 @@
       "words": 2511
     },
     {
+      "bytes": 18139,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/source-citation-kv-reserve/paper.md",
+      "passes": true,
+      "slug": "source-citation-kv-reserve",
+      "words": 2709
+    },
+    {
+      "bytes": 17451,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sparse-value-late-materializer/paper.md",
+      "passes": true,
+      "slug": "sparse-value-late-materializer",
+      "words": 2541
+    },
+    {
+      "bytes": 14977,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sparse-verifier-token-check/paper.md",
+      "passes": true,
+      "slug": "sparse-verifier-token-check",
+      "words": 2159
+    },
+    {
       "bytes": 17605,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2996,6 +3502,17 @@
       "words": 2477
     },
     {
+      "bytes": 14675,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/stalled-agent-rescuer/paper.md",
+      "passes": true,
+      "slug": "stalled-agent-rescuer",
+      "words": 2051
+    },
+    {
       "bytes": 11461,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3016,6 +3533,28 @@
       "passes": true,
       "slug": "structured-noise-injection-suite",
       "words": 2271
+    },
+    {
+      "bytes": 15115,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sub-8gb-model-zoo-triage/paper.md",
+      "passes": true,
+      "slug": "sub-8gb-model-zoo-triage",
+      "words": 2194
+    },
+    {
+      "bytes": 13490,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/swarm-counterfactual-logger/paper.md",
+      "passes": true,
+      "slug": "swarm-counterfactual-logger",
+      "words": 1871
     },
     {
       "bytes": 15858,
@@ -3172,6 +3711,17 @@
       "words": 1990
     },
     {
+      "bytes": 15313,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/tool-boundary-non-speculate-gate/paper.md",
+      "passes": true,
+      "slug": "tool-boundary-non-speculate-gate",
+      "words": 2216
+    },
+    {
       "bytes": 16166,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3192,6 +3742,17 @@
       "passes": true,
       "slug": "trajectory-rulebook-distillation",
       "words": 1883
+    },
+    {
+      "bytes": 17769,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/trie-guided-speculative-json/paper.md",
+      "passes": true,
+      "slug": "trie-guided-speculative-json",
+      "words": 2436
     },
     {
       "bytes": 17195,
@@ -3260,6 +3821,17 @@
       "words": 1838
     },
     {
+      "bytes": 16456,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/value-only-cold-storage/paper.md",
+      "passes": true,
+      "slug": "value-only-cold-storage",
+      "words": 2415
+    },
+    {
       "bytes": 12562,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3271,6 +3843,17 @@
       "words": 1766
     },
     {
+      "bytes": 17436,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/verification-conditional-cache-restore/paper.md",
+      "passes": true,
+      "slug": "verification-conditional-cache-restore",
+      "words": 2543
+    },
+    {
       "bytes": 14689,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3280,6 +3863,17 @@
       "passes": true,
       "slug": "verification-failure-clusters",
       "words": 1880
+    },
+    {
+      "bytes": 18299,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/verifier-feature-acceptance-classifier/paper.md",
+      "passes": true,
+      "slug": "verifier-feature-acceptance-classifier",
+      "words": 2610
     },
     {
       "bytes": 16465,

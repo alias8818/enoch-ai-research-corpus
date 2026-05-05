@@ -3821,7 +3821,7 @@
       "words": 1838
     },
     {
-      "bytes": 16456,
+      "bytes": 16766,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -3829,7 +3829,7 @@
       "paper_path": "papers/value-only-cold-storage/paper.md",
       "passes": true,
       "slug": "value-only-cold-storage",
-      "words": 2415
+      "words": 2447
     },
     {
       "bytes": 12562,

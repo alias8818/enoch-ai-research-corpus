@@ -6,7 +6,7 @@
 
 ## Abstract
 
-Long-context language model inference requires maintaining large key-value (KV) caches in accelerator memory. We investigate **Value-Only Cold Storage (VOCS)**, a strategy that retains lightweight key sketches in fast memory while offloading value vectors to host memory, then selectively fetches only the highest-scoring value pages at decode time. Using a synthetic attention-level harness (not a downstream model benchmark), we compare VOCS against landmark-plus-recent pinning across four workload patterns: single-needle retrieval, mixed recent-and-global access, multi-needle retrieval, and diffuse summarization. At a budget of 16 hot pages per query with 32-dimensional key sketches, VOCS achieves mean cosine similarity to full attention of 0.945 on single-needle retrieval (baseline: −0.000) and 0.964 on mixed recent-and-global access (baseline: 0.152). However, VOCS yields cosine similarity of 0.073 on diffuse summarization and 0.083 on multi-needle retrieval at the same budget, where sparse value fetch captures only 3.3% of attention mass. A byte model for a Llama-3-8B-like 128k-context configuration estimates the VOCS resident footprint at 2.06 GiB (12.9% of the 16.0 GiB full KV), with 64 MiB of value fetch traffic per decode token. These results indicate narrow viability: VOCS is a candidate mechanism for sparse retrieval and needle-style long-context tasks, but it is not a general-purpose KV cache replacement and fails structurally on context-intensive workloads at the tested budgets.
+Long-context language model inference requires maintaining large key-value (KV) caches in accelerator memory. We investigate **Value-Only Cold Storage (VOCS)**, a strategy that retains lightweight resident K-vector projections in fast memory while offloading value vectors to host memory, then selectively fetches only the highest-scoring value pages at decode time. Using a synthetic attention-level harness (not a downstream model benchmark), we compare VOCS against landmark-plus-recent pinning across four workload patterns: single-needle retrieval, mixed recent-and-global access, multi-needle retrieval, and diffuse summarization. At a budget of 16 hot pages per query with resident K-vector projections of dimension 32, VOCS achieves mean cosine similarity to full attention of 0.945 on single-needle retrieval (baseline: −0.000) and 0.964 on mixed recent-and-global access (baseline: 0.152). However, VOCS yields cosine similarity of 0.073 on diffuse summarization and 0.083 on multi-needle retrieval at the same budget, where sparse value fetch captures only 3.3% of attention mass. A byte model for a Llama-3-8B-like 128k-context configuration estimates the VOCS resident footprint at 2.06 GiB (12.9% of the 16.0 GiB full KV), with 64 MiB of value fetch traffic per decode token. These results indicate narrow viability: VOCS is a candidate mechanism for sparse retrieval and needle-style long-context tasks, but it is not a general-purpose KV cache replacement and fails structurally on context-intensive workloads at the tested budgets.
 
 ## Introduction
 
@@ -14,15 +14,15 @@ Autoregressive decoding over long contexts requires maintaining large KV caches 
 
 Asymmetric quantization of keys and values recognizes that keys and values exhibit different sensitivity profiles. Query-aware page selection retains page-level key metadata to load only the most critical KV pages from host memory. Speculative prefetching of essential KV entries aims to hide offload latency. Prompt-observation-window compression identifies salient tokens to retain. Recent evaluation of KV cache offloading on context-intensive tasks, however, reports significant quality degradation, identifying low-rank key projection and unreliable landmark selection as failure modes.
 
-These findings motivate a structural question: if keys are necessary for identifying *which* tokens matter, but values constitute the bulk of the memory footprint, can we retain keys (or compact key sketches) in fast memory while offloading values, then selectively restore only the value pages that the resident keys indicate are important?
+These findings motivate a structural question: if keys are necessary for identifying *which* tokens matter, but values constitute the bulk of the memory footprint, can we retain keys (or compact resident projections) in fast memory while offloading values, then selectively restore only the value pages that the resident keys indicate are important?
 
 We call this strategy **Value-Only Cold Storage (VOCS)**. The mechanism comprises three components:
 
-1. **Resident key sketch.** A low-dimensional random projection of each page's key vectors remains in fast memory, consuming a small fraction of the full KV footprint.
+1. **Resident K-vector projection.** A low-dimensional random projection of each page's key vectors remains in fast memory, consuming a small fraction of the full KV footprint.
 2. **Cold value storage.** Full value vectors reside in host memory, organized in fixed-size pages.
-3. **Selective value fetch.** At each decode step, the resident key sketch scores all pages against the current query; only the top-scoring value pages are fetched and reassembled into the attention computation.
+3. **Selective value fetch.** At each decode step, the resident K-vector projection scores all pages against the current query; only the top-scoring value pages are fetched and reassembled into the attention computation.
 
-This paper reports synthetic attention-level evidence for VOCS. We do not claim downstream model accuracy. We isolate the core mechanism—whether a key sketch can select value pages whose weighted sum approximates full attention—and characterize the conditions under which it succeeds or fails.
+This paper reports synthetic attention-level evidence for VOCS. We do not claim downstream model accuracy. We isolate the core mechanism: whether a compact resident K-vector projection can select value pages whose weighted sum approximates full attention, and characterize the conditions under which it succeeds or fails.
 
 ## Method
 
@@ -38,7 +38,7 @@ We implemented a synthetic attention-level harness (`scripts/value_only_cold_sto
 
 2. **VOCS exact-key oracle** (`vocs_exact_key_oracle`): Full key vectors remain resident; values are fetched only for the top-scoring pages as ranked by exact key-query dot products. This represents an upper bound on VOCS selection quality, assuming perfect key residency.
 
-3. **VOCS sketch** (`vocs_sketch`): A 32-dimensional random-projection sketch of key vectors remains resident; values are fetched for the top-scoring pages as ranked by sketch-query scores. This is the practical VOCS mechanism.
+3. **VOCS projection** (`vocs_sketch`): A dimension-32 random projection of K vectors remains resident; values are fetched for the top-scoring pages as ranked by projection-query scores. This is the practical VOCS mechanism.
 
 **Workloads.** Four synthetic workload patterns simulate different attention distributions:
 
@@ -47,7 +47,7 @@ We implemented a synthetic attention-level harness (`scripts/value_only_cold_sto
 - **multi_needle:** Several relevant old tokens each receive moderate attention, simulating multi-hop or multi-detail retrieval.
 - **diffuse_summary:** Deliberately broad attention distribution, standing in for context-intensive extraction or summarization where many prompt tokens contribute.
 
-**Primary configuration.** Top 16 pages per query, 16-token pages, 32-dimensional key sketch.
+**Primary configuration.** Top 16 pages per query, 16-token pages, resident K-vector projection of dimension 32.
 
 ### Byte Model
 
@@ -56,7 +56,7 @@ To ground the mechanism in realistic memory figures, we estimate footprints for 
 - **Full KV:** 16.0 GiB.
 - **Landmark top-64 equivalent resident KV:** 0.125 GiB (0.78% of full).
 - **VOCS with exact resident keys + top-64 value pages:** 8.06 GiB (50.4% of full), dominated by the full key tensor.
-- **VOCS with 32-dim key sketch + top-64 value pages:** 2.06 GiB (12.9% of full), an 87.1% resident-footprint reduction.
+- **VOCS with dimension-32 resident K-vector projection + top-64 value pages:** 2.06 GiB (12.9% of full), an 87.1% resident-footprint reduction.
 - **Value fetch traffic at top-64:** 64 MiB per decode token. On a 900 GB/s coherent memory link, the raw transfer lower bound is approximately 71 ns. Real kernel overhead, page-fault costs, and memory controller behavior require implementation measurement; this figure should not be treated as a latency prediction.
 
 ### Execution Environment
@@ -67,32 +67,32 @@ All runs executed on an NVIDIA GB10 host (`gx10-efe8`), Linux aarch64, 121 GiB R
 
 ### Primary Comparison
 
-Table 1 reports the primary comparison at top-16 pages per query, 16-token pages, 32-dimensional key sketch.
+Table 1 reports the primary comparison at top-16 pages per query, 16-token pages, and resident K-vector projection of dimension 32.
 
 **Table 1.** Cosine similarity to full-attention output and attention mass captured, by workload and policy.
 
 | Workload | Policy | Mean cosine | p05 cosine | Attention mass selected |
 |---|---|---|---|---|
 | single_needle | landmark | −0.000 | −0.132 | 0.007 |
-| single_needle | VOCS sketch | 0.945 | 0.637 | 0.790 |
+| single_needle | VOCS projection | 0.945 | 0.637 | 0.790 |
 | single_needle | VOCS exact-key oracle | 1.000 | 1.000 | 0.796 |
 | recent_and_global | landmark | 0.152 | −0.138 | 0.123 |
-| recent_and_global | VOCS sketch | 0.964 | 0.752 | 0.826 |
+| recent_and_global | VOCS projection | 0.964 | 0.752 | 0.826 |
 | diffuse_summary | landmark | 0.176 | 0.111 | 0.031 |
-| diffuse_summary | VOCS sketch | 0.073 | −0.072 | 0.033 |
-| multi_needle | VOCS sketch | 0.083 | −0.068 | 0.033 |
+| diffuse_summary | VOCS projection | 0.073 | −0.072 | 0.033 |
+| multi_needle | VOCS projection | 0.083 | −0.068 | 0.033 |
 
 ### Sparse Retrieval: VOCS Outperforms Landmark Pinning
 
-On **single_needle** retrieval, landmark pinning achieves mean cosine of −0.000, effectively missing the old answer token entirely (attention mass captured: 0.007). VOCS sketch achieves mean cosine of 0.945 with attention mass 0.790. The exact-key oracle (cosine 1.000, mass 0.796) confirms that the remaining gap is attributable to sketch approximation error rather than the page-selection budget itself.
+On **single_needle** retrieval, landmark pinning achieves mean cosine of −0.000, effectively missing the old answer token entirely (attention mass captured: 0.007). VOCS projection achieves mean cosine of 0.945 with attention mass 0.790. The exact-key oracle (cosine 1.000, mass 0.796) confirms that the remaining gap is attributable to projection approximation error rather than the page-selection budget itself.
 
-On **recent_and_global** access, landmark pinning achieves mean cosine of 0.152, capturing only the recent portion of the attention pattern (mass 0.123). VOCS sketch reaches 0.964 (mass 0.826), indicating that the key sketch successfully identifies both global and recent value pages.
+On **recent_and_global** access, landmark pinning achieves mean cosine of 0.152, capturing only the recent portion of the attention pattern (mass 0.123). VOCS projection reaches 0.964 (mass 0.826), indicating that the resident K-vector projection successfully identifies both global and recent value pages.
 
 ### Diffuse and Multi-Detail Workloads: VOCS Fails
 
-On **diffuse_summary**, both landmark (cosine 0.176) and VOCS sketch (cosine 0.073) perform poorly. The attention mass captured by VOCS sketch is only 0.033, meaning that 16 hot pages are fundamentally insufficient when the attention distribution is broad. VOCS sketch is slightly *worse* than landmark pinning here, likely because landmark pinning at least retains recent tokens that contribute some mass, while sketch-based selection spreads its limited budget across pages that individually score highly but collectively miss the bulk of the distribution.
+On **diffuse_summary**, both landmark (cosine 0.176) and VOCS projection (cosine 0.073) perform poorly. The attention mass captured by VOCS projection is only 0.033, meaning that 16 hot pages are fundamentally insufficient when the attention distribution is broad. VOCS projection is slightly *worse* than landmark pinning here, likely because landmark pinning at least retains recent tokens that contribute some mass, while projection-based selection spreads its limited budget across pages that individually score highly but collectively miss the bulk of the distribution.
 
-On **multi_needle**, VOCS sketch achieves cosine 0.083 with attention mass 0.033, again indicating that the hot-page budget is too small when multiple scattered tokens are relevant.
+On **multi_needle**, VOCS projection achieves cosine 0.083 with attention mass 0.033, again indicating that the hot-page budget is too small when multiple scattered tokens are relevant.
 
 ### Resource Usage
 
@@ -100,7 +100,7 @@ The 8k-token calibration run completed in 3.02 seconds, producing 60 result rows
 
 ## Limitations
 
-1. **Synthetic attention only.** The harness evaluates whether a key sketch can select value pages whose weighted sum approximates full attention. It does not measure downstream model accuracy, perplexity, or task-specific metrics. Real attention distributions in trained models may differ substantially from the synthetic patterns tested here. This is toy-simulation-level evidence, not a real-model benchmark.
+1. **Synthetic attention only.** The harness evaluates whether a compact resident K-vector projection can select value pages whose weighted sum approximates full attention. It does not measure downstream model accuracy, perplexity, or task-specific metrics. Real attention distributions in trained models may differ substantially from the synthetic patterns tested here. This is toy-simulation-level evidence, not a real-model benchmark.
 
 2. **No GPU kernels or page migration.** The harness does not exercise real GPU kernels, managed-memory page migration, CUDA-UVM page faults, or tokenizer/model-specific attention distributions. The byte-model estimates of fetch traffic and latency are lower bounds; real overhead depends on kernel implementation, page-fault costs, and memory controller behavior.
 
@@ -108,7 +108,7 @@ The 8k-token calibration run completed in 3.02 seconds, producing 60 result rows
 
 4. **No latency measurement.** The synthetic harness measures approximation quality, not decode-time latency. Real VOCS implementations must contend with the latency of value page fetches, which may dominate decode time if cache-hit rates are low or page-fault paths are slow.
 
-5. **Random key/value distributions.** Real model KV caches exhibit structure (e.g., attention head specialization, layer-dependent rank). Random vectors may over- or under-estimate the discriminability that key sketches can achieve in practice.
+5. **Random key/value distributions.** Real model KV caches exhibit structure (e.g., attention head specialization, layer-dependent rank). Random vectors may over- or under-estimate the discriminability that resident K-vector projections can achieve in practice.
 
 6. **Single hardware configuration.** All runs executed on one GB10 host. Coherent memory bandwidth and page-fault behavior will differ across platforms.
 
@@ -124,12 +124,12 @@ The 8k-token calibration run completed in 3.02 seconds, producing 60 result rows
 - **Dependencies:** Python 3, NumPy, psutil. No GPU required.
 - **Hardware:** NVIDIA GB10 host (`gx10-efe8`), Linux aarch64, 121 GiB RAM, swap disabled.
 - **Random seeds:** Not fixed in the reported runs; exact numerical replication may vary. The relative ordering and magnitude of effects are reported as stable across repeated runs per the run notes, but this has not been formally quantified.
-- **Configuration:** Top-16 pages, 16-token pages, 32-dim key sketch, standard-normal vector generation.
+- **Configuration:** Top-16 pages, 16-token pages, dimension-32 resident K-vector projection, standard-normal vector generation.
 - **Evidence level:** Synthetic attention-level toy simulation. Not a CUDA copy calibration, not a llama.cpp hook prototype, not a production validation.
 
 ## Conclusion
 
-Value-Only Cold Storage is a mechanism for reducing the resident KV cache footprint by retaining compact key sketches in fast memory and selectively fetching value pages from host memory. Synthetic attention-level evidence shows that this mechanism is effective for sparse retrieval workloads: at a budget of 16 hot pages with 32-dimensional key sketches, VOCS achieves cosine similarity of 0.945–0.964 to full attention on single-needle and mixed recent-and-global patterns, compared to −0.000–0.152 for landmark pinning. The estimated resident footprint for a Llama-3-8B-like 128k-context model is 2.06 GiB (12.9% of full KV), an 87.1% reduction.
+Value-Only Cold Storage is a mechanism for reducing the resident KV cache footprint by retaining compact resident K-vector projections in fast memory and selectively fetching value pages from host memory. Synthetic attention-level evidence shows that this mechanism is effective for sparse retrieval workloads: at a budget of 16 hot pages with resident K-vector projections of dimension 32, VOCS achieves cosine similarity of 0.945-0.964 to full attention on single-needle and mixed recent-and-global patterns, compared to -0.000-0.152 for landmark pinning. The estimated resident footprint for a Llama-3-8B-like 128k-context model is 2.06 GiB (12.9% of full KV), an 87.1% reduction.
 
 However, VOCS fails on diffuse summarization (cosine 0.073) and multi-needle workloads (cosine 0.083) at the same budget, where sparse value fetch captures only 3.3% of attention mass. This is not a tuning artifact but a structural limitation: when many tokens contribute meaningfully to the output, no mechanism that selects a small fraction of value pages can approximate full attention.
 

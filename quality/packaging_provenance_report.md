@@ -1,7 +1,7 @@
 # Corpus public audit reports
 
-Packaging/provenance lint: 356 / 356 pass
-Strict claim/evidence audit: 2 / 356 pass
+Packaging/provenance lint: 375 / 375 pass
+Strict claim/evidence audit: 2 / 375 pass
 Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
 This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
@@ -27,12 +27,13 @@ This compatibility report deliberately shows both counts on the first screen. Th
 
 ## Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 356
+Strict claim/evidence passed: 2 / 375
 Status: `blocked_audit_gaps`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
 | Paper | Packaging/provenance lint pass | Packaging issues |
 |---|---:|---|
+| `acceptance-length-cuda-graph-bank` | True | {} |
 | `adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval` | True | {} |
 | `adaptive-boundary-colorization-gate` | True | {} |
 | `adaptive-budget-aware-lim-reserve-sampler` | True | {} |
@@ -146,8 +147,10 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `dflash-gb10-transformers-smoke` | True | {} |
 | `dflash-vllm-sglang-throughput-shootout` | True | {} |
 | `dflash-vs-existing-spec-dec-baseline-harness` | True | {} |
+| `dgx-uma-expert-residency-governor` | True | {} |
 | `diff-hygiene-budgeter-real-repo-validation` | True | {} |
 | `difficulty-aware-mask-bank---successor-branch` | True | {} |
+| `diffuspec-user-provided-drafter-for-trt-llm` | True | {} |
 | `document-field-importance-llm-generation-validation` | True | {} |
 | `domain-gated-speculative-waste-minimizer` | True | {} |
 | `draft-candidate-reordering` | True | {} |
@@ -157,6 +160,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `dual-trace-memory-encoder` | True | {} |
 | `dynamic-window-fine-tune` | True | {} |
 | `eagle-3-bigger-drafter-pareto-sweep` | True | {} |
+| `easyspec-target-internal-early-exit-drafter` | True | {} |
 | `elastic-expert-budget-during-cpt` | True | {} |
 | `energy-aware-small-model-distill` | True | {} |
 | `engine-level-prefix-cache-cohort-scheduler` | True | {} |
@@ -189,6 +193,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `gguf-lora-gpu-switch-benchmark-on-non-moe-models` | True | {} |
 | `ghost-route-policy-evaluator` | True | {} |
 | `goal-shard-manager` | True | {} |
+| `goose-sa-anisotropic-tree` | True | {} |
 | `head-importance-self-labeling` | True | {} |
 | `home-lab-agent-orchestrator` | True | {} |
 | `hot-cold-tensor-paging` | True | {} |
@@ -204,6 +209,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `knowledge-deletion-fine-tune` | True | {} |
 | `kv-aware-agent-planner` | True | {} |
 | `kv-eviction-gold-labels` | True | {} |
+| `kv-pressure-adaptive-speculation-governor-for-32k-context` | True | {} |
 | `kv-saliency-student` | True | {} |
 | `kv-spill-top-3-learned-reranker` | True | {} |
 | `lab-notebook-diff-engine` | True | {} |
@@ -223,15 +229,19 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `locality-switched-windowing` | True | {} |
 | `log-compression-with-causal-handles` | True | {} |
 | `long-answer-tail-cache-booster` | True | {} |
+| `long-context-kv-pressure-speculation-governor` | True | {} |
 | `long-context-trash-compactor` | True | {} |
 | `long-horizon-canary-tasks` | True | {} |
 | `long-tail-entity-boost-mix` | True | {} |
 | `long-to-short-compression-training` | True | {} |
+| `lookahead-suffixdecoding-code-trace-cache` | True | {} |
+| `lookahead-suffixdecoding-for-code-agent-loops` | True | {} |
 | `lookup-aware-toolformer-toy` | True | {} |
 | `lost-in-middle-reversal-curriculum` | True | {} |
 | `lost-middle-rescue-student` | True | {} |
 | `low-rank-kv-compensation-adapter` | True | {} |
 | `low-rank-patch-after-prune` | True | {} |
+| `massv-beagle-cross-attention` | True | {} |
 | `memorization-reasoning-probe-split` | True | {} |
 | `memory-pressure-admission-gate-live-serving-validation` | True | {} |
 | `memory-pressure-replay-logs` | True | {} |
@@ -248,6 +258,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `neural-endpoint-segment-order-sensitivity-validation` | True | {} |
 | `noisy-web-distillation-gauntlet` | True | {} |
 | `null-result-memory-real-workflow-replay-benchmark` | True | {} |
+| `omnidraft-cross-vocabulary-compatibility-layer` | True | {} |
 | `omx-guarded-trust-weighted-memory-store-integration` | True | {} |
 | `omx-skill-bond-registry-prototype` | True | {} |
 | `open-weight-integrity-twin-agent-sweep` | True | {} |
@@ -280,6 +291,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `proof-carrying-prs` | True | {} |
 | `protocol-compliance-judge` | True | {} |
 | `prune-then-upcycle-recovery-loop` | True | {} |
+| `ptp-mtp-acceptance-optimized-self-drafter` | True | {} |
 | `public-fastapi-typer-compatibility-oracle-validation` | True | {} |
 | `q2-to-q4-calibration-regret-block-promotion-runtime-prototype` | True | {} |
 | `quant-spectrum-cross-model-downstream-validation` | True | {} |
@@ -297,6 +309,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding` | True | {} |
 | `real-task-context-compression-pareto-validation` | True | {} |
 | `real-trace-near-miss-refusal-adapter-validation` | True | {} |
+| `reap-dynamic-tree-shaping` | True | {} |
 | `reap-ragged-loader-real-checkpoint-integration` | True | {} |
 | `reasoning-aware-quant-router-policy-v2` | True | {} |
 | `recap-token-supervision` | True | {} |
@@ -317,9 +330,11 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `retrieval-landmark-kv-pins` | True | {} |
 | `reuse-fingerprint-student` | True | {} |
 | `reversible-prune-masks` | True | {} |
+| `rl-bandit-entropy-gated-multi-policy-speculation-router` | True | {} |
 | `robotic-procedure-verifier` | True | {} |
 | `rollback-audit-and-escrow-for-transactional-tool-calls` | True | {} |
 | `router-distilled-triton-mlp-full-model-integration` | True | {} |
+| `sa-first-neural-fallback-router` | True | {} |
 | `safety-interlock-synthesizer` | True | {} |
 | `salience-backed-candidate-top-1-kv-prefill-packing-benchmark` | True | {} |
 | `saliency-distillation-targets` | True | {} |
@@ -346,9 +361,12 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `sparse-value-late-materializer` | True | {} |
 | `sparse-verifier-token-check` | True | {} |
 | `spec-decoder-domain-router` | True | {} |
+| `spectr-style-ot-verifier-for-multi-candidate-trees` | True | {} |
 | `speculation-friendly-lm-head-tuning` | True | {} |
 | `speculation-tree-student` | True | {} |
 | `specvocab-hybrid-for-eagle-3-and-dflash` | True | {} |
+| `ssd-goose-sa` | True | {} |
+| `ssd-outcome-cache-with-suffix-state-keys` | True | {} |
 | `stalled-agent-rescuer` | True | {} |
 | `strong-draft-weak-reviewer-transfer` | True | {} |
 | `structured-noise-injection-suite` | True | {} |
@@ -360,6 +378,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `task-class-expert-reproduction` | True | {} |
 | `task-gated-thinking-retention-controller` | True | {} |
 | `task-routed-context-allocation-extractive-relevance-vs-marginal-utility` | True | {} |
+| `temperature-conditional-acceptance-calibration` | True | {} |
 | `test-rig-self-maintainer` | True | {} |
 | `thermal-policy-optimizer` | True | {} |
 | `thinking-pattern-bridge-adapter` | True | {} |

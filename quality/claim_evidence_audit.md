@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 356
+Strict claim/evidence passed: 2 / 375
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 354 / 356
+- Empty claim ledgers: 373 / 375
 - Evidence `result_files` references: 1443
 - Publicly present result-file references: 18
 - Missing result-file references: 1405
@@ -34,6 +34,7 @@ Status: `blocked_audit_gaps`
 
 | Paper | Strict pass | Claim count | Missing result refs | Issues |
 |---|---:|---:|---:|---|
+| `acceptance-length-cuda-graph-bank` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `adaptive-boundary-colorization-gate` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `adaptive-budget-aware-lim-reserve-sampler` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -147,8 +148,10 @@ Status: `blocked_audit_gaps`
 | `dflash-gb10-transformers-smoke` | False | 0 | 7 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `dflash-vllm-sglang-throughput-shootout` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `dflash-vs-existing-spec-dec-baseline-harness` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `dgx-uma-expert-residency-governor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `diff-hygiene-budgeter-real-repo-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `difficulty-aware-mask-bank---successor-branch` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `diffuspec-user-provided-drafter-for-trt-llm` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `document-field-importance-llm-generation-validation` | False | 0 | 1 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `domain-gated-speculative-waste-minimizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `draft-candidate-reordering` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -158,6 +161,7 @@ Status: `blocked_audit_gaps`
 | `dual-trace-memory-encoder` | False | 0 | 3 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `dynamic-window-fine-tune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `eagle-3-bigger-drafter-pareto-sweep` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `easyspec-target-internal-early-exit-drafter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `elastic-expert-budget-during-cpt` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `energy-aware-small-model-distill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `engine-level-prefix-cache-cohort-scheduler` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -190,6 +194,7 @@ Status: `blocked_audit_gaps`
 | `gguf-lora-gpu-switch-benchmark-on-non-moe-models` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `ghost-route-policy-evaluator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `goal-shard-manager` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `goose-sa-anisotropic-tree` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `head-importance-self-labeling` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `home-lab-agent-orchestrator` | False | 0 | 8 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `hot-cold-tensor-paging` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -205,6 +210,7 @@ Status: `blocked_audit_gaps`
 | `knowledge-deletion-fine-tune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-aware-agent-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-eviction-gold-labels` | False | 0 | 12 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `kv-pressure-adaptive-speculation-governor-for-32k-context` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-saliency-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `kv-spill-top-3-learned-reranker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `lab-notebook-diff-engine` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -224,15 +230,19 @@ Status: `blocked_audit_gaps`
 | `locality-switched-windowing` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `log-compression-with-causal-handles` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `long-answer-tail-cache-booster` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `long-context-kv-pressure-speculation-governor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `long-context-trash-compactor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `long-horizon-canary-tasks` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `long-tail-entity-boost-mix` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `long-to-short-compression-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `lookahead-suffixdecoding-code-trace-cache` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `lookahead-suffixdecoding-for-code-agent-loops` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `lookup-aware-toolformer-toy` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `lost-in-middle-reversal-curriculum` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `lost-middle-rescue-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `low-rank-kv-compensation-adapter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `low-rank-patch-after-prune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `massv-beagle-cross-attention` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `memorization-reasoning-probe-split` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `memory-pressure-admission-gate-live-serving-validation` | False | 0 | 6 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `memory-pressure-replay-logs` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -249,6 +259,7 @@ Status: `blocked_audit_gaps`
 | `neural-endpoint-segment-order-sensitivity-validation` | False | 0 | 4 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `noisy-web-distillation-gauntlet` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `null-result-memory-real-workflow-replay-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `omnidraft-cross-vocabulary-compatibility-layer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `omx-guarded-trust-weighted-memory-store-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `omx-skill-bond-registry-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `open-weight-integrity-twin-agent-sweep` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -281,6 +292,7 @@ Status: `blocked_audit_gaps`
 | `proof-carrying-prs` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `protocol-compliance-judge` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `prune-then-upcycle-recovery-loop` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `ptp-mtp-acceptance-optimized-self-drafter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `public-fastapi-typer-compatibility-oracle-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `q2-to-q4-calibration-regret-block-promotion-runtime-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `quant-spectrum-cross-model-downstream-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -298,6 +310,7 @@ Status: `blocked_audit_gaps`
 | `real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding` | False | 0 | 7 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `real-task-context-compression-pareto-validation` | False | 0 | 8 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `real-trace-near-miss-refusal-adapter-validation` | False | 0 | 4 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `reap-dynamic-tree-shaping` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `reap-ragged-loader-real-checkpoint-integration` | False | 0 | 2 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `reasoning-aware-quant-router-policy-v2` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `recap-token-supervision` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -318,9 +331,11 @@ Status: `blocked_audit_gaps`
 | `retrieval-landmark-kv-pins` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `reuse-fingerprint-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `reversible-prune-masks` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `rl-bandit-entropy-gated-multi-policy-speculation-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `robotic-procedure-verifier` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `rollback-audit-and-escrow-for-transactional-tool-calls` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `router-distilled-triton-mlp-full-model-integration` | False | 0 | 20 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
+| `sa-first-neural-fallback-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `safety-interlock-synthesizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `salience-backed-candidate-top-1-kv-prefill-packing-benchmark` | False | 0 | 12 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
 | `saliency-distillation-targets` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
@@ -347,9 +362,12 @@ Status: `blocked_audit_gaps`
 | `sparse-value-late-materializer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `sparse-verifier-token-check` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `spec-decoder-domain-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `spectr-style-ot-verifier-for-multi-candidate-trees` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `speculation-friendly-lm-head-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `speculation-tree-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `specvocab-hybrid-for-eagle-3-and-dflash` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `ssd-goose-sa` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `ssd-outcome-cache-with-suffix-state-keys` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `stalled-agent-rescuer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `strong-draft-weak-reviewer-transfer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `structured-noise-injection-suite` | False | 0 | 10 | ["claim_ledger_empty_claims", "evidence_result_files_missing_public_artifacts"] |
@@ -361,6 +379,7 @@ Status: `blocked_audit_gaps`
 | `task-class-expert-reproduction` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `task-gated-thinking-retention-controller` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `task-routed-context-allocation-extractive-relevance-vs-marginal-utility` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `temperature-conditional-acceptance-calibration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `test-rig-self-maintainer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `thermal-policy-optimizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `thinking-pattern-bridge-adapter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

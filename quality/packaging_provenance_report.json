@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 354,
-    "count": 356,
+    "claim_ledgers_empty": 373,
+    "count": 375,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1443,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 2
   },
-  "count": 356,
+  "count": 375,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,8 +23,19 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 356,
+  "passed": 375,
   "rows": [
+    {
+      "bytes": 16279,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/acceptance-length-cuda-graph-bank/paper.md",
+      "passes": true,
+      "slug": "acceptance-length-cuda-graph-bank",
+      "words": 2321
+    },
     {
       "bytes": 15144,
       "has_claim_ledger": true,
@@ -1269,6 +1280,17 @@
       "words": 2094
     },
     {
+      "bytes": 14677,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/dgx-uma-expert-residency-governor/paper.md",
+      "passes": true,
+      "slug": "dgx-uma-expert-residency-governor",
+      "words": 1967
+    },
+    {
       "bytes": 16316,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1289,6 +1311,17 @@
       "passes": true,
       "slug": "difficulty-aware-mask-bank---successor-branch",
       "words": 2527
+    },
+    {
+      "bytes": 18474,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/paper.md",
+      "passes": true,
+      "slug": "diffuspec-user-provided-drafter-for-trt-llm",
+      "words": 2483
     },
     {
       "bytes": 11847,
@@ -1388,6 +1421,17 @@
       "passes": true,
       "slug": "eagle-3-bigger-drafter-pareto-sweep",
       "words": 1944
+    },
+    {
+      "bytes": 16635,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/easyspec-target-internal-early-exit-drafter/paper.md",
+      "passes": true,
+      "slug": "easyspec-target-internal-early-exit-drafter",
+      "words": 2412
     },
     {
       "bytes": 16530,
@@ -1742,6 +1786,17 @@
       "words": 2007
     },
     {
+      "bytes": 16513,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/goose-sa-anisotropic-tree/paper.md",
+      "passes": true,
+      "slug": "goose-sa-anisotropic-tree",
+      "words": 2435
+    },
+    {
       "bytes": 14166,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -1905,6 +1960,17 @@
       "passes": true,
       "slug": "kv-eviction-gold-labels",
       "words": 2480
+    },
+    {
+      "bytes": 18787,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/paper.md",
+      "passes": true,
+      "slug": "kv-pressure-adaptive-speculation-governor-for-32k-context",
+      "words": 2712
     },
     {
       "bytes": 17688,
@@ -2116,6 +2182,17 @@
       "words": 2165
     },
     {
+      "bytes": 18911,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/long-context-kv-pressure-speculation-governor/paper.md",
+      "passes": true,
+      "slug": "long-context-kv-pressure-speculation-governor",
+      "words": 2692
+    },
+    {
       "bytes": 16141,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2158,6 +2235,28 @@
       "passes": true,
       "slug": "long-to-short-compression-training",
       "words": 2221
+    },
+    {
+      "bytes": 17136,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lookahead-suffixdecoding-code-trace-cache/paper.md",
+      "passes": true,
+      "slug": "lookahead-suffixdecoding-code-trace-cache",
+      "words": 2461
+    },
+    {
+      "bytes": 18501,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/paper.md",
+      "passes": true,
+      "slug": "lookahead-suffixdecoding-for-code-agent-loops",
+      "words": 2651
     },
     {
       "bytes": 14467,
@@ -2213,6 +2312,17 @@
       "passes": true,
       "slug": "low-rank-patch-after-prune",
       "words": 1875
+    },
+    {
+      "bytes": 17541,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/massv-beagle-cross-attention/paper.md",
+      "passes": true,
+      "slug": "massv-beagle-cross-attention",
+      "words": 2520
     },
     {
       "bytes": 14196,
@@ -2389,6 +2499,17 @@
       "passes": true,
       "slug": "null-result-memory-real-workflow-replay-benchmark",
       "words": 1983
+    },
+    {
+      "bytes": 14155,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/paper.md",
+      "passes": true,
+      "slug": "omnidraft-cross-vocabulary-compatibility-layer",
+      "words": 1977
     },
     {
       "bytes": 14787,
@@ -2743,6 +2864,17 @@
       "words": 1816
     },
     {
+      "bytes": 14638,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/paper.md",
+      "passes": true,
+      "slug": "ptp-mtp-acceptance-optimized-self-drafter",
+      "words": 2016
+    },
+    {
       "bytes": 15746,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -2928,6 +3060,17 @@
       "passes": true,
       "slug": "real-trace-near-miss-refusal-adapter-validation",
       "words": 1649
+    },
+    {
+      "bytes": 17441,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/reap-dynamic-tree-shaping/paper.md",
+      "passes": true,
+      "slug": "reap-dynamic-tree-shaping",
+      "words": 2562
     },
     {
       "bytes": 11717,
@@ -3150,6 +3293,17 @@
       "words": 2611
     },
     {
+      "bytes": 17132,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/paper.md",
+      "passes": true,
+      "slug": "rl-bandit-entropy-gated-multi-policy-speculation-router",
+      "words": 2387
+    },
+    {
       "bytes": 16258,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3181,6 +3335,17 @@
       "passes": true,
       "slug": "router-distilled-triton-mlp-full-model-integration",
       "words": 2300
+    },
+    {
+      "bytes": 13984,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/sa-first-neural-fallback-router/paper.md",
+      "passes": true,
+      "slug": "sa-first-neural-fallback-router",
+      "words": 2033
     },
     {
       "bytes": 17644,
@@ -3469,6 +3634,17 @@
       "words": 2528
     },
     {
+      "bytes": 13634,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/paper.md",
+      "passes": true,
+      "slug": "spectr-style-ot-verifier-for-multi-candidate-trees",
+      "words": 2023
+    },
+    {
       "bytes": 15206,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3500,6 +3676,28 @@
       "passes": true,
       "slug": "specvocab-hybrid-for-eagle-3-and-dflash",
       "words": 2477
+    },
+    {
+      "bytes": 21583,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ssd-goose-sa/paper.md",
+      "passes": true,
+      "slug": "ssd-goose-sa",
+      "words": 3176
+    },
+    {
+      "bytes": 13535,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ssd-outcome-cache-with-suffix-state-keys/paper.md",
+      "passes": true,
+      "slug": "ssd-outcome-cache-with-suffix-state-keys",
+      "words": 1904
     },
     {
       "bytes": 14675,
@@ -3621,6 +3819,17 @@
       "passes": true,
       "slug": "task-routed-context-allocation-extractive-relevance-vs-marginal-utility",
       "words": 2353
+    },
+    {
+      "bytes": 16393,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/temperature-conditional-acceptance-calibration/paper.md",
+      "passes": true,
+      "slug": "temperature-conditional-acceptance-calibration",
+      "words": 2301
     },
     {
       "bytes": 13375,

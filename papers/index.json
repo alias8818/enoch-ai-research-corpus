@@ -1,6 +1,21 @@
 {
-  "count": 356,
+  "count": 375,
   "papers": [
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/acceptance-length-cuda-graph-bank/claim_ledger.json",
+      "evidence_bundle_path": "papers/acceptance-length-cuda-graph-bank/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:49:56.792504+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/acceptance-length-cuda-graph-bank/paper.md",
+      "public_id": "enoch-paper-0367",
+      "slug": "acceptance-length-cuda-graph-bank",
+      "source_record_fingerprint": "162c634b5bdcbea3",
+      "strict_audit_pass": false,
+      "title": "Acceptance-Length CUDA Graph Bank"
+    },
     {
       "ai_generated": true,
       "claim_count": 0,
@@ -1699,6 +1714,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/dgx-uma-expert-residency-governor/claim_ledger.json",
+      "evidence_bundle_path": "papers/dgx-uma-expert-residency-governor/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:58:41.091426+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/dgx-uma-expert-residency-governor/paper.md",
+      "public_id": "enoch-paper-0358",
+      "slug": "dgx-uma-expert-residency-governor",
+      "source_record_fingerprint": "c67cfa42551f5a1a",
+      "strict_audit_pass": false,
+      "title": "DGX UMA Expert Residency Governor"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/diff-hygiene-budgeter-real-repo-validation/claim_ledger.json",
       "evidence_bundle_path": "papers/diff-hygiene-budgeter-real-repo-validation/evidence_bundle.json",
       "generated_at": "2026-05-04T07:06:29.364408+00:00",
@@ -1725,6 +1755,21 @@
       "source_record_fingerprint": "ab82c4377a7be145",
       "strict_audit_pass": false,
       "title": "Difficulty-Aware Mask Bank - Successor Branch"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/claim_ledger.json",
+      "evidence_bundle_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:49:03.388058+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/paper.md",
+      "public_id": "enoch-paper-0368",
+      "slug": "diffuspec-user-provided-drafter-for-trt-llm",
+      "source_record_fingerprint": "01fc5b8a088d4dfe",
+      "strict_audit_pass": false,
+      "title": "DiffuSpec User-Provided Drafter for TRT-LLM"
     },
     {
       "ai_generated": true,
@@ -1860,6 +1905,21 @@
       "source_record_fingerprint": "c7d83da9115c59dc",
       "strict_audit_pass": false,
       "title": "EAGLE-3 Bigger Drafter Pareto Sweep"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/easyspec-target-internal-early-exit-drafter/claim_ledger.json",
+      "evidence_bundle_path": "papers/easyspec-target-internal-early-exit-drafter/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:57:48.497257+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/easyspec-target-internal-early-exit-drafter/paper.md",
+      "public_id": "enoch-paper-0359",
+      "slug": "easyspec-target-internal-early-exit-drafter",
+      "source_record_fingerprint": "61ac321a79df0067",
+      "strict_audit_pass": false,
+      "title": "EasySpec Target-Internal Early-Exit Drafter"
     },
     {
       "ai_generated": true,
@@ -2344,6 +2404,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/goose-sa-anisotropic-tree/claim_ledger.json",
+      "evidence_bundle_path": "papers/goose-sa-anisotropic-tree/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:54:47.595853+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/goose-sa-anisotropic-tree/paper.md",
+      "public_id": "enoch-paper-0362",
+      "slug": "goose-sa-anisotropic-tree",
+      "source_record_fingerprint": "96a1da25ca82f893",
+      "strict_audit_pass": false,
+      "title": "Goose-SA Anisotropic Tree"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/head-importance-self-labeling/claim_ledger.json",
       "evidence_bundle_path": "papers/head-importance-self-labeling/evidence_bundle.json",
       "generated_at": "2026-05-03T09:16:22.356965+00:00",
@@ -2565,6 +2640,21 @@
       "source_record_fingerprint": "cba491f8289f2b32",
       "strict_audit_pass": false,
       "title": "KV Eviction Gold Labels"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/claim_ledger.json",
+      "evidence_bundle_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:56:48.295777+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/paper.md",
+      "public_id": "enoch-paper-0360",
+      "slug": "kv-pressure-adaptive-speculation-governor-for-32k-context",
+      "source_record_fingerprint": "20db2dec17980727",
+      "strict_audit_pass": false,
+      "title": "KV-Pressure Adaptive Speculation Governor for >32k Context"
     },
     {
       "ai_generated": true,
@@ -2854,6 +2944,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/long-context-kv-pressure-speculation-governor/claim_ledger.json",
+      "evidence_bundle_path": "papers/long-context-kv-pressure-speculation-governor/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:14:46.782074+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/long-context-kv-pressure-speculation-governor/paper.md",
+      "public_id": "enoch-paper-0375",
+      "slug": "long-context-kv-pressure-speculation-governor",
+      "source_record_fingerprint": "6a3d8b0430d69791",
+      "strict_audit_pass": false,
+      "title": "Long-Context KV-Pressure Speculation Governor"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/long-context-trash-compactor/claim_ledger.json",
       "evidence_bundle_path": "papers/long-context-trash-compactor/evidence_bundle.json",
       "generated_at": "2026-05-04T22:40:52.819506+00:00",
@@ -2910,6 +3015,36 @@
       "source_record_fingerprint": "911083e99f0a9dd7",
       "strict_audit_pass": false,
       "title": "Long-to-Short Compression Training"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/lookahead-suffixdecoding-code-trace-cache/claim_ledger.json",
+      "evidence_bundle_path": "papers/lookahead-suffixdecoding-code-trace-cache/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:45:37.591184+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/lookahead-suffixdecoding-code-trace-cache/paper.md",
+      "public_id": "enoch-paper-0371",
+      "slug": "lookahead-suffixdecoding-code-trace-cache",
+      "source_record_fingerprint": "87077d3229e9501e",
+      "strict_audit_pass": false,
+      "title": "Lookahead + SuffixDecoding + Code Trace Cache"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/claim_ledger.json",
+      "evidence_bundle_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:30:06.336521+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/paper.md",
+      "public_id": "enoch-paper-0374",
+      "slug": "lookahead-suffixdecoding-for-code-agent-loops",
+      "source_record_fingerprint": "8c22d12be094ec0f",
+      "strict_audit_pass": false,
+      "title": "Lookahead + SuffixDecoding for Code/Agent Loops"
     },
     {
       "ai_generated": true,
@@ -2985,6 +3120,21 @@
       "source_record_fingerprint": "acaeb683c250b607",
       "strict_audit_pass": false,
       "title": "Low-Rank Patch After Prune"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/massv-beagle-cross-attention/claim_ledger.json",
+      "evidence_bundle_path": "papers/massv-beagle-cross-attention/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:51:01.395842+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/massv-beagle-cross-attention/paper.md",
+      "public_id": "enoch-paper-0366",
+      "slug": "massv-beagle-cross-attention",
+      "source_record_fingerprint": "1336e03018d5ad71",
+      "strict_audit_pass": false,
+      "title": "MASSV + Beagle Cross-Attention"
     },
     {
       "ai_generated": true,
@@ -3225,6 +3375,21 @@
       "source_record_fingerprint": "38a4bde5a8fd8f2b",
       "strict_audit_pass": false,
       "title": "Null Result Memory Real-Workflow Replay Benchmark"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/claim_ledger.json",
+      "evidence_bundle_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:48:09.342062+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/paper.md",
+      "public_id": "enoch-paper-0369",
+      "slug": "omnidraft-cross-vocabulary-compatibility-layer",
+      "source_record_fingerprint": "12242e754dcc1dcc",
+      "strict_audit_pass": false,
+      "title": "OmniDraft Cross-Vocabulary Compatibility Layer"
     },
     {
       "ai_generated": true,
@@ -3709,6 +3874,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/claim_ledger.json",
+      "evidence_bundle_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:59:07.802754+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/paper.md",
+      "public_id": "enoch-paper-0357",
+      "slug": "ptp-mtp-acceptance-optimized-self-drafter",
+      "source_record_fingerprint": "652391f2dc8674b8",
+      "strict_audit_pass": false,
+      "title": "PTP/MTP Acceptance-Optimized Self-Drafter"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/public-fastapi-typer-compatibility-oracle-validation/claim_ledger.json",
       "evidence_bundle_path": "papers/public-fastapi-typer-compatibility-oracle-validation/evidence_bundle.json",
       "generated_at": "2026-05-04T07:51:10.501736+00:00",
@@ -3960,6 +4140,21 @@
       "source_record_fingerprint": "4c883c81f1e41016",
       "strict_audit_pass": false,
       "title": "Real Trace Near-Miss Refusal Adapter Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/reap-dynamic-tree-shaping/claim_ledger.json",
+      "evidence_bundle_path": "papers/reap-dynamic-tree-shaping/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:43:02.209458+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/reap-dynamic-tree-shaping/paper.md",
+      "public_id": "enoch-paper-0373",
+      "slug": "reap-dynamic-tree-shaping",
+      "source_record_fingerprint": "950780be434aacc2",
+      "strict_audit_pass": false,
+      "title": "REAP Dynamic Tree Shaping"
     },
     {
       "ai_generated": true,
@@ -4264,6 +4459,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/claim_ledger.json",
+      "evidence_bundle_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:53:40.191728+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/paper.md",
+      "public_id": "enoch-paper-0363",
+      "slug": "rl-bandit-entropy-gated-multi-policy-speculation-router",
+      "source_record_fingerprint": "1d8a5dbdc37ba1e3",
+      "strict_audit_pass": false,
+      "title": "RL/Bandit Entropy-Gated Multi-Policy Speculation Router"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/robotic-procedure-verifier/claim_ledger.json",
       "evidence_bundle_path": "papers/robotic-procedure-verifier/evidence_bundle.json",
       "generated_at": "2026-05-03T09:24:02.733391+00:00",
@@ -4305,6 +4515,21 @@
       "source_record_fingerprint": "0cfcb25a702ef658",
       "strict_audit_pass": false,
       "title": "Router-Distilled Triton MLP Full-Model Integration"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/sa-first-neural-fallback-router/claim_ledger.json",
+      "evidence_bundle_path": "papers/sa-first-neural-fallback-router/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:52:31.857532+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/sa-first-neural-fallback-router/paper.md",
+      "public_id": "enoch-paper-0364",
+      "slug": "sa-first-neural-fallback-router",
+      "source_record_fingerprint": "c60225e5f241087c",
+      "strict_audit_pass": false,
+      "title": "SA-First Neural Fallback Router"
     },
     {
       "ai_generated": true,
@@ -4699,6 +4924,21 @@
     {
       "ai_generated": true,
       "claim_count": 0,
+      "claim_ledger_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/claim_ledger.json",
+      "evidence_bundle_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:46:57.780812+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/paper.md",
+      "public_id": "enoch-paper-0370",
+      "slug": "spectr-style-ot-verifier-for-multi-candidate-trees",
+      "source_record_fingerprint": "59043259bf924ab7",
+      "strict_audit_pass": false,
+      "title": "SpecTr-Style OT Verifier for Multi-Candidate Trees"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
       "claim_ledger_path": "papers/speculation-friendly-lm-head-tuning/claim_ledger.json",
       "evidence_bundle_path": "papers/speculation-friendly-lm-head-tuning/evidence_bundle.json",
       "generated_at": "2026-05-03T15:50:55.760356+00:00",
@@ -4740,6 +4980,36 @@
       "source_record_fingerprint": "9cb009c320e88450",
       "strict_audit_pass": false,
       "title": "SpecVocab Hybrid for EAGLE-3 and DFlash"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/ssd-goose-sa/claim_ledger.json",
+      "evidence_bundle_path": "papers/ssd-goose-sa/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:44:18.983395+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/ssd-goose-sa/paper.md",
+      "public_id": "enoch-paper-0372",
+      "slug": "ssd-goose-sa",
+      "source_record_fingerprint": "4a96bf9b31fb75c8",
+      "strict_audit_pass": false,
+      "title": "SSD + Goose + SA"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/ssd-outcome-cache-with-suffix-state-keys/claim_ledger.json",
+      "evidence_bundle_path": "papers/ssd-outcome-cache-with-suffix-state-keys/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:55:41.310409+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/ssd-outcome-cache-with-suffix-state-keys/paper.md",
+      "public_id": "enoch-paper-0361",
+      "slug": "ssd-outcome-cache-with-suffix-state-keys",
+      "source_record_fingerprint": "7e5b938380fe0876",
+      "strict_audit_pass": false,
+      "title": "SSD Outcome Cache with Suffix-State Keys"
     },
     {
       "ai_generated": true,
@@ -4905,6 +5175,21 @@
       "source_record_fingerprint": "387f8f190f35eb43",
       "strict_audit_pass": false,
       "title": "Task-Routed Context Allocation: Extractive Relevance vs Marginal Utility"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/temperature-conditional-acceptance-calibration/claim_ledger.json",
+      "evidence_bundle_path": "papers/temperature-conditional-acceptance-calibration/evidence_bundle.json",
+      "generated_at": "2026-05-06T09:51:47.588071+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/temperature-conditional-acceptance-calibration/paper.md",
+      "public_id": "enoch-paper-0365",
+      "slug": "temperature-conditional-acceptance-calibration",
+      "source_record_fingerprint": "6ce9de82c9ca11b4",
+      "strict_audit_pass": false,
+      "title": "Temperature-Conditional Acceptance Calibration"
     },
     {
       "ai_generated": true,

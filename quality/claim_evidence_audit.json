@@ -1,6 +1,6 @@
 {
-  "claim_ledgers_empty": 354,
-  "count": 356,
+  "claim_ledgers_empty": 373,
+  "count": 375,
   "featured_artifacts_checked": 2,
   "featured_artifacts_strict_pass_count": 2,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
@@ -19,6 +19,24 @@
   "result_file_refs_missing": 1405,
   "result_file_refs_public_present": 18,
   "rows": [
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/acceptance-length-cuda-graph-bank/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/acceptance-length-cuda-graph-bank/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "acceptance-length-cuda-graph-bank",
+      "strict_pass": false
+    },
     {
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
@@ -2513,6 +2531,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/dgx-uma-expert-residency-governor/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/dgx-uma-expert-residency-governor/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "dgx-uma-expert-residency-governor",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/diff-hygiene-budgeter-real-repo-validation/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/diff-hygiene-budgeter-real-repo-validation/evidence_bundle.json",
@@ -2555,6 +2591,24 @@
       "result_file_refs_missing": 20,
       "result_file_refs_public_present": 0,
       "slug": "difficulty-aware-mask-bank---successor-branch",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/diffuspec-user-provided-drafter-for-trt-llm/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "diffuspec-user-provided-drafter-for-trt-llm",
       "strict_pass": false
     },
     {
@@ -2737,6 +2791,24 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "eagle-3-bigger-drafter-pareto-sweep",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/easyspec-target-internal-early-exit-drafter/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/easyspec-target-internal-early-exit-drafter/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "easyspec-target-internal-early-exit-drafter",
       "strict_pass": false
     },
     {
@@ -3424,6 +3496,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/goose-sa-anisotropic-tree/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/goose-sa-anisotropic-tree/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "goose-sa-anisotropic-tree",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/head-importance-self-labeling/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/head-importance-self-labeling/evidence_bundle.json",
@@ -3761,6 +3851,24 @@
       "result_file_refs_missing": 12,
       "result_file_refs_public_present": 0,
       "slug": "kv-eviction-gold-labels",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/kv-pressure-adaptive-speculation-governor-for-32k-context/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "kv-pressure-adaptive-speculation-governor-for-32k-context",
       "strict_pass": false
     },
     {
@@ -4128,6 +4236,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/long-context-kv-pressure-speculation-governor/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/long-context-kv-pressure-speculation-governor/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "long-context-kv-pressure-speculation-governor",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/long-context-trash-compactor/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/long-context-trash-compactor/evidence_bundle.json",
@@ -4206,6 +4332,42 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "long-to-short-compression-training",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/lookahead-suffixdecoding-code-trace-cache/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/lookahead-suffixdecoding-code-trace-cache/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "lookahead-suffixdecoding-code-trace-cache",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/lookahead-suffixdecoding-for-code-agent-loops/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "lookahead-suffixdecoding-for-code-agent-loops",
       "strict_pass": false
     },
     {
@@ -4296,6 +4458,24 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "low-rank-patch-after-prune",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/massv-beagle-cross-attention/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/massv-beagle-cross-attention/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "massv-beagle-cross-attention",
       "strict_pass": false
     },
     {
@@ -4623,6 +4803,24 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "null-result-memory-real-workflow-replay-benchmark",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/omnidraft-cross-vocabulary-compatibility-layer/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "omnidraft-cross-vocabulary-compatibility-layer",
       "strict_pass": false
     },
     {
@@ -5310,6 +5508,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/ptp-mtp-acceptance-optimized-self-drafter/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "ptp-mtp-acceptance-optimized-self-drafter",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/public-fastapi-typer-compatibility-oracle-validation/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/public-fastapi-typer-compatibility-oracle-validation/evidence_bundle.json",
@@ -5686,6 +5902,24 @@
       "result_file_refs_missing": 4,
       "result_file_refs_public_present": 0,
       "slug": "real-trace-near-miss-refusal-adapter-validation",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/reap-dynamic-tree-shaping/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/reap-dynamic-tree-shaping/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "reap-dynamic-tree-shaping",
       "strict_pass": false
     },
     {
@@ -6116,6 +6350,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/rl-bandit-entropy-gated-multi-policy-speculation-router/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "rl-bandit-entropy-gated-multi-policy-speculation-router",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/robotic-procedure-verifier/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/robotic-procedure-verifier/evidence_bundle.json",
@@ -6176,6 +6428,24 @@
       "result_file_refs_missing": 20,
       "result_file_refs_public_present": 0,
       "slug": "router-distilled-triton-mlp-full-model-integration",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/sa-first-neural-fallback-router/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/sa-first-neural-fallback-router/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "sa-first-neural-fallback-router",
       "strict_pass": false
     },
     {
@@ -6706,6 +6976,24 @@
       "audit_status": "blocked_empty_claims",
       "claim_count": 0,
       "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/spectr-style-ot-verifier-for-multi-candidate-trees/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "spectr-style-ot-verifier-for-multi-candidate-trees",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
       "claim_ledger_path": "papers/speculation-friendly-lm-head-tuning/claim_ledger.json",
       "claim_ledger_schema_status": "blocked_empty_claims",
       "evidence_bundle_path": "papers/speculation-friendly-lm-head-tuning/evidence_bundle.json",
@@ -6754,6 +7042,42 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "specvocab-hybrid-for-eagle-3-and-dflash",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/ssd-goose-sa/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/ssd-goose-sa/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "ssd-goose-sa",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/ssd-outcome-cache-with-suffix-state-keys/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/ssd-outcome-cache-with-suffix-state-keys/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "ssd-outcome-cache-with-suffix-state-keys",
       "strict_pass": false
     },
     {
@@ -6964,6 +7288,24 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 0,
       "slug": "task-routed-context-allocation-extractive-relevance-vs-marginal-utility",
+      "strict_pass": false
+    },
+    {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/temperature-conditional-acceptance-calibration/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/temperature-conditional-acceptance-calibration/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "temperature-conditional-acceptance-calibration",
       "strict_pass": false
     },
     {
@@ -7575,7 +7917,7 @@
     }
   ],
   "status": "blocked_audit_gaps",
-  "strict_claim_evidence_failed_count": 354,
+  "strict_claim_evidence_failed_count": 373,
   "strict_claim_evidence_pass_count": 2,
   "validated": [
     "claim_ledger_schema_parseable",

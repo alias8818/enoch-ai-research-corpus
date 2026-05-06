@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-06T21:04:30.548510+00:00",
+  "paper_id": "source-record-redacted",
+  "public_result_files": [
+    "public_evidence/calibration.json",
+    "public_evidence/million.json",
+    "public_evidence/million_one_trial.json",
+    "public_evidence/summary.json"
+  ],
+  "writer_provider": "Codex agent rewrite from GB10 project evidence after deterministic fallback stub was quarantined"
+}

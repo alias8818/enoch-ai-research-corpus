@@ -1,0 +1,56 @@
+{
+  "config": {
+    "fifo_capacity": 4096,
+    "lengths": [
+      1000,
+      10000,
+      100000
+    ],
+    "n_shards": 64,
+    "shard_capacity": 20000,
+    "trials_by_length": {
+      "1000": 20,
+      "10000": 10,
+      "100000": 4
+    }
+  },
+  "host": {
+    "pid": 809683,
+    "rss_after_bytes": 38408192,
+    "rss_before_bytes": 16691200
+  },
+  "project": "subq-ssa-ssm-retrieval-probe-20260506",
+  "results": [
+    {
+      "context_blind_accuracy": 0.0,
+      "context_routed_accuracy": 1.0,
+      "fifo_accuracy": 1.0,
+      "items_per_second": 3322410.9162664344,
+      "length": 1000,
+      "trials": 20,
+      "wall_seconds": 0.018059174952213652
+    },
+    {
+      "context_blind_accuracy": 0.0,
+      "context_routed_accuracy": 1.0,
+      "fifo_accuracy": 0.0,
+      "items_per_second": 2923559.046999265,
+      "length": 10000,
+      "trials": 10,
+      "wall_seconds": 0.10261465398070868
+    },
+    {
+      "context_blind_accuracy": 0.0,
+      "context_routed_accuracy": 1.0,
+      "fifo_accuracy": 0.0,
+      "items_per_second": 2649990.681617808,
+      "length": 100000,
+      "trials": 4,
+      "wall_seconds": 0.4528317810036242
+    }
+  ],
+  "runtime": {
+    "wall_seconds": 0.6195830939977895
+  },
+  "seed": 42
+}

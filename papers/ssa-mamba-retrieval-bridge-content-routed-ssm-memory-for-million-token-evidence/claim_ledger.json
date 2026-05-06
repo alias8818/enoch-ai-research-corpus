@@ -1,0 +1,44 @@
+{
+  "audit_status": "claims_reference_public_evidence",
+  "claims": [
+    {
+      "claim": "In the calibration run, the context-aware routed bridge achieved 1.0 exact retrieval accuracy at 1k, 10k, and 100k token lengths.",
+      "evidence_refs": [
+        "public_evidence/calibration.json",
+        "public_evidence/summary.json"
+      ]
+    },
+    {
+      "claim": "The fixed-capacity FIFO proxy dropped to 0.0 accuracy at 10k and 100k tokens in the calibration run.",
+      "evidence_refs": [
+        "public_evidence/calibration.json"
+      ]
+    },
+    {
+      "claim": "A context-blind key router achieved 0.0 accuracy across the reported calibration and million-token runs.",
+      "evidence_refs": [
+        "public_evidence/calibration.json",
+        "public_evidence/million.json",
+        "public_evidence/million_one_trial.json"
+      ]
+    },
+    {
+      "claim": "At 1M tokens with 64 shards x 20,000 capacity, the context-routed bridge reached 0.4 accuracy across 20 trials.",
+      "evidence_refs": [
+        "public_evidence/million.json"
+      ]
+    },
+    {
+      "claim": "At 1M tokens with 128 shards x 40,000 capacity, the context-routed bridge reached 1.0 accuracy in a single trial.",
+      "evidence_refs": [
+        "public_evidence/million_one_trial.json"
+      ]
+    }
+  ],
+  "limitations": [
+    "AI-generated artifact; not peer-reviewed.",
+    "Claims are limited to public evidence JSON files in this artifact directory.",
+    "The experiment is a synthetic proxy and does not validate a trained Mamba checkpoint or production long-context model quality."
+  ],
+  "schema_version": "claim_ledger.v1"
+}

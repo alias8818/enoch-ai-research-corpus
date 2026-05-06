@@ -1,15 +1,15 @@
 {
   "claim_evidence_audit": {
     "claim_ledgers_empty": 373,
-    "count": 495,
+    "count": 496,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
-    "result_file_refs": 2868,
+    "result_file_refs": 2872,
     "result_file_refs_missing": 2830,
     "status": "blocked_audit_gaps",
-    "strict_claim_evidence_pass_count": 2
+    "strict_claim_evidence_pass_count": 3
   },
-  "count": 495,
+  "count": 496,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 495,
+  "passed": 496,
   "rows": [
     {
       "bytes": 16279,
@@ -4875,6 +4875,17 @@
       "passes": true,
       "slug": "specvocab-hybrid-for-eagle-3-and-dflash",
       "words": 2477
+    },
+    {
+      "bytes": 6695,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence/paper.md",
+      "passes": true,
+      "slug": "ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence",
+      "words": 1022
     },
     {
       "bytes": 21583,

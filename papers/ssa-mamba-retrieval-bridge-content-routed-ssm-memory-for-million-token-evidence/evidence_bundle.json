@@ -1,0 +1,82 @@
+{
+  "decision": {
+    "decision": "viable_as_hybrid_not_pure_ssm",
+    "risks": [
+      "Synthetic proxy, not a trained Mamba checkpoint.",
+      "Architectural viability, not end-to-end model quality.",
+      "Million-token success depends on explicit external memory capacity."
+    ],
+    "status": "complete",
+    "summary": "The bridge concept is supported only as a hybrid architecture: vanilla/fixed-capacity state is insufficient for long-context evidence retrieval, but content-routed external memory can retain exact joint-recall behavior when capacity scales with evidence volume."
+  },
+  "external_sources": [
+    "https://arxiv.org/abs/2312.00752",
+    "https://arxiv.org/abs/2507.00449",
+    "https://arxiv.org/abs/2408.15496",
+    "https://arxiv.org/abs/2406.14528",
+    "https://arxiv.org/abs/2504.16053",
+    "https://huggingface.co/papers/2404.08819"
+  ],
+  "metrics_summary": {
+    "calibration": [
+      {
+        "context_blind_accuracy": 0.0,
+        "context_routed_accuracy": 1.0,
+        "fifo_accuracy": 1.0,
+        "items_per_second": 3322410.9162664344,
+        "length": 1000,
+        "trials": 20,
+        "wall_seconds": 0.018059174952213652
+      },
+      {
+        "context_blind_accuracy": 0.0,
+        "context_routed_accuracy": 1.0,
+        "fifo_accuracy": 0.0,
+        "items_per_second": 2923559.046999265,
+        "length": 10000,
+        "trials": 10,
+        "wall_seconds": 0.10261465398070868
+      },
+      {
+        "context_blind_accuracy": 0.0,
+        "context_routed_accuracy": 1.0,
+        "fifo_accuracy": 0.0,
+        "items_per_second": 2649990.681617808,
+        "length": 100000,
+        "trials": 4,
+        "wall_seconds": 0.4528317810036242
+      }
+    ],
+    "million_sufficient_capacity_one_trial": [
+      {
+        "context_blind_accuracy": 0.0,
+        "context_routed_accuracy": 1.0,
+        "fifo_accuracy": 0.0,
+        "items_per_second": 2138941.082429563,
+        "length": 1000000,
+        "trials": 1,
+        "wall_seconds": 1.4025631770055043
+      }
+    ],
+    "million_underprovisioned": [
+      {
+        "context_blind_accuracy": 0.0,
+        "context_routed_accuracy": 0.4,
+        "fifo_accuracy": 0.0,
+        "items_per_second": 2051899.3168940176,
+        "length": 1000000,
+        "trials": 20,
+        "wall_seconds": 29.24120082598529
+      }
+    ]
+  },
+  "project_id": "source-record-redacted",
+  "result_files": [
+    "public_evidence/calibration.json",
+    "public_evidence/million.json",
+    "public_evidence/million_one_trial.json",
+    "public_evidence/summary.json"
+  ],
+  "run_id": "source-record-redacted-20260506T202301904055+0000",
+  "schema_version": "evidence_bundle.v1"
+}

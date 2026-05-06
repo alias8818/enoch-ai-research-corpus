@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 495
+Count: 496
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 495/495 packaging/provenance lint pass and 2/495 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 496/496 packaging/provenance lint pass and 3/496 strict claim/evidence audit pass.
 
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
@@ -447,6 +447,7 @@ This index distinguishes metadata-file presence from strict claim/evidence audit
 | [Speculation-Friendly LM Head Tuning](speculation-friendly-lm-head-tuning/paper.md) | `enoch-paper-0276` | yes | yes | 0 | false | 0 |
 | [Speculation Tree Student](speculation-tree-student/paper.md) | `enoch-paper-0292` | yes | yes | 0 | false | 0 |
 | [SpecVocab Hybrid for EAGLE-3 and DFlash](specvocab-hybrid-for-eagle-3-and-dflash/paper.md) | `enoch-paper-0200` | yes | yes | 0 | false | 0 |
+| [SSA-Mamba Retrieval Bridge: Content-Routed SSM Memory for Million-Token Evidence](ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence/paper.md) | `enoch-paper-0496` | yes | yes | 5 | true | 0 |
 | [SSD + Goose + SA](ssd-goose-sa/paper.md) | `enoch-paper-0372` | yes | yes | 0 | false | 0 |
 | [SSD Outcome Cache with Suffix-State Keys](ssd-outcome-cache-with-suffix-state-keys/paper.md) | `enoch-paper-0361` | yes | yes | 0 | false | 0 |
 | [Stalled Agent Rescuer](stalled-agent-rescuer/paper.md) | `enoch-paper-0340` | yes | yes | 0 | false | 0 |

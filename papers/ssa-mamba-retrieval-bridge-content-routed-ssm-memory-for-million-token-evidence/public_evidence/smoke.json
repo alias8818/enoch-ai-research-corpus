@@ -1,0 +1,34 @@
+{
+  "config": {
+    "fifo_capacity": 4096,
+    "lengths": [
+      1000
+    ],
+    "n_shards": 64,
+    "shard_capacity": 256,
+    "trials_by_length": {
+      "1000": 20
+    }
+  },
+  "host": {
+    "pid": 809590,
+    "rss_after_bytes": 17416192,
+    "rss_before_bytes": 16691200
+  },
+  "project": "subq-ssa-ssm-retrieval-probe-20260506",
+  "results": [
+    {
+      "context_blind_accuracy": 0.0,
+      "context_routed_accuracy": 1.0,
+      "fifo_accuracy": 1.0,
+      "items_per_second": 7297174.112871716,
+      "length": 1000,
+      "trials": 20,
+      "wall_seconds": 0.008222361022490077
+    }
+  ],
+  "runtime": {
+    "wall_seconds": 0.019793740997556597
+  },
+  "seed": 42
+}

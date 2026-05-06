@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 2 / 495
+Strict claim/evidence passed: 3 / 496
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,9 +8,9 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 373 / 495
-- Evidence `result_files` references: 2868
-- Publicly present result-file references: 18
+- Empty claim ledgers: 373 / 496
+- Evidence `result_files` references: 2872
+- Publicly present result-file references: 22
 - Missing result-file references: 2830
 - Featured artifacts strict-pass count: 2 / 2
 
@@ -475,6 +475,7 @@ Status: `blocked_audit_gaps`
 | `speculation-friendly-lm-head-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `speculation-tree-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `specvocab-hybrid-for-eagle-3-and-dflash` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence` | True | 5 | 0 | [] |
 | `ssd-goose-sa` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `ssd-outcome-cache-with-suffix-state-keys` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `stalled-agent-rescuer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

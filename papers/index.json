@@ -1,5 +1,5 @@
 {
-  "count": 495,
+  "count": 496,
   "papers": [
     {
       "ai_generated": true,
@@ -6615,6 +6615,21 @@
       "source_record_fingerprint": "9cb009c320e88450",
       "strict_audit_pass": false,
       "title": "SpecVocab Hybrid for EAGLE-3 and DFlash"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 5,
+      "claim_ledger_path": "papers/ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence/claim_ledger.json",
+      "evidence_bundle_path": "papers/ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence/evidence_bundle.json",
+      "generated_at": "2026-05-06 21:10:10.864601+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence/paper.md",
+      "public_id": "enoch-paper-0496",
+      "slug": "ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence",
+      "source_record_fingerprint": "f49371c8bf16b34a",
+      "strict_audit_pass": true,
+      "title": "SSA-Mamba Retrieval Bridge: Content-Routed SSM Memory for Million-Token Evidence"
     },
     {
       "ai_generated": true,

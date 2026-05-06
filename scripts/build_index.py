@@ -18,7 +18,19 @@ def _load_claim_audit() -> dict[str, dict]:
     return {row["slug"]: row for row in report.get("rows", [])}
 
 
+def _load_highlights() -> list[dict]:
+    path = PAPERS / "highlights.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text(encoding="utf-8"))
+    highlights = data.get("featured", data if isinstance(data, list) else [])
+    if not isinstance(highlights, list):
+        return []
+    return [row for row in highlights if isinstance(row, dict)]
+
+
 claim_audit_rows = _load_claim_audit()
+highlights = _load_highlights()
 strict_pass_count = sum(1 for row in claim_audit_rows.values() if row.get("strict_pass"))
 rows = []
 for meta_path in sorted(PAPERS.glob("*/metadata.json")):
@@ -46,7 +58,7 @@ for meta_path in sorted(PAPERS.glob("*/metadata.json")):
         "missing_result_refs": int(audit.get("result_file_refs_missing", 0)),
     })
     rows.append(row)
-(PAPERS / "index.json").write_text(json.dumps({"count": len(rows), "papers": rows}, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+(PAPERS / "index.json").write_text(json.dumps({"count": len(rows), "highlight_count": len(highlights), "highlights": highlights, "papers": rows}, indent=2, sort_keys=True) + "\n", encoding="utf-8")
 lines = [
     "# Paper index",
     "",
@@ -54,9 +66,30 @@ lines = [
     "",
     f"This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is {len(rows)}/{len(rows)} packaging/provenance lint pass and {strict_pass_count}/{len(rows)} strict claim/evidence audit pass.",
     "",
+]
+if highlights:
+    lines.extend([
+        "## Highlighted artifacts",
+        "",
+        "These launch highlights are a curated inspection set, not a peer-review ranking. The `why it matters` summaries are bounded pointers into generated artifacts; use each paper's evidence bundle, claim ledger, and strict-audit status before treating a claim as established.",
+        "",
+        "| Title | Public ID | Why it matters | Bounds |",
+        "|---|---|---|---|",
+    ])
+    for item in highlights:
+        title = str(item.get("title") or "").strip()
+        public_id = str(item.get("public_id") or "").strip()
+        paper_path = str(item.get("paper_path") or "").strip()
+        rel = paper_path.removeprefix("papers/")
+        title_cell = f"[{title}]({rel})" if title and rel else title
+        why = str(item.get("why_it_matters") or "").replace("\n", " ").strip()
+        bounds = str(item.get("bounds") or "").replace("\n", " ").strip()
+        lines.append(f"| {title_cell} | `{public_id}` | {why} | {bounds} |")
+    lines.extend(["", "## Full artifact index", ""])
+lines.extend([
     "| Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |",
     "|---|---|---:|---:|---:|---:|---:|",
-]
+])
 for row in rows:
     # index.md lives inside papers/, so Markdown links must be relative to
     # that directory. Keep index.json paths root-relative for machine readers.

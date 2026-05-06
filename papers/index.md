@@ -4,6 +4,28 @@ Count: 496
 
 This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 496/496 packaging/provenance lint pass and 3/496 strict claim/evidence audit pass.
 
+## Highlighted artifacts
+
+These launch highlights are a curated inspection set, not a peer-review ranking. The `why it matters` summaries are bounded pointers into generated artifacts; use each paper's evidence bundle, claim ledger, and strict-audit status before treating a claim as established.
+
+| Title | Public ID | Why it matters | Bounds |
+|---|---|---|---|
+| [Evidence-Bound Proof Synthesizer for Tool Ledger](evidence-bound-proof-synthesizer-for-tool-ledger/paper.md) | `enoch-paper-0098` | This is one of the strongest artifacts because it pushes beyond ordinary agent logging: it proposes automatically synthesized proof objects for tool calls, derived from task evidence and trace metadata. | Local transcript corpus and generated traces only; not production-scale validation. |
+| [vLLM Attention-Sink Retention 3B Continuous-Serving Stress Campaign](vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md) | `enoch-paper-0159` | Canonical inspection path: a bounded continuous-serving artifact with concrete latency, error, output-divergence, limitations, evidence bundle, and claim ledger links. | Single model, single hardware environment, limited trials, no semantic output-quality validation, and not independently replicated. |
+| [DFlash Code-Generation Quality Guard](dflash-code-generation-quality-guard/paper.md) | `enoch-paper-0006` | A marketable systems result: speculative decoding is exciting, but code generation quality is the scary failure mode. This artifact tests speedups behind explicit quality kill conditions. | Small local benchmark subsets and hardware/backend compatibility constraints. |
+| [DFlash vLLM/SGLang Throughput Shootout](dflash-vllm-sglang-throughput-shootout/paper.md) | `enoch-paper-0001` | This is a clean performance headline for the corpus: a local GB10 serving benchmark with positive vLLM results and negative SGLang compatibility evidence reported transparently. | Single GB10 GPU, one target/draft model pair, modest sample sizes; SGLang path blocked by SM121 kernel compatibility. |
+| [FlashAttention-4 Kernel Pipelining for sm_121](flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121/paper.md) | `enoch-paper-0029` | This is one of the more technically novel artifacts: it explores whether GB10/SM121 TMA paths can support FlashAttention-4-style pipelined attention kernels. | Kernel scaffold and microbenchmark evidence, not a production FA4 implementation. |
+| [Open-Weight Integrity Twin Agent Sweep](open-weight-integrity-twin-agent-sweep/paper.md) | `enoch-paper-0033` | This is a strong ‘why this matters’ artifact: it looks for evaluator-surface tampering and public-vs-trusted score gaps in local open-weight models. | Limited model family/scale coverage and deliberately bounded workspace tasks. |
+| [Router-Distilled Triton MLP Full-Model Integration](router-distilled-triton-mlp-full-model-integration/paper.md) | `enoch-paper-0024` | A concrete kernel-and-model integration artifact: not just an idea about sparse routing, but a routed MLP wired into a decoder-layer prefill path. | Single GB10 hardware configuration and prefill-focused tests; decode/generalization unproven. |
+| [Resource-Bounded Agent Kernel](resource-bounded-agent-kernel/paper.md) | `enoch-paper-0040` | This directly reinforces the system thesis: autonomous agents need OS-style resource governance, not just prompts and logs. | Harness validation, not production kernel certification. |
+| [Adversarial Channel Router](adversarial-channel-router/paper.md) | `enoch-paper-0044` | A highly sellable agent-safety direction: typed, authenticated channel envelopes to stop adversarial payloads from leaking across planner/tool/output channels. | Bounded local harnesses; needs broader integration with live multi-agent runtimes. |
+| [Agent Identity Rotation](agent-identity-rotation/paper.md) | `enoch-paper-0042` | This is a crisp agent-security concept: planner, executor, and committer roles sign action envelopes so authority is explicit and replay-resistant. | Synthetic adversarial corpus within a deterministic local harness; live multi-agent integration remains untested. |
+| [Value-per-Joule Broker Online Canary](value-per-joule-broker-online-canary-on-gb10-endpoints/paper.md) | `enoch-paper-0012` | This is easy to explain and relevant to anyone running local AI: route by successful-output value per joule, not just model size or confidence. | Small models, single host, short-duration canary. |
+| [Memory Pressure Admission Gate](memory-pressure-admission-gate-live-serving-validation/paper.md) | `enoch-paper-0115` | A practical serving-control result that matches the Enoch worldview: protect the lane before requests create pathological pressure. | Single stack, one quantized model, 16-request deterministic workload; peak RSS increased slightly. |
+| [Cache Churn Alarm vLLM Adapter Benchmark](cache-churn-alarm-vllm-adapter-benchmark/paper.md) | `enoch-paper-0120` | This is a nuanced artifact: it does not oversell latency, but it finds a concrete memory-pressure control signal for suppressing optional speculative branches. | Single model/configuration and isolated A/B runs; p95 latency did not improve. |
+
+## Full artifact index
+
 | Title | Public ID | Evidence bundle present | Claim ledger file present | Claim count | Strict audit pass | Missing result refs |
 |---|---|---:|---:|---:|---:|---:|
 | [Acceptance-Length CUDA Graph Bank](acceptance-length-cuda-graph-bank/paper.md) | `enoch-paper-0367` | yes | yes | 0 | false | 0 |

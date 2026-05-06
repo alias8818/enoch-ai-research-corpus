@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Short-Train Long-Eval Prompt-Robust Tuning produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/phi_prompt_robust_decoding_recommendation.md",
+        "results/system_snapshot_record_candidate_full.txt",
+        "results/time_phi_prompt_sweep_record_candidate_full.txt",
+        "results/phi_prompt_sweep_record_candidate_full_stdout.json",
+        "results/phi_prompt_sweep_record_candidate_full_metrics.json",
+        "results/llama_server_phi_prompt_record_candidate_full.log",
+        "results/system_snapshot_abstention_pilot.txt",
+        "results/phi_abstention_pilot_summary.md"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Adopt copy_record_candidate_dynamic_grammar_temp0 as the recommended Phi-4-mini prompt-robust decoding setting; optionally polish the last compression errors with a same-mechanism topic-candidate grammar in a future maintenance pass.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Full curated-long and uncurated-control scale-up held at 99.5% accuracy on both splits, far above the branch kill threshold and parent baseline."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

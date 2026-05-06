@@ -1,0 +1,12 @@
+{
+  "ai_generated": true,
+  "generated_at": "2026-04-18 10:10:11.065000+00:00",
+  "generated_by": "Enoch Agentic Research Pipeline",
+  "human_authorship_claimed": false,
+  "public_id": "enoch-paper-0391",
+  "released_by_role": "system operator and corpus maintainer",
+  "review_status": "AI-generated research artifact",
+  "source_record_fingerprint": "fc452b9b1942f135",
+  "source_system": "Enoch control plane export",
+  "title": "Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring"
+}

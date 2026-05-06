@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Answer-Shape Prompt Planner produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/real_rag_benchmark_llm_qwen15b.md",
+        "results/real_rag_benchmark_llm_qwen15b.json",
+        "results/answer_quality_benchmark.md",
+        "results/answer_quality_benchmark.json",
+        "results/offline_benchmark.json",
+        "results/real_rag_benchmark_llm_qwen05b.md",
+        "results/real_rag_benchmark_llm_qwen05b.json",
+        "results/real_rag_benchmark.md"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this validation; treat format-control and larger-model scaling as a separate follow-on study rather than continuing the same project.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The stronger Qwen2.5-1.5B live RAG benchmark showed a 36.31-point answer-quality gain at the same budget while using 6.80% fewer prompt tokens, satisfying the success criterion with live-model evidence."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

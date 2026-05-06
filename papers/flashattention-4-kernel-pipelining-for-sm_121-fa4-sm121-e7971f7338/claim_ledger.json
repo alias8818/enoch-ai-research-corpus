@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "FlashAttention-4 Kernel Pipelining for sm_121 (FA4-sm121) produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/sm121_hd128_split_retune_summary.md",
+        "results/sm121_hd128_long_context_comparison_summary.md",
+        "results/sm121_slice64_parallelsoftmax_query_sweep_summary.md",
+        "results/sm121_q16_slice64_split_partial_threads_summary.md",
+        "results/sm121_parallel_split_softmax_summary.md",
+        "results/sm121_q16_slice64_voverlap_summary.md",
+        "results/sm121_q16_slice_sweep_summary.md",
+        "results/sm121_split_group_q2_crossover_recheck_summary.md"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Branch a follow-on project to generalize the validated head_dim=128 tile64/slice32 split-prefetch kernel across more query counts and move toward FA4-style tensor-core integration.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The project's success criterion is now exceeded with durable GB10 evidence at both head_dim=64 and head_dim=128, including a 4.483x win over patched FA3 at seq_len=131072."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

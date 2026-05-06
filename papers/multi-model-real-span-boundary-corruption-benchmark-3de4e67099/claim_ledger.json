@@ -1,0 +1,42 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Multi-Model Real-Span Boundary Corruption Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/multi_model_summary.md",
+        "results/multi_model_real_span_eval.json",
+        "results/multi_model_real_span_eval_v2.json",
+        "results/multi_model_real_span_smoke_v2.json",
+        "results/model_acquisition_20260419.log",
+        "results/multi_model_real_span_smoke.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this branch as a positive multi-model MVP; only queue a separate larger-document/RAG-server benchmark if new budget is explicitly allocated.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The real-span boundary corruption signal now reproduces across four competent QA readers on the same 80-example pilot with large boundary-stitch recovery and passing regression tests."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

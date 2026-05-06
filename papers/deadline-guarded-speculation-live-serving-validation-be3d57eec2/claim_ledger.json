@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Deadline-Guarded Speculation Live Serving Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/real_model_main/transformers_server_metrics_final.json",
+        "results/real_model_main/live_benchmark_report.md",
+        "results/real_model_main/live_summary.csv",
+        "results/real_model_main/live_requests.csv",
+        "results/real_model_main/live_benchmark_results.json",
+        "results/real_model_calib_cap64/live_benchmark_report.md",
+        "results/real_model_calib_cap64/live_summary.csv",
+        "results/real_model_calib_cap64/live_requests.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported; if more systems depth is desired later, run a separate vLLM/SGLang batching-focused benchmark using the same harness and acceptance criteria.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: A real cached SmolLM2 Transformers OpenAI-compatible endpoint passed the predeclared deadline_guard acceptance criteria with 39.185% p95 improvement, +0.833 pp miss-rate delta, zero success loss, and no lingering helper server."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

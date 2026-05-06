@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Residue-Head Teacher Distillation for LBRC produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/residue_teacher_branch_summary.json",
+        "artifacts/residue_constrained_decoder_smol_l140_records.jsonl",
+        "artifacts/residue_constrained_decoder_smol_l140_metrics.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140_train_metrics.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer_config.json",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/chat_template.jinja",
+        "artifacts/smol_residue_teacher_digitlogit_1k_l140/model.safetensors"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Productize the residue-head constrained decoder as a hard digit mask/parser path, and do not spend on more same-budget unconstrained distillation unless a held-out digit gate first beats ln(7).",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The branch completed a concrete experiment: direct digit-logit distillation improved loss but failed calibration, while the allowed constrained-decoding mechanism passed the bounded LBRC long-context gate at 1.0 accuracy."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

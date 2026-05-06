@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Adapter-Projected GaLore 192-Step Decoupled-Refresh MMLU Eval produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/qwen_192step_decoupled_mmlu256_summary.json",
+        "artifacts/qwen_192step_decoupled_mmlu256_eval_metrics.json",
+        "artifacts/qwen_192step_norefresh_gap16_train_metrics.json",
+        "artifacts/qwen_192step_decoupled_checkpoints/lora_galore_trainable.pt",
+        "artifacts/qwen_192step_lora_train_metrics.json",
+        "artifacts/qwen_192step_decoupled_checkpoints/lora_trainable.pt",
+        "artifacts/qwen_adapter_multiseed_192_profile.run.log",
+        "artifacts/qwen_adapter_multiseed_192_profile.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch; if more budget is allocated, repeat the same 192-step MMLU/cloze transfer eval across seeds 23 and 31 rather than spawning another generic successor.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The concrete seed-17 downstream eval is complete: norefresh_gap16 adapter-projected GaLore beat matched LoRA by 1/256 MMLU/cloze item with better NLL/margins and 0.251x optimizer-state bytes, but both CPT checkpoints underperformed the base model."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

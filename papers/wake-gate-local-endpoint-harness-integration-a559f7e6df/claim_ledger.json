@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Wake-Gate Local Endpoint Harness Integration produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/wake_gate_integration/llama_cpp_queue/summary.json",
+        "artifacts/wake_gate_integration/llama_cpp_queue/dispatch_request.json",
+        "artifacts/wake_gate_integration/llama_cpp_queue/prepare_project_request.json",
+        "artifacts/wake_gate_integration/latest_builder_stdout.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/summary.json",
+        "artifacts/wake_gate_integration/20260413T090207Z/README.md",
+        "artifacts/wake_gate_integration/20260413T090207Z/autonomous_project_prompt.md",
+        "artifacts/wake_gate_integration/20260413T090207Z/dispatch_request.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Use artifacts/wake_gate_integration/llama_cpp_queue/prepare_project_request.json and dispatch_request.json to enqueue the concrete autonomous llama.cpp validation run, or use the vLLM artifact if a heavier HF-server validation is desired.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The integration branch met its success criterion by materializing wake-gate queue payloads and validating the copied harness against a real cached llama.cpp model backend with clean service shutdown."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

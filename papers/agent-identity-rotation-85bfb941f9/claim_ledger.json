@@ -1,0 +1,43 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Agent Identity Rotation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/identity_rotation_eval.json",
+        "artifacts/identity_rotation_audit.jsonl",
+        "artifacts/local_workflow_workspace/recovery.txt",
+        "artifacts/local_workflow_workspace/src/app.py",
+        "artifacts/local_workflow_workspace/delegated/out.txt",
+        "artifacts/local_workflow_workspace/link_to_outside.txt",
+        "artifacts/outside_symlink_target.txt"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize the bounded local harness result; run a separate follow-on only for a concrete real-runtime integration target such as a Codex/OMX tool gateway or live multi-agent trace benchmark.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The expanded smoke test blocked 12/12 local adversarial operations with zero false denies, verified a 22-entry persisted audit log, and recovered after a failed git operation."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

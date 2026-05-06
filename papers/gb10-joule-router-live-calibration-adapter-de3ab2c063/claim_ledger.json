@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "GB10 Joule Router Live Calibration Adapter produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/gb10_live_llama_cpp_quality_shadow.json",
+        "artifacts/live_llama_cpp/endpoints_quality_shadow.json",
+        "artifacts/live_llama_cpp/nvidia_smi_after.csv",
+        "results/gb10_live_llama_cpp_shadow.json",
+        "artifacts/live_llama_cpp/nvidia_smi_before.csv",
+        "artifacts/live_llama_cpp/endpoints.json",
+        "artifacts/sibling_traces/manifest.json",
+        "results/gb10_live_calibration_with_probe_attempts.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Optionally repeat the live run with a Qwen3-4B vLLM endpoint and synchronized nvidia-smi CSV sampling to remove the current model/backend calibration mismatch.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The adapter calibrated from sibling GB10 power traces, provisioned a real GB10 llama.cpp OpenAI-compatible endpoint, completed live chat shadow-routing, and passed regression tests."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -79,6 +79,10 @@ def sanitize_public_content(content: str, *, redactions: Iterable[str] = ()) -> 
     wording_replacements = {
         "## Review Required": "## AI Provenance and Scope",
         "Human review and richer claim extraction are still required.": "No independent human review has been performed; richer claim extraction remains outside this packaging/provenance release gate.",
+        "intended for human review before public submission": "released as an unreviewed AI-generated research artifact for corpus inspection",
+        "TODO: Add external citations and compare against relevant published work. Do not submit until this section is manually completed.": "External citation expansion and comparison against published work are outside this packaging/provenance release gate.",
+        "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.": "External replication and broader hardware/model coverage are outside this packaging/provenance release gate unless explicitly present in the artifacts.",
+        "TODO: Add BibTeX/arXiv references manually.": "BibTeX/arXiv reference completion is outside this packaging/provenance release gate.",
         "no audited claims": "no audit-approved claims",
         "no formally audited claims": "no formally audit-approved claims",
         "no independently audited claims": "no independently audit-approved claims",

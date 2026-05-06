@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Contention-Aware Single-Medium Backend Broker Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/cap_grid_summary.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678_stdout.txt",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_small_19080.log",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/benchmark_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_medium_19081.log",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/contention_medium_control_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/shape_broker_results.json",
+        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/workload.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported and promote single-medium backend isolation with cap=12 as the preferred c12-pressure broker mechanism, while noting c8 throughput is near-flat/mixed.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested two-seed c8/c12 sweep and c12 cap grid completed with durable artifacts and showed a robust c12 p95/throughput win for single-medium isolation; no same-project benchmark is needed before finalizing."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

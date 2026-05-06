@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "CPU-Offload Stress Harness Real-Server Scaleup produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/scaleup_summary.md",
+        "results/scaleup_summary.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/recovery_failure.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/resource_after.txt",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/replay_stdout.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_status.json",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_report.md",
+        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_comparison.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Stop this scale-up branch; use the artifacts to decide separately whether GB10 SGLang kernel compatibility or a larger multi-model statistical validation deserves its own concrete project.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The queued n>=48 tokenizer-aware larger-GGUF replay and focused SGLang GB10 recovery attempt are complete, with durable artifacts and no same-mechanism next step needed in this branch."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

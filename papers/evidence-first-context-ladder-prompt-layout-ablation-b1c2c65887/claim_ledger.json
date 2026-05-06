@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Evidence-First Context Ladder Prompt Layout Ablation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/ablation_analysis.md",
+        "results/post_llm_calibration.txt",
+        "results/ablation_llm/repo_qa_llm_summary.md",
+        "results/ablation_llm/repo_qa_llm_results.json",
+        "results/ablation_llm_pilot/repo_qa_llm_summary.md",
+        "results/ablation_llm_pilot/repo_qa_llm_results.json",
+        "results/pre_llm_calibration.txt",
+        "results/ablation_deterministic/repo_qa_summary.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Adopt the evidence-first context-ladder layout as the next default prompt layout and validate it on a second repo or larger seed sweep without creating another generic successor branch.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The focused layout ablation produced durable code, tests, deterministic controls, and local LLM evidence that fine-evidence-first ordering beats summary-leading ladder prompts under the same selected context."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260420035345",
+  "updated_at": "2026-04-20T09:41:06.616255+00:00",
+  "written": [
+    {
+      "bytes": 5581,
+      "path": "papers/source-record-redacted-20260420035345/paper.md"
+    },
+    {
+      "bytes": 3308,
+      "path": "papers/source-record-redacted-20260420035345/paper.tex"
+    },
+    {
+      "bytes": 13360,
+      "path": "papers/source-record-redacted-20260420035345/evidence_bundle.json"
+    },
+    {
+      "bytes": 2296,
+      "path": "papers/source-record-redacted-20260420035345/claim_ledger.json"
+    },
+    {
+      "bytes": 318,
+      "path": "papers/source-record-redacted-20260420035345/README.md"
+    }
+  ]
+}

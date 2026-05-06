@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Precision-Filtered Evidence Anchors for Distractor-Robust QA produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/offline_precision_filtered_run.log",
+        "results/offline_precision_filtered/summary.md",
+        "results/offline_precision_filtered/benchmark_summary.json",
+        "results/offline_precision_filtered/benchmark_rows.jsonl",
+        "results/generative_qwen_24_precision_filtered_run.log",
+        "results/generative_qwen_24_precision_filtered/generative_summary.md",
+        "results/generative_qwen_24_precision_filtered/generative_summary_by_paraphrase.json",
+        "results/generative_qwen_24_precision_filtered/generative_summary_by_budget.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported on the synthetic distractor benchmark; next validation, if desired, should test precision-filtered anchors on a less templated external QA corpus rather than branching this routing artifact again.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The precision-filtered selector beat vanilla top-k at all tested budgets and beat vanilla on the previously failing code_direct paraphrase while using far fewer prompt tokens."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ai_generated": true,
+  "generated_at": "2026-04-18 10:10:21.296000+00:00",
+  "generated_by": "Enoch Agentic Research Pipeline",
+  "human_authorship_claimed": false,
+  "public_id": "enoch-paper-0442",
+  "released_by_role": "system operator and corpus maintainer",
+  "review_status": "AI-generated research artifact",
+  "source_record_fingerprint": "d6d6231abe2f9122",
+  "source_system": "Enoch control plane export",
+  "title": "Cache Churn Alarm vLLM Adapter Benchmark"
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Semantic Overlap Tax Generative LLM Public RAG Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/final_branch_evidence_summary.json",
+        "artifacts/current_branch_smoke/public_qa_rag_summary.json",
+        "artifacts/current_branch_smoke-summary.stdout.json",
+        "artifacts/current_branch_smoke/public_qa_rag_paired_deltas.jsonl",
+        "artifacts/current_branch_smoke/public_qa_rag_rows.jsonl",
+        "artifacts/public_qa_rag_200/public_qa_rag_summary.json",
+        "artifacts/public_qa_rag_200/public_qa_rag_paired_deltas.jsonl",
+        "artifacts/public_qa_rag_200/public_qa_rag_rows.jsonl"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this routing branch as the positive public SQuAD RAG validation; only start a separate generative-LLM public RAG benchmark if the controller explicitly wants stronger follow-on evidence.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The branch now contains the parent validated SQuAD harness/artifacts plus current-branch tests and smoke verification, and the primary 200-case public SQuAD result beats vanilla without triggering the kill condition."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Outcome-Calibrated Real-Trace Safety-Drift Monitor produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/scaffold_teacher_outcome_stdout.json",
+        "artifacts/scaffold_teacher_balanced_test_trace_ids.csv",
+        "artifacts/scaffold_teacher_outcome_events.csv",
+        "artifacts/scaffold_teacher_outcome_manifest.csv",
+        "artifacts/scaffold_teacher_outcome_metrics.json",
+        "artifacts/outcome_calibrated_stdout.json",
+        "artifacts/balanced_test_trace_ids.csv",
+        "artifacts/outcome_calibrated_event_sample.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive/promote the outcome-labeled real-trace benchmark result and only revisit with a larger deployment-scale logged corpus for external validity.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The same-project observed-scaffold plus teacher-trace benchmark now passes the recall/lead/FPR gate and demonstrates the intended evidence-need versus wrong-direct-answer separation."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

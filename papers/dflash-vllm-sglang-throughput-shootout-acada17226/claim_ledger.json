@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "DFlash vLLM/SGLang Throughput Shootout produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/vllm_qwen3_4b_quality_comparison.json",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.gpu.csv",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.samples.csv",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.summary.json",
+        "results/vllm_dflash_qwen3_4b_chat_quality_c4_mt256_n32.items.json",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.gpu.csv",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.samples.csv",
+        "results/vllm_dflash_qwen3_4b_mbpp_quality_c4_mt256_n24.summary.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize the research record as vLLM-positive; revisit SGLang only after an SM121-compatible SGLang/Triton build is available.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Existing durable vLLM quality runs show DFlash beating the +15% throughput threshold at equal measured quality on four prompt sets with zero request failures, so further same-mechanism work would be churn."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "KV Eviction Gold Labels produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/neural_replayed_ablation_spot_checks.md",
+        "artifacts/neural_replayed_ablation_label_preview.json",
+        "artifacts/neural_replayed_ablation_summary.json",
+        "artifacts/neural_replayed_ablation_eval_rows.csv",
+        "artifacts/replayed_ablation_spot_checks.md",
+        "artifacts/replayed_ablation_label_preview.json",
+        "artifacts/replayed_ablation_summary.json",
+        "artifacts/replayed_ablation_eval_rows.csv"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this project as a positive 100-example neural replay validation; only open a separate 1k-5k curation pilot if larger real-task evidence is required.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The queued neural replay experiment completed and preserved ranking separation with +62.67 points uplift versus query-overlap on full-context-correct examples."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

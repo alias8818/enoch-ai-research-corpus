@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Context Overflow Real LLM Reader Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/qwen25_3b_full_1000_run.log",
+        "results/qwen25_3b_full_1000_summary.json",
+        "results/qwen25_3b_full_1000_summary_predictions.jsonl",
+        "results/qwen25_3b_smoke_20_summary.json",
+        "results/qwen25_3b_pilot_100_summary.json",
+        "results/qwen25_0p5b_smoke_20_summary.json",
+        "results/qwen25_0p5b_pilot_100_summary.json",
+        "results/qwen25_3b_pilot_100_summary_predictions.jsonl"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this branch as a positive full-dataset Qwen2.5-3B real-reader validation; optionally reuse the runner for a separate Phi-mini replication only if cross-family evidence is required.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Qwen2.5-3B-Instruct completed the full 1,000-example natural context-overflow set at 999/1000 exact accuracy with complete parseability and telemetry, beating the relevant retriever/truncation baselines."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Adaptive Evidence Packer RAG Integration produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/README.md",
+        "results/rag_integration_safe_budget_sweep.json",
+        "results/rag_integration_budget220_safe.log",
+        "results/rag_integration_budget220_safe/summary.json",
+        "results/rag_integration_budget220_safe/benchmark_rows.csv",
+        "results/rag_integration_budget160_safe.log",
+        "results/rag_integration_budget160_safe/summary.json",
+        "results/rag_integration_budget160_safe/benchmark_rows.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this successor branch; only open a future project for a named generative citation benchmark or dense-retriever production stack, not another generic successor.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The adaptive evidence packer is integrated into an end-to-end SQuAD RAG inference harness and beats raw budgeted RAG on answer F1, citation/source hit, tokens, and latency across 120/160/220-token budgets."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

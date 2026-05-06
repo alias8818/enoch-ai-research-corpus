@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Intercept-Aware KV Checkpointing for Tool Calls - Successor Branch produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/README.md",
+        "results/checkpoint_gate_timing_margins_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_timing_margins_llama_state_phi4mini_uncapped.json",
+        "results/checkpoint_gate_matrix_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_eval_llama_state_phi4mini_uncapped.csv",
+        "results/checkpoint_gate_eval_llama_state_phi4mini_uncapped.json",
+        "results/timing_probe_llama_state_phi4mini_uncapped.json",
+        "results/checkpoint_gate_timing_margins_surrogate.csv"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this project positively; the direct libllama state probe validates the admission gate on the full matrix.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested KV-filesystem checkpoint replacement was completed with uncapped llama_state_get_data/llama_state_set_data timings and all evaluator and margin checks passed."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

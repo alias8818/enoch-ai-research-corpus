@@ -1,0 +1,42 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Pair-Adaptive Draft Waste Calibration Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/pair_adaptive_calibration/run_stdout.json",
+        "results/pair_adaptive_calibration/benchmark_report.md",
+        "results/pair_adaptive_calibration/summary_by_method.csv",
+        "results/pair_adaptive_calibration/summary.json",
+        "results/pair_adaptive_calibration/sample_estimates.jsonl",
+        "results/pair_adaptive_calibration/split_metrics.jsonl"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Use the pair-adaptive calibration benchmark artifacts as the supported result; any future work should validate the same k=4 per-reason protocol on additional draft/target pairs rather than branch again from this routing artifact.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The implemented benchmark passed its branch-specific kill condition with k=4 pair-adaptive calibration improving mean Kendall tau by +0.927, top-3 overlap by +1.565, and MAE by +0.098 versus the best non-adaptive baselines."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "GB10 Local Server Utility Swap Broker Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/logs/llama_server_pressure_np4_ctx8192.log",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/slots_after_multiseed.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/llama_metrics_after_multiseed.prom",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.md",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.md",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.json",
+        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/requests.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this validation branch as latency-supported and carry forward the broker only with the caveat that throughput and cache-churn gains were not established.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: A clean three-seed llama.cpp live-server pressure run cleared the 10% session-p95 latency threshold with zero request errors, while additional same-branch reruns would mainly refine confidence rather than change the mechanism decision."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

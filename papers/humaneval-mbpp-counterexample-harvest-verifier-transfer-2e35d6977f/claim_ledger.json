@@ -1,0 +1,40 @@
+{
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "HumanEval MBPP Counterexample-Harvest Verifier Transfer produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/humaneval_mbpp_transfer_dataset.csv",
+        "artifacts/humaneval_mbpp_transfer_results.json",
+        "artifacts/benchmark_cache/mbpp.jsonl",
+        "artifacts/benchmark_cache/HumanEval.jsonl.gz"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this branch as positive transfer evidence; if more budget is allocated, replicate the same harness on the full MBPP set and/or with LLM-sampled mutants for stronger external validity.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
+  ],
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: A real HumanEval/MBPP subset run with fresh semantic AST/code mutants produced 68 held-out hard negatives and counterexample-harvest training cut text-verifier FAR@0.5 by about 59-61% versus both random baselines, clearing the branch kill condition."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "count": 496,
+  "count": 497,
   "highlight_count": 13,
   "highlights": [
     {
@@ -1975,6 +1975,21 @@
       "source_record_fingerprint": "e92ceadb3f8c43ce",
       "strict_audit_pass": false,
       "title": "Contrastive Chunk Ordering Loss"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/controlled-supabase-lifecycle-drill/claim_ledger.json",
+      "evidence_bundle_path": "papers/controlled-supabase-lifecycle-drill/evidence_bundle.json",
+      "generated_at": "2026-05-07 09:02:19.224524+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/controlled-supabase-lifecycle-drill/paper.md",
+      "public_id": "enoch-paper-0497",
+      "slug": "controlled-supabase-lifecycle-drill",
+      "source_record_fingerprint": "63149594f5d97d67",
+      "strict_audit_pass": false,
+      "title": "Controlled Supabase Lifecycle Drill"
     },
     {
       "ai_generated": true,

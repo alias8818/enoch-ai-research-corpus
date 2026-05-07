@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 496
+Count: 497
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 496/496 packaging/provenance lint pass and 3/496 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 497/497 packaging/provenance lint pass and 3/497 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -151,6 +151,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Context Skeleton Distillation](context-skeleton-distillation/paper.md) | `enoch-paper-0287` | yes | yes | 0 | false | 0 |
 | [Continuous-Phase Memory Bench](continuous-phase-memory-bench/paper.md) | `enoch-paper-0264` | yes | yes | 0 | false | 0 |
 | [Contrastive Chunk Ordering Loss](contrastive-chunk-ordering-loss/paper.md) | `enoch-paper-0298` | yes | yes | 0 | false | 0 |
+| [Controlled Supabase Lifecycle Drill](controlled-supabase-lifecycle-drill/paper.md) | `enoch-paper-0497` | yes | yes | 0 | false | 0 |
 | [Controller-Integrated Uncertainty Heatmap Ranker](controller-integrated-uncertainty-heatmap-ranker/paper.md) | `enoch-paper-0240` | yes | yes | 0 | false | 0 |
 | [Core-Only Distillation](core-only-distillation/paper.md) | `enoch-paper-0175` | yes | yes | 0 | false | 0 |
 | [Council-Gated Memory Promotion](council-gated-memory-promotion/paper.md) | `enoch-paper-0193` | yes | yes | 0 | false | 0 |

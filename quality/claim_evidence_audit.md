@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 496
+Strict claim/evidence passed: 3 / 497
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 373 / 496
+- Empty claim ledgers: 374 / 497
 - Evidence `result_files` references: 2872
 - Publicly present result-file references: 22
 - Missing result-file references: 2830
@@ -157,6 +157,7 @@ Status: `blocked_audit_gaps`
 | `context-skeleton-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `continuous-phase-memory-bench` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `contrastive-chunk-ordering-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `controlled-supabase-lifecycle-drill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `controller-integrated-uncertainty-heatmap-ranker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `core-only-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `council-gated-memory-promotion` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

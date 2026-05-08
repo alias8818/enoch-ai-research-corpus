@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Salience-Backed Candidate Top-1 KV Prefill Packing Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/server_prefill_generation/summary.md",
+        "results/server_prefill_generation/metrics.json",
+        "results/server_prefill_generation/server_salience_candidate_top1.log",
+        "results/server_prefill_generation/server_none.log",
+        "results/server_prefill_generation_smoke/summary.md",
+        "results/server_prefill_generation_smoke/metrics.json",
+        "results/server_prefill_generation_smoke/server_salience_candidate_top1.log",
+        "results/server_prefill_generation_smoke/server_none.log"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported and use the artifacts to plan a separate production vLLM/SGLang prefix-cache integration only if a deployable serving-stack target is required.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "a7941206d8b74d5b9788ebf67a857cfe"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The branch completed its deterministic and actual Qwen2.5-3B server-side generation benchmarks, passed the quality and token-reduction gates, and has no same-project blocker requiring more budget."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

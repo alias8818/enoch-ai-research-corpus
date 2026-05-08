@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "OpenAI-Compatible Deployment of Syntax-Preserving RAG Adapter produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/http_adapter_rag_syntax-rag-qwen-http_batch4.json",
+        "artifacts/http_adapter_rag_syntax-rag-qwen-http_batch4.csv",
+        "artifacts/http_adapter_rag_syntax-rag-http-smoke_batch4.json",
+        "artifacts/http_adapter_rag_syntax-rag-http-smoke_batch4.csv",
+        "artifacts/serving_adapter_smoke.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new56_batch4.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new48_batch4.json",
+        "artifacts/rag_integration_Qwen__Qwen2.5-3B-Instruct_new64_batch8.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this deployment branch; any future work should optimize true batched model-server scheduling rather than create another generic successor.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "b31fb37b2d644bdab43115ca83bcadab"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The adapter was deployed behind a verified OpenAI-compatible HTTP endpoint backed by local Qwen/Qwen2.5-3B-Instruct, and the batch-4 HTTP benchmark improved answer F1 by 43.33 points with only 4.73% p95 latency overhead."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

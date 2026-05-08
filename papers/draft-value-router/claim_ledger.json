@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Draft-Value Router produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/real_trace_router_observed_scaffold/draft_value_router_policy_table.csv",
+        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_test.jsonl",
+        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_train.jsonl",
+        "results/real_trace_router_observed_scaffold/draft_value_router_summary.json",
+        "results/observed_scaffold/scaffold_summary.json",
+        "artifacts/acquisition_manifest.json",
+        "results/synthetic_atlas_router/draft_value_router_policy_table.csv",
+        "results/synthetic_atlas_router/draft_value_router_predictions_test.jsonl"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this MVP as supported and use the observed-scaffold dataset to design a separate cross-model/domain-transfer validation if more evidence is needed.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "68940e1ed4954cdf80950a92dbcd0674"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The required actual scaffold-only prompts and held-out router rerun landed, meeting both stated MVP success criteria on real traces."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

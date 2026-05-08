@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Real-Corpus Row-ID Citation QA Integration Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/qwen_schema_llama_stdout.log",
+        "results/qwen_schema_llama_server.log",
+        "results/qwen_schema_real_corpus_benchmark_metrics.json",
+        "results/real_corpus_qwen_schema_time.txt",
+        "results/real_corpus_qwen_schema_stdout.json",
+        "results/real_corpus_rowid_citation_summary_qwen_schema.md",
+        "results/real_corpus_rowid_citation_results_qwen_schema.json",
+        "results/qwen_schema_real_corpus_server_monitor.jsonl"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch positive and use the schema-constrained Qwen/Phi evidence as the baseline for any future larger-corpus replication.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "262f21f85da747278b59d10d91454ace"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The same WikiSQL row-id benchmark now shows table-aware answer+citation gains over source-order across two stable instruction-reader configurations with durable latency and utilization artifacts."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

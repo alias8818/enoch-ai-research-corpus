@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Token Rent for Examples produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/benchmark_summary.json",
+        "results/benchmark_rows.csv",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_time.txt",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_stdout.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_summary.json",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_rows.csv",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_time.txt",
+        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_stdout.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this project as a positive result: use ambiguity-aware sparse reserve plus underspecified top-k backoff as the current token-rent mechanism.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "28f8ed9221174dd9a7d8ac21db7c4230"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The final 72-pair Qwen2.5-7B answer-field suite met all gates with +0.0035 answer-F1, +0.1667 citation accuracy, and 15.42% packer-token savings while the helper server was stopped cleanly."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

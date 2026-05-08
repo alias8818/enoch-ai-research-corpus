@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Token-Type Importance Labels produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/real_retrieval/system_summary.csv",
+        "results/real_retrieval/latest_run_stdout.json",
+        "results/real_retrieval/metrics.json",
+        "results/real_retrieval/spot_check_75.jsonl",
+        "results/real_retrieval/predictions.jsonl",
+        "results/system_summary.csv",
+        "results/latest_run_stdout.json",
+        "results/metrics.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this MVP as positive evidence for token-type labels; only start a new project if the controller wants neural pruning/quantization validation beyond this retrieval-system test.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "d75f84d68d2a47ddbd9b2aa5de3c6a63"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Real retrieval-system evaluation exposed token-type failure clusters, demonstrated a targeted label-aware uplift above the success threshold, and the 75-label audit found no sampled weak-label artifacts."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

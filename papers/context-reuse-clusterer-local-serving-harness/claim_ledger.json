@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Context Reuse Clusterer Local Serving Harness produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/local_serving_vllm_qwen05b_energy/digest.json",
+        "results/local_serving_vllm_qwen05b_energy/server_log_path.txt",
+        "results/local_serving_vllm_qwen05b_energy/summary.csv",
+        "results/local_serving_vllm_qwen05b_energy/requests.csv",
+        "results/local_serving_vllm_qwen05b_energy/summary.json",
+        "results/local_serving_smoke_after_energy_fix/summary.csv",
+        "results/local_serving_smoke_after_energy_fix/requests.csv",
+        "results/local_serving_smoke_after_energy_fix/summary.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Stop this branch as positive and reuse the harness artifacts for any future larger-model or production-trace validation.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "4f813e17dd964907a0f76b8c3f559340"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: A real vLLM Qwen2.5-0.5B run with prefix caching showed 9.05-15.74% p95 latency reductions, up to 24.65% joules-per-correct reduction, large prefix-cache/KV improvements, and no answer-quality loss versus fixed replay."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

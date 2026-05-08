@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Batched Reader QETS Mixed-Domain Scaling Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/time_mixed_domain_batched_320_budget065_b1.txt",
+        "results/mixed_domain_batched_320_budget065_b1.json",
+        "results/time_mixed_domain_batched_320_budget065_b16_v2.txt",
+        "results/gpu_monitor_mixed_batched_320_budget065_b16_v2.csv",
+        "results/mixed_domain_batched_320_budget065_b16_v2.json",
+        "results/time_hotpot_batched_200_budget065_b16.txt",
+        "results/hotpot_batched_200_budget065_b16.json",
+        "results/time_mixed_domain_batched_320_budget065_b16.txt"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported; only open a new project for a materially distinct generative-reader or production-serving validation.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "432fbe276b6540f1abc2eb4a779c4392"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Batched mixed-domain HF-reader validation preserved QETS quality while saving 46.3% prompt tokens overall and improving QETS reader throughput from 37.0 to 59.0 packs/s at batch size 16."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

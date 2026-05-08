@@ -1,12 +1,43 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "DFlash GB10 Transformers Smoke produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/transformers_benchmark_short_medium/answer_equivalence.json",
+        "artifacts/transformers_benchmark_short_medium/summary.json",
+        "artifacts/transformers_benchmark_short_medium/records.jsonl",
+        "artifacts/transformers_smoke_acceptance/summary.json",
+        "artifacts/transformers_smoke_acceptance/records.jsonl",
+        "artifacts/transformers_smoke/summary.json",
+        "artifacts/transformers_smoke/records.jsonl"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this validation and, if more rigor is desired later, run a separate larger dataset-style benchmark with curated answer checkers rather than another routing branch.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "d8e9c750897b4325adda251f0148fd11"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The local GB10 Transformers path worked with public/cached artifacts, delivered 3.55x mean speedup over target greedy on 24 short/medium prompts, and had 0% deterministic final-answer equivalence failures."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

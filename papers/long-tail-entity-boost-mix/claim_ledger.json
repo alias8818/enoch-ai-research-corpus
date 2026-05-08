@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Long-Tail Entity Boost Mix produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/source_backed_real_model_report.md",
+        "artifacts/source_backed_real_model_eval_forced_stdout.json",
+        "artifacts/source_backed_real_model_eval_forced/summary.json",
+        "artifacts/source_backed_real_model_eval_forced/model_predictions.jsonl",
+        "artifacts/source_backed_real_model_eval_forced/model_metrics.csv",
+        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_3b.log",
+        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_0p5b.log",
+        "artifacts/source_backed_real_model_eval_forced/selected_examples.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this project and preserve the source-backed long-tail slice plus prompt-ablation metrics as a calibration/factuality benchmark artifact.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "99781bd356c9422e8642bc93f4c8642c"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The project met the success criterion by exposing a real-model long-tail calibration failure cluster, although the two-model ranking-change criterion remained unsupported."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

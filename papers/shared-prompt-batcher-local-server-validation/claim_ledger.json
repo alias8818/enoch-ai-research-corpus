@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Shared-Prompt Batcher Local-Server Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/local_server_qwen05_20260419/llama_server.log",
+        "results/local_server_qwen05_20260419/summary.csv",
+        "results/local_server_qwen05_20260419/validation_results.json",
+        "results/local_server_20260419/summary.csv",
+        "results/local_server_20260419/llama_server.log",
+        "results/local_server_20260419/validation_results.json",
+        "results/local_server_calibration_20260419/llama_server.log",
+        "results/local_server_calibration_20260419/summary.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Integrate a guarded shared-prefix scheduler into a production server path with a no-wait cold-start guard and rerun a larger quality-scored workload.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "ad0e19066d2742d7bf5de50741dac322"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Real single-node llama.cpp validation on SmolLM2-135M and Qwen2.5-0.5B cleared the prefix-heavy/mixed p95 and throughput success bars while disabling shared waiting on low-sharing traffic."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

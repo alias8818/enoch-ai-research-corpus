@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Real-Model Negative-Exit Controller on Math and Code Search Traces produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/qwen25_3b_50x8_metrics.json",
+        "artifacts/qwen25_3b_50x8_stdout.txt",
+        "artifacts/qwen25_3b_50x8_traces.json",
+        "artifacts/qwen25_3b_main_stdout.txt",
+        "artifacts/qwen25_3b_main_metrics.json",
+        "artifacts/qwen25_3b_main_traces.json",
+        "artifacts/qwen25_3b_smoke_metrics.json",
+        "artifacts/qwen25_3b_smoke_stdout.txt"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as a positive real-model validation; if more rigor is required, replicate the same 50x8 protocol across another seed or model as a separate confirmation run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "a5731365c74441eb9a5ae75de1cba9d7"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested larger Qwen2.5 50-task x 8-candidate benchmark landed and showed a 0.4034s p95 latency improvement for negative-exit over positive-only at matched 95% accuracy, so the branch kill condition is not met."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

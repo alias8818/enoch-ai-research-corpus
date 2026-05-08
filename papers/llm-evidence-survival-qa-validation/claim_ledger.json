@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "LLM Evidence-Survival QA Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/llm_qa_pilot_600/analysis_summary.json",
+        "results/llm_qa_pilot_600/llama_server.log",
+        "results/llm_qa_pilot_600/resource_summary.json",
+        "results/llm_qa_pilot_600/calibration_summary.json",
+        "results/llm_qa_pilot_600/time_v.log",
+        "results/llm_qa_pilot_600/run_stdout.log",
+        "results/llm_qa_pilot_600/llm_qa_summary.json",
+        "results/llm_qa_pilot_600/llm_qa_rows.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Preserve this branch as a positive validation result; if more work is desired, run a separate targeted retrieval-intervention benchmark to improve high-coverage-but-wrong cells.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "6c37f4cba59247a892ffd9e362c0707f"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested 600-row multi-policy LLM endpoint pilot with calibration analysis supports evidence survival as a policy-level predictor and does not trigger the branch kill condition."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

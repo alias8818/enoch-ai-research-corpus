@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Evidence-Bound Proof Synthesizer for Tool Ledger produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/tool_ledger.jsonl",
+        "artifacts/benchmark_cases.json",
+        "artifacts/benchmark_report.json",
+        "artifacts/synthesis_tool_ledger.jsonl",
+        "artifacts/synthesized_proofs.jsonl",
+        "artifacts/synthesis_benchmark_report.json",
+        "artifacts/real_transcript_tool_ledger.jsonl",
+        "artifacts/real_transcript_synthesized_proofs.jsonl"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this successor as a supported automatic evidence-bound proof synthesizer baseline; only open a separate follow-on if chunked large-patch proof objects become a concrete target.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "929690cfd35a49d282871c9aaeb57de9"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Exact evidence-bound command witnesses lifted real mixed transcript checker/trace acceptance to 952/1000 while preserving 0 generated adversarial authorizations and all parent checker safeguards."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

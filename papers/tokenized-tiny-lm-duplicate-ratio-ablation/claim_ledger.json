@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Tokenized Tiny-LM Duplicate Ratio Ablation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/full_sequence_tiny_lm_duplicate_ablation/summary.json",
+        "results/full_sequence_tiny_lm_duplicate_ablation/run.log",
+        "results/full_sequence_tiny_lm_duplicate_ablation/per_run_metrics.csv",
+        "results/full_sequence_tiny_lm_duplicate_ablation_debug/summary.json",
+        "results/full_sequence_tiny_lm_duplicate_ablation_debug/per_run_metrics.csv",
+        "results/tokenized_tiny_lm_duplicate_ablation/summary.json",
+        "results/tokenized_tiny_lm_duplicate_ablation/per_run_metrics.csv",
+        "results/tokenized_tiny_lm_duplicate_ablation_smoke/summary.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch positive and propagate the full-sequence GRU duplicate-ratio evidence to the parent research record.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "4738051ca9f24fcfadd4390d029c22c4"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: A 139.2M-token full-sequence causal GRU sweep preserved public saturation, duplicate-heavy policy separation, and a large targeted-fix uplift, so the branch kill condition is not met."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

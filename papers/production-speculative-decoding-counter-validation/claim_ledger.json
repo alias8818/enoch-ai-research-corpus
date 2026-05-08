@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Production Speculative Decoding Counter Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/llama_server_scaled/llama_server_run_output.json",
+        "artifacts/llama_server_scaled/llama_server_reports.json",
+        "artifacts/llama_server_scaled/llama_server_summary.json",
+        "artifacts/llama_server_scaled/llama_server_trace_rows.csv",
+        "artifacts/llama_server_smoke/llama_server_run_output.json",
+        "artifacts/llama_server_smoke/llama_server_reports.json",
+        "artifacts/llama_server_smoke/llama_server_summary.json",
+        "artifacts/llama_server_smoke/llama_server_trace_rows.csv"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Promote the llama.cpp production-counter validation result into the research record; optional future work can compare vLLM after repairing its local extension ABI, but this branch itself is complete.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "dda27b6d89cc49768447f78f9988d4a0"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The 270-row llama.cpp server run reproduced the parent signal using production accepted/draft counters and batching telemetry: accuracy/latency selected draft_k2 while trace scoring selected draft_k1."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

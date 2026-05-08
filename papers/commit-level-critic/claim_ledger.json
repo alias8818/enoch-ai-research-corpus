@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Commit-Level Critic produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/latest_messy_pilot_results.json",
+        "artifacts/messy_pilot_20260423T053810Z/results.md",
+        "artifacts/messy_pilot_20260423T053810Z/results.json",
+        "artifacts/messy_pilot_20260423T053810Z/codex_logs/commit_strict-positive-quantities.jsonl",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/logs/tmux-hook-2026-04-23.jsonl",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/team-leader-nudge.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/tmux-hook-state.json",
+        "artifacts/messy_pilot_20260423T053810Z/commit_gated_repo/.omx/state/hud-state.json"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Stop this pilot with a mixed-positive artifact: reuse the harness only for a distinct future benchmark with weaker/budget-constrained models or real production-style tasks.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "aa8b19dddb42425c9aaf67ecea5cf094"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested harder actual codex_exec rerun is complete; it produced durable evidence and one gated repair but no free-form regression escape delta, so further same-mechanism difficulty churn is unlikely to be token-efficient."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

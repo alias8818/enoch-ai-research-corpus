@@ -1,12 +1,42 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Small-Model Persona Context Orderer Generation Validation produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/generation_summary.json",
+        "artifacts/generation_benchmark_hotpot_flan_t5_base_limit80.json",
+        "artifacts/generation_benchmark_squad_flan_t5_base_limit80.json",
+        "artifacts/generation_benchmark_hotpot_flan_t5_base_limit8.json",
+        "artifacts/generation_benchmark_flan_t5_base_limit8.json",
+        "artifacts/generation_smoke.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this branch as supported; optional follow-up is same-mechanism replication on a second small chat model and a budget sweep, not a new generic successor.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "21533d31f0c2487781d2593a26d39a8f"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Local flan-t5-base generation on 80 SQuAD and 80 HotpotQA cases preserved persona-conditioned packing gains by +61.80 and +19.89 answer-F1 points respectively at token-neutral budgets, clearing the branch kill condition."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

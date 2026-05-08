@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Attention-Loss Shadow Estimator produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/pytest_after_hybrid.log",
+        "artifacts/pytest_install.log",
+        "artifacts/live_lm_qwen_hybrid_system_snapshot.txt",
+        "artifacts/live_lm_qwen_hybrid_main.log",
+        "artifacts/live_lm_qwen_hybrid_main/summary.json",
+        "artifacts/live_lm_qwen_hybrid_main/summary.csv",
+        "artifacts/live_lm_qwen_hybrid_main/block_labels.jsonl",
+        "artifacts/live_lm_qwen_hybrid_main/raw_rows.jsonl"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as a positive live-LM PKV result; any future work should validate the same policy on external long-context benchmarks rather than another generic successor branch.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "452e40a67fe14fd7a451ace7045ccc66"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The strengthened loss-magnitude shadow estimator recovered live-label recall on cached Qwen2.5-0.5B and met the success criterion with 30% fewer resident KV bytes than landmark@50 while preserving/improving logprob and recall."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

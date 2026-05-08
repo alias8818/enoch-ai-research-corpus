@@ -1,0 +1,2890 @@
+{
+  "after": {
+    "canonical_base_count": 376,
+    "canonical_ledgers_restored": 118,
+    "duplicate_cluster_count": 0,
+    "duplicate_directory_count": 0,
+    "slug_directory_count": 376
+  },
+  "applied": true,
+  "before": {
+    "canonical_base_count": 376,
+    "duplicate_cluster_count": 119,
+    "duplicate_directory_count": 121,
+    "slug_directory_count": 497
+  },
+  "canonical_rule": "keep unsuffixed slug; restore richest claimed sibling ledger only when canonical ledger is empty; remove suffixed siblings",
+  "clusters": [
+    {
+      "base_slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval-9a62dd9416",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0099",
+          "slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:33.674000+00:00",
+          "public_id": "enoch-paper-0385",
+          "slug": "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval-9a62dd9416"
+        }
+      ],
+      "removed_slugs": [
+        "adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval-9a62dd9416"
+      ]
+    },
+    {
+      "base_slug": "adaptive-boundary-colorization-gate",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adaptive-boundary-colorization-gate",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adaptive-boundary-colorization-gate-3b59f6774f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0089",
+          "slug": "adaptive-boundary-colorization-gate"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:04.362000+00:00",
+          "public_id": "enoch-paper-0463",
+          "slug": "adaptive-boundary-colorization-gate-3b59f6774f"
+        }
+      ],
+      "removed_slugs": [
+        "adaptive-boundary-colorization-gate-3b59f6774f"
+      ]
+    },
+    {
+      "base_slug": "adaptive-budget-aware-lim-reserve-sampler",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adaptive-budget-aware-lim-reserve-sampler",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adaptive-budget-aware-lim-reserve-sampler-2ddbf25384",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0062",
+          "slug": "adaptive-budget-aware-lim-reserve-sampler"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:53:22.061000+00:00",
+          "public_id": "enoch-paper-0466",
+          "slug": "adaptive-budget-aware-lim-reserve-sampler-2ddbf25384"
+        }
+      ],
+      "removed_slugs": [
+        "adaptive-budget-aware-lim-reserve-sampler-2ddbf25384"
+      ]
+    },
+    {
+      "base_slug": "adaptive-claim-first-top-k-router",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adaptive-claim-first-top-k-router",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adaptive-claim-first-top-k-router-d0dc50a98c",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0003",
+          "slug": "adaptive-claim-first-top-k-router"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-21 23:00:14.262000+00:00",
+          "public_id": "enoch-paper-0484",
+          "slug": "adaptive-claim-first-top-k-router-d0dc50a98c"
+        }
+      ],
+      "removed_slugs": [
+        "adaptive-claim-first-top-k-router-d0dc50a98c"
+      ]
+    },
+    {
+      "base_slug": "adaptive-evidence-packer-rag-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adaptive-evidence-packer-rag-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adaptive-evidence-packer-rag-integration-2a4e77b31a",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0078",
+          "slug": "adaptive-evidence-packer-rag-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:24.996000+00:00",
+          "public_id": "enoch-paper-0453",
+          "slug": "adaptive-evidence-packer-rag-integration-2a4e77b31a"
+        }
+      ],
+      "removed_slugs": [
+        "adaptive-evidence-packer-rag-integration-2a4e77b31a"
+      ]
+    },
+    {
+      "base_slug": "adaptive-prefix-splitter-inference-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adaptive-prefix-splitter-inference-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adaptive-prefix-splitter-inference-integration-6d161ce689",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0073",
+          "slug": "adaptive-prefix-splitter-inference-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:55.022000+00:00",
+          "public_id": "enoch-paper-0448",
+          "slug": "adaptive-prefix-splitter-inference-integration-6d161ce689"
+        }
+      ],
+      "removed_slugs": [
+        "adaptive-prefix-splitter-inference-integration-6d161ce689"
+      ]
+    },
+    {
+      "base_slug": "adversarial-channel-router",
+      "canonical_claims_before": 0,
+      "canonical_slug": "adversarial-channel-router",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "adversarial-channel-router-e74eea0518",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0044",
+          "slug": "adversarial-channel-router"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-23 17:00:34.387000+00:00",
+          "public_id": "enoch-paper-0495",
+          "slug": "adversarial-channel-router-e74eea0518"
+        }
+      ],
+      "removed_slugs": [
+        "adversarial-channel-router-e74eea0518"
+      ]
+    },
+    {
+      "base_slug": "agent-app-store-with-repro-sandboxes",
+      "canonical_claims_before": 0,
+      "canonical_slug": "agent-app-store-with-repro-sandboxes",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "agent-app-store-with-repro-sandboxes-5f40c40e86",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0043",
+          "slug": "agent-app-store-with-repro-sandboxes"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-24 17:00:34.380000+00:00",
+          "public_id": "enoch-paper-0494",
+          "slug": "agent-app-store-with-repro-sandboxes-5f40c40e86"
+        }
+      ],
+      "removed_slugs": [
+        "agent-app-store-with-repro-sandboxes-5f40c40e86"
+      ]
+    },
+    {
+      "base_slug": "agent-identity-rotation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "agent-identity-rotation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "agent-identity-rotation-85bfb941f9",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0042",
+          "slug": "agent-identity-rotation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-24 23:00:34.268000+00:00",
+          "public_id": "enoch-paper-0489",
+          "slug": "agent-identity-rotation-85bfb941f9"
+        }
+      ],
+      "removed_slugs": [
+        "agent-identity-rotation-85bfb941f9"
+      ]
+    },
+    {
+      "base_slug": "answer-shape-prompt-planner",
+      "canonical_claims_before": 0,
+      "canonical_slug": "answer-shape-prompt-planner",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "answer-shape-prompt-planner-ba167182f1",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0008",
+          "slug": "answer-shape-prompt-planner"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:01.427000+00:00",
+          "public_id": "enoch-paper-0431",
+          "slug": "answer-shape-prompt-planner-ba167182f1"
+        }
+      ],
+      "removed_slugs": [
+        "answer-shape-prompt-planner-ba167182f1"
+      ]
+    },
+    {
+      "base_slug": "applicability-gated-abstention-calibration-policy",
+      "canonical_claims_before": 0,
+      "canonical_slug": "applicability-gated-abstention-calibration-policy",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "applicability-gated-abstention-calibration-policy-52021fb1e7",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0061",
+          "slug": "applicability-gated-abstention-calibration-policy"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:53:15.419000+00:00",
+          "public_id": "enoch-paper-0467",
+          "slug": "applicability-gated-abstention-calibration-policy-52021fb1e7"
+        }
+      ],
+      "removed_slugs": [
+        "applicability-gated-abstention-calibration-policy-52021fb1e7"
+      ]
+    },
+    {
+      "base_slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl",
+      "canonical_claims_before": 0,
+      "canonical_slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl-cc711c3474",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0028",
+          "slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:13.905000+00:00",
+          "public_id": "enoch-paper-0377",
+          "slug": "aret-hierarchical-multi-virtue-reward-architecture-for-rl-cc711c3474"
+        }
+      ],
+      "removed_slugs": [
+        "aret-hierarchical-multi-virtue-reward-architecture-for-rl-cc711c3474"
+      ]
+    },
+    {
+      "base_slug": "attention-loss-shadow-estimator",
+      "canonical_claims_before": 0,
+      "canonical_slug": "attention-loss-shadow-estimator",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "attention-loss-shadow-estimator-448f1cdd17",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0091",
+          "slug": "attention-loss-shadow-estimator"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:00:14.217000+00:00",
+          "public_id": "enoch-paper-0420",
+          "slug": "attention-loss-shadow-estimator-448f1cdd17"
+        }
+      ],
+      "removed_slugs": [
+        "attention-loss-shadow-estimator-448f1cdd17"
+      ]
+    },
+    {
+      "base_slug": "batched-reader-qets-mixed-domain-scaling-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "batched-reader-qets-mixed-domain-scaling-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "batched-reader-qets-mixed-domain-scaling-validation-1e48547905",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0090",
+          "slug": "batched-reader-qets-mixed-domain-scaling-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:58:58.489000+00:00",
+          "public_id": "enoch-paper-0464",
+          "slug": "batched-reader-qets-mixed-domain-scaling-validation-1e48547905"
+        }
+      ],
+      "removed_slugs": [
+        "batched-reader-qets-mixed-domain-scaling-validation-1e48547905"
+      ]
+    },
+    {
+      "base_slug": "batched-vllm-speculation-cost-governor-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "batched-vllm-speculation-cost-governor-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "batched-vllm-speculation-cost-governor-integration-6f2deec9e5",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0079",
+          "slug": "batched-vllm-speculation-cost-governor-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:18.845000+00:00",
+          "public_id": "enoch-paper-0445",
+          "slug": "batched-vllm-speculation-cost-governor-integration-6f2deec9e5"
+        }
+      ],
+      "removed_slugs": [
+        "batched-vllm-speculation-cost-governor-integration-6f2deec9e5"
+      ]
+    },
+    {
+      "base_slug": "benchmark-health-ledger",
+      "canonical_claims_before": 0,
+      "canonical_slug": "benchmark-health-ledger",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "benchmark-health-ledger-e3e46df81f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0046",
+          "slug": "benchmark-health-ledger"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-23 05:00:34.110000+00:00",
+          "public_id": "enoch-paper-0490",
+          "slug": "benchmark-health-ledger-e3e46df81f"
+        }
+      ],
+      "removed_slugs": [
+        "benchmark-health-ledger-e3e46df81f"
+      ]
+    },
+    {
+      "base_slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring",
+      "canonical_claims_before": 0,
+      "canonical_slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-3b0b701050",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0017",
+          "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:11.065000+00:00",
+          "public_id": "enoch-paper-0391",
+          "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-3b0b701050"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:06.897000+00:00",
+          "public_id": "enoch-paper-0392",
+          "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-433ea5b89a"
+        },
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0022",
+          "slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4"
+        }
+      ],
+      "removed_slugs": [
+        "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-3b0b701050",
+        "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-433ea5b89a",
+        "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring-b7a5f924e4"
+      ]
+    },
+    {
+      "base_slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark-2310f99ce2",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0036",
+          "slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:18.212000+00:00",
+          "public_id": "enoch-paper-0401",
+          "slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark-2310f99ce2"
+        }
+      ],
+      "removed_slugs": [
+        "bonsai-up-logprob-margin-safeguard-deployment-benchmark-2310f99ce2"
+      ]
+    },
+    {
+      "base_slug": "byte-memory-pointer-decoder-for-fragile-spans",
+      "canonical_claims_before": 0,
+      "canonical_slug": "byte-memory-pointer-decoder-for-fragile-spans",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "byte-memory-pointer-decoder-for-fragile-spans-9e45f48f18",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0016",
+          "slug": "byte-memory-pointer-decoder-for-fragile-spans"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:06.649000+00:00",
+          "public_id": "enoch-paper-0403",
+          "slug": "byte-memory-pointer-decoder-for-fragile-spans-9e45f48f18"
+        }
+      ],
+      "removed_slugs": [
+        "byte-memory-pointer-decoder-for-fragile-spans-9e45f48f18"
+      ]
+    },
+    {
+      "base_slug": "cache-churn-alarm-vllm-adapter-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cache-churn-alarm-vllm-adapter-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cache-churn-alarm-vllm-adapter-benchmark-228d4519a8",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0120",
+          "slug": "cache-churn-alarm-vllm-adapter-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:21.296000+00:00",
+          "public_id": "enoch-paper-0442",
+          "slug": "cache-churn-alarm-vllm-adapter-benchmark-228d4519a8"
+        }
+      ],
+      "removed_slugs": [
+        "cache-churn-alarm-vllm-adapter-benchmark-228d4519a8"
+      ]
+    },
+    {
+      "base_slug": "cache-reentry-production-endpoint-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cache-reentry-production-endpoint-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cache-reentry-production-endpoint-validation-52f1745344",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0013",
+          "slug": "cache-reentry-production-endpoint-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:03.853000+00:00",
+          "public_id": "enoch-paper-0404",
+          "slug": "cache-reentry-production-endpoint-validation-52f1745344"
+        }
+      ],
+      "removed_slugs": [
+        "cache-reentry-production-endpoint-validation-52f1745344"
+      ]
+    },
+    {
+      "base_slug": "capability-retention-sentinel-live-baseline-adapter-run",
+      "canonical_claims_before": 0,
+      "canonical_slug": "capability-retention-sentinel-live-baseline-adapter-run",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "capability-retention-sentinel-live-baseline-adapter-run-22ad70e0c1",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0027",
+          "slug": "capability-retention-sentinel-live-baseline-adapter-run"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:13.519000+00:00",
+          "public_id": "enoch-paper-0386",
+          "slug": "capability-retention-sentinel-live-baseline-adapter-run-22ad70e0c1"
+        }
+      ],
+      "removed_slugs": [
+        "capability-retention-sentinel-live-baseline-adapter-run-22ad70e0c1"
+      ]
+    },
+    {
+      "base_slug": "capable-planner-segment-firewall-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "capable-planner-segment-firewall-validation",
+      "ledger_source_claims": 3,
+      "ledger_source_slug": "capable-planner-segment-firewall-validation-3de5a48185",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0093",
+          "slug": "capable-planner-segment-firewall-validation"
+        },
+        {
+          "claims": 3,
+          "generated_at": "2026-04-18 10:12:06.224000+00:00",
+          "public_id": "enoch-paper-0396",
+          "slug": "capable-planner-segment-firewall-validation-3de5a48185"
+        }
+      ],
+      "removed_slugs": [
+        "capable-planner-segment-firewall-validation-3de5a48185"
+      ]
+    },
+    {
+      "base_slug": "chain-of-density-evidence-pack",
+      "canonical_claims_before": 0,
+      "canonical_slug": "chain-of-density-evidence-pack",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "chain-of-density-evidence-pack-c783196b5f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0116",
+          "slug": "chain-of-density-evidence-pack"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:23.411000+00:00",
+          "public_id": "enoch-paper-0409",
+          "slug": "chain-of-density-evidence-pack-c783196b5f"
+        }
+      ],
+      "removed_slugs": [
+        "chain-of-density-evidence-pack-c783196b5f"
+      ]
+    },
+    {
+      "base_slug": "cheap-factual-correction-after-local-sycophancy-rejection",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cheap-factual-correction-after-local-sycophancy-rejection",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cheap-factual-correction-after-local-sycophancy-rejection-1886329759",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0105",
+          "slug": "cheap-factual-correction-after-local-sycophancy-rejection"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:30.172000+00:00",
+          "public_id": "enoch-paper-0440",
+          "slug": "cheap-factual-correction-after-local-sycophancy-rejection-1886329759"
+        }
+      ],
+      "removed_slugs": [
+        "cheap-factual-correction-after-local-sycophancy-rejection-1886329759"
+      ]
+    },
+    {
+      "base_slug": "chunk-margin-pruner",
+      "canonical_claims_before": 0,
+      "canonical_slug": "chunk-margin-pruner",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "chunk-margin-pruner-2b55848aba",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0032",
+          "slug": "chunk-margin-pruner"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:16.076000+00:00",
+          "public_id": "enoch-paper-0407",
+          "slug": "chunk-margin-pruner-2b55848aba"
+        }
+      ],
+      "removed_slugs": [
+        "chunk-margin-pruner-2b55848aba"
+      ]
+    },
+    {
+      "base_slug": "citation-focused-section-ordering",
+      "canonical_claims_before": 0,
+      "canonical_slug": "citation-focused-section-ordering",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "citation-focused-section-ordering-fb43bdffef",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0051",
+          "slug": "citation-focused-section-ordering"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:48:32.003000+00:00",
+          "public_id": "enoch-paper-0482",
+          "slug": "citation-focused-section-ordering-fb43bdffef"
+        }
+      ],
+      "removed_slugs": [
+        "citation-focused-section-ordering-fb43bdffef"
+      ]
+    },
+    {
+      "base_slug": "citation-locator-metadata-extraction-intervention-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "citation-locator-metadata-extraction-intervention-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "citation-locator-metadata-extraction-intervention-benchmark-a982006d78",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0067",
+          "slug": "citation-locator-metadata-extraction-intervention-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:34.338000+00:00",
+          "public_id": "enoch-paper-0443",
+          "slug": "citation-locator-metadata-extraction-intervention-benchmark-a982006d78"
+        }
+      ],
+      "removed_slugs": [
+        "citation-locator-metadata-extraction-intervention-benchmark-a982006d78"
+      ]
+    },
+    {
+      "base_slug": "commit-level-critic",
+      "canonical_claims_before": 0,
+      "canonical_slug": "commit-level-critic",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "commit-level-critic-8b2442c412",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0045",
+          "slug": "commit-level-critic"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-23 11:00:34.353000+00:00",
+          "public_id": "enoch-paper-0488",
+          "slug": "commit-level-critic-8b2442c412"
+        }
+      ],
+      "removed_slugs": [
+        "commit-level-critic-8b2442c412"
+      ]
+    },
+    {
+      "base_slug": "compress-then-answer-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "compress-then-answer-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "compress-then-answer-benchmark-c53b7c2a1f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0014",
+          "slug": "compress-then-answer-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:06.145000+00:00",
+          "public_id": "enoch-paper-0426",
+          "slug": "compress-then-answer-benchmark-c53b7c2a1f"
+        }
+      ],
+      "removed_slugs": [
+        "compress-then-answer-benchmark-c53b7c2a1f"
+      ]
+    },
+    {
+      "base_slug": "contention-aware-single-medium-backend-broker-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "contention-aware-single-medium-backend-broker-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "contention-aware-single-medium-backend-broker-benchmark-475e083a27",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0057",
+          "slug": "contention-aware-single-medium-backend-broker-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:51:44.880000+00:00",
+          "public_id": "enoch-paper-0471",
+          "slug": "contention-aware-single-medium-backend-broker-benchmark-475e083a27"
+        }
+      ],
+      "removed_slugs": [
+        "contention-aware-single-medium-backend-broker-benchmark-475e083a27"
+      ]
+    },
+    {
+      "base_slug": "context-overflow-real-llm-reader-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "context-overflow-real-llm-reader-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "context-overflow-real-llm-reader-validation-fb8ac0a46b",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0010",
+          "slug": "context-overflow-real-llm-reader-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:01.594000+00:00",
+          "public_id": "enoch-paper-0441",
+          "slug": "context-overflow-real-llm-reader-validation-fb8ac0a46b"
+        }
+      ],
+      "removed_slugs": [
+        "context-overflow-real-llm-reader-validation-fb8ac0a46b"
+      ]
+    },
+    {
+      "base_slug": "context-rehydration-multi-model-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "context-rehydration-multi-model-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "context-rehydration-multi-model-validation-db1eeb1f24",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0112",
+          "slug": "context-rehydration-multi-model-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:25.306000+00:00",
+          "public_id": "enoch-paper-0424",
+          "slug": "context-rehydration-multi-model-validation-db1eeb1f24"
+        }
+      ],
+      "removed_slugs": [
+        "context-rehydration-multi-model-validation-db1eeb1f24"
+      ]
+    },
+    {
+      "base_slug": "context-reuse-clusterer-local-serving-harness",
+      "canonical_claims_before": 0,
+      "canonical_slug": "context-reuse-clusterer-local-serving-harness",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "context-reuse-clusterer-local-serving-harness-3293a9b6dd",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0030",
+          "slug": "context-reuse-clusterer-local-serving-harness"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:15.681000+00:00",
+          "public_id": "enoch-paper-0435",
+          "slug": "context-reuse-clusterer-local-serving-harness-3293a9b6dd"
+        }
+      ],
+      "removed_slugs": [
+        "context-reuse-clusterer-local-serving-harness-3293a9b6dd"
+      ]
+    },
+    {
+      "base_slug": "counterexample-bank-targeted-mini-sft-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "counterexample-bank-targeted-mini-sft-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "counterexample-bank-targeted-mini-sft-validation-e001666b78",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0118",
+          "slug": "counterexample-bank-targeted-mini-sft-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:22.005000+00:00",
+          "public_id": "enoch-paper-0437",
+          "slug": "counterexample-bank-targeted-mini-sft-validation-e001666b78"
+        }
+      ],
+      "removed_slugs": [
+        "counterexample-bank-targeted-mini-sft-validation-e001666b78"
+      ]
+    },
+    {
+      "base_slug": "cpu-offload-stress-harness-real-server-scaleup",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cpu-offload-stress-harness-real-server-scaleup",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cpu-offload-stress-harness-real-server-scaleup-7ac6d3d13e",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0119",
+          "slug": "cpu-offload-stress-harness-real-server-scaleup"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:21.677000+00:00",
+          "public_id": "enoch-paper-0438",
+          "slug": "cpu-offload-stress-harness-real-server-scaleup-7ac6d3d13e"
+        }
+      ],
+      "removed_slugs": [
+        "cpu-offload-stress-harness-real-server-scaleup-7ac6d3d13e"
+      ]
+    },
+    {
+      "base_slug": "cuad-cross-model-legal-answer-quality-replication",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cuad-cross-model-legal-answer-quality-replication",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cuad-cross-model-legal-answer-quality-replication-964eda1287",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0063",
+          "slug": "cuad-cross-model-legal-answer-quality-replication"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:53:29.278000+00:00",
+          "public_id": "enoch-paper-0465",
+          "slug": "cuad-cross-model-legal-answer-quality-replication-964eda1287"
+        }
+      ],
+      "removed_slugs": [
+        "cuad-cross-model-legal-answer-quality-replication-964eda1287"
+      ]
+    },
+    {
+      "base_slug": "cuad-dense-retriever-productionization-with-cached-vector-index",
+      "canonical_claims_before": 0,
+      "canonical_slug": "cuad-dense-retriever-productionization-with-cached-vector-index",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "cuad-dense-retriever-productionization-with-cached-vector-index-c25709dd7d",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0054",
+          "slug": "cuad-dense-retriever-productionization-with-cached-vector-index"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:49:27.589000+00:00",
+          "public_id": "enoch-paper-0479",
+          "slug": "cuad-dense-retriever-productionization-with-cached-vector-index-c25709dd7d"
+        }
+      ],
+      "removed_slugs": [
+        "cuad-dense-retriever-productionization-with-cached-vector-index-c25709dd7d"
+      ]
+    },
+    {
+      "base_slug": "deadline-guarded-speculation-live-serving-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "deadline-guarded-speculation-live-serving-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "deadline-guarded-speculation-live-serving-validation-be3d57eec2",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0080",
+          "slug": "deadline-guarded-speculation-live-serving-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:09.512000+00:00",
+          "public_id": "enoch-paper-0454",
+          "slug": "deadline-guarded-speculation-live-serving-validation-be3d57eec2"
+        }
+      ],
+      "removed_slugs": [
+        "deadline-guarded-speculation-live-serving-validation-be3d57eec2"
+      ]
+    },
+    {
+      "base_slug": "demo-position-lottery",
+      "canonical_claims_before": 0,
+      "canonical_slug": "demo-position-lottery",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "demo-position-lottery-dc4b968515",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0117",
+          "slug": "demo-position-lottery"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:23.274000+00:00",
+          "public_id": "enoch-paper-0418",
+          "slug": "demo-position-lottery-dc4b968515"
+        }
+      ],
+      "removed_slugs": [
+        "demo-position-lottery-dc4b968515"
+      ]
+    },
+    {
+      "base_slug": "developer-workflow-persona-drift-benchmark-against-filegram",
+      "canonical_claims_before": 0,
+      "canonical_slug": "developer-workflow-persona-drift-benchmark-against-filegram",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "developer-workflow-persona-drift-benchmark-against-filegram-4e6de530c8",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0005",
+          "slug": "developer-workflow-persona-drift-benchmark-against-filegram"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-21 11:00:14.338000+00:00",
+          "public_id": "enoch-paper-0486",
+          "slug": "developer-workflow-persona-drift-benchmark-against-filegram-4e6de530c8"
+        }
+      ],
+      "removed_slugs": [
+        "developer-workflow-persona-drift-benchmark-against-filegram-4e6de530c8"
+      ]
+    },
+    {
+      "base_slug": "dflash-code-generation-quality-guard",
+      "canonical_claims_before": 0,
+      "canonical_slug": "dflash-code-generation-quality-guard",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "dflash-code-generation-quality-guard-d435059a51",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0006",
+          "slug": "dflash-code-generation-quality-guard"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-15 08:29:31.952000+00:00",
+          "public_id": "enoch-paper-0382",
+          "slug": "dflash-code-generation-quality-guard-d435059a51"
+        }
+      ],
+      "removed_slugs": [
+        "dflash-code-generation-quality-guard-d435059a51"
+      ]
+    },
+    {
+      "base_slug": "dflash-gb10-transformers-smoke",
+      "canonical_claims_before": 0,
+      "canonical_slug": "dflash-gb10-transformers-smoke",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "dflash-gb10-transformers-smoke-0b34db2889",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0038",
+          "slug": "dflash-gb10-transformers-smoke"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:20.542000+00:00",
+          "public_id": "enoch-paper-0381",
+          "slug": "dflash-gb10-transformers-smoke-0b34db2889"
+        }
+      ],
+      "removed_slugs": [
+        "dflash-gb10-transformers-smoke-0b34db2889"
+      ]
+    },
+    {
+      "base_slug": "dflash-vllm-sglang-throughput-shootout",
+      "canonical_claims_before": 0,
+      "canonical_slug": "dflash-vllm-sglang-throughput-shootout",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "dflash-vllm-sglang-throughput-shootout-acada17226",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0001",
+          "slug": "dflash-vllm-sglang-throughput-shootout"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-15 10:58:54.486000+00:00",
+          "public_id": "enoch-paper-0387",
+          "slug": "dflash-vllm-sglang-throughput-shootout-acada17226"
+        }
+      ],
+      "removed_slugs": [
+        "dflash-vllm-sglang-throughput-shootout-acada17226"
+      ]
+    },
+    {
+      "base_slug": "dflash-vs-existing-spec-dec-baseline-harness",
+      "canonical_claims_before": 0,
+      "canonical_slug": "dflash-vs-existing-spec-dec-baseline-harness",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "dflash-vs-existing-spec-dec-baseline-harness-caedfff9e6",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0020",
+          "slug": "dflash-vs-existing-spec-dec-baseline-harness"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:09.269000+00:00",
+          "public_id": "enoch-paper-0384",
+          "slug": "dflash-vs-existing-spec-dec-baseline-harness-caedfff9e6"
+        }
+      ],
+      "removed_slugs": [
+        "dflash-vs-existing-spec-dec-baseline-harness-caedfff9e6"
+      ]
+    },
+    {
+      "base_slug": "difficulty-aware-mask-bank---successor-branch",
+      "canonical_claims_before": 0,
+      "canonical_slug": "difficulty-aware-mask-bank---successor-branch",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "difficulty-aware-mask-bank---successor-branch-652045ba64",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0026",
+          "slug": "difficulty-aware-mask-bank---successor-branch"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:13.416000+00:00",
+          "public_id": "enoch-paper-0380",
+          "slug": "difficulty-aware-mask-bank---successor-branch-652045ba64"
+        }
+      ],
+      "removed_slugs": [
+        "difficulty-aware-mask-bank---successor-branch-652045ba64"
+      ]
+    },
+    {
+      "base_slug": "document-field-importance-llm-generation-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "document-field-importance-llm-generation-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "document-field-importance-llm-generation-validation-bb6c85041c",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0034",
+          "slug": "document-field-importance-llm-generation-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:18.057000+00:00",
+          "public_id": "enoch-paper-0413",
+          "slug": "document-field-importance-llm-generation-validation-bb6c85041c"
+        }
+      ],
+      "removed_slugs": [
+        "document-field-importance-llm-generation-validation-bb6c85041c"
+      ]
+    },
+    {
+      "base_slug": "draft-value-router",
+      "canonical_claims_before": 0,
+      "canonical_slug": "draft-value-router",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "draft-value-router-8b7bb3b644",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0037",
+          "slug": "draft-value-router"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:18.417000+00:00",
+          "public_id": "enoch-paper-0398",
+          "slug": "draft-value-router-8b7bb3b644"
+        }
+      ],
+      "removed_slugs": [
+        "draft-value-router-8b7bb3b644"
+      ]
+    },
+    {
+      "base_slug": "dual-trace-memory-encoder",
+      "canonical_claims_before": 0,
+      "canonical_slug": "dual-trace-memory-encoder",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "dual-trace-memory-encoder-6bd25ff090",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0103",
+          "slug": "dual-trace-memory-encoder"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:30.839000+00:00",
+          "public_id": "enoch-paper-0402",
+          "slug": "dual-trace-memory-encoder-6bd25ff090"
+        }
+      ],
+      "removed_slugs": [
+        "dual-trace-memory-encoder-6bd25ff090"
+      ]
+    },
+    {
+      "base_slug": "engine-level-prefix-cache-cohort-scheduler",
+      "canonical_claims_before": 0,
+      "canonical_slug": "engine-level-prefix-cache-cohort-scheduler",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "engine-level-prefix-cache-cohort-scheduler-810eeb05f0",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0035",
+          "slug": "engine-level-prefix-cache-cohort-scheduler"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:18.157000+00:00",
+          "public_id": "enoch-paper-0408",
+          "slug": "engine-level-prefix-cache-cohort-scheduler-810eeb05f0"
+        }
+      ],
+      "removed_slugs": [
+        "engine-level-prefix-cache-cohort-scheduler-810eeb05f0"
+      ]
+    },
+    {
+      "base_slug": "entity-neighborhood-windower",
+      "canonical_claims_before": 0,
+      "canonical_slug": "entity-neighborhood-windower",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "entity-neighborhood-windower-739d77e465",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0009",
+          "slug": "entity-neighborhood-windower"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:01.527000+00:00",
+          "public_id": "enoch-paper-0423",
+          "slug": "entity-neighborhood-windower-739d77e465"
+        }
+      ],
+      "removed_slugs": [
+        "entity-neighborhood-windower-739d77e465"
+      ]
+    },
+    {
+      "base_slug": "evidence-bound-proof-synthesizer-for-tool-ledger",
+      "canonical_claims_before": 0,
+      "canonical_slug": "evidence-bound-proof-synthesizer-for-tool-ledger",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "evidence-bound-proof-synthesizer-for-tool-ledger-4bb53c9047",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0098",
+          "slug": "evidence-bound-proof-synthesizer-for-tool-ledger"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-20 09:41:06.624000+00:00",
+          "public_id": "enoch-paper-0433",
+          "slug": "evidence-bound-proof-synthesizer-for-tool-ledger-4bb53c9047"
+        }
+      ],
+      "removed_slugs": [
+        "evidence-bound-proof-synthesizer-for-tool-ledger-4bb53c9047"
+      ]
+    },
+    {
+      "base_slug": "evidence-first-answerability-cutoff-integration-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "evidence-first-answerability-cutoff-integration-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "evidence-first-answerability-cutoff-integration-benchmark-87cb13bc5f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0056",
+          "slug": "evidence-first-answerability-cutoff-integration-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:51:38.529000+00:00",
+          "public_id": "enoch-paper-0472",
+          "slug": "evidence-first-answerability-cutoff-integration-benchmark-87cb13bc5f"
+        }
+      ],
+      "removed_slugs": [
+        "evidence-first-answerability-cutoff-integration-benchmark-87cb13bc5f"
+      ]
+    },
+    {
+      "base_slug": "evidence-first-context-ladder-prompt-layout-ablation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "evidence-first-context-ladder-prompt-layout-ablation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "evidence-first-context-ladder-prompt-layout-ablation-b1c2c65887",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0070",
+          "slug": "evidence-first-context-ladder-prompt-layout-ablation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:17.590000+00:00",
+          "public_id": "enoch-paper-0446",
+          "slug": "evidence-first-context-ladder-prompt-layout-ablation-b1c2c65887"
+        }
+      ],
+      "removed_slugs": [
+        "evidence-first-context-ladder-prompt-layout-ablation-b1c2c65887"
+      ]
+    },
+    {
+      "base_slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "fieldwise-recall-probe-real-trace-multi-model-validation-3cbaf8e0d7",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0085",
+          "slug": "fieldwise-recall-probe-real-trace-multi-model-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:28.862000+00:00",
+          "public_id": "enoch-paper-0459",
+          "slug": "fieldwise-recall-probe-real-trace-multi-model-validation-3cbaf8e0d7"
+        }
+      ],
+      "removed_slugs": [
+        "fieldwise-recall-probe-real-trace-multi-model-validation-3cbaf8e0d7"
+      ]
+    },
+    {
+      "base_slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121",
+      "canonical_claims_before": 0,
+      "canonical_slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121-e7971f7338",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0029",
+          "slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:14.184000+00:00",
+          "public_id": "enoch-paper-0376",
+          "slug": "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121-e7971f7338"
+        }
+      ],
+      "removed_slugs": [
+        "flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121-e7971f7338"
+      ]
+    },
+    {
+      "base_slug": "forced-contrastive-self-audit-extraction-trace-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "forced-contrastive-self-audit-extraction-trace-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "forced-contrastive-self-audit-extraction-trace-benchmark-6a93b3b661",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0019",
+          "slug": "forced-contrastive-self-audit-extraction-trace-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:09.229000+00:00",
+          "public_id": "enoch-paper-0395",
+          "slug": "forced-contrastive-self-audit-extraction-trace-benchmark-6a93b3b661"
+        }
+      ],
+      "removed_slugs": [
+        "forced-contrastive-self-audit-extraction-trace-benchmark-6a93b3b661"
+      ]
+    },
+    {
+      "base_slug": "gb10-joule-router-live-calibration-adapter",
+      "canonical_claims_before": 0,
+      "canonical_slug": "gb10-joule-router-live-calibration-adapter",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "gb10-joule-router-live-calibration-adapter-de3ab2c063",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0031",
+          "slug": "gb10-joule-router-live-calibration-adapter"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:15.978000+00:00",
+          "public_id": "enoch-paper-0434",
+          "slug": "gb10-joule-router-live-calibration-adapter-de3ab2c063"
+        }
+      ],
+      "removed_slugs": [
+        "gb10-joule-router-live-calibration-adapter-de3ab2c063"
+      ]
+    },
+    {
+      "base_slug": "gb10-local-server-utility-swap-broker-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "gb10-local-server-utility-swap-broker-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "gb10-local-server-utility-swap-broker-validation-798a9fe509",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0083",
+          "slug": "gb10-local-server-utility-swap-broker-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:42.686000+00:00",
+          "public_id": "enoch-paper-0457",
+          "slug": "gb10-local-server-utility-swap-broker-validation-798a9fe509"
+        }
+      ],
+      "removed_slugs": [
+        "gb10-local-server-utility-swap-broker-validation-798a9fe509"
+      ]
+    },
+    {
+      "base_slug": "home-lab-agent-orchestrator",
+      "canonical_claims_before": 0,
+      "canonical_slug": "home-lab-agent-orchestrator",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "home-lab-agent-orchestrator-876ea845f9",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0041",
+          "slug": "home-lab-agent-orchestrator"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-25 05:00:34.217000+00:00",
+          "public_id": "enoch-paper-0491",
+          "slug": "home-lab-agent-orchestrator-876ea845f9"
+        }
+      ],
+      "removed_slugs": [
+        "home-lab-agent-orchestrator-876ea845f9"
+      ]
+    },
+    {
+      "base_slug": "hot-cold-tensor-paging",
+      "canonical_claims_before": 0,
+      "canonical_slug": "hot-cold-tensor-paging",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "hot-cold-tensor-paging-bc643f18f8",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T21:06:45.999599+00:00",
+          "public_id": "enoch-paper-0039",
+          "slug": "hot-cold-tensor-paging"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-26 17:00:36.583000+00:00",
+          "public_id": "enoch-paper-0493",
+          "slug": "hot-cold-tensor-paging-bc643f18f8"
+        }
+      ],
+      "removed_slugs": [
+        "hot-cold-tensor-paging-bc643f18f8"
+      ]
+    },
+    {
+      "base_slug": "human-checked-acceptance-trace-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "human-checked-acceptance-trace-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "human-checked-acceptance-trace-validation-8e3ceb5519",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0111",
+          "slug": "human-checked-acceptance-trace-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:26.160000+00:00",
+          "public_id": "enoch-paper-0416",
+          "slug": "human-checked-acceptance-trace-validation-8e3ceb5519"
+        }
+      ],
+      "removed_slugs": [
+        "human-checked-acceptance-trace-validation-8e3ceb5519"
+      ]
+    },
+    {
+      "base_slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer",
+      "canonical_claims_before": 0,
+      "canonical_slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer-2e35d6977f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0104",
+          "slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:30.220000+00:00",
+          "public_id": "enoch-paper-0399",
+          "slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer-2e35d6977f"
+        }
+      ],
+      "removed_slugs": [
+        "humaneval-mbpp-counterexample-harvest-verifier-transfer-2e35d6977f"
+      ]
+    },
+    {
+      "base_slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch",
+      "canonical_claims_before": 0,
+      "canonical_slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch-a54ccd2781",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0021",
+          "slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:09.632000+00:00",
+          "public_id": "enoch-paper-0378",
+          "slug": "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch-a54ccd2781"
+        }
+      ],
+      "removed_slugs": [
+        "intercept-aware-kv-checkpointing-for-tool-calls---successor-branch-a54ccd2781"
+      ]
+    },
+    {
+      "base_slug": "junction-adapter-broader-rys-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "junction-adapter-broader-rys-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "junction-adapter-broader-rys-benchmark-4090194b12",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0101",
+          "slug": "junction-adapter-broader-rys-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:32.470000+00:00",
+          "public_id": "enoch-paper-0393",
+          "slug": "junction-adapter-broader-rys-benchmark-4090194b12"
+        }
+      ],
+      "removed_slugs": [
+        "junction-adapter-broader-rys-benchmark-4090194b12"
+      ]
+    },
+    {
+      "base_slug": "kv-eviction-gold-labels",
+      "canonical_claims_before": 0,
+      "canonical_slug": "kv-eviction-gold-labels",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "kv-eviction-gold-labels-617a0a21e2",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0015",
+          "slug": "kv-eviction-gold-labels"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:06.454000+00:00",
+          "public_id": "enoch-paper-0432",
+          "slug": "kv-eviction-gold-labels-617a0a21e2"
+        }
+      ],
+      "removed_slugs": [
+        "kv-eviction-gold-labels-617a0a21e2"
+      ]
+    },
+    {
+      "base_slug": "llm-code-navigation-context-packer-evaluation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "llm-code-navigation-context-packer-evaluation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "llm-code-navigation-context-packer-evaluation-3a30325780",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0086",
+          "slug": "llm-code-navigation-context-packer-evaluation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:22.619000+00:00",
+          "public_id": "enoch-paper-0460",
+          "slug": "llm-code-navigation-context-packer-evaluation-3a30325780"
+        }
+      ],
+      "removed_slugs": [
+        "llm-code-navigation-context-packer-evaluation-3a30325780"
+      ]
+    },
+    {
+      "base_slug": "llm-evidence-survival-qa-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "llm-evidence-survival-qa-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "llm-evidence-survival-qa-validation-7369a2c25f",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0053",
+          "slug": "llm-evidence-survival-qa-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:49:06.777000+00:00",
+          "public_id": "enoch-paper-0475",
+          "slug": "llm-evidence-survival-qa-validation-7369a2c25f"
+        }
+      ],
+      "removed_slugs": [
+        "llm-evidence-survival-qa-validation-7369a2c25f"
+      ]
+    },
+    {
+      "base_slug": "long-tail-entity-boost-mix",
+      "canonical_claims_before": 0,
+      "canonical_slug": "long-tail-entity-boost-mix",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "long-tail-entity-boost-mix-593359d822",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0064",
+          "slug": "long-tail-entity-boost-mix"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:51.368000+00:00",
+          "public_id": "enoch-paper-0417",
+          "slug": "long-tail-entity-boost-mix-593359d822"
+        }
+      ],
+      "removed_slugs": [
+        "long-tail-entity-boost-mix-593359d822"
+      ]
+    },
+    {
+      "base_slug": "memory-pressure-admission-gate-live-serving-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "memory-pressure-admission-gate-live-serving-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "memory-pressure-admission-gate-live-serving-validation-c2c4ef0659",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0115",
+          "slug": "memory-pressure-admission-gate-live-serving-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:23.782000+00:00",
+          "public_id": "enoch-paper-0430",
+          "slug": "memory-pressure-admission-gate-live-serving-validation-c2c4ef0659"
+        }
+      ],
+      "removed_slugs": [
+        "memory-pressure-admission-gate-live-serving-validation-c2c4ef0659"
+      ]
+    },
+    {
+      "base_slug": "memory-pressure-replay-logs",
+      "canonical_claims_before": 0,
+      "canonical_slug": "memory-pressure-replay-logs",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "memory-pressure-replay-logs-399667d44a",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0065",
+          "slug": "memory-pressure-replay-logs"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:46.118000+00:00",
+          "public_id": "enoch-paper-0436",
+          "slug": "memory-pressure-replay-logs-399667d44a"
+        }
+      ],
+      "removed_slugs": [
+        "memory-pressure-replay-logs-399667d44a"
+      ]
+    },
+    {
+      "base_slug": "multi-model-real-span-boundary-corruption-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "multi-model-real-span-boundary-corruption-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "multi-model-real-span-boundary-corruption-benchmark-3de4e67099",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0081",
+          "slug": "multi-model-real-span-boundary-corruption-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:00.763000+00:00",
+          "public_id": "enoch-paper-0455",
+          "slug": "multi-model-real-span-boundary-corruption-benchmark-3de4e67099"
+        }
+      ],
+      "removed_slugs": [
+        "multi-model-real-span-boundary-corruption-benchmark-3de4e67099"
+      ]
+    },
+    {
+      "base_slug": "near-miss-tool-call-dataset",
+      "canonical_claims_before": 0,
+      "canonical_slug": "near-miss-tool-call-dataset",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "near-miss-tool-call-dataset-53189437af",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0066",
+          "slug": "near-miss-tool-call-dataset"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:40.148000+00:00",
+          "public_id": "enoch-paper-0421",
+          "slug": "near-miss-tool-call-dataset-53189437af"
+        }
+      ],
+      "removed_slugs": [
+        "near-miss-tool-call-dataset-53189437af"
+      ]
+    },
+    {
+      "base_slug": "neural-endpoint-segment-order-sensitivity-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "neural-endpoint-segment-order-sensitivity-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "neural-endpoint-segment-order-sensitivity-validation-88fd97a900",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0113",
+          "slug": "neural-endpoint-segment-order-sensitivity-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:25.276000+00:00",
+          "public_id": "enoch-paper-0425",
+          "slug": "neural-endpoint-segment-order-sensitivity-validation-88fd97a900"
+        }
+      ],
+      "removed_slugs": [
+        "neural-endpoint-segment-order-sensitivity-validation-88fd97a900"
+      ]
+    },
+    {
+      "base_slug": "open-weight-integrity-twin-agent-sweep",
+      "canonical_claims_before": 0,
+      "canonical_slug": "open-weight-integrity-twin-agent-sweep",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "open-weight-integrity-twin-agent-sweep-0ccf945b66",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0033",
+          "slug": "open-weight-integrity-twin-agent-sweep"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:16.254000+00:00",
+          "public_id": "enoch-paper-0427",
+          "slug": "open-weight-integrity-twin-agent-sweep-0ccf945b66"
+        }
+      ],
+      "removed_slugs": [
+        "open-weight-integrity-twin-agent-sweep-0ccf945b66"
+      ]
+    },
+    {
+      "base_slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter",
+      "canonical_claims_before": 0,
+      "canonical_slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter-f4c3279614",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0055",
+          "slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:51:23.653000+00:00",
+          "public_id": "enoch-paper-0473",
+          "slug": "openai-compatible-deployment-of-syntax-preserving-rag-adapter-f4c3279614"
+        }
+      ],
+      "removed_slugs": [
+        "openai-compatible-deployment-of-syntax-preserving-rag-adapter-f4c3279614"
+      ]
+    },
+    {
+      "base_slug": "outcome-calibrated-real-trace-safety-drift-monitor",
+      "canonical_claims_before": 0,
+      "canonical_slug": "outcome-calibrated-real-trace-safety-drift-monitor",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "outcome-calibrated-real-trace-safety-drift-monitor-3ba0f94143",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0106",
+          "slug": "outcome-calibrated-real-trace-safety-drift-monitor"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:28.495000+00:00",
+          "public_id": "enoch-paper-0412",
+          "slug": "outcome-calibrated-real-trace-safety-drift-monitor-3ba0f94143"
+        }
+      ],
+      "removed_slugs": [
+        "outcome-calibrated-real-trace-safety-drift-monitor-3ba0f94143"
+      ]
+    },
+    {
+      "base_slug": "pair-adaptive-draft-waste-calibration-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "pair-adaptive-draft-waste-calibration-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "pair-adaptive-draft-waste-calibration-benchmark-483f4eaba5",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0011",
+          "slug": "pair-adaptive-draft-waste-calibration-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:03.717000+00:00",
+          "public_id": "enoch-paper-0406",
+          "slug": "pair-adaptive-draft-waste-calibration-benchmark-483f4eaba5"
+        }
+      ],
+      "removed_slugs": [
+        "pair-adaptive-draft-waste-calibration-benchmark-483f4eaba5"
+      ]
+    },
+    {
+      "base_slug": "partial-evidence-audited-sft-recall-preservation-ablation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "partial-evidence-audited-sft-recall-preservation-ablation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "partial-evidence-audited-sft-recall-preservation-ablation-6c2fa2a1c9",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0048",
+          "slug": "partial-evidence-audited-sft-recall-preservation-ablation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:48:06.235000+00:00",
+          "public_id": "enoch-paper-0481",
+          "slug": "partial-evidence-audited-sft-recall-preservation-ablation-6c2fa2a1c9"
+        }
+      ],
+      "removed_slugs": [
+        "partial-evidence-audited-sft-recall-preservation-ablation-6c2fa2a1c9"
+      ]
+    },
+    {
+      "base_slug": "partial-module-rys",
+      "canonical_claims_before": 0,
+      "canonical_slug": "partial-module-rys",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "partial-module-rys-214ec2d410",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0100",
+          "slug": "partial-module-rys"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:32.771000+00:00",
+          "public_id": "enoch-paper-0379",
+          "slug": "partial-module-rys-214ec2d410"
+        }
+      ],
+      "removed_slugs": [
+        "partial-module-rys-214ec2d410"
+      ]
+    },
+    {
+      "base_slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa",
+      "canonical_claims_before": 0,
+      "canonical_slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa-f5f7002f1a",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0077",
+          "slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:32.005000+00:00",
+          "public_id": "enoch-paper-0452",
+          "slug": "precision-filtered-evidence-anchors-for-distractor-robust-qa-f5f7002f1a"
+        }
+      ],
+      "removed_slugs": [
+        "precision-filtered-evidence-anchors-for-distractor-robust-qa-f5f7002f1a"
+      ]
+    },
+    {
+      "base_slug": "prefix-equivalence-targeted-normalizer-uplift",
+      "canonical_claims_before": 0,
+      "canonical_slug": "prefix-equivalence-targeted-normalizer-uplift",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "prefix-equivalence-targeted-normalizer-uplift-7aac87ee48",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0007",
+          "slug": "prefix-equivalence-targeted-normalizer-uplift"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:01.401000+00:00",
+          "public_id": "enoch-paper-0419",
+          "slug": "prefix-equivalence-targeted-normalizer-uplift-7aac87ee48"
+        }
+      ],
+      "removed_slugs": [
+        "prefix-equivalence-targeted-normalizer-uplift-7aac87ee48"
+      ]
+    },
+    {
+      "base_slug": "prefix-seeder-serving-adapter-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "prefix-seeder-serving-adapter-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "prefix-seeder-serving-adapter-benchmark-0dda3ef06c",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0052",
+          "slug": "prefix-seeder-serving-adapter-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:48:43.678000+00:00",
+          "public_id": "enoch-paper-0478",
+          "slug": "prefix-seeder-serving-adapter-benchmark-0dda3ef06c"
+        }
+      ],
+      "removed_slugs": [
+        "prefix-seeder-serving-adapter-benchmark-0dda3ef06c"
+      ]
+    },
+    {
+      "base_slug": "prefix-share-serving-trace-set",
+      "canonical_claims_before": 0,
+      "canonical_slug": "prefix-share-serving-trace-set",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "prefix-share-serving-trace-set-deb949d444",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0071",
+          "slug": "prefix-share-serving-trace-set"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:12.068000+00:00",
+          "public_id": "enoch-paper-0414",
+          "slug": "prefix-share-serving-trace-set-deb949d444"
+        }
+      ],
+      "removed_slugs": [
+        "prefix-share-serving-trace-set-deb949d444"
+      ]
+    },
+    {
+      "base_slug": "production-end-task-canonical-first-rys-variant-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "production-end-task-canonical-first-rys-variant-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "production-end-task-canonical-first-rys-variant-benchmark-0ed3345070",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0018",
+          "slug": "production-end-task-canonical-first-rys-variant-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:08.696000+00:00",
+          "public_id": "enoch-paper-0394",
+          "slug": "production-end-task-canonical-first-rys-variant-benchmark-0ed3345070"
+        }
+      ],
+      "removed_slugs": [
+        "production-end-task-canonical-first-rys-variant-benchmark-0ed3345070"
+      ]
+    },
+    {
+      "base_slug": "production-rag-kv-offload-landmark-reliability-scale-up",
+      "canonical_claims_before": 0,
+      "canonical_slug": "production-rag-kv-offload-landmark-reliability-scale-up",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "production-rag-kv-offload-landmark-reliability-scale-up-25fe5716f0",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0049",
+          "slug": "production-rag-kv-offload-landmark-reliability-scale-up"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:48:14.887000+00:00",
+          "public_id": "enoch-paper-0474",
+          "slug": "production-rag-kv-offload-landmark-reliability-scale-up-25fe5716f0"
+        }
+      ],
+      "removed_slugs": [
+        "production-rag-kv-offload-landmark-reliability-scale-up-25fe5716f0"
+      ]
+    },
+    {
+      "base_slug": "production-speculative-decoding-counter-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "production-speculative-decoding-counter-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "production-speculative-decoding-counter-validation-508a95f82a",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0084",
+          "slug": "production-speculative-decoding-counter-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:37.091000+00:00",
+          "public_id": "enoch-paper-0458",
+          "slug": "production-speculative-decoding-counter-validation-508a95f82a"
+        }
+      ],
+      "removed_slugs": [
+        "production-speculative-decoding-counter-validation-508a95f82a"
+      ]
+    },
+    {
+      "base_slug": "query-budget-contract-local-server-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "query-budget-contract-local-server-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "query-budget-contract-local-server-benchmark-301a0a4c9e",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0087",
+          "slug": "query-budget-contract-local-server-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:16.454000+00:00",
+          "public_id": "enoch-paper-0461",
+          "slug": "query-budget-contract-local-server-benchmark-301a0a4c9e"
+        }
+      ],
+      "removed_slugs": [
+        "query-budget-contract-local-server-benchmark-301a0a4c9e"
+      ]
+    },
+    {
+      "base_slug": "real-corpus-row-id-citation-qa-integration-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-corpus-row-id-citation-qa-integration-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-corpus-row-id-citation-qa-integration-benchmark-86b43b9fc1",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0074",
+          "slug": "real-corpus-row-id-citation-qa-integration-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:49.309000+00:00",
+          "public_id": "enoch-paper-0449",
+          "slug": "real-corpus-row-id-citation-qa-integration-benchmark-86b43b9fc1"
+        }
+      ],
+      "removed_slugs": [
+        "real-corpus-row-id-citation-qa-integration-benchmark-86b43b9fc1"
+      ]
+    },
+    {
+      "base_slug": "real-document-retrieval-compression-teacher-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-document-retrieval-compression-teacher-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-document-retrieval-compression-teacher-validation-af518c0527",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0114",
+          "slug": "real-document-retrieval-compression-teacher-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:24.120000+00:00",
+          "public_id": "enoch-paper-0429",
+          "slug": "real-document-retrieval-compression-teacher-validation-af518c0527"
+        }
+      ],
+      "removed_slugs": [
+        "real-document-retrieval-compression-teacher-validation-af518c0527"
+      ]
+    },
+    {
+      "base_slug": "real-model-negative-exit-controller-on-math-and-code-search-traces",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-model-negative-exit-controller-on-math-and-code-search-traces",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-model-negative-exit-controller-on-math-and-code-search-traces-92c852013c",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0108",
+          "slug": "real-model-negative-exit-controller-on-math-and-code-search-traces"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:27.656000+00:00",
+          "public_id": "enoch-paper-0400",
+          "slug": "real-model-negative-exit-controller-on-math-and-code-search-traces-92c852013c"
+        }
+      ],
+      "removed_slugs": [
+        "real-model-negative-exit-controller-on-math-and-code-search-traces-92c852013c"
+      ]
+    },
+    {
+      "base_slug": "real-rag-answer-abstention-boundary-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-rag-answer-abstention-boundary-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-rag-answer-abstention-boundary-benchmark-481ae7871e",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0068",
+          "slug": "real-rag-answer-abstention-boundary-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:28.753000+00:00",
+          "public_id": "enoch-paper-0444",
+          "slug": "real-rag-answer-abstention-boundary-benchmark-481ae7871e"
+        }
+      ],
+      "removed_slugs": [
+        "real-rag-answer-abstention-boundary-benchmark-481ae7871e"
+      ]
+    },
+    {
+      "base_slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding-1264f736d5",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0025",
+          "slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:11.966000+00:00",
+          "public_id": "enoch-paper-0389",
+          "slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding-1264f736d5"
+        }
+      ],
+      "removed_slugs": [
+        "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding-1264f736d5"
+      ]
+    },
+    {
+      "base_slug": "real-task-context-compression-pareto-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-task-context-compression-pareto-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-task-context-compression-pareto-validation-a9db9821a9",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0110",
+          "slug": "real-task-context-compression-pareto-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:26.567000+00:00",
+          "public_id": "enoch-paper-0410",
+          "slug": "real-task-context-compression-pareto-validation-a9db9821a9"
+        }
+      ],
+      "removed_slugs": [
+        "real-task-context-compression-pareto-validation-a9db9821a9"
+      ]
+    },
+    {
+      "base_slug": "real-trace-near-miss-refusal-adapter-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "real-trace-near-miss-refusal-adapter-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "real-trace-near-miss-refusal-adapter-validation-9afd0f1d27",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0107",
+          "slug": "real-trace-near-miss-refusal-adapter-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:28.466000+00:00",
+          "public_id": "enoch-paper-0397",
+          "slug": "real-trace-near-miss-refusal-adapter-validation-9afd0f1d27"
+        }
+      ],
+      "removed_slugs": [
+        "real-trace-near-miss-refusal-adapter-validation-9afd0f1d27"
+      ]
+    },
+    {
+      "base_slug": "reap-ragged-loader-real-checkpoint-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "reap-ragged-loader-real-checkpoint-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "reap-ragged-loader-real-checkpoint-integration-4a35e4aebb",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0102",
+          "slug": "reap-ragged-loader-real-checkpoint-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:31.635000+00:00",
+          "public_id": "enoch-paper-0390",
+          "slug": "reap-ragged-loader-real-checkpoint-integration-4a35e4aebb"
+        }
+      ],
+      "removed_slugs": [
+        "reap-ragged-loader-real-checkpoint-integration-4a35e4aebb"
+      ]
+    },
+    {
+      "base_slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation-8a97fc9598",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0095",
+          "slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-20 23:00:14.091000+00:00",
+          "public_id": "enoch-paper-0480",
+          "slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation-8a97fc9598"
+        }
+      ],
+      "removed_slugs": [
+        "reduced-planner-scratchpad-feedback-real-repo-qa-validation-8a97fc9598"
+      ]
+    },
+    {
+      "base_slug": "rejection-mode-targeted-abstention-refusal-tuning",
+      "canonical_claims_before": 0,
+      "canonical_slug": "rejection-mode-targeted-abstention-refusal-tuning",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "rejection-mode-targeted-abstention-refusal-tuning-8c1fd3db27",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0075",
+          "slug": "rejection-mode-targeted-abstention-refusal-tuning"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:43.310000+00:00",
+          "public_id": "enoch-paper-0450",
+          "slug": "rejection-mode-targeted-abstention-refusal-tuning-8c1fd3db27"
+        }
+      ],
+      "removed_slugs": [
+        "rejection-mode-targeted-abstention-refusal-tuning-8c1fd3db27"
+      ]
+    },
+    {
+      "base_slug": "residue-head-teacher-distillation-for-lbrc",
+      "canonical_claims_before": 0,
+      "canonical_slug": "residue-head-teacher-distillation-for-lbrc",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "residue-head-teacher-distillation-for-lbrc-b9f4fd77ce",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0059",
+          "slug": "residue-head-teacher-distillation-for-lbrc"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:52:36.742000+00:00",
+          "public_id": "enoch-paper-0469",
+          "slug": "residue-head-teacher-distillation-for-lbrc-b9f4fd77ce"
+        }
+      ],
+      "removed_slugs": [
+        "residue-head-teacher-distillation-for-lbrc-b9f4fd77ce"
+      ]
+    },
+    {
+      "base_slug": "resource-bounded-agent-kernel",
+      "canonical_claims_before": 0,
+      "canonical_slug": "resource-bounded-agent-kernel",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "resource-bounded-agent-kernel-1127e6ebd4",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0040",
+          "slug": "resource-bounded-agent-kernel"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-25 17:00:34.492000+00:00",
+          "public_id": "enoch-paper-0492",
+          "slug": "resource-bounded-agent-kernel-1127e6ebd4"
+        }
+      ],
+      "removed_slugs": [
+        "resource-bounded-agent-kernel-1127e6ebd4"
+      ]
+    },
+    {
+      "base_slug": "retrieval-aware-evidence-packer-arbitration-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "retrieval-aware-evidence-packer-arbitration-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "retrieval-aware-evidence-packer-arbitration-benchmark-c601be3b27",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0097",
+          "slug": "retrieval-aware-evidence-packer-arbitration-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-20 11:00:14.237000+00:00",
+          "public_id": "enoch-paper-0485",
+          "slug": "retrieval-aware-evidence-packer-arbitration-benchmark-c601be3b27"
+        }
+      ],
+      "removed_slugs": [
+        "retrieval-aware-evidence-packer-arbitration-benchmark-c601be3b27"
+      ]
+    },
+    {
+      "base_slug": "router-distilled-triton-mlp-full-model-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "router-distilled-triton-mlp-full-model-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "router-distilled-triton-mlp-full-model-integration-ab4e1a5044",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0024",
+          "slug": "router-distilled-triton-mlp-full-model-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:11.447000+00:00",
+          "public_id": "enoch-paper-0388",
+          "slug": "router-distilled-triton-mlp-full-model-integration-ab4e1a5044"
+        }
+      ],
+      "removed_slugs": [
+        "router-distilled-triton-mlp-full-model-integration-ab4e1a5044"
+      ]
+    },
+    {
+      "base_slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark-5576bc3d18",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0058",
+          "slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:51:55.146000+00:00",
+          "public_id": "enoch-paper-0470",
+          "slug": "salience-backed-candidate-top-1-kv-prefill-packing-benchmark-5576bc3d18"
+        }
+      ],
+      "removed_slugs": [
+        "salience-backed-candidate-top-1-kv-prefill-packing-benchmark-5576bc3d18"
+      ]
+    },
+    {
+      "base_slug": "schema-drift-json-corpus",
+      "canonical_claims_before": 0,
+      "canonical_slug": "schema-drift-json-corpus",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "schema-drift-json-corpus-d97a28b051",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0109",
+          "slug": "schema-drift-json-corpus"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:27.539000+00:00",
+          "public_id": "enoch-paper-0415",
+          "slug": "schema-drift-json-corpus-d97a28b051"
+        }
+      ],
+      "removed_slugs": [
+        "schema-drift-json-corpus-d97a28b051"
+      ]
+    },
+    {
+      "base_slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark",
+      "canonical_claims_before": 0,
+      "canonical_slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark-3348c5e036",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0076",
+          "slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:00:38.059000+00:00",
+          "public_id": "enoch-paper-0451",
+          "slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark-3348c5e036"
+        }
+      ],
+      "removed_slugs": [
+        "semantic-overlap-tax-generative-llm-public-rag-benchmark-3348c5e036"
+      ]
+    },
+    {
+      "base_slug": "shared-prompt-batcher-local-server-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "shared-prompt-batcher-local-server-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "shared-prompt-batcher-local-server-validation-0e58ffd5bd",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0072",
+          "slug": "shared-prompt-batcher-local-server-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:05.738000+00:00",
+          "public_id": "enoch-paper-0447",
+          "slug": "shared-prompt-batcher-local-server-validation-0e58ffd5bd"
+        }
+      ],
+      "removed_slugs": [
+        "shared-prompt-batcher-local-server-validation-0e58ffd5bd"
+      ]
+    },
+    {
+      "base_slug": "short-train-long-eval-prompt-robust-tuning",
+      "canonical_claims_before": 0,
+      "canonical_slug": "short-train-long-eval-prompt-robust-tuning",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "short-train-long-eval-prompt-robust-tuning-55360a96d1",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0088",
+          "slug": "short-train-long-eval-prompt-robust-tuning"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:10.438000+00:00",
+          "public_id": "enoch-paper-0462",
+          "slug": "short-train-long-eval-prompt-robust-tuning-55360a96d1"
+        }
+      ],
+      "removed_slugs": [
+        "short-train-long-eval-prompt-robust-tuning-55360a96d1"
+      ]
+    },
+    {
+      "base_slug": "small-model-persona-context-orderer-generation-validation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "small-model-persona-context-orderer-generation-validation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "small-model-persona-context-orderer-generation-validation-5ee3b77220",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0004",
+          "slug": "small-model-persona-context-orderer-generation-validation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-21 17:00:14.855000+00:00",
+          "public_id": "enoch-paper-0477",
+          "slug": "small-model-persona-context-orderer-generation-validation-5ee3b77220"
+        }
+      ],
+      "removed_slugs": [
+        "small-model-persona-context-orderer-generation-validation-5ee3b77220"
+      ]
+    },
+    {
+      "base_slug": "structured-noise-injection-suite",
+      "canonical_claims_before": 0,
+      "canonical_slug": "structured-noise-injection-suite",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "structured-noise-injection-suite-e24b2e17ae",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0047",
+          "slug": "structured-noise-injection-suite"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:47:54.425000+00:00",
+          "public_id": "enoch-paper-0428",
+          "slug": "structured-noise-injection-suite-e24b2e17ae"
+        }
+      ],
+      "removed_slugs": [
+        "structured-noise-injection-suite-e24b2e17ae"
+      ]
+    },
+    {
+      "base_slug": "token-rent-for-examples",
+      "canonical_claims_before": 0,
+      "canonical_slug": "token-rent-for-examples",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "token-rent-for-examples-21bc7b6ced",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0002",
+          "slug": "token-rent-for-examples"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 05:00:14.609000+00:00",
+          "public_id": "enoch-paper-0411",
+          "slug": "token-rent-for-examples-21bc7b6ced"
+        }
+      ],
+      "removed_slugs": [
+        "token-rent-for-examples-21bc7b6ced"
+      ]
+    },
+    {
+      "base_slug": "token-type-importance-labels",
+      "canonical_claims_before": 0,
+      "canonical_slug": "token-type-importance-labels",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "token-type-importance-labels-9d67810608",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0096",
+          "slug": "token-type-importance-labels"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-20 17:00:14.232000+00:00",
+          "public_id": "enoch-paper-0439",
+          "slug": "token-type-importance-labels-9d67810608"
+        }
+      ],
+      "removed_slugs": [
+        "token-type-importance-labels-9d67810608"
+      ]
+    },
+    {
+      "base_slug": "tokenized-tiny-lm-duplicate-ratio-ablation",
+      "canonical_claims_before": 0,
+      "canonical_slug": "tokenized-tiny-lm-duplicate-ratio-ablation",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "tokenized-tiny-lm-duplicate-ratio-ablation-e352f99372",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0082",
+          "slug": "tokenized-tiny-lm-duplicate-ratio-ablation"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:59:51.542000+00:00",
+          "public_id": "enoch-paper-0456",
+          "slug": "tokenized-tiny-lm-duplicate-ratio-ablation-e352f99372"
+        }
+      ],
+      "removed_slugs": [
+        "tokenized-tiny-lm-duplicate-ratio-ablation-e352f99372"
+      ]
+    },
+    {
+      "base_slug": "utr-conflict-update-final-answer-schema-hardening",
+      "canonical_claims_before": 0,
+      "canonical_slug": "utr-conflict-update-final-answer-schema-hardening",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "utr-conflict-update-final-answer-schema-hardening-ee2ec3df1c",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0092",
+          "slug": "utr-conflict-update-final-answer-schema-hardening"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 11:00:14.125000+00:00",
+          "public_id": "enoch-paper-0483",
+          "slug": "utr-conflict-update-final-answer-schema-hardening-ee2ec3df1c"
+        }
+      ],
+      "removed_slugs": [
+        "utr-conflict-update-final-answer-schema-hardening-ee2ec3df1c"
+      ]
+    },
+    {
+      "base_slug": "value-per-joule-broker-online-canary-on-gb10-endpoints",
+      "canonical_claims_before": 0,
+      "canonical_slug": "value-per-joule-broker-online-canary-on-gb10-endpoints",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "value-per-joule-broker-online-canary-on-gb10-endpoints-7c1e9366d2",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0012",
+          "slug": "value-per-joule-broker-online-canary-on-gb10-endpoints"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:03.778000+00:00",
+          "public_id": "enoch-paper-0405",
+          "slug": "value-per-joule-broker-online-canary-on-gb10-endpoints-7c1e9366d2"
+        }
+      ],
+      "removed_slugs": [
+        "value-per-joule-broker-online-canary-on-gb10-endpoints-7c1e9366d2"
+      ]
+    },
+    {
+      "base_slug": "verification-failure-clusters",
+      "canonical_claims_before": 0,
+      "canonical_slug": "verification-failure-clusters",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "verification-failure-clusters-ec5ecfde87",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0069",
+          "slug": "verification-failure-clusters"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 18:01:23.198000+00:00",
+          "public_id": "enoch-paper-0422",
+          "slug": "verification-failure-clusters-ec5ecfde87"
+        }
+      ],
+      "removed_slugs": [
+        "verification-failure-clusters-ec5ecfde87"
+      ]
+    },
+    {
+      "base_slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+      "canonical_claims_before": 5,
+      "canonical_slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+      "ledger_source_claims": 0,
+      "ledger_source_slug": null,
+      "members": [
+        {
+          "claims": 5,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0060",
+          "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:53:04.873000+00:00",
+          "public_id": "enoch-paper-0468",
+          "slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign-e679db6170"
+        }
+      ],
+      "removed_slugs": [
+        "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign-e679db6170"
+      ]
+    },
+    {
+      "base_slug": "wake-gate-local-endpoint-harness-integration",
+      "canonical_claims_before": 0,
+      "canonical_slug": "wake-gate-local-endpoint-harness-integration",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "wake-gate-local-endpoint-harness-integration-a559f7e6df",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0023",
+          "slug": "wake-gate-local-endpoint-harness-integration"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-18 10:10:11.347000+00:00",
+          "public_id": "enoch-paper-0383",
+          "slug": "wake-gate-local-endpoint-harness-integration-a559f7e6df"
+        }
+      ],
+      "removed_slugs": [
+        "wake-gate-local-endpoint-harness-integration-a559f7e6df"
+      ]
+    },
+    {
+      "base_slug": "weak-wikipedia-generative-answer-flattening-pilot",
+      "canonical_claims_before": 0,
+      "canonical_slug": "weak-wikipedia-generative-answer-flattening-pilot",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "weak-wikipedia-generative-answer-flattening-pilot-a0927e1c3e",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0050",
+          "slug": "weak-wikipedia-generative-answer-flattening-pilot"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-22 17:48:22.982000+00:00",
+          "public_id": "enoch-paper-0476",
+          "slug": "weak-wikipedia-generative-answer-flattening-pilot-a0927e1c3e"
+        }
+      ],
+      "removed_slugs": [
+        "weak-wikipedia-generative-answer-flattening-pilot-a0927e1c3e"
+      ]
+    },
+    {
+      "base_slug": "web-state-replay-benchmark-for-rewindable-sandboxes",
+      "canonical_claims_before": 0,
+      "canonical_slug": "web-state-replay-benchmark-for-rewindable-sandboxes",
+      "ledger_source_claims": 2,
+      "ledger_source_slug": "web-state-replay-benchmark-for-rewindable-sandboxes-b07c9b5663",
+      "members": [
+        {
+          "claims": 0,
+          "generated_at": "2026-04-28T18:50:52.575149+00:00",
+          "public_id": "enoch-paper-0094",
+          "slug": "web-state-replay-benchmark-for-rewindable-sandboxes"
+        },
+        {
+          "claims": 2,
+          "generated_at": "2026-04-21 05:00:14.296000+00:00",
+          "public_id": "enoch-paper-0487",
+          "slug": "web-state-replay-benchmark-for-rewindable-sandboxes-b07c9b5663"
+        }
+      ],
+      "removed_slugs": [
+        "web-state-replay-benchmark-for-rewindable-sandboxes-b07c9b5663"
+      ]
+    }
+  ],
+  "generated_at": "2026-05-08T01:23:05.833015+00:00"
+}

@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Query Budget Contract Local Server Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/llama_cpp_calibration/server_logs/llama-small.log",
+        "results/llama_cpp_calibration/server_logs/llama-large.log",
+        "results/llama_cpp_calibration/comparison.json",
+        "results/llama_cpp_calibration/responses.csv",
+        "results/llama_cpp_calibration/host.json",
+        "results/llama_cpp_calibration/metrics.json",
+        "results/llama_cpp_calibration/server_logs/broker.log",
+        "results/llama_cpp_calibration/server_logs/dual-backend.log"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Archive this branch as supported; optional follow-up should target a smarter contract that also beats the fixed-small cached-model baseline.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "e3f3fbeba43f4c7c82f6079228232d55"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The implemented OpenAI-compatible broker beat fixed-large routing on a 240-request real cached llama.cpp calibration while preserving or improving quality, so the branch kill condition is not met."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

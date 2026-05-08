@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/summary.md",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/benchmark_summary.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/run_codeeval64.log",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/qwen3_manual_fp8_prompt_loss_report.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/global_plan_prompt_loss.json",
+        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/uniform_baseline_plan_prompt_loss.json"
+      ],
+      "confidence": "high",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this benchmark branch; only revisit with a materially new REAP-observer pruning plan or a separately cached canonical HumanEval/MBPP evaluation.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "c269d33714c44dc48b5397a146302e78"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The requested 50-100 prompt code-eval manual FP8/BF16 benchmark and paired bootstrap CI analysis completed, showing mixed/inconclusive pruning-quality evidence rather than a decisive global/ragged win."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

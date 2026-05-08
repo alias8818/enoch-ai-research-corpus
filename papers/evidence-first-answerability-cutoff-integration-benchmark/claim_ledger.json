@@ -1,12 +1,44 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Evidence-First Answerability Cutoff Integration Benchmark produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/llama_server_18082_repair_persistent.log",
+        "results/production_qwen_endpoint_summary.json",
+        "results/llama_server_metrics_after_full.prom",
+        "results/meminfo_after_qwen_full.txt",
+        "results/llama_server_process_after_full.txt",
+        "results/production_qwen_endpoint_full_time.txt",
+        "results/production_qwen_endpoint_full_144cases_budget180_paired_deltas.csv",
+        "results/production_qwen_endpoint_full_144cases_budget180_summary.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Promote the evidence-first ordering-only cutoff into the parent production path with the 144-case Qwen benchmark and two regressed QA cases retained as regression fixtures.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "ac66c0ace8294817926a22dd2bf7e759"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: The branch objective is complete: integration, deterministic tests, endpoint readiness repair, calibration, and full 144-case Qwen benchmark all support the mechanism against the kill thresholds."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

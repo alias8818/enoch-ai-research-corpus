@@ -1,12 +1,43 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "paper_id": "source-record-redacted",
+  "claims": [
+    {
+      "claim": "Adaptive Claim-First Top-K Router produced positive/supportive evidence in the recorded OMX run.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md",
+        "results/adaptive_qwen05_longbench_scaled/interpretation.md",
+        "results/adaptive_qwen05_longbench_scaled/llm_eval_summary.json",
+        "results/adaptive_qwen05_longbench_scaled/llm_eval_rows.csv",
+        "results/adaptive_llm_smoke/llm_eval_summary.json",
+        "results/adaptive_llm_smoke/llm_eval_rows.csv",
+        "results/adaptive_offline/benchmark_summary.json",
+        "results/adaptive_offline/benchmark_rows.csv"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
+      "forbidden_wording": "This proves the method works universally."
+    },
+    {
+      "claim": "The recommended next action is: Finalize this branch as supported; if more validation is desired, run the same adaptive policy on a larger cached model or a held-out LongBench slice without creating a generic successor branch.",
+      "supporting_artifacts": [
+        ".omx/project_decision.json",
+        "run_notes.md"
+      ],
+      "confidence": "medium",
+      "allowed_wording": "The project decision recommends this follow-up.",
+      "forbidden_wording": "This follow-up is guaranteed to succeed."
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "fd01a55edb0e4efeaee7a088c7a47b33"
-  }
+  "limitations": [
+    "This draft is automatically generated for human review and must be checked before public release.",
+    "Claims are limited to the project artifacts listed in the evidence bundle.",
+    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
+    "Project stop/decision rationale: Implemented and benchmarked the adaptive claim-first/top-k router on the same LongBench grid, where it improved generated-answer F1 over both top-k and always-dense while reducing token use versus always-dense."
+  ],
+  "forbidden_global_claims": [
+    "Do not claim peer review or public validation.",
+    "Do not claim results on datasets, hardware, or models not present in artifacts.",
+    "Do not hide negative or inconclusive findings."
+  ]
 }

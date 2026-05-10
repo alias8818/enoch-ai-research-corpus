@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 257,
-    "count": 378,
+    "claim_ledgers_empty": 258,
+    "count": 379,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 378,
+  "count": 379,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 378,
+  "passed": 379,
   "rows": [
     {
       "bytes": 16279,
@@ -1806,6 +1806,17 @@
       "passes": true,
       "slug": "half-life-planning",
       "words": 2533
+    },
+    {
+      "bytes": 16247,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/harness-shadow-mode-labeled-replay-prototype/paper.md",
+      "passes": true,
+      "slug": "harness-shadow-mode-labeled-replay-prototype",
+      "words": 2178
     },
     {
       "bytes": 14166,

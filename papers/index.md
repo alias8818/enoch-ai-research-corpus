@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 378
+Count: 379
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 378/378 packaging/provenance lint pass and 3/378 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 379/379 packaging/provenance lint pass and 3/379 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -190,6 +190,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Goal Shard Manager](goal-shard-manager/paper.md) | `enoch-paper-0190` | yes | yes | 0 | false | 0 |
 | [Goose-SA Anisotropic Tree](goose-sa-anisotropic-tree/paper.md) | `enoch-paper-0362` | yes | yes | 0 | false | 0 |
 | [Half-Life Planning](half-life-planning/paper.md) | `enoch-paper-0499` | yes | yes | 0 | false | 0 |
+| [Harness Shadow Mode Labeled Replay Prototype](harness-shadow-mode-labeled-replay-prototype/paper.md) | `enoch-paper-0500` | yes | yes | 0 | false | 0 |
 | [Head Importance Self-Labeling](head-importance-self-labeling/paper.md) | `enoch-paper-0159` | yes | yes | 0 | false | 0 |
 | [Home Lab Agent Orchestrator](home-lab-agent-orchestrator/paper.md) | `enoch-paper-0041` | yes | yes | 2 | false | 8 |
 | [Hot-Cold Tensor Paging](hot-cold-tensor-paging/paper.md) | `enoch-paper-0039` | yes | yes | 2 | false | 20 |

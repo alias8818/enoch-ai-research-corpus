@@ -1,5 +1,5 @@
 {
-  "count": 378,
+  "count": 379,
   "highlight_count": 13,
   "highlights": [
     {
@@ -2560,6 +2560,21 @@
       "source_record_fingerprint": "d00287858a341b16",
       "strict_audit_pass": false,
       "title": "Half-Life Planning"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/harness-shadow-mode-labeled-replay-prototype/claim_ledger.json",
+      "evidence_bundle_path": "papers/harness-shadow-mode-labeled-replay-prototype/evidence_bundle.json",
+      "generated_at": "2026-05-09 19:33:04.334371+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/harness-shadow-mode-labeled-replay-prototype/paper.md",
+      "public_id": "enoch-paper-0500",
+      "slug": "harness-shadow-mode-labeled-replay-prototype",
+      "source_record_fingerprint": "c84584d0c2d114a0",
+      "strict_audit_pass": false,
+      "title": "Harness Shadow Mode Labeled Replay Prototype"
     },
     {
       "ai_generated": true,

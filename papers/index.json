@@ -1,5 +1,5 @@
 {
-  "count": 381,
+  "count": 382,
   "highlight_count": 13,
   "highlights": [
     {
@@ -5530,6 +5530,21 @@
       "source_record_fingerprint": "990d7e88d256fb18",
       "strict_audit_pass": false,
       "title": "Tool-Boundary Non-Speculate Gate"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/tool-pause-resume-student/claim_ledger.json",
+      "evidence_bundle_path": "papers/tool-pause-resume-student/evidence_bundle.json",
+      "generated_at": "2026-05-09 18:33:11.470207+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/tool-pause-resume-student/paper.md",
+      "public_id": "enoch-paper-0503",
+      "slug": "tool-pause-resume-student",
+      "source_record_fingerprint": "9a9e54a5f26eba67",
+      "strict_audit_pass": false,
+      "title": "Tool-Pause Resume Student"
     },
     {
       "ai_generated": true,

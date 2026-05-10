@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 381
+Count: 382
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 381/381 packaging/provenance lint pass and 3/381 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 382/382 packaging/provenance lint pass and 3/382 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -388,6 +388,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Token-Type Importance Labels](token-type-importance-labels/paper.md) | `enoch-paper-0096` | yes | yes | 2 | false | 9 |
 | [Tokenized Tiny-LM Duplicate Ratio Ablation](tokenized-tiny-lm-duplicate-ratio-ablation/paper.md) | `enoch-paper-0082` | yes | yes | 2 | false | 9 |
 | [Tool-Boundary Non-Speculate Gate](tool-boundary-non-speculate-gate/paper.md) | `enoch-paper-0324` | yes | yes | 0 | false | 0 |
+| [Tool-Pause Resume Student](tool-pause-resume-student/paper.md) | `enoch-paper-0503` | yes | yes | 0 | false | 0 |
 | [Tool Starvation Detector](tool-starvation-detector/paper.md) | `enoch-paper-0498` | yes | yes | 0 | false | 0 |
 | [Trace Inspector Warm Session Operator Trial](trace-inspector-warm-session-operator-trial/paper.md) | `enoch-paper-0232` | yes | yes | 0 | false | 0 |
 | [Trajectory Rulebook Distillation](trajectory-rulebook-distillation/paper.md) | `enoch-paper-0271` | yes | yes | 0 | false | 0 |

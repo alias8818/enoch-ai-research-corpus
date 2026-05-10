@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 380
+Count: 381
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 380/380 packaging/provenance lint pass and 3/380 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 381/381 packaging/provenance lint pass and 3/381 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -316,6 +316,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Rejection-Mode Targeted Abstention Refusal Tuning](rejection-mode-targeted-abstention-refusal-tuning/paper.md) | `enoch-paper-0075` | yes | yes | 2 | false | 20 |
 | [Rejection-Span Distillation](rejection-span-distillation/paper.md) | `enoch-paper-0327` | yes | yes | 0 | false | 0 |
 | [Repo Pulse Index Real-Repo Pilot](repo-pulse-index-real-repo-pilot/paper.md) | `enoch-paper-0237` | yes | yes | 0 | false | 0 |
+| [Reproducibility Capsule Messy Workflow Validation](reproducibility-capsule-messy-workflow-validation/paper.md) | `enoch-paper-0502` | yes | yes | 0 | false | 0 |
 | [Research Agent Treaty Protocol](research-agent-treaty-protocol/paper.md) | `enoch-paper-0172` | yes | yes | 0 | false | 0 |
 | [Research Claim Unit Tests](research-claim-unit-tests/paper.md) | `enoch-paper-0174` | yes | yes | 0 | false | 0 |
 | [Research Council Agenda Compiler Weekly Pilot](research-council-agenda-compiler-weekly-pilot/paper.md) | `enoch-paper-0257` | yes | yes | 0 | false | 0 |

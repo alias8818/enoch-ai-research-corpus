@@ -1,7 +1,7 @@
 # Corpus public audit reports
 
-Packaging/provenance lint: 380 / 380 pass
-Strict claim/evidence audit: 3 / 380 pass
+Packaging/provenance lint: 381 / 381 pass
+Strict claim/evidence audit: 3 / 381 pass
 Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
 This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
@@ -27,7 +27,7 @@ This compatibility report deliberately shows both counts on the first screen. Th
 
 ## Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 380
+Strict claim/evidence passed: 3 / 381
 Status: `blocked_audit_gaps`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
@@ -321,6 +321,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `rejection-mode-targeted-abstention-refusal-tuning` | True | {} |
 | `rejection-span-distillation` | True | {} |
 | `repo-pulse-index-real-repo-pilot` | True | {} |
+| `reproducibility-capsule-messy-workflow-validation` | True | {} |
 | `research-agent-treaty-protocol` | True | {} |
 | `research-claim-unit-tests` | True | {} |
 | `research-council-agenda-compiler-weekly-pilot` | True | {} |

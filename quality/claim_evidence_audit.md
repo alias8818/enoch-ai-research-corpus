@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 379
+Strict claim/evidence passed: 3 / 380
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 258 / 379
+- Empty claim ledgers: 259 / 380
 - Evidence `result_files` references: 1429
 - Publicly present result-file references: 22
 - Missing result-file references: 1387
@@ -221,6 +221,7 @@ Status: `blocked_audit_gaps`
 | `layer-asymmetric-cache-budget` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `layer-skip-under-memory-pressure` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `layerwise-calibration-observer-for-dense` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `live-agent-feature-flag-rehearsal-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `llama.cpp-gguf-hot-warm-cold-mmap-instrumentation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `llama.cpp-in-place-kv-compaction-for-importance-retention` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `llm-backed-log-to-patch-memory-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

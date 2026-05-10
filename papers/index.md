@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 379
+Count: 380
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 379/379 packaging/provenance lint pass and 3/379 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 380/380 packaging/provenance lint pass and 3/380 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -215,6 +215,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Layer-Asymmetric Cache Budget](layer-asymmetric-cache-budget/paper.md) | `enoch-paper-0323` | yes | yes | 0 | false | 0 |
 | [Layer Skip under Memory Pressure](layer-skip-under-memory-pressure/paper.md) | `enoch-paper-0286` | yes | yes | 0 | false | 0 |
 | [Layerwise Calibration Observer for Dense](layerwise-calibration-observer-for-dense/paper.md) | `enoch-paper-0343` | yes | yes | 0 | false | 0 |
+| [Live Agent Feature-Flag Rehearsal Benchmark](live-agent-feature-flag-rehearsal-benchmark/paper.md) | `enoch-paper-0501` | yes | yes | 0 | false | 0 |
 | [llama.cpp GGUF hot-warm-cold mmap instrumentation](llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/paper.md) | `enoch-paper-0254` | yes | yes | 0 | false | 0 |
 | [llama.cpp In-Place KV Compaction for Importance Retention](llama.cpp-in-place-kv-compaction-for-importance-retention/paper.md) | `enoch-paper-0250` | yes | yes | 0 | false | 0 |
 | [LLM-Backed Log-to-Patch Memory Benchmark](llm-backed-log-to-patch-memory-benchmark/paper.md) | `enoch-paper-0225` | yes | yes | 0 | false | 0 |

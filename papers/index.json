@@ -1,5 +1,5 @@
 {
-  "count": 379,
+  "count": 380,
   "highlight_count": 13,
   "highlights": [
     {
@@ -2935,6 +2935,21 @@
       "source_record_fingerprint": "ec3f666628a72cc8",
       "strict_audit_pass": false,
       "title": "Layerwise Calibration Observer for Dense"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/live-agent-feature-flag-rehearsal-benchmark/claim_ledger.json",
+      "evidence_bundle_path": "papers/live-agent-feature-flag-rehearsal-benchmark/evidence_bundle.json",
+      "generated_at": "2026-05-09 19:14:05.195231+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/live-agent-feature-flag-rehearsal-benchmark/paper.md",
+      "public_id": "enoch-paper-0501",
+      "slug": "live-agent-feature-flag-rehearsal-benchmark",
+      "source_record_fingerprint": "5bdb6e2ced8fca7d",
+      "strict_audit_pass": false,
+      "title": "Live Agent Feature-Flag Rehearsal Benchmark"
     },
     {
       "ai_generated": true,

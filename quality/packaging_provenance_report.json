@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 258,
-    "count": 379,
+    "claim_ledgers_empty": 259,
+    "count": 380,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 379,
+  "count": 380,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 379,
+  "passed": 380,
   "rows": [
     {
       "bytes": 16279,
@@ -2081,6 +2081,17 @@
       "passes": true,
       "slug": "layerwise-calibration-observer-for-dense",
       "words": 2195
+    },
+    {
+      "bytes": 15025,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/live-agent-feature-flag-rehearsal-benchmark/paper.md",
+      "passes": true,
+      "slug": "live-agent-feature-flag-rehearsal-benchmark",
+      "words": 2080
     },
     {
       "bytes": 16430,

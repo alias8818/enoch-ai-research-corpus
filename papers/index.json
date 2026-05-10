@@ -1,5 +1,5 @@
 {
-  "count": 382,
+  "count": 383,
   "highlight_count": 13,
   "highlights": [
     {
@@ -5275,6 +5275,21 @@
       "source_record_fingerprint": "91e1c6d560e91e05",
       "strict_audit_pass": false,
       "title": "Sub-8GB Model Zoo Triage"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/supabase-native-control-plane-dispatch-drill/claim_ledger.json",
+      "evidence_bundle_path": "papers/supabase-native-control-plane-dispatch-drill/evidence_bundle.json",
+      "generated_at": "2026-05-09 18:26:10.553436+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/supabase-native-control-plane-dispatch-drill/paper.md",
+      "public_id": "enoch-paper-0504",
+      "slug": "supabase-native-control-plane-dispatch-drill",
+      "source_record_fingerprint": "9538549d63b1b8b3",
+      "strict_audit_pass": false,
+      "title": "Supabase Native Control-Plane Dispatch Drill"
     },
     {
       "ai_generated": true,

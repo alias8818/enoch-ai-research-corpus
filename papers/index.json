@@ -1,5 +1,5 @@
 {
-  "count": 377,
+  "count": 378,
   "highlight_count": 13,
   "highlights": [
     {
@@ -2545,6 +2545,21 @@
       "source_record_fingerprint": "96a1da25ca82f893",
       "strict_audit_pass": false,
       "title": "Goose-SA Anisotropic Tree"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/half-life-planning/claim_ledger.json",
+      "evidence_bundle_path": "papers/half-life-planning/evidence_bundle.json",
+      "generated_at": "2026-05-09 19:54:28.530934+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/half-life-planning/paper.md",
+      "public_id": "enoch-paper-0499",
+      "slug": "half-life-planning",
+      "source_record_fingerprint": "d00287858a341b16",
+      "strict_audit_pass": false,
+      "title": "Half-Life Planning"
     },
     {
       "ai_generated": true,

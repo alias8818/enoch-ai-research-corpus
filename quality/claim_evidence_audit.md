@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 377
+Strict claim/evidence passed: 3 / 378
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 256 / 377
+- Empty claim ledgers: 257 / 378
 - Evidence `result_files` references: 1429
 - Publicly present result-file references: 22
 - Missing result-file references: 1387
@@ -195,6 +195,7 @@ Status: `blocked_audit_gaps`
 | `ghost-route-policy-evaluator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `goal-shard-manager` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `goose-sa-anisotropic-tree` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `half-life-planning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `head-importance-self-labeling` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `home-lab-agent-orchestrator` | False | 2 | 8 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
 | `hot-cold-tensor-paging` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |

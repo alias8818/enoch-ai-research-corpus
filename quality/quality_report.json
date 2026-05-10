@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 256,
-    "count": 377,
+    "claim_ledgers_empty": 257,
+    "count": 378,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 377,
+  "count": 378,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 377,
+  "passed": 378,
   "rows": [
     {
       "bytes": 16279,
@@ -1795,6 +1795,17 @@
       "passes": true,
       "slug": "goose-sa-anisotropic-tree",
       "words": 2435
+    },
+    {
+      "bytes": 16513,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/half-life-planning/paper.md",
+      "passes": true,
+      "slug": "half-life-planning",
+      "words": 2533
     },
     {
       "bytes": 14166,

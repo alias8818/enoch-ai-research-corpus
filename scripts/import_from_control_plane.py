@@ -156,6 +156,7 @@ def dry_run_check(
 ) -> dict[str, Any]:
     detail = paper_detail(base_url, token, paper_id)
     paper = detail.get("paper") if isinstance(detail.get("paper"), dict) else detail
+    event_types = {str(item.get("event_type") or "") for item in detail.get("events") or [] if isinstance(item, dict)}
     issues: list[str] = []
     if expected_paper_status and str(paper.get("paper_status") or row.get("paper_status") or "") != expected_paper_status:
         issues.append("unexpected_paper_status")
@@ -163,6 +164,10 @@ def dry_run_check(
         issues.append("unexpected_review_status")
     if not str(paper.get("finalization_package_path") or ""):
         issues.append("missing_finalization_package")
+    if "paper.drafted" not in event_types:
+        issues.append("missing_paper_drafted_event")
+    if "paper_review.finalization_package_prepared" not in event_types:
+        issues.append("missing_finalization_event")
     artifact_checks: dict[str, Any] = {}
     for field in ARTIFACT_FIELDS:
         target = paper_dir / TARGET_NAMES[field]
@@ -196,6 +201,10 @@ def dry_run_check(
         "paper_status": str(paper.get("paper_status") or row.get("paper_status") or ""),
         "review_status": str(paper.get("review_status") or row.get("review_status") or ""),
         "has_finalization_package": bool(str(paper.get("finalization_package_path") or "")),
+        "positive_publication_evidence": {
+            "paper_drafted_event": "paper.drafted" in event_types,
+            "finalization_event": "paper_review.finalization_package_prepared" in event_types,
+        },
         "artifact_checks": artifact_checks,
         "issues": sorted(set(issues)),
     }

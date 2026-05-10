@@ -294,8 +294,6 @@ def main() -> int:
     errors: list[dict[str, str]] = []
     dry_run_checks: list[dict[str, Any]] = []
     for row in iter_rows(args.control_url, args.token, page_size=args.page_size, review_status=args.review_status, paper_status=args.paper_status, search=args.search):
-        if args.limit and seen >= args.limit:
-            break
         seen += 1
         paper_id = str(row.get("paper_id") or "")
         project_name = str(row.get("project_name") or paper_id or "Untitled Paper")
@@ -362,6 +360,8 @@ def main() -> int:
             imported += 0 if existed else 1
             updated += 1 if existed else 0
             known[fp] = paper_dir
+            if args.limit and (imported + updated) >= args.limit:
+                break
             continue
         try:
             paper_dir.mkdir(parents=True, exist_ok=True)
@@ -383,6 +383,8 @@ def main() -> int:
         except Exception as exc:  # keep batch progress visible
             failed += 1
             errors.append({"paper_id_fingerprint": fp, "project_name": project_name, "error": f"{type(exc).__name__}: {exc}"})
+        if args.limit and (imported + updated) >= args.limit:
+            break
     output: dict[str, Any] = {"seen": seen, "imported": imported, "updated": updated, "skipped": skipped, "skipped_existing_slug": skipped_existing_slug, "failed": failed, "errors": errors}
     if args.dry_run:
         output["dry_run_checks"] = dry_run_checks

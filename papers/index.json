@@ -1,5 +1,5 @@
 {
-  "count": 383,
+  "count": 384,
   "highlight_count": 13,
   "highlights": [
     {
@@ -5275,6 +5275,21 @@
       "source_record_fingerprint": "91e1c6d560e91e05",
       "strict_audit_pass": false,
       "title": "Sub-8GB Model Zoo Triage"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/supabase-full-runtime-state-boundary-drill/claim_ledger.json",
+      "evidence_bundle_path": "papers/supabase-full-runtime-state-boundary-drill/evidence_bundle.json",
+      "generated_at": "2026-05-09 18:21:18.386396+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/supabase-full-runtime-state-boundary-drill/paper.md",
+      "public_id": "enoch-paper-0505",
+      "slug": "supabase-full-runtime-state-boundary-drill",
+      "source_record_fingerprint": "ea98d9e01898a028",
+      "strict_audit_pass": false,
+      "title": "Supabase Full Runtime State Boundary Drill"
     },
     {
       "ai_generated": true,

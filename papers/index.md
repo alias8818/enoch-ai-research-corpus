@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 383
+Count: 384
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 383/383 packaging/provenance lint pass and 3/383 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 384/384 packaging/provenance lint pass and 3/384 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -371,6 +371,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Strong-Draft Weak-Reviewer Transfer](strong-draft-weak-reviewer-transfer/paper.md) | `enoch-paper-0265` | yes | yes | 0 | false | 0 |
 | [Structured Noise Injection Suite](structured-noise-injection-suite/paper.md) | `enoch-paper-0047` | yes | yes | 2 | false | 10 |
 | [Sub-8GB Model Zoo Triage](sub-8gb-model-zoo-triage/paper.md) | `enoch-paper-0336` | yes | yes | 0 | false | 0 |
+| [Supabase Full Runtime State Boundary Drill](supabase-full-runtime-state-boundary-drill/paper.md) | `enoch-paper-0505` | yes | yes | 0 | false | 0 |
 | [Supabase Native Control-Plane Dispatch Drill](supabase-native-control-plane-dispatch-drill/paper.md) | `enoch-paper-0504` | yes | yes | 0 | false | 0 |
 | [Swarm Counterfactual Logger](swarm-counterfactual-logger/paper.md) | `enoch-paper-0334` | yes | yes | 0 | false | 0 |
 | [Swarm Heartbeat Bus](swarm-heartbeat-bus/paper.md) | `enoch-paper-0176` | yes | yes | 0 | false | 0 |

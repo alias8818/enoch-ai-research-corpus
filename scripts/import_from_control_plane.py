@@ -77,6 +77,9 @@ def sanitize_public_content(content: str, *, redactions: Iterable[str] = ()) -> 
     content = re.sub(r"/(?:home|root)/[^\s\"'`<>),]+", "<local-path-redacted>", content)
     content = PRIVATE_IP_RE.sub("<private-ip-redacted>", content)
     wording_replacements = {
+        "Enoch/OMX control plane": "Enoch control plane",
+        "Enoch/OMX": "Enoch",
+        "No human reviewer has validated the claims herein.": "No independent human review has been performed on the code, results, or interpretation.",
         "## Review Required": "## AI Provenance and Scope",
         "Human review and richer claim extraction are still required.": "No independent human review has been performed; richer claim extraction remains outside this packaging/provenance release gate.",
         "intended for human review before public submission": "released as an unreviewed AI-generated research artifact for corpus inspection",
@@ -107,6 +110,95 @@ def request_json(base_url: str, token: str, path: str) -> dict[str, Any]:
     req = urllib.request.Request(base_url.rstrip("/") + path, headers={"Authorization": f"Bearer {token}"})
     with urllib.request.urlopen(req, timeout=120) as resp:  # noqa: S310 - operator-provided control URL
         return json.loads(resp.read())
+
+
+def paper_detail(base_url: str, token: str, paper_id: str) -> dict[str, Any]:
+    return request_json(base_url, token, f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}")
+
+
+def artifact_content(base_url: str, token: str, paper_id: str, field: str) -> str:
+    artifact = request_json(
+        base_url,
+        token,
+        f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}/artifact/{field}",
+    )
+    return str(artifact.get("content") or "")
+
+
+def public_content_issues(content: str) -> list[str]:
+    issues: list[str] = []
+    if PRIVATE_IP_RE.search(content):
+        issues.append("private_ip")
+    if SOURCE_RECORD_RE.search(content):
+        issues.append("source_record_id")
+    if "Enoch/OMX" in content:
+        issues.append("legacy_omx_label")
+    if "No human reviewer has validated" in content:
+        issues.append("old_manual_review_wording")
+    for pattern in TOKEN_PATTERNS:
+        if pattern.search(content):
+            issues.append("secret_like_token")
+            break
+    return sorted(set(issues))
+
+
+def dry_run_check(
+    base_url: str,
+    token: str,
+    *,
+    row: dict[str, Any],
+    paper_id: str,
+    paper_dir: Path,
+    match_kind: str,
+    redactions: Iterable[str],
+    expected_paper_status: str,
+    expected_review_status: str,
+) -> dict[str, Any]:
+    detail = paper_detail(base_url, token, paper_id)
+    paper = detail.get("paper") if isinstance(detail.get("paper"), dict) else detail
+    issues: list[str] = []
+    if expected_paper_status and str(paper.get("paper_status") or row.get("paper_status") or "") != expected_paper_status:
+        issues.append("unexpected_paper_status")
+    if expected_review_status and str(paper.get("review_status") or row.get("review_status") or "") != expected_review_status:
+        issues.append("unexpected_review_status")
+    if not str(paper.get("finalization_package_path") or ""):
+        issues.append("missing_finalization_package")
+    artifact_checks: dict[str, Any] = {}
+    for field in ARTIFACT_FIELDS:
+        target = paper_dir / TARGET_NAMES[field]
+        try:
+            raw_content = artifact_content(base_url, token, paper_id, field)
+            sanitized = sanitize_public_content(raw_content, redactions=redactions)
+            content_issues = public_content_issues(sanitized)
+            if not sanitized.strip():
+                content_issues.append("empty_after_sanitize")
+            if content_issues:
+                issues.extend(f"{field}:{issue}" for issue in content_issues)
+            artifact_checks[field] = {
+                "source_len": len(raw_content),
+                "sanitized_len": len(sanitized),
+                "target": str(target.relative_to(ROOT)),
+                "issues": content_issues,
+            }
+        except Exception as exc:
+            issue = f"{field}:fetch_failed"
+            issues.append(issue)
+            artifact_checks[field] = {
+                "target": str(target.relative_to(ROOT)),
+                "issues": [issue],
+                "error": f"{type(exc).__name__}: {exc}",
+            }
+    return {
+        "paper_id_fingerprint": source_fingerprint(paper_id),
+        "project_name": str(row.get("project_name") or paper_id or "Untitled Paper"),
+        "target_dir": str(paper_dir.relative_to(ROOT)),
+        "match_kind": match_kind,
+        "paper_status": str(paper.get("paper_status") or row.get("paper_status") or ""),
+        "review_status": str(paper.get("review_status") or row.get("review_status") or ""),
+        "has_finalization_package": bool(str(paper.get("finalization_package_path") or "")),
+        "artifact_checks": artifact_checks,
+        "issues": sorted(set(issues)),
+    }
 
 
 def existing_by_fingerprint() -> dict[str, Path]:
@@ -200,6 +292,7 @@ def main() -> int:
     next_number = next_public_number()
     imported = updated = skipped = skipped_existing_slug = failed = seen = 0
     errors: list[dict[str, str]] = []
+    dry_run_checks: list[dict[str, Any]] = []
     for row in iter_rows(args.control_url, args.token, page_size=args.page_size, review_status=args.review_status, paper_status=args.paper_status, search=args.search):
         if args.limit and seen >= args.limit:
             break
@@ -240,6 +333,32 @@ def main() -> int:
             "source_system": "Enoch control plane export",
         }
         if args.dry_run:
+            redactions = {paper_id, project_id, run_id}
+            try:
+                check = dry_run_check(
+                    args.control_url,
+                    args.token,
+                    row=row,
+                    paper_id=paper_id,
+                    paper_dir=paper_dir,
+                    match_kind=match_kind,
+                    redactions=redactions,
+                    expected_paper_status=args.paper_status,
+                    expected_review_status=args.review_status,
+                )
+                dry_run_checks.append(check)
+                if check["issues"]:
+                    failed += 1
+                    errors.append(
+                        {
+                            "paper_id_fingerprint": fp,
+                            "project_name": project_name,
+                            "error": "dry_run_check_failed: " + ",".join(check["issues"]),
+                        }
+                    )
+            except Exception as exc:
+                failed += 1
+                errors.append({"paper_id_fingerprint": fp, "project_name": project_name, "error": f"dry_run_check_exception: {type(exc).__name__}: {exc}"})
             imported += 0 if existed else 1
             updated += 1 if existed else 0
             known[fp] = paper_dir
@@ -264,7 +383,10 @@ def main() -> int:
         except Exception as exc:  # keep batch progress visible
             failed += 1
             errors.append({"paper_id_fingerprint": fp, "project_name": project_name, "error": f"{type(exc).__name__}: {exc}"})
-    print(json.dumps({"seen": seen, "imported": imported, "updated": updated, "skipped": skipped, "skipped_existing_slug": skipped_existing_slug, "failed": failed, "errors": errors}, indent=2, sort_keys=True))
+    output: dict[str, Any] = {"seen": seen, "imported": imported, "updated": updated, "skipped": skipped, "skipped_existing_slug": skipped_existing_slug, "failed": failed, "errors": errors}
+    if args.dry_run:
+        output["dry_run_checks"] = dry_run_checks
+    print(json.dumps(output, indent=2, sort_keys=True))
     return 1 if failed else 0
 
 

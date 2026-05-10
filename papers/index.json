@@ -1,5 +1,5 @@
 {
-  "count": 376,
+  "count": 377,
   "highlight_count": 13,
   "highlights": [
     {
@@ -5470,6 +5470,21 @@
       "source_record_fingerprint": "990d7e88d256fb18",
       "strict_audit_pass": false,
       "title": "Tool-Boundary Non-Speculate Gate"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/tool-starvation-detector/claim_ledger.json",
+      "evidence_bundle_path": "papers/tool-starvation-detector/evidence_bundle.json",
+      "generated_at": "2026-05-09 20:15:13.846669+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/tool-starvation-detector/paper.md",
+      "public_id": "enoch-paper-0498",
+      "slug": "tool-starvation-detector",
+      "source_record_fingerprint": "65a05678d1d5426e",
+      "strict_audit_pass": false,
+      "title": "Tool Starvation Detector"
     },
     {
       "ai_generated": true,

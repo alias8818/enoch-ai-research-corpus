@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 263,
-    "count": 384,
+    "claim_ledgers_empty": 264,
+    "count": 385,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 384,
+  "count": 385,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 384,
+  "passed": 385,
   "rows": [
     {
       "bytes": 16279,
@@ -871,6 +871,17 @@
       "passes": true,
       "slug": "context-capital-allocator",
       "words": 2338
+    },
+    {
+      "bytes": 19171,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/context-derived-n-gram-trie-speculative-decoding/paper.md",
+      "passes": true,
+      "slug": "context-derived-n-gram-trie-speculative-decoding",
+      "words": 2732
     },
     {
       "bytes": 14573,

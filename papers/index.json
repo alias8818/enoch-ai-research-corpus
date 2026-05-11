@@ -1,5 +1,5 @@
 {
-  "count": 384,
+  "count": 385,
   "highlight_count": 13,
   "highlights": [
     {
@@ -1285,6 +1285,21 @@
       "source_record_fingerprint": "3845973a524a3567",
       "strict_audit_pass": false,
       "title": "Context Capital Allocator"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/context-derived-n-gram-trie-speculative-decoding/claim_ledger.json",
+      "evidence_bundle_path": "papers/context-derived-n-gram-trie-speculative-decoding/evidence_bundle.json",
+      "generated_at": "2026-05-11 20:27:45.639111+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/context-derived-n-gram-trie-speculative-decoding/paper.md",
+      "public_id": "enoch-paper-0506",
+      "slug": "context-derived-n-gram-trie-speculative-decoding",
+      "source_record_fingerprint": "523d2349baba374f",
+      "strict_audit_pass": false,
+      "title": "Context-Derived N-Gram Trie Speculative Decoding"
     },
     {
       "ai_generated": true,

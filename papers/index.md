@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 384
+Count: 385
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 384/384 packaging/provenance lint pass and 3/384 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 385/385 packaging/provenance lint pass and 3/385 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -105,6 +105,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Contention-Aware Single-Medium Backend Broker Benchmark](contention-aware-single-medium-backend-broker-benchmark/paper.md) | `enoch-paper-0057` | yes | yes | 2 | false | 20 |
 | [Context Budget Dropout](context-budget-dropout/paper.md) | `enoch-paper-0273` | yes | yes | 0 | false | 0 |
 | [Context Capital Allocator](context-capital-allocator/paper.md) | `enoch-paper-0188` | yes | yes | 0 | false | 0 |
+| [Context-Derived N-Gram Trie Speculative Decoding](context-derived-n-gram-trie-speculative-decoding/paper.md) | `enoch-paper-0506` | yes | yes | 0 | false | 0 |
 | [Context Digest Auxiliary Reconstruction](context-digest-auxiliary-reconstruction/paper.md) | `enoch-paper-0135` | yes | yes | 0 | false | 0 |
 | [Context Overflow Real LLM Reader Validation](context-overflow-real-llm-reader-validation/paper.md) | `enoch-paper-0010` | yes | yes | 2 | false | 13 |
 | [Context Provenance Firewall](context-provenance-firewall/paper.md) | `enoch-paper-0353` | yes | yes | 0 | false | 0 |

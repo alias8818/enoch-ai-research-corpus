@@ -1,5 +1,5 @@
 {
-  "count": 387,
+  "count": 388,
   "highlight_count": 13,
   "highlights": [
     {
@@ -3070,6 +3070,21 @@
       "source_record_fingerprint": "4980cf7e6fc07428",
       "strict_audit_pass": false,
       "title": "LLM Evidence-Survival QA Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/llm-generated-ledger-trace-replay-benchmark/claim_ledger.json",
+      "evidence_bundle_path": "papers/llm-generated-ledger-trace-replay-benchmark/evidence_bundle.json",
+      "generated_at": "2026-05-16 20:18:47.276363+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/llm-generated-ledger-trace-replay-benchmark/paper.md",
+      "public_id": "enoch-paper-0509",
+      "slug": "llm-generated-ledger-trace-replay-benchmark",
+      "source_record_fingerprint": "c68e5f3363758373",
+      "strict_audit_pass": false,
+      "title": "LLM-Generated Ledger Trace-Replay Benchmark"
     },
     {
       "ai_generated": true,

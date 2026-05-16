@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 387
+Strict claim/evidence passed: 3 / 388
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 266 / 387
+- Empty claim ledgers: 267 / 388
 - Evidence `result_files` references: 1429
 - Publicly present result-file references: 22
 - Missing result-file references: 1387
@@ -230,6 +230,7 @@ Status: `blocked_audit_gaps`
 | `llm-backed-summary-drift-corpus-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `llm-code-navigation-context-packer-evaluation` | False | 2 | 5 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
 | `llm-evidence-survival-qa-validation` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
+| `llm-generated-ledger-trace-replay-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `llm-mcp-mutation-proxy-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `load-balancer-free-symmetry-breaker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `locality-switched-windowing` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

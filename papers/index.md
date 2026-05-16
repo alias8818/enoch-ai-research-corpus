@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 387
+Count: 388
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 387/387 packaging/provenance lint pass and 3/387 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 388/388 packaging/provenance lint pass and 3/388 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -224,6 +224,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [LLM-Backed Summary Drift Corpus Validation](llm-backed-summary-drift-corpus-validation/paper.md) | `enoch-paper-0303` | yes | yes | 0 | false | 0 |
 | [LLM Code Navigation Context-Packer Evaluation](llm-code-navigation-context-packer-evaluation/paper.md) | `enoch-paper-0086` | yes | yes | 2 | false | 5 |
 | [LLM Evidence-Survival QA Validation](llm-evidence-survival-qa-validation/paper.md) | `enoch-paper-0053` | yes | yes | 2 | false | 20 |
+| [LLM-Generated Ledger Trace-Replay Benchmark](llm-generated-ledger-trace-replay-benchmark/paper.md) | `enoch-paper-0509` | yes | yes | 0 | false | 0 |
 | [LLM MCP Mutation Proxy Benchmark](llm-mcp-mutation-proxy-benchmark/paper.md) | `enoch-paper-0218` | yes | yes | 0 | false | 0 |
 | [Load-Balancer-Free Symmetry Breaker](load-balancer-free-symmetry-breaker/paper.md) | `enoch-paper-0127` | yes | yes | 0 | false | 0 |
 | [Locality-Switched Windowing](locality-switched-windowing/paper.md) | `enoch-paper-0321` | yes | yes | 0 | false | 0 |

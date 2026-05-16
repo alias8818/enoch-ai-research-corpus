@@ -1,5 +1,5 @@
 {
-  "count": 386,
+  "count": 387,
   "highlight_count": 13,
   "highlights": [
     {
@@ -1195,6 +1195,21 @@
       "source_record_fingerprint": "ba3afc7e62b460f8",
       "strict_audit_pass": false,
       "title": "Compression Overhead Estimator"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/concurrent-postgres-backed-anchored-langgraph-restart-validation/claim_ledger.json",
+      "evidence_bundle_path": "papers/concurrent-postgres-backed-anchored-langgraph-restart-validation/evidence_bundle.json",
+      "generated_at": "2026-05-16 19:35:37.320807+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/concurrent-postgres-backed-anchored-langgraph-restart-validation/paper.md",
+      "public_id": "enoch-paper-0508",
+      "slug": "concurrent-postgres-backed-anchored-langgraph-restart-validation",
+      "source_record_fingerprint": "11b2994e3935b2e0",
+      "strict_audit_pass": false,
+      "title": "Concurrent Postgres-backed anchored LangGraph restart validation"
     },
     {
       "ai_generated": true,

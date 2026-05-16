@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 386
+Count: 387
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 386/386 packaging/provenance lint pass and 3/386 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 387/387 packaging/provenance lint pass and 3/387 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -99,6 +99,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Compression-Aware MicroLM](compression-aware-microlm/paper.md) | `enoch-paper-0295` | yes | yes | 0 | false | 0 |
 | [Compression Gap Penalty](compression-gap-penalty/paper.md) | `enoch-paper-0154` | yes | yes | 0 | false | 0 |
 | [Compression Overhead Estimator](compression-overhead-estimator/paper.md) | `enoch-paper-0351` | yes | yes | 0 | false | 0 |
+| [Concurrent Postgres-backed anchored LangGraph restart validation](concurrent-postgres-backed-anchored-langgraph-restart-validation/paper.md) | `enoch-paper-0508` | yes | yes | 0 | false | 0 |
 | [Confidence-Triggered Reread Training](confidence-triggered-reread-training/paper.md) | `enoch-paper-0293` | yes | yes | 0 | false | 0 |
 | [Configuration Entropy Reducer](configuration-entropy-reducer/paper.md) | `enoch-paper-0144` | yes | yes | 0 | false | 0 |
 | [Consent Receipt Engine](consent-receipt-engine/paper.md) | `enoch-paper-0194` | yes | yes | 0 | false | 0 |

@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 386
+Strict claim/evidence passed: 3 / 387
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 265 / 386
+- Empty claim ledgers: 266 / 387
 - Evidence `result_files` references: 1429
 - Publicly present result-file references: 22
 - Missing result-file references: 1387
@@ -105,6 +105,7 @@ Status: `blocked_audit_gaps`
 | `compression-aware-microlm` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `compression-gap-penalty` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `compression-overhead-estimator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `concurrent-postgres-backed-anchored-langgraph-restart-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `confidence-triggered-reread-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `configuration-entropy-reducer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `consent-receipt-engine` | False | 0 | 0 | ["claim_ledger_empty_claims"] |

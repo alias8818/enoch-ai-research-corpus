@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 265,
-    "count": 386,
+    "claim_ledgers_empty": 266,
+    "count": 387,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 386,
+  "count": 387,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 386,
+  "passed": 387,
   "rows": [
     {
       "bytes": 16279,
@@ -805,6 +805,17 @@
       "passes": true,
       "slug": "compression-overhead-estimator",
       "words": 2148
+    },
+    {
+      "bytes": 19007,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/concurrent-postgres-backed-anchored-langgraph-restart-validation/paper.md",
+      "passes": true,
+      "slug": "concurrent-postgres-backed-anchored-langgraph-restart-validation",
+      "words": 2613
     },
     {
       "bytes": 15943,

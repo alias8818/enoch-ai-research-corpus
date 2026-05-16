@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T215448674289+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "0bb8e3f53c3410de26a9648f567f1f71ee4332d81e6c45eb1e2b224ca61276e0"
+    },
+    {
+      "bytes": 468,
+      "path": "metadata.json",
+      "sha256": "e2a8fed292ecb6f1677920bdbe979c57e13280ec477862472a3eeda5458cf6c4"
+    },
+    {
+      "bytes": 13813,
+      "path": "evidence/public_paper.md",
+      "sha256": "f9b641417a0c861462a6e09a4421200d98883d26a73879cfa9e095fa2fd2b84a"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "real-mode-stress-regularization",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

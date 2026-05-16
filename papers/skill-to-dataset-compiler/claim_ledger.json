@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "We present a deterministic compiler that transforms Codex `SKILL.md` files into a validated, provenance-annotated JSONL dataset intended for skill-routing and skill-card tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Every record carries full provenance including source path, SHA-256 hash, and the extracted evidence span.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and logs). The operator who released these artifacts claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a full local compilation over 40 source skills, the compiler produced 122 records with zero validation errors, 122 unique identifiers, and complete provenance coverage, completing in 0.06 seconds wall time with 18,528 KB peak RSS.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The compiler has no external dependencies beyond the Python 3 standard library.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Negative routing examples are sparse (2 of 40 skills yielded parseable exclusions), and the Markdown parser is regex-based, which may limit robustness on heterogeneous skill formats.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The formal claim ledger for this artifact contains no audit-approved claims; all statements herein should be read as prototype-level observations rather than validated research claims.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and logs). The operator who released these artifacts claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Training or evaluating routing models requires labeled datasets mapping requests to skills, ideally with both positive and negative examples and with metadata describing each skill's scope and procedures.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The research question, as recorded in the run notes, is: *Can a local compiler turn Codex `SKILL.md` files into a concrete dataset with provenance, validation, and useful weak labels without private services or manual annotation?* The prototype evidence supports a qualified affirmative for the compilation path, while leaving the training-value question open.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The compiler is implemented as a single Python script (`scripts/skill_to_dataset.py`) with no dependencies beyond the Python 3 standard library.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "It performs the following steps: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and logs). The operator who released these artifacts claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Field extraction.** For each skill file, the compiler extracts: - Title (from the first heading) - First descriptive paragraph - `Use when` conditions - `Do not use when` conditions (exclusion criteria) - Bullets and checklists 3.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Record emission.** The compiler emits JSONL records of four types: - `route_positive` \u2014 maps a user request or evidence span to the skill to use, derived from the `Use when` section and descriptive text.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Skill-to-Dataset Compiler: Deterministic Provenance-Rich Weak Supervision from Codex Skill Files",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T160618346714+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "skill-to-dataset-compiler",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

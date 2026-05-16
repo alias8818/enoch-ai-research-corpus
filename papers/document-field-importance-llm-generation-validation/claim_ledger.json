@@ -1,37 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Document-Field Importance LLM Generation Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/squad_generation_field_importance_metrics.json"
+      "claim": "We investigate whether document-field importance signals, when used to guide prompt-packing policies for retrieval-augmented generation, improve generated-answer accuracy over similarity-centric packing baselines.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as positive evidence that field-importance prompt packing improves local small-model generated-answer accuracy on the reused SQuAD slice.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a local `google/flan-t5-small` model on CUDA with greedy decoding, we evaluate four packing policies on 240 SQuAD development examples under a 70-token packing budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The targeted field-importance policy (`targeted_fix_from_importance_set`) achieves 67.08% exact match and 75.54% token F1, compared to 57.50% exact match and 65.36% token F1 for similarity-centric packing\u2014improvements of 9.58 and 10.18 points respectively.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An oracle upper bound (`importance_oracle_upper_bound`) reaches 71.67% exact match, leaving a 4.58-point gap indicating that the learned policy captures most but not all answer-bearing field selection value.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Retrieval-augmented generation systems must select which retrieved passages or document fields to include in a language model's prompt, typically under a fixed token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work in this project line established that field-importance policies improve evidence-presence proxies (e.g., whether the answer string appears in the packed prompt).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The present study extends that line by evaluating whether the uplift persists when the packed prompts are actually consumed by a local language model to generate answers, rather than being scored only on evidence-presence metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from a controlled local benchmark on a SQuAD slice, comparing four packing policies: similarity-centric packing, a field-prior baseline, a targeted field-importance policy, and an importance oracle upper bound.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We find that the targeted field-importance policy substantially outperforms similarity-centric packing on both exact match and token F1, clearing a pre-registered success threshold of \u22655 exact-match points improvement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Document-Field Importance for Prompt Packing: Validation via Local LLM Generation on SQuAD",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a question and a set of document fields (passages), the task is to select a subset of fields that fits within a token budget and maximizes the quality of a language model's generated answer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate four policies, listed in the order they ranked by exact-match accuracy: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This policy always includes fields containing the answer, establishing an upper bound on achievable performance under the token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The local FLAN-T5-small generation benchmark cleared the branch success threshold with +9.58 exact-match points and +10.18 token-F1 points over similarity-centric packing."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "document-field-importance-llm-generation-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

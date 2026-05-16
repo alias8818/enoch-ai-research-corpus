@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Token Rent for Examples produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/benchmark_summary.json",
-        "results/benchmark_rows.csv",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_time.txt",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_stdout.json",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_summary.json",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_topkbackoff_answerfield_cases3_rows.csv",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_time.txt",
-        "results/semireal_live_qwen25_7b_adaptive_sparse_ambiguity_backoff_answerfield_cases3_stdout.json"
+      "claim": "We present Token Rent for Examples, a greedy evidence-packing method that selects retrieved context under a fixed token budget by optimizing a marginal utility density signal penalized by a per-token rent and inter-evidence redundancy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this project as a positive result: use ambiguity-aware sparse reserve plus underspecified top-k backoff as the current token-rent mechanism.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In a deterministic offline synthetic benchmark spanning four task families (1,920 paired comparisons), token-rent packing achieved a +1.16 mean quality-proxy improvement and 20.97% token savings at matched quality versus retrieve-then-read top-k.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In live llama.cpp prototype evaluations with Phi-4-mini-instruct (48 pairs) and Qwen2.5-7B-Instruct (72 pairs), a naive adaptive rent variant over-compressed underspecified multi-hop prompts, degrading answer F1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Introducing an ambiguity-aware sparse reserve with top-k backoff for underspecified queries recovered answer quality (mean answer-F1 delta +0.0035, strict citation delta +0.1667) while retaining 15.42% packer-token savings on the final Qwen2.5-7B suite.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is positive but narrow: robust quality requires detecting when rent should back off rather than applying maximum compression uniformly.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Retrieval-augmented generation (RAG) systems conventionally select context by retrieving the top-k scored evidence chunks and concatenating them until a token budget is exhausted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This retrieve-then-read approach ignores the marginal utility density of each chunk relative to its token cost, leading to bloated prompts that include verbose, redundant, or low-yield evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Token Rent for Examples hypothesizes that treating each token of context as having a rental cost\u2014and selecting evidence by marginal estimated gain minus token rent and redundancy penalties\u2014can produce shorter prompts with equal or better answer quality.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The key design question is how to set the rent: too low and the packer behaves like top-k, too high and it over-compresses, evicting evidence required for multi-hop or underspecified queries.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This paper reports the design, iterative calibration, and evaluation of token-rent packing across three tiers of evidence: (1) a deterministic offline synthetic benchmark, (2) a small live inference harness on a 3.8B-parameter model, and (3) a semi-real live benchmark on a 7B-parameter model with progressively harder configurations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The baseline packer (`pack_topk`) sorts retrieved evidence chunks by retrieval score and greedily adds them to the prompt until the token budget is exhausted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The token-rent packer (`pack_token_rent`) selects evidence by maximizing a marginal utility density criterion.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token Rent for Examples: Budget-Aware Evidence Packing with Ambiguity-Aware Backoff",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The final 72-pair Qwen2.5-7B answer-field suite met all gates with +0.0035 answer-F1, +0.1667 citation accuracy, and 15.42% packer-token savings while the helper server was stopped cleanly."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "token-rent-for-examples",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

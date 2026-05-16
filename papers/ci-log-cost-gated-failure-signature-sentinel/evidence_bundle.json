@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T202818695637+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "c6059ad347f9f7e9698cff383f44a6c75562d6ff569e41bd32167f860c808a2a"
+    },
+    {
+      "bytes": 481,
+      "path": "metadata.json",
+      "sha256": "ca47143c8cebeb45e57b3f17167c1d0bb9413f3069b0f52b41931160b6268510"
+    },
+    {
+      "bytes": 13077,
+      "path": "evidence/public_paper.md",
+      "sha256": "fa992ffa4ae5af47a49c3c423eaf3ef2c2f9372678e960a7a25cfe148f2eb0ee"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "ci-log-cost-gated-failure-signature-sentinel",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

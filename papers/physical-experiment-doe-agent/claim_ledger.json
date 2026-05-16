@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains entirely in pending status.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains ent",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The agent combines a maximin Latin-hypercube initial design with a Gaussian-process surrogate (Mat\u00e9rn 5/2 kernel, white-noise term) and sequential expected-improvement acquisition, subject to hard deterministic safety constraints enforced before proposal.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a three-factor noisy reactor-yield toy simulation over 20 independent seeds at a 20-run budget, the agent achieved a mean best observed yield of 92.84 (SD 0.36), compared to 89.73 (SD 2.30) for safe random sampling and 88.76 (SD 2.47) for LHS-only designs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Paired t-tests yielded *p* \u2248 6.5 \u00d7 10\u207b\u2076 (agent vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate whether a small autonomous design-of-experiments (DOE) agent can produce safe, useful next-run recommendations for a constrained physical experiment, with measurable improvement over na\u00efve safe random sampling or a one-shot space-filling design. The agent combines a maximin Latin-hypercube initial design with a Gaussian-process surrogate (Mat\u00e9rn 5/2 kernel, white-noise term) and sequential expected-improvement acquisition, subject to hard deterministic safety constraints enforced bef",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "safe random, mean \u0394 = +3.11, 95% CI [2.05, 4.16]) and *p* \u2248 1.3 \u00d7 10\u207b\u2076 (agent vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "LHS-only, mean \u0394 = +4.08, 95% CI [2.85, 5.31]).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate whether a small autonomous design-of-experiments (DOE) agent can produce safe, useful next-run recommendations for a constrained physical experiment, with measurable improvement over na\u00efve safe random sampling or a one-shot space-filling design. The agent combines a maximin Latin-hypercube initial design with a Gaussian-process surrogate (Mat\u00e9rn 5/2 kernel, white-noise term) and sequential expected-improvement acquisition, subject to hard deterministic safety constraints enforced bef",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results constitute positive toy-simulation evidence for the viability of constrained GP-EI DOE agents in low-dimensional, run-scarce physical experiments.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the evidence is limited to a single simulated response surface with known deterministic safety constraints; closure on real physical workflows would require learned probabilistic safety constraints, instrument interfaces, and calibration runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains ent",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sequential Bayesian optimization offers an alternative: fit a probabilistic surrogate to observed data, then use an acquisition function to select the next run.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The DOE agent (`src/doe_agent.py`) operates in six stages: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains ent",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Surrogate fitting.** A Gaussian-process regressor with a Mat\u00e9rn 5/2 kernel and a WhiteKernel noise term is fit to all observed (factor, response) pairs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sequential Safe Design-of-Experiments via Gaussian-Process Expected Improvement: A Simulation Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each seed, the best observed noisy yield over the 20-run budget is recorded for each method.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark logs, decision records, and telemetry). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. The claim ledger for this paper contains no completed claim-audit entries, and the review checklist (9 items) remains ent",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "physical-experiment-doe-agent",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

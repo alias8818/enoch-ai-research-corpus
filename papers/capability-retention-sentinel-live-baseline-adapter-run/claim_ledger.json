@@ -1,36 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Capability Retention Sentinel Live Baseline Adapter Run produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We further introduce a live baseline adapter that executes prompts against any OpenAI-compatible `/chat/completions` endpoint and compares baseline versus candidate model reports.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Promote the live-baseline adapter artifacts and use `run-openai-compatible` plus `compare-live-baseline` against any controller-selected real baseline/compressed endpoint model pair.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In self-test against synthetic reference and intentionally degraded responses, the suite achieves a reference score of 1.0 and a degraded score of 0.0, correctly flagging regression.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a mock-server integration test over 27 prompts, the baseline model scores 1.0 (gate pass) and the compressed model scores 0.0 (gate fail), with a per-category delta of \u22121.0.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A live smoke test against a local llama.cpp server serving Phi-4-mini-instruct-Q4_K_M produced zero runner failures but scored 0/3 on exact-copy prompts due to nonsensical model outputs\u2014a negative result that confirms the adapter mechanism functions correctly while honestly reflecting poor model performance on the tested subset.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the suite's utility as an adapter and scoring mechanism but do not constitute evidence of capability retention for any specific model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A live baseline adapter extends this to OpenAI-compatible endpoints, enabling direct baseline-versus-candidate comparison.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The core hypothesis under test is: *the sentinel suite catches intentional regressions across all required categories and can be wired to local model runners without adding dependencies.* The current project artifacts support this finding in the tested setting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The scorer emits a per-category pass rate and an aggregate score in [0, 1], along with a binary gate decision (pass/fail against a configurable threshold).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The `live_baseline.py` module implements: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Endpoint contract verification**: confirms the target server exposes `/v1/models` and `/v1/chat/completions` with the expected contract.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Baseline-vs-candidate comparison**: loads two previously generated reports (baseline and candidate), computes per-category deltas, and emits a comparison JSON with a retention gate decision.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A mock OpenAI-compatible server (`scripts/mock_openai_server.py`) provides two named models\u2014`local-baseline-mock` (returns correct responses) and `local-compressed-mock` (returns empty/incorrect responses)\u2014for integration testing without a real model endpoint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Capability Retention Sentinel with Live Baseline Adapter: A Dependency-Free Suite for Detecting LLM Capability Regression",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch now has executable parent suite artifacts, a verified OpenAI-compatible live adapter, named-model baseline/compressed comparison artifacts, unit coverage, and a real llama.cpp endpoint smoke with no helper servers left running."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "capability-retention-sentinel-live-baseline-adapter-run",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

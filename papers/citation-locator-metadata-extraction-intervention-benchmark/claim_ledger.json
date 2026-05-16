@@ -1,42 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Citation Locator Metadata Extraction Intervention Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/intervention_summary_all_xrefs.md",
-        "results/stratified_manual_audit_all_xrefs.jsonl",
-        "results/locator_intervention_eval_all_xrefs.json",
-        "results/intervention_summary.md",
-        "results/stratified_manual_audit.jsonl",
-        "results/locator_intervention_eval.json"
+      "claim": "We investigate whether preserving and exploiting citation locator metadata within chunk text can improve evidence retrieval for citation-resolution tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Use the benchmark artifacts to justify locator-preserving chunking with locator-local expansion and optional citation-neighborhood tie-breaking in the parent citation-resolution pipeline.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using 300 weak-labeled examples derived from PubMed Central (PMC) natural documents, we compare a stripped-body retrieval baseline against a sequence of oracle-free interventions: preserved-text similarity, parsed-locator boosting, locator-window ranking, locator-local candidate expansion, and citation-neighborhood tie-breaking.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On the 161-example typed-locator subset, the best intervention (citation-neighborhood tie-breaking) yields answer exact accuracy of 0.6646, evidence top-1 of 0.5342, and MRR of 0.7318, compared to 0.3478, 0.2919, and 0.5241 for the stripped-body baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence top-1 improvement of +0.2423 exceeds the pre-registered +0.10 kill threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, a stratified manual audit of 32 cases reveals 8 intervention regressions alongside 8 intervention wins, and 40% of gold chunks contain multiple locators, limiting the granularity of paragraph-level approaches.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Results are based on CPU regex and token-overlap scoring over weak labels; they have not been validated with neural retrieval or human-verified gold annotations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence in the finding is medium and evidence strength is moderate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We test the hypothesis that preserving locator metadata (e.g., \"see Section 3.2\", \"Figure 4\", \"p.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "17\") in chunk text and exploiting it at ranking time improves evidence retrieval for citation-resolution queries.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The experiment uses a pre-registered kill condition: if preserving or parsing locator metadata fails to improve evidence top-1 by at least 10 percentage points over stripped-body retrieval, the branch is terminated.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results against this threshold on both a typed-locator subset (n=161) and a full weak-label set including noisy numeric-only cross-references (n=300).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The benchmark uses 300 weak-labeled citation-locator examples derived from PMC natural documents.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Locator Metadata Extraction Intervention Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch beat its kill threshold on typed and all-xref natural-document weak-label runs, and the requested same-locator tie-breaker produced a small positive oracle-free gain without new regressions on the typed set."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "citation-locator-metadata-extraction-intervention-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

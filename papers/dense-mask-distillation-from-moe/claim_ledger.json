@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "On a synthetic piecewise nonlinear regression task with four latent domains, we distill a 4-expert MoE teacher (2,708 parameters) into several student architectures under matched parameter budgets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Mixture-of-Experts (MoE) layers achieve conditional computation through input-dependent routing, but deployment requires memory proportional to the total number of experts. We investigate whether the conditional structure encoded by an MoE router can be transferred to a dense student network augmented with input-dependent hidden-unit masks. On a synthetic piecewise nonlinear regression task with four latent domains, we distill a 4-expert MoE teacher (2,708 parameters) into several student archit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A dense student with router-distilled group masks (2,024 parameters) reduces mean squared error (MSE) to the teacher by 76.2% relative to a parameter-matched ordinary dense MLP (2,020 parameters), and achieves 99.5% router agreement with the teacher.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Without the router distillation loss, the same mask architecture achieves only 8.9% router agreement and substantially higher error.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the mechanistic viability of router-informed dense mask distillation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, they are confined to a synthetic regression setting with CPU-only execution, an unoptimized mask implementation that does not demonstrate inference latency gains, and only three random seeds.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At inference, the student selects a hard top-1 mask group, activating only a fraction of hidden units\u2014mirroring the conditional activation pattern of the original MoE, but within a single dense weight matrix.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The contribution is a mechanistic demonstration that router distillation into dense masks substantially improves distillation fidelity under matched parameter counts, together with an honest accounting of the gaps between this result and practical deployment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dense Mask Distillation from Mixture-of-Experts: A Controlled Mechanistic Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We construct a synthetic piecewise nonlinear regression problem with four latent domains, determined by the signs of input dimensions 0 and 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision records, experiment logs, and metric summaries). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or required by this notice.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The teacher is a 4-expert MoE with 2,708 total parameters.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision records, experiment logs, and metric summaries). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or required by this notice.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A learned router selects one group per input via hard top-1 at evaluation time, yielding a theoretical active hidden fraction of 0.25.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Mixture-of-Experts (MoE) layers achieve conditional computation through input-dependent routing, but deployment requires memory proportional to the total number of experts. We investigate whether the conditional structure encoded by an MoE router can be transferred to a dense student network augmented with input-dependent hidden-unit masks. On a synthetic piecewise nonlinear regression task with four latent domains, we distill a 4-expert MoE teacher (2,708 parameters) into several student archit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The `mask_router_distilled` variant adds a cross-entropy loss between the student router's selection and the teacher's top-1 route.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision records, experiment logs, and metric summaries). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or required by this notice.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Teacher training:** 80 epochs (primary 3-seed runs) or 120 epochs (calibration run), MSE + router cross-entropy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision records, experiment logs, and metric summaries). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or required by this notice.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T064048371432+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "dense-mask-distillation-from-moe",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

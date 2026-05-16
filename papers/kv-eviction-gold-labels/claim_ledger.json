@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "KV Eviction Gold Labels produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/neural_replayed_ablation_spot_checks.md",
-        "artifacts/neural_replayed_ablation_label_preview.json",
-        "artifacts/neural_replayed_ablation_summary.json",
-        "artifacts/neural_replayed_ablation_eval_rows.csv",
-        "artifacts/replayed_ablation_spot_checks.md",
-        "artifacts/replayed_ablation_label_preview.json",
-        "artifacts/replayed_ablation_summary.json",
-        "artifacts/replayed_ablation_eval_rows.csv"
+      "claim": "Across three progressively realistic experimental stages\u2014synthetic-label simulation (1,500 examples), deterministic replayed-ablation labeling (300 examples), and neural-model replayed-ablation labeling using Qwen2.5-0.5B-Instruct (100 examples)\u2014we find that label-informed retention consistently outperforms heuristic baselines by large margins.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether block-level gold relevance labels for key-value (KV) cache eviction can meaningfully separate retention policies, expose systematic failure modes, and quantify the gap between heuristic and label-informed eviction. Across three progressively realistic experimental stages\u2014synthetic-label simulation (1,500 examples), deterministic replayed-ablation labeling (300 examples), and neural-model replayed-ablation labeling using Qwen2.5-0.5B-Instruct (100 examples)\u2014we find that lab",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Archive this project as a positive 100-example neural replay validation; only open a separate 1k-5k curation pilot if larger real-task evidence is required.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "On the neural replay stage, the label-aware policy achieves 0.96 accuracy on full-context-correct examples versus 0.33 for lexical query-overlap retention (+62.67 percentage points).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# KV Eviction Gold Labels: Block-Level Relevance Labels for Key-Value Cache Eviction Evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A persistent failure cluster emerges: lexical query-overlap retention systematically loses causal evidence in code-navigation tasks (accuracy 0.18), while label-aware retention preserves it (0.91).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether block-level gold relevance labels for key-value (KV) cache eviction can meaningfully separate retention policies, expose systematic failure modes, and quantify the gap between heuristic and label-informed eviction. Across three progressively realistic experimental stages\u2014synthetic-label simulation (1,500 examples), deterministic replayed-ablation labeling (300 examples), and neural-model replayed-ablation labeling using Qwen2.5-0.5B-Instruct (100 examples)\u2014we find that lab",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, these results carry significant caveats: the label-aware policy approximates an oracle, task examples are synthetically generated, the neural model answers only 75% of full-context prompts correctly, and all experiments use a 0.5B-parameter model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report these findings as evidence for the diagnostic value of block-level eviction labels, not as evidence that such labels are practical to obtain at scale.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# KV Eviction Gold Labels: Block-Level Relevance Labels for Key-Value Cache Eviction Evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This raises a diagnostic question: if one could label each context block as relevant or safe-to-evict for a given task, how much would retention policy accuracy improve, and what failure modes would become visible?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# KV Eviction Gold Labels: Block-Level Relevance Labels for Key-Value Cache Eviction Evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Synthetic examples are generated with 16 context blocks each.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether block-level gold relevance labels for key-value (KV) cache eviction can meaningfully separate retention policies, expose systematic failure modes, and quantify the gap between heuristic and label-informed eviction. Across three progressively realistic experimental stages\u2014synthetic-label simulation (1,500 examples), deterministic replayed-ablation labeling (300 examples), and neural-model replayed-ablation labeling using Qwen2.5-0.5B-Instruct (100 examples)\u2014we find that lab",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a keep budget of 4 blocks out of 16, five retention policies select which blocks to retain: - **Random**: Uniform random selection of 4 blocks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether block-level gold relevance labels for key-value (KV) cache eviction can meaningfully separate retention policies, expose systematic failure modes, and quantify the gap between heuristic and label-informed eviction. Across three progressively realistic experimental stages\u2014synthetic-label simulation (1,500 examples), deterministic replayed-ablation labeling (300 examples), and neural-model replayed-ablation labeling using Qwen2.5-0.5B-Instruct (100 examples)\u2014we find that lab",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Recency**: Retain the 4 most recently positioned blocks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Query-overlap**: Retain the 4 blocks with the highest lexical token overlap with the query.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three labeling methods produce block-level relevance labels, each used in a separate experimental stage: **Synthetic labels (Stage 1).** The task generator's internal `Block.relevant` field directly provides gold labels.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# KV Eviction Gold Labels: Block-Level Relevance Labels for Key-Value Cache Eviction Evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Replayed-ablation labels (Stage 2).** For each example, a deterministic parser evaluates task correctness under counterfactual context ablations: - One full-context evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# KV Eviction Gold Labels: Block-Level Relevance Labels for Key-Value Cache Eviction Evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The queued neural replay experiment completed and preserved ranking separation with +62.67 points uplift versus query-overlap on full-context-correct examples."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "kv-eviction-gold-labels",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "However, quantization-aware upcycling sacrificed float-domain quality (MSE 0.892 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "0.503 at the 4-bit configuration), indicating a quantization\u2013accuracy trade-off.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The finding is a positive mechanistic signal but requires validation on real language models with learned routing and MoE-aware calibration baselines before any general claim can be made.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or the experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced primary data.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work demonstrates that upcycling can outperform continued dense training under certain conditions and introduces initialization and routing best practices (Upcycling Large Language Models into Mixture of Experts, arXiv:2410.07524).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Scaling-law analysis further characterizes the data and model interaction limits of upcycling (Scaling Laws for Upcycling Mixture-of-Experts Language Models, arXiv:2502.03009).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sparse and dynamic routing induces inter-expert and intra-expert activation imbalance, and MoE-aware quantization methods can materially improve low-bit accuracy over naive PTQ (MoEQuant, arXiv:2505.03804).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If the final deployment uses low-bit weight-only quantization, then training each expert with fake-quantized weights in the forward pass should, in principle, allow the expert to adapt its weight distribution to the quantization grid, reducing deployed quantization error compared with training in float and applying PTQ afterward.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We do not claim a general solution; rather, we isolate the mechanism in a synthetic setting and report both positive and negative findings with full uncertainty.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or the experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced primary data.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Input vectors are drawn such that the first feature `x[0]` determines the domain: `x[0] > 0` routes to domain A, otherwise domain B.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or the experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced primary data.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "To isolate the effect of quantization-aware training from router learning, we use **oracle routing** based on the ground-truth domain indicator `x[0]`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We apply symmetric per-matrix signed weight-only quantization at 4, 3, and 2 bits.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Quantization-aware upcycling (quantized eval)**: Experts specialized with fake-quantized weights in the forward pass using straight-through estimator (STE) gradients, then evaluated with actual quantized weights.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Quantization-Aware Expert Upcycling: Reducing Deployed Quantization Error in Dense-to-MoE Conversion",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "quantization-aware-expert-upcycling",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

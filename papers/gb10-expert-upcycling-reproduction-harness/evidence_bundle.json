@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T010608408994+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "24e271fb6eadbbf584648eb84cd2f044b577d2aeb9d02e26b7bd8a536d9950cd"
+    },
+    {
+      "bytes": 479,
+      "path": "metadata.json",
+      "sha256": "b2a46d1c1355b2572178b413f4943e7508561d64148288c5acedad9493960ef6"
+    },
+    {
+      "bytes": 14451,
+      "path": "evidence/public_paper.md",
+      "sha256": "3c53495754ad36d38ca7e4af32a4e74c7e3a4e242de5cfe1df7126cbedafb9c4"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "gb10-expert-upcycling-reproduction-harness",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

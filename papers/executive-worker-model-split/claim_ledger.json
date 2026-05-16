@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "Using a dependency-free Monte Carlo decision model calibrated against a locally observed agent role roster (11 frontier, 8 standard, 1 spark role), we simulate 5,000 projects under seven allocation policies.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The homogeneous frontier team baseline achieves a 58.6% simulated success rate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation scripts, run logs, structured decision records, and local agent-roster inspection). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The currently deployed role split saves 22.2% cost and 5.9% wall time but loses 8.6 percentage points of success.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An executive-frontier/worker-standard policy saves 41.2% cost and 9.9% wall time at a 10.9 pp success penalty.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation scripts, run logs, structured decision records, and local agent-roster inspection). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An executive-frontier/worker-spark policy saves 52.6% cost but incurs a 26.1 pp success loss, failing all quality-preserving viability criteria.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sensitivity analysis reveals that the standard-worker split becomes quality-preserving (\u22645 pp success loss) only when non-frontier worker quality exceeds the conservative default calibration by approximately 10%, yielding 42\u201344% cost savings under those conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We conclude that a guarded tiered split is viable, but a hard cutover to all-spark workers is not supported by the available evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All results derive from synthetic simulation with heuristic parameter calibration; they constitute viability-level evidence, not production validation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation scripts, run logs, structured decision records, and local agent-roster inspection). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This choice reflects the exploring-stage nature of the question and the availability of local configuration evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation scripts, run logs, structured decision records, and local agent-roster inspection). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The approach provides viability-level evidence\u2014sufficient to reject clearly non-viable policies and to identify promising candidates for live validation\u2014but insufficient for production hard-cutover decisions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation scripts, run logs, structured decision records, and local agent-roster inspection). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The locally observed agent roster (inspected from `~/.codex/agents`) already implements a guarded tiered split: frontier models are assigned to planner, architect, executor, test, security, and code-review roles, while standard models serve debugger, build-fixer, verifier, writer, researcher, and dependency-expert roles.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This motivates three questions: (1) whether the existing split is near-optimal, (2) whether more aggressive downgrading is safe, and (3) under what conditions cheaper workers become viable.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Executive/Worker Model Split: A Monte Carlo Viability Study of Tiered LLM Agent Allocation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T101015699270+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "executive-worker-model-split",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

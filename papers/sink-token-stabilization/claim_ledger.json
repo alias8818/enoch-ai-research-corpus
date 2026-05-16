@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Softmax attention lacks a native \"attend nowhere\" option: when no context token is relevant, the convex mixture over value vectors still produces a non-zero output.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We test whether adding an explicit zero-value sink token with a tunable logit bias provides a stable null destination for attention mass, reducing output drift in null-state conditions without destroying content-attention when a trigger signal is present.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a synthetic surrogate task (64 value vectors of dimension 32; trigger-conditional mean or zero output), an explicit zero sink at logit bias 8.0 reduced overall MSE to 0.0101 versus 0.0311 for plain softmax (ratio 0.326) and reduced no-trigger MSE by 99.87%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "No-trigger output norm dropped by 96.5%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Softmax attention lacks a native \"attend nowhere\" option: when no context token is relevant, the convex mixture over value vectors still produces a non-zero output. We test whether adding an explicit zero-value sink token with a tunable logit bias provides a stable null destination for attention mass, reducing output drift in null-state conditions without destroying content-attention when a trigger signal is present. In a synthetic surrogate task (64 value vectors of dimension 32; trigger-condit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Trigger-condition content attention mass remained at 0.933, indicating preserved content routing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sensitivity analysis across signal logit strengths {3, 4, 6, 8} confirmed the same best configuration but revealed a tradeoff: at low signal strength (logit 3), trigger content mass falls to 0.413, meaning the sink bias suppresses legitimate content attention when evidence is weak.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "StreamingLLM observed that language models develop attention sinks on initial tokens and that preserving these tokens is necessary for stable windowed inference; a dedicated sink token during pretraining further improves streaming deployment (arXiv:2309.17453).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A trigger-conditional softmax-transformer analysis argued that simplex-normalized attention requires a stable anchor or default state for tasks that return an average on trigger and zero otherwise (arXiv:2603.11487).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A separate line of work on moving sink positions framed the problem as one of inference robustness and reported that a single extra globally-visible, self-attending sink token stabilizes attention sinks (arXiv:2601.19657).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the mechanistic question\u2014whether a zero-value sink option with tunable bias can simultaneously suppress null-state output drift and preserve content-attention routing\u2014has not, to our knowledge, been isolated and tested in a controlled surrogate setting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We pose the following question: **Can an explicit structural sink token stabilize softmax-attention behavior when a head should ignore context, without destroying content-attention behavior when a trigger is present?** We test this with a minimal synthetic task, not a trained transformer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This limits the generality of our claims but provides clean mechanistic evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Sink Token Stabilization: A Mechanistic Surrogate Study of Explicit Null Destinations in Softmax Attention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "sink-token-stabilization",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

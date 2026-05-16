@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We describe a minimal autonomous benchmark explorer that, within a bounded budget on a single NVIDIA GB10 aarch64 host, discovers actionable performance structure in CPU/OpenBLAS GEMM workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The explorer executes a four-phase protocol\u2014smoke test, calibration, first-pass grid exploration, and repeat-neighbor validation\u2014and produces durable metrics and recommended next runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Repeat validation corrected a noisy first-pass optimum at n = 512 (initially suggesting 20 threads, revised to 8 threads), demonstrating the necessity of the validation loop.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, log summaries, and metrics). The operator who released this artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human reviewer has endorsed the claims herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of the benchmark-explorer mechanism for CPU GEMM settings on this platform but do not address GPU or model-inference workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Total wall-clock time for all phases was 43.39 seconds.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, log summaries, and metrics). The operator who released this artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human reviewer has endorsed the claims herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The scope is deliberately limited: we target CPU/OpenBLAS GEMM on one GB10 aarch64 host, not GPU inference or multi-node scaling.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central empirical question is whether the explorer's four-phase protocol (smoke \u2192 calibrate \u2192 explore \u2192 repeat-validate) can produce discoveries that survive replication, particularly when first-pass results are noisy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All experiments ran on a single NVIDIA GB10 aarch64 host with the following characteristics: - **CPU:** 20 logical cores (full `lscpu` details recorded in `logs/00_environment.log`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Memory:** Approximately 122 GiB available throughout; swap disabled (SwapTotal = 0 KiB).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We describe a minimal autonomous benchmark explorer that, within a bounded budget on a single NVIDIA GB10 aarch64 host, discovers actionable performance structure in CPU/OpenBLAS GEMM workloads. The explorer executes a four-phase protocol\u2014smoke test, calibration, first-pass grid exploration, and repeat-neighbor validation\u2014and produces durable metrics and recommended next runs. On the GB10 platform (20 logical CPU cores, approximately 122 GiB available RAM, no swap), the explorer found that 8 Ope",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "GPU:** NVIDIA GB10 present via `nvidia-smi` but intentionally idle (0% utilization recorded in all phases).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Kernel:** `6.17.0-1014-nvidia` (aarch64).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We describe a minimal autonomous benchmark explorer that, within a bounded budget on a single NVIDIA GB10 aarch64 host, discovers actionable performance structure in CPU/OpenBLAS GEMM workloads. The explorer executes a four-phase protocol\u2014smoke test, calibration, first-pass grid exploration, and repeat-neighbor validation\u2014and produces durable metrics and recommended next runs. On the GB10 platform (20 logical CPU cores, approximately 122 GiB available RAM, no swap), the explorer found that 8 Ope",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Software:** Python 3 with NumPy (OpenBLAS backend) and psutil.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Explorer Agent: Autonomous Discovery of Non-Monotonic Thread-Count Optima on GB10 CPU/OpenBLAS GEMM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "benchmark-explorer-agent",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T172015860399+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "07787d31b3e8ff1c9c09fd5b6df26858af90352e83eb1a63dfcbcb3c25248f2e"
+    },
+    {
+      "bytes": 466,
+      "path": "metadata.json",
+      "sha256": "308310abed2100b6989a0d9433c9bde51aefffb42c690c7453e68ffe28c2d832"
+    },
+    {
+      "bytes": 18188,
+      "path": "evidence/public_paper.md",
+      "sha256": "a16c75b216d241b857cda100a3c1f07bf4196832195df698c7d67ad7c336a5fc"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "physical-experiment-doe-agent",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

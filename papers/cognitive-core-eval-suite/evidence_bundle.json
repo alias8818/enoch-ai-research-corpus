@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T053015631602+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "1afd2ee96758af76de70280a05659f034b3ec74e22d85433e9b51ffe9b46e80b"
+    },
+    {
+      "bytes": 462,
+      "path": "metadata.json",
+      "sha256": "dbd152c7be59def50867141b50b689a6b4333c2c400046bce872f1d7e4ed5d64"
+    },
+    {
+      "bytes": 16523,
+      "path": "evidence/public_paper.md",
+      "sha256": "511ffebdae3efba45dbc6465007d68b91b0f3bb4e32161f11e19203ba37368a9"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "cognitive-core-eval-suite",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

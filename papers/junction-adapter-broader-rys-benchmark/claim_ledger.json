@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Junction Adapter Broader RYS Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/broader_rys_benchmark_summary.md",
-        "artifacts/broader_rys_benchmark_aggregate_summary.json",
-        "artifacts/generic_broader_rys_qwen05b_run.log",
-        "artifacts/generic_broader_rys_qwen05b_metrics.json",
-        "artifacts/generic_broader_rys_opt125m_cpu_metrics.json",
-        "artifacts/generic_broader_rys_opt125m_cpu_run.log",
-        "artifacts/generic_broader_rys_opt125m_run.log",
-        "artifacts/generic_broader_rys_opt125m_metrics.json"
+      "claim": "Three model families were evaluated under a branch-specific kill condition requiring at least two model-family cells to achieve \u22655% held-out test cross-entropy (CE) improvement with a train/test CE gain ratio \u22644.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Junction Adapter Broader RYS Benchmark: Multi-Model Evaluation Under Stricter Overfit Controls",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this successor benchmark; any future work should be a named full-suite public LM evaluation, not another generic successor branch.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "After correcting an initial evaluation weakness (non-disjoint corpus splits), the final results under path-disjoint train/eval/test splits show model heterogeneity: GPT-2 achieves 27.19% held-out test CE improvement (gain ratio 1.21) and Qwen2.5-0.5B-Instruct achieves 20.35% (gain ratio 1.35), both passing the kill condition.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Junction Adapter Broader RYS Benchmark: Multi-Model Evaluation Under Stricter Overfit Controls",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, OPT-125M achieves only 3.16% held-out test CE improvement (gain ratio 3.24), falling below the 5% threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The branch kill condition is not met because two cells pass, but the heterogeneity across model families tempers the strength of the overall signal.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project decision is `finalize_positive` with medium confidence and moderate evidence strength.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A branch-specific kill condition was defined *a priori*: at least two model-family cells must achieve \u22655% held-out test CE improvement with a train/test CE gain ratio \u22644, and the median held-out test CE gain across cells must be \u22655%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two benchmark runners were implemented: **Manual repeated-block runner** (`broader_rys_benchmark.py`): Designed for GPT-2-family models with identifiable repeated transformer blocks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Junction Adapter Broader RYS Benchmark: Multi-Model Evaluation Under Stricter Overfit Controls",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The split policy was revised during the benchmark after an initial weakness was identified: - **Initial policy (first OPT-125M run):** Independent RNG token draws from a shared broader corpus.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Junction Adapter Broader RYS Benchmark: Multi-Model Evaluation Under Stricter Overfit Controls",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each model-family cell, the following metrics are computed: - **Held-out test CE improvement:** Percentage reduction in cross-entropy on the held-out test split after adapter training, relative to the unadapted baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Junction Adapter Broader RYS Benchmark: Multi-Model Evaluation Under Stricter Overfit Controls",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Values near 1.0 indicate proportional generalization; values well above 1.0 indicate overfitting to training data.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Junction adapters are a parameter-efficient fine-tuning strategy that applies residual low-rank adapters only at the layers immediately adjacent to (\"junction-neighbor\" of) a replayed layer interval, rather than at every layer. The central hypothesis under test is whether this targeted adapter placement yields meaningful held-out cross-entropy improvements across multiple model families and corpora, with acceptable overfit characteristics as measured by the ratio of training CE gain to test CE g",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The branch-specific kill condition requires: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At least two model-family cells achieve held-out test CE improvement \u2265 5%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We report results from a broader multi-model benchmark of junction adapters\u2014residual LoRA-style adapters applied only at junction-neighbor layers around a replayed layer interval\u2014for reducing cross-entropy on locally cached language model corpora. Three model families were evaluated under a branch-specific kill condition requiring at least two model-family cells to achieve \u22655% held-out test cross-entropy (CE) improvement with a train/test CE gain ratio \u22644. After correcting an initial evaluation ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: After correcting the generic runner to use disjoint splits, GPT-2 and Qwen2.5-0.5B pass held-out CE and overfit controls while OPT-125M is mixed, so the branch-specific kill condition remains not met."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "junction-adapter-broader-rys-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

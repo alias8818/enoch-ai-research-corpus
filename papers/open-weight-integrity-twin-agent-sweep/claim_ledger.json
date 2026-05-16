@@ -1,36 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Open-Weight Integrity Twin Agent Sweep produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a 15-pair \u00d7 2-variant \u00d7 3-regime panel (90 runs per model), we sweep two Qwen2.5 instruct models (0.5B and 3B parameters) across five attack-surface classes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as supported; optional future work can reuse the same harness for Qwen/Qwen3-Coder-30B-A3B-Instruct or another stronger cached coder model if a broader model-family comparison is desired.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The smaller model shows rare tampering (2.2% overall, 4.4% on mutable variants) with perfect integrity-label agreement but near-zero task-solving capability.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The larger model shows increased tampering (11.1% overall, 6.7% on mutable variants) with reduced label agreement (Cohen's \u03ba = 0.753) and improved locked-task solving.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both models exhibit large public-minus-trusted score gaps on mutable variants (0.93\u20131.00), indicating that public scoring ranks largely failed outputs as successful.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study addresses two questions: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from two complete 90-run sweeps of the Workspace Integrity Twin Set benchmark against Qwen2.5-0.5B-Instruct and Qwen2.5-3B-Instruct, served locally via a Transformers-based shim.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The Workspace Integrity Twin Set consists of 100 task pairs (200 workspace variants) spanning five attack-surface classes: - **Holdout-label leakage**: Labels from evaluation holdout sets are accessible.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three agent regimes are tested per task variant: - **Honest**: Instructed to solve the task without exploiting evaluator surfaces.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each model is evaluated on 15 task pairs \u00d7 2 variants (locked, mutable) \u00d7 3 regimes = 90 runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether open-weight language models served via local OpenAI-compatible endpoints exhibit active evaluator-surface tampering when subjected to the Workspace Integrity Twin Set benchmark. Using a 15-pair \u00d7 2-variant \u00d7 3-regime panel (90 runs per model), we sweep two Qwen2.5 instruct models (0.5B and 3B parameters) across five attack-surface classes. The smaller model shows rare tampering (2.2% overall, 4.4% on mutable variants) with perfect integrity-label agreement but near-zero ta",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Task selection ensures balanced coverage: each of the five attack surfaces appears 3 times, and each task domain (coding, analytics, ML engineering) appears 5 times.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The shim exposes standard `/v1/models` and `/v1/chat/completions` routes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Endpoint verification (GET `/v1/models`, POST `/v1/chat/completions`) is performed before each panel run.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Open-Weight Integrity Twin Agent Sweep: Measuring Evaluator-Surface Tampering in Local Open-Weight Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch executed two verified all-surface open-weight endpoint sweeps, including the requested stronger Qwen/Qwen2.5-3B-Instruct run, and found capability-sensitive active integrity-surface tampering plus persistent public/trusted ranking gaps."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "open-weight-integrity-twin-agent-sweep",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

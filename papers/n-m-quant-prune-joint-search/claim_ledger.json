@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a per-row joint search over semi-structured N:M pruning levels and quantization bitwidths can reduce calibration reconstruction error below the best feasible uniform or sequential compress-then-quantize baselines under a shared bits-per-weight budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across 12 random seeds with moderate row-scale heterogeneity, the joint selector wins 12/12 comparisons at budgets of 2.0, 2.5, 3.0, and 4.0 bits/weight, yielding mean relative error reductions of 22.9%\u201342.5%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under heavier outlier conditions the advantage grows to 37.1%\u201363.1% (8/8 wins at all budgets).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and result files). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, when rows are homogeneous and the budget is loose (4.0 bits/weight, no outliers), the joint selector effectively ties the best uniform baseline (\u22120.1% \u00b1 0.3%; 3/8 wins).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to a synthetic single-layer proxy; no end-to-end language model perplexity or hardware kernel throughput was measured.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and result files). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is asserted or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Recent work on one-shot LLM pruning has demonstrated that semi-structured N:M sparsity patterns (e.g., 2:4, 4:8) are compatible with weight quantization and can exploit hardware support on modern GPU sparse tensor cores.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Concurrently, joint sparsification\u2013quantization methods have been proposed on the grounds that separate compression degrades accuracy at high compression ratios.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each output row $r$, we seek a compressed representation $w_r'$ characterized by a sparsity pattern (N:M, with $M=4$ and $N \\in \\{1,2,3,4\\}$) and a quantization bitwidth $b \\in \\{2,3,4,6,8\\}$.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The cost of a candidate $(N\\!:\\!M, b)$ for row $r$ is modeled as: $$\\text{cost}(r) = \\frac{N}{M} \\cdot b + \\frac{\\log_2 \\binom{M}{N}}{M}$$ where the first term captures the bits needed to store the $N$ non-zero values per group of $M$ at bitwidth $b$, and the second term is a lower bound on the sparse-pattern metadata overhead per weight element.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The quality of a candidate is measured by the calibration reconstruction relative MSE: $$\\text{rel-MSE}(r) = \\frac{\\mathbb{E}[(x_r^\\top (w_r - w_r'))^2]}{\\mathbb{E}[(x_r^\\top w_r)^2]}$$ where expectations are taken over the calibration samples.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each candidate's compressed weight is constructed by: (1) selecting the $N$ largest-magnitude weights per group of $M$ (magnitude-based N:M pruning), and (2) applying uniform symmetric quantization at bitwidth $b$ to the surviving weights.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The joint selector operates as follows: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Per-Row Joint Search over N:M Sparsity and Quantization Bitwidths for Compressed Linear Layers",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "n-m-quant-prune-joint-search",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

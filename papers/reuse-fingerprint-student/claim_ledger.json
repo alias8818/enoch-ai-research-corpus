@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "In a synthetic workload modeling repeated student-submission grading traffic with shared rubric prefixes, the student policy recovers 100.0% of oracle-available reusable prefix tokens across calibration (900 requests), stress (1,800 requests), and a 5-seed stress sweep, while admitting zero false-positive cache probes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "By contrast, a first-block-hash baseline captures the same reusable tokens but suffers 13.6\u201318.9% false-positive admission rates, and a whole-prompt MinHash similarity baseline captures only 65.5\u201371.1% of oracle reuse with 78.7\u201383.3% false positives.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An LRU-previous baseline captures under 2%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a lightweight logistic-regression classifier operating solely on compact fingerprint-pair features can accurately predict which prior request in a recent-cache window is worth probing for exact prefix-cache reuse. In a synthetic workload modeling repeated student-submission grading traffic with shared rubric prefixes, the student policy recovers 100.0% of oracle-available reusable prefix tokens across calibration (900 requests), stress (1,800 requests), and a 5-seed stress",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are positive but narrow: the workload is synthetic, the classification problem is highly separable due to the informativeness of exact prefix block hashes, and no end-to-end serving-engine validation was performed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prefix caching in LLM serving engines can reduce redundant computation when consecutive requests share exact token prefixes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Whole-prompt similarity metrics conflate semantic relatedness with exact prefix overlap, yielding both missed reuse and high false-positive rates.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The student is trained to approximate an oracle that computes the true longest common prefix (LCP) between each incoming request and every slot in a recent-cache window, labeling a pair as reusable when the LCP meets or exceeds a threshold of 64 exact prefix tokens (organized as 16-token blocks \u00d7 4).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether this compact feature set suffices to recover oracle-level reuse capture while eliminating the false-positive admissions produced by simpler baselines, or whether the problem requires richer and more expensive comparison.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "It is trained on pair-level labels derived from the oracle LCP: a pair is positive if the true LCP is \u2265 64 tokens (4 blocks \u00d7 16 tokens/block).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, result files, and logs). The operator who released the artifact claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human review is asserted to have occurred.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At inference time, the student scores every (incoming, cached) pair in a sliding window of the 160 most recent requests and ranks candidates by predicted probability.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "False-positive admission fraction**: fraction of admitted probes that yield no reusable prefix (LCP < 64 tokens).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reuse-Fingerprint Student: A Compact Fingerprint-Pair Admission Policy for Exact Prefix-Cache Reuse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Precision when selected**: fraction of admitted probes that yield reusable prefix \u2265 64 tokens.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a lightweight logistic-regression classifier operating solely on compact fingerprint-pair features can accurately predict which prior request in a recent-cache window is worth probing for exact prefix-cache reuse. In a synthetic workload modeling repeated student-submission grading traffic with shared rubric prefixes, the student policy recovers 100.0% of oracle-available reusable prefix tokens across calibration (900 requests), stress (1,800 requests), and a 5-seed stress",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "reuse-fingerprint-student",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

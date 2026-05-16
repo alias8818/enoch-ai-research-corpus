@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Hot-Cold Tensor Paging produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/llamacpp_hotcold_residency/llama-bench-hotcold-reuse-pager.patch",
-        "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
-        "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
-        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_2048mib_gen16_trace.csv",
-        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_1024mib_gen16_trace.csv",
-        "results/llamacpp_hotcold_residency/hot_cache_8gib_reuse_pager_512mib_gen16_trace.csv",
-        "results/llamacpp_hotcold_residency/hot_cache_8gib_largest_layers_gen16_trace.csv",
-        "results/llamacpp_hotcold_residency/all_gpu_control_gen16_trace.csv"
+      "claim": "Using Qwen2.5-32B (18.48 GiB tensor bytes) on an NVIDIA GB10 unified memory architecture with an 8 GiB CUDA model-buffer target, we evaluate a progression of strategies: static hot/cold residency, decode-position-aware prefetch, persistent mirror-buffer aliasing, and reusable eviction/reload paging.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Close this project as a mixed positive result: keep static hot/cold residency and selective persistent mirrors as the useful mechanism, and do not continue same-project reusable eviction/reload without a materially different graph-partitioned async backend design.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The toy-model simulator predicted a 2.31\u00d7 speedup for decode-prefetch over static first-fit placement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, real llama.cpp hook-prototype experiments on Qwen2.5-32B produced a mixed result.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Static hot/cold residency\u2014placing 24 of 64 transformer layers in the hot cache\u2014retained 65\u201372% of unconstrained all-GPU decode throughput (5.65\u20135.91 tok/s vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Persistent mirror-buffer aliasing with a fixed budget offered modest additional gains (+1% to +7%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate hot-cold tensor paging as a mechanism for running large language models whose total tensor bytes exceed a constrained GPU memory budget. Using Qwen2.5-32B (18.48 GiB tensor bytes) on an NVIDIA GB10 unified memory architecture with an 8 GiB CUDA model-buffer target, we evaluate a progression of strategies: static hot/cold residency, decode-position-aware prefetch, persistent mirror-buffer aliasing, and reusable eviction/reload paging. The toy-model simulator predicted a 2.31\u00d7 speed",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All dynamic paging variants underperformed static residency: naive fixed-size staging copies achieved only 40% of all-GPU throughput, layer-aware double-buffered prefetch reached at best 90% of static, and true reusable eviction/reload paging lost approximately 42\u201343% versus static by copying 84\u2013168 GiB per short decode window.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On unified memory architecture (UMA) platforms such as NVIDIA GB10, the GPU and CPU share a physical memory pool, but the CUDA model buffer\u2014the portion of memory registered with the CUDA runtime for GPU compute\u2014may be constrained to a fraction of total system RAM.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study examines hot-cold tensor paging: partitioning model tensors into a hot set that resides in the CUDA model buffer and a cold set that remains in host-accessible memory, then evaluating whether dynamic paging (prefetch or eviction/reload) can recover throughput lost to cold-set access stalls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is mixed: the hypothesis that dynamic paging improves upon static residency is not supported by the empirical evidence, though static hot/cold residency itself is a viable strategy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A deterministic Python event simulator (`scripts/hot_cold_paging_sim.py`) models a 36-layer, 144-tensor model with 21,590.7 MiB total tensor bytes constrained by an 8,192 MiB hot cache (2.64\u00d7 over cache).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Host-to-GPU page bandwidth was calibrated via `np.copyto` on 256 MiB pages (median 22.44 GiB/s), with the simulation using a conservative 18 GiB/s.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A Python scaffold (`scripts/llamacpp_hotcold_probe.py`) inventories real GGUF tensor metadata, runs `llama-bench` on a small model (SmolLM2-135M) for real decode timing, and calibrates CUDA H2D copy/overlap on GB10 via a standalone CUDA microbenchmark (`scripts/cuda_overlap_prefetch_probe.cu`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Hot-Cold Tensor Paging for Constrained GPU Residency: A Mixed-Result Study on NVIDIA GB10 UMA",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: True reusable mirror-buffer eviction/reuse was implemented and measured, but it copied 84-168 GiB per short decode and underperformed static hot/cold residency by about 42-43%."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "hot-cold-tensor-paging",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

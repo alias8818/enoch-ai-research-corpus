@@ -1,39 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Dual-Trace Memory Encoder produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/dual_trace_memory_benchmark.md",
-        "results/dual_trace_memory_benchmark_multiseed.json",
-        "results/dual_trace_memory_benchmark.json"
+      "claim": "In a deterministic synthetic writer-swap benchmark, an initial dual-trace writer achieved a +48.6 percentage-point accuracy gain over a fact-only baseline (77.7% vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize the current synthetic writer-swap experiment as positive; if continuing, validate the compressed writer on real coding-agent memory traces as a separate target.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "29.1%) but violated a storage-overhead constraint (+108.8% overhead vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present the Dual-Trace Memory Encoder, a memory-writing strategy that augments fact-only records with compact scene-anchor cues to improve temporal and contextual recall. In a deterministic synthetic writer-swap benchmark, an initial dual-trace writer achieved a +48.6 percentage-point accuracy gain over a fact-only baseline (77.7% vs. 29.1%) but violated a storage-overhead constraint (+108.8% overhead vs. the \u226410% target). A compressed variant that retains event facts plus a single scene cue ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A volume-matched fact-only control matched the baseline (29.1%), indicating the gain derives from the scene-anchor structure rather than memory volume alone.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The hypothesis is that scene anchors improve retrieval accuracy on temporal, update-tracking, and aggregation questions without imposing prohibitive storage overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The harness generates synthetic multi-session event sequences, writes memory records using one of four writer conditions, then evaluates retrieval accuracy on three question categories: temporal ordering, update tracking, and aggregation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two thresholds were defined prior to the compressed iteration: - **Accuracy lift**: \u226515 percentage points over the fact-only baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Storage overhead**: \u226410% increase in total stored characters relative to the fact-only condition.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Single-seed evaluation used seed 343.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "### 2.3 Evaluation Protocol",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Multi-seed evaluation used seeds 340 through 349 (10 seeds).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present the Dual-Trace Memory Encoder, a memory-writing strategy that augments fact-only records with compact scene-anchor cues to improve temporal and contextual recall. In a deterministic synthetic writer-swap benchmark, an initial dual-trace writer achieved a +48.6 percentage-point accuracy gain over a fact-only baseline (77.7% vs. 29.1%) but violated a storage-overhead constraint (+108.8% overhead vs. the \u226410% target). A compressed variant that retains event facts plus a single scene cue ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each seed, the harness generates the same event sequences deterministically, writes records under each condition, runs retrieval, and computes accuracy as the fraction of questions answered correctly.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Storage overhead is computed as the percentage increase in total stored characters relative to the fact-only condition for the same seed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "| Condition | Accuracy (seed 343) | Storage Overhead | |---|---|---| | Fact-only | 29.1% | baseline | | Volume-matched fact-only | 29.1% | matched to uncompressed dual-trace | | Uncompressed dual-trace | 77.7% | +108.8% | The uncompressed dual-trace writer produced a +48.6 percentage-point accuracy gain over fact-only.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Dual-Trace Memory Encoder: Compact Scene Anchors for Temporal Recall in Synthetic Memory Benchmarks",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The compressed-scene dual-trace writer achieved a 41.2-point mean accuracy gain over fact-only at 5.5% mean storage overhead across 10 seeds, satisfying the stated success criteria."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "dual-trace-memory-encoder",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

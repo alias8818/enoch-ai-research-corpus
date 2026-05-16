@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "DFlash vs Existing Spec-Dec Baseline Harness produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/final_decision_summary.md",
-        "artifacts/final_decision_audit.json",
-        "results/spec_baseline_report.md",
-        "artifacts/spec_baseline_comparison.stdout.json",
-        "results/spec_baseline_comparison.json",
-        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.gpu.csv",
-        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.samples.csv",
-        "results/vllm_ngram_qwen3_4b_chat_existing_spec_c4_mt256_n32.summary.json"
+      "claim": "We compare two speculative decoding strategies\u2014DFlash (a draft-model-based speculative method) and vLLM's built-in n-gram prompt-lookup speculation\u2014against a non-speculative target-only baseline, using Qwen3-4B as the target model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this comparison harness; only run a larger MATH-500 replicate if the controller needs to resolve the one-item quality caveat.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Across four benchmark suites (chat, GSM8K, MATH-500, MBPP-local), DFlash achieves 1.60\u00d7\u20133.73\u00d7 higher completion throughput than n-gram speculation while maintaining equal measured quality on three of four datasets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On MATH-500 (n=40), DFlash shows a \u22120.025 quality delta relative to n-gram, attributable to a single-item difference.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "DFlash incurs moderate memory overhead (8.55 GiB model load vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "7.5 GiB) and reduces available GPU KV cache by approximately 13.8% relative to the n-gram configuration.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to a single model family, a single GPU configuration, and small sample sizes (n=24\u201364).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The current project artifacts support the finding that DFlash provides substantial throughput gains over the simplest available speculative baseline in the tested setting, but the MATH-500 quality caveat and narrow scope of evaluation warrant replication before broader generalization.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding accelerates autoregressive language model inference by drafting candidate token sequences with a cheaper mechanism and validating them against the target model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A critical methodological concern when evaluating any speculative decoding technique is the choice of baseline: comparing a new method only against non-speculative decoding risks overstating its contribution if a simpler speculative baseline could achieve meaningful speedups with lower integration cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We construct a controlled comparison harness that evaluates DFlash\u2014a draft-model-based speculative decoding method\u2014against vLLM's built-in n-gram prompt-lookup speculation, which represents the simplest available speculative baseline requiring no additional model weights.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both speculative configurations are also compared against a target-only (non-speculative) baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether DFlash's throughput advantage over n-gram speculation is large enough to justify its additional memory and integration overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding vs. N-Gram Prompt-Lookup Baseline: A Controlled Throughput\u2013Quality Comparison",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: DFlash beats the simplest available speculative baseline by 1.60x-3.73x throughput with zero request failures and acceptable documented memory/integration overhead, so the kill condition is not met."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "dflash-vs-existing-spec-dec-baseline-harness",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

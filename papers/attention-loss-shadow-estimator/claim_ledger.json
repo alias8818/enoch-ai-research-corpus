@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Attention-Loss Shadow Estimator produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/pytest_after_hybrid.log",
-        "artifacts/pytest_install.log",
-        "artifacts/live_lm_qwen_hybrid_system_snapshot.txt",
-        "artifacts/live_lm_qwen_hybrid_main.log",
-        "artifacts/live_lm_qwen_hybrid_main/summary.json",
-        "artifacts/live_lm_qwen_hybrid_main/summary.csv",
-        "artifacts/live_lm_qwen_hybrid_main/block_labels.jsonl",
-        "artifacts/live_lm_qwen_hybrid_main/raw_rows.jsonl"
+      "claim": "We evaluate the approach across four experimental stages of increasing fidelity: a synthetic block-level simulator, a replay-label experiment with imported HuggingFace KV manager telemetry, a live-model experiment on SmolLM2-135M-Instruct, and a strengthened live-model experiment on Qwen2.5-0.5B-Instruct with hybrid loss-magnitude training.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Attention-Loss Shadow Estimator: Block-Level KV Cache Retention via Trained Shadow Loss Prediction",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as a positive live-LM PKV result; any future work should validate the same policy on external long-context benchmarks rather than another generic successor branch.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "At equal 50% KV budget on the strongest live-model configuration, the shadow estimator improves logprob preservation by 2.348 points and live-label recall by 21.619 points over simple landmark pinning, while reducing restored KV bytes by 9.6% and p95 latency by 0.8%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Attention-Loss Shadow Estimator: Block-Level KV Cache Retention via Trained Shadow Loss Prediction",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At 35% budget, shadow retention matches or exceeds landmark@50 on both logprob preservation and recall while using 30% fewer resident KV bytes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Attention-Loss Shadow Estimator: Block-Level KV Cache Retention via Trained Shadow Loss Prediction",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Earlier experimental stages showed larger gains on synthetic metrics but mixed results on the initial live-model configuration, where recall lagged landmark pinning until the hybrid objective and stronger features were introduced.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the mechanism under the tested conditions, but all experiments use deterministic synthetic traces rather than external long-context benchmarks, and the model scale is limited to 0.5B parameters.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project decision is `finalize_positive` with medium confidence and moderate evidence strength.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report positive results on the final live-model configuration, mixed results on an earlier live-model stage, and substantial synthetic gains that overestimate real performance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a prefill over $B$ blocks, a memory budget $k = \\lfloor \\alpha B \\rfloor$ (where $\\alpha \\in (0,1]$ is the retention fraction), and an incoming query, the retention policy must select $k$ blocks whose KV entries remain resident.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Attention-Loss Shadow Estimator: Block-Level KV Cache Retention via Trained Shadow Loss Prediction",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If a subsequent query requires an evicted block, it must be restored, incurring latency and transfer cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present the Attention-Loss Shadow Estimator, a lightweight trainable policy wrapper that predicts which key-value (KV) cache blocks a transformer will need at query time, enabling selective retention under a fixed memory budget without modifying base model weights. The method trains a linear scorer over online block features\u2014position, landmark proximity, query overlap, marker strength, and block length\u2014and uses a hybrid binary/magnitude objective to rank blocks for retention. We evaluate the ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The features used in the final configuration are: - **Inverse position** (`inv_position`): $1 / \\text{position}(b)$, capturing recency bias without leaking absolute position.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Block length**: token count of block $b$.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present the Attention-Loss Shadow Estimator, a lightweight trainable policy wrapper that predicts which key-value (KV) cache blocks a transformer will need at query time, enabling selective retention under a fixed memory budget without modifying base model weights. The method trains a linear scorer over online block features\u2014position, landmark proximity, query overlap, marker strength, and block length\u2014and uses a hybrid binary/magnitude objective to rank blocks for retention. We evaluate the ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three training objectives were evaluated: - **Binary**: cross-entropy loss on whether each block is relevant (1) or not (0), based on eviction labels.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Attention-Loss Shadow Estimator: Block-Level KV Cache Retention via Trained Shadow Loss Prediction",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The strengthened loss-magnitude shadow estimator recovered live-label recall on cached Qwen2.5-0.5B and met the success criterion with 30% fewer resident KV bytes than landmark@50 while preserving/improving logprob and recall."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "attention-loss-shadow-estimator",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

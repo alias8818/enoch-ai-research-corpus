@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a simple metadata-conditioned mapping from task-domain labels to fixed draft depths can improve throughput and reduce wasted computation relative to a uniform deep-draft baseline, while preserving exact output quality.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a trace-driven tuning benchmark constructed from 64 real-stack speculative decoding traces (Qwen2.5-0.5B-Instruct drafting for Qwen2.5-3B-Instruct, float32, 16 generated tokens per example), we tune a conservative domain-to-depth predictor subject to an acceptance-rate floor constraint (\u22650.99\u00d7 the accepted-tokens-per-verifier-call of fixed-depth-8).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On all-data tuning, the predictor achieves +9.40% measured tokens/sec and \u221218.88% rejected draft tokens versus fixed-8, with zero output quality mismatches and zero accepted-per-call delta.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In 500-seed repeated stratified half-train/half-test cross-validation, the held-out predictor achieves mean +11.99% tokens/sec (p5: +9.29%, p95: +15.06%) and mean \u221224.10% rejected tokens (p5: \u221230.24%, p95: \u221218.65%), at a mean \u22120.96% accepted-per-call tradeoff.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, evidence bundles, claim ledgers, metrics, and decision logs). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support a bounded claim: on this corpus, metadata-conditioned draft-length selection can reduce waste and improve throughput while preserving exact output, but the modest corpus size (64 examples, 8 per domain) limits confidence, and revalidation on 128\u2013256 fresh traces is recommended before production deployment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding reduces the latency of autoregressive language model inference by using a small draft model to propose multiple candidate tokens, which a larger target model then verifies in parallel.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The draft depth\u2014the number of tokens the draft model generates before the target model performs a verification pass\u2014is a key control parameter.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study asks: can a simple group-to-depth mapping, conditioned on metadata labels already available at inference time, improve speculative decoding throughput and reduce wasted computation relative to a uniform deep-draft baseline, while preserving output quality?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Rather than launching new inference runs, we reuse per-example trace data from a sibling experiment that already measured speculative decoding under multiple fixed depths (2, 4, 6, 8) and a domain-gated policy on 64 real-stack examples.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The copied per-example CSV preserves these token IDs, enabling a local exact-output quality gate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, evidence bundles, claim ledgers, metrics, and decision logs). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The advantage is exact reproducibility and the ability to verify output quality; the limitation is that the policy space is restricted to the depths measured in the source traces (2, 4, 6, 8).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, evidence bundles, claim ledgers, metrics, and decision logs). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For every candidate depth assignment, the generated token IDs are verified against the `target_only` reference exactly.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Metadata-Conditioned Draft Length Prediction for Speculative Decoding: A Trace-Driven Tuning Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "draft-length-predictor-tuning",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

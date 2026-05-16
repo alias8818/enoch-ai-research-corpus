@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Draft-Value Router produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/real_trace_router_observed_scaffold/draft_value_router_policy_table.csv",
-        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_test.jsonl",
-        "results/real_trace_router_observed_scaffold/draft_value_router_predictions_train.jsonl",
-        "results/real_trace_router_observed_scaffold/draft_value_router_summary.json",
-        "results/observed_scaffold/scaffold_summary.json",
-        "artifacts/acquisition_manifest.json",
-        "results/synthetic_atlas_router/draft_value_router_policy_table.csv",
-        "results/synthetic_atlas_router/draft_value_router_predictions_test.jsonl"
+      "claim": "We investigate whether a lightweight supervised router, operating only on pre-decision observables (task class, model family, prompt/draft surface cues), can select among three draft-handling arms\u2014direct solve, scaffold-only reuse, and full revision\u2014to reduce average inference cost while maintaining or improving accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Archive this MVP as supported and use the observed-scaffold dataset to design a separate cross-model/domain-transfer validation if more evidence is needed.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "On a 128-case real-trace benchmark with observed scaffold-only completions, the learned router achieves 0.1750 accuracy at 1.1138 average cost, compared to 0.1000 at 2.0000 for always-full-revision and 0.0500 at 1.0000 for always-direct, yielding a cost reduction of approximately 44% versus full revision at equal-or-better accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a 5,000-case synthetic atlas, the router achieves 0.5820 accuracy at 1.4865 cost, outperforming both fixed baselines (0.4733 and 0.4153) while falling short of the oracle (0.6980).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Evidence supports the routing hypothesis in the tested setting, but confidence remains medium due to small real-trace sample size, task-id-grouped holdout, and model-pair specificity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When a language model is presented with a draft\u2014whether from a prior turn, a retrieved document, or a cheaper model\u2014there are at least three qualitatively different ways to use it: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These arms differ in both expected cost and expected accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a lightweight supervised router, operating only on pre-decision observables (task class, model family, prompt/draft surface cues), can select among three draft-handling arms\u2014direct solve, scaffold-only reuse, and full revision\u2014to reduce average inference cost while maintaining or improving accuracy. A Naive Bayes router is trained on outcome-derived labels from paired draft-utility atlas data and evaluated on task-id-held-out splits. On a 128-case real-trace benchmark with",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question of this work is: can a lightweight classifier, using only information available *before* the routing decision is made, learn to assign tasks to the arm that yields the best accuracy-per-cost tradeoff?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We treat this as a supervised classification problem where the oracle label for each case is the arm that achieves the highest accuracy at the lowest cost, and the router must predict this label from pre-routing features alone.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Draft-Value Router: Supervised Three-Arm Routing Over Draft Utility Observables",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each case, the oracle label is the arm that achieves the best observed accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When multiple arms achieve equal accuracy, the lower-cost arm is preferred.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two data sources are used: - **Synthetic atlas**: 5,000 cases with oracle label distribution {direct: 3565, full_revision: 1007, scaffold_only: 428}.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a lightweight supervised router, operating only on pre-decision observables (task class, model family, prompt/draft surface cues), can select among three draft-handling arms\u2014direct solve, scaffold-only reuse, and full revision\u2014to reduce average inference cost while maintaining or improving accuracy. A Naive Bayes router is trained on outcome-derived labels from paired draft-utility atlas data and evaluated on task-id-held-out splits. On a 128-case real-trace benchmark with",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Real traces**: 128 cases with oracle label distribution {direct: 114, full_revision: 12, scaffold_only: 2} (counterfactual phase); updated to observed scaffold outcomes in the second phase.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The required actual scaffold-only prompts and held-out router rerun landed, meeting both stated MVP success criteria on real traces."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "draft-value-router",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

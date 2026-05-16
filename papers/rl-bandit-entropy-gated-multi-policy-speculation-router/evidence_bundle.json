@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T005040218197+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "2a46abfc19805993df30f2421910178b603e95d29ec3d41472fba1739dac40be"
+    },
+    {
+      "bytes": 492,
+      "path": "metadata.json",
+      "sha256": "645c8b14ea9cdfc15dfaf9c8817ee0d52c411c597ed6fb8b20e6bb5858462374"
+    },
+    {
+      "bytes": 17132,
+      "path": "evidence/public_paper.md",
+      "sha256": "63ceba7442ac093ecbb2ae5f8517241271cc3faa706137a4a4de9d71125c18d9"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "rl-bandit-entropy-gated-multi-policy-speculation-router",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

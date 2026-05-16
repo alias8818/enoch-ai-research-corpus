@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Fieldwise Recall Probe Real-Trace Multi-Model Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/real_trace_multimodel/summary.json",
-        "artifacts/real_trace_multimodel/time_stderr.log",
-        "artifacts/real_trace_multimodel/run_stdout.json",
-        "artifacts/real_trace_multimodel/report.md",
-        "artifacts/real_trace_multimodel/metadata.json",
-        "artifacts/real_trace_multimodel/predictions.csv",
-        "artifacts/real_trace_multimodel/item_pools.json",
-        "artifacts/real_trace_multimodel/trace_examples.jsonl"
+      "claim": "We investigate whether field-aware context selection\u2014targeting specific document fields such as title, body, table, footnote, appendix, and code\u2014yields measurable recall accuracy improvements over body-only or title-only pruning when answering questions grounded in real project trace data.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Fieldwise Recall Probe: Real-Trace Multi-Model Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Archive this branch's real-trace multi-model artifacts; only start a new project if a larger public corpus and stronger serving-stack benchmark are explicitly selected.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Field-aware selection produces accuracy uplifts of 66.67 percentage points (deterministic), 25.00 pp (SmolLM2-135M), and 33.33 pp (Qwen2.5-0.5B) over body-only pruning.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether field-aware context selection\u2014targeting specific document fields such as title, body, table, footnote, appendix, and code\u2014yields measurable recall accuracy improvements over body-only or title-only pruning when answering questions grounded in real project trace data. Using 24 composite examples derived from parent project artifacts (run notes, source files, reports, and JSON metadata), we compare four context-selection strategies (full context, body-only pruning, keyword-l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All three stacks exceed the pre-specified 5 pp uplift threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the dataset is small (24 examples), absolute LLM accuracy remains low (25% and 41.7% for the two local models), and results are confined to a single project's trace artifacts and sub-billion-parameter models.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The current project artifacts support this finding in the tested setting; this does not prove the method works universally.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A common baseline is body-only or title-only pruning, which retains the main textual content of a document but discards peripheral fields such as tables, footnotes, appendices, and code blocks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The fieldwise recall probe methodology tests whether a context selector that is aware of document field structure can recover answer-relevant evidence that body-only pruning would discard.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Fieldwise Recall Probe: Real-Trace Multi-Model Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is: does field-aware context selection provide a consistent accuracy uplift over body-only pruning on real (non-fabricated) trace data, across multiple model stacks, at a magnitude exceeding a pre-registered 5 percentage-point threshold?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The resulting dataset contains 24 grounded examples, with 4 examples per field across six fields: `title`, `body`, `table`, `footnote`, `appendix`, and `code`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three model stacks are evaluated: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether field-aware context selection\u2014targeting specific document fields such as title, body, table, footnote, appendix, and code\u2014yields measurable recall accuracy improvements over body-only or title-only pruning when answering questions grounded in real project trace data. Using 24 composite examples derived from parent project artifacts (run notes, source files, reports, and JSON metadata), we compare four context-selection strategies (full context, body-only pruning, keyword-l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "SmolLM2-135M-Instruct** (`HuggingFaceTB/SmolLM2-135M-Instruct`): A 135M-parameter instruction-tuned model, served via local Transformers with cached weights.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether field-aware context selection\u2014targeting specific document fields such as title, body, table, footnote, appendix, and code\u2014yields measurable recall accuracy improvements over body-only or title-only pruning when answering questions grounded in real project trace data. Using 24 composite examples derived from parent project artifacts (run notes, source files, reports, and JSON metadata), we compare four context-selection strategies (full context, body-only pruning, keyword-l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Qwen2.5-0.5B-Instruct** (`Qwen/Qwen2.5-0.5B-Instruct`): A 0.5B-parameter instruction-tuned model, served via local Transformers with cached weights.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether field-aware context selection\u2014targeting specific document fields such as title, body, table, footnote, appendix, and code\u2014yields measurable recall accuracy improvements over body-only or title-only pruning when answering questions grounded in real project trace data. Using 24 composite examples derived from parent project artifacts (run notes, source files, reports, and JSON metadata), we compare four context-selection strategies (full context, body-only pruning, keyword-l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch met its baseline by replacing fabricated documents with parent real traces and showing >5 point field-aware uplift across two local LLMs under grounded scoring."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "fieldwise-recall-probe-real-trace-multi-model-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

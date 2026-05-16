@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T105148651589+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "1837b571196b2aece09d141a4e780021ec30bba6dfd31d0964c868ac1a6f1a75"
+    },
+    {
+      "bytes": 485,
+      "path": "metadata.json",
+      "sha256": "88a4a0b5f6a65ceac562ff777476c0447e463b40bc2478e63103738bd71a93b1"
+    },
+    {
+      "bytes": 16355,
+      "path": "evidence/public_paper.md",
+      "sha256": "13ba0d45ee3e0828eaaaa7785519ad6753566622e78e7e87f0e1c6b79befee0a"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "quant-spectrum-cross-model-downstream-validation",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

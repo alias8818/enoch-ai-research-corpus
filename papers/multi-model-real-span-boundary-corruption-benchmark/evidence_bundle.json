@@ -1,154 +1,36 @@
 {
-  "project_id": "source-record-redacted",
-  "project_name": "Multi-Model Real-Span Boundary Corruption Benchmark",
-  "run_id": "source-record-redacted",
-  "paper_id": "source-record-redacted:source-record-redacted:arxiv_draft",
-  "generated_at": "2026-04-22T13:00:00.719-05:00",
-  "decision": {
-    "project_decision": "finalize_positive",
-    "hypothesis_status": "supported",
-    "confidence": "high",
-    "evidence_strength": "strong",
-    "novelty_progress": true,
-    "results_changed": true,
-    "recommended_next_action": "Archive this branch as a positive multi-model MVP; only queue a separate larger-document/RAG-server benchmark if new budget is explicitly allocated.",
-    "stop_reason": "The real-span boundary corruption signal now reproduces across four competent QA readers on the same 80-example pilot with large boundary-stitch recovery and passing regression tests.",
-    "branch_project_name": null,
-    "branch_reason": null,
-    "decision_source": "codex_turn",
-    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-    "updated_at": "2026-04-19T14:59:37.478598+00:00"
-  },
-  "decision_action": "finalize_positive",
-  "hypothesis_status": "supported",
-  "evidence_strength": "strong",
-  "confidence": "high",
-  "recommended_next_action": "Archive this branch as a positive multi-model MVP; only queue a separate larger-document/RAG-server benchmark if new budget is explicitly allocated.",
-  "run_notes_tail": [
-    "- The successor harness now produces durable multi-model benchmark artifacts and resource metrics.",
-    "- The boundary corruption signal is supported for the competent DistilBERT reader but not established as a strong multi-model result because the second completed model is an intentionally tiny/low-quality QA model that fails plain controls.",
-    "- Same-project next step remains concrete: add at least one more competent QA/RAG model (download with longer bounded window, use cached local LLM via vLLM/llama.cpp/OpenAI-compatible shim, or run a generative local model reader) and rerun the 80-300 example benchmark before finalizing.",
-    "## 2026-04-19 continuation plan (same run)",
-    "1. Keep working in this successor project and avoid creating another branch.",
-    "2. Acquire at least one additional competent Hugging Face extractive QA reader into project-local `.hf_cache` with `HF_HUB_DISABLE_XET=1` after the earlier stalled Xet path.",
-    "3. Run a small correctness/performance smoke on the new reader(s), then rerun the real-span boundary/control benchmark using the existing harness on the same 80-example subset.",
-    "4. Update `results/multi_model_summary.md`, append resource/model acquisition notes here, run regression tests, and write the mandatory decision artifact before yielding.",
-    "## 2026-04-19 continuation results",
-    "Model acquisition:",
-    "- The initial project-local HF download attempt for `deepset/minilm-uncased-squad2` stalled on the default Xet-backed path and was killed; the durable log is `results/model_acquisition_20260419.log`.",
-    "- Retrying with `HF_HUB_DISABLE_XET=1` succeeded for `Intel/dynamic_tinybert`, `deepset/tinyroberta-squad2`, and `deepset/minilm-uncased-squad2`, all cached under project-local `.hf_cache/`.",
-    "Benchmark rerun:",
-    "- Smoke: `results/multi_model_real_span_smoke_v2.json` completed on 8 examples with 5/5 models and 3 supporting/control-passing models.",
-    "- Full pilot: `results/multi_model_real_span_eval_v2.json` completed on the existing 80-example subset with 5/5 models. It was also copied to `results/multi_model_real_span_eval.json` as the latest canonical result.",
-    "- Supporting readers: `distilbert-base-cased-distilled-squad`, `deepset/minilm-uncased-squad2`, `deepset/tinyroberta-squad2`, and `Intel/dynamic_tinybert`.",
-    "- Sentinel/non-supporting reader: `sshleifer/tiny-distilbert-base-cased-distilled-squad` failed plain controls and is retained only as a debug/throughput sentinel.",
-    "Key metrics (plain section / boundary section / boundary stitch accuracy, uplift):",
-    "- DistilBERT SQuAD: 0.950 / 0.000 / 1.000, +100.0 points.",
-    "- Deepset MiniLM SQuAD2: 0.950 / 0.000 / 1.000, +100.0 points.",
-    "- Deepset TinyRoBERTa SQuAD2: 0.575 / 0.000 / 0.725, +72.5 points.",
-    "- Intel Dynamic TinyBERT: 0.950 / 0.000 / 1.000, +100.0 points.",
-    "Scientific state:",
-    "- The same real-span boundary corruption/control benchmark now supports the mechanism across multiple competent QA readers, not just the parent DistilBERT MVP.",
-    "- This is sufficient to archive/finalize the branch as a positive MVP rather than creating another successor-routing branch."
-  ],
-  "result_files": [
-    "results/multi_model_summary.md",
-    "results/multi_model_real_span_eval.json",
-    "results/multi_model_real_span_eval_v2.json",
-    "results/multi_model_real_span_smoke_v2.json",
-    "results/model_acquisition_20260419.log",
-    "results/multi_model_real_span_smoke.json"
-  ],
-  "recent_files": [
-    ".omx/metrics.json",
-    ".omx/project_decision.json",
-    "run_notes.md",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/9cd49a44b75d0023835cf81a7d110562421389d8/model.safetensors",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/blobs/b0b23d9f15d3d176be7dea04a7b400133f86834f",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/refs/refs/pr/1",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/33a976c7ab7d41310ea4063d311dbf66c8aaa001/pytorch_model.bin",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/blobs/849b1b8d5e5207dfeaaf8f84a554faced978748b789f2ece180530ea767086dd",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/model.safetensors.index.json",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/model.safetensors",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/chat_template.jinja",
-    ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/33a976c7ab7d41310ea4063d311dbf66c8aaa001/special_tokens_map.json"
-  ],
-  "status_json": {
-    "available": true,
-    "current_activity": "wake_ready",
-    "gate_state": "wake_ready",
-    "run_notes_tail": [
-      "- The successor harness now produces durable multi-model benchmark artifacts and resource metrics.",
-      "- The boundary corruption signal is supported for the competent DistilBERT reader but not established as a strong multi-model result because the second completed model is an intentionally tiny/low-quality QA model that fails plain controls.",
-      "- Same-project next step remains concrete: add at least one more competent QA/RAG model (download with longer bounded window, use cached local LLM via vLLM/llama.cpp/OpenAI-compatible shim, or run a generative local model reader) and rerun the 80-300 example benchmark before finalizing.",
-      "## 2026-04-19 continuation plan (same run)",
-      "1. Keep working in this successor project and avoid creating another branch.",
-      "2. Acquire at least one additional competent Hugging Face extractive QA reader into project-local `.hf_cache` with `HF_HUB_DISABLE_XET=1` after the earlier stalled Xet path.",
-      "3. Run a small correctness/performance smoke on the new reader(s), then rerun the real-span boundary/control benchmark using the existing harness on the same 80-example subset.",
-      "4. Update `results/multi_model_summary.md`, append resource/model acquisition notes here, run regression tests, and write the mandatory decision artifact before yielding.",
-      "## 2026-04-19 continuation results",
-      "Model acquisition:",
-      "- The initial project-local HF download attempt for `deepset/minilm-uncased-squad2` stalled on the default Xet-backed path and was killed; the durable log is `results/model_acquisition_20260419.log`.",
-      "- Retrying with `HF_HUB_DISABLE_XET=1` succeeded for `Intel/dynamic_tinybert`, `deepset/tinyroberta-squad2`, and `deepset/minilm-uncased-squad2`, all cached under project-local `.hf_cache/`.",
-      "Benchmark rerun:",
-      "- Smoke: `results/multi_model_real_span_smoke_v2.json` completed on 8 examples with 5/5 models and 3 supporting/control-passing models.",
-      "- Full pilot: `results/multi_model_real_span_eval_v2.json` completed on the existing 80-example subset with 5/5 models. It was also copied to `results/multi_model_real_span_eval.json` as the latest canonical result.",
-      "- Supporting readers: `distilbert-base-cased-distilled-squad`, `deepset/minilm-uncased-squad2`, `deepset/tinyroberta-squad2`, and `Intel/dynamic_tinybert`.",
-      "- Sentinel/non-supporting reader: `sshleifer/tiny-distilbert-base-cased-distilled-squad` failed plain controls and is retained only as a debug/throughput sentinel.",
-      "Key metrics (plain section / boundary section / boundary stitch accuracy, uplift):",
-      "- DistilBERT SQuAD: 0.950 / 0.000 / 1.000, +100.0 points.",
-      "- Deepset MiniLM SQuAD2: 0.950 / 0.000 / 1.000, +100.0 points.",
-      "- Deepset TinyRoBERTa SQuAD2: 0.575 / 0.000 / 0.725, +72.5 points.",
-      "- Intel Dynamic TinyBERT: 0.950 / 0.000 / 1.000, +100.0 points.",
-      "Scientific state:",
-      "- The same real-span boundary corruption/control benchmark now supports the mechanism across multiple competent QA readers, not just the parent DistilBERT MVP.",
-      "- This is sufficient to archive/finalize the branch as a positive MVP rather than creating another successor-routing branch."
-    ],
-    "recent_files": [
-      ".omx/metrics.json",
-      ".omx/project_decision.json",
-      "run_notes.md",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/9cd49a44b75d0023835cf81a7d110562421389d8/model.safetensors",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/blobs/b0b23d9f15d3d176be7dea04a7b400133f86834f",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/refs/refs/pr/1",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/33a976c7ab7d41310ea4063d311dbf66c8aaa001/pytorch_model.bin",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/blobs/849b1b8d5e5207dfeaaf8f84a554faced978748b789f2ece180530ea767086dd",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/model.safetensors.index.json",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/model.safetensors",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/.no_exist/33a976c7ab7d41310ea4063d311dbf66c8aaa001/chat_template.jinja",
-      ".hf_cache/hub/models--sshleifer--tiny-distilbert-base-cased-distilled-squad/snapshots/33a976c7ab7d41310ea4063d311dbf66c8aaa001/special_tokens_map.json"
-    ],
-    "result_files": [
-      "results/multi_model_summary.md",
-      "results/multi_model_real_span_eval.json",
-      "results/multi_model_real_span_eval_v2.json",
-      "results/multi_model_real_span_smoke_v2.json",
-      "results/model_acquisition_20260419.log",
-      "results/multi_model_real_span_smoke.json"
-    ],
-    "active_processes": [],
-    "latest_session": {
-      "session_id": "omx-1776610401074-371ona",
-      "started_at": "2026-04-19T14:53:21.100Z",
-      "ended_at": "2026-04-19T14:59:58.209Z",
-      "cwd": "[redacted-source-project-root]",
-      "pid": 1325216
+  "file_inventory": [
+    {
+      "bytes": 344,
+      "path": "paper_manifest.json",
+      "sha256": "add406c48ac360bc7e31e64c3d49b974174938ed28f04825b6de426124f76b8a"
     },
-    "project_decision": {
-      "project_decision": "finalize_positive",
-      "hypothesis_status": "supported",
-      "confidence": "high",
-      "evidence_strength": "strong",
-      "novelty_progress": true,
-      "results_changed": true,
-      "recommended_next_action": "Archive this branch as a positive multi-model MVP; only queue a separate larger-document/RAG-server benchmark if new budget is explicitly allocated.",
-      "stop_reason": "The real-span boundary corruption signal now reproduces across four competent QA readers on the same 80-example pilot with large boundary-stitch recovery and passing regression tests.",
-      "branch_project_name": null,
-      "branch_reason": null,
-      "decision_source": "codex_turn",
-      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-      "updated_at": "2026-04-19T14:59:37.478598+00:00"
+    {
+      "bytes": 488,
+      "path": "metadata.json",
+      "sha256": "932ee909754b4d874b9795d57be8d3cbfb01e62b980e1ebebed55c937d2a4767"
     },
-    "decision_error": ""
-  }
+    {
+      "bytes": 16892,
+      "path": "evidence/public_paper.md",
+      "sha256": "b07eea0592aba556e518f4d4e37606c94f8ef66d2ef7caa3b0b03dbc0c8dcb5c"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "multi-model-real-span-boundary-corruption-benchmark",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T160918586456+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "edce82c5629b747a7032e1854cc70347afc5557ee17a02e2cb7cda62851655dc"
+    },
+    {
+      "bytes": 460,
+      "path": "metadata.json",
+      "sha256": "a7b4bd259a9a57bb0caa80a316c8a3bf4a2667f9a34391925aa264cc485d1413"
+    },
+    {
+      "bytes": 17752,
+      "path": "evidence/public_paper.md",
+      "sha256": "afa37a6aaaf5f80e0f73aa1b389c1957c2f61c2cd030b23d5a618f3a26f1894e"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "firmware-diff-explainer",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

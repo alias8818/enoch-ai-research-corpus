@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T230618401239+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "9bd60532a2ebb50bd13fba7b329bbe9c3dcb52feeebc99363a83299731fa365e"
+    },
+    {
+      "bytes": 479,
+      "path": "metadata.json",
+      "sha256": "8cc56bf9c05c0a258ab5da1043d51322fb11881c1374c27be1bc4fec4f9677be"
+    },
+    {
+      "bytes": 13335,
+      "path": "evidence/public_paper.md",
+      "sha256": "b4a06d790d7d1629e4ec168e3e872b96f6f5b28651533c3cc4d6e5500c608e0f"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "hypothesis-ledger-admission-gate-a-b-trial",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

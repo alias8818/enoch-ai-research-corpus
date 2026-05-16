@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "In the prototype evaluation, all six fault probes were detected (self-maintenance score 1.0), all five regression tests passed, and the upstream AgentHook package smoke test reported a Bronze-tier pass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We conclude that a self-maintaining Bronze-MVP test rig is viable as a development harness, but this result does not constitute formal AgentHook conformance certification.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A persistent risk for such rigs is scorer regression: a bug introduced into the scoring logic could silently accept invalid traces, producing false passes that undermine downstream consumers' trust in the conformance result.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The AgentHook specification defines a one-envelope lifecycle evidence model with ten canonical event types and three conformance tiers (Bronze, Silver, Gold).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We derived scoring invariants from the following upstream sources, cloned at commit `222cd1da0147aee9188f6f00ec2c06853cb01294`: - AgentHook `SPEC.md`: defines required envelope fields (`event_id`, `event_type`, `timestamp`, `source`), canonical event names, and pre/post lifecycle semantics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The local scorer verifies the following ten invariants on each trace: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, claim ledger, and metrics). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Result: **5 passed in 0.01s.** Tests cover valid trace acceptance, explicit error-path rejection, duplicate ID detection, orphan post-event detection, and self-maintenance probe execution.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, claim ledger, and metrics). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Result: **passed = true; score = 1.0; 6/6 fault probes detected.** Every injected mutation was caught by the scorer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, claim ledger, and metrics). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Result: **Bronze: pass; Silver: partial; Gold: partial.** The partial results for Silver and Gold are expected given that the prototype targets Bronze-level invariants only.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The \"partial\" status for Silver and Gold reflects the upstream smoke-test command's behavior when run against a source that does not emit the richer transcript and reasoning evidence those tiers require; it should not be interpreted as partial conformance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Self-Maintaining Conformance Test Rigs for Agent Lifecycle Event Envelopes: A Bronze-MVP Prototype",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "OK.** Result: **exit 0** (no syntax or import errors).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a local conformance test rig for agent lifecycle event envelopes can maintain confidence in its own scoring logic by combining deterministic fixture traces with mutation-based fault probes. We implement a prototype scorer that verifies ten envelope and lifecycle invariants derived from the AgentHook specification, then validate the scorer against itself by injecting six categories of faults into known-good traces and requiring detection of each. In the prototype evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Python: 3.12.3 - Platform: Linux aarch64 / NVIDIA kernel All results were collected in a single session on a single platform.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a local conformance test rig for agent lifecycle event envelopes can maintain confidence in its own scoring logic by combining deterministic fixture traces with mutation-based fault probes. We implement a prototype scorer that verifies ten envelope and lifecycle invariants derived from the AgentHook specification, then validate the scorer against itself by injecting six categories of faults into known-good traces and requiring detection of each. In the prototype evaluation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "test-rig-self-maintainer",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

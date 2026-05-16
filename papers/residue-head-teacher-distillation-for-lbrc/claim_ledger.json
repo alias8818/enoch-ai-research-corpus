@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Residue-Head Teacher Distillation for LBRC produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/residue_teacher_branch_summary.json",
-        "artifacts/residue_constrained_decoder_smol_l140_records.jsonl",
-        "artifacts/residue_constrained_decoder_smol_l140_metrics.json",
-        "artifacts/smol_residue_teacher_digitlogit_1k_l140_train_metrics.json",
-        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer.json",
-        "artifacts/smol_residue_teacher_digitlogit_1k_l140/tokenizer_config.json",
-        "artifacts/smol_residue_teacher_digitlogit_1k_l140/chat_template.jinja",
-        "artifacts/smol_residue_teacher_digitlogit_1k_l140/model.safetensors"
+      "claim": "The residue-head teacher achieves perfect accuracy on all 343 (7\u00b3) digit combinations, but distilling its digit distribution into the LM via cross-entropy supervision on 1,000 examples for 140 gradient steps reduces held-out digit cross-entropy from 2.208 to 1.979 while remaining above the random baseline of ln(7) \u2248 1.946.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Productize the residue-head constrained decoder as a hard digit mask/parser path, and do not spend on more same-budget unconstrained distillation unless a held-out digit gate first beats ln(7).",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The distillation gate (loss \u2264 1.90, accuracy \u2265 0.25) is not met.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This mechanism achieves 1.0 accuracy on a balanced 64-example bounded LBRC evaluation, passing the long-context gate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is mixed: direct distillation moves loss in the correct direction but fails to calibrate the LM sufficiently for unconstrained deployment, while constrained decoding provides a viable engineering path at the cost of requiring the teacher at inference time.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Even when a compact, verifiable computational module (a \"residue head\") exists and achieves perfect accuracy on the target digit space, transferring that knowledge into a general-purpose LM through standard fine-tuning is not guaranteed to succeed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by AI from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A residue-head teacher\u2014a small neural module that maps input digit triples to their correct residue digit in {0,\u2026,6}\u2014has been previously validated with perfect accuracy across all 7\u00b3 = 343 input combinations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report two experimental paths: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "This report examines a specific instance of this problem within the LBRC (Long-Budget Residue Computation) framework. A residue-head teacher\u2014a small neural module that maps input digit triples to their correct residue digit in {0,\u2026,6}\u2014has been previously validated with perfect accuracy across all 7\u00b3 = 343 input combinations. The central question is whether this teacher's digit distribution can be distilled into a SmolLM checkpoint such that the LM independently emits correct digits without the t",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Direct digit-logit distillation**, which supervises the LM's next-token digit logits against the residue-head teacher's targets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The overall finding is mixed: the distillation signal is real but too weak at the tested budget, while constrained decoding is effective but requires the teacher at inference time.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "It maps triples of digits in {0,\u2026,6} to a single residue digit in {0,\u2026,6}.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a small language model (SmolLM) can be calibrated to emit correct digit predictions for the Long-Budget Residue Computation (LBRC) task via direct digit-logit distillation from a verified residue-head teacher. The residue-head teacher achieves perfect accuracy on all 343 (7\u00b3) digit combinations, but distilling its digit distribution into the LM via cross-entropy supervision on 1,000 examples for 140 gradient steps reduces held-out digit cross-entropy from 2.208 to 1.979 wh",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Before any distillation, the teacher is verified by probing all 7\u00b3 = 343 digit combinations and confirming that the cross-entropy loss is 0.001439 and accuracy is 1.0.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The distillation procedure (`src/lbrc/train_residue_teacher_distill.py`) operates on the exact downstream measurement surface: for each generated LBRC prompt, the script scores only the next-token digit logits over the vocabulary subset {0,\u2026,6} and minimizes cross-entropy against the residue-head teacher's target digit.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Residue-Head Teacher Distillation for LBRC",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch completed a concrete experiment: direct digit-logit distillation improved loss but failed calibration, while the allowed constrained-decoding mechanism passed the bounded LBRC long-context gate at 1.0 accuracy."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "residue-head-teacher-distillation-for-lbrc",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

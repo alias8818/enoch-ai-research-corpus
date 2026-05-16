@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "CPU-Offload Stress Harness Real-Server Scaleup produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/scaleup_summary.md",
-        "results/scaleup_summary.json",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/recovery_failure.json",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/resource_after.txt",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/replay_stdout.json",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_status.json",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_report.md",
-        "results/sglang_qwen3_4b_len4096_noinductor_attempt/endpoint_comparison.json"
+      "claim": "We present evidence from a multi-backend, real-server scale-up study of a CPU-offload stress replay harness across llama.cpp, vLLM, and SGLang serving backends.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Stop this scale-up branch; use the artifacts to decide separately whether GB10 SGLang kernel compatibility or a larger multi-model statistical validation deserves its own concrete project.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The study investigates two questions: (1) whether explicit KV-cache placement (GPU vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "CPU) produces measurable latency and throughput separation under calibrated replay, and (2) whether request stress metadata correlates with per-request latency more strongly than semantic similarity metadata.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across llama.cpp Qwen3-0.6B runs, GPU-KV offload yielded 2.26\u00d7 throughput and 0.44\u00d7 mean latency relative to CPU-KV no-offload, confirming that KV placement is a strong, reproducible server behavior separator.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The stress-vs-similarity latency predictor signal was directionally positive in all completed backends but weak and inconsistent across sample sizes: a Phi-4-mini-instruct pilot at n=16 showed max stress-latency correlation of 0.821 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "similarity-latency correlation of 0.711, but at n=48 the margin collapsed to 0.281 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "SGLang execution on the GB10 platform failed at both the Triton/ptxas compilation layer and the custom kernel layer, producing durable platform-incompatibility evidence rather than serving results.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Inference serving backends for large language models expose a variety of configuration knobs that affect latency, throughput, and resource utilization.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Among these, KV-cache placement\u2014whether the key-value cache resides in GPU memory or is offloaded to CPU memory\u2014represents a first-order control point with direct implications for serving capacity and request latency.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Simultaneously, the question of whether per-request metadata (such as estimated computational stress or semantic similarity to a reference set) can predict observed latency has practical implications for request routing and admission control.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The harness replays a fixed dataset of prompt examples against live inference endpoints under multiple request-ordering policies, recording per-request latency, throughput, token counts, and resource utilization.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The work was conducted across three serving backends (llama.cpp, vLLM, SGLang) on a GB10 unified-memory platform, with explicit KV-placement comparisons on llama.cpp and a tokenizer-aware prompt-fitting mechanism to avoid context-overflow failures observed in early runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CPU-Offload Stress Harness Real-Server Scaleup: Multi-Backend Latency and KV-Placement Evidence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The queued n>=48 tokenizer-aware larger-GGUF replay and focused SGLang GB10 recovery attempt are complete, with durable artifacts and no same-mechanism next step needed in this branch."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "cpu-offload-stress-harness-real-server-scaleup",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

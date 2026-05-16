@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T064048371432+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "987f1c0261b64769a474827325b3b082987e3dc7e77128e200f7bfe4688f912a"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "5a0c9a95da72a71b528ff76d32690992ac7e2f9ef49c4a043b6e6e6865edd2d0"
+    },
+    {
+      "bytes": 17120,
+      "path": "evidence/public_paper.md",
+      "sha256": "cf24dcaa7ba0231a9e90561ac801fee3ff23f8927ab44e5ef620b06067cf5fe5"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "dense-mask-distillation-from-moe",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

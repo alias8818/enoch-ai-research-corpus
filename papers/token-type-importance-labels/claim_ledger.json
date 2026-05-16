@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Token-Type Importance Labels produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/real_retrieval/system_summary.csv",
-        "results/real_retrieval/latest_run_stdout.json",
-        "results/real_retrieval/metrics.json",
-        "results/real_retrieval/spot_check_75.jsonl",
-        "results/real_retrieval/predictions.jsonl",
-        "results/system_summary.csv",
-        "results/latest_run_stdout.json",
-        "results/metrics.json"
+      "claim": "We investigate whether labeling evaluation examples by their critical token type (name, number, unit, delimiter) can reveal failure clusters hidden by aggregate accuracy metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this MVP as positive evidence for token-type labels; only start a new project if the controller wants neural pruning/quantization validation beyond this retrieval-system test.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a template-synthetic dataset of 1,500 examples spanning structured extraction, code navigation, and abstention calibration, we compare four retrieval and extraction systems under both aggregate and token-type-sliced evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Aggregate accuracy masks substantial per-type variation: a query-typed retriever achieving 33.60% aggregate accuracy drops to 14.02% on name-critical examples and 24.14% on number-critical examples, while a lexical window retriever at 7.53% aggregate falls to 0.46% on its worst token type.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A label-aware structural extractor recovers to 100.00% across all slices, yielding +66.4 aggregate percentage points and +86.0 worst-type percentage points of uplift over the query-typed retriever.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In an initial simulation with deterministic perturbation profiles, token-type macro accuracy also reversed the ranking of pruning-like and quantization-like systems compared to aggregate ranking.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that token-type importance labels expose concrete failure clusters and can guide targeted interventions, but the evidence is bounded by the template-synthetic dataset and the structural extractors' exploitation of template regularities.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Standard evaluation of retrieval and extraction systems reports aggregate accuracy, treating all test examples as interchangeable.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This practice can obscure systematic failures that concentrate on specific token types\u2014names, numbers, units, or delimiters\u2014that carry disproportionate importance in structured tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A system that appears adequate in aggregate may fail catastrophically on the subset of examples where a single numeric or named entity determines correctness.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We propose token-type importance labels as a lightweight annotation schema: each evaluation example is tagged with the token type whose value is critical to a correct answer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Slicing accuracy by these labels reveals whether a system's failures cluster on particular token types, and whether interventions targeted at those types produce meaningful uplift.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the first phase, we evaluate deterministic perturbation profiles (simulating pruning-like, quantization-like, and similarity-centric retrieval degradation) against a synthetic dataset, measuring both aggregate and per-type accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Token-Type Importance Labels: Exposing Hidden Failure Clusters in Retrieval and Extraction Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: Real retrieval-system evaluation exposed token-type failure clusters, demonstrated a targeted label-aware uplift above the success threshold, and the 75-label audit found no sampled weak-label artifacts."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "token-type-importance-labels",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

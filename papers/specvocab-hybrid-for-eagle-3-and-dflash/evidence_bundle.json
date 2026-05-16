@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260504T112151414975+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "2c09636222e49dcd215ce9237ed886cc4c4a07deb597f3a353962f39718bf21d"
+    },
+    {
+      "bytes": 476,
+      "path": "metadata.json",
+      "sha256": "ee1ebfd5d8e2d9501f3be7898e57a1791053c21e06b16ed8e49bde0e49f10f71"
+    },
+    {
+      "bytes": 16557,
+      "path": "evidence/public_paper.md",
+      "sha256": "dc9e04ce63f33fefba65efee1e04078793f05fae0c2c785dea96f799df63cbd6"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "specvocab-hybrid-for-eagle-3-and-dflash",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

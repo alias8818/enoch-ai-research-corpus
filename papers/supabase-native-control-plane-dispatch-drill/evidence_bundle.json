@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T143734415769+0000"
+  "file_inventory": [
+    {
+      "bytes": 180,
+      "path": "paper_manifest.json",
+      "sha256": "25a82a4b9c6153db2ffcc8b8ac8c28ce89e56320d902e850170f85fbc405eb53"
+    },
+    {
+      "bytes": 481,
+      "path": "metadata.json",
+      "sha256": "e2f24cf396df9a2c7d7d45ab7b9cfeb5f3fe0cf2518f3683301e7dae94d298fc"
+    },
+    {
+      "bytes": 792,
+      "path": "evidence/public_paper.md",
+      "sha256": "a57daec40c28b8725296a0bf165b72496d0f7ceae7a50be6a2ef994407466c5a"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "supabase-native-control-plane-dispatch-drill",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,40 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "HumanEval MBPP Counterexample-Harvest Verifier Transfer produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/humaneval_mbpp_transfer_dataset.csv",
-        "artifacts/humaneval_mbpp_transfer_results.json",
-        "artifacts/benchmark_cache/mbpp.jsonl",
-        "artifacts/benchmark_cache/HumanEval.jsonl.gz"
+      "claim": "No human reviewer has validated these claims.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has validated these claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Archive this branch as positive transfer evidence; if more budget is allocated, replicate the same harness on the full MBPP set and/or with LLM-sampled mutants for stronger external validity.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We investigate whether counterexample-harvested hard negatives\u2014code candidates that pass public tests but fail hidden tests\u2014improve verifier accuracy when transferred to standard code-generation benchmarks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a self-contained harness on a subset of HumanEval (80 tasks) and MBPP (120 tasks), we generate 3,415 semantic AST/code mutants from canonical solutions and partition them into 15 train and 8 held-out mutation families.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On held-out families, counterexample-harvest training reduces the text verifier's false-accept rate at 50% positive-recall (FAR@0.5) from 0.3235 (random baseline) and 0.3382 (equal-budget random) to 0.1324, a reduction of approximately 59\u201361%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "AUC gains are more modest: +2.72 points over random baseline and +2.65 over equal-budget random, below a pre-specified 10-point success bar.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A hybrid AST verifier achieves AUC 1.0000 under all regimes, but the FAR@0.5 advantage of counterexample-harvest (0.0000 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "1.0000) is threshold-sensitive and should be interpreted cautiously.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Evidence strength is moderate; confidence is medium.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether counterexample-harvested hard negatives\u2014code candidates that pass public tests but fail hidden tests\u2014improve verifier accuracy when transferred to standard code-generation benchmarks. Using a self-contained harness on a subset of HumanEval (80 tasks) and MBPP (120 tasks), we generate 3,415 semantic AST/code mutants from canonical solutions and partition them into 15 train and 8 held-out mutation families. On held-out families, counterexample-harvest training reduces the te",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that counterexample-harvested hard negatives transfer to reduce false accepts, but the AUC improvement remains modest and replication on fuller benchmarks is warranted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A persistent challenge is the prevalence of false accepts: incorrect programs that pass a surface-level or public test suite but fail on inputs not exposed during verification.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Hard negatives\u2014candidates that pass public tests but fail hidden tests\u2014offer a potentially informative training signal for verifiers, since they directly target the failure mode of interest.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work on counterexample harvesting has demonstrated that training verifiers on such hard negatives can reduce false-accept rates in controlled settings.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Counterexample-Harvest Training Reduces False Accepts in Code Verification: A Transfer Study on HumanEval and MBPP",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A real HumanEval/MBPP subset run with fresh semantic AST/code mutants produced 68 held-out hard negatives and counterexample-harvest training cut text-verifier FAR@0.5 by about 59-61% versus both random baselines, clearing the branch kill condition."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "humaneval-mbpp-counterexample-harvest-verifier-transfer",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "In a reproducible synthetic tree-search benchmark with noisy evaluators and distractor branches, REAP consistently outperformed static fixed-width beam search across mixed and easy-signal profiles (e.g., mixed-profile success rate 0.216 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "0.151 at budget 64, \u0394 = +0.065, 95% CI [+0.036, +0.094]) while reducing mean live frontier from 46.6 to 14.6 nodes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, REAP did not match the success rate of unconstrained best-first search (mixed 0.295 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "0.216), though best-first incurred a mean max frontier of 212.3 versus 14.6.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All tested policies effectively failed on a hard-trap profile (success \u2264 0.002), indicating that adaptive shaping alone is insufficient under severe evaluator misalignment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Tree of Thoughts frames LLM inference as exploration over intermediate thought units and reports gains on tasks such as Game of 24 (https://arxiv.org/abs/2305.10601).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "LATS combines language-model reasoning, acting, and planning with Monte Carlo Tree Search and value/self-reflection mechanisms (https://arxiv.org/abs/2310.04406).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Multi-Agent Tree-of-Thought Validator Agent adds validation and pruning of flawed branches, reporting an average +5.6% improvement over standard ToT on GSM8K across four LLMs (https://arxiv.org/abs/2409.11527).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, claim ledgers, benchmark logs, and decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is required to be noted here; the artifact stands on its own evidentiary basis.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Unconstrained best-first search can achieve higher accuracy but at the cost of unbounded frontier growth, which may be impractical when controller memory, parallel branch count, evaluator-call budget, or latency must be constrained.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We propose REAP Dynamic Tree Shaping, a resource-aware policy that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Expands nodes using a composite of evaluator score, uncertainty, novelty, and depth urgency; 2.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "**AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, claim ledgers, benchmark logs, and decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review is required to be noted here; the artifact stands on its own evidentiary basis.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Narrows the frontier when scores are peaked and confidence is high; 3.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# REAP Dynamic Tree Shaping: Adaptive Frontier Control for Bounded-Budget Tree Search",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T045732117803+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "reap-dynamic-tree-shaping",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T045848389314+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "02beaf12a5862677c75a217089d0d0b977fa296dc210a6b3ae97ed21bdaa2572"
+    },
+    {
+      "bytes": 496,
+      "path": "metadata.json",
+      "sha256": "9f64d7dc0de3613b807df3b15ba3b4edd31a7d9a68714f129da127f2c84685cc"
+    },
+    {
+      "bytes": 14980,
+      "path": "evidence/public_paper.md",
+      "sha256": "1e0e91c8ed3573b1a3c67bdc0202de4311fd6d062357759637b4154776f761b3"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "coverage-guided-security-patch-red-team-real-repo-benchmark",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

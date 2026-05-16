@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Reduced-Planner Scratchpad Feedback Real Repo-QA Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/real_repo_qwen7b_pair_hard/llama_server.log",
-        "results/real_repo_qwen7b_pair_hard/live_report.md",
-        "results/real_repo_qwen7b_pair_hard/live_summary.json",
-        "results/real_repo_qwen7b_pair_hard/scratchpads.json",
-        "results/real_repo_qwen7b_pair_hard/live_trial_results.csv",
-        "results/real_repo_qwen7b_pair_hard/cases.json",
-        "results/real_repo_qwen7b_reduced_planner/llama_server.log",
-        "results/real_repo_qwen7b_reduced_planner/live_report.md"
+      "claim": "The approach replaces a conventional verbose planner with a query-only 6-token hidden planner whose first-pass output is amortized across grouped downstream questions via a feedback scratchpad.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reduced-Planner Scratchpad Feedback for Real-Repository QA: A Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this validation as positive; if more budget is allocated later, replicate the same harness on a second large repository/model rather than creating a generic successor branch.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In live experiments using Qwen2.5-7B (GGUF, local inference) against the llama.cpp repository, the amortized reduced planner matched or exceeded the answer quality of vanilla baselines using 190- and 260-token planner contexts while reducing all-in prompt-like token consumption by 18.9\u201358.2%, depending on the baseline and feedback budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reduced-Planner Scratchpad Feedback for Real-Repository QA: A Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a harder paired-evidence benchmark requiring two source facts per answer, amortized feedback improved equal-budget F1 by up to +24.7 points and evidence recall by up to +65.6 points.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reduced-Planner Scratchpad Feedback for Real-Repository QA: A Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, at tighter baseline budgets (90/130 tokens), fixed planner overhead prevented net all-in savings despite comparable quality, and saturated single-fact conditions were less informative.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a reduced-planner scratchpad feedback mechanism for question-answering and information extraction over real repository source code. The approach replaces a conventional verbose planner with a query-only 6-token hidden planner whose first-pass output is amortized across grouped downstream questions via a feedback scratchpad. In live experiments using Qwen2.5-7B (GGUF, local inference) against the llama.cpp repository, the amortized reduced planner matched or exceeded the answer qualit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These scratchpads help the model organize retrieval and reasoning but consume context window capacity that could otherwise support source material.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A natural question arises: can the planner component be compressed\u2014replacing a verbose planning prompt with a minimal query-only planner\u2014without degrading answer quality, and can the savings be amplified by amortizing a single first-pass plan across multiple related questions?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study tests the following hypothesis: a query-only, 6-token hidden planner preserves equal answer quality while reducing all-in prompt-like tokens by at least 15% on real-repository QA/extraction tasks, with the strongest savings when one first-pass planner call is amortized across multiple related questions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reduced-Planner Scratchpad Feedback for Real-Repository QA: A Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A corresponding kill condition was pre-registered: finalize negative if a real-repo pilot with at least 20 live QA/extraction trials shows no cost-normalized equal-quality match with \u226515% all-in token savings for either per-question or amortized planner accounting, or if gains appear only on saturated or low-quality baselines that do not exercise retrieval.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Reduced-Planner Scratchpad Feedback for Real-Repository QA: A Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two benchmark configurations are reported: an atomic single-fact QA run and a harder paired-evidence run requiring two source facts per answer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a reduced-planner scratchpad feedback mechanism for question-answering and information extraction over real repository source code. The approach replaces a conventional verbose planner with a query-only 6-token hidden planner whose first-pass output is amortized across grouped downstream questions via a feedback scratchpad. In live experiments using Qwen2.5-7B (GGUF, local inference) against the llama.cpp repository, the amortized reduced planner matched or exceeded the answer qualit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The method replaces a conventional planner prompt (190 or 260 tokens of planning instructions and context) with a query-only 6-token hidden planner.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Amortized planning**: one first-pass planner call covers a group of related questions targeting the same source file, distributing the planner overhead across all questions in the group.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two benchmark configurations were run: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a reduced-planner scratchpad feedback mechanism for question-answering and information extraction over real repository source code. The approach replaces a conventional verbose planner with a query-only 6-token hidden planner whose first-pass output is amortized across grouped downstream questions via a feedback scratchpad. In live experiments using Qwen2.5-7B (GGUF, local inference) against the llama.cpp repository, the amortized reduced planner matched or exceeded the answer qualit",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The real-repository atomic and paired-evidence live runs met the >=15% all-in prompt-like savings gate at equal or better answer quality, especially with amortized first-pass planning, and the branch-specific kill condition is not supported."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "reduced-planner-scratchpad-feedback-real-repo-qa-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260429T223518347310+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "4299161e7f22fd94ac36d6e7e53d047d090e79bb772aeeaff6bdb34c28c883c1"
+    },
+    {
+      "bytes": 461,
+      "path": "metadata.json",
+      "sha256": "7e05b61301d5f6089c020a3b825ba7f5a4494cac3564621de179e874e5787808"
+    },
+    {
+      "bytes": 15115,
+      "path": "evidence/public_paper.md",
+      "sha256": "06f515468d7ba6d639e8f6318db7e725183228d1fadf4c7e39382090ba66db30"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "sub-8gb-model-zoo-triage",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

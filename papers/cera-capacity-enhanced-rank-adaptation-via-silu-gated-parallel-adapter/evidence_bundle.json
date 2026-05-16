@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T170048849691+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "47262ba38c90d2a9a90c38957b1a6b8dbfb96df527f8cb5c76841fd24dbd20f0"
+    },
+    {
+      "bytes": 508,
+      "path": "metadata.json",
+      "sha256": "2b2382b6eb1f9b0663fbc9c38e32b57d92478c7b56dd6a1a864488b913a5c0d8"
+    },
+    {
+      "bytes": 14192,
+      "path": "evidence/public_paper.md",
+      "sha256": "1386f3651b1d2a6e0539ccc97f2a70d3901fe4d685131eade8d79345e79d911f"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "cera-capacity-enhanced-rank-adaptation-via-silu-gated-parallel-adapter",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

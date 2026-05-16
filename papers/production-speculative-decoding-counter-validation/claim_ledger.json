@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Production Speculative Decoding Counter Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/llama_server_scaled/llama_server_run_output.json",
-        "artifacts/llama_server_scaled/llama_server_reports.json",
-        "artifacts/llama_server_scaled/llama_server_summary.json",
-        "artifacts/llama_server_scaled/llama_server_trace_rows.csv",
-        "artifacts/llama_server_smoke/llama_server_run_output.json",
-        "artifacts/llama_server_smoke/llama_server_reports.json",
-        "artifacts/llama_server_smoke/llama_server_summary.json",
-        "artifacts/llama_server_smoke/llama_server_trace_rows.csv"
+      "claim": "Selecting the best speculative configuration typically relies on aggregate accuracy and latency metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Promote the llama.cpp production-counter validation result into the research record; optional future work can compare vLLM after repairing its local extension ABI, but this branch itself is complete.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Prior local experiments with a 270-row true-token prompt set found that aggregate accuracy/latency and per-request trace scoring can diverge in their preferred configuration: accuracy/latency favored one draft setting (`draft_k2`) while trace-level acceptance counters favored another (`draft_k1`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using `llama.cpp` `llama-server` with Qwen2.5-1.5B-Instruct (target) and Qwen2.5-0.5B-Instruct (draft) in GGUF format, we ran the same 90-task, 270-row prompt set at concurrency 4 with 4 server slots.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Failure clusters were sparse (2 of 270 rows).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Speculative decoding accelerates autoregressive inference by proposing candidate tokens from a fast draft model and verifying them against a larger target model. Selecting the best speculative configuration typically relies on aggregate accuracy and latency metrics. Prior local experiments with a 270-row true-token prompt set found that aggregate accuracy/latency and per-request trace scoring can diverge in their preferred configuration: accuracy/latency favored one draft setting (`draft_k2`) wh",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding reduces the latency of autoregressive language model inference by having a small draft model propose candidate continuations that a larger target model verifies in parallel.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In practice, the \"best\" speculative configuration depends on which metric is optimized: raw throughput, per-request latency, acceptance rate, or a composite trace-level score.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A prior experiment (the \"parent\" project) using local Hugging Face Transformers inference on a 270-row true-token prompt set observed that two draft configurations\u2014`draft_k1` and `draft_k2`\u2014were ranked differently depending on whether one used aggregate accuracy/latency or per-request trace scoring.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A production serving engine with scheduler slots and engine-level speculative counters will reproduce the parent project's ranking divergence: aggregate accuracy/latency will prefer `draft_k2`, while per-request accepted/draft counter telemetry (trace scoring) will prefer `draft_k1`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Continuous batching was enabled, and the server was configured with 4 parallel slots.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An attempt to use `vLLM` as an alternative serving engine failed due to a compiled-extension ABI mismatch (`ImportError: vllm/_C.abi3.so: undefined symbol`), indicating a PyTorch/vLLM version incompatibility in the local checkout.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Production Speculative Decoding Counter Validation: Reproducing Local Trace-Ranking Divergence with a Serving Engine's Speculative Counters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This is recorded as attempted evidence, not a blocker for the llama.cpp result.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated automatically from research-run artifacts (run notes, evidence bundles, claim ledgers, and result files) by an AI pipeline. The operator releases these artifacts and claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. It has not been peer-reviewed, and all claims are bounded to the specific hardware, models, and configurations docu",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The experiment reused the parent project's 90-task, 270-row true-token prompt set.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated automatically from research-run artifacts (run notes, evidence bundles, claim ledgers, and result files) by an AI pipeline. The operator releases these artifacts and claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. It has not been peer-reviewed, and all claims are bounded to the specific hardware, models, and configurations docu",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The 270-row llama.cpp server run reproduced the parent signal using production accepted/draft counters and batching telemetry: accuracy/latency selected draft_k2 while trace scoring selected draft_k1."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "production-speculative-decoding-counter-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

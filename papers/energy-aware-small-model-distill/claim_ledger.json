@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether adding an explicit energy/latency penalty to model selection after knowledge distillation can substantially reduce inference compute while preserving most of the teacher model's accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Energy-Aware Small Model Distillation: A Local Proof-of-Concept Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a controlled local benchmark on the sklearn `load_digits` classification task, we train a width-128 teacher MLP and distill into a family of narrower student MLPs (widths 4\u201364).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Energy-Aware Small Model Distillation: A Local Proof-of-Concept Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A constrained Pareto variant\u2014selecting the smallest distilled model within one percentage point of teacher accuracy\u2014achieves 60.0% MAC reduction and 51.0% wall-time reduction at a mean gap of 0.71 percentage points.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Energy-Aware Small Model Distillation: A Local Proof-of-Concept Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are positive but bounded: the benchmark is a small vision proxy, energy is proxied by latency and MACs rather than direct joule measurement, and the compute path is CPU-only.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Energy-Aware Small Model Distillation: A Local Proof-of-Concept Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Standard practice selects the distilled student that maximizes accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, deployment contexts increasingly face energy and latency budgets that may favor a slightly less accurate but substantially cheaper model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study asks: can an explicit energy/latency term in the student-selection criterion expose a useful accuracy\u2013compute frontier, and how much accuracy does one trade for how much compute reduction?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Energy-Aware Small Model Distillation: A Local Proof-of-Concept Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We use `sklearn.load_digits`, an 8\u00d78 grayscale digit classification task (10 classes, 1797 samples).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether adding an explicit energy/latency penalty to model selection after knowledge distillation can substantially reduce inference compute while preserving most of the teacher model's accuracy. Using a controlled local benchmark on the sklearn `load_digits` classification task, we train a width-128 teacher MLP and distill into a family of narrower student MLPs (widths 4\u201364). An energy-aware selector that optimizes validation error plus a weighted CPU-time term selects models tha",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Teacher:** Hidden width 128, trained for 20 epochs with cross-entropy loss.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Students:** Hidden widths {4, 8, 16, 32, 64}, trained for 15 epochs each.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each student is trained on a blended target distribution: $$ y_{\\text{blend}} = 0.3 \\cdot y_{\\text{hard}} + 0.7 \\cdot \\text{softmax}(\\mathbf{z}_{\\text{teacher}} / T) $$ where $T = 2.0$ is the softmax temperature and $\\mathbf{z}_{\\text{teacher}}$ are the teacher's pre-softmax logits.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We compare two selection rules applied to the distilled student family: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metrics JSON, and decision records). The operator who released this artifact claims no personal authorship credit for the writing or experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "energy-aware-small-model-distill",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

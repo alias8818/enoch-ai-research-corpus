@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We present Continuous-Phase Memory Bench, a synthetic benchmark designed to expose retrieval accuracy differences among memory system strategies that are invisible or muted under conventional discrete-time evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate five retrieval predictors\u2014semantic majority, exponential decay, recency, discrete bucket, and a phase-aware circular kernel\u2014under two query modes: a discrete control (querying shortly after observation) and a continuous-phase mode (querying at arbitrary phase positions, including cases where the relevant evidence is older but phase-aligned).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across 20 random seeds producing 384,000 events, 640,000 queries, and 3,200,000 predictor evaluations, recency and discrete-bucket strategies achieve 0.977 accuracy on discrete-control queries but only 0.692 on continuous-phase queries, while the phase-aware kernel maintains 0.962 (discrete) and 0.908 (continuous).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The resulting +0.216 absolute accuracy gap on continuous-phase queries is stable across seeds (phase kernel range 0.902\u20130.915; recency range 0.684\u20130.697).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Evaluating such systems commonly involves querying facts shortly after they are observed, or within the same session or episode.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In such cases, the most recently observed value may not be the currently correct one; the correct value depends on the phase relationship between the query time and prior observations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision JSON, metric summaries, and benchmark script outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review has been performed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A benchmark that only queries facts near their observation time will fail to distinguish systems that model this phase-aligned recurrence from systems that rely on recency or semantic frequency alone.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We propose a synthetic benchmark construct\u2014continuous-phase memory evaluation\u2014that specifically tests retrieval under arbitrary phase positions, including cases where the relevant evidence is older but shares the same phase as the query.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "`continuous_phase`**: Queries are issued at arbitrary phase positions, including cases where the relevant evidence is older but phase-aligned with the query.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Continuous-Phase Memory Bench: A Synthetic Benchmark for Detecting Phase-Aligned Retrieval Failures in Temporal Memory Systems",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Five predictors are evaluated: | Predictor | Description | |---|---| | `semantic_majority` | Returns the most frequently observed value (semantic frequency baseline).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision JSON, metric summaries, and benchmark script outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review has been performed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Period estimation and multi-period scenarios are not tested in this version.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision JSON, metric summaries, and benchmark script outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review has been performed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Smoke test** (construct validation): **Calibrated run** (20 seeds): Each seed produces an independent random instance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, decision JSON, metric summaries, and benchmark script outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review has been performed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "continuous-phase-memory-bench",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

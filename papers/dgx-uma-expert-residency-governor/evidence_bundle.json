@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260505T210421385627+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "e175ad29add56053a28a0427e3cde4e4380d5eacc2cbcce6ccd89a301997d321"
+    },
+    {
+      "bytes": 470,
+      "path": "metadata.json",
+      "sha256": "a69d583fdb4256407a118d266644b221674e60d0cf0347fe887f50ac94603e16"
+    },
+    {
+      "bytes": 14677,
+      "path": "evidence/public_paper.md",
+      "sha256": "95963fdb7c58e9b32956845d9e3cd2019218e894b96be6a846c8b54efe624853"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "dgx-uma-expert-residency-governor",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

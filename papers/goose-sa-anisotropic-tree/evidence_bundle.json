@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T000840861778+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "3199ea976ca4bde1e98d16ee2cec948dfb8646f8c7d5e0f6061cebed9bc85267"
+    },
+    {
+      "bytes": 462,
+      "path": "metadata.json",
+      "sha256": "adffc220433d132b97cf0bbc86551b3e6fbf8e7a4ab048ed09c11540bb6f7902"
+    },
+    {
+      "bytes": 16513,
+      "path": "evidence/public_paper.md",
+      "sha256": "0e05c17d16525008726c21d769b18787ac05d1a5f2274d5d2e53d728f1af2433"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "goose-sa-anisotropic-tree",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

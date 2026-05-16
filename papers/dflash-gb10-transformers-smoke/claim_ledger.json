@@ -1,43 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "DFlash GB10 Transformers Smoke produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/transformers_benchmark_short_medium/answer_equivalence.json",
-        "artifacts/transformers_benchmark_short_medium/summary.json",
-        "artifacts/transformers_benchmark_short_medium/records.jsonl",
-        "artifacts/transformers_smoke_acceptance/summary.json",
-        "artifacts/transformers_smoke_acceptance/records.jsonl",
-        "artifacts/transformers_smoke/summary.json",
-        "artifacts/transformers_smoke/records.jsonl"
+      "claim": "We report empirical results from running DFlash speculative decoding with the public Qwen3-4B target model and Qwen3-4B-DFlash-b16 draft model on a single NVIDIA GB10 GPU using the Hugging Face Transformers backend.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this validation and, if more rigor is desired later, run a separate larger dataset-style benchmark with curated answer checkers rather than another routing branch.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Across 24 deterministic short and medium prompts (GSM8K-style, math, code, reasoning, and text), DFlash achieved a mean latency speedup of 3.55\u00d7 over target-only greedy decoding (median 3.32\u00d7, p90 not reported for speedup), with 100% deterministic final-answer equivalence and 91.67% exact token-level match.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "One very short reasoning prompt exhibited a latency regression (0.78\u00d7).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We report empirical results from running DFlash speculative decoding with the public Qwen3-4B target model and Qwen3-4B-DFlash-b16 draft model on a single NVIDIA GB10 GPU using the Hugging Face Transformers backend. Across 24 deterministic short and medium prompts (GSM8K-style, math, code, reasoning, and text), DFlash achieved a mean latency speedup of 3.55\u00d7 over target-only greedy decoding (median 3.32\u00d7, p90 not reported for speedup), with 100% deterministic final-answer equivalence and 91.67% ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two prompts produced token-level mismatches that preserved the final numeric answer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to a single GPU, a single model pair, 24 hand-crafted prompts, and a maximum of 96 generated tokens.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The findings support the accessibility of DFlash speculative decoding on GB10 hardware with publicly available model artifacts, but do not constitute a comprehensive benchmark.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding accelerates autoregressive language model inference by using a smaller draft model to propose candidate token sequences, which the target model then verifies in parallel.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When the draft model's proposals align with the target model's distribution, multiple tokens can be emitted per verification step, reducing wall-clock latency without changing the output distribution.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question motivating this work is whether DFlash speculative decoding can operate on NVIDIA GB10 hardware using publicly available, ungated model artifacts\u2014specifically, the Qwen3-4B target model and its companion Qwen3-4B-DFlash-b16 draft model\u2014without requiring the user to train a custom draft model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report documents two experimental phases: an initial 3-prompt smoke test and a subsequent 24-prompt short/medium benchmark.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both phases were executed on a single NVIDIA GB10 GPU with CUDA 13.0 and PyTorch 2.11.0.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The results are presented with full disclosure of negative findings, including a latency regression on one short prompt and two token-level output mismatches.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Speculative Decoding on NVIDIA GB10 with Qwen3-4B: A Transformers Smoke Validation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The local GB10 Transformers path worked with public/cached artifacts, delivered 3.55x mean speedup over target greedy on 24 short/medium prompts, and had 0% deterministic final-answer equivalence failures."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "dflash-gb10-transformers-smoke",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

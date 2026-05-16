@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We present a runtime prototype for selectively promoting weight blocks from 2-bit (Q2) to 4-bit (Q4) precision in quantized causal language models, guided by a calibration-regret scoring heuristic.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On SmolLM2-135M, sparse promotion (5% of candidate blocks, 3/66 blocks) recovers 26.7% of the full Q2\u2192Q4 loss reduction at 68.1 loss-lift per MB, and medium promotion (20%, 13/66 blocks) recovers 77.5% at 45.5 loss-lift per MB\u2014both substantially outperforming all controls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On Qwen2.5-0.5B-Instruct, sparse promotion similarly outperforms all controls (12.3 loss-lift per MB), but medium-budget promotion fails to beat random and weight-norm baselines, producing near-zero loss improvement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An anomalous finding is that all selection methods at the sparse budget on Qwen yield loss reductions exceeding the all-Q4 upper bound, suggesting the all-Q4 reference may not be a strict ceiling for partial promotion.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Uniform low-bit quantization of large language models yields substantial memory savings but introduces significant accuracy degradation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present a runtime prototype for selectively promoting weight blocks from 2-bit (Q2) to 4-bit (Q4) precision in quantized causal language models, guided by a calibration-regret scoring heuristic. The prototype materializes reusable per-block promotion masks and benchmarks them against random, weight-norm, and quantization-error baselines on two cached public models. On SmolLM2-135M, sparse promotion (5% of candidate blocks, 3/66 blocks) recovers 26.7% of the full Q2\u2192Q4 loss reduction at 68.1 l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Full upcasting to a higher precision recovers accuracy at a higher memory cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present a runtime prototype for selectively promoting weight blocks from 2-bit (Q2) to 4-bit (Q4) precision in quantized causal language models, guided by a calibration-regret scoring heuristic. The prototype materializes reusable per-block promotion masks and benchmarks them against random, weight-norm, and quantization-error baselines on two cached public models. On SmolLM2-135M, sparse promotion (5% of candidate blocks, 3/66 blocks) recovers 26.7% of the full Q2\u2192Q4 loss reduction at 68.1 l",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A natural middle ground is *selective* mixed-precision: promote only the weight blocks where the quantization penalty is most severe, preserving most of the memory savings while recovering a disproportionate share of the accuracy loss.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work implements and evaluates a concrete runtime prototype that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Scores candidate weight blocks by *calibration regret*\u2014the reduction in calibration loss achieved by hypothetically promoting each block from Q2 to Q4.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Applies these masks to live cached models and benchmarks held-out eval loss, inference throughput, and memory overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metric JSON, and decision records). The operator who released the artifacts claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Compares calibration-regret selection against three control heuristics (quantization error, weight norm, random selection) at sparse (5%) and medium (20%) promotion budgets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Q2-to-Q4 Calibration-Regret Block Promotion: A Runtime Prototype for Selective Mixed-Precision Recovery",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate on two small causal language models to assess cross-model transfer: SmolLM2-135M and Qwen2.5-0.5B-Instruct.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run logs, metric JSON, and decision records). The operator who released the artifacts claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "q2-to-q4-calibration-regret-block-promotion-runtime-prototype",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

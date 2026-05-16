@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T054818562014+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "e785b6c867187fb78c1567878cdf5d8006ebedf1f25aff0f0332d34ea98a1729"
+    },
+    {
+      "bytes": 456,
+      "path": "metadata.json",
+      "sha256": "5934e7d4551f814944dcfee1d078f182dbef1df4051e39f5d08712cb6311a506"
+    },
+    {
+      "bytes": 17688,
+      "path": "evidence/public_paper.md",
+      "sha256": "caa83943374f4f72f1bfe7a55da523824e0a6348c9d67eef8312a44458d41bb7"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "kv-saliency-student",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "Multi-agent systems increasingly rely on handoff and delegation protocols, but existing interoperability standards address transport, tool use, and tracing rather than task-level semantic constraints such as scope boundaries, admissible evidence, schema conformance, and termination conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "To evaluate feasibility, we implemented a deterministic, model-free stochastic smoke-test harness and ran 1,000 paired baseline-versus-treaty trials.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The treaty condition produced a 73.38% reduction in mean handoff loss (3.339 \u2192 0.889), a 76.56% reduction in scope violations, a 100.00% reduction in evidence violations, and a 74.06% reduction in termination misses, at the cost of a 0.7% acceptance-rate penalty and a 63.8% repair rate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results constitute a positive smoke-test signal from a synthetic environment only; they do not demonstrate that RATP improves real LLM agent behavior.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Current multi-agent interoperability efforts\u2014including Google's Agent-to-Agent (A2A) protocol, the Model Context Protocol (MCP), and the OpenAI Agents SDK\u2014focus on transport-level connectivity, tool invocation, handoff mechanics, guardrails, and distributed tracing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These layers are necessary but insufficient for ensuring that a delegated sub-task adheres to the semantic constraints intended by the delegating agent: scope boundaries, admissible evidence sources, required output schema fields, and termination conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Evidence contamination* arises when unsupported or disallowed claims enter the output.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We propose the Research Agent Treaty Protocol (RATP) as a complementary layer: before a handoff is accepted, both agents commit to a treaty\u2014a structured JSON contract specifying scope, allowed evidence, handoff schema, and termination conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether such a treaty layer can measurably reduce handoff loss without imposing unacceptable overhead or rigidity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We constructed a paired experimental design comparing a baseline condition (unconstrained handoff) against a treaty condition (RATP-enforced handoff).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Research Agent Treaty Protocol: A Contract Layer for Multi-Agent Handoff Constraint Enforcement",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The smoke-test harness (`src/treaty_smoke_test.py`) is a standalone Python script that performs the following steps per trial: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Task generation.** Generates a task specification with randomized scope, evidence constraints, required schema fields, and termination conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T102048326127+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "research-agent-treaty-protocol",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T231718527515+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "61e467602406686f62fd4d6df3e2ce8027ffa4479024ec07e75dfbf0ed20877e"
+    },
+    {
+      "bytes": 479,
+      "path": "metadata.json",
+      "sha256": "f059dc3f422aa634380ed061e460dcc7a6fc98cfcee79eb6f6a7e1dab52f5057"
+    },
+    {
+      "bytes": 16316,
+      "path": "evidence/public_paper.md",
+      "sha256": "5904567a1a4cc8784e7fc8ed0b6447540f641e1f5e2a4a7af5802701a246a355"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "diff-hygiene-budgeter-real-repo-validation",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

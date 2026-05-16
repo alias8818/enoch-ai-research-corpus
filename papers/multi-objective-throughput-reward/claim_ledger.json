@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "LLM serving controllers that optimize raw tokens/sec tend to select aggressive concurrency and batch-size settings, achieving high throughput at the cost of elevated latency, memory pressure, out-of-memory events, and poor request fairness.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We investigate a multi-objective reward function that penalizes constraint violations alongside throughput, comparing it against throughput-only and throughput-plus-latency rewards in a synthetic GB10-like serving controller benchmark.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across 120 independent seeds and 120 epochs per seed (50-epoch tail analysis), the multi-objective reward reduced latency violation rates by 92.5%, low-memory violation rates by 92.7%, and OOM-event rates by 90.1% relative to throughput-only reward, while improving Jain fairness by 8.6% and evaluation utility by 24.7%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The throughput cost was 17.1% fewer tokens/sec.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Seed-paired analysis confirmed a utility improvement of +0.115 absolute (95% CI [+0.102, +0.128]).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (simulation scripts, telemetry logs, statistical analysis outputs, and structured decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to a synthetic controller environment with hand-set reward weights and have not been validated against live serving backends or real request traces.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Throughput maximization is a natural objective for LLM serving controllers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, raw tokens/sec is an incomplete proxy for operational utility: aggressive concurrency and batch-size configurations that maximize throughput can simultaneously degrade tail latency, exhaust memory headroom, trigger out-of-memory errors, and distribute service unfairly across requests.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central hypothesis of this work is that a multi-objective throughput reward\u2014one that trades some peak throughput for constraint satisfaction across latency, memory headroom, error rates, and fairness\u2014will yield higher operational utility and far fewer constraint violations than a throughput-only reward, with an acceptable throughput penalty.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We operationalize this hypothesis as a reward-shaping experiment in a synthetic serving controller that selects (max_concurrency, batch) actions under a GB10-like resource profile.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The experiment uses a dependency-free simulator (`scripts/throughput_reward_sim.py`) modeling a GB10-class LLM serving controller.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Multi-Objective Throughput Reward for LLM Serving Controllers: Trading Peak Tokens/Second for Operational Safety",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The host environment (recorded in `logs/environment_telemetry.log`) reports an NVIDIA GB10 GPU, approximately 117 GiB available system memory, zero swap, and idle GPU utilization prior to the run.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (simulation scripts, telemetry logs, statistical analysis outputs, and structured decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "multi-objective-throughput-reward",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

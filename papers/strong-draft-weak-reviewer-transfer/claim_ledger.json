@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a weak local language model (0.5B parameters, 4-bit quantized) improves its accuracy on code-review bug diagnosis tasks when provided with a draft analysis from a stronger local model (7B parameters, 4-bit quantized).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a controlled pilot on 8 synthetic multiple-choice code-review items with balanced gold labels, the weak reviewer achieved 5/8 (62.5%) accuracy unassisted and 8/8 (100%) accuracy when augmented with the strong model's draft.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three discordant cases were corrected and zero were harmed, yielding an absolute lift of 37.5 percentage points.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a weak local language model (0.5B parameters, 4-bit quantized) improves its accuracy on code-review bug diagnosis tasks when provided with a draft analysis from a stronger local model (7B parameters, 4-bit quantized). In a controlled pilot on 8 synthetic multiple-choice code-review items with balanced gold labels, the weak reviewer achieved 5/8 (62.5%) accuracy unassisted and 8/8 (100%) accuracy when augmented with the strong model's draft. Three discordant cases were corr",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the sample is too small for statistical closure (exact sign / McNemar-style *p* = 0.25), the strong drafter was itself perfect on this task bank, and transfer behavior under incorrect or noisy drafts remains untested.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We present this as a viability pilot, not a publication-grade result, and outline the controls needed for a decisive follow-up experiment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We test this with two quantized Qwen2.5 models running locally via `llama.cpp` on a single ARM workstation, using synthetic multiple-choice items with known gold labels.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An earlier attempt using `llama-cli` interactive mode was abandoned due to a 152 MiB log artifact; server mode resolved this.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (run notes, decision JSON, result files, claim ledger, evidence bundle). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The label sequence was balanced as A, B, C, A, B, C, A, B to reduce answer-label bias.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (run notes, decision JSON, result files, claim ledger, evidence bundle). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Task identifiers for the three discordant cases were: - `py_off_by_one` (gold: B) - `js_async_foreach` (gold: C) - `py_late_binding` (gold: C) Each task was evaluated under two conditions: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (run notes, decision JSON, result files, claim ledger, evidence bundle). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Weak baseline:** The 0.5B model answered directly with no draft.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Weak + strong draft (transfer):** The 7B model first produced a draft analysis; this draft was then included in the prompt to the 0.5B model, which produced the final answer.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Strong-Draft Weak-Reviewer Transfer: A Pilot Study of Draft-Augmented Code-Review Diagnosis with Asymmetric Local Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The strong drafter's standalone accuracy was also recorded.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts (run notes, decision JSON, result files, claim ledger, evidence bundle). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "strong-draft-weak-reviewer-transfer",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T091919185496+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "147eec0b7b5fffdce23cadb546324e9c0dd5ed66abbb7d8491c25e9bf4b1de80"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "0cf09136a9981129496df114f894ea8d060d443b11bedc41352b4041d1a8f3a4"
+    },
+    {
+      "bytes": 14712,
+      "path": "evidence/public_paper.md",
+      "sha256": "c2c4019ec2b6074c660f2fad892d990368402420dd8c105dfdbf1eb40a15a507"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "skill-preflight-gate-integration",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

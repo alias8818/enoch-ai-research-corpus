@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T075718408356+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "bf2d7892d62d5b98a5f77fb5f93c7e286584f7341c1bc638f17a653ef1bc67f8"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "11f1e8e80f07ab2f6fb9e2a5b0893e94214a44ba04a998cbc2ef929a3c42e3be"
+    },
+    {
+      "bytes": 12456,
+      "path": "evidence/public_paper.md",
+      "sha256": "43e157666c4e938d3a3eb72f433e002a88ef7d265a28b3dad9709f58d69aa1f9"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "repo-pulse-index-real-repo-pilot",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T181148597856+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "299ff185d2453e5c76a9b60b6b6edf1c6605c87b4ad71a8badc9aa1d6272bc0c"
+    },
+    {
+      "bytes": 458,
+      "path": "metadata.json",
+      "sha256": "8db21d36c76229aa00a27f16afea12c3dfd75509748382e033b0268c880db055"
+    },
+    {
+      "bytes": 15953,
+      "path": "evidence/public_paper.md",
+      "sha256": "ad9d43edd2871673266777edb22fd88c6f3a4b890d03139474f17030027e8d61"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "memory-topology-arena",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

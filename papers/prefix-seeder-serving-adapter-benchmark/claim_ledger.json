@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Prefix Seeder Serving Adapter Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/adapter_bench_live_48req.console.log",
-        "artifacts/adapter_bench_live_48req/summary.md",
-        "artifacts/adapter_bench_live_48req/summary.json",
-        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_requests.json",
-        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_metrics.prom",
-        "artifacts/adapter_bench_live_48req/seeded_adapter_idle_llama_server.log",
-        "artifacts/adapter_bench_live_48req/baseline_no_seed_requests.json",
-        "artifacts/adapter_bench_live_48req/baseline_no_seed_metrics.prom"
+      "claim": "We investigate whether a prefix-seeder serving adapter\u2014exploiting idle windows to pre-populate the KV-cache of a llama.cpp inference server with predicted hot prefixes\u2014can simultaneously reduce tail latency and idle-amortized energy per served request under mixed concurrent workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Use the new harness for a robustness sweep across concurrency, idle gaps, request counts, and seed budgets to map the amortization threshold.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a dependency-free benchmark harness wrapping llama.cpp's `/completion` endpoint with `cache_prompt=true`, we compare baseline (no seeding) against seeded adapter operation across three live configurations varying in initial idle budget and request count.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Without an initial idle window (24 requests, 0 s initial idle), the adapter yields negligible p95 improvement (0.05%) and a small energy regression (+2.0% idle-amortized).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "With a 4 s initial idle window, p95 latency improves by 33.4% (24 requests) and 32.6% (48 requests).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Idle-amortized energy improvement is marginal and inconsistent: \u22121.8% at 24 requests (a regression) and +1.3% at 48 requests.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results suggest that prefix-cache seeding can meaningfully reduce tail latency when sufficient idle budget exists for cache priming, but the energy amortization benefit is fragile and sensitive to the reuse horizon.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence is medium; evidence strength is moderate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a prefix-seeder serving adapter\u2014exploiting idle windows to pre-populate the KV-cache of a llama.cpp inference server with predicted hot prefixes\u2014can simultaneously reduce tail latency and idle-amortized energy per served request under mixed concurrent workloads. Using a dependency-free benchmark harness wrapping llama.cpp's `/completion` endpoint with `cache_prompt=true`, we compare baseline (no seeding) against seeded adapter operation across three live configurations var",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Autoregressive language model serving incurs substantial per-request latency from prompt prefill, which must recompute key-value (KV) cache entries for every new request even when prompts share common prefixes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The llama.cpp inference engine supports a `cache_prompt` mechanism that reuses previously computed KV-cache entries for matching prefix tokens, potentially reducing both latency and compute cost for repeated or similar prompts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether such an adapter can simultaneously improve p95 tail latency by at least 25% and avoid regressing idle-amortized energy per served request, under a mixed concurrent workload with repeated hot prefixes, cold prefixes, and burst arrivals.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The adapter, implemented in `src/prefix_seeder_adapter_bench.py`, operates in two phases: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix Seeder Serving Adapter Benchmark: Tail-Latency and Idle-Amortized Energy Effects of Prompt-Cache Seeding in llama.cpp Serving",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The harness captures: - **Latency:** p50, p95, p99 end-to-end request latency (ms).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: Implemented and live-ran a concrete llama.cpp prefix-seeder serving adapter benchmark; the 48-request mixed workload passed both p95 latency and idle-amortized energy gates."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "prefix-seeder-serving-adapter-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

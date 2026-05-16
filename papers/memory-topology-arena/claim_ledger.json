@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We present a reproducible C microbenchmark evaluating how memory topology affects linked-cycle traversal throughput on an NVIDIA GB10 system operating under a single-node UMA memory model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three topologies are compared: (1) a contiguous arena with sequential index traversal, (2) a contiguous arena with random-cycle index traversal, and (3) a scattered `malloc`-per-node pointer graph with the same random-cycle structure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At 10 million nodes, sequential arena traversal achieves 1.75 ns/step (570 Msteps/s), while random-cycle arena traversal degrades to 107 ns/step (9.35 Msteps/s)\u2014a 61\u00d7 slowdown.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The malloc pointer topology adds a further 1.12\u00d7 slowdown at this scale and consumes 3.64\u00d7 the resident memory.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At intermediate scales (1M nodes), however, the malloc penalty is 4.87\u00d7, indicating that allocator overhead and TLB pressure dominate before the working set fully exceeds cache.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, calibration metrics, hardware-counter summaries, and a project decision ledger). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed the claims herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results confirm that memory locality dominates traversal throughput on this UMA host, and that contiguous arena indexing provides meaningful memory savings and throughput gains for random-cycle traversals at small-to-medium scales, but cannot compensate for the loss of algorithmic locality at very large working sets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prefetchers, cache hierarchies, and TLBs reward contiguous and predictable access, while pointer-chasing through scattered allocations penalizes throughput.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study asks: can a small local arena benchmark produce actionable evidence about memory topology effects on GB10-class UMA hardware, specifically whether contiguous arena/index topologies outperform scattered pointer topologies under equivalent linked-cycle traversal?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We implement a minimal C11 microbenchmark comparing three traversal topologies over the same logical cycle structure, measure wall-clock throughput and resident memory across four problem sizes, and supplement with ARM PMU hardware counter data.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All measurements were collected on an NVIDIA GB10 system running Linux 6.17.0-1014-nvidia (aarch64).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present a reproducible C microbenchmark evaluating how memory topology affects linked-cycle traversal throughput on an NVIDIA GB10 system operating under a single-node UMA memory model. Three topologies are compared: (1) a contiguous arena with sequential index traversal, (2) a contiguous arena with random-cycle index traversal, and (3) a scattered `malloc`-per-node pointer graph with the same random-cycle structure. At 10 million nodes, sequential arena traversal achieves 1.75 ns/step (570 M",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The host reports 20 CPU cores and 127,535,908 kB total memory.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts (run notes, calibration metrics, hardware-counter summaries, and a project decision ledger). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed the claims herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Swap was intentionally disabled (SwapTotal: 0 kB) to ensure that memory pressure manifests as RSS growth rather than swap activity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Topology Arena: Contiguous Index vs. Scattered Pointer Traversal on GB10-Class UMA Hardware",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "memory-topology-arena",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

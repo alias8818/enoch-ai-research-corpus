@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T175248564654+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "2c0d94f887cf8e545d72fb1d2ad76c623cd254db29f10935499cd71b0f51ea93"
+    },
+    {
+      "bytes": 461,
+      "path": "metadata.json",
+      "sha256": "83f0fda908c9292e660d2c29718813aadb4492cb51f5748ad70252c842d2f5b1"
+    },
+    {
+      "bytes": 16149,
+      "path": "evidence/public_paper.md",
+      "sha256": "f53079a780dba5170f7efab0dd54e03fca2616c2e5c44c13a130f35175cbe4e8"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "experiment-autopsy-agent",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

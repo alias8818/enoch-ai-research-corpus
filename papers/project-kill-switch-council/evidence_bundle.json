@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T124518371577+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "bc1e378e6bf6e468d3e07a86d7cb658d0ff4c7502e437ad929905fd8a375063b"
+    },
+    {
+      "bytes": 464,
+      "path": "metadata.json",
+      "sha256": "d409d51e18d8f362048441e6b01481f55714657ba1061576a34ab0db0502f54a"
+    },
+    {
+      "bytes": 17977,
+      "path": "evidence/public_paper.md",
+      "sha256": "a2105376432bf82686cdfe74c7b7b6553c7d27f28c4afb366ea43a34cba5657b"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "project-kill-switch-council",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

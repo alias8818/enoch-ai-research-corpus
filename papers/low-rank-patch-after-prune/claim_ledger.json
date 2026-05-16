@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a hard magnitude-pruned neural network can recover useful accuracy by freezing the sparse base weights and training small additive low-rank patches (LoRA-style deltas) on each pruned weight matrix.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a controlled NumPy-based experiment on a 784\u2192128\u219210 MLP trained on 10k MNIST samples, hard pruning at 90\u201398% sparsity collapses test accuracy from a 94.45% dense baseline to 20\u201352%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Training additive low-rank factors (ranks 4, 8, 16) on the frozen sparse base recovers a substantial fraction of the lost accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At the most aggressive compression point (98% sparsity, rank 8), patched accuracy averaged 91.65% across three seeds (population std 0.51 pp) versus 94.10% dense and 24.35% pruned-only, using 10,572 effective parameters (~10.4% of the dense count).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The rank sweep was not monotonic: higher rank did not consistently improve accuracy under the fixed optimizer and epoch budget, suggesting optimizer sensitivity or overfitting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of the frozen-sparse-plus-low-rank-delta protocol in a small-scale setting but do not constitute evidence for transformer- or LLM-scale behavior.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At high sparsity levels, however, it catastrophically degrades accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a hard magnitude-pruned neural network can recover useful accuracy by freezing the sparse base weights and training small additive low-rank patches (LoRA-style deltas) on each pruned weight matrix. In a controlled NumPy-based experiment on a 784\u2192128\u219210 MLP trained on 10k MNIST samples, hard pruning at 90\u201398% sparsity collapses test accuracy from a 94.45% dense baseline to 20\u201352%. Training additive low-rank factors (ranks 4, 8, 16) on the frozen sparse base recovers a subst",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work asks: *after hard magnitude pruning, can a small trained low-rank additive patch recover most of the lost accuracy while keeping the sparse base frozen?* The approach is structurally similar to LoRA-style adaptation but applied post-pruning rather than for task adaptation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We test this question in a minimal setting: a two-layer ReLU MLP on MNIST, pruned at 90%, 95%, and 98% sparsity, with additive low-rank corrections at ranks 4, 8, and 16.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sample 10,000 training images and 2,000 test images.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Dense training:** Train a 784\u2192128 (ReLU)\u219210 MLP via SGD with cross-entropy loss for 10 epochs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank Patch After Prune: Recovering Accuracy in Hard-Pruned Networks via Frozen-Sparse Additive Low-Rank Deltas",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This yields the dense baseline weights $W_1 \\in \\mathbb{R}^{128 \\times 784}$, $W_2 \\in \\mathbb{R}^{10 \\times 128}$, and biases.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "low-rank-patch-after-prune",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

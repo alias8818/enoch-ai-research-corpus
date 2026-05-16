@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Using an add-alpha n-gram micro language model over a BPE-tokenized byte stream, we measure validation bits per original byte (bpb) across n-gram orders 2\u20135 and merge counts 0\u2013256 on the Tiny Shakespeare corpus.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Compression-Aware Tokenization for Micro Language Models: A Bounded Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Compression-aware tokenization yields substantial improvements for context-constrained models: a 19.8% bpb reduction at order 2 (256 merges) and an 8.8% reduction at order 3 (32 merges).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Compression-Aware Tokenization for Micro Language Models: A Bounded Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the benefit vanishes at higher n-gram orders: order-4 and order-5 byte-token baselines match or exceed all compression-aware variants.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Compression-Aware Tokenization for Micro Language Models: A Bounded Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The token-count compression from BPE (down to 0.51 tokens/byte at 256 merges) reliably shortens sequences, but the resulting vocabulary expansion and context sparsity negate the advantage once the model has sufficient local context.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metric files, evidence bundles). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Standard language model evaluation reports loss in nats or bits per token.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Compression-Aware Tokenization for Micro Language Models: A Bounded Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Compression-aware tokenization\u2014where merge rules are selected to maximize token-count savings on the training data\u2014produces shorter token sequences.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Compression-Aware Tokenization for Micro Language Models: A Bounded Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Whether the net effect is positive depends on the model's capacity to absorb the expanded vocabulary against its context window.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metric files, evidence bundles). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Starting from a byte-level vocabulary of 256 entries, merge candidates are scored by the token-count savings they produce on the training split.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metric files, evidence bundles). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Merge counts tested: 0 (byte baseline), 32, 64, 128, 256.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether compression-aware byte-pair encoding (BPE) tokenization improves byte-normalized validation loss for very small language models. Using an add-alpha n-gram micro language model over a BPE-tokenized byte stream, we measure validation bits per original byte (bpb) across n-gram orders 2\u20135 and merge counts 0\u2013256 on the Tiny Shakespeare corpus. Compression-aware tokenization yields substantial improvements for context-constrained models: a 19.8% bpb reduction at order 2 (256 mer",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The merge selection is deterministic: at each step, the pair yielding the greatest reduction in total token count on the training data is chosen.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metric files, evidence bundles). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a token stream produced by the tokenizer, the model estimates conditional probabilities: $$P(t_i \\mid t_{i-n+1}, \\ldots, t_{i-1}) = \\frac{c(t_{i-n+1}, \\ldots, t_i) + \\alpha}{c(t_{i-n+1}, \\ldots, t_{i-1}) + \\alpha \\cdot |V|}$$ where $|V|$ is the vocabulary size (256 + number of merges) and $\\alpha$ is a fixed smoothing parameter.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metric files, evidence bundles). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We sweep n-gram orders 2 through 5.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether compression-aware byte-pair encoding (BPE) tokenization improves byte-normalized validation loss for very small language models. Using an add-alpha n-gram micro language model over a BPE-tokenized byte stream, we measure validation bits per original byte (bpb) across n-gram orders 2\u20135 and merge counts 0\u2013256 on the Tiny Shakespeare corpus. Compression-aware tokenization yields substantial improvements for context-constrained models: a 19.8% bpb reduction at order 2 (256 mer",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "compression-aware-microlm",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

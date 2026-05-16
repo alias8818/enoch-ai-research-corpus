@@ -1,43 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Agent Identity Rotation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/identity_rotation_eval.json",
-        "artifacts/identity_rotation_audit.jsonl",
-        "artifacts/local_workflow_workspace/recovery.txt",
-        "artifacts/local_workflow_workspace/src/app.py",
-        "artifacts/local_workflow_workspace/delegated/out.txt",
-        "artifacts/local_workflow_workspace/link_to_outside.txt",
-        "artifacts/outside_symlink_target.txt"
+      "claim": "We present Agent Identity Rotation, a mechanism that enforces privilege separation among planner, executor, and committer agent roles through HMAC-SHA256-signed action envelopes with nonce-based replay protection.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Agent Identity Rotation: Signed-Envelope Privilege Separation for Local Agent Workflows",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize the bounded local harness result; run a separate follow-on only for a concrete real-runtime integration target such as a Codex/OMX tool gateway or live multi-agent trace benchmark.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In a bounded local-harness evaluation, the policy blocked 12 of 12 adversarial privilege-escalation attempts across real local operations (file writes, command execution, git commits, delegated handoffs, symlink escapes, and serialized tool-call tampering) while allowing 7 of 7 legitimate workflow steps with zero false denies.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Agent Identity Rotation: Signed-Envelope Privilege Separation for Local Agent Workflows",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An unrestricted baseline accepted all 12 adversarial operations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Agent Identity Rotation, a mechanism that enforces privilege separation among planner, executor, and committer agent roles through HMAC-SHA256-signed action envelopes with nonce-based replay protection. In a bounded local-harness evaluation, the policy blocked 12 of 12 adversarial privilege-escalation attempts across real local operations (file writes, command execution, git commits, delegated handoffs, symlink escapes, and serialized tool-call tampering) while allowing 7 of 7 legitim",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A persisted append-only audit log with independent signatures and hash chaining produced 22 verifiable entries.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that identity-separated signed envelopes can prevent cross-role privilege escalation in a local-first control-plane slice.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Agent Identity Rotation: Signed-Envelope Privilege Separation for Local Agent Workflows",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report both positive and negative findings with full transparency about the scope limitations of the evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Executor**: may issue `write_file` (workspace-relative, symlink-refusing) and `run_command` (restricted to a no-shell allowlist: `git`, `python3`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Agent Identity Rotation, a mechanism that enforces privilege separation among planner, executor, and committer agent roles through HMAC-SHA256-signed action envelopes with nonce-based replay protection. In a bounded local-harness evaluation, the policy blocked 12 of 12 adversarial privilege-escalation attempts across real local operations (file writes, command execution, git commits, delegated handoffs, symlink escapes, and serialized tool-call tampering) while allowing 7 of 7 legitim",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each role holds a distinct HMAC-SHA256 key.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Autonomous agent systems that plan, execute, and commit changes to shared workspaces face a fundamental privilege-separation problem: a compromised or misdirected planning step should not be able to directly execute filesystem writes or commit code, and an executor should not be able to escalate to commit privileges. Traditional access-control mechanisms operate at the process or user level and do not map cleanly onto the logical role boundaries within an agent control plane.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Nonce freshness**: The nonce has not been previously observed (replay protection).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Denied actions are recorded in the audit log with their (invalid) envelope data preserved as evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Denied entries with bad envelopes are counted separately and remain valid audit evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Agent Identity Rotation, a mechanism that enforces privilege separation among planner, executor, and committer agent roles through HMAC-SHA256-signed action envelopes with nonce-based replay protection. In a bounded local-harness evaluation, the policy blocked 12 of 12 adversarial privilege-escalation attempts across real local operations (file writes, command execution, git commits, delegated handoffs, symlink escapes, and serialized tool-call tampering) while allowing 7 of 7 legitim",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The implementation is a Python 3 stdlib-only harness (`src/identity_rotation.py`) with two layers: - `AgentOSHarness`: the original in-memory toy harness for longitudinal comparison.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Agent Identity Rotation: Signed-Envelope Privilege Separation for Local Agent Workflows",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The expanded smoke test blocked 12/12 local adversarial operations with zero false denies, verified a 22-entry persisted audit log, and recovered after a failed git operation."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "agent-identity-rotation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

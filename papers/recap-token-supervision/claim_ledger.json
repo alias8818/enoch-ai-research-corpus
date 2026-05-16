@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Across five random seeds, faithful recap tokens at the minimum budget of 10 tokens yield 100.0% accuracy versus 56.6% for the best plain baseline (+43.4 percentage points), and at 14 tokens yield 100.0% versus 78.1% (+21.9 points).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the same mechanism exhibits a sharp failure mode under recap corruption: at 25% noise injection, budget-14 recap accuracy (74.9%) falls below the plain baseline (78.1%), and expected calibration error rises substantially (0.095 at 10% noise versus 0.003 at full fidelity).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This creates a degradation pattern where information required for a downstream query may be lost, and accuracy declines sharply as the budget shrinks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We designed a synthetic key/value report task as a controlled information-availability test: - Each synthetic report contains 8 keys, each assigned one of 8 possible values.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether supervised compact \"recap\" tokens\u2014short, information-dense summaries of earlier context\u2014can make model behavior degrade more gracefully when the available context budget is reduced. In a controlled synthetic key/value report task with sklearn classifiers, we compare plain full-context baselines against conditions where oracle recap tokens replace raw context under tight budgets. Across five random seeds, faithful recap tokens at the minimum budget of 10 tokens yield 100.0%",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Full raw context** costs 18 tokens: 16 raw fact tokens (8 \u00d7 `key value` pairs) plus 2 query tokens.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Recap context** costs 10 tokens: 8 canonical recap value tokens plus 2 query tokens, achieving a 2\u00d7 compression of raw facts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We compare three conditions across multiple budget levels: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether supervised compact \"recap\" tokens\u2014short, information-dense summaries of earlier context\u2014can make model behavior degrade more gracefully when the available context budget is reduced. In a controlled synthetic key/value report task with sklearn classifiers, we compare plain full-context baselines against conditions where oracle recap tokens replace raw context under tight budgets. Across five random seeds, faithful recap tokens at the minimum budget of 10 tokens yield 100.0%",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Plain baseline.** The model sees only the raw fact tokens that fit within the budget, reading from the end (suffix).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Noisy recap.** Recap tokens are corrupted at controlled rates (10% and 25% of values replaced with incorrect values) to simulate semantic drift.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate at three token budgets: - **10 tokens:** Only recap+query fits; plain baseline sees just 2 raw facts (suffix) plus query.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "14 tokens:** Recap+query fits; plain baseline sees 4 raw facts plus query.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "18 tokens:** Full context; both conditions see all information.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Recap Token Supervision: Flattening Context-Budget Degradation with Supervised Compact Recap Tokens",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "recap-token-supervision",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

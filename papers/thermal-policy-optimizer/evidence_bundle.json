@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T190748654504+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "8139ac42775466bdd7f3fb42b20e5c80c640dd0beafd9f5ecadfa172364af24c"
+    },
+    {
+      "bytes": 461,
+      "path": "metadata.json",
+      "sha256": "e10485453777f57f1a581602eb1b231b3c7fa7dd2c1390efae19759360460acd"
+    },
+    {
+      "bytes": 17956,
+      "path": "evidence/public_paper.md",
+      "sha256": "f8462dc7b6ddbeaf062ed004592145801f616afc20e1bf32140d90a808c553be"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "thermal-policy-optimizer",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

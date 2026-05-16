@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Evidence-Bound Proof Synthesizer for Tool Ledger produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/tool_ledger.jsonl",
-        "artifacts/benchmark_cases.json",
-        "artifacts/benchmark_report.json",
-        "artifacts/synthesis_tool_ledger.jsonl",
-        "artifacts/synthesized_proofs.jsonl",
-        "artifacts/synthesis_benchmark_report.json",
-        "artifacts/real_transcript_tool_ledger.jsonl",
-        "artifacts/real_transcript_synthesized_proofs.jsonl"
+      "claim": "We present an evidence-bound proof synthesizer that automatically derives checker-accepted proof objects and grant envelopes for a proof-carrying tool ledger.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this successor as a supported automatic evidence-bound proof synthesizer baseline; only open a separate follow-on if chunked large-patch proof objects become a concrete target.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The synthesizer extracts permitted fields, witness hashes, expiry bounds, rollback plans, issuer identifiers, nonces, and grant envelopes from task clauses, approved evidence, tool calls, and trace metadata.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a generated benchmark of 400 rows (200 benign, 200 adversarial), the synthesizer emits checker-accepted proofs for all 200 benign rows and refuses all 200 adversarial rows, with zero unauthorized invocations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a 1,000-row corpus of real local agent transcripts spanning shell commands, file patches, file writes/deletes, and browser navigation, the synthesizer achieves 95.2% checker/trace acceptance (952/1,000) while the remaining 48 refusals are policy-bounded\u201429 involve denied command tokens and 19 exceed the maximum argument size.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Median synthesized proof size exceeds the manual baseline by 9.54%, below the 10% overhead threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Mean synthesis latency is 0.0131 ms on generated traces and 0.0097 ms on real transcripts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present an evidence-bound proof synthesizer that automatically derives checker-accepted proof objects and grant envelopes for a proof-carrying tool ledger. The synthesizer extracts permitted fields, witness hashes, expiry bounds, rollback plans, issuer identifiers, nonces, and grant envelopes from task clauses, approved evidence, tool calls, and trace metadata. On a generated benchmark of 400 rows (200 benign, 200 adversarial), the synthesizer emits checker-accepted proofs for all 200 benign ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to the tested local transcript corpus and do not constitute validation on external or production-scale deployments.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Proof-carrying authorization provides a principled mechanism: each tool call is accompanied by a proof object that a stateless checker validates against approved evidence before execution proceeds.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work investigates whether a deterministic synthesizer can automatically produce checker-accepted proof objects from the evidence already present in task specifications and transcript metadata, without authorizing calls that fall outside approved scopes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project defined a branch-specific kill condition: halt negative if automatic synthesis cannot produce checker-accepted proofs for at least 95% of benign replayed trace/tool calls, or if synthesized proof size exceeds manual proof size by more than 10% median without improving rejection of overbroad or invalid calls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The system comprises four components inherited or developed within this project: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Validates proof objects against approved evidence without maintaining state between calls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-Bound Proof Synthesizer for Tool Ledger",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: Exact evidence-bound command witnesses lifted real mixed transcript checker/trace acceptance to 952/1000 while preserving 0 generated adversarial authorizations and all parent checker safeguards."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "evidence-bound-proof-synthesizer-for-tool-ledger",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

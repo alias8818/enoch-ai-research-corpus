@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "A dependency-free simulation harness models a baseline stable path/hash router and a shadow earliest-finish-time router over synthetic DAG workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across 60 deterministic sweep scenarios spanning three DAG sizes and four heterogeneity levels, the shadow router projected mean makespan improvement of 44.3% (range 29.5%\u201361.9%) and mean p95 DAG latency improvement of 48.9% (range 31.7%\u2013higher), with mean routing overhead of 26.8 ms and maximum overhead of 74.5 ms.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Decision divergence from the baseline was 72.7% in a small smoke test and consistently high across the sweep.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Peak memory usage remained under 25 MB.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a DAG-aware scheduler can operate as a shadow router alongside an existing production router, producing alternative task-placement decisions and safety metrics without modifying the live execution path. A dependency-free simulation harness models a baseline stable path/hash router and a shadow earliest-finish-time router over synthetic DAG workloads. Across 60 deterministic sweep scenarios spanning three DAG sizes and four heterogeneity levels, the shadow router projected ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All 60 runs showed positive projected improvement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, these results derive exclusively from synthetic workloads with a simplified baseline router and abstracted device queues; production benefit remains unvalidated.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The small smoke test also showed a notably smaller p95 DAG latency improvement (6.8%) compared to its makespan improvement (49.8%), illustrating that per-DAG tail latency does not necessarily track overall schedule completion.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Modifying a live scheduler to exploit DAG structure carries risk: incorrect placement can increase tail latency, violate admission control, or introduce cascading delays.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a DAG-aware scheduler can operate as a shadow router alongside an existing production router, producing alternative task-placement decisions and safety metrics without modifying the live execution path. A dependency-free simulation harness models a baseline stable path/hash router and a shadow earliest-finish-time router over synthetic DAG workloads. Across 60 deterministic sweep scenarios spanning three DAG sizes and four heterogeneity levels, the shadow router projected ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We test this question through a local simulation that models both a baseline router (stable path/hash assignment) and a shadow router (dependency-aware earliest-finish-time selection) over synthetic DAG workloads of varying size and heterogeneity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We measure projected makespan, p95 DAG latency, resource utilization, decision divergence, and computational overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Shadow Routing for DAG-Aware Scheduling: A Non-Mutating Sidecar Approach with Projected Performance Gains",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Because the project directory contained only prompt metadata and no existing implementation, we built a dependency-free Python simulation harness (`scripts/shadow_router_sim.py`) that models: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Baseline router.** Assigns DAG tasks to resource pools using stable path/hash assignment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a DAG-aware scheduler can operate as a shadow router alongside an existing production router, producing alternative task-placement decisions and safety metrics without modifying the live execution path. A dependency-free simulation harness models a baseline stable path/hash router and a shadow earliest-finish-time router over synthetic DAG workloads. Across 60 deterministic sweep scenarios spanning three DAG sizes and four heterogeneity levels, the shadow router projected ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "enoch-dag-scheduler-shadow-router",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

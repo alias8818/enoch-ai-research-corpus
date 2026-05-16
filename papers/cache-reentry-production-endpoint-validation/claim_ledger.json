@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Cache Reentry Production Endpoint Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/vllm_qwen2_5_3b_instruct_answer_contract_full_predictions.jsonl",
-        "results/vllm_qwen2_5_3b_instruct_answer_contract_full_summary.json",
-        "results/vllm_qwen2_5_3b_instruct_answer_contract_100_predictions.jsonl",
-        "results/vllm_qwen2_5_3b_instruct_answer_contract_100_summary.json",
-        "results/vllm_qwen2_5_3b_instruct_transcript_100_predictions.jsonl",
-        "results/vllm_qwen2_5_3b_instruct_transcript_100_summary.json",
-        "results/parent_qwen2_5_0_5b_instruct_answer_contract_100_summary.json",
-        "results/parent_qwen2_5_0_5b_instruct_transcript_100_summary.json"
+      "claim": "A prior experiment using a local HuggingFace Transformers shim with Qwen2.5-0.5B-Instruct found that a no-debug transcript prompt yielded 0% exact-match accuracy on a 1,000-example tool-serving benchmark, while an answer-contract prompt yielded 100%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch; if more budget is allocated, separately test native vLLM/SGLang function-call parser configurations rather than creating another generic successor.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "This study reproduces that finding on a vLLM-served Qwen2.5-3B-Instruct endpoint: the transcript prompt scores 0.0 exact pass on 100 sampled examples (all failures classified as wrong_answer), while the answer-contract prompt scores 1.0 exact pass on the same 100 examples and sustains 1.0 exact pass across all 1,000 examples.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are bounded by the specific model, endpoint configuration, and benchmark dataset tested.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When large language models are deployed behind OpenAI-compatible serving endpoints, tool-use accuracy depends not only on model capability but also on how tool schemas and conversation history are presented in the prompt.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A prior project (the \"parent\" project, project ID `source-record-redacted`) established a benchmark harness and 1,000-example dataset for evaluating tool-serving accuracy across five scenarios.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In that parent project, a local HuggingFace Transformers shim running Qwen2.5-0.5B-Instruct demonstrated a stark contrast between two prompt styles: - **Transcript prompt**: presents the tool-use conversation as a raw transcript of user messages, assistant responses, and tool results, without instructing the model on the expected answer format.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The parent project found that the transcript prompt yielded 0% exact-match accuracy while the answer-contract prompt yielded 100% on the same 100-example sample.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The present study asks whether this result generalizes to a production-grade serving configuration: specifically, a vLLM 0.19.0 OpenAI-compatible endpoint serving the larger Qwen2.5-3B-Instruct model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "It evaluates an OpenAI-compatible chat completions endpoint against a 1,000-example dataset spanning five tool-use scenarios.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Reentry Production Endpoint Validation: Answer-Contract Prompting Improves Tool-Use Accuracy on a vLLM-Served Qwen2.5-3B-Instruct Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The harness supports two prompt styles: - **Transcript**: The conversation history (including tool-result messages) is sent as-is, with no additional formatting instructions beyond the standard chat message roles.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance / No-Human-Credit Note:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both prompt styles were run with `--no-debug-json` (no debug labels injected into the prompt) and `--omit-tools` (the OpenAI `tools` schema is excluded from the API request, though tool-result messages are preserved in the conversation history).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance / No-Human-Credit Note:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This mode preserves the semantic content of tool-result messages while omitting the `tools` parameter from the API request.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance / No-Human-Credit Note:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A production-style vLLM Qwen2.5-3B-Instruct endpoint reproduced the parent result: no-debug transcript scored 0% on 100 cases while answer_contract scored 100% on the same 100 and all 1,000 cases."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "cache-reentry-production-endpoint-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

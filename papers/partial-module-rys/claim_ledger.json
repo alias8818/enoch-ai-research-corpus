@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Partial-Module RYS produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/partial_module_rys_layer2_validation_analysis.md",
-        "results/partial_module_rys_layer2_validation_analysis.json",
-        "results/partial_module_rys_layer2_extended60_summary.md",
-        "results/partial_module_rys_layer2_extended60.json",
-        "results/partial_module_rys_single_layer_sweep_summary.md",
-        "results/partial_module_rys_single_layer_sweep.json",
-        "results/partial_module_rys_benchmark_summary.md",
-        "results/partial_module_rys_benchmark.json"
+      "claim": "Using a custom GPT-2 execution runner that selectively repeats attention-only, MLP-only, or full-block submodules at target layers, we measure probe negative log-likelihood (NLL) across two experimental phases.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Archive this project as supporting partial-module attention repeats for quality preservation versus full-layer repeats, but not as a reliable baseline-improving RYS mechanism.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In an initial 10-probe single-layer sweep, attention-only repeats consistently produced smaller NLL degradation than full-layer repeats, and one configuration (attention-only at layer 2) appeared to slightly improve over baseline (\u0394NLL = \u22120.0130).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, a 60-prompt validation of that configuration showed the improvement did not replicate (\u0394NLL = +0.0045, near-neutral).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central finding is a harm-reduction result: attention-only repeats at layer 2 reduced the full-layer-repeat NLL penalty by approximately 96% while incurring roughly half the block-equivalent depth overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Current evidence supports partial attention repeats as a quality-preserving alternative to full-layer repeats, but does not support claiming reliable improvement over the unmodified baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All experiments use GPT-2 (124M) with locally cached probe sets; results on larger models remain untested.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Layer repetition\u2014executing a transformer layer more than once during a single forward pass\u2014has been explored as a mechanism for increasing effective depth without adding parameters.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work in the parent RYS project (project `source-record-redacted`'s validated parent `source-record-redacted`) established that full-layer repeats in GPT-2 generally degrade probe NLL, falsifying naive tail-prune and full-layer-repeat candidates.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These submodules serve different computational roles\u2014attention mediates token-to-token information flow, while the MLP performs per-token nonlinear transformations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from two experimental phases: an initial 10-probe sweep across all GPT-2 layers, and a 60-prompt focused validation of the most promising configuration.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We implemented `scripts/partial_module_rys_benchmark.py`, a GPT-2/DistilGPT-2-style execution runner that processes the native transformer layer order but can insert an extra execution of a target layer's submodule at a specified position.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The baseline path executes each layer exactly once with no modifications.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partial-Module Repeat-Your-Submodule: Decomposing Layer Repeats into Submodule Repeats for Quality Preservation in Transformer Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The requested larger-probe replication completed and showed near-neutral attention-only behavior with strong harm reduction versus full-layer repeat, while falsifying the small-set baseline-beating signal."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "partial-module-rys",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

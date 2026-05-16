@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Two-stage inference cascades reduce computation by routing high-confidence predictions through a cheap model and falling back to a full model otherwise.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work investigates whether replacing that global threshold with partition-local thresholds\u2014calibrated separately within subgroups defined by the cheap model's predicted class and confidence bin\u2014can increase the fraction of examples accepted by the cheap stage while preserving full-model accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate on five datasets (one synthetic, four real) with five random seeds each, using logistic regression as the cheap model and random forest as the full model under a 1-percentage-point accuracy tolerance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a synthetic dataset designed to exhibit partition-wise reliability heterogeneity, partition-local thresholds increased cheap-stage acceptance by 7.1 percentage points with a slight accuracy improvement (+0.23 pp).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, across all 25 runs, the mean acceptance delta was \u22120.171, and partition-local thresholds won on acceptance in only 36% of runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A budgeted calibration variant achieved a higher acceptance win rate (48%) but exhibited calibration overfitting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We conclude that partition-local confidence cascades are conditionally viable: they offer throughput gains when partition-wise reliability heterogeneity is present and calibration data per partition is sufficient, but they do not constitute a universal improvement over global thresholds.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Inference cascades reduce computational cost by deploying a cheap model for \"easy\" predictions and invoking an expensive model only when the cheap model's confidence is insufficient.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A logistic regression model may be highly reliable when it predicts class A with 90% confidence but unreliable when it predicts class B at the same confidence level, because different classes rely on different feature subsets with varying signal strength.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The hypothesis is that when cheap-model reliability varies across partitions, local thresholds can accept more examples from reliable partitions without violating an overall accuracy constraint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Our experiment tests a narrower extension within that framework: whether partition-local thresholds outperform a single global threshold under a controlled accuracy budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "partition-local confidence thresholds across five datasets and 25 experimental runs, with negative and mixed results reported in full.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Partition-Local Confidence Cascade: Replacing Global Thresholds with Per-Partition Calibration in Two-Stage Inference Cascades",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "partition-local-confidence-cascade",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

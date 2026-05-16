@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "No human reviewer has validated its claims.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision logs, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifacts. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has validated its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Backend-switched training yields a mean accuracy gain of +0.025 over single-backend training and +0.053 over pooled-biased training on seen alternate backends, with improved calibration (lower ECE).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, all regimes perform near chance on the held-out `delta_markdown` backend, and backend-switched training slightly underperforms single-backend training on held-out ROC-AUC (\u0394 = \u22120.008).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the narrow mechanism that backend switching suppresses shortcut learning on backends represented during training, but do not support a claim that switching alone generalizes to substantially novel held-out backends under a bag-of-ngram verifier.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When certain backends systematically correlate with correct or incorrect labels in the training distribution, a verifier can exploit these shortcuts, achieving high in-domain accuracy while failing on alternate renderings of the same semantic content.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Does backend-switched training reduce shortcut learning relative to single-backend training?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each semantic case is rendered into textual form by one of four backend-specific formatters: - **`alpha_direct`**: Plain-text inline format (e.g., \"Compute 7 + 3.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "yes\") - **`beta_verbose`**: Verbose natural-language format with explanatory framing - **`gamma_json`**: JSON-structured format with fields for expression, answer, and label - **`delta_markdown`**: Markdown-formatted with headers and code blocks (held out at train time) Three training regimes are compared: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision logs, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifacts. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has validated its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This is the baseline with no multi-backend exposure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Training set size is 3\u00d7 the number of semantic cases.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Backend-Switched Verifier Pretraining: Reducing Shortcut Learning via Multi-Backend Rendering of Identical Semantic Cases",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Metrics: accuracy, ROC-AUC, Brier score, and Expected Calibration Error at 10 bins (ECE@10).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether training a verifier on multiple backend renderings of the same semantic verification case\u2014where backend identity is rendered non-predictive of the correctness label\u2014reduces backend-specific shortcut learning relative to single-backend training or naively pooled multi-backend training with label/backend confounds. Using a synthetic arithmetic verification benchmark with three training backends (`alpha_direct`, `beta_verbose`, `gamma_json`) and one held-out backend (`delta_m",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Smoke test**: 1 seed, 80 train / 80 eval examples per regime.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether training a verifier on multiple backend renderings of the same semantic verification case\u2014where backend identity is rendered non-predictive of the correctness label\u2014reduces backend-specific shortcut learning relative to single-backend training or naively pooled multi-backend training with label/backend confounds. Using a synthetic arithmetic verification benchmark with three training backends (`alpha_direct`, `beta_verbose`, `gamma_json`) and one held-out backend (`delta_m",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "backend-switched-verifier-pretraining",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

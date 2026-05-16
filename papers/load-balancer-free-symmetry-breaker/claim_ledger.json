@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Under uniform traffic, HRW reduces the max-to-mean load ratio from 64.0 (no breaker) to 1.035, comparable to random routing (1.031), while preserving deterministic client-side agreement and incurring only ~1.5% key remapping on membership changes versus ~98.5% for modulo hashing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Load-Balancer-Free Symmetry Breaking via Client-Side Rendezvous Hashing: A Simulation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, under a single dominant hot key absorbing 90% of traffic, HRW's deterministic affinity maps that key to one backend, yielding max/mean \u2248 57.8\u2014no meaningful improvement over the no-breaker baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and simulation logs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under 16 hot keys, HRW achieves max/mean = 14.454, which is worse than modulo hashing (7.352), though modulo retains catastrophic resize churn (~98.5% remap).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Load-Balancer-Free Symmetry Breaking via Client-Side Rendezvous Hashing: A Simulation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We compare five assignment algorithms: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We do not assume that HRW solves all load-balancing problems. In particular, deterministic key-to-backend affinity implies that a single dominant key cannot be split across backends without changing the assignment unit. We evaluate this trade-off explicitly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This represents the pathological baseline of uncoordinated clients sharing a default.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and simulation logs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "p2c_oracle**: Power-of-two choices with access to global load state.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a cluster of independent clients can break routing symmetry without a central load balancer, using only locally computable placement rules. We implement and evaluate Highest-Random-Weight (HRW) rendezvous hashing as a client-side deterministic symmetry breaker, comparing it against four baselines\u2014no symmetry breaking (first-backend), modulo hashing, per-request random choice, and power-of-two-choices with global load state\u2014across three traffic scenarios (uniform keys, sing",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "uniform**: All 200,000 request keys are unique.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a cluster of independent clients can break routing symmetry without a central load balancer, using only locally computable placement rules. We implement and evaluate Highest-Random-Weight (HRW) rendezvous hashing as a client-side deterministic symmetry breaker, comparing it against four baselines\u2014no symmetry breaking (first-backend), modulo hashing, per-request random choice, and power-of-two-choices with global load state\u2014across three traffic scenarios (uniform keys, sing",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "hotspot_90pct_1key**: 90% of requests share a single sticky key; 10% are unique.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a cluster of independent clients can break routing symmetry without a central load balancer, using only locally computable placement rules. We implement and evaluate Highest-Random-Weight (HRW) rendezvous hashing as a client-side deterministic symmetry breaker, comparing it against four baselines\u2014no symmetry breaking (first-backend), modulo hashing, per-request random choice, and power-of-two-choices with global load state\u2014across three traffic scenarios (uniform keys, sing",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "hotspot_90pct_16keys**: 90% of requests are spread over 16 sticky hot keys; 10% are unique.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a cluster of independent clients can break routing symmetry without a central load balancer, using only locally computable placement rules. We implement and evaluate Highest-Random-Weight (HRW) rendezvous hashing as a client-side deterministic symmetry breaker, comparing it against four baselines\u2014no symmetry breaking (first-backend), modulo hashing, per-request random choice, and power-of-two-choices with global load state\u2014across three traffic scenarios (uniform keys, sing",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Ideal value is 1.0; higher values indicate imbalance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "- **max/mean**: Maximum backend load divided by mean backend load. Ideal value is 1.0; higher values indicate imbalance.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The simulation was implemented in `experiments/symmetry_breaker_sim.py` and executed on an NVIDIA GB10 system (Linux aarch64, 20 CPUs, ~122 GB available memory).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Load-Balancer-Free Symmetry Breaking via Client-Side Rendezvous Hashing: A Simulation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A smoke test with 10,000 requests and 16 backends preceded the full run.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and simulation logs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "load-balancer-free-symmetry-breaker",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

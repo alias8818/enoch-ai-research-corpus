@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We report a calibrated sweep of EAGLE-3 speculative decoding draft depths (K = 2, 4, 8 speculative tokens) on an NVIDIA GB10 system running Qwen3-8B with the public RedHatAI EAGLE-3 speculator via vLLM.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a single-batch, short-decode latency benchmark (prompt length 128, output length 64, batch size 1, 3 iterations per case), K = 8 produced the lowest average latency of 3.481 s (18.39 output tokens/s), a 1.30\u00d7 speedup over the non-speculative baseline of 4.528 s (14.13 output tokens/s).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark results, decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "K = 4 achieved only 1.10\u00d7 speedup, underperforming K = 2 despite higher draft depth, consistent with near-zero per-position acceptance rates at deeper draft positions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is positive but narrow: only one prompt length, one output length, batch size 1, and three measured iterations were tested, using synthetic benchmark prompts rather than application traces.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark results, decision records). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding accelerates autoregressive language model inference by using a lightweight draft model to propose multiple candidate tokens, which the target model then verifies in a single forward pass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "EAGLE-3 is a speculative decoding algorithm that employs a trained speculator head to propose K tokens (the draft depth), with the target model accepting or rejecting each position.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The NVIDIA DGX Spark (GB10) platform documentation recommends experimenting with draft depth values while monitoring acceptance rates and throughput.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The vLLM inference engine supports EAGLE-3 via pretrained speculator models, including `RedHatAI/Qwen3-8B-speculator.eagle3` for the `Qwen/Qwen3-8B` target model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study asks: does increasing the EAGLE-3 draft depth K improve the latency/throughput Pareto point on GB10 for Qwen3-8B?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We conduct a small, calibrated sweep at K = 2, 4, and 8, measuring latency, throughput, and per-position acceptance rates under controlled conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All experiments ran on an NVIDIA GB10 system (aarch64) with driver version 580.159.03 and CUDA 13.0, inside the Docker image `nvcr.io/nvidia/vllm:26.03-py3` (vLLM 0.17.1+a03ca76a.nv26.03.46967107).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The GPU had 121 GiB total memory with approximately 117 GiB initially available.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# EAGLE-3 Speculative Decoding Draft-Depth Sweep on NVIDIA GB10 with Qwen3-8B",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "eagle-3-bigger-drafter-pareto-sweep",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

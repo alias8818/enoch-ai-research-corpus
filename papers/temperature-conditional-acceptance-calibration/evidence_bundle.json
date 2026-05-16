@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T011652272749+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "3ef8a70417d97f4a7bf6cc73c6b997b9e7166509b35c35a8b31d7d35a7e16eb6"
+    },
+    {
+      "bytes": 483,
+      "path": "metadata.json",
+      "sha256": "9fbedd9d57dfb374006a3288f59a1453091b3cedd15b98dd71030b865aa06f3e"
+    },
+    {
+      "bytes": 16393,
+      "path": "evidence/public_paper.md",
+      "sha256": "99dda1e48908f9a646105f58dea135b8a008bb95290a37bb3e7abd7dae13af58"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "temperature-conditional-acceptance-calibration",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

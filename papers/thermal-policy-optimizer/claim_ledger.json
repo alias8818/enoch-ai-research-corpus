@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a lightweight, user-space thermal policy can optimize local workload throughput on an NVIDIA GB10-class ARM system while respecting a thermal cap, using only local telemetry and without modifying fan curves, power limits, cpufreq governors, or GPU clocks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A dependency-free Python harness controls CPU-bound SHA-256 workload concurrency and compares a naive AIMD (Additive-Increase Multiplicative-Decrease) thermal controller against fixed-concurrency baselines.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a 20-core Cortex-X925/Cortex-A725 system with an 80 \u00b0C thermal cap, the naive AIMD controller was safe (0% samples over cap, maximum 71.7 \u00b0C) but conservative, achieving 19.35M ops/s at an average of 4 active workers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Fixed concurrency at 6 workers yielded 29.94M ops/s at a maximum of 73.3 \u00b0C with 0% cap violations\u2014a 54.8% throughput improvement over AIMD while remaining within the thermal envelope.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, fixed concurrency at 7 and 8 workers violated the cap in 92% of samples, revealing a narrow and nonlinear thermal boundary between 6 and 7 workers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are bounded by short (25 s) validation windows and a synthetic CPU-bound workload; long-run steady-state behavior and applicability to inference or mixed CPU/GPU workloads remain unvalidated.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In some deployment contexts\u2014particularly edge and workstation environments\u2014users may lack privileged access to these mechanisms while still needing to maximize throughput within safe thermal limits.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work examines whether a lightweight thermal policy can optimize local GB10-class workload throughput while respecting a thermal cap, using only local telemetry and no privileged thermal or fan controls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If the relationship between concurrency and temperature is sufficiently predictable, a policy that selects the appropriate concurrency level could deliver near-optimal throughput without system-level modifications.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from a single-machine experiment on an NVIDIA GB10-based ARM system.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, decision JSON, and benchmark logs). The operator who released this artifact claims no personal authorship credit for the writing or the experimental results beyond making the artifacts available. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The findings are positive but bounded: a calibrated fixed-concurrency policy substantially outperforms a naive adaptive controller, but the thermal boundary is narrow and sharply nonlinear, and the result is specific to the tested workload, duration, and hardware instance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Experiments were conducted on a single host (`gx10-efe8`, Linux aarch64) with the following characteristics: - **GPU:** NVIDIA GB10, idle temperature approximately 39 \u00b0C at probe time.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thermal Policy Optimization via User-Space Concurrency Control on an ARM-Based GPU System",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "thermal-policy-optimizer",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

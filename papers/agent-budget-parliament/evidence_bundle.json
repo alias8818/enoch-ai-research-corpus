@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T072418342113+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "0bcf058a8ba554e85eff10398ac7ec0d64d1ba0eb0a73190708fabd7f618dc9d"
+    },
+    {
+      "bytes": 460,
+      "path": "metadata.json",
+      "sha256": "16078404a28df8004f3f4167bfbafb9b2fa4fee1dfbac9d5c31c99aff2f8bda1"
+    },
+    {
+      "bytes": 17302,
+      "path": "evidence/public_paper.md",
+      "sha256": "9516ee214b4a46be8b63e1bee00ee309a894fdfbc142d5394f3b1518eea3d031"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "agent-budget-parliament",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Mixture-of-experts (MoE) models conventionally activate a fixed number of experts per token.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Mixture-of-experts (MoE) models conventionally activate a fixed number of experts per token. During continual pre-training (CPT), where token difficulty and domain composition shift across the training stream, a fixed budget may be suboptimal. We investigate whether an elastic per-token expert activation budget\u2014allocating additional experts to tokens the router identifies as uncertain\u2014can improve loss and accuracy over fixed-budget baselines at the same or lower average compute. In a controlled ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "During continual pre-training (CPT), where token difficulty and domain composition shift across the training stream, a fixed budget may be suboptimal.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We investigate whether an elastic per-token expert activation budget\u2014allocating additional experts to tokens the router identifies as uncertain\u2014can improve loss and accuracy over fixed-budget baselines at the same or lower average compute.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a controlled NumPy toy MoE classifier experiment across 12 seeds, we compare five policies: fixed top-1, fixed top-2, random extra-budget allocation, and two elastic policies (router-entropy and router-margin) that grant a second expert to the 35% most uncertain tokens.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Router-entropy elastic budgeting (1.35 average expert calls per token) reduces mean loss by 0.389 over fixed top-1, by 0.022 over random extra-budget allocation at the same average calls, and by 0.009 over fixed top-2 despite using 32.5% fewer expert calls.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of elastic expert budgeting as a research direction, but they do not establish that the effect survives transformer-scale CPT, distributed expert parallelism, real text corpora, or hardware kernel constraints.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report all results with honest uncertainty and detail the gap between toy-scale evidence and scientific closure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Token-choice routing with fixed top-k can produce load imbalance across experts and token dropping under capacity constraints.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Mixture-of-experts (MoE) models conventionally activate a fixed number of experts per token. During continual pre-training (CPT), where token difficulty and domain composition shift across the training stream, a fixed budget may be suboptimal. We investigate whether an elastic per-token expert activation budget\u2014allocating additional experts to tokens the router identifies as uncertain\u2014can improve loss and accuracy over fixed-budget baselines at the same or lower average compute. In a controlled ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Expert Choice Routing demonstrates that allowing variable expert counts per token can improve load balance and model quality.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Dynamic Routing in MoE Models proposes adjusting activated experts by input difficulty, reporting gains over fixed top-2 with fewer activated parameters.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Mixture-of-experts (MoE) models conventionally activate a fixed number of experts per token. During continual pre-training (CPT), where token difficulty and domain composition shift across the training stream, a fixed budget may be suboptimal. We investigate whether an elastic per-token expert activation budget\u2014allocating additional experts to tokens the router identifies as uncertain\u2014can improve loss and accuracy over fixed-budget baselines at the same or lower average compute. In a controlled ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Alloc-MoE formalizes activation budget redistribution at the token level under constrained expert activations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Expert Upcycling expands MoE capacity during continued pre-training while holding top-k fixed, which is adjacent to but distinct from elastic per-token budgeting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Elastic Expert Budget During Continual Pre-Training: A Toy-Scale Viability Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "elastic-expert-budget-during-cpt",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

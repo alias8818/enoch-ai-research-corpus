@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T184048529995+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "0a96c247866ab1e61c1f98ea15e7203c823e87879ab82620cccf371febb6313d"
+    },
+    {
+      "bytes": 461,
+      "path": "metadata.json",
+      "sha256": "6e85994aa287d783728faee691e221d5125e6305fdd6741e4c0d9293cc9effb8"
+    },
+    {
+      "bytes": 17239,
+      "path": "evidence/public_paper.md",
+      "sha256": "ce17964389341c70abd9054e0662b7306fa9bc242a0887fde1fba1386f4ac2b3"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "canoe-route-risk-planner",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

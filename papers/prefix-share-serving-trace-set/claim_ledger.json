@@ -1,36 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Prefix-Share Serving Trace Set produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We construct a three-stage evaluation: (1) a synthetic pilot generating 1,500 curated and 1,500 uncurated requests, (2) a live-telemetry ingestion step using 1,000 rows from a neighboring OpenAI-compatible benchmark corpus, and (3) a native target-workflow trace of 1,500 rows across structured extraction, code navigation, and abstention calibration.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this MVP as positive; optional hardening is to replay the native trace against a real cached-token-reporting vLLM/SGLang/OpenAI-compatible endpoint when one is available.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In all three stages, curated prefix-share splits show substantially higher observed cached-token shares and modeled prefill savings than their uncurated controls, and scheduler rankings change between curated and uncurated conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, accuracy metrics do not consistently favor the curated split, and the native trace relied on a project-local deterministic collector rather than a live serving endpoint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The current project artifacts support the finding that prefix-aware trace curation isolates a serving signal, but evidence strength remains moderate due to simulated latencies, synthetic or locally-collected cached-token telemetry, and the absence of production endpoint validation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Stage 1: Synthetic Pilot.** A deterministic stdlib-only generator (`src/prefix_share_trace_pilot.py`) produces 1,500 curated requests with controlled prefix-sharing clusters and 1,500 uncurated requests with mostly one-off prefixes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The curated set contains 95 unique prefixes with a mean cluster size of 15.79 (p95: 32, max: 45).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The uncurated control contains 1,135 unique prefixes with a mean cluster size of 1.32 (p95: 2, max: 3).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Stage 2: Live Telemetry Ingestion.** The harness is extended to ingest OpenAI-compatible JSONL logs with `usage.prompt_tokens_details.cached_tokens` telemetry.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A neighboring GB10 benchmark corpus of 1,000 rows (3,000 expanded direct/retrieve/tool calls) is ingested and split into curated (high cached-token opportunity) and uncurated (low opportunity) subsets of 1,500 calls each.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The overall collection records 2,520,663 prompt tokens, 1,243,358 cached tokens, 228,597 completion tokens, and 49.33% cached-token share.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each trace source, four scheduling strategies are compared: - **No-cache baseline:** No prefix caching; every request incurs full prefill.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Prefix-Share Serving Trace Set: Curated Repeated-Prefix Traces Isolate Cache/Prefill Serving Signals That Uncurated Controls Dilute",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Throughput-tuned prefix scheduler:** Prefix-aware grouping with throughput-oriented tuning.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether curated serving traces with controlled repeated-prefix structure expose cache and prefill savings signals that are diluted or invisible in uncurated, mostly one-off-prefix controls. We construct a three-stage evaluation: (1) a synthetic pilot generating 1,500 curated and 1,500 uncurated requests, (2) a live-telemetry ingestion step using 1,000 rows from a neighboring OpenAI-compatible benchmark corpus, and (3) a native target-workflow trace of 1,500 rows across structured ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The native target-workflow trace rerun produced durable artifacts, changed curated-vs-control ranking, and separated observed cached-token share by 95.11 points plus modeled prefill savings by 73.51 points, meeting the stated success criterion."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "prefix-share-serving-trace-set",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

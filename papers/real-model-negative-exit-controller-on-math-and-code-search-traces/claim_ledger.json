@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Real-Model Negative-Exit Controller on Math and Code Search Traces produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/qwen25_3b_50x8_metrics.json",
-        "artifacts/qwen25_3b_50x8_stdout.txt",
-        "artifacts/qwen25_3b_50x8_traces.json",
-        "artifacts/qwen25_3b_main_stdout.txt",
-        "artifacts/qwen25_3b_main_metrics.json",
-        "artifacts/qwen25_3b_main_traces.json",
-        "artifacts/qwen25_3b_smoke_metrics.json",
-        "artifacts/qwen25_3b_smoke_stdout.txt"
+      "claim": "We investigate whether a negative-exit controller\u2014trained to identify and skip candidates unlikely to be correct\u2014can reduce tail latency and expansion count in best-of-N search over language model outputs, while preserving task accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as a positive real-model validation; if more rigor is required, replicate the same 50x8 protocol across another seed or model as a separate confirmation run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a linear controller trained on real-model search traces from Qwen2.5-3B-Instruct (Q4_K_M quantization) served via llama.cpp, we evaluate on 50 tasks (40 GSM8K-style math, 10 MBPP-style code) with 8 candidates per task.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At matched 95% task accuracy, the negative-exit controller reduces p95 latency by 0.4034 s (~21.7%) relative to a positive-only baseline, but p95 expansion count remains unchanged at 2.0.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Mean latency and mean expansions show small improvements.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An earlier 16-task pilot showed no significant difference on any metric.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a negative-exit controller\u2014trained to identify and skip candidates unlikely to be correct\u2014can reduce tail latency and expansion count in best-of-N search over language model outputs, while preserving task accuracy. Using a linear controller trained on real-model search traces from Qwen2.5-3B-Instruct (Q4_K_M quantization) served via llama.cpp, we evaluate on 50 tasks (40 GSM8K-style math, 10 MBPP-style code) with 8 candidates per task. At matched 95% task accuracy, the neg",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support a latency-specific benefit from explicit negative-exit labels at matched accuracy, but do not demonstrate the expansion-tail reduction originally sought.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence is medium due to the small held-out set (20 tasks), single model, and single random seed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Best-of-N search over language model outputs is a common strategy for improving task accuracy: generate N candidates, evaluate each, and select the best.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The cost of this approach scales linearly with N, and in latency-sensitive settings the tail (p95) cost matters more than the mean.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A natural question is whether some candidates can be identified as unlikely to succeed early\u2014before full evaluation\u2014and skipped, reducing both latency and the number of expansions (model evaluations) without sacrificing accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This project investigates a complementary approach: a *negative-exit controller* that operates at the candidate level in a search trace, learning to predict which candidates will fail and exiting them before full evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central hypothesis is that explicit negative-exit labels allow the controller to prune low-value candidates more effectively than a positive-only baseline (which evaluates candidates in order and stops at the first correct one), yielding reductions in p95 latency and p95 expansion count at matched task accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-Model Negative-Exit Controller on Math and Code Search Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The requested larger Qwen2.5 50-task x 8-candidate benchmark landed and showed a 0.4034s p95 latency improvement for negative-exit over positive-only at matched 95% accuracy, so the branch kill condition is not met."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "real-model-negative-exit-controller-on-math-and-code-search-traces",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

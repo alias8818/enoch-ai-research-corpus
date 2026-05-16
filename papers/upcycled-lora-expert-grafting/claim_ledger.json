@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "In a controlled synthetic classification setting with a frozen random feature extractor and two conflicting domains, we train rank-2 LoRA deltas per task, freeze them as experts, and learn only a linear softmax router over their logits.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycled LoRA Expert Grafting: A Synthetic Proof-of-Mechanism Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across 10 random seeds, the grafted-router configuration achieves mean accuracy of 92.64% (\u03c3 = 0.36%), compared to 76.98% for averaged adapter merging, 77.28% for a single multitask rank-2 LoRA, and 77.26% for a single multitask rank-4 LoRA.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycled LoRA Expert Grafting: A Synthetic Proof-of-Mechanism Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An oracle domain-expert selector achieves 93.59%, yielding a mean gap of 0.95 percentage points between grafted routing and perfect selection.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether independently trained LoRA-style low-rank adapters can be upcycled into frozen experts and grafted behind a small learned router, as an alternative to naive weight-averaging adapter merging. In a controlled synthetic classification setting with a frozen random feature extractor and two conflicting domains, we train rank-2 LoRA deltas per task, freeze them as experts, and learn only a linear softmax router over their logits. Across 10 random seeds, the grafted-router config",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The router learns domain assignments with 97.82% mean accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has verified these claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results constitute a positive proof-of-mechanism in a simplified setting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycled LoRA Expert Grafting: A Synthetic Proof-of-Mechanism Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "They do not establish viability on pretrained transformers, real language tasks, token-level routing, or production inference engines.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether independently trained LoRA-style low-rank adapters can be upcycled into frozen experts and grafted behind a small learned router, as an alternative to naive weight-averaging adapter merging. In a controlled synthetic classification setting with a frozen random feature extractor and two conflicting domains, we train rank-2 LoRA deltas per task, freeze them as experts, and learn only a linear softmax router over their logits. Across 10 random seeds, the grafted-router config",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We do not address the full complexity of transformer-based language models, token-level routing, or production deployment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has verified these claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Rather, we ask: in a setting where naive merging is known to fail due to task conflict, does a learned router over frozen experts recover task-specialized performance?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether independently trained LoRA-style low-rank adapters can be upcycled into frozen experts and grafted behind a small learned router, as an alternative to naive weight-averaging adapter merging. In a controlled synthetic classification setting with a frozen random feature extractor and two conflicting domains, we train rank-2 LoRA deltas per task, freeze them as experts, and learn only a linear softmax router over their logits. Across 10 random seeds, the grafted-router config",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We construct a synthetic classification environment with the following components: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycled LoRA Expert Grafting: A Synthetic Proof-of-Mechanism Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Frozen random feature extractor.** A fixed random projection maps input vectors to a hidden representation of dimension $h = 64$.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether independently trained LoRA-style low-rank adapters can be upcycled into frozen experts and grafted behind a small learned router, as an alternative to naive weight-averaging adapter merging. In a controlled synthetic classification setting with a frozen random feature extractor and two conflicting domains, we train rank-2 LoRA deltas per task, freeze them as experts, and learn only a linear softmax router over their logits. Across 10 random seeds, the grafted-router config",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each domain $d \\in \\{1, 2\\}$, we train a rank-2 LoRA-style delta matrix: $$\\Delta_d = B_d A_d$$ where $A_d \\in \\mathbb{R}^{r \\times h}$ and $B_d \\in \\mathbb{R}^{h \\times r}$ with $r = 2$ and $h = 64$.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has verified these claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each adapter is trained on its domain's data alone for 350 steps with learning rate 0.2.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has verified these claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "upcycled-lora-expert-grafting",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

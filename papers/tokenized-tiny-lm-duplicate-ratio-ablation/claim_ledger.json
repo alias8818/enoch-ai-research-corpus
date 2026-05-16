@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Tokenized Tiny-LM Duplicate Ratio Ablation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/full_sequence_tiny_lm_duplicate_ablation/summary.json",
-        "results/full_sequence_tiny_lm_duplicate_ablation/run.log",
-        "results/full_sequence_tiny_lm_duplicate_ablation/per_run_metrics.csv",
-        "results/full_sequence_tiny_lm_duplicate_ablation_debug/summary.json",
-        "results/full_sequence_tiny_lm_duplicate_ablation_debug/per_run_metrics.csv",
-        "results/tokenized_tiny_lm_duplicate_ablation/summary.json",
-        "results/tokenized_tiny_lm_duplicate_ablation/per_run_metrics.csv",
-        "results/tokenized_tiny_lm_duplicate_ablation_smoke/summary.json"
+      "claim": "We investigate whether the duplicate-ratio crowd-out signal\u2014previously observed in a learned key/value classifier\u2014survives the transition to tokenized autoregressive language model pretraining under a fixed token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch positive and propagate the full-sequence GRU duplicate-ratio evidence to the parent research record.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We conduct two ablation stages: first a bigram causal LM trained only at the value position (a deliberately minimal prototype), and second a full-sequence tokenized causal GRU that optimizes next-token cross-entropy across all positions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a controlled synthetic corpus of templated records (`<bos> color KEY VALUE <eos>`), we sweep five deduplication policies across five duplicate ratios (4 seeds each, 100 runs per stage).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At 15\u00d7 duplication, the full-sequence GRU shows saturated public/anchor evaluation across all policies (spread \u22480.001) while duplicate-heavy evaluation strongly separates policies (spread \u22480.585).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Refill-based policies (cap2_rare_refill, exact_dedup_rare_refill) recover near-perfect duplicate-heavy accuracy (\u22650.997), whereas no-refill policies remain near chance on crowded-out facts (0.121\u20130.142).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the duplicate-ratio crowd-out signal\u2014previously observed in a learned key/value classifier\u2014survives the transition to tokenized autoregressive language model pretraining under a fixed token budget. We conduct two ablation stages: first a bigram causal LM trained only at the value position (a deliberately minimal prototype), and second a full-sequence tokenized causal GRU that optimizes next-token cross-entropy across all positions. In a controlled synthetic corpus of templ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Targeted crowded-fact injection on the raw 15\u00d7 stream improves duplicate-heavy accuracy by \u22480.586 absolute.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When pretraining data contains heavily duplicated documents, the effective token budget available for learning rare facts is reduced\u2014a phenomenon we term *duplicate crowd-out*.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central hypothesis under test is: under a fixed token/document budget, duplicate-heavy tokenized autoregressive pretraining will saturate an anchor/public evaluation slice while duplicate-heavy or rare/crowded slices still reveal policy separation at high duplicate ratios.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A kill condition was pre-registered: if duplicate-heavy spread falls below 5 percentage points at high duplicate ratios *and* targeted crowded-fact injection uplifts accuracy by less than 5 points, the hypothesis would be treated as unsupported.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report presents evidence from two experimental stages of increasing realism\u2014a bigram value-position LM and a full-sequence causal GRU\u2014both trained on a synthetic templated corpus with controlled duplicate ratios and deduplication policies.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Tokenized Tiny-LM Duplicate Ratio Ablation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The synthetic corpus consists of templated text records of the form `<bos> color KEY VALUE <eos>`, where KEY is drawn from a universe of 10,000 unique identifiers and VALUE is the associated fact.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An anchor subset of 800 keys is designated as \"public\" (high-frequency) evaluation items; the remaining keys populate the \"duplicate-heavy\" evaluation slice.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A 139.2M-token full-sequence causal GRU sweep preserved public saturation, duplicate-heavy policy separation, and a large targeted-fix uplift, so the branch kill condition is not met."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "tokenized-tiny-lm-duplicate-ratio-ablation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

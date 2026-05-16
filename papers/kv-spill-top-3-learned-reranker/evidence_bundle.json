@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T161648459939+0000"
+  "file_inventory": [
+    {
+      "bytes": 180,
+      "path": "paper_manifest.json",
+      "sha256": "7b7403e7da4cd0495ec437039e9102520ade965df9dffe4c7432db4183cba0ee"
+    },
+    {
+      "bytes": 468,
+      "path": "metadata.json",
+      "sha256": "200b7dcc0a96c2737ba823b3d41a3ee244ac05f271b0bd7048e188388a377f4c"
+    },
+    {
+      "bytes": 840,
+      "path": "evidence/public_paper.md",
+      "sha256": "59007dc4fce824461d18756d44d6b01e240fb1350627ebbeaa5873abb4f34803"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "kv-spill-top-3-learned-reranker",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

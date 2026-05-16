@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T225948543886+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "7a97ba9670ede844a32f01bbea90cdff2e6aa1c693355857e7809b5755620800"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "dafdf3d985e18847dc934b40842c503509d7447bbfebfa5c6644b3fd27c4c0fe"
+    },
+    {
+      "bytes": 14081,
+      "path": "evidence/public_paper.md",
+      "sha256": "5a140d81dee1e1b1d4d17fd06a5d02f24bd312411bda4dd8e8f5fe4cb45407a1"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "trajectory-rulebook-distillation",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

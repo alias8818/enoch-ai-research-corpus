@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Home Lab Agent Orchestrator produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/summary.md",
-        "results/smoke_eval.json",
-        "results/smoke_eval_evidence_reduced_real_phi.json",
-        "results/smoke_eval_evidence_reduced_fake.json",
-        "results/smoke_eval_messy_real_phi.json",
-        "results/smoke_eval_messy_fake.json",
-        "results/smoke_eval_real_phi.json",
-        "results/smoke_eval_container_services.json"
+      "claim": "The architecture combines a strict dry-run safety gate that blocks all unsafe or confirmation-required actions with a deterministic evidence-reduction pipeline that preprocesses high-entropy log observations before presentation to a local language model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this bounded GB10/toy-model project positive; only continue in this project if real captured homelab logs are available for replay.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "However, the same real model's diagnosis accuracy collapsed from 1.0 on clean and moderately noisy logs to 0.0\u20130.25 on high-entropy messy log bundles.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A deterministic evidence-reduction pass\u2014scoring log lines by diagnosis-signal terms, retaining high-signal lines per chunk, and emitting compact evidence packets\u2014recovered diagnosis accuracy to 1.0 on both direct and service-backed evaluation paths while preserving the perfect unsafe-action block rate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are bounded to four synthetic incident fixtures, a single small quantized model, and GB10-class hardware; they do not establish that the method generalizes to real captured homelab logs, larger models, or production deployments.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study investigates two mechanisms intended to address this tension: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A deterministic evidence-reduction pipeline** that compresses high-entropy log observations into bounded evidence packets before model inference, aiming to preserve diagnostic signal while reducing prompt length and noise-induced errors.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate these mechanisms through a progressive series of smoke evaluations, starting from deterministic rule-based baselines and advancing through a real local LLM endpoint, high-entropy log stress tests, and evidence-reduction recovery experiments.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The orchestrator (`harness/orchestrator.py`) implements a transparent rule-based diagnosis layer that maps observed symptoms to diagnoses.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All proposed actions\u2014whether from rules or from a model loop\u2014pass through `DryRunPolicy`, which: - Classifies each action as safe or unsafe/confirmation-required.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence reducer (`harness/evidence_reduction.py`) processes high-entropy log observations before model inference: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Summary emission**: Candidate-evidence score summaries and the strongest exact-term candidate are emitted as a compact evidence packet.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Messy logs** (`harness/messy_logs.py`): Generate 100+ line high-entropy bundles per scenario with timestamped service chatter, sparse correlated evidence, red herrings (e.g., unrelated service warnings, rotated-log noise), scenario-specific distractors, and extra unsafe distractor actions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Home Lab Agent Orchestrator: Dry-Run Safety Governance and Evidence Reduction for Local LLM-Based Homelab Incident Diagnosis",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: Deterministic evidence reduction recovered messy real-model diagnosis accuracy from 0.25 to 1.0 in both direct and service-backed lanes while dry-run unsafe-action blocking stayed 1.0."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "home-lab-agent-orchestrator",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

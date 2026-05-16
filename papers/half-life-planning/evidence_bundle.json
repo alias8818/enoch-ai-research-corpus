@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T105818348354+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "c300a9724ab6af6ee977b5baebfb27a19944a56fccb962b293f35a252e98ff26"
+    },
+    {
+      "bytes": 455,
+      "path": "metadata.json",
+      "sha256": "499c0c7453a6dcb053367eec3a64227947136fbf617cd151353e4bca2a267f0a"
+    },
+    {
+      "bytes": 16513,
+      "path": "evidence/public_paper.md",
+      "sha256": "987cdf269100c66131b8a6e40c0e8d232650b5d111dd1ce4813f02878153babb"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "half-life-planning",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

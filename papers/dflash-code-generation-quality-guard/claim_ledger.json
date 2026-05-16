@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "DFlash Code-Generation Quality Guard produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/qwen3_coder_30b_bf16_triton_n8plus_probe_summary.json",
-        "results/dflash_qwen3_coder_30b_bf16_triton_n8plus_guard_report.json",
-        "results/vllm_qwen3_coder_30b_bf16_triton_n8plus_codegen_guard_comparison.json",
-        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.gpu.csv",
-        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.samples.csv",
-        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.summary.json",
-        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_repoedit_codeguard_c1_mt256_n8.items.json",
-        "results/vllm_dflash_qwen3_coder_30b_bf16_triton_n8plus_mbpp_codeguard_c1_mt256_n8.gpu.csv"
+      "claim": "Speculative decoding methods such as DFlash promise throughput gains for large-language-model inference, but their impact on code-generation quality\u2014where syntactic correctness, unit-test pass rates, and structured-output validity are critical\u2014remains under-characterized.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this project positive; optional future work can run full HumanEval/MBPP and larger real repo-edit suites as a separate hardening effort.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We present a deterministic post-run quality guard that checks whether DFlash speculative decoding preserves code-generation quality while delivering meaningful throughput improvements.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The guard enforces four kill conditions: pass-rate delta below 0.01 absolute, no increase in syntax or JSON invalidity, no increase in request failures, and throughput speedup of at least 1.10\u00d7.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate the guard on two target\u2013draft model pairs: Qwen3-4B with its DFlash draft, and Qwen3-Coder-30B-A3B-Instruct (BF16) with its DFlash draft, served via vLLM with a Triton MoE backend.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Across four code-generation datasets (HumanEval-style function completion, MBPP-style standalone functions, tool-call JSON validity, and repository-edit file rewrites) at n=8 prompts per dataset, the Qwen3-Coder-30B-A3B pair showed zero quality regression on all datasets and throughput speedups ranging from 1.60\u00d7 to 2.28\u00d7.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The Qwen3-4B pair showed similar results with speedups from 1.61\u00d7 to 4.17\u00d7 across chat, reasoning, and code tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the evidence strength is moderate: sample sizes are small (n=8 per dataset), the HumanEval and MBPP subsets are compact local proxies rather than full benchmarks, and two preferred model pairs (gpt-oss-20b-DFlash and Qwen3-Coder-30B-A3B-Instruct-FP8) could not be served on the available hardware due to kernel and attention-backend incompatibilities.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The JSON validity task revealed a shared baseline weakness (quality 0.375) that DFlash did not exacerbate but also did not resolve.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding accelerates autoregressive inference by drafting candidate tokens with a smaller model and verifying them against the target model in a single forward pass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "While throughput improvements have been reported for general text generation, code-generation workloads impose stricter quality constraints: a single syntactically invalid token can render a completion unusable, and structured outputs such as tool-call JSON must satisfy schema constraints.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We applied this guard to two model pairs across multiple code-generation task types on a single GB10 GPU server.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The quality guard is a deterministic post-hoc comparator that takes as input a paired comparison JSON (baseline vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# DFlash Code-Generation Quality Guard: A Post-Run Quality Gate for Speculative Decoding in Code-Generation Workloads",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The scaled preferred non-FP8 Qwen3-Coder-30B-A3B DFlash guard is verified to pass at n=8 on HumanEval-style, JSON, MBPP-style, and repo-edit prompts with no quality/validity regression and >10% throughput gain throughout."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "dflash-code-generation-quality-guard",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

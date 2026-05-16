@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "Using a `llama.cpp`-based harness at temperature zero, we evaluate two quantized instruct models\u2014Qwen2.5-7B-Instruct-Q4_K_M and Phi-4-mini-instruct-Q4_K_M\u2014across 72 items each (24 per probe family).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both models achieve ceiling accuracy on direct factual recall (24/24, 1.000) and on simple counterfactual override following (24/24, 1.000), with zero memorization-lure errors.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both models drop to 16/24 (0.667, Wilson 95% CI [0.467, 0.820]) on synthetic reasoning items involving invented token orderings and function composition.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Sample sizes (n = 24 per family per model) are sufficient for a smoke-test diagnostic but not for publication-grade inference.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study asks: **Can a small local multiple-choice probe separate parametric factual recall from in-context override following and synthetic reasoning?** We design three probe families intended to tax different capabilities: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If the probe split is informative, we expect high accuracy on direct facts (parametric recall is well-established in instruct models), high accuracy on counterfactual overrides (instruction-following should dominate when the override is explicit), and lower accuracy on synthetic reasoning (which cannot be solved by recall).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evaluation harness is implemented in `scripts/mem_reason_probe.py`, which uses `llama_cpp.Llama` for inference with temperature set to 0 (deterministic decoding).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Results should be interpreted as prototype evidence rather than final production validation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "| Model | Quantization | Parameters (approx.) | Format | |---|---|---|---| | Qwen2.5-7B-Instruct | Q4_K_M | 7B | GGUF, local | | Phi-4-mini-instruct | Q4_K_M | ~3.8B | GGUF, local | Both models were loaded from local GGUF files via `llama-cpp-python`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A smoke test was run with `--limit 6 --capital-n 3 --synthetic-n 3` on Qwen2.5-7B-Instruct to verify harness correctness.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and decision JSON). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Full runs were executed with `--capital-n 24 --synthetic-n 24` (yielding 24 items per probe family, 72 total per model) for each model sequentially.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memorization\u2013Reasoning Probe Split: A Lightweight Diagnostic for Separating Factual Recall from In-Context Override and Synthetic Reasoning in Local Instruct Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Architecture:** aarch64, 20 CPU cores.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "- **Architecture:** aarch64, 20 CPU cores.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T004618347155+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "memorization-reasoning-probe-split",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

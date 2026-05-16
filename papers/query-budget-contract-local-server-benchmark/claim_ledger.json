@@ -1,44 +1,27 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Query Budget Contract Local Server Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/llama_cpp_calibration/server_logs/llama-small.log",
-        "results/llama_cpp_calibration/server_logs/llama-large.log",
-        "results/llama_cpp_calibration/comparison.json",
-        "results/llama_cpp_calibration/responses.csv",
-        "results/llama_cpp_calibration/host.json",
-        "results/llama_cpp_calibration/metrics.json",
-        "results/llama_cpp_calibration/server_logs/broker.log",
-        "results/llama_cpp_calibration/server_logs/dual-backend.log"
+      "claim": "```markdown # Query Budget Contracts for Local LLM Serving: A Broker-Based Routing Benchmark > **AI Provenance Notice.** This draft was generated automatically from research artifacts produced by the OMX automation pipeline. The operator releases it as an unreviewed AI-generated research artifact an",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Query Budget Contracts for Local LLM Serving: A Broker-Based Routing Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
-    },
-    {
-      "claim": "The recommended next action is: Archive this branch as supported; optional follow-up should target a smarter contract that also beats the fixed-small cached-model baseline.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
-      ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The implemented OpenAI-compatible broker beat fixed-large routing on a 240-request real cached llama.cpp calibration while preserving or improving quality, so the branch kill condition is not met."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "query-budget-contract-local-server-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

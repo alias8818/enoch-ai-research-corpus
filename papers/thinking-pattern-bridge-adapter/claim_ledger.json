@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "On-policy distillation (OPD) of large language models can fail when teacher and student exhibit incompatible thinking patterns, even when the student has sufficient capacity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a controlled synthetic OPD analogue where a teacher reasons in a canonical basis and a cross-family student exposes mode-mixed representations, plain cross-family OPD collapses (accuracy 0.383, log loss 1.629).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A prompt bridge that predicts the active mode from rollout diagnostics and injects mode-tagged prompt features restores accuracy to 0.970 (97.2% gap recovery).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A latent bridge that learns a mode-conditioned linear inverse to recover the teacher's hidden basis restores accuracy to 0.987 (99.97% gap recovery), with teacher top-3 probability mass overlap rising from 0.741 to 0.996.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Recent work has shown that OPD success depends critically on compatible thinking patterns between teacher and student: when the teacher and student concentrate probability mass on different token sets, progressive alignment fails and distillation collapses, regardless of student capacity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The OPD phenomenology study (arXiv:2604.13016) reports that in successful OPD, a small shared token set carries 97\u201399% of probability mass, and proposes off-policy cold start combined with teacher-aligned prompt selection as a recovery strategy for failing pairs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We consider two adapter designs: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Because incompatible modes collide in the mixed representation, plain OPD is expected to fail.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, benchmark logs, and experiment scripts). The operator who released this artifact claims no personal authorship credit for the writing or the results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The prompt bridge operates in prompt/feature space: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The latent bridge operates in representation space: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Bridge adapters recover most of this gap: - **Prompt bridge**: recovers 97.2% of the gap (accuracy 0.9703).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Latent bridge**: recovers 99.97% of the gap (accuracy 0.9870).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Thinking-Pattern Bridge Adapter: Recovering Failed Cross-Family On-Policy Distillation via Mode-Conditioned Prompt and Latent Adapters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "thinking-pattern-bridge-adapter",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T043518316413+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "05e4ddde905b3c9757960db86ccaab14f77eda7e137c05a181a2dfd58e531e15"
+    },
+    {
+      "bytes": 456,
+      "path": "metadata.json",
+      "sha256": "f13d701ab28fef2f654c24850506f40ccc5362300d8ac43aa2c8b79b6f0eb2e4"
+    },
+    {
+      "bytes": 15265,
+      "path": "evidence/public_paper.md",
+      "sha256": "b5b64e7616a717ead83fd7d25c726dace21194fcc100244dcb67203e4de378ec"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "plan-drift-tribunal",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

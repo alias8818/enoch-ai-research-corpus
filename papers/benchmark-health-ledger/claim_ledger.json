@@ -1,40 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Benchmark Health Ledger produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/live_replay_summary.json",
-        "results/live_replay_metrics.csv",
-        "results/smoke_summary.json",
-        "results/smoke_selection_metrics.csv"
+      "claim": "We investigate whether a structured benchmark health ledger\u2014a dependency-light scorer that models benchmark contamination, fragility, cost, staleness, accessibility, and relevance as live fields\u2014can improve benchmark selection quality while reducing aggregate health risk relative to a relevance-only baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Queue independent-label calibration only if this line of work continues; otherwise treat the current held-out replay as sufficient positive evidence for the benchmark-health-ledger mechanism.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Three experimental stages were conducted: a toy smoke test with hand-authored risk priors, a live-evidence replay against 39 historical benchmark-selection decisions drawn from neighboring research projects, and an uncertainty-penalized held-out validation split.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The uncertainty-penalized ledger improved held-out NDCG@3 by +0.0068 and reduced health risk@3 by \u22120.0300 relative to actual agent choices, while increasing evidence coverage (+0.0334) and reducing locally unvalidated top-3 recommendations (\u22120.20 per decision).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the penalty also reduced NDCG@3 by \u22120.0217 relative to the unpenalized ledger and slightly increased risk (+0.0053), and a separate quality metric (observed historical quality@3) declined from 0.5967 to 0.5334 in the live replay.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These mixed-positive results support the benchmark-health-ledger mechanism at moderate evidence strength while exposing a real tradeoff between validation strictness and selection-quality gains.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence supports the mechanism at moderate strength, but with identifiable tradeoffs that bound the strength of the claim.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated automatically from research artifacts produced by the OMX automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The manual baseline selects benchmarks by relevance and popularity only, without health-risk adjustment.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The live-evidence replay harness (`src/live_evidence_replay.py`) scans neighboring Enoch research project logs (excluding the current project to avoid self-confirmation), extracts benchmark mentions, and recomputes risk priors from observed exposure, age, risk cues, and project decisions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An evidence-coverage field is computed from log-scaled project coverage and mention coverage.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The uncertainty-penalized ledger score discounts the health-ledger score for low evidence coverage, with stronger discount under lower risk tolerance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A deterministic held-out-project split is applied: projects sorted by index, with every fourth project (index mod 4 = 0) held out.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a structured benchmark health ledger\u2014a dependency-light scorer that models benchmark contamination, fragility, cost, staleness, accessibility, and relevance as live fields\u2014can improve benchmark selection quality while reducing aggregate health risk relative to a relevance-only baseline. Three experimental stages were conducted: a toy smoke test with hand-authored risk priors, a live-evidence replay against 39 historical benchmark-selection decisions drawn from neighboring ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This yields 10 held-out projects from 39 replayed decisions, with 1,218 training mentions and 129 held-out mentions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Health Ledger: Structured Governance for Benchmark Selection Quality and Risk",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The queued uncertainty penalty and held-out-project validation were implemented and produced positive held-out quality/risk deltas while exposing the expected uncertainty tradeoff."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "benchmark-health-ledger",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

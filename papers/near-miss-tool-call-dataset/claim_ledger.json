@@ -1,39 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Near-Miss Tool Call Dataset produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/report.md",
-        "results/metrics.json",
-        "results/predictions.jsonl"
+      "claim": "We term these *near-miss tool calls* and investigate whether they expose a tool-overcall failure mode that is invisible under standard aggregate accuracy evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: If continuing beyond this MVP, collect a small human- or log-derived trace sample to validate the weak-generated blind spots against real agent behavior.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We construct a synthetic and weak-label dataset of 2,500 examples spanning four source types and five blind-spot categories (quoted tool requests, explicit no-tool constraints, provided observations, hypothetical search plans, and stale/current disambiguation), and evaluate five deterministic routing policies.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We find that a similarity-centric policy achieves 0.902 accuracy on ordinary non-near-miss examples but only 0.182 on near-miss examples\u2014a 72-point collapse.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A targeted abstention rule recovers near-miss accuracy to 0.998 while preserving tool-needed recall at 0.854, yielding an 81.6-point uplift over the similarity-centric baseline (stability range: 79.8\u201382.5 points across 8 seeded runs).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results constitute moderate positive evidence that near-miss examples expose a distinct and actionable failure signal.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, all data are synthetic or weak-model-generated rather than drawn from production logs, and the findings have not been validated on real agent traces.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Standard evaluation of such agents typically reports aggregate accuracy across a mixed corpus, implicitly assuming that errors are distributed uniformly across prompt types.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Tool-using language model agents frequently face prompts that superficially resemble tool-call requests but in fact require direct answers. We term these *near-miss tool calls* and investigate whether they expose a tool-overcall failure mode that is invisible under standard aggregate accuracy evaluation. We construct a synthetic and weak-label dataset of 2,500 examples spanning four source types and five blind-spot categories (quoted tool requests, explicit no-tool constraints, provided observat",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central hypothesis of this work is that near-miss examples expose a tool-overcall failure mode that is hidden by ordinary aggregate accuracy, and that a simple targeted abstention rule can substantially recover performance on this slice without catastrophically degrading tool-needed recall.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from a two-phase experiment: an initial pilot with 1,500 synthetic examples and an augmented run with 2,500 examples incorporating weak-model traces and structured blind-spot categories.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed the claims, methods, or conclusions herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project decision is `finalize_positive` with hypothesis status `supported`, evidence strength `moderate`, and confidence `medium`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed the claims, methods, or conclusions herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the augmented run (2,500 examples), each example carries three additional fields: - **`source`**: One of `synthetic_template` (n=1,419), `weak_model_trace` (n=454), `blind_spot_template` (n=375), or `realistic_trace` (n=252).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed the claims, methods, or conclusions herein.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "`blind_spot`**: One of five categories: - `explicit_no_tool_constraint` (n=321): Prompts explicitly stating no tool should be used.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Near-Miss Tool Call Dataset: Exposing Tool-Overcall Failures in Agent Routing via Targeted Abstention",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The same-project follow-up completed: augmented traces and blind-spot checks still changed rankings and showed a large targeted-fix uplift, satisfying the MVP success criteria."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "near-miss-tool-call-dataset",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

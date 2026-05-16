@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "We evaluate a simple speculative decoding draft policy\u2014ordered suffix-copy\u2014that proposes candidate tokens by copying continuations following earlier occurrences of the current token suffix within the prompt and already-generated context.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On GB10 hardware using Hugging Face Transformers eager inference, exact greedy decoding for `gpt2` (124M) and `distilgpt2` (82M) on Wikitext-2 prompts is accelerated by this policy versus standard KV-cache greedy decoding.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Suffix-copy speculative decoding preserved exact baseline outputs on every prompt across all runs (640/640 sequences, 61,440 total tokens) and achieved 1.87\u00d7 speedup for GPT-2 with minimum suffix length 2, 1.73\u00d7 under a stricter minimum suffix length 4 ablation, and 2.50\u00d7 for distilgpt2.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Shuffled-copy controls remained within 1.006\u00d7\u20131.029\u00d7 of baseline, indicating the speedup derives from ordered suffix matching rather than batching overhead or timing artifacts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No independent human review has been performed on the code, results, or interpretation.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the mechanism within a narrowly bounded scope: Wikitext-2 only, two small GPT-2-class checkpoints, greedy decoding only, one hardware/software stack, and a Python implementation with non-production cache rollback via `copy.deepcopy`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence does not establish whether the mechanism generalizes to broader corpora, larger models, non-greedy decoding, or production serving runtimes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding accelerates autoregressive language model inference by proposing draft token sequences that a verifier model accepts or rejects in a single forward pass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A simpler possibility remains largely unexplored: when a language model encounters a token suffix that has appeared earlier in the context, the model's greedy continuation may follow the earlier text, making suffix-copy a natural and zero-cost draft policy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In Wikitext-2, passages frequently contain repeated phrases, named entities, and syntactic patterns.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study tests a narrowly scoped hypothesis: on Wikitext-2 prompts, an ordered suffix-copy speculative draft policy accelerates exact greedy decoding for GPT-2-class models compared to standard KV-cache greedy decoding, while a shuffled-copy control remains near baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We do not claim general applicability beyond the specific conditions tested.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No independent human review has been performed on the code, results, or interpretation.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project decision for this run was \"finalize_negative\"\u2014the evidence constitutes a useful signal supporting the mechanism within its bounded scope, but does not meet the bar for a publication-ready broad claim.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Suffix-Copy Speculative Decoding for GPT-2-Class Models: A Bounded Mechanism Study on Wikitext-2",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260516T140123282740+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

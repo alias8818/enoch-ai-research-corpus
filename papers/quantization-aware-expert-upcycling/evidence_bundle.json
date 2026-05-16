@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T005518527348+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "c493a4e101ef459444612c7e5e36d0af0bfa74bde4eb6fe535b92744ab4a2d66"
+    },
+    {
+      "bytes": 472,
+      "path": "metadata.json",
+      "sha256": "d317d1ec6929ff8f157efc28967135f2a47affe7430b964bea0db8cc8179fb69"
+    },
+    {
+      "bytes": 16847,
+      "path": "evidence/public_paper.md",
+      "sha256": "2632d020294df05e5757724138e8bcde8eceeeef5ffa5bb1d6db8ab76057d193"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "quantization-aware-expert-upcycling",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

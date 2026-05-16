@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We evaluate whether a lightweight, clause-aware citation span resolver can improve robustness over a sentence-level baseline for assigning citation markers to the text spans they support.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a deterministic synthetic benchmark of 192 examples spanning 408 citation labels across eight perturbation categories, we compare a naive sentence-boundary baseline against a tuned delimiter-based clause segmenter.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On the held-out split (65 examples), the clause-aware resolver achieves character-level F1 of 1.0000 and exact match of 1.0000, compared to the baseline's 0.8809 character-level F1 and 0.7174 exact match\u2014deltas of +0.1191 and +0.2826 respectively.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A common baseline for identifying the text span a citation supports is to assign the entire enclosing sentence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The research question addressed here is: *Can clause-aware citation span extraction, tuned on perturbed synthetic citation cases, improve held-out exact span recovery and character-level F1 versus a sentence-level baseline?* This work is scoped to a controlled, locally reproducible benchmark.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The original project Notion page was not accessible via public web fetch (HTTP 404), so all data and evaluation are synthetic.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, benchmark outputs, and logs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifacts. Readers should treat this document as an unreviewed AI-generated research artifact. No human review or endorsement is claimed or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The benchmark comprises: - **192 examples** containing **408 citation labels** total.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three splits:** train (84 examples), validation (43 examples), holdout (65 examples).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate whether a lightweight, clause-aware citation span resolver can improve robustness over a sentence-level baseline for assigning citation markers to the text spans they support. Using a deterministic synthetic benchmark of 192 examples spanning 408 citation labels across eight perturbation categories, we compare a naive sentence-boundary baseline against a tuned delimiter-based clause segmenter. On the held-out split (65 examples), the clause-aware resolver achieves character-level F1 ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Eight perturbation categories:** 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate whether a lightweight, clause-aware citation span resolver can improve robustness over a sentence-level baseline for assigning citation markers to the text spans they support. Using a deterministic synthetic benchmark of 192 examples spanning 408 citation labels across eight perturbation categories, we compare a naive sentence-boundary baseline against a tuned delimiter-based clause segmenter. On the held-out split (65 examples), the clause-aware resolver achieves character-level F1 ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The baseline assigns each citation marker to the full sentence in which it appears, using standard sentence-boundary detection (period, question mark, exclamation mark followed by whitespace and an uppercase letter).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a citation marker position, the resolver: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Citation Span Robustness Tuning: Clause-Aware Span Resolution over a Sentence-Level Baseline",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The selected configuration from validation: | Parameter | Value | |---|---| | Delimiters | `.`, `?`, `!`, `;`, `, while `, `, but `, ` and ` | | `max_back_chars` | 220 | | `include_colon_prefix` | `false` | - **Character-level F1:** Overlap between predicted and gold spans measured at character granularity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, benchmark outputs, and logs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifacts. Readers should treat this document as an unreviewed AI-generated research artifact. No human review or endorsement is claimed or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "citation-span-robustness-tuning",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

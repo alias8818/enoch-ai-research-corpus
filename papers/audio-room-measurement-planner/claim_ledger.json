@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Given room dimensions, a listener position, and a target reverberation time (RT60), the planner computes room volume, the first five axial room modes per dimension, an estimated Schroeder frequency, and a nine-point measurement grid covering the listening area.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The planner is strictly a pre-measurement organizational aid; it does not replace calibrated physical measurements, room treatment design, or ISO 3382-2 compliant reverberation-time reporting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Standards such as ISO 3382-2 define rigorous procedures for reverberation-time measurement in ordinary rooms, but they impose apparatus and procedural requirements that informal optimization workflows do not always need to satisfy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work addresses that gap with a minimal computational tool that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an automated AI research system from project artifacts (run notes, decision JSON, test logs, and generated outputs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is asserted.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Axial room modes.** For a rectangular room, the axial mode frequencies along each dimension are: $$f_n = \\frac{n \\cdot c}{2L}$$ where $n$ is the mode index, $c$ is the speed of sound (taken as 343 m/s), and $L$ is the relevant dimension.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Schroeder frequency.** Estimated as: $$f_s = 2000 \\sqrt{\\frac{RT60}{V}}$$ This marks the approximate boundary below which individual modes dominate and above which statistical overlap begins.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an automated AI research system from project artifacts (run notes, decision JSON, test logs, and generated outputs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is asserted.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three regression/smoke tests were implemented: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present a lightweight, dependency-free command-line tool for generating structured acoustic measurement plans for small listening rooms. Given room dimensions, a listener position, and a target reverberation time (RT60), the planner computes room volume, the first five axial room modes per dimension, an estimated Schroeder frequency, and a nine-point measurement grid covering the listening area. It also produces a Room EQ Wizard (REW)-oriented measurement checklist. The tool is implemented as",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "After correcting the serializer to include `room.volume_m3`, all three tests passed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an automated AI research system from project artifacts (run notes, decision JSON, test logs, and generated outputs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is asserted.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "| Run | Result | Log | |---|---|---| | Initial pytest | 1 failure (volume omitted from JSON) | `artifacts/logs/pytest_initial.log` | | Post-fix pytest | 3 passed in 0.03s | `artifacts/logs/pytest_after_serializer_fix.log` | The serializer bug and its correction are documented transparently.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an automated AI research system from project artifacts (run notes, decision JSON, test logs, and generated outputs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is asserted.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given the trivial computational cost (arithmetic on a handful of scalars), performance is not expected to be a concern for any realistic input, but this expectation is not empirically validated.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work has several significant limitations: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an automated AI research system from project artifacts (run notes, decision JSON, test logs, and generated outputs). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is asserted.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "No ISO 3382-2 compliance.** The planner flags the ISO 3382-2 boundary but does not implement or certify compliance with the standard.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Audio Room Measurement Planner: A Lightweight Dependency-Free CLI for Small-Room Acoustic Measurement Planning",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "audio-room-measurement-planner",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

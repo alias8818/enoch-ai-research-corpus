@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Using Qwen2.5-7B-Instruct (Q4_K_M GGUF) served locally via llama.cpp with a 32,768-token context window, we construct a synthetic exact key-value needle-in-a-haystack benchmark with 240\u20131,600 dense audit-style decoy records.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a two-stage \"student rescue\" protocol\u2014chunk-local extraction by a small model followed by deterministic controller selection\u2014can improve retrieval of facts positioned in the middle of a long context relative to direct single-prompt querying. Using Qwen2.5-7B-Instruct (Q4_K_M GGUF) served locally via llama.cpp with a 32,768-token context window, we construct a synthetic exact key-value needle-in-a-haystack benchmark with 240\u20131,600 dense audit-style decoy records. On in-wind",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On in-window cases (900 records, approximately 19k tokens), direct prompting achieves 3/3 exact hits (mean latency 98.34 s) while rescue achieves 3/3 exact hits (mean latency 105.10 s, 1.07\u00d7 direct), yielding no demonstrated accuracy advantage.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, at 1,600 records (approximately 51k tokens), the direct prompt exceeds the 32,768-token context window and fails with an HTTP 400 error, whereas the rescue protocol successfully recovers the middle-located value in 171.36 s.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is narrowly positive: student chunk-gating does not improve in-window lost-middle accuracy on this benchmark, but it does rescue retrieval in over-context scenarios where direct prompting is infeasible.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We define a two-stage protocol: (1) a *student* pass that processes each chunk independently and emits either the target value or NONE, and (2) a *deterministic controller* that collects non-NONE student outputs and returns the rescued value.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether chunk-local extraction improves retrieval accuracy for middle-positioned facts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Our experiments yield a mixed answer: within the model's context window, direct prompting was already accurate on the tested cases, and the rescue protocol added latency without accuracy gain.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-Middle Rescue Student: Chunk-Local Extraction for Over-Context Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "All experiments use Qwen2.5-7B-Instruct quantized to Q4_K_M (GGUF format), served via llama.cpp server with a 32,768-token context window (`-c 32768`), full GPU offload (`-ngl 999`), and no warm-up (`--no-warmup`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a two-stage \"student rescue\" protocol\u2014chunk-local extraction by a small model followed by deterministic controller selection\u2014can improve retrieval of facts positioned in the middle of a long context relative to direct single-prompt querying. Using Qwen2.5-7B-Instruct (Q4_K_M GGUF) served locally via llama.cpp with a 32,768-token context window, we construct a synthetic exact key-value needle-in-a-haystack benchmark with 240\u20131,600 dense audit-style decoy records. On in-wind",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The server runs on a host with a CUDA GPU; GB10 telemetry logs confirm approximately 5.5 GiB model/context/compute self-use and greater than 112 GiB free device memory during stress tests.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance / no-human-credit note:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Host `MemAvailable` remained high throughout, and swap was disabled by design (confirmed at 0 B in all telemetry snapshots).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance / no-human-credit note:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "No earlyoom-risk posture was observed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance / no-human-credit note:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The 900-record conditions test in-window performance (estimated ~19k tokens, well within the 32k context).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance / no-human-credit note:** This draft was AI-generated from automated research artifacts produced by an autonomous research pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "lost-middle-rescue-student",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

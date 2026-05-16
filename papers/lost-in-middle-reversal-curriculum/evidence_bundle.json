@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T083148497803+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "063e6db89d708274cb6658e8e7a937b74e48b384764811718cd54ba5a09ad0d9"
+    },
+    {
+      "bytes": 471,
+      "path": "metadata.json",
+      "sha256": "17ab65e4d2804f31af0d481655f373a7d905b4189bbec64613c290ba4b7d0183"
+    },
+    {
+      "bytes": 14951,
+      "path": "evidence/public_paper.md",
+      "sha256": "a82296084e40a41e94d950490da44d37855a89ace335dd09670cf54dc046b5fd"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "lost-in-middle-reversal-curriculum",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

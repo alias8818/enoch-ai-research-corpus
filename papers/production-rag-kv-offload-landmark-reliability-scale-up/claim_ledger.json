@@ -1,36 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Production RAG KV-Offload Landmark Reliability Scale-Up produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We report empirical evidence on the reliability of landmark-based prefiltering versus model-guarded full-chunk retrieval in retrieval-augmented generation (RAG) pipelines.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this routing branch positive; only start a separate production RAG/KV-offload scale-up if the controller provides a concrete serving stack, concurrency plan, and telemetry target.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Model-guarded all-chunks retrieval maintains higher accuracy under both conditions (1.0000 naive, 0.84375 reliability in the model-backed setting; 1.000 reliability in the local RAG setting).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that landmark-only prefiltering is fragile under adversarial landmark conditions, but the evidence is bounded by small sample sizes, a single model, and the absence of a concrete production KV-offload serving stack.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This routing branch was finalized positive on the strength of copied parent evidence, without executing new production-scale benchmarks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Retrieval-augmented generation (RAG) systems commonly use landmark-based prefiltering to reduce the number of chunks passed to the model, trading recall for inference efficiency.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report documents evidence from two complementary experimental backends: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A **model-backed benchmark** using Qwen2.5-7B (Q4_K_M quantization) served via llama.cpp, comparing `model_landmark_only` and `model_guarded_all_chunks` retrieval strategies across naive and reliability-adversarial synthetic scenarios.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A **local SQLite FTS5 RAG backend** comparing landmark-prefilter and guarded retrieval strategies on the same scenario classes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project under which this evidence was collected (\"Production RAG KV-Offload Landmark Reliability Scale-Up\") was an autogenerated routing branch intended to explore production-scale KV-offload implications.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The branch was finalized positive based on copied parent evidence, and no new production-scale benchmarks were executed.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Landmark Reliability in Retrieval-Augmented Generation: Evidence That Model-Guarded Chunk Retrieval Outperforms Landmark-Only Prefiltering Under Adversarial Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The findings reported here are therefore limited to the parent-project model-backed and local-RAG prototype evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Model**: Qwen2.5-7B, Q4_K_M quantization, served via llama.cpp.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We report empirical evidence on the reliability of landmark-based prefiltering versus model-guarded full-chunk retrieval in retrieval-augmented generation (RAG) pipelines. Using a Qwen2.5-7B Q4_K_M model-backed benchmark (8 scenarios per condition) and a local SQLite FTS5 RAG backend, we observe that landmark-only accuracy degrades substantially when synthetic examples contain decoy or mixed landmarks: from 0.8125 on naive examples to 0.5000 on reliability-adversarial examples in the model-backe",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch contained no executable production RAG/KV-offload target, while copied parent model-backed and local-RAG artifacts already strongly support the landmark reliability signal."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "production-rag-kv-offload-landmark-reliability-scale-up",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

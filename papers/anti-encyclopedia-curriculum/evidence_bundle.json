@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T050818523234+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "b40edb3a3f7bb292ed9aa7c9dff6d2a5f276fafc316f13bc3662ceef86ef8ce6"
+    },
+    {
+      "bytes": 465,
+      "path": "metadata.json",
+      "sha256": "48cb9050aad17c4cba8de21c55ea2c60988dff624b152740aabcac50188cfd4d"
+    },
+    {
+      "bytes": 16970,
+      "path": "evidence/public_paper.md",
+      "sha256": "234e081d834dbddc0a309bf02be81efa6eab0d5ccfb9491d8cac747ade6ee249"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "anti-encyclopedia-curriculum",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

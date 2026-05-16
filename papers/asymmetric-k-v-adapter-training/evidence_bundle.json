@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T235948852683+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "428ff24ff244f0d40a797f264833833a8959bd84881dbecc17011482f2a19c24"
+    },
+    {
+      "bytes": 468,
+      "path": "metadata.json",
+      "sha256": "660a91b1871debe6d39d57d74c0dd4c4ce491d166964261c8f791d57a060d28c"
+    },
+    {
+      "bytes": 15082,
+      "path": "evidence/public_paper.md",
+      "sha256": "22893776626abe59e6831466e069b609be95f135609844852beccd8249b98fb3"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "asymmetric-k-v-adapter-training",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

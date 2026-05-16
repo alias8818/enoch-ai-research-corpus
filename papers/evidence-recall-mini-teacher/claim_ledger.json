@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a minimal evidence-grounded recall teacher \u2014 converting source-backed learning claims into adaptively scheduled recall prompts \u2014 can outperform equal-budget baselines in a deterministic simulated delayed-recall task.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a Monte Carlo harness over 1,000 independent seeds with a 14-day training window, a daily 3-prompt budget, and a 30-day delayed test, the adaptive recall teacher achieved a mean delayed recall probability of 0.584 versus 0.546 for the best baseline (random quiz), an absolute lift of +0.038 (relative +6.9%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The paired 95% confidence interval for this difference was [0.034, 0.042], and the adaptive teacher won in 73.9% of seeds \u2014 meaning it lost to random quiz in roughly one-quarter of runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Against massed quiz and reread-only baselines, the adaptive teacher won in 100% of seeds with substantially larger margins.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Grounding coverage (fraction of cards with verifiable source references) was 1.0 across all policies.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of a small, auditable adaptive scheduling prototype under a synthetic forgetting model, but they do not constitute evidence of human learning gains.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Roediger and Karpicke (2006) demonstrated that testing improves later retention more than repeated study, with delayed tests particularly favoring prior retrieval over re-exposure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a minimal evidence-grounded recall teacher \u2014 converting source-backed learning claims into adaptively scheduled recall prompts \u2014 can outperform equal-budget baselines in a deterministic simulated delayed-recall task. Using a Monte Carlo harness over 1,000 independent seeds with a 14-day training window, a daily 3-prompt budget, and a 30-day delayed test, the adaptive recall teacher achieved a mean delayed recall probability of 0.584 versus 0.546 for the best baseline (rand",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Agarwal, Nunes, and Blunt (2021) surveyed 50 classroom experiments (n = 5,374) and found that 57% of effects were medium or large, though only 6% of experiments were conducted in non-WEIRD countries, limiting generalizability.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a minimal evidence-grounded recall teacher \u2014 converting source-backed learning claims into adaptively scheduled recall prompts \u2014 can outperform equal-budget baselines in a deterministic simulated delayed-recall task. Using a Monte Carlo harness over 1,000 independent seeds with a 14-day training window, a daily 3-prompt budget, and a 30-day delayed test, the adaptive recall teacher achieved a mean delayed recall probability of 0.584 versus 0.546 for the best baseline (rand",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Latimier, Peyre, and Ramus (2021) reported that spaced retrieval outperformed massed retrieval (g = 0.74) in their meta-analysis, but found no general advantage for expanding over uniform schedules.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Carpenter, Pan, and Butler (2022) emphasized that spacing and retrieval practice remain underused in practice, with metacognitive biases and learner beliefs as key adoption constraints.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a minimal evidence-grounded recall teacher \u2014 converting source-backed learning claims into adaptively scheduled recall prompts \u2014 can outperform equal-budget baselines in a deterministic simulated delayed-recall task. Using a Monte Carlo harness over 1,000 independent seeds with a 14-day training window, a daily 3-prompt budget, and a 30-day delayed test, the adaptive recall teacher achieved a mean delayed recall probability of 0.584 versus 0.546 for the best baseline (rand",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Despite this evidence base, the operational question remains: can a minimal, fully auditable system convert evidence-backed claims into adaptively scheduled recall prompts and measurably outperform simple baselines under controlled, reproducible conditions?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This paper addresses that question with a deliberately small prototype \u2014 five evidence cards, a deterministic forgetting-model simulation, and four competing scheduling policies \u2014 to establish computational viability before any attempt to scale to human or LLM-as-learner evaluations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence Recall Mini-Teacher: Adaptive Scheduling of Source-Grounded Recall Prompts in a Deterministic Simulation",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "evidence-recall-mini-teacher",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

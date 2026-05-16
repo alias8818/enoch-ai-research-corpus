@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Contention-Aware Single-Medium Backend Broker Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/cap_grid_summary.json",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678_stdout.txt",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_small_19080.log",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/benchmark_results.json",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/llama_server_medium_19081.log",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/contention_medium_control_results.json",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/shape_broker_results.json",
-        "artifacts/contention_c12_cap_grid_2seed_20260420/c12_cap12_seed3473678/workload.json"
+      "claim": "We evaluate a contention-aware single-medium backend isolation policy for an OpenAI-compatible LLM serving broker and compare it against a shape-to-small routing baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as supported and promote single-medium backend isolation with cap=12 as the preferred c12-pressure broker mechanism, while noting c8 throughput is near-flat/mixed.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Across a two-seed pressure sweep at concurrency levels 8 and 12 (24 requests per cell), the single-medium policy with cap=12 (matching the llama.cpp `--parallel 12` slot count) yielded a mean p95 latency improvement of 38.3% and a mean total throughput gain of 63.4% versus shape-to-small routing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The improvement is concentrated at c12 pressure (65.1% p95 improvement, 125.6% throughput gain), while c8 results are mixed: p95 improves by 11.4% but throughput is near-flat (mean +1.3%, with one seed showing a \u22121.4% regression).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A cap-tuning grid at c12 shows that setting the concurrency cap below the backend slot count introduces broker-side queueing that degrades the isolation benefit.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are specific to the tested hardware, model configuration, and workload; external replication is required before generalizing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether single-medium backend isolation, combined with a broker-side concurrency semaphore, improves both p95 latency and total throughput relative to shape-to-small routing under concurrent load.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from a two-seed pressure sweep at concurrency levels 8 and 12, plus a concurrency-cap tuning grid at c12.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The results support the hypothesis at c12 pressure but reveal mixed throughput at c8, bounding the conditions under which the mechanism is beneficial.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under the tested workload, this policy routes a subset of requests (4\u20135 out of 24 at c12) to the small backend, with the remainder directed to the medium backend.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The llama.cpp server parameters are: | Parameter | Value | |---|---| | Context size | 16384 | | Parallel slots | 12 | | Batch size | 512 | | Micro-batch size | 256 | | GPU layers | 999 | | Flash attention | Enabled | The benchmark is implemented in `contention_broker_benchmark.py` and driven by `contention_live_sweep.py`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each benchmark cell issues 24 requests at a specified concurrency level.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Contention-Aware Single-Medium Backend Isolation in an LLM Serving Broker: A Live Benchmark Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The harness records per-request latency, token counts, routing decisions, and aggregate metrics (p95 latency, total tokens per second).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The requested two-seed c8/c12 sweep and c12 cap grid completed with durable artifacts and showed a robust c12 p95/throughput win for single-medium isolation; no same-project benchmark is needed before finalizing."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "contention-aware-single-medium-backend-broker-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

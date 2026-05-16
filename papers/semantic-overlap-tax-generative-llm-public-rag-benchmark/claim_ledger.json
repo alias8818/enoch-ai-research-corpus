@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Semantic Overlap Tax Generative LLM Public RAG Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/final_branch_evidence_summary.json",
-        "artifacts/current_branch_smoke/public_qa_rag_summary.json",
-        "artifacts/current_branch_smoke-summary.stdout.json",
-        "artifacts/current_branch_smoke/public_qa_rag_paired_deltas.jsonl",
-        "artifacts/current_branch_smoke/public_qa_rag_rows.jsonl",
-        "artifacts/public_qa_rag_200/public_qa_rag_summary.json",
-        "artifacts/public_qa_rag_200/public_qa_rag_paired_deltas.jsonl",
-        "artifacts/public_qa_rag_200/public_qa_rag_rows.jsonl"
+      "claim": "We present evidence on the effect of a semantic overlap tax\u2014a penalty on retrieved context passages that redundantly overlap already-selected context\u2014on retrieval-augmented generation (RAG) performance.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this routing branch as the positive public SQuAD RAG validation; only start a separate generative-LLM public RAG benchmark if the controller explicitly wants stronger follow-on evidence.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In a 200-case evaluation on the SQuAD v1.1 development set using extractive QA, the overlap-tax packer achieved answer F1 of 0.6349 versus a vanilla baseline of 0.5959 (+0.0390), exact match of 0.5633 versus 0.5183 (+0.0450), and gold context selection of 0.8100 versus 0.7667 (+0.0433), while reducing mean context token usage by 2.52%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A separate 8-case branch-verification smoke test using a deterministic fallback generator confirmed improved gold context selection and reduced token usage but showed a slight F1 decrease of \u22120.0050, illustrating that the method's answer-quality benefit is not uniform across all generator configurations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has certified this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence in the overall finding is medium; the primary evidence is limited to extractive QA on a single public dataset and does not yet cover instruction-tuned or seq2seq generative LLMs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A common failure mode is the inclusion of semantically redundant passages in the retrieved context, which wastes the fixed token budget on duplicate information and can dilute the signal available to the generator.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has certified this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This paper reports empirical evidence from a public SQuAD v1.1 benchmark evaluating the overlap-tax context packer against a vanilla (no-overlap-penalty) baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evaluation focuses on four metrics: answer F1, exact match (EM), gold context selection rate, and context token usage.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has certified this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence supports the hypothesis that the overlap tax improves context selection quality and answer quality in the tested extractive-QA setting, though the effect is not uniformly positive across all generator configurations, and the evaluation scope has meaningful limitations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Given a ranked list of candidate passages retrieved for a query, the packer iteratively selects passages to fill a fixed token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The overlap tax parameter (e.g., 0.90 in the smoke test) controls the strength of this penalty.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A tax of 0.0 reduces to the vanilla baseline; higher values impose stronger penalties on overlapping content.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "`public_qa_rag_benchmark.py`: Public SQuAD-based QA/RAG benchmark driver with configurable token budgets, corpus size, top-k retrieval, generator type, and overlap-tax parameter.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Semantic Overlap Tax for Retrieval-Augmented Generation: Evidence from a Public SQuAD Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch now contains the parent validated SQuAD harness/artifacts plus current-branch tests and smoke verification, and the primary 200-case public SQuAD result beats vanilla without triggering the kill condition."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "semantic-overlap-tax-generative-llm-public-rag-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

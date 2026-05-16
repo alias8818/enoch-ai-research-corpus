@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Long-Tail Entity Boost Mix produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/source_backed_real_model_report.md",
-        "artifacts/source_backed_real_model_eval_forced_stdout.json",
-        "artifacts/source_backed_real_model_eval_forced/summary.json",
-        "artifacts/source_backed_real_model_eval_forced/model_predictions.jsonl",
-        "artifacts/source_backed_real_model_eval_forced/model_metrics.csv",
-        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_3b.log",
-        "artifacts/source_backed_real_model_eval_forced/llama_server_qwen2p5_0p5b.log",
-        "artifacts/source_backed_real_model_eval_forced/selected_examples.json"
+      "claim": "We investigate whether a rarity-weighted entity/relation evaluation mix\u2014deliberately oversampling long-tail entities\u2014produces measurably different model ranking and accuracy signals compared to a popularity-weighted control mix.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this project and preserve the source-backed long-tail slice plus prompt-ablation metrics as a calibration/factuality benchmark artifact.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "However, the hypothesized ranking-change criterion\u2014where long-tail evaluation would reorder models relative to control\u2014was not observed: model rank order remained stable across all real-model experiments (rank displacement 0).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The synthetic harness did produce rank displacement of 2, but this did not replicate with actual language model outputs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We also document a pronounced abstention miscalibration in Qwen2.5-3B, which over-abstained on 91.7\u201398.3% of factual prompts under abstain-allowed prompting, effectively inverting the expected model ranking.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence in the overall hypothesis is medium; evidence strength is moderate.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The Long-Tail Entity Boost Mix project tests a specific hypothesis: constructing an evaluation mix that deliberately oversamples rare entities will (a) degrade model accuracy relative to a popularity-weighted control, and (b) change the relative ranking of models, thereby revealing model weaknesses invisible under standard evaluation distributions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The primary positive finding is that long-tail mixes do expose a measurable accuracy degradation cluster, particularly in larger models.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The primary negative finding is that the ranking-change criterion was not met in any real-model experiment, despite being observed in a synthetic baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A project-local Python experiment harness (`src/long_tail_boost_experiment.py`) generated a 3,000-example weakly labeled synthetic dataset with entity-frequency strata, relation types, abstention negatives, structured extraction items, and code-navigation items.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a rarity-weighted entity/relation evaluation mix\u2014deliberately oversampling long-tail entities\u2014produces measurably different model ranking and accuracy signals compared to a popularity-weighted control mix. Using a three-stage evaluation protocol (synthetic baseline harness, llama.cpp GGUF pilot with two sub-billion-parameter models, and a Wikidata-sourced factual follow-up with two Qwen2.5 checkpoints), we find that long-tail mixes consistently degrade model accuracy, with",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The dataset was partitioned into control (median entity frequency 321.0) and long-tail (median entity frequency 10.0) mixes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Long-Tail Entity Boost Mix: Exposing Long-Tail Calibration Failure Clusters in Small Language Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Scoring used exact-match accuracy and abstention F1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether a rarity-weighted entity/relation evaluation mix\u2014deliberately oversampling long-tail entities\u2014produces measurably different model ranking and accuracy signals compared to a popularity-weighted control mix. Using a three-stage evaluation protocol (synthetic baseline harness, llama.cpp GGUF pilot with two sub-billion-parameter models, and a Wikidata-sourced factual follow-up with two Qwen2.5 checkpoints), we find that long-tail mixes consistently degrade model accuracy, with",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two quantized GGUF checkpoints were served via llama.cpp with GPU offload (99 layers): - **SmolLM2-135M-Instruct** (Q4_K_M) - **Qwen2.5-0.5B-Instruct** (Q4_K_M) The existing synthetic dataset was used.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The project met the success criterion by exposing a real-model long-tail calibration failure cluster, although the two-model ranking-change criterion remained unsupported."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "long-tail-entity-boost-mix",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

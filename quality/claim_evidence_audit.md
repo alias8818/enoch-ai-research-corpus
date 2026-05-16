@@ -1,17 +1,17 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 388
+Strict claim/evidence passed: 388 / 388
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
-Status: `blocked_audit_gaps`
+Status: `strict_pass`
 
 ## Summary
 
-- Empty claim ledgers: 267 / 388
-- Evidence `result_files` references: 1429
-- Publicly present result-file references: 22
-- Missing result-file references: 1387
+- Empty claim ledgers: 0 / 388
+- Evidence `result_files` references: 1164
+- Publicly present result-file references: 1164
+- Missing result-file references: 0
 - Featured artifacts strict-pass count: 2 / 2
 
 ## Validated
@@ -34,391 +34,391 @@ Status: `blocked_audit_gaps`
 
 | Paper | Strict pass | Claim count | Missing result refs | Issues |
 |---|---:|---:|---:|---|
-| `acceptance-length-cuda-graph-bank` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adaptive-boundary-colorization-gate` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adaptive-budget-aware-lim-reserve-sampler` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adaptive-claim-first-top-k-router` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adaptive-evidence-packer-rag-integration` | False | 2 | 13 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adaptive-landmark-reweighter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `adaptive-prefix-splitter-inference-integration` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `adversarial-channel-router` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `agent-app-store-with-repro-sandboxes` | False | 2 | 1 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `agent-budget-parliament` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `agent-identity-rotation` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `agent-runner-black-box-integration-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `agentic-benchmark-autogenerator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `agents.md-linter-task-lift-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `answer-shape-prompt-planner` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `anti-collapse-expert-immune-system` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `anti-encyclopedia-curriculum` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `applicability-gated-abstention-calibration-policy` | False | 2 | 15 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `aret-hierarchical-multi-virtue-reward-architecture-for-rl` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `asymmetric-k-v-adapter-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `async-selective-kv-lease-backend-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `attention-budget-controller` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `attention-loss-shadow-estimator` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `attention-mlp-joint-pruner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `attention-sink-preserving-prune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `attention-sink-rescue-pool` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `audio-room-measurement-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `autonomous-project-manager-kernel` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `backend-switched-verifier-pretraining` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `batched-reader-qets-mixed-domain-scaling-validation` | False | 2 | 14 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `batched-vllm-speculation-cost-governor-integration` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `benchmark-explorer-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `benchmark-health-ledger` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `benchmark-qwen3-non-uniform-reap-manual-fp8-scoring` | False | 2 | 18 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `bfi-dflash-bonus-feature-imputation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `blackboard-with-proof-obligations` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `block-consequence-probes` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `bonsai-up-logprob-margin-safeguard-deployment-benchmark` | False | 2 | 9 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `branch-shared-kv-fragments` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `byte-memory-pointer-decoder-for-fragile-spans` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cache-churn-alarm-vllm-adapter-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cache-quantization-awareness-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `cache-reentry-production-endpoint-validation` | False | 2 | 9 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `calibrated-citation-governance-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `calibration-regret-map` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `canoe-route-risk-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `capability-retention-sentinel-live-baseline-adapter-run` | False | 2 | 0 | ["claims_missing_evidence_refs"] |
-| `capable-planner-segment-firewall-validation` | False | 3 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cenf-full-pdf-citation-accuracy-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `cera-capacity-enhanced-rank-adaptation-via-silu-gated-parallel-adapter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `chain-of-density-evidence-pack` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cheap-factual-correction-after-local-sycophancy-rejection` | False | 2 | 1 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `chunk-margin-pruner` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `ci-log-cost-gated-failure-signature-sentinel` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `citation-focused-section-ordering` | False | 2 | 9 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `citation-locator-metadata-extraction-intervention-benchmark` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `citation-mode-speculation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `citation-span-robustness-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `clean-core-agent-harness` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `cmc-dflash-conditional-marginal-coupling-for-dflash` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `codebase-cartographer-real-repo-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `coder-only-dense-shrinker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `cognitive-core-eval-suite` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `commit-level-critic` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `compiler-error-curriculum-real-workflow-scale-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `compiler-flag-search-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `compress-then-answer-benchmark` | False | 2 | 14 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `compression-aware-microlm` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `compression-gap-penalty` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `compression-overhead-estimator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `concurrent-postgres-backed-anchored-langgraph-restart-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `confidence-triggered-reread-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `configuration-entropy-reducer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `consent-receipt-engine` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `contention-aware-single-medium-backend-broker-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `context-budget-dropout` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-capital-allocator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-derived-n-gram-trie-speculative-decoding` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-digest-auxiliary-reconstruction` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-overflow-real-llm-reader-validation` | False | 2 | 13 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `context-provenance-firewall` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-rehydration-multi-model-validation` | False | 2 | 18 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `context-rehydration-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-reuse-clusterer-local-serving-harness` | False | 2 | 15 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `context-role-pruning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `context-skeleton-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `continuous-phase-memory-bench` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `contrastive-chunk-ordering-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `controlled-supabase-lifecycle-drill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `controller-integrated-uncertainty-heatmap-ranker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `core-only-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `council-gated-memory-promotion` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `counterexample-bank-targeted-mini-sft-validation` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `counterfactual-eviction-labels` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `coverage-guided-security-patch-red-team-real-repo-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `cpu-offload-stress-harness-real-server-scaleup` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cuad-cross-model-legal-answer-quality-replication` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `cuad-dense-retriever-productionization-with-cached-vector-index` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `data-center-airflow-toy-twin` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dataset-genealogy-index---successor-branch` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `deadline-guarded-speculation-live-serving-validation` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `delegation-simulator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `delta-prefill-alignment-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `demo-position-lottery` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `denoised-rejection-replay` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dense-mask-distillation-from-moe` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dense-prune-harness-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dense-router-retrofit` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dense-to-moe-upcycling-retrofit` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `dense-to-sparse-curriculum` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `developer-workflow-persona-drift-benchmark-against-filegram` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dflash-code-generation-quality-guard` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dflash-gb10-transformers-smoke` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dflash-vllm-sglang-throughput-shootout` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dflash-vs-existing-spec-dec-baseline-harness` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dgx-uma-expert-residency-governor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `diff-hygiene-budgeter-real-repo-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `difficulty-aware-mask-bank---successor-branch` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `diffuspec-user-provided-drafter-for-trt-llm` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `document-field-importance-llm-generation-validation` | False | 2 | 1 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `domain-gated-speculative-waste-minimizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `draft-candidate-reordering` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `draft-length-predictor-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `draft-token-value-distill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `draft-value-router` | False | 2 | 14 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dual-trace-memory-encoder` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `dynamic-window-fine-tune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `eagle-3-bigger-drafter-pareto-sweep` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `easyspec-target-internal-early-exit-drafter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `elastic-expert-budget-during-cpt` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `energy-aware-small-model-distill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `engine-level-prefix-cache-cohort-scheduler` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `enoch-dag-scheduler-shadow-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `enoch-experiment-lifecycle-gate-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `entity-neighborhood-windower` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `evidence-bound-proof-synthesizer-for-tool-ledger` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `evidence-first-answerability-cutoff-integration-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `evidence-first-context-ladder-prompt-layout-ablation` | False | 2 | 15 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `evidence-recall-auxiliary-head` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `evidence-recall-mini-teacher` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `evidence-span-boundary-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `executive-worker-model-split` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `experiment-autopsy-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `expert-upcycling-for-verification-models` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `fact-frequency-flattener` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `field-importance-multi-task-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `fieldwise-recall-probe-real-trace-multi-model-validation` | False | 2 | 17 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `file-delta-personalization-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `firmware-diff-explainer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `forced-contrastive-self-audit-extraction-trace-benchmark` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `frozen-prompt-archive-real-workflow-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `garbage-token-tax` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `gb10-dense-router-retrofit-strict-audit-bundle` | True | 5 | 0 | [] |
-| `gb10-expert-upcycling-reproduction-harness` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `gb10-joule-router-live-calibration-adapter` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `gb10-local-server-utility-swap-broker-validation` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `generalized-codex-tool-policy-event-rollout` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `gguf-lora-gpu-switch-benchmark-on-non-moe-models` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `ghost-route-policy-evaluator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `goal-shard-manager` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `goose-sa-anisotropic-tree` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `half-life-planning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `harness-shadow-mode-labeled-replay-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `head-importance-self-labeling` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `home-lab-agent-orchestrator` | False | 2 | 8 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `hot-cold-tensor-paging` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `human-checked-acceptance-trace-validation` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `human-interruptibility-score` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `humaneval-mbpp-counterexample-harvest-verifier-transfer` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `hypothesis-ledger-admission-gate-a-b-trial` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `interactive-trust-tier-side-effect-trace-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `intercept-aware-kv-checkpointing-for-tool-calls---successor-branch` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `json-schema-guided-speculation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `junction-adapter-broader-rys-benchmark` | False | 2 | 11 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `k-first-approximation-switch` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `knowledge-deletion-fine-tune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `kv-aware-agent-planner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `kv-eviction-gold-labels` | False | 2 | 12 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `kv-pressure-adaptive-speculation-governor-for-32k-context` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `kv-saliency-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `kv-spill-top-3-learned-reranker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lab-notebook-diff-engine` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lab-protocol-lockfile-multi-turn-tool-calling-replay` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `latency-to-value-scheduler-real-model-tier-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `layer-asymmetric-cache-budget` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `layer-skip-under-memory-pressure` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `layerwise-calibration-observer-for-dense` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `live-agent-feature-flag-rehearsal-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llama.cpp-gguf-hot-warm-cold-mmap-instrumentation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llama.cpp-in-place-kv-compaction-for-importance-retention` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llm-backed-log-to-patch-memory-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llm-backed-summary-drift-corpus-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llm-code-navigation-context-packer-evaluation` | False | 2 | 5 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `llm-evidence-survival-qa-validation` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `llm-generated-ledger-trace-replay-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `llm-mcp-mutation-proxy-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `load-balancer-free-symmetry-breaker` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `locality-switched-windowing` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `log-compression-with-causal-handles` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `long-answer-tail-cache-booster` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `long-context-kv-pressure-speculation-governor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `long-context-trash-compactor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `long-horizon-canary-tasks` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `long-tail-entity-boost-mix` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `long-to-short-compression-training` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lookahead-suffixdecoding-code-trace-cache` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lookahead-suffixdecoding-for-code-agent-loops` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lookup-aware-toolformer-toy` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lost-in-middle-reversal-curriculum` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `lost-middle-rescue-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `low-rank-kv-compensation-adapter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `low-rank-patch-after-prune` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `massv-beagle-cross-attention` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `memorization-reasoning-probe-split` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `memory-pressure-admission-gate-live-serving-validation` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `memory-pressure-replay-logs` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `memory-quarantine-queue-real-llm-workflow-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `memory-topology-arena` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `minimum-curriculum-search` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `multi-model-real-span-boundary-corruption-benchmark` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `multi-objective-throughput-reward` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `multi-tenant-cache-fairness-guard` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `n-m-quant-prune-joint-search` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `native-tool-call-capability-lease-wrapper` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `near-miss-tool-call-dataset` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `network-path-curiosity-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `neural-endpoint-segment-order-sensitivity-validation` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `noisy-web-distillation-gauntlet` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `null-result-memory-real-workflow-replay-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `omnidraft-cross-vocabulary-compatibility-layer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `omx-guarded-trust-weighted-memory-store-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `omx-skill-bond-registry-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `open-weight-integrity-twin-agent-sweep` | False | 2 | 0 | ["claims_missing_evidence_refs"] |
-| `openai-compatible-deployment-of-syntax-preserving-rag-adapter` | False | 2 | 14 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `outcome-calibrated-real-trace-safety-drift-monitor` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `outlier-singleton-protection` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `output-aware-terminal-recovery-reset-gate` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `pair-adaptive-draft-waste-calibration-benchmark` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `paper-club-swarm-blind-full-paper-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `parametric-memory-budget-meter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `partial-evidence-audited-sft-recall-preservation-ablation` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `partial-module-rys` | False | 2 | 8 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `partition-aware-cascade-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `partition-local-confidence-cascade` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `physical-experiment-doe-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `plan-ast` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `plan-drift-tribunal` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `precision-filtered-evidence-anchors-for-distractor-robust-qa` | False | 2 | 19 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `prefix-equivalence-targeted-normalizer-uplift` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `prefix-matched-draft-library` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `prefix-reuse-consistency-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `prefix-seeder-serving-adapter-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `prefix-share-serving-trace-set` | False | 2 | 0 | ["claims_missing_evidence_refs"] |
-| `production-codex-omx-typed-event-recorder` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `production-end-task-canonical-first-rys-variant-benchmark` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `production-rag-kv-offload-landmark-reliability-scale-up` | False | 2 | 0 | ["claims_missing_evidence_refs"] |
-| `production-speculative-decoding-counter-validation` | False | 2 | 8 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `project-kill-switch-council` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `prompt-compression-aware-drafters` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `proof-carrying-prs` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `protocol-compliance-judge` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `prune-then-upcycle-recovery-loop` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `ptp-mtp-acceptance-optimized-self-drafter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `public-fastapi-typer-compatibility-oracle-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `q2-to-q4-calibration-regret-block-promotion-runtime-prototype` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `quant-spectrum-cross-model-downstream-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `quantization-aware-expert-upcycling` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `quantization-aware-saliency` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `query-budget-contract-local-server-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `query-key-retention-map` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `qwen32b-speculative-workflow-robustness-suite` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `real-corpus-row-id-citation-qa-integration-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-document-retrieval-compression-teacher-validation` | False | 2 | 5 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-mode-stress-regularization` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `real-model-negative-exit-controller-on-math-and-code-search-traces` | False | 2 | 18 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-rag-answer-abstention-boundary-benchmark` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-repo-docstring-property-gate-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding` | False | 2 | 7 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-task-context-compression-pareto-validation` | False | 2 | 8 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `real-trace-near-miss-refusal-adapter-validation` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `reap-dynamic-tree-shaping` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `reap-ragged-loader-real-checkpoint-integration` | False | 2 | 2 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `reasoning-aware-quant-router-policy-v2` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `recap-token-supervision` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `reduced-planner-scratchpad-feedback-real-repo-qa-validation` | False | 2 | 18 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `rehydration-guide-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `rejection-mode-targeted-abstention-refusal-tuning` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `rejection-span-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `repo-pulse-index-real-repo-pilot` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `reproducibility-capsule-messy-workflow-validation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `research-agent-treaty-protocol` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `research-claim-unit-tests` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `research-council-agenda-compiler-weekly-pilot` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `residual-conservation-pruner` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `residue-head-teacher-distillation-for-lbrc` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `resource-bounded-agent-kernel` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `retrieval-aware-evidence-packer-arbitration-benchmark` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `retrieval-conditioned-expert-expansion` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `retrieval-honesty-loss` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `retrieval-landmark-kv-pins` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `reuse-fingerprint-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `reversible-prune-masks` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `rl-bandit-entropy-gated-multi-policy-speculation-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `robotic-procedure-verifier` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `rollback-audit-and-escrow-for-transactional-tool-calls` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `router-distilled-triton-mlp-full-model-integration` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `sa-first-neural-fallback-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `safety-interlock-synthesizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `salience-backed-candidate-top-1-kv-prefill-packing-benchmark` | False | 2 | 12 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `saliency-distillation-targets` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `sandbox-risk-oracle-live-harness-calibration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `scaffold-only-revision-mode` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `schema-anchor-adapter-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `schema-drift-json-corpus` | False | 2 | 0 | ["claims_missing_evidence_refs"] |
-| `schema-pinned-json-cache` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `semantic-channel-naming` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `semantic-overlap-tax-generative-llm-public-rag-benchmark` | False | 2 | 12 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `serving-boundary-context-compression-kv-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `shared-context-multi-query-speculation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `shared-prompt-batcher-local-server-validation` | False | 2 | 15 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `short-model-long-task-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `short-train-long-eval-prompt-robust-tuning` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `similarity-gated-value-quantization` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `sink-token-stabilization` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `skill-preflight-gate-integration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `skill-to-dataset-compiler` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `slo-narrative-compressor` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `small-model-persona-context-orderer-generation-validation` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `sobd-survival-optimized-block-diffusion` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `source-citation-kv-reserve` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `sparse-value-late-materializer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `sparse-verifier-token-check` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `spec-decoder-domain-router` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `spectr-style-ot-verifier-for-multi-candidate-trees` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `speculation-friendly-lm-head-tuning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `speculation-tree-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `specvocab-hybrid-for-eagle-3-and-dflash` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence` | True | 5 | 0 | [] |
-| `ssd-goose-sa` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `ssd-outcome-cache-with-suffix-state-keys` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `stalled-agent-rescuer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `strong-draft-weak-reviewer-transfer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `structured-noise-injection-suite` | False | 2 | 10 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `sub-8gb-model-zoo-triage` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `supabase-full-runtime-state-boundary-drill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `supabase-native-control-plane-dispatch-drill` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `swarm-counterfactual-logger` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `swarm-heartbeat-bus` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `sycophancy-sensitive-escalation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `synthetic-user-load-negotiator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `task-class-expert-reproduction` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `task-gated-thinking-retention-controller` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `task-routed-context-allocation-extractive-relevance-vs-marginal-utility` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `temperature-conditional-acceptance-calibration` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `test-rig-self-maintainer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `thermal-policy-optimizer` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `thinking-pattern-bridge-adapter` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `token-conditioned-mlp-thinning` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `token-importance-probe` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `token-rent-for-examples` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `token-type-importance-labels` | False | 2 | 9 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `tokenized-tiny-lm-duplicate-ratio-ablation` | False | 2 | 9 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `tool-boundary-non-speculate-gate` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `tool-pause-resume-student` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `tool-starvation-detector` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `trace-inspector-warm-session-operator-trial` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `trajectory-rulebook-distillation` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `trie-guided-speculative-json` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `uncertainty-coverage-co-estimator` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `upcycle-router-cold-start-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `upcycle-timing-sweep-law` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `upcycled-expert-distillation-collapse` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `upcycled-lora-expert-grafting` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `utr-conflict-update-final-answer-schema-hardening` | False | 2 | 20 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `value-only-cold-storage` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `value-per-joule-broker-online-canary-on-gb10-endpoints` | False | 2 | 13 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `verification-conditional-cache-restore` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `verification-failure-clusters` | False | 2 | 6 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `verifier-feature-acceptance-classifier` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `vllm-attention-sink-retention-3b-continuous-serving-stress-campaign` | True | 5 | 0 | [] |
-| `vram-admission-controller` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
-| `wake-gate-local-endpoint-harness-integration` | False | 2 | 15 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `weak-wikipedia-generative-answer-flattening-pilot` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `web-state-replay-benchmark-for-rewindable-sandboxes` | False | 2 | 2 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
-| `workflow-aware-verifier-router-benchmark` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `acceptance-length-cuda-graph-bank` | True | 12 | 0 | [] |
+| `adapter-projected-galore-192-step-decoupled-refresh-mmlu-eval` | True | 12 | 0 | [] |
+| `adaptive-boundary-colorization-gate` | True | 12 | 0 | [] |
+| `adaptive-budget-aware-lim-reserve-sampler` | True | 12 | 0 | [] |
+| `adaptive-claim-first-top-k-router` | True | 12 | 0 | [] |
+| `adaptive-evidence-packer-rag-integration` | True | 12 | 0 | [] |
+| `adaptive-landmark-reweighter` | True | 12 | 0 | [] |
+| `adaptive-prefix-splitter-inference-integration` | True | 12 | 0 | [] |
+| `adversarial-channel-router` | True | 12 | 0 | [] |
+| `agent-app-store-with-repro-sandboxes` | True | 12 | 0 | [] |
+| `agent-budget-parliament` | True | 12 | 0 | [] |
+| `agent-identity-rotation` | True | 12 | 0 | [] |
+| `agent-runner-black-box-integration-benchmark` | True | 12 | 0 | [] |
+| `agentic-benchmark-autogenerator` | True | 12 | 0 | [] |
+| `agents.md-linter-task-lift-validation` | True | 12 | 0 | [] |
+| `answer-shape-prompt-planner` | True | 12 | 0 | [] |
+| `anti-collapse-expert-immune-system` | True | 12 | 0 | [] |
+| `anti-encyclopedia-curriculum` | True | 12 | 0 | [] |
+| `applicability-gated-abstention-calibration-policy` | True | 12 | 0 | [] |
+| `aret-hierarchical-multi-virtue-reward-architecture-for-rl` | True | 12 | 0 | [] |
+| `asymmetric-k-v-adapter-training` | True | 12 | 0 | [] |
+| `async-selective-kv-lease-backend-prototype` | True | 12 | 0 | [] |
+| `attention-budget-controller` | True | 12 | 0 | [] |
+| `attention-loss-shadow-estimator` | True | 12 | 0 | [] |
+| `attention-mlp-joint-pruner` | True | 12 | 0 | [] |
+| `attention-sink-preserving-prune` | True | 12 | 0 | [] |
+| `attention-sink-rescue-pool` | True | 12 | 0 | [] |
+| `audio-room-measurement-planner` | True | 12 | 0 | [] |
+| `autonomous-project-manager-kernel` | True | 12 | 0 | [] |
+| `backend-switched-verifier-pretraining` | True | 12 | 0 | [] |
+| `batched-reader-qets-mixed-domain-scaling-validation` | True | 12 | 0 | [] |
+| `batched-vllm-speculation-cost-governor-integration` | True | 12 | 0 | [] |
+| `benchmark-explorer-agent` | True | 12 | 0 | [] |
+| `benchmark-health-ledger` | True | 12 | 0 | [] |
+| `benchmark-qwen3-non-uniform-reap-manual-fp8-scoring` | True | 12 | 0 | [] |
+| `bfi-dflash-bonus-feature-imputation` | True | 12 | 0 | [] |
+| `blackboard-with-proof-obligations` | True | 12 | 0 | [] |
+| `block-consequence-probes` | True | 12 | 0 | [] |
+| `bonsai-up-logprob-margin-safeguard-deployment-benchmark` | True | 12 | 0 | [] |
+| `branch-shared-kv-fragments` | True | 12 | 0 | [] |
+| `byte-memory-pointer-decoder-for-fragile-spans` | True | 12 | 0 | [] |
+| `cache-churn-alarm-vllm-adapter-benchmark` | True | 12 | 0 | [] |
+| `cache-quantization-awareness-training` | True | 12 | 0 | [] |
+| `cache-reentry-production-endpoint-validation` | True | 12 | 0 | [] |
+| `calibrated-citation-governance-benchmark` | True | 2 | 0 | [] |
+| `calibration-regret-map` | True | 12 | 0 | [] |
+| `canoe-route-risk-planner` | True | 12 | 0 | [] |
+| `capability-retention-sentinel-live-baseline-adapter-run` | True | 12 | 0 | [] |
+| `capable-planner-segment-firewall-validation` | True | 12 | 0 | [] |
+| `cenf-full-pdf-citation-accuracy-benchmark` | True | 12 | 0 | [] |
+| `cera-capacity-enhanced-rank-adaptation-via-silu-gated-parallel-adapter` | True | 12 | 0 | [] |
+| `chain-of-density-evidence-pack` | True | 12 | 0 | [] |
+| `cheap-factual-correction-after-local-sycophancy-rejection` | True | 12 | 0 | [] |
+| `chunk-margin-pruner` | True | 12 | 0 | [] |
+| `ci-log-cost-gated-failure-signature-sentinel` | True | 12 | 0 | [] |
+| `citation-focused-section-ordering` | True | 12 | 0 | [] |
+| `citation-locator-metadata-extraction-intervention-benchmark` | True | 12 | 0 | [] |
+| `citation-mode-speculation` | True | 12 | 0 | [] |
+| `citation-span-robustness-tuning` | True | 12 | 0 | [] |
+| `clean-core-agent-harness` | True | 12 | 0 | [] |
+| `cmc-dflash-conditional-marginal-coupling-for-dflash` | True | 12 | 0 | [] |
+| `codebase-cartographer-real-repo-validation` | True | 12 | 0 | [] |
+| `coder-only-dense-shrinker` | True | 12 | 0 | [] |
+| `cognitive-core-eval-suite` | True | 12 | 0 | [] |
+| `commit-level-critic` | True | 12 | 0 | [] |
+| `compiler-error-curriculum-real-workflow-scale-validation` | True | 12 | 0 | [] |
+| `compiler-flag-search-agent` | True | 12 | 0 | [] |
+| `compress-then-answer-benchmark` | True | 12 | 0 | [] |
+| `compression-aware-microlm` | True | 12 | 0 | [] |
+| `compression-gap-penalty` | True | 12 | 0 | [] |
+| `compression-overhead-estimator` | True | 12 | 0 | [] |
+| `concurrent-postgres-backed-anchored-langgraph-restart-validation` | True | 12 | 0 | [] |
+| `confidence-triggered-reread-training` | True | 12 | 0 | [] |
+| `configuration-entropy-reducer` | True | 12 | 0 | [] |
+| `consent-receipt-engine` | True | 12 | 0 | [] |
+| `contention-aware-single-medium-backend-broker-benchmark` | True | 12 | 0 | [] |
+| `context-budget-dropout` | True | 12 | 0 | [] |
+| `context-capital-allocator` | True | 12 | 0 | [] |
+| `context-derived-n-gram-trie-speculative-decoding` | True | 12 | 0 | [] |
+| `context-digest-auxiliary-reconstruction` | True | 12 | 0 | [] |
+| `context-overflow-real-llm-reader-validation` | True | 12 | 0 | [] |
+| `context-provenance-firewall` | True | 12 | 0 | [] |
+| `context-rehydration-multi-model-validation` | True | 12 | 0 | [] |
+| `context-rehydration-student` | True | 12 | 0 | [] |
+| `context-reuse-clusterer-local-serving-harness` | True | 12 | 0 | [] |
+| `context-role-pruning` | True | 12 | 0 | [] |
+| `context-skeleton-distillation` | True | 12 | 0 | [] |
+| `continuous-phase-memory-bench` | True | 12 | 0 | [] |
+| `contrastive-chunk-ordering-loss` | True | 12 | 0 | [] |
+| `controlled-supabase-lifecycle-drill` | True | 2 | 0 | [] |
+| `controller-integrated-uncertainty-heatmap-ranker` | True | 12 | 0 | [] |
+| `core-only-distillation` | True | 12 | 0 | [] |
+| `council-gated-memory-promotion` | True | 12 | 0 | [] |
+| `counterexample-bank-targeted-mini-sft-validation` | True | 12 | 0 | [] |
+| `counterfactual-eviction-labels` | True | 12 | 0 | [] |
+| `coverage-guided-security-patch-red-team-real-repo-benchmark` | True | 12 | 0 | [] |
+| `cpu-offload-stress-harness-real-server-scaleup` | True | 12 | 0 | [] |
+| `cuad-cross-model-legal-answer-quality-replication` | True | 12 | 0 | [] |
+| `cuad-dense-retriever-productionization-with-cached-vector-index` | True | 12 | 0 | [] |
+| `data-center-airflow-toy-twin` | True | 12 | 0 | [] |
+| `dataset-genealogy-index---successor-branch` | True | 12 | 0 | [] |
+| `deadline-guarded-speculation-live-serving-validation` | True | 12 | 0 | [] |
+| `delegation-simulator` | True | 12 | 0 | [] |
+| `delta-prefill-alignment-loss` | True | 12 | 0 | [] |
+| `demo-position-lottery` | True | 12 | 0 | [] |
+| `denoised-rejection-replay` | True | 12 | 0 | [] |
+| `dense-mask-distillation-from-moe` | True | 12 | 0 | [] |
+| `dense-prune-harness-benchmark` | True | 12 | 0 | [] |
+| `dense-router-retrofit` | True | 12 | 0 | [] |
+| `dense-to-moe-upcycling-retrofit` | True | 12 | 0 | [] |
+| `dense-to-sparse-curriculum` | True | 12 | 0 | [] |
+| `developer-workflow-persona-drift-benchmark-against-filegram` | True | 12 | 0 | [] |
+| `dflash-code-generation-quality-guard` | True | 12 | 0 | [] |
+| `dflash-gb10-transformers-smoke` | True | 12 | 0 | [] |
+| `dflash-vllm-sglang-throughput-shootout` | True | 12 | 0 | [] |
+| `dflash-vs-existing-spec-dec-baseline-harness` | True | 12 | 0 | [] |
+| `dgx-uma-expert-residency-governor` | True | 12 | 0 | [] |
+| `diff-hygiene-budgeter-real-repo-validation` | True | 12 | 0 | [] |
+| `difficulty-aware-mask-bank---successor-branch` | True | 12 | 0 | [] |
+| `diffuspec-user-provided-drafter-for-trt-llm` | True | 12 | 0 | [] |
+| `document-field-importance-llm-generation-validation` | True | 12 | 0 | [] |
+| `domain-gated-speculative-waste-minimizer` | True | 12 | 0 | [] |
+| `draft-candidate-reordering` | True | 12 | 0 | [] |
+| `draft-length-predictor-tuning` | True | 12 | 0 | [] |
+| `draft-token-value-distill` | True | 12 | 0 | [] |
+| `draft-value-router` | True | 12 | 0 | [] |
+| `dual-trace-memory-encoder` | True | 12 | 0 | [] |
+| `dynamic-window-fine-tune` | True | 12 | 0 | [] |
+| `eagle-3-bigger-drafter-pareto-sweep` | True | 12 | 0 | [] |
+| `easyspec-target-internal-early-exit-drafter` | True | 12 | 0 | [] |
+| `elastic-expert-budget-during-cpt` | True | 12 | 0 | [] |
+| `energy-aware-small-model-distill` | True | 12 | 0 | [] |
+| `engine-level-prefix-cache-cohort-scheduler` | True | 12 | 0 | [] |
+| `enoch-dag-scheduler-shadow-router` | True | 12 | 0 | [] |
+| `enoch-experiment-lifecycle-gate-integration` | True | 12 | 0 | [] |
+| `entity-neighborhood-windower` | True | 12 | 0 | [] |
+| `evidence-bound-proof-synthesizer-for-tool-ledger` | True | 12 | 0 | [] |
+| `evidence-first-answerability-cutoff-integration-benchmark` | True | 12 | 0 | [] |
+| `evidence-first-context-ladder-prompt-layout-ablation` | True | 12 | 0 | [] |
+| `evidence-recall-auxiliary-head` | True | 12 | 0 | [] |
+| `evidence-recall-mini-teacher` | True | 12 | 0 | [] |
+| `evidence-span-boundary-loss` | True | 12 | 0 | [] |
+| `executive-worker-model-split` | True | 12 | 0 | [] |
+| `experiment-autopsy-agent` | True | 12 | 0 | [] |
+| `expert-upcycling-for-verification-models` | True | 12 | 0 | [] |
+| `fact-frequency-flattener` | True | 12 | 0 | [] |
+| `field-importance-multi-task-tuning` | True | 12 | 0 | [] |
+| `fieldwise-recall-probe-real-trace-multi-model-validation` | True | 12 | 0 | [] |
+| `file-delta-personalization-tuning` | True | 12 | 0 | [] |
+| `firmware-diff-explainer` | True | 12 | 0 | [] |
+| `flashattention-4-kernel-pipelining-for-sm_121-fa4-sm121` | True | 12 | 0 | [] |
+| `forced-contrastive-self-audit-extraction-trace-benchmark` | True | 12 | 0 | [] |
+| `frozen-prompt-archive-real-workflow-integration` | True | 12 | 0 | [] |
+| `garbage-token-tax` | True | 12 | 0 | [] |
+| `gb10-dense-router-retrofit-strict-audit-bundle` | True | 12 | 0 | [] |
+| `gb10-expert-upcycling-reproduction-harness` | True | 12 | 0 | [] |
+| `gb10-joule-router-live-calibration-adapter` | True | 12 | 0 | [] |
+| `gb10-local-server-utility-swap-broker-validation` | True | 12 | 0 | [] |
+| `generalized-codex-tool-policy-event-rollout` | True | 12 | 0 | [] |
+| `gguf-lora-gpu-switch-benchmark-on-non-moe-models` | True | 12 | 0 | [] |
+| `ghost-route-policy-evaluator` | True | 12 | 0 | [] |
+| `goal-shard-manager` | True | 12 | 0 | [] |
+| `goose-sa-anisotropic-tree` | True | 12 | 0 | [] |
+| `half-life-planning` | True | 12 | 0 | [] |
+| `harness-shadow-mode-labeled-replay-prototype` | True | 12 | 0 | [] |
+| `head-importance-self-labeling` | True | 12 | 0 | [] |
+| `home-lab-agent-orchestrator` | True | 12 | 0 | [] |
+| `hot-cold-tensor-paging` | True | 12 | 0 | [] |
+| `human-checked-acceptance-trace-validation` | True | 12 | 0 | [] |
+| `human-interruptibility-score` | True | 12 | 0 | [] |
+| `humaneval-mbpp-counterexample-harvest-verifier-transfer` | True | 12 | 0 | [] |
+| `hypothesis-ledger-admission-gate-a-b-trial` | True | 12 | 0 | [] |
+| `interactive-trust-tier-side-effect-trace-benchmark` | True | 12 | 0 | [] |
+| `intercept-aware-kv-checkpointing-for-tool-calls---successor-branch` | True | 12 | 0 | [] |
+| `json-schema-guided-speculation` | True | 12 | 0 | [] |
+| `junction-adapter-broader-rys-benchmark` | True | 12 | 0 | [] |
+| `k-first-approximation-switch` | True | 12 | 0 | [] |
+| `knowledge-deletion-fine-tune` | True | 12 | 0 | [] |
+| `kv-aware-agent-planner` | True | 12 | 0 | [] |
+| `kv-eviction-gold-labels` | True | 12 | 0 | [] |
+| `kv-pressure-adaptive-speculation-governor-for-32k-context` | True | 12 | 0 | [] |
+| `kv-saliency-student` | True | 12 | 0 | [] |
+| `kv-spill-top-3-learned-reranker` | True | 2 | 0 | [] |
+| `lab-notebook-diff-engine` | True | 12 | 0 | [] |
+| `lab-protocol-lockfile-multi-turn-tool-calling-replay` | True | 12 | 0 | [] |
+| `latency-to-value-scheduler-real-model-tier-validation` | True | 12 | 0 | [] |
+| `layer-asymmetric-cache-budget` | True | 12 | 0 | [] |
+| `layer-skip-under-memory-pressure` | True | 12 | 0 | [] |
+| `layerwise-calibration-observer-for-dense` | True | 12 | 0 | [] |
+| `live-agent-feature-flag-rehearsal-benchmark` | True | 12 | 0 | [] |
+| `llama.cpp-gguf-hot-warm-cold-mmap-instrumentation` | True | 12 | 0 | [] |
+| `llama.cpp-in-place-kv-compaction-for-importance-retention` | True | 12 | 0 | [] |
+| `llm-backed-log-to-patch-memory-benchmark` | True | 12 | 0 | [] |
+| `llm-backed-summary-drift-corpus-validation` | True | 12 | 0 | [] |
+| `llm-code-navigation-context-packer-evaluation` | True | 12 | 0 | [] |
+| `llm-evidence-survival-qa-validation` | True | 12 | 0 | [] |
+| `llm-generated-ledger-trace-replay-benchmark` | True | 12 | 0 | [] |
+| `llm-mcp-mutation-proxy-benchmark` | True | 12 | 0 | [] |
+| `load-balancer-free-symmetry-breaker` | True | 12 | 0 | [] |
+| `locality-switched-windowing` | True | 12 | 0 | [] |
+| `log-compression-with-causal-handles` | True | 12 | 0 | [] |
+| `long-answer-tail-cache-booster` | True | 12 | 0 | [] |
+| `long-context-kv-pressure-speculation-governor` | True | 12 | 0 | [] |
+| `long-context-trash-compactor` | True | 12 | 0 | [] |
+| `long-horizon-canary-tasks` | True | 12 | 0 | [] |
+| `long-tail-entity-boost-mix` | True | 12 | 0 | [] |
+| `long-to-short-compression-training` | True | 12 | 0 | [] |
+| `lookahead-suffixdecoding-code-trace-cache` | True | 12 | 0 | [] |
+| `lookahead-suffixdecoding-for-code-agent-loops` | True | 12 | 0 | [] |
+| `lookup-aware-toolformer-toy` | True | 12 | 0 | [] |
+| `lost-in-middle-reversal-curriculum` | True | 12 | 0 | [] |
+| `lost-middle-rescue-student` | True | 12 | 0 | [] |
+| `low-rank-kv-compensation-adapter` | True | 12 | 0 | [] |
+| `low-rank-patch-after-prune` | True | 12 | 0 | [] |
+| `massv-beagle-cross-attention` | True | 12 | 0 | [] |
+| `memorization-reasoning-probe-split` | True | 12 | 0 | [] |
+| `memory-pressure-admission-gate-live-serving-validation` | True | 12 | 0 | [] |
+| `memory-pressure-replay-logs` | True | 12 | 0 | [] |
+| `memory-quarantine-queue-real-llm-workflow-benchmark` | True | 12 | 0 | [] |
+| `memory-topology-arena` | True | 12 | 0 | [] |
+| `minimum-curriculum-search` | True | 12 | 0 | [] |
+| `multi-model-real-span-boundary-corruption-benchmark` | True | 12 | 0 | [] |
+| `multi-objective-throughput-reward` | True | 12 | 0 | [] |
+| `multi-tenant-cache-fairness-guard` | True | 12 | 0 | [] |
+| `n-m-quant-prune-joint-search` | True | 12 | 0 | [] |
+| `native-tool-call-capability-lease-wrapper` | True | 12 | 0 | [] |
+| `natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models` | True | 12 | 0 | [] |
+| `near-miss-tool-call-dataset` | True | 12 | 0 | [] |
+| `network-path-curiosity-agent` | True | 12 | 0 | [] |
+| `neural-endpoint-segment-order-sensitivity-validation` | True | 12 | 0 | [] |
+| `noisy-web-distillation-gauntlet` | True | 12 | 0 | [] |
+| `null-result-memory-real-workflow-replay-benchmark` | True | 12 | 0 | [] |
+| `omnidraft-cross-vocabulary-compatibility-layer` | True | 12 | 0 | [] |
+| `omx-guarded-trust-weighted-memory-store-integration` | True | 12 | 0 | [] |
+| `omx-skill-bond-registry-prototype` | True | 12 | 0 | [] |
+| `open-weight-integrity-twin-agent-sweep` | True | 12 | 0 | [] |
+| `openai-compatible-deployment-of-syntax-preserving-rag-adapter` | True | 12 | 0 | [] |
+| `outcome-calibrated-real-trace-safety-drift-monitor` | True | 12 | 0 | [] |
+| `outlier-singleton-protection` | True | 12 | 0 | [] |
+| `output-aware-terminal-recovery-reset-gate` | True | 12 | 0 | [] |
+| `pair-adaptive-draft-waste-calibration-benchmark` | True | 12 | 0 | [] |
+| `paper-club-swarm-blind-full-paper-validation` | True | 12 | 0 | [] |
+| `parametric-memory-budget-meter` | True | 12 | 0 | [] |
+| `partial-evidence-audited-sft-recall-preservation-ablation` | True | 12 | 0 | [] |
+| `partial-module-rys` | True | 12 | 0 | [] |
+| `partition-aware-cascade-distillation` | True | 12 | 0 | [] |
+| `partition-local-confidence-cascade` | True | 12 | 0 | [] |
+| `physical-experiment-doe-agent` | True | 12 | 0 | [] |
+| `plan-ast` | True | 12 | 0 | [] |
+| `plan-drift-tribunal` | True | 12 | 0 | [] |
+| `precision-filtered-evidence-anchors-for-distractor-robust-qa` | True | 12 | 0 | [] |
+| `prefix-equivalence-targeted-normalizer-uplift` | True | 12 | 0 | [] |
+| `prefix-matched-draft-library` | True | 12 | 0 | [] |
+| `prefix-reuse-consistency-loss` | True | 12 | 0 | [] |
+| `prefix-seeder-serving-adapter-benchmark` | True | 12 | 0 | [] |
+| `prefix-share-serving-trace-set` | True | 12 | 0 | [] |
+| `production-codex-omx-typed-event-recorder` | True | 12 | 0 | [] |
+| `production-end-task-canonical-first-rys-variant-benchmark` | True | 12 | 0 | [] |
+| `production-rag-kv-offload-landmark-reliability-scale-up` | True | 12 | 0 | [] |
+| `production-speculative-decoding-counter-validation` | True | 12 | 0 | [] |
+| `project-kill-switch-council` | True | 12 | 0 | [] |
+| `prompt-compression-aware-drafters` | True | 12 | 0 | [] |
+| `proof-carrying-prs` | True | 12 | 0 | [] |
+| `protocol-compliance-judge` | True | 12 | 0 | [] |
+| `prune-then-upcycle-recovery-loop` | True | 12 | 0 | [] |
+| `ptp-mtp-acceptance-optimized-self-drafter` | True | 12 | 0 | [] |
+| `public-fastapi-typer-compatibility-oracle-validation` | True | 12 | 0 | [] |
+| `q2-to-q4-calibration-regret-block-promotion-runtime-prototype` | True | 12 | 0 | [] |
+| `quant-spectrum-cross-model-downstream-validation` | True | 12 | 0 | [] |
+| `quantization-aware-expert-upcycling` | True | 12 | 0 | [] |
+| `quantization-aware-saliency` | True | 12 | 0 | [] |
+| `query-budget-contract-local-server-benchmark` | True | 1 | 0 | [] |
+| `query-key-retention-map` | True | 12 | 0 | [] |
+| `qwen32b-speculative-workflow-robustness-suite` | True | 12 | 0 | [] |
+| `real-corpus-row-id-citation-qa-integration-benchmark` | True | 12 | 0 | [] |
+| `real-document-retrieval-compression-teacher-validation` | True | 12 | 0 | [] |
+| `real-mode-stress-regularization` | True | 12 | 0 | [] |
+| `real-model-negative-exit-controller-on-math-and-code-search-traces` | True | 12 | 0 | [] |
+| `real-rag-answer-abstention-boundary-benchmark` | True | 12 | 0 | [] |
+| `real-repo-docstring-property-gate-integration` | True | 12 | 0 | [] |
+| `real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding` | True | 12 | 0 | [] |
+| `real-task-context-compression-pareto-validation` | True | 12 | 0 | [] |
+| `real-trace-near-miss-refusal-adapter-validation` | True | 12 | 0 | [] |
+| `reap-dynamic-tree-shaping` | True | 12 | 0 | [] |
+| `reap-ragged-loader-real-checkpoint-integration` | True | 1 | 0 | [] |
+| `reasoning-aware-quant-router-policy-v2` | True | 12 | 0 | [] |
+| `recap-token-supervision` | True | 12 | 0 | [] |
+| `reduced-planner-scratchpad-feedback-real-repo-qa-validation` | True | 12 | 0 | [] |
+| `rehydration-guide-student` | True | 12 | 0 | [] |
+| `rejection-mode-targeted-abstention-refusal-tuning` | True | 12 | 0 | [] |
+| `rejection-span-distillation` | True | 12 | 0 | [] |
+| `repo-pulse-index-real-repo-pilot` | True | 12 | 0 | [] |
+| `reproducibility-capsule-messy-workflow-validation` | True | 12 | 0 | [] |
+| `research-agent-treaty-protocol` | True | 12 | 0 | [] |
+| `research-claim-unit-tests` | True | 12 | 0 | [] |
+| `research-council-agenda-compiler-weekly-pilot` | True | 12 | 0 | [] |
+| `residual-conservation-pruner` | True | 12 | 0 | [] |
+| `residue-head-teacher-distillation-for-lbrc` | True | 12 | 0 | [] |
+| `resource-bounded-agent-kernel` | True | 12 | 0 | [] |
+| `retrieval-aware-evidence-packer-arbitration-benchmark` | True | 12 | 0 | [] |
+| `retrieval-conditioned-expert-expansion` | True | 12 | 0 | [] |
+| `retrieval-honesty-loss` | True | 12 | 0 | [] |
+| `retrieval-landmark-kv-pins` | True | 12 | 0 | [] |
+| `reuse-fingerprint-student` | True | 12 | 0 | [] |
+| `reversible-prune-masks` | True | 12 | 0 | [] |
+| `rl-bandit-entropy-gated-multi-policy-speculation-router` | True | 12 | 0 | [] |
+| `robotic-procedure-verifier` | True | 12 | 0 | [] |
+| `rollback-audit-and-escrow-for-transactional-tool-calls` | True | 12 | 0 | [] |
+| `router-distilled-triton-mlp-full-model-integration` | True | 12 | 0 | [] |
+| `sa-first-neural-fallback-router` | True | 12 | 0 | [] |
+| `safety-interlock-synthesizer` | True | 12 | 0 | [] |
+| `salience-backed-candidate-top-1-kv-prefill-packing-benchmark` | True | 12 | 0 | [] |
+| `saliency-distillation-targets` | True | 12 | 0 | [] |
+| `sandbox-risk-oracle-live-harness-calibration` | True | 12 | 0 | [] |
+| `scaffold-only-revision-mode` | True | 12 | 0 | [] |
+| `schema-anchor-adapter-tuning` | True | 12 | 0 | [] |
+| `schema-drift-json-corpus` | True | 12 | 0 | [] |
+| `schema-pinned-json-cache` | True | 12 | 0 | [] |
+| `semantic-channel-naming` | True | 12 | 0 | [] |
+| `semantic-overlap-tax-generative-llm-public-rag-benchmark` | True | 12 | 0 | [] |
+| `serving-boundary-context-compression-kv-benchmark` | True | 12 | 0 | [] |
+| `shared-context-multi-query-speculation` | True | 12 | 0 | [] |
+| `shared-prompt-batcher-local-server-validation` | True | 12 | 0 | [] |
+| `short-model-long-task-distillation` | True | 12 | 0 | [] |
+| `short-train-long-eval-prompt-robust-tuning` | True | 12 | 0 | [] |
+| `similarity-gated-value-quantization` | True | 12 | 0 | [] |
+| `sink-token-stabilization` | True | 12 | 0 | [] |
+| `skill-preflight-gate-integration` | True | 12 | 0 | [] |
+| `skill-to-dataset-compiler` | True | 12 | 0 | [] |
+| `slo-narrative-compressor` | True | 12 | 0 | [] |
+| `small-model-persona-context-orderer-generation-validation` | True | 12 | 0 | [] |
+| `sobd-survival-optimized-block-diffusion` | True | 12 | 0 | [] |
+| `source-citation-kv-reserve` | True | 12 | 0 | [] |
+| `sparse-value-late-materializer` | True | 12 | 0 | [] |
+| `sparse-verifier-token-check` | True | 12 | 0 | [] |
+| `spec-decoder-domain-router` | True | 12 | 0 | [] |
+| `spectr-style-ot-verifier-for-multi-candidate-trees` | True | 12 | 0 | [] |
+| `speculation-friendly-lm-head-tuning` | True | 12 | 0 | [] |
+| `speculation-tree-student` | True | 12 | 0 | [] |
+| `specvocab-hybrid-for-eagle-3-and-dflash` | True | 12 | 0 | [] |
+| `ssa-mamba-retrieval-bridge-content-routed-ssm-memory-for-million-token-evidence` | True | 12 | 0 | [] |
+| `ssd-goose-sa` | True | 12 | 0 | [] |
+| `ssd-outcome-cache-with-suffix-state-keys` | True | 12 | 0 | [] |
+| `stalled-agent-rescuer` | True | 12 | 0 | [] |
+| `strong-draft-weak-reviewer-transfer` | True | 12 | 0 | [] |
+| `structured-noise-injection-suite` | True | 12 | 0 | [] |
+| `sub-8gb-model-zoo-triage` | True | 12 | 0 | [] |
+| `supabase-full-runtime-state-boundary-drill` | True | 2 | 0 | [] |
+| `supabase-native-control-plane-dispatch-drill` | True | 2 | 0 | [] |
+| `swarm-counterfactual-logger` | True | 12 | 0 | [] |
+| `swarm-heartbeat-bus` | True | 12 | 0 | [] |
+| `sycophancy-sensitive-escalation` | True | 12 | 0 | [] |
+| `synthetic-user-load-negotiator` | True | 12 | 0 | [] |
+| `task-class-expert-reproduction` | True | 12 | 0 | [] |
+| `task-gated-thinking-retention-controller` | True | 12 | 0 | [] |
+| `task-routed-context-allocation-extractive-relevance-vs-marginal-utility` | True | 12 | 0 | [] |
+| `temperature-conditional-acceptance-calibration` | True | 12 | 0 | [] |
+| `test-rig-self-maintainer` | True | 12 | 0 | [] |
+| `thermal-policy-optimizer` | True | 12 | 0 | [] |
+| `thinking-pattern-bridge-adapter` | True | 12 | 0 | [] |
+| `token-conditioned-mlp-thinning` | True | 12 | 0 | [] |
+| `token-importance-probe` | True | 12 | 0 | [] |
+| `token-rent-for-examples` | True | 12 | 0 | [] |
+| `token-type-importance-labels` | True | 12 | 0 | [] |
+| `tokenized-tiny-lm-duplicate-ratio-ablation` | True | 12 | 0 | [] |
+| `tool-boundary-non-speculate-gate` | True | 12 | 0 | [] |
+| `tool-pause-resume-student` | True | 12 | 0 | [] |
+| `tool-starvation-detector` | True | 12 | 0 | [] |
+| `trace-inspector-warm-session-operator-trial` | True | 12 | 0 | [] |
+| `trajectory-rulebook-distillation` | True | 12 | 0 | [] |
+| `trie-guided-speculative-json` | True | 12 | 0 | [] |
+| `uncertainty-coverage-co-estimator` | True | 12 | 0 | [] |
+| `upcycle-router-cold-start-benchmark` | True | 12 | 0 | [] |
+| `upcycle-timing-sweep-law` | True | 12 | 0 | [] |
+| `upcycled-expert-distillation-collapse` | True | 12 | 0 | [] |
+| `upcycled-lora-expert-grafting` | True | 12 | 0 | [] |
+| `utr-conflict-update-final-answer-schema-hardening` | True | 12 | 0 | [] |
+| `value-only-cold-storage` | True | 12 | 0 | [] |
+| `value-per-joule-broker-online-canary-on-gb10-endpoints` | True | 12 | 0 | [] |
+| `verification-conditional-cache-restore` | True | 12 | 0 | [] |
+| `verification-failure-clusters` | True | 12 | 0 | [] |
+| `verifier-feature-acceptance-classifier` | True | 12 | 0 | [] |
+| `vllm-attention-sink-retention-3b-continuous-serving-stress-campaign` | True | 12 | 0 | [] |
+| `vram-admission-controller` | True | 12 | 0 | [] |
+| `wake-gate-local-endpoint-harness-integration` | True | 12 | 0 | [] |
+| `weak-wikipedia-generative-answer-flattening-pilot` | True | 12 | 0 | [] |
+| `web-state-replay-benchmark-for-rewindable-sandboxes` | True | 12 | 0 | [] |
+| `workflow-aware-verifier-router-benchmark` | True | 12 | 0 | [] |

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We investigate whether a hard-to-easy reversal curriculum\u2014training first on middle-position targets and expanding outward\u2014can reduce this retrieval trough on a controlled synthetic key-value task.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In high-sample evaluation (17,408 examples per four-position bin), the middle-reversal curriculum improved middle-bin accuracy by +1.78 percentage points over uniform training (0.154 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, overall accuracy was essentially unchanged (+0.07 pp), and edge accuracy decreased by \u22121.48 pp (*z* \u2248 \u22124.03).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A static middle-biased control confirmed extreme position-dependent specialization (middle accuracy 0.260, edge accuracy 0.040) at the cost of overall accuracy (0.119).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The tradeoff between middle and edge accuracy remains unresolved without additional balancing mechanisms.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We study this question in a minimal synthetic setting: a key-value retrieval task where the target position is directly controllable, allowing precise measurement of positional accuracy without confounds from semantic variation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We compare four position-sampling strategies and evaluate their effect on per-position retrieval accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central finding is that the reversal curriculum does shift accuracy toward the middle, but this shift comes at the expense of edge accuracy rather than representing a net improvement in retrieval capability.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This is a narrower result than a cure for the lost-in-the-middle effect, but it establishes that position sampling during training is a functional lever on the retrieval profile.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The input sequence is structured as `[CLS, query_key, key_0, value_0, key_1, value_1, ..., key_N, value_N]`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, evaluation logs, claim ledger). The operator who released the artifacts claims no personal authorship credit for the writing or the experimental results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Accuracy is the fraction of correct value predictions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Lost-in-Middle Reversal Curriculum: Position-Targeted Training Shifts Retrieval Accuracy in Synthetic Key-Value Retrieval",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Four position-sampling strategies were tested: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Large language models exhibit a \"lost-in-the-middle\" effect, retrieving information from the edges of a context more reliably than from its interior. We investigate whether a hard-to-easy reversal curriculum\u2014training first on middle-position targets and expanding outward\u2014can reduce this retrieval trough on a controlled synthetic key-value task. Four curricula were compared: uniform sampling, a conventional edge-first (easy-to-hard) curriculum, the proposed middle-reversal curriculum, and a stati",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "lost-in-middle-reversal-curriculum",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

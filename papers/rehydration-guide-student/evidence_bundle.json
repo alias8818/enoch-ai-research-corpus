@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T135248650446+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "a44201104573eaa72c4d718c45238f203fb21130ebe93183a8ea6a9da73c964b"
+    },
+    {
+      "bytes": 462,
+      "path": "metadata.json",
+      "sha256": "7dde609a83742cb7e66abeec21c14d626dd2b8db0291b46d3753d4962ce863ce"
+    },
+    {
+      "bytes": 14915,
+      "path": "evidence/public_paper.md",
+      "sha256": "3def99df6b55fad89d3011150bae1a036b27259dcb7afb011833b314255da605"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "rehydration-guide-student",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

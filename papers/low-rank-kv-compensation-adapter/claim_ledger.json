@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Under aggressive compression (KV rank 8, adapter rank 8, memory ratio 0.157\u00d7), the adapter reduces relative MSE by 95.0% for low-rank-friendly attention and 87.4% for hybrid attention.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, for retrieval-like distributions where attention depends on exact key identity, the adapter provides only 8.6% relative improvement and leaves absolute error high (rel-MSE 0.686).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under moderate compression (KV rank 16), where the base approximation is already strong for smooth regimes, adapter gains are small (1.5% hybrid) or slightly negative (\u22120.7% low-rank-friendly).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If the residual $y_{\\text{exact}}(q) - y_{\\text{base}}(q)$ lies approximately in a low-dimensional subspace spanned by functions of $q$, then a compact adapter $q \\mapsto qC_a$ trained on calibration queries could recover much of the lost accuracy at negligible additional memory cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "SVD compression destroys the identity structure; residuals depend on token-specific softmax behavior and are not expected to be low-rank.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report relative MSE against the exact attention output: $$\\text{rel-MSE} = \\frac{\\|y_{\\text{approx}}(q) - y_{\\text{exact}}(q)\\|^2}{\\|y_{\\text{exact}}(q)\\|^2}$$ computed over held-out test queries.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Memory ratio is computed as the storage cost of the compressed KV plus adapter parameters, divided by the storage cost of the full KV: $$\\text{memory\\_ratio} = \\frac{2 \\cdot n \\cdot r + 2 \\cdot d \\cdot a}{2 \\cdot n \\cdot d}$$ where $n$ is context length, $d$ is key/query dimension, and $r$, $a$ are KV rank and adapter rank respectively.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Main experiment.** $n = 512$, $d = d_v = 64$, $N_c = N_t = 2048$ calibration and test queries, KV rank $r = 16$, adapter rank $a = 8$, ridge $\\lambda = 0.1$, 10 random seeds (0\u20139), all three regimes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Rank sweep.** KV rank $r \\in \\{4, 8, 16, 32\\}$, adapter rank $a \\in \\{4, 8, 16\\}$, 5 seeds per configuration, all three regimes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Low-Rank KV Compensation Adapter: A Model-Free Viability Study of Query-Conditioned Residual Correction for Compressed Key-Value Caches",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Smoke test.** $n = 128$, $d = d_v = 32$, $N_c = N_t = 64$, single seed, to validate the harness before full runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Experiments ran on a Linux `aarch64` host with NVIDIA GB10 present.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Low-rank compression of key-value (KV) caches reduces the memory footprint of transformer inference but introduces approximation error in attention outputs. This study investigates whether a small, query-conditioned low-rank compensation adapter can recover that error. We test the isolated approximation $y_{\\text{base}}(q) + qC_a$, where $C_a$ is a rank-$a$ residual map fit on calibration queries, applied on top of truncated-SVD rank-$r$ KV reconstructions. Using a model-free numpy attention har",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Python 3.12.3 with numpy; no deep learning frameworks were used.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Low-rank compression of key-value (KV) caches reduces the memory footprint of transformer inference but introduces approximation error in attention outputs. This study investigates whether a small, query-conditioned low-rank compensation adapter can recover that error. We test the isolated approximation $y_{\\text{base}}(q) + qC_a$, where $C_a$ is a rank-$a$ residual map fit on calibration queries, applied on top of truncated-SVD rank-$r$ KV reconstructions. Using a model-free numpy attention har",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "low-rank-kv-compensation-adapter",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

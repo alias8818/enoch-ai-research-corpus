@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T144448486321+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "f89caaf925e900fa530f8d8d144f044045d1d39697bbf268c09b7a418e55e24d"
+    },
+    {
+      "bytes": 485,
+      "path": "metadata.json",
+      "sha256": "6838c340c826d3ad86be2eedfca2190d3edf060be0c43ef4d281aca7bfd26d43"
+    },
+    {
+      "bytes": 15035,
+      "path": "evidence/public_paper.md",
+      "sha256": "02e7f09a499c81269c9076b0953054fa83e2bde6155387e792c81b7be5001860"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "gguf-lora-gpu-switch-benchmark-on-non-moe-models",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

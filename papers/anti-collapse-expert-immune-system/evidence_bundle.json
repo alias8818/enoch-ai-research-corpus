@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T211804609849+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "72e3a1092e1cbcf6a0fa1b7e7d1f2ca42d49762104fac0f2daff7d47e6690498"
+    },
+    {
+      "bytes": 471,
+      "path": "metadata.json",
+      "sha256": "4301d680cbe278f7bd8096731c6544da5e6422e2be2e2f3206b940a25058918c"
+    },
+    {
+      "bytes": 15295,
+      "path": "evidence/public_paper.md",
+      "sha256": "b48b5e3daacd9939e7fb7bb93c523b623161ff12e8f6e7790d875b034dec9879"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "anti-collapse-expert-immune-system",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

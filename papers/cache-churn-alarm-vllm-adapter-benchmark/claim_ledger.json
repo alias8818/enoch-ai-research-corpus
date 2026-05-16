@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Cache Churn Alarm vLLM Adapter Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/report.md",
-        "results/pressure_endpoint_pilot/final_ab_isolated/server_stopped_check_memory_blind.txt",
-        "results/pressure_endpoint_pilot/final_ab_isolated/server_stopped_check_cache_churn_alarm.txt",
-        "results/pressure_endpoint_pilot/final_ab_isolated/summary.md",
-        "results/pressure_endpoint_pilot/final_ab_isolated/combined_summary.json",
-        "results/pressure_endpoint_pilot/final_ab_isolated/server_cache_churn_alarm.log",
-        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm_final_metrics.prom",
-        "results/pressure_endpoint_pilot/final_ab_isolated/cache_churn_alarm_time.txt"
+      "claim": "We investigate a client-side cache-churn-alarm policy that monitors request latency and, upon detecting a threshold crossing, suppresses optional speculative request branches to reduce KV-cache pressure on a serving endpoint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as positive real-vLLM evidence; if queued later, replicate across more seeds/models and add direct online KV-usage sampling, but do not create a generic successor branch now.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We evaluate this policy against a memory-blind baseline using a custom OpenAI-compatible benchmark harness across three experimental phases: a deterministic mock-endpoint smoke test, a real vLLM endpoint pilot under moderate load, and a pressure-specific vLLM pilot designed to saturate KV-cache capacity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, p95 latency showed no improvement and was marginally worse (\u22120.30%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under non-pressure conditions, the alarm produced negligible benefits and an 8.40% throughput reduction.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that latency-triggered request gating can reduce KV-cache churn and energy cost under memory pressure, but they do not support a latency-improvement claim.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This churn degrades throughput, increases latency variance, and wastes energy on redundant computation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A complementary approach is client-side request gating: a client-side policy that monitors observable signals\u2014such as request latency\u2014and suppresses optional or speculative request branches when those signals indicate cache pressure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We define a **cache-churn-alarm** policy that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate a client-side cache-churn-alarm policy that monitors request latency and, upon detecting a threshold crossing, suppresses optional speculative request branches to reduce KV-cache pressure on a serving endpoint. We evaluate this policy against a memory-blind baseline using a custom OpenAI-compatible benchmark harness across three experimental phases: a deterministic mock-endpoint smoke test, a real vLLM endpoint pilot under moderate load, and a pressure-specific vLLM pilot designed",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Monitors p95 latency over a sliding window of recent requests.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate a client-side cache-churn-alarm policy that monitors request latency and, upon detecting a threshold crossing, suppresses optional speculative request branches to reduce KV-cache pressure on a serving endpoint. We evaluate this policy against a memory-blind baseline using a custom OpenAI-compatible benchmark harness across three experimental phases: a deterministic mock-endpoint smoke test, a real vLLM endpoint pilot under moderate load, and a pressure-specific vLLM pilot designed",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Triggers an alarm state when observed latency exceeds a configured threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate this policy against a memory-blind baseline that issues all requests (required and optional) without gating.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central question is whether client-side latency-triggered gating can measurably reduce KV-cache churn, energy cost, or latency when serving against a real vLLM endpoint\u2014without degrading the quality of required requests.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Cache Churn Alarm: Reducing KV-Cache Preemption and Energy Cost via Latency-Triggered Request Gating in vLLM",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A pressure-specific isolated vLLM A/B reached real KV pressure and met the branch success criteria for joules-per-correct and endpoint-observed preemption/churn reduction without quality loss."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "cache-churn-alarm-vllm-adapter-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

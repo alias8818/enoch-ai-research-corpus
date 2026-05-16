@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We evaluate the feasibility of a \"scaffold-only revision\" mode: a constrained code repair pass that may edit imports, exported names, CLI adapters, wrappers, and other non-core glue, but must provably leave core algorithm text unchanged.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Enforcement relies on `# CORE_START` / `# CORE_END` sentinel markers and SHA-256 hash equality checks over the protected region.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, claim ledger, evidence bundle). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a synthetic benchmark of 36 fixtures spanning 6 tasks, scaffold-only repair recovered all 24 initially-failing scaffold-class fixtures (recovery rate 1.0) while preserving protected core text byte-for-byte across all 36 fixtures (protected-core-unchanged rate 1.0).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Six core-wrong negative-control fixtures remained failing after scaffold-only repair (false-repair count 0).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of sentinel-protected scaffold-only revision as a safety mechanism for repair scenarios where failures originate in integration glue rather than core algorithm logic.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Scaffold-only revision mode addresses this tension by constraining the repair pass to non-core \"scaffold\" regions: imports, exported names, CLI adapters, wrappers, and IO/API glue.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The core algorithm, delimited by `# CORE_START` and `# CORE_END` sentinel markers, is protected by a hash gate: any revision that changes the protected region's SHA-256 digest is rejected.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We seek to answer two questions: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "This paper reports on a feasibility evaluation of this mode using a synthetic benchmark harness. We seek to answer two questions:",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When failures are caused by scaffold defects and the core algorithm is correct, can scaffold-only repair recover test pass rates while preserving the protected core?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When failures are caused by core algorithm defects, does scaffold-only repair correctly refuse to produce a passing result (i.e., does it avoid false repairs)?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Enforcement is via SHA-256 hash comparison of the protected region before and after the revision pass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Scaffold-Only Revision Mode: Feasibility of Sentinel-Protected Constrained Repair on Synthetic Fixtures",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Core-wrong fixture*: a code artifact whose core algorithm contains an injected defect, used as a negative control.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate the feasibility of a \"scaffold-only revision\" mode: a constrained code repair pass that may edit imports, exported names, CLI adapters, wrappers, and other non-core glue, but must provably leave core algorithm text unchanged. Enforcement relies on `# CORE_START` / `# CORE_END` sentinel markers and SHA-256 hash equality checks over the protected region. In a synthetic benchmark of 36 fixtures spanning 6 tasks, scaffold-only repair recovered all 24 initially-failing scaffold-class fixt",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "scaffold-only-revision-mode",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

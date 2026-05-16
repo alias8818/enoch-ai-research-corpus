@@ -1,144 +1,36 @@
 {
-  "project_id": "source-record-redacted",
-  "project_name": "Prefix-Equivalence Targeted Normalizer Uplift",
-  "run_id": "source-record-redacted",
-  "paper_id": "source-record-redacted:source-record-redacted:arxiv_draft",
-  "generated_at": "2026-04-18T05:10:01.189-05:00",
-  "decision": {
-    "project_decision": "finalize_positive",
-    "hypothesis_status": "supported",
-    "confidence": "high",
-    "evidence_strength": "strong",
-    "novelty_progress": true,
-    "results_changed": true,
-    "recommended_next_action": "Finalize this branch as a successful targeted normalizer uplift benchmark with no immediate successor required.",
-    "stop_reason": "The branch kill condition passed: template F1 improved by 16.55 points while cache false-hit rate stayed at 0.000.",
-    "branch_project_name": null,
-    "branch_reason": null,
-    "decision_source": "codex_turn",
-    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-    "updated_at": "2026-04-17T13:38:49.277140+00:00"
-  },
-  "decision_action": "finalize_positive",
-  "hypothesis_status": "supported",
-  "evidence_strength": "strong",
-  "confidence": "high",
-  "recommended_next_action": "Finalize this branch as a successful targeted normalizer uplift benchmark with no immediate successor required.",
-  "run_notes_tail": [
-    "- `artifacts/results/parent_summary.md`",
-    "Code changes:",
-    "- `scripts/prefix_equiv_experiment.py` now preserves the parent `template_canonical` baseline and adds `template_targeted_uplift` via `TARGETED_SYNONYM_MAP` + `norm_template_targeted`.",
-    "- Targeted weak rules cover observed parent false-negative clusters: `make a tl dr for`, `distill`, `scan for`, `surface`, `assign`, `bucket`, `polish`, `wordsmith`, `use the source to answer`, and `give the answer for`.",
-    "- `tests/test_prefix_equiv_experiment.py` now asserts targeted aliases collapse as intended and checks the branch kill condition against the parent benchmark shape.",
-    "Benchmark command:",
-    "```bash",
-    "python3 scripts/prefix_equiv_experiment.py --examples 3000 --variants-per-cluster 6 --seed 3443677",
-    "```",
-    "Results written:",
-    "- `artifacts/data/prefix_equivalence_corpus.jsonl` (3,000 examples)",
-    "- `artifacts/results/prefix_equivalence_metrics.json`",
-    "- `artifacts/results/summary.md`",
-    "Key metrics on parent-shaped benchmark:",
-    "- Parent template canonicalizer: pair F1 0.791833, cache true-hit 0.908333, cache false-hit 0.000000, unique keys 275.",
-    "- Targeted uplift: pair F1 0.957332, cache true-hit 0.980000, cache false-hit 0.000000, unique keys 60.",
-    "- Delta: +0.165499 pair F1, +0.071667 cache true-hit, +0.000000 cache false-hit.",
-    "- Ranking: oracle_label > template_targeted_uplift > template_canonical > keyword_signature > exact > lower_punct.",
-    "Verification:",
-    "- `python3 -m unittest discover -s tests -v` passed 5/5 tests.",
-    "- `python3 -m json.tool artifacts/results/prefix_equivalence_metrics.json` validated metrics JSON.",
-    "- `wc -l artifacts/data/prefix_equivalence_corpus.jsonl` confirmed 3,000 rows.",
-    "Decision:",
-    "- Branch kill condition passed. The targeted normalizer uplift supports the hypothesis and this branch can finalize positive."
-  ],
-  "result_files": [
-    "artifacts/results/summary.md",
-    "artifacts/results/prefix_equivalence_metrics.json",
-    "artifacts/data/prefix_equivalence_corpus.jsonl",
-    "artifacts/results/parent_summary.md",
-    "artifacts/results/parent_prefix_equivalence_metrics.json",
-    "artifacts/data/parent_prefix_equivalence_corpus.jsonl"
-  ],
-  "recent_files": [
-    ".omx/metrics.json",
-    ".omx/project_decision.json",
-    "run_notes.md",
-    "tests/test_prefix_equiv_experiment.py",
-    "scripts/prefix_equiv_experiment.py",
-    ".omx/project.json",
-    "prompts/resume.md",
-    "prompts/initial.md"
-  ],
-  "status_json": {
-    "available": true,
-    "current_activity": "wake_ready",
-    "gate_state": "wake_ready",
-    "run_notes_tail": [
-      "- `artifacts/results/parent_summary.md`",
-      "Code changes:",
-      "- `scripts/prefix_equiv_experiment.py` now preserves the parent `template_canonical` baseline and adds `template_targeted_uplift` via `TARGETED_SYNONYM_MAP` + `norm_template_targeted`.",
-      "- Targeted weak rules cover observed parent false-negative clusters: `make a tl dr for`, `distill`, `scan for`, `surface`, `assign`, `bucket`, `polish`, `wordsmith`, `use the source to answer`, and `give the answer for`.",
-      "- `tests/test_prefix_equiv_experiment.py` now asserts targeted aliases collapse as intended and checks the branch kill condition against the parent benchmark shape.",
-      "Benchmark command:",
-      "```bash",
-      "python3 scripts/prefix_equiv_experiment.py --examples 3000 --variants-per-cluster 6 --seed 3443677",
-      "```",
-      "Results written:",
-      "- `artifacts/data/prefix_equivalence_corpus.jsonl` (3,000 examples)",
-      "- `artifacts/results/prefix_equivalence_metrics.json`",
-      "- `artifacts/results/summary.md`",
-      "Key metrics on parent-shaped benchmark:",
-      "- Parent template canonicalizer: pair F1 0.791833, cache true-hit 0.908333, cache false-hit 0.000000, unique keys 275.",
-      "- Targeted uplift: pair F1 0.957332, cache true-hit 0.980000, cache false-hit 0.000000, unique keys 60.",
-      "- Delta: +0.165499 pair F1, +0.071667 cache true-hit, +0.000000 cache false-hit.",
-      "- Ranking: oracle_label > template_targeted_uplift > template_canonical > keyword_signature > exact > lower_punct.",
-      "Verification:",
-      "- `python3 -m unittest discover -s tests -v` passed 5/5 tests.",
-      "- `python3 -m json.tool artifacts/results/prefix_equivalence_metrics.json` validated metrics JSON.",
-      "- `wc -l artifacts/data/prefix_equivalence_corpus.jsonl` confirmed 3,000 rows.",
-      "Decision:",
-      "- Branch kill condition passed. The targeted normalizer uplift supports the hypothesis and this branch can finalize positive."
-    ],
-    "recent_files": [
-      ".omx/metrics.json",
-      ".omx/project_decision.json",
-      "run_notes.md",
-      "tests/test_prefix_equiv_experiment.py",
-      "scripts/prefix_equiv_experiment.py",
-      ".omx/project.json",
-      "prompts/resume.md",
-      "prompts/initial.md"
-    ],
-    "result_files": [
-      "artifacts/results/summary.md",
-      "artifacts/results/prefix_equivalence_metrics.json",
-      "artifacts/data/prefix_equivalence_corpus.jsonl",
-      "artifacts/results/parent_summary.md",
-      "artifacts/results/parent_prefix_equivalence_metrics.json",
-      "artifacts/data/parent_prefix_equivalence_corpus.jsonl"
-    ],
-    "active_processes": [],
-    "latest_session": {
-      "session_id": "omx-1776432942559-j76ulp",
-      "started_at": "2026-04-17T13:35:42.585Z",
-      "ended_at": "2026-04-17T13:39:18.231Z",
-      "cwd": "[redacted-source-project-root]",
-      "pid": 161912
+  "file_inventory": [
+    {
+      "bytes": 344,
+      "path": "paper_manifest.json",
+      "sha256": "8f6ed9ca2480e5eff68a2fd468a926c754b69f87a709df22767d439347cb26c3"
     },
-    "project_decision": {
-      "project_decision": "finalize_positive",
-      "hypothesis_status": "supported",
-      "confidence": "high",
-      "evidence_strength": "strong",
-      "novelty_progress": true,
-      "results_changed": true,
-      "recommended_next_action": "Finalize this branch as a successful targeted normalizer uplift benchmark with no immediate successor required.",
-      "stop_reason": "The branch kill condition passed: template F1 improved by 16.55 points while cache false-hit rate stayed at 0.000.",
-      "branch_project_name": null,
-      "branch_reason": null,
-      "decision_source": "codex_turn",
-      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-      "updated_at": "2026-04-17T13:38:49.277140+00:00"
+    {
+      "bytes": 482,
+      "path": "metadata.json",
+      "sha256": "1da22db9cd736cfc7825cf37a1a4dc2ec640e7f3f4f3f35065e9ca04c7e60390"
     },
-    "decision_error": ""
-  }
+    {
+      "bytes": 10979,
+      "path": "evidence/public_paper.md",
+      "sha256": "c1e737477141ee50838983c46445cbcc36ec795e22f96e0f508804699e6ba6ad"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "prefix-equivalence-targeted-normalizer-uplift",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

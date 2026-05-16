@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Evidence-First Answerability Cutoff Integration Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/llama_server_18082_repair_persistent.log",
-        "results/production_qwen_endpoint_summary.json",
-        "results/llama_server_metrics_after_full.prom",
-        "results/meminfo_after_qwen_full.txt",
-        "results/llama_server_process_after_full.txt",
-        "results/production_qwen_endpoint_full_time.txt",
-        "results/production_qwen_endpoint_full_144cases_budget180_paired_deltas.csv",
-        "results/production_qwen_endpoint_full_144cases_budget180_summary.csv"
+      "claim": "We investigate an ordering-only integration strategy for retrieval-augmented generation (RAG) prompt construction, termed *evidence-first answerability cutoff*, which reorders retrieved chunks so that evidence-bearing passages precede metadata and context-only passages within a fixed token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-First Answerability Cutoff Integration Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Promote the evidence-first ordering-only cutoff into the parent production path with the 144-case Qwen benchmark and two regressed QA cases retained as regression fixtures.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Compared against a top-k filling baseline on a 144-case production-style benchmark spanning QA, summarization, and extraction tasks, the evidence-first packer achieves approximately 69.8% prompt-token savings and 14.4% mean latency reduction while preserving aggregate task quality (QA F1 0.8741 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-First Answerability Cutoff Integration Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "0.8722, summary faithfulness 1.000 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate an ordering-only integration strategy for retrieval-augmented generation (RAG) prompt construction, termed *evidence-first answerability cutoff*, which reorders retrieved chunks so that evidence-bearing passages precede metadata and context-only passages within a fixed token budget. Compared against a top-k filling baseline on a 144-case production-style benchmark spanning QA, summarization, and extraction tasks, the evidence-first packer achieves approximately 69.8% prompt-token ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "1.000, extraction slot F1 1.000 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate an ordering-only integration strategy for retrieval-augmented generation (RAG) prompt construction, termed *evidence-first answerability cutoff*, which reorders retrieved chunks so that evidence-bearing passages precede metadata and context-only passages within a fixed token budget. Compared against a top-k filling baseline on a 144-case production-style benchmark spanning QA, summarization, and extraction tasks, the evidence-first packer achieves approximately 69.8% prompt-token ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "1.000) under a Qwen2.5-7B-Instruct endpoint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate an ordering-only integration strategy for retrieval-augmented generation (RAG) prompt construction, termed *evidence-first answerability cutoff*, which reorders retrieved chunks so that evidence-bearing passages precede metadata and context-only passages within a fixed token budget. Compared against a top-k filling baseline on a 144-case production-style benchmark spanning QA, summarization, and extraction tasks, the evidence-first packer achieves approximately 69.8% prompt-token ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two of 144 individual QA cases show quality regression exceeding 0.05 F1, indicating localized risk.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate an ordering-only integration strategy for retrieval-augmented generation (RAG) prompt construction, termed *evidence-first answerability cutoff*, which reorders retrieved chunks so that evidence-bearing passages precede metadata and context-only passages within a fixed token budget. Compared against a top-k filling baseline on a 144-case production-style benchmark spanning QA, summarization, and extraction tasks, the evidence-first packer achieves approximately 69.8% prompt-token ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Deterministic extractive scoring over 1,296 rows confirms that the reordering preserves all evidence required for downstream answers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In retrieval-augmented generation systems, the prompt construction strategy\u2014how retrieved passages are selected, ordered, and truncated to fit a token budget\u2014directly affects both generation quality and inference cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A common baseline, *top-k filling*, includes the k highest-scoring chunks in retrieval rank order until the budget is exhausted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This can allocate substantial budget to metadata-rich or context-only passages that carry little answer-bearing content, displacing evidence that downstream models need.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark outputs). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The *answerability cutoff* mechanism addresses this by classifying chunks as required, evidence, or context, then applying a budget-aware selection.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-First Answerability Cutoff Integration Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The evidence-first variant investigated here is an ordering-only integration: it uses the same selected chunks as the standard answerability cutoff but presents required and evidence chunks before metadata and context chunks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Evidence-First Answerability Cutoff Integration Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The branch objective is complete: integration, deterministic tests, endpoint readiness repair, calibration, and full 144-case Qwen benchmark all support the mechanism against the kill thresholds."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "evidence-first-answerability-cutoff-integration-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

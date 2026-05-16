@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "In a controlled exact-rejection-sampling simulator with paired Markov target/draft language models (32 seeds, 10,000 tokens per seed), BFI imputed acceptance mass with MAE 0.026 and R\u00b2 0.888, closely matching an oracle controller with access to true acceptance mass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "BFI increased accepted draft tokens per verifier call by 16.2% over a fixed K=4 baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, under a default hardware cost proxy (draft token cost 0.075, verify-per-token cost 0.035 target-call units), tokens-per-cost improved by only 2.0%, falling below a predeclared 5% positive threshold, while wasted draft tokens per accepted token increased by 49.9%.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A 48-point cost-sensitivity grid showed that BFI achieves \u22655% cost improvement in only 16 of 48 settings, requiring combined draft and per-token verification costs \u22640.075 target-call units.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is conditionally viable: BFI successfully imputes bonus features and improves acceptance rates, but whether this translates to wall-clock speedup depends on hardware-specific marginal costs that this simulation-only study does not measure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding reduces inference latency by having a small draft model propose a sequence of tokens that a larger target model verifies in parallel.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This acceptance mass, however, is a verifier-side quantity: it is observed only after the target model has verified the draft sequence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work on DFlash-adjacent speculative decoding has demonstrated that verifier-side acceptance signals can strongly predict speculative acceptance, but also that naively exploiting these signals can increase wasted draft FLOPs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We compare BFI against a fixed block-size baseline, a draft-entropy heuristic, and an oracle controller with access to true acceptance mass.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We predeclare a positive result threshold of \u22655% improvement in tokens-per-cost and \u226535% oracle-gap closure.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice:** This draft was generated entirely by an AI system from automated research artifacts (simulation logs, decision records, and metrics files). The operator who released the artifact claims no personal authorship credit for the writing or scientific results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "BFI successfully imputes the bonus feature and matches oracle performance in acceptance rate, but the default cost model yields only a marginal efficiency gain because longer blocks increase wasted draft computation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Four policies control the block size K per verification call: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# BFI-DFlash: Bonus Feature Imputation for Adaptive Speculative Decoding Block-Size Control",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260504T180350506127+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "bfi-dflash-bonus-feature-imputation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

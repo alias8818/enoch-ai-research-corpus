@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T200718556841+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "8a7066771ff0d89740639b62bfb8fc450f00474007c7ea8f20c71c9ca0cded84"
+    },
+    {
+      "bytes": 465,
+      "path": "metadata.json",
+      "sha256": "e7d69e20c56613a600a81c014543f5f2f2303d12851ed4c82f386e7f5fbcefd7"
+    },
+    {
+      "bytes": 16053,
+      "path": "evidence/public_paper.md",
+      "sha256": "df4094fc3b1c5a8b0718e0f9ae84f6d89a6bee8d0f0ce8b731d8077943f0e274"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "data-center-airflow-toy-twin",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

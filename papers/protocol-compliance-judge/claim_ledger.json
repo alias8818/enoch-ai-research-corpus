@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "On a 10-episode labelled synthetic fixture set, the judge achieves gold accuracy of 1.000 with zero mismatches across all three verdict categories.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Protocol Compliance Judge: A Deterministic Preflight Gate for Machine-Checkable Protocol Clauses",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a broader artifact-audit sweep of 110 episodes, the system processes approximately 153,261 episodes per second with a mean compliance score of 0.985, surfacing one project with missing required artifacts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Protocol Compliance Judge: A Deterministic Preflight Gate for Machine-Checkable Protocol Clauses",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of the approach as a bounded deterministic preflight gate for expressible protocol clauses.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Protocol Compliance Judge: A Deterministic Preflight Gate for Machine-Checkable Protocol Clauses",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "No private Notion page content was available for testing page-specific protocol requirements, and no baseline comparison was conducted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Protocol Compliance Judge: A Deterministic Preflight Gate for Machine-Checkable Protocol Clauses",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The perfect accuracy on the gold fixture is expected given the self-consistent design-evaluation pipeline and should not be overinterpreted.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was AI-generated from automated research artifacts produced by an autonomous system (writer model: `hf:zai-org/GLM-5.1` via `synthetic.new`, response ID `source-record-redacted`). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Learned or LLM-based judges can handle paraphrased or implicit requirements but introduce nondeterminism, latency, and cost.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Protocol Compliance Judge, a dependency-free deterministic system for evaluating protocol compliance of transcripts and artifact maps against machine-checkable predicate clauses. The system classifies episodes into three verdicts\u2014*compliant*, *needs_review*, and *non_compliant*\u2014using text-, order-, and artifact-presence predicates rather than learned semantic inference. On a 10-episode labelled synthetic fixture set, the judge achieves gold accuracy of 1.000 with zero mismatches acros",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A 10-episode labelled fixture set covering compliant, needs-review, and non-compliant cases.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Protocol Compliance Judge, a dependency-free deterministic system for evaluating protocol compliance of transcripts and artifact maps against machine-checkable predicate clauses. The system classifies episodes into three verdicts\u2014*compliant*, *needs_review*, and *non_compliant*\u2014using text-, order-, and artifact-presence predicates rather than learned semantic inference. On a 10-episode labelled synthetic fixture set, the judge achieves gold accuracy of 1.000 with zero mismatches acros",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Empirical characterization of accuracy on gold fixtures and throughput on both fixture and artifact-audit workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present Protocol Compliance Judge, a dependency-free deterministic system for evaluating protocol compliance of transcripts and artifact maps against machine-checkable predicate clauses. The system classifies episodes into three verdicts\u2014*compliant*, *needs_review*, and *non_compliant*\u2014using text-, order-, and artifact-presence predicates rather than learned semantic inference. On a 10-episode labelled synthetic fixture set, the judge achieves gold accuracy of 1.000 with zero mismatches acros",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This is evidenced by `logs/notion_title_extract_20260502T181139.log`, which recorded `contains_project_title=False` and `contains_access_notice=True` with the extracted title being the generic string `Notion`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was AI-generated from automated research artifacts produced by an autonomous system (writer model: `hf:zai-org/GLM-5.1` via `synthetic.new`, response ID `source-record-redacted`). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The judge (`scripts/protocol_compliance_judge.py`) is a dependency-free, deterministic Python script that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Protocol Compliance Judge: A Deterministic Preflight Gate for Machine-Checkable Protocol Clauses",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Outputs structured JSON results including verdict counts, mismatches against gold labels, and throughput metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was AI-generated from automated research artifacts produced by an autonomous system (writer model: `hf:zai-org/GLM-5.1` via `synthetic.new`, response ID `source-record-redacted`). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A fixture set of 10 labelled episodes (`fixtures/protocol_episodes.jsonl`) was constructed to cover: - 4 compliant episodes satisfying all evaluated predicates.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI provenance notice.** This draft was AI-generated from automated research artifacts produced by an autonomous system (writer model: `hf:zai-org/GLM-5.1` via `synthetic.new`, response ID `source-record-redacted`). The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "protocol-compliance-judge",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

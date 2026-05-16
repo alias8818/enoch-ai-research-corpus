@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "MASSV demonstrates that adapting a small language model into a multimodal drafter\u2014via a frozen target vision encoder, a lightweight projector, and self-distilled visual instruction tuning\u2014yields up to 1.46\u00d7 end-to-end speedup on visually grounded tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the proxy, a Beagle-style cross-attention drafter (draft text state as Q, frozen visual hidden states as K/V) consistently outperforms both text-only and pooled-projector baselines on top-1 acceptance rate and total variation distance (TVD) across patch counts from 8 to 128.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These proxy results support the architectural plausibility of the combination but do not constitute evidence of real VLM inference speedup.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "MASSV (arXiv:2505.10526v2) addresses the multimodal drafting problem by adapting a small language model (SLM) into a multimodal drafter.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "MASSV reports up to 30% higher mean accepted length and up to 1.46\u00d7 end-to-end speedup on visually grounded tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Beagle, or Budget EAGLE (arXiv:2505.24544v4), addresses a different problem in speculative decoding architecture: the tight coupling and auxiliary components (pooling, fusion layers) required by self-attention-based drafters like EAGLE.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Beagle replaces these with a cross-attention-based Transformer decoder, where draft-token/text state serves as queries and target-model hidden states serve as keys and values.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The findings reported here are proxy-level evidence only.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance / No-Human-Credit Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and metric files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A combined MASSV+Beagle drafter would operate as follows: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A Beagle-style draft decoder conditions on these visual hidden states via cross-attention: the draft decoder's current text/token hidden state serves as queries (Q), while the frozen visual hidden states serve as keys (K) and values (V).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The expected benefit is that cross-attention over the full visual token sequence preserves more spatial and semantic information than a pooled/projected summary, while eliminating the auxiliary pooling and fusion components that Beagle identifies as sources of architectural complexity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The proxy models the following synthetic setup: - **Target distribution:** Next-token logits depend on text features plus a query-selected visual patch/token.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# MASSV + Beagle Cross-Attention: A Synthetic Proxy Study of Cross-Attention Visual Conditioning for Multimodal Speculative Decoding Drafters",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T020410374116+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "massv-beagle-cross-attention",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

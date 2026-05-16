@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T015348505896+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "55f9f9548a5d5ea696bb2abebaf7669e359473857b7437116eab45ae24bfec30"
+    },
+    {
+      "bytes": 474,
+      "path": "metadata.json",
+      "sha256": "0a4aaedd5771b7e26a20f25d0b5366d34f5afe567d34822451e7a38fe4c50599"
+    },
+    {
+      "bytes": 15152,
+      "path": "evidence/public_paper.md",
+      "sha256": "8e3c590dba23d7b1f68991306a13aedb65f0756998febe8dff825a80f4ad4a2d"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "cache-quantization-awareness-training",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

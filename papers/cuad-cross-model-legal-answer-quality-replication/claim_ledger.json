@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "CUAD Cross-Model Legal Answer Quality Replication produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json",
-        "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv",
-        "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json",
-        "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv",
-        "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json",
-        "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv",
-        "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json",
-        "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv"
+      "claim": "The parent project demonstrated that adaptive indexed packing\u2014constructing prompts with indexed clause headers and budget-constrained segment selection\u2014improved downstream LLM answer quality over vanilla flat-prompt construction when using Qwen2.5-7B-Instruct with forced-gold retrieval.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as positive/mixed: cross-model answer-quality transfer reproduced with Phi-4-mini, while pure BM25 retrieval is retrieval-starved and should only be revisited with a concrete retrieval-targeted benchmark.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "This replication substitutes Phi-4-mini-instruct (3.84B parameters, Q4_K_M quantization) as the answerer model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under forced-gold retrieval isolation (n=30), indexed packing yielded +12.26 F1 points and +35.0 answer-span-retention points over vanilla packing at identical budgets, clearing the pre-registered cross-model threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Under pure BM25 retrieval, results were mixed: top-3 retrieval found 0/30 gold contracts and the F1 delta was +1.85 (below threshold), while top-10 retrieval found 4/30 gold contracts and the F1 delta was +5.04 (above threshold) but with zero substring hits in both conditions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence is medium; evidence strength is strong within the tested setting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts (run notes, evidence bundles, claim ledgers, and benchmark outputs) produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The parent project (Qwen2.5-7B-Instruct, n=100, forced-gold retrieval) demonstrated that indexed packing improves downstream answer quality.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This replication study addresses that question by substituting a materially different local answerer\u2014Phi-4-mini-instruct\u2014while holding the packing logic, dataset, and evaluation pipeline constant.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This study additionally tests pure BM25 retrieval at top-3 and top-10 to characterize where retrieval recall, rather than prompt construction, becomes the binding constraint.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The packing method (implemented in `src/evidence_quilt.py`) constructs two prompt variants for each question\u2013contract pair: - **Vanilla packing**: Concatenates retrieved contract segments in retrieval rank order, truncated to the token budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Indexed packing**: Prepends indexed clause headers (e.g., \"Section 3.1: Termination\") to each segment and selects segments to maximize coverage under the same token budget, using the adaptive indexed-packing algorithm.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Both variants operate under identical token budgets (512 and 1024 tokens) and receive the same retrieved segments as input.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# CUAD Cross-Model Legal Answer Quality Replication: Adaptive Indexed Packing Under Varying Retrieval Conditions",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The benchmark harness (`scripts/run_cuad_llm_answer_quality_benchmark.py`) was acquired from the parent project and verified via unit tests (`tests/test_evidence_quilt.py`, 4 tests passed) and compilation checks prior to execution.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by AI from automated research artifacts (run notes, evidence bundles, claim ledgers, and benchmark outputs) produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A second local long-context answerer cleared the branch F1 threshold under forced-gold retrieval (+12.26 F1 points), and additional pure-BM25 runs showed the remaining bottleneck is retrieval recall rather than prompt packing alone."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "cuad-cross-model-legal-answer-quality-replication",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

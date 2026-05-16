@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T050448963993+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "7ce3562eff7906017590088e75b75aaa106253a7d62ad8b33d499e93c2c75200"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "27ba789eabd336e4471a775a838f1ffccfff7c4c6a8a530904385028d98af883"
+    },
+    {
+      "bytes": 13500,
+      "path": "evidence/public_paper.md",
+      "sha256": "03d82739c5e37f655af6087099c7ed99ac4dc72d4af3fa7e5c96e2e8e6d44bc0"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "energy-aware-small-model-distill",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

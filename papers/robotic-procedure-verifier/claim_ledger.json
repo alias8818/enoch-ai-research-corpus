@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "The verifier validates step ordering, symbolic preconditions and effects, deadline compliance, required confirmations, final obligations, and telemetry bounds for collision margins, contact forces, speed limits, and forbidden zones.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a prototype evaluation on synthetic traces, the verifier correctly accepted a compliant trace (zero violations) and rejected a deliberately non-compliant trace (12 distinct violation codes spanning all implemented check categories).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A throughput calibration on 10,000 repeated verifications of a 10-item trace yielded a mean latency of 0.0116 ms per run (p95: 0.0117 ms) and a mean throughput of 864,223 trace items per second on a development-grade aarch64 host.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The prototype remains a hook-prototype result requiring integration evidence before deployment claims can be supported.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision records, benchmark logs, and prototype source). The operator who released this artifact claims no personal authorship credit for the writing or the results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When these assumptions break silently\u2014due to sensor drift, unexpected obstacles, or unmodeled interactions\u2014plans can fail without explicit notification.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We present a lightweight, dependency-free robotic procedure verifier that checks recorded execution traces against declarative procedure specifications combining symbolic task constraints and quantitative safety thresholds. The verifier validates step ordering, symbolic preconditions and effects, deadline compliance, required confirmations, final obligations, and telemetry bounds for collision margins, contact forces, speed limits, and forbidden zones. In a prototype evaluation on synthetic trac",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Structured requirement languages (e.g., FRET) have been translated into temporal logic and used to generate ROS2 monitoring nodes automatically.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Practical safety monitoring in production robotics stacks\u2014exemplified by the Nav2 Collision Monitor\u2014independently filters velocity commands using quantitative collision, speed, and zone checks with reported frame processing times.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Behavior-tree frameworks (BehaviorTree.CPP) are positioned as production-ready robot behavior infrastructure with XML-defined trees, logging, ROS2 integration, and real-time monitoring support.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This raises the question: can a minimal, dependency-free verifier simultaneously check both symbolic procedure compliance and quantitative safety constraints on execution traces, at sufficient speed for near-real-time use?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Safety thresholds**: numeric bounds for obstacle distance, contact force, speed, and forbidden zone definitions.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Telemetry**: timestamped sensor readings for obstacle distance, contact force, speed, and position.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The verifier performs the following checks in sequence: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Robotic Procedure Verifier: A Lightweight Runtime Checker for Symbolic and Safety Constraints on Robotic Execution Traces",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "robotic-procedure-verifier",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

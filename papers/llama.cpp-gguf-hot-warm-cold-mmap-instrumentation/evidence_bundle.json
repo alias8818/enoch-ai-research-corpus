@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T160041613105+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "028c92712d03bc7b9cc5b14b275d4ceaf3cf8b42ae9d1f9e7db4843ea7dfce56"
+    },
+    {
+      "bytes": 486,
+      "path": "metadata.json",
+      "sha256": "3837a24fb4215d19c2097ea5846804e3b7b2d6d74c48b1116a7c3ebc8695501c"
+    },
+    {
+      "bytes": 16430,
+      "path": "evidence/public_paper.md",
+      "sha256": "238a7c27a175e5b965fde4351aa3e0f48b62db6eb0f41b14c539cc4a85137e7a"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "llama.cpp-gguf-hot-warm-cold-mmap-instrumentation",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Using a synthetic NumPy classification benchmark with a 4-expert soft MoE, we sweep single-stage upcycle fractions $f \\in \\{0, 0.1, 0.25, 0.4, 0.5, 0.65, 0.75, 0.9, 1\\}$ and three multi-stage schedules across 5 random seeds per condition.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycle Timing Sweep Law: Scheduling Expert Expansion in Mixture-of-Experts Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We find a smooth, monotonic relationship: delaying upcycle increases validation loss relative to immediate expansion ($\\Delta = +0.005$ nats at $f{=}0.25$, $+0.010$ nats at $f{=}0.50$, $+0.016$ nats at $f{=}1.0$), reduces expert diversity, and yields predictable compute savings.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycle Timing Sweep Law: Scheduling Expert Expansion in Mixture-of-Experts Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A quadratic fit explains 98.8% of variance in the loss-timing curve.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark outputs, decision records, and claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Multi-stage schedules (dense \u2192 2-expert \u2192 4-expert) are Pareto-competitive with single-stage schedules.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the transition point at which a dense model is upcycled into a Mixture-of-Experts (MoE) architecture can be treated as an operational schedule variable, and whether a simple timing law relates the pre-upcycle training fraction to final validation loss, expert diversity, and compute savings. Using a synthetic NumPy classification benchmark with a 4-expert soft MoE, we sweep single-stage upcycle fractions $f \\in \\{0, 0.1, 0.25, 0.4, 0.5, 0.65, 0.75, 0.9, 1\\}$ and three multi",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are scoped to a synthetic proxy; validation on real transformer MoE training runs at production token budgets remains necessary.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark outputs, decision records, and claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If the upcycle timing point is treated as a free variable, three quantities trade off: (1) final validation loss, (2) expert diversity (the degree to which experts specialize), and (3) compute cost relative to training a full MoE from scratch.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycle Timing Sweep Law: Scheduling Expert Expansion in Mixture-of-Experts Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This paper asks: **does upcycle timing produce a measurable, schedulable curve relating the pre-upcycle token fraction to loss, diversity, and compute savings?** If such a curve exists and is smooth, practitioners could select an upcycle timing point by specifying a loss budget, converting an architectural decision into a scheduling decision.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycle Timing Sweep Law: Scheduling Expert Expansion in Mixture-of-Experts Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We approach this question with a controlled synthetic benchmark, acknowledging upfront that this is a proxy rather than a production-scale result.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, benchmark outputs, decision records, and claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Because no training code or pretrained model was available in the project environment, we constructed a runnable toy benchmark in NumPy with the following components: **Teacher.** A synthetic mixture-of-experts classification task with 4 latent regimes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Upcycle Timing Sweep Law: Scheduling Expert Expansion in Mixture-of-Experts Models",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Student architectures.** - *Dense:* A 1-hidden-layer fully connected network.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the transition point at which a dense model is upcycled into a Mixture-of-Experts (MoE) architecture can be treated as an operational schedule variable, and whether a simple timing law relates the pre-upcycle training fraction to final validation loss, expert diversity, and compute savings. Using a synthetic NumPy classification benchmark with a 4-expert soft MoE, we sweep single-stage upcycle fractions $f \\in \\{0, 0.1, 0.25, 0.4, 0.5, 0.65, 0.75, 0.9, 1\\}$ and three multi",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Soft MoE (4 experts):* A 4-expert soft MoE where all experts are computed on every forward pass (no top-$k$ routing), with a learned gating function.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the transition point at which a dense model is upcycled into a Mixture-of-Experts (MoE) architecture can be treated as an operational schedule variable, and whether a simple timing law relates the pre-upcycle training fraction to final validation loss, expert diversity, and compute savings. Using a synthetic NumPy classification benchmark with a 4-expert soft MoE, we sweep single-stage upcycle fractions $f \\in \\{0, 0.1, 0.25, 0.4, 0.5, 0.65, 0.75, 0.9, 1\\}$ and three multi",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Soft MoE (2 experts):* An intermediate 2-expert variant used in multi-stage schedules.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the transition point at which a dense model is upcycled into a Mixture-of-Experts (MoE) architecture can be treated as an operational schedule variable, and whether a simple timing law relates the pre-upcycle training fraction to final validation loss, expert diversity, and compute savings. Using a synthetic NumPy classification benchmark with a 4-expert soft MoE, we sweep single-stage upcycle fractions $f \\in \\{0, 0.1, 0.25, 0.4, 0.5, 0.65, 0.75, 0.9, 1\\}$ and three multi",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "upcycle-timing-sweep-law",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

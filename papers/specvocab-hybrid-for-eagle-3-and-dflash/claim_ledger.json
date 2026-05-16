@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "In state-of-the-art drafters such as EAGLE-3 and DFlash, the output embedding (LM-head) projection dominates draft latency when vocabulary sizes are large (e.g., $V = 151{,}936$ for Qwen3-8B).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work investigates whether SpecVocab-style dynamic vocabulary selection\u2014computing approximate logits in a reduced dimension, selecting a top-$k$ candidate subset, and computing exact logits only for those rows\u2014can reduce draft-head cost when integrated into EAGLE-3 and DFlash.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For Qwen3-8B-scale parameters ($V = 151{,}936$, $d = 4096$, $d' = 256$, $k = 2048$), the hybrid reduces draft-head multiply-accumulate operations by a factor of 13.16\u00d7 and emitted logit elements by 74.19\u00d7.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, a naive CPU/NumPy implementation of the indexed-head path showed no wall-clock speedup (observed ratio 0.90\u20130.97\u00d7), confirming that the theoretical MAC reduction is erased by Python-level gather and top-$k$ overhead without a fused GPU kernel.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is a conditional feasibility finding: the approach is attractive in cost-model terms, but scientific closure requires a trained vocabulary ranker and a fused CUDA/Triton indexed-head kernel, neither of which yet exists in this work.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Speculative decoding improves autoregressive inference throughput by generating draft tokens with a lower-cost model and verifying them in parallel against the target model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two recent families of drafters have advanced the state of the art: - **EAGLE-3** uses an autoregressive feature-level draft model that reuses target-model hidden states and emits tokens via a fixed draft vocabulary, mapped to the target vocabulary through index buffers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "DFlash** employs a diffusion-style block-parallel draft model that produces an entire block of draft tokens in a single non-causal pass, then verifies the block against the target.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For models with large vocabularies (e.g., Qwen3-8B with $V = 151{,}936$), this single linear layer dominates draft computation time.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work asks: can SpecVocab-style dynamic vocabulary selection be integrated into EAGLE-3 and DFlash, and does the resulting cost reduction translate into practical throughput gains?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The answer is conditionally positive: the arithmetic savings are substantial, but realizing them requires infrastructure (fused GPU kernels, trained rankers) not yet available in this study.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, and prototype metrics). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The SpecVocab hybrid replaces this with two stages: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# SpecVocab Hybrid Draft-Head Reduction for EAGLE-3 and DFlash: Feasibility and Limitations",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "specvocab-hybrid-for-eagle-3-and-dflash",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

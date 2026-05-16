@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T100318556077+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "5768d7059a3538af26cdb6acf0e2a4211246bfdca92a7312c09cdee9d983243b"
+    },
+    {
+      "bytes": 463,
+      "path": "metadata.json",
+      "sha256": "f48ec4c856adf281907c7d6893c32f77efca2206d426aeba9854ed5c2ec8c720"
+    },
+    {
+      "bytes": 16287,
+      "path": "evidence/public_paper.md",
+      "sha256": "621effaa435a4ed3744bf22778233d53ee6a8c3853071d06488800c0f0c6cc32"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "lost-middle-rescue-student",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

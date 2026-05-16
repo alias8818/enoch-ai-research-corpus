@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260502T210718532579+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "894ef9222a229d44b6fd03609ae7b1053cb7f2ae176d889633d4aa9011f13f6a"
+    },
+    {
+      "bytes": 469,
+      "path": "metadata.json",
+      "sha256": "4a3c3d9c640a54665df1ef558f4c0cb22730fd91b33814846bad85f5ce8e2fd4"
+    },
+    {
+      "bytes": 16530,
+      "path": "evidence/public_paper.md",
+      "sha256": "d00f390614c4de6d3671c58991a10a9791dfbcab12c562ab56fb983d0ad79eb1"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "elastic-expert-budget-during-cpt",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

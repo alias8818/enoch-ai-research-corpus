@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T152818507281+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "b64cd1685510c3f7236c6e5db197f1f70f63f7d2d9a704fb94b20a5ebe1d4df9"
+    },
+    {
+      "bytes": 475,
+      "path": "metadata.json",
+      "sha256": "89163fb87ef1a444098fd069559b7b4339e94e1f42c085ef466a8ef136805aa6"
+    },
+    {
+      "bytes": 17008,
+      "path": "evidence/public_paper.md",
+      "sha256": "66a72d184117b522c31d6fe6e9d8c2fd200e17d906d7cd56aa7c0c59daaa1433"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "reasoning-aware-quant-router-policy-v2",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

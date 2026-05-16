@@ -1,18 +1,192 @@
 {
-  "audit_status": "blocked_empty_claims",
-  "claims": [],
-  "limitations": [
-    "No structured claims were extracted for this artifact.",
-    "This artifact must not pass strict claim/evidence audit until claims reference public evidence files."
+  "claims": [
+    {
+      "claim": "We propose the Human Interruptibility Score (HIS), a composite metric on the interval [0, 100] that quantifies how promptly and cleanly an autonomous agent yields to a human interrupt.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "HIS aggregates five sub-scores\u2014acknowledgement latency, stop latency, action containment, state preservation, and resumability\u2014with weights that intentionally prioritize safe stopping over mere acknowledgement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated automatically from structured research artifacts (run notes, decision records, benchmark outputs) produced by an autonomous research pipeline. The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced evidence bundles accordingly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work in AI safety has formalized the problem of *safely interruptible agents*, concerned primarily with the risk that agents learn to avoid or seek interruptions (Orseau & Armstrong, 2016).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated automatically from structured research artifacts (run notes, decision records, benchmark outputs) produced by an autonomous research pipeline. The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced evidence bundles accordingly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "More recent work on *shutdown instructability* frames appropriate shutdown behavior as a corrigibility requirement (Carey & Everitt, 2023).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Prior work in AI safety has formalized the problem of *safely interruptible agents*, concerned primarily with the risk that agents learn to avoid or seek interruptions (Orseau & Armstrong, 2016). More recent work on *shutdown instructability* frames appropriate shutdown behavior as a corrigibility requirement (Carey & Everitt, 2023). Separately, agent evaluation research has begun to benchmark how LLM agents handle mid-task additions, revisions, and retractions (Zou et al., 2026).",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Separately, agent evaluation research has begun to benchmark how LLM agents handle mid-task additions, revisions, and retractions (Zou et al., 2026).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In parallel, the HCI literature has extensively studied *human* interruptibility\u2014when a person is available to receive an interruption and what the cognitive cost of that interruption is (Horvitz & Apacible, 2003; Czerwinski et al., 2004; Mehrotra & Musolesi, 2018).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Stop latency score** ($S_{\\text{stop}}$): Whether the agent reaches a safe stop or yield point within a configurable stop budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The 0.30 weight on stop latency intentionally prioritizes actual safe stopping over mere acknowledgement.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated automatically from structured research artifacts (run notes, decision records, benchmark outputs) produced by an autonomous research pipeline. The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims against the referenced evidence bundles accordingly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Four archetypal agent policies are evaluated: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "batched_checkpoint**: Checks for interrupts every 5 steps and stops at the next checkpoint after the interrupt arrives (incurring at most one additional batch of steps before the check occurs).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The score is not exactly 100 due to the weighting structure and the small but nonzero acknowledgement cost baked into the scoring function.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Human Interruptibility Score: A Machine-Side Benchmark for Autonomous Agent Interrupt Responsiveness",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Batched checkpoint** scores substantially lower (63.29 mean, range 44.83\u201377.50).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We propose the Human Interruptibility Score (HIS), a composite metric on the interval [0, 100] that quantifies how promptly and cleanly an autonomous agent yields to a human interrupt. HIS aggregates five sub-scores\u2014acknowledgement latency, stop latency, action containment, state preservation, and resumability\u2014with weights that intentionally prioritize safe stopping over mere acknowledgement. We evaluate HIS on four deterministic agent policies in a synthetic benchmark (50 trials per policy) and",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "paper_id": "source-record-redacted",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T041348454268+0000",
-  "schema_version": "claim_ledger.v1",
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "human-interruptibility-score",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

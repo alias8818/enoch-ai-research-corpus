@@ -1,42 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Verification Failure Clusters produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/real_log_stdout.json",
-        "results/real_log_cluster_report.csv",
-        "results/real_log_summary.json",
-        "results/cluster_report.csv",
-        "results/run_stdout.json",
-        "results/summary.json"
+      "claim": "Standard evaluation of verifier-guarded systems reports aggregate accuracy, which can obscure structurally coherent failure modes that affect specific subpopulations.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Package the synthetic and real-log harnesses as a reusable cluster-balanced evaluator and apply them to the next real verifier-log dataset with broader task domains.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In a synthetic pilot with 3,000 weakly labeled examples across four domains and three guard systems, cluster-balanced evaluation reversed the top-ranked system (aggregate winner: `balanced_guard`; cluster-balanced winner: `reasoning_guard`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A simulated targeted fix on the dominant failure cluster (`syntax_guard` on `long_range_dependency`) yielded a 5.2-point cluster-balanced uplift.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In a real-log validation with 1,000 examples, 18 systems, and 18,000 prediction rows from existing verifier and model-output logs, cluster balancing again shifted at least one pairwise ranking: `tail_512` rose above `boundary_probe_2048_lookahead256` despite lower aggregate accuracy (0.600 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "0.700), because `tail_512` was perfect on near/mid/long-range dependency clusters while `boundary_probe_2048_lookahead256` was substantially weaker on long-range dependency.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Bootstrap Kendall tau stability was high for both evaluation modes (mean \u03c4 \u2265 0.81 in the synthetic pilot; mean \u03c4 \u2265 0.97 in the real-log validation), though the 5th-percentile \u03c4 dropped to 0.33 in the synthetic pilot, indicating meaningful ranking instability under resampling for that setting.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that cluster-balanced evaluation reveals ranking changes and failure surfaces that aggregate scoring partly hides, but the evidence is bounded to the tested domains and does not constitute universal validation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When verifier-guarded systems are evaluated by aggregate accuracy over a mixed dataset, performance on large subpopulations can dominate the score and mask systematic failures on smaller but structurally coherent groups.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "If two systems have similar aggregate accuracy but different failure profiles, a practitioner choosing between them may miss an actionable weakness in one system that the other avoids.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We propose and test a simple mechanism: (1) assign each verification rejection to an interpretable failure cluster based on the rejection reason, (2) compute per-cluster accuracy for each candidate system, and (3) re-weight evaluation so that each cluster contributes equally to the final score.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Verification Failure Clusters: Cluster-Balanced Evaluation Exposes Actionable Weaknesses Hidden by Aggregate Scoring",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report presents two passes of evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The first is a synthetic minimum-viable-product (MVP) pilot with 3,000 weakly labeled examples and deterministic verifiers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The project now has both synthetic MVP evidence and a 1,000-example real-log validation showing a cluster-balanced ranking shift and an actionable long-range dependency failure cluster."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "verification-failure-clusters",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

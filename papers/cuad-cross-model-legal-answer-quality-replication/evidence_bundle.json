@@ -1,166 +1,36 @@
 {
-  "project_id": "source-record-redacted",
-  "project_name": "CUAD Cross-Model Legal Answer Quality Replication",
-  "run_id": "source-record-redacted",
-  "paper_id": "source-record-redacted:source-record-redacted:arxiv_draft",
-  "generated_at": "2026-04-22T12:53:29.243-05:00",
-  "decision": {
-    "project_decision": "finalize_positive",
-    "hypothesis_status": "mixed",
-    "confidence": "medium",
-    "evidence_strength": "strong",
-    "novelty_progress": true,
-    "results_changed": true,
-    "recommended_next_action": "Finalize this branch as positive/mixed: cross-model answer-quality transfer reproduced with Phi-4-mini, while pure BM25 retrieval is retrieval-starved and should only be revisited with a concrete retrieval-targeted benchmark.",
-    "stop_reason": "A second local long-context answerer cleared the branch F1 threshold under forced-gold retrieval (+12.26 F1 points), and additional pure-BM25 runs showed the remaining bottleneck is retrieval recall rather than prompt packing alone.",
-    "branch_project_name": null,
-    "branch_reason": null,
-    "decision_source": "codex_turn",
-    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-    "updated_at": "2026-04-19T22:41:28.332711+00:00"
-  },
-  "decision_action": "finalize_positive",
-  "hypothesis_status": "mixed",
-  "evidence_strength": "strong",
-  "confidence": "medium",
-  "recommended_next_action": "Finalize this branch as positive/mixed: cross-model answer-quality transfer reproduced with Phi-4-mini, while pure BM25 retrieval is retrieval-starved and should only be revisited with a concrete retrieval-targeted benchmark.",
-  "run_notes_tail": [
-    "- Resource evidence: GPU utilization rose from 0% before to 95% after; power 13.85W -> 51.58W; temperature 58C -> 72C. Runtime 160.0292s.",
-    "Pure BM25 retrieval replications with Phi-4-mini:",
-    "- Top-k 3 command: `.venv/bin/python scripts/run_cuad_llm_answer_quality_benchmark.py --n 30 --budgets 512 1024 --out-dir artifacts/cuad_llm_phi4_bm25_n30 --endpoint http://127.0.0.1:8088 --model Phi-4-mini-instruct-Q4_K_M.gguf --bm25-only --max-answer-tokens 96 --request-timeout 180`.",
-    "  - Pure BM25 top-3 retrieved the gold contract for 0/30 sampled examples; indexed and vanilla answer-span retention were both 0.0.",
-    "  - Indexed LLM F1 0.0561 vs vanilla 0.0376 (+1.85 F1 points), substring hit 0.0 vs 0.0. This does not clear the kill threshold and is best interpreted as retrieval-starved/inconclusive for answer-quality transfer rather than a packer failure.",
-    "  - Runtime 154.0438s; GPU utilization 0% -> 95%; power 12.12W -> 45.53W; temperature 44C -> 67C.",
-    "- Top-k 10 command: `.venv/bin/python scripts/run_cuad_llm_answer_quality_benchmark.py --n 30 --top-k 10 --budgets 512 1024 --out-dir artifacts/cuad_llm_phi4_bm25_top10_n30 --endpoint http://127.0.0.1:8088 --model Phi-4-mini-instruct-Q4_K_M.gguf --bm25-only --max-answer-tokens 96 --request-timeout 180`.",
-    "  - Pure BM25 top-10 retrieved the gold contract for 4/30 sampled examples, but fixed budgets still produced 0.0 answer-span retention for both packers.",
-    "  - Indexed LLM F1 0.0880 vs vanilla 0.0376 (+5.04 F1 points), substring hit 0.0 vs 0.0. This clears the F1 delta threshold but with weak direct-span evidence, so it supports a retrieval-generalization signal only weakly.",
-    "  - Runtime 149.2956s; GPU utilization 0% -> 95%; power 14.73W -> 48.80W; temperature 62C -> 73C.",
-    "Interpretation:",
-    "- The core cross-model branch is positive: adaptive indexed packing improved downstream answer quality with Phi-4-mini as well as the parent Qwen2.5 run, so the effect is not Qwen-only.",
-    "- The stronger causal result remains the forced-gold retrieval isolation: Phi-4-mini gained +12.26 F1 points and +35.0 answer-span-retention points under identical retrieval/budget conditions.",
-    "- Pure BM25 retrieval is the limiting factor on this CUAD question style: top-3 found 0/30 gold contracts and top-10 only 4/30. Under top-10, indexed prompts still gained +5.04 F1 points, but exact substring hits remained 0, so the pure-retrieval finding is mixed/weak rather than decisive.",
-    "- No generic successor-of-successor is needed from this branch. If future work is queued, it should be a concrete retrieval-targeted benchmark (for example category-aware/query-expanded BM25 or legal-specialized retriever) rather than another routing successor.",
-    "Artifacts created/updated this turn:",
-    "- `run_notes.md`",
-    "- `src/`, `scripts/`, `tests/`, `external/cuad/`, `.venv/` acquired from parent",
-    "- `artifacts/cuad_llm_qwen25_n100/` copied from parent for baseline comparison",
-    "- `artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json`",
-    "- `artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv`",
-    "- `artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json`",
-    "- `artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv`",
-    "- `artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json`",
-    "- `artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv`",
-    "- `artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json`",
-    "- `artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv`"
-  ],
-  "result_files": [
-    "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json",
-    "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv",
-    "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json",
-    "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv",
-    "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json",
-    "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv",
-    "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json",
-    "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv",
-    "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_summary.json",
-    "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_rows.csv"
-  ],
-  "recent_files": [
-    ".omx/metrics.json",
-    ".omx/project_decision.json",
-    "run_notes.md",
-    ".omx/project.json",
-    "prompts/resume.md",
-    "prompts/initial.md",
-    "scripts/run_cuad_llm_answer_quality_benchmark.py",
-    "scripts/run_cuad_contract_latency_benchmark.py",
-    "src/evidence_quilt.py",
-    "tests/test_evidence_quilt.py",
-    "external/cuad/data/train_separate_questions.json",
-    "external/cuad/data/test.json"
-  ],
-  "status_json": {
-    "available": true,
-    "current_activity": "wake_ready",
-    "gate_state": "wake_ready",
-    "run_notes_tail": [
-      "- Resource evidence: GPU utilization rose from 0% before to 95% after; power 13.85W -> 51.58W; temperature 58C -> 72C. Runtime 160.0292s.",
-      "Pure BM25 retrieval replications with Phi-4-mini:",
-      "- Top-k 3 command: `.venv/bin/python scripts/run_cuad_llm_answer_quality_benchmark.py --n 30 --budgets 512 1024 --out-dir artifacts/cuad_llm_phi4_bm25_n30 --endpoint http://127.0.0.1:8088 --model Phi-4-mini-instruct-Q4_K_M.gguf --bm25-only --max-answer-tokens 96 --request-timeout 180`.",
-      "  - Pure BM25 top-3 retrieved the gold contract for 0/30 sampled examples; indexed and vanilla answer-span retention were both 0.0.",
-      "  - Indexed LLM F1 0.0561 vs vanilla 0.0376 (+1.85 F1 points), substring hit 0.0 vs 0.0. This does not clear the kill threshold and is best interpreted as retrieval-starved/inconclusive for answer-quality transfer rather than a packer failure.",
-      "  - Runtime 154.0438s; GPU utilization 0% -> 95%; power 12.12W -> 45.53W; temperature 44C -> 67C.",
-      "- Top-k 10 command: `.venv/bin/python scripts/run_cuad_llm_answer_quality_benchmark.py --n 30 --top-k 10 --budgets 512 1024 --out-dir artifacts/cuad_llm_phi4_bm25_top10_n30 --endpoint http://127.0.0.1:8088 --model Phi-4-mini-instruct-Q4_K_M.gguf --bm25-only --max-answer-tokens 96 --request-timeout 180`.",
-      "  - Pure BM25 top-10 retrieved the gold contract for 4/30 sampled examples, but fixed budgets still produced 0.0 answer-span retention for both packers.",
-      "  - Indexed LLM F1 0.0880 vs vanilla 0.0376 (+5.04 F1 points), substring hit 0.0 vs 0.0. This clears the F1 delta threshold but with weak direct-span evidence, so it supports a retrieval-generalization signal only weakly.",
-      "  - Runtime 149.2956s; GPU utilization 0% -> 95%; power 14.73W -> 48.80W; temperature 62C -> 73C.",
-      "Interpretation:",
-      "- The core cross-model branch is positive: adaptive indexed packing improved downstream answer quality with Phi-4-mini as well as the parent Qwen2.5 run, so the effect is not Qwen-only.",
-      "- The stronger causal result remains the forced-gold retrieval isolation: Phi-4-mini gained +12.26 F1 points and +35.0 answer-span-retention points under identical retrieval/budget conditions.",
-      "- Pure BM25 retrieval is the limiting factor on this CUAD question style: top-3 found 0/30 gold contracts and top-10 only 4/30. Under top-10, indexed prompts still gained +5.04 F1 points, but exact substring hits remained 0, so the pure-retrieval finding is mixed/weak rather than decisive.",
-      "- No generic successor-of-successor is needed from this branch. If future work is queued, it should be a concrete retrieval-targeted benchmark (for example category-aware/query-expanded BM25 or legal-specialized retriever) rather than another routing successor.",
-      "Artifacts created/updated this turn:",
-      "- `run_notes.md`",
-      "- `src/`, `scripts/`, `tests/`, `external/cuad/`, `.venv/` acquired from parent",
-      "- `artifacts/cuad_llm_qwen25_n100/` copied from parent for baseline comparison",
-      "- `artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json`",
-      "- `artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv`",
-      "- `artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json`",
-      "- `artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv`",
-      "- `artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json`",
-      "- `artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv`",
-      "- `artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json`",
-      "- `artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv`"
-    ],
-    "recent_files": [
-      ".omx/metrics.json",
-      ".omx/project_decision.json",
-      "run_notes.md",
-      ".omx/project.json",
-      "prompts/resume.md",
-      "prompts/initial.md",
-      "scripts/run_cuad_llm_answer_quality_benchmark.py",
-      "scripts/run_cuad_contract_latency_benchmark.py",
-      "src/evidence_quilt.py",
-      "tests/test_evidence_quilt.py",
-      "external/cuad/data/train_separate_questions.json",
-      "external/cuad/data/test.json"
-    ],
-    "result_files": [
-      "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_summary.json",
-      "artifacts/cuad_llm_phi4_bm25_top10_n30/cuad_llm_answer_quality_rows.csv",
-      "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_summary.json",
-      "artifacts/cuad_llm_phi4_goldforced_n30/cuad_llm_answer_quality_rows.csv",
-      "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_summary.json",
-      "artifacts/cuad_llm_phi4_bm25_n30/cuad_llm_answer_quality_rows.csv",
-      "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_summary.json",
-      "artifacts/cuad_llm_phi4_bm25_smoke/cuad_llm_answer_quality_rows.csv",
-      "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_summary.json",
-      "artifacts/cuad_llm_qwen25_n100/cuad_llm_answer_quality_rows.csv"
-    ],
-    "active_processes": [],
-    "latest_session": {
-      "session_id": "omx-1776637741349-s57mje",
-      "started_at": "2026-04-19T22:29:01.376Z",
-      "ended_at": "2026-04-19T22:41:54.817Z",
-      "cwd": "[redacted-source-project-root]",
-      "pid": 1578597
+  "file_inventory": [
+    {
+      "bytes": 344,
+      "path": "paper_manifest.json",
+      "sha256": "80f6e5cea0d93c5363b0b5ded02d5c6952d4bdc421e820ac832b0522221326f1"
     },
-    "project_decision": {
-      "project_decision": "finalize_positive",
-      "hypothesis_status": "mixed",
-      "confidence": "medium",
-      "evidence_strength": "strong",
-      "novelty_progress": true,
-      "results_changed": true,
-      "recommended_next_action": "Finalize this branch as positive/mixed: cross-model answer-quality transfer reproduced with Phi-4-mini, while pure BM25 retrieval is retrieval-starved and should only be revisited with a concrete retrieval-targeted benchmark.",
-      "stop_reason": "A second local long-context answerer cleared the branch F1 threshold under forced-gold retrieval (+12.26 F1 points), and additional pure-BM25 runs showed the remaining bottleneck is retrieval recall rather than prompt packing alone.",
-      "branch_project_name": null,
-      "branch_reason": null,
-      "decision_source": "codex_turn",
-      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-      "updated_at": "2026-04-19T22:41:28.332711+00:00"
+    {
+      "bytes": 486,
+      "path": "metadata.json",
+      "sha256": "03167ad59add3d7a42d016727aeecc749a95feb0ebb2e1a7989809b5dcb83518"
     },
-    "decision_error": ""
-  }
+    {
+      "bytes": 15678,
+      "path": "evidence/public_paper.md",
+      "sha256": "8982065b009e347d8061c8132d4326cd4ba1618d1e62f12569661392f58f6f16"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "cuad-cross-model-legal-answer-quality-replication",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

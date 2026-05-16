@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T054218443395+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "964894d6ed497c5c16d877830c0aab37be42e2602de05859111ea244d9e35cfb"
+    },
+    {
+      "bytes": 481,
+      "path": "metadata.json",
+      "sha256": "874970128622f0dd3a79ca0dc5386d584137f75d850d2369619262269ffd74a2"
+    },
+    {
+      "bytes": 17086,
+      "path": "evidence/public_paper.md",
+      "sha256": "704e3dc96cce950a65284e1305877b7447b6269b7113e99b254225ec953293e8"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "sandbox-risk-oracle-live-harness-calibration",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

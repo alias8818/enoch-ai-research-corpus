@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260429T211418317055+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "a3999811e240c3c94b92d88326a890ba676403a1286eefff531941343217e8ef"
+    },
+    {
+      "bytes": 457,
+      "path": "metadata.json",
+      "sha256": "37c693752942bd3c55ae1645de5fff55c2d6a834004e9bbc250d3c26f100f0b1"
+    },
+    {
+      "bytes": 14696,
+      "path": "evidence/public_paper.md",
+      "sha256": "3c9cb1a62790a9167bac2a7af6119d7bae3ad7b39c664ee560e10f0337bf3944"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "delegation-simulator",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

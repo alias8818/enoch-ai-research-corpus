@@ -1,154 +1,36 @@
 {
-  "project_id": "source-record-redacted",
-  "project_name": "Counterexample Bank Targeted Mini-SFT Validation",
-  "run_id": "source-record-redacted",
-  "paper_id": "source-record-redacted:source-record-redacted:arxiv_draft",
-  "generated_at": "2026-04-18T05:10:21.978-05:00",
-  "decision": {
-    "project_decision": "finalize_positive",
-    "hypothesis_status": "supported",
-    "confidence": "medium",
-    "evidence_strength": "moderate",
-    "novelty_progress": true,
-    "results_changed": true,
-    "recommended_next_action": "Finalize this branch; only start a separate follow-on if it is an actual LoRA/QLoRA mini-SFT transfer test on a less templated external counterfactual benchmark.",
-    "stop_reason": "The targeted prompt-policy intervention improved held-out bank pair-both-correct from 0.490 to 1.000 without reducing naive synthetic accuracy, clearing the predefined kill condition.",
-    "branch_project_name": null,
-    "branch_reason": null,
-    "decision_source": "codex_turn",
-    "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-    "updated_at": "2026-04-18T01:47:24.521505+00:00"
-  },
-  "decision_action": "finalize_positive",
-  "hypothesis_status": "supported",
-  "evidence_strength": "moderate",
-  "confidence": "medium",
-  "recommended_next_action": "Finalize this branch; only start a separate follow-on if it is an actual LoRA/QLoRA mini-SFT transfer test on a less templated external counterfactual benchmark.",
-  "run_notes_tail": [
-    "- Copy parent counterexample bank, naive synthetic data, and evaluation scripts into this branch project.",
-    "- Establish a branch kill condition: continue only if a targeted intervention improves held-out pair-both-correct without lowering naive accuracy.",
-    "- Build a concrete prompt-policy / small-model-compatible intervention dataset from audited counterexample clusters, split train/held-out deterministically, and benchmark baseline vs intervention on held-out bank and naive synthetic data.",
-    "- Record durable metrics, reports, and decision artifact before yielding.",
-    "## Completed targeted prompt-policy validation (2026-04-18)",
-    "- Copied the parent counterexample bank, naive synthetic set, and reproduction scripts into this branch project.",
-    "- Defined branch kill condition: kill if held-out bank pair-both-correct uplift over the lexical shortcut baseline is < 0.05 or if naive synthetic accuracy regresses by more than 0.01.",
-    "- Added `scripts/targeted_prompt_policy_intervention.py`, a dependency-free intervention harness that:",
-    "  - splits the audited bank into 100 train pairs per task type (400 pairs / 800 examples) and 800 held-out bank pairs (1,600 examples),",
-    "  - induces a restricted prompt-policy overlay from the train clusters,",
-    "  - writes `data/intervention_train_sft.jsonl` as a mini-SFT-compatible training artifact,",
-    "  - evaluates baseline lexical shortcut, left-to-right arithmetic, targeted prompt-policy overlay, and oracle parser on held-out bank and naive synthetic data.",
-    "- Main held-out result: baseline lexical shortcut pair-both-correct = 0.490; targeted prompt-policy overlay pair-both-correct = 1.000; uplift = +0.510.",
-    "- Naive regression check: baseline lexical shortcut naive accuracy = 1.000; targeted prompt-policy naive accuracy = 1.000; delta = +0.000.",
-    "- Interpretation: the branch mechanism is supported for an explicit prompt-policy intervention over this synthetic audited bank. It validates the bank as an intervention dataset and yields a reusable SFT-format artifact, but it is not evidence that gradient mini-SFT transfers to less templated external distributions.",
-    "- Durable artifacts:",
-    "  - `data/counterexample_bank.jsonl`",
-    "  - `data/naive_synthetic.jsonl`",
-    "  - `data/intervention_train_sft.jsonl`",
-    "  - `data/intervention_holdout_bank.jsonl`",
-    "  - `data/intervention_naive_eval.jsonl`",
-    "  - `scripts/targeted_prompt_policy_intervention.py`",
-    "  - `results/targeted_prompt_policy_metrics.json`",
-    "  - `results/targeted_prompt_policy_predictions.csv`",
-    "  - `results/targeted_prompt_policy_report.md`",
-    "- Verification: `python3 scripts/targeted_prompt_policy_intervention.py` completed; `python3 -m py_compile scripts/*.py` passed; metrics JSON loaded and showed kill condition passed.",
-    "## Project disposition",
-    "Finalize positive for this branch. The targeted prompt-policy intervention beat the branch baseline on held-out pair-both-correct without regressing naive synthetic accuracy. Do not create a generic successor-of-successor; any future project should be materially distinct, e.g. actual LoRA/QLoRA mini-SFT transfer on a less templated external arithmetic/counterfactual benchmark."
-  ],
-  "result_files": [
-    "results/targeted_prompt_policy_report.md",
-    "results/targeted_prompt_policy_predictions.csv",
-    "results/targeted_prompt_policy_metrics.json"
-  ],
-  "recent_files": [
-    ".omx/metrics.json",
-    ".omx/project_decision.json",
-    "run_notes.md",
-    "data/intervention_naive_eval.jsonl",
-    "data/intervention_holdout_bank.jsonl",
-    "data/intervention_train_sft.jsonl",
-    "scripts/targeted_prompt_policy_intervention.py",
-    "scripts/evaluate_cached_small_llm.py",
-    "scripts/counterexample_bank_experiment.py",
-    "scripts/audit_classifier_evaluation.py",
-    "data/naive_synthetic.jsonl",
-    "data/counterexample_bank.jsonl"
-  ],
-  "status_json": {
-    "available": true,
-    "current_activity": "wake_ready",
-    "gate_state": "wake_ready",
-    "run_notes_tail": [
-      "- Copy parent counterexample bank, naive synthetic data, and evaluation scripts into this branch project.",
-      "- Establish a branch kill condition: continue only if a targeted intervention improves held-out pair-both-correct without lowering naive accuracy.",
-      "- Build a concrete prompt-policy / small-model-compatible intervention dataset from audited counterexample clusters, split train/held-out deterministically, and benchmark baseline vs intervention on held-out bank and naive synthetic data.",
-      "- Record durable metrics, reports, and decision artifact before yielding.",
-      "## Completed targeted prompt-policy validation (2026-04-18)",
-      "- Copied the parent counterexample bank, naive synthetic set, and reproduction scripts into this branch project.",
-      "- Defined branch kill condition: kill if held-out bank pair-both-correct uplift over the lexical shortcut baseline is < 0.05 or if naive synthetic accuracy regresses by more than 0.01.",
-      "- Added `scripts/targeted_prompt_policy_intervention.py`, a dependency-free intervention harness that:",
-      "  - splits the audited bank into 100 train pairs per task type (400 pairs / 800 examples) and 800 held-out bank pairs (1,600 examples),",
-      "  - induces a restricted prompt-policy overlay from the train clusters,",
-      "  - writes `data/intervention_train_sft.jsonl` as a mini-SFT-compatible training artifact,",
-      "  - evaluates baseline lexical shortcut, left-to-right arithmetic, targeted prompt-policy overlay, and oracle parser on held-out bank and naive synthetic data.",
-      "- Main held-out result: baseline lexical shortcut pair-both-correct = 0.490; targeted prompt-policy overlay pair-both-correct = 1.000; uplift = +0.510.",
-      "- Naive regression check: baseline lexical shortcut naive accuracy = 1.000; targeted prompt-policy naive accuracy = 1.000; delta = +0.000.",
-      "- Interpretation: the branch mechanism is supported for an explicit prompt-policy intervention over this synthetic audited bank. It validates the bank as an intervention dataset and yields a reusable SFT-format artifact, but it is not evidence that gradient mini-SFT transfers to less templated external distributions.",
-      "- Durable artifacts:",
-      "  - `data/counterexample_bank.jsonl`",
-      "  - `data/naive_synthetic.jsonl`",
-      "  - `data/intervention_train_sft.jsonl`",
-      "  - `data/intervention_holdout_bank.jsonl`",
-      "  - `data/intervention_naive_eval.jsonl`",
-      "  - `scripts/targeted_prompt_policy_intervention.py`",
-      "  - `results/targeted_prompt_policy_metrics.json`",
-      "  - `results/targeted_prompt_policy_predictions.csv`",
-      "  - `results/targeted_prompt_policy_report.md`",
-      "- Verification: `python3 scripts/targeted_prompt_policy_intervention.py` completed; `python3 -m py_compile scripts/*.py` passed; metrics JSON loaded and showed kill condition passed.",
-      "## Project disposition",
-      "Finalize positive for this branch. The targeted prompt-policy intervention beat the branch baseline on held-out pair-both-correct without regressing naive synthetic accuracy. Do not create a generic successor-of-successor; any future project should be materially distinct, e.g. actual LoRA/QLoRA mini-SFT transfer on a less templated external arithmetic/counterfactual benchmark."
-    ],
-    "recent_files": [
-      ".omx/metrics.json",
-      ".omx/project_decision.json",
-      "run_notes.md",
-      "data/intervention_naive_eval.jsonl",
-      "data/intervention_holdout_bank.jsonl",
-      "data/intervention_train_sft.jsonl",
-      "scripts/targeted_prompt_policy_intervention.py",
-      "scripts/evaluate_cached_small_llm.py",
-      "scripts/counterexample_bank_experiment.py",
-      "scripts/audit_classifier_evaluation.py",
-      "data/naive_synthetic.jsonl",
-      "data/counterexample_bank.jsonl"
-    ],
-    "result_files": [
-      "results/targeted_prompt_policy_report.md",
-      "results/targeted_prompt_policy_predictions.csv",
-      "results/targeted_prompt_policy_metrics.json"
-    ],
-    "active_processes": [],
-    "latest_session": {
-      "session_id": "omx-1776476699446-ay5u6t",
-      "started_at": "2026-04-18T01:44:59.471Z",
-      "ended_at": "2026-04-18T01:47:44.179Z",
-      "cwd": "[redacted-source-project-root]",
-      "pid": 404857
+  "file_inventory": [
+    {
+      "bytes": 344,
+      "path": "paper_manifest.json",
+      "sha256": "e2f57e6dccc9b3bc757e4b360b7eae68403af9fed380f99965a6bebc58e14464"
     },
-    "project_decision": {
-      "project_decision": "finalize_positive",
-      "hypothesis_status": "supported",
-      "confidence": "medium",
-      "evidence_strength": "moderate",
-      "novelty_progress": true,
-      "results_changed": true,
-      "recommended_next_action": "Finalize this branch; only start a separate follow-on if it is an actual LoRA/QLoRA mini-SFT transfer test on a less templated external counterfactual benchmark.",
-      "stop_reason": "The targeted prompt-policy intervention improved held-out bank pair-both-correct from 0.490 to 1.000 without reducing naive synthetic accuracy, clearing the predefined kill condition.",
-      "branch_project_name": null,
-      "branch_reason": null,
-      "decision_source": "codex_turn",
-      "source_path": "[redacted-source-project-root]/.omx/project_decision.json",
-      "updated_at": "2026-04-18T01:47:24.521505+00:00"
+    {
+      "bytes": 485,
+      "path": "metadata.json",
+      "sha256": "11adfec4299ff146e73ab5d532da053530519eb82153489942b598e8eb7d3976"
     },
-    "decision_error": ""
-  }
+    {
+      "bytes": 12575,
+      "path": "evidence/public_paper.md",
+      "sha256": "8ab6a50f4476579e7f247d003bf8a8fed7527b9c9fc4af2990ee3493f6c760fd"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "counterexample-bank-targeted-mini-sft-validation",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

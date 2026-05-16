@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T034808609981+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "3e89cc3807e261579e258d678162558a993acb74c6b2fed4811f7285357d0b56"
+    },
+    {
+      "bytes": 468,
+      "path": "metadata.json",
+      "sha256": "d72a8eb35c4cc6308a2461766dc57938c1d3dbcfdac8254f8bc701d668a1d9b7"
+    },
+    {
+      "bytes": 15304,
+      "path": "evidence/public_paper.md",
+      "sha256": "4ad4d2aabb369c8d57f7ead6169ce87ba62a93960e5e84e337319258a3e264cf"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "dense-to-moe-upcycling-retrofit",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

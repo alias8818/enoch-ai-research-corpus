@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260501T130748661817+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "4688c072f385dacf36ceb6b68c61dae870b02c741c6a718970ed4e12c65f92dd"
+    },
+    {
+      "bytes": 482,
+      "path": "metadata.json",
+      "sha256": "54cc8c718db69049a3222e3d15d6e9076010084a096c97b5ccd0ece9e3845443"
+    },
+    {
+      "bytes": 17219,
+      "path": "evidence/public_paper.md",
+      "sha256": "5b4de2482778608f4ecb57d22ac478f98e6d489d3efce783a2aac70dd53306a5"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "qwen32b-speculative-workflow-robustness-suite",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

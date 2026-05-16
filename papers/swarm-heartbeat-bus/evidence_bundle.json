@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T113518429362+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "3b1964e87ba306b771624063cabae3cdc2ec467596888a81cbaf6d5a676f5ba0"
+    },
+    {
+      "bytes": 456,
+      "path": "metadata.json",
+      "sha256": "5ab18b19d84d674517103cb68a81ee3e37b56ef686f4fa1ec289efb624bda917"
+    },
+    {
+      "bytes": 15858,
+      "path": "evidence/public_paper.md",
+      "sha256": "4720ef89f890346033256cd621e08087d44aa14a9e7e950a0189e11d7ad008b4"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "swarm-heartbeat-bus",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "We present Firmware Diff Explainer, a lightweight, deterministic tool for first-pass triage of differences between firmware or rootfs images.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate the tool on synthetic firmware images with known ground truth and on a real public firmware pair (OpenWrt 23.05.4 and 23.05.5 x86-64 rootfs tarballs).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The OpenWrt validation run processes 936 files per image, reporting 55 added files, 55 removed files, 156 modified files, 225 added strings, and 224 removed strings in 8.31 seconds with 36,340 KB peak RSS.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and log files). The operator who released these artifacts claims no personal authorship credit for the writing or the results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human review is claimed or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This gap is particularly relevant for first-pass triage, where the goal is to rapidly identify candidate changes worth deeper investigation rather than to prove the presence or absence of vulnerabilities.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The tool was designed around three principles: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Minimal dependencies.** The tool relies only on standard Linux firmware analysis tools (`file`, `strings`, `readelf`, `objdump`, `unsquashfs`, `gzip`, `sha256sum`) and Python 3.12 standard library modules.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The differencing pipeline operates in three stages: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and log files). The operator who released these artifacts claims no personal authorship credit for the writing or the results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human review is claimed or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "File inventory.** Walk both directory trees, compute SHA-256 hashes for every regular file, and classify files as added, removed, unchanged, or modified (same relative path, different hash).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Directory diff results:** | Metric | Value | |---|---| | Added files | 1 | | Modified files | 3 | | Detected added `system` import | Yes | | Detected removed default password | Yes | The synthetic test correctly identified: - An added `system` import in `usr/bin/agent` (a stripped ELF binary where the newer version gained a `system` libc import).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This bug is reported honestly as a defect discovered during evaluation: the initial OpenWrt run (elapsed_s=7.94, maxrss_kb=36540) produced incomplete import annotations, and only the post-fix run (elapsed_s=8.31, maxrss_kb=36340) should be considered valid for import-level results.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Real-world validation was performed using official OpenWrt 23.05.4 and 23.05.5 x86-64 rootfs tarballs downloaded from `downloads.openwrt.org`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Firmware Diff Explainer: A Lightweight Deterministic Tool for First-Pass Firmware Rootfs Diff Triage",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The 156 modified files represent files present in both images at the same relative path but with different content hashes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision JSON, metrics, and log files). The operator who released these artifacts claims no personal authorship credit for the writing or the results. Readers should treat this document as an unreviewed AI-generated research artifact and exercise appropriate skepticism. No human review is claimed or implied.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "firmware-diff-explainer",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "A smoke-test harness using a 15M-parameter quantized model demonstrates that the mechanism is viable: cells can be removed via `seq_rm`, retained cells can be shifted to compact positions via `seq_add`, the existing K-shift (RoPE) update graph applies the positional corrections, and subsequent decoding proceeds without error.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, logits produced after in-place compaction diverge substantially from both a full-prefix baseline (RMSE 2.17, max absolute difference 6.55) and a retained-only recomputed reference (RMSE 0.57, max absolute difference 3.35), with top-1 predictions disagreeing in both comparisons.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Recomputing the retained tokens from scratch would yield semantically correct representations but requires a forward pass and defeats the in-place goal.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We cloned llama.cpp at commit `05e141a6b34a1535096e2bb7828418df431f7efe` (2026-05-01) and built it with CMake in Release mode (`GGML_NATIVE=OFF`, `GGML_OPENMP=OFF`, `LLAMA_CURL=OFF`, `LLAMA_BUILD_TESTS=ON`).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The smoke test uses llama.cpp's built-in tiny test model: `tinyllamas/stories15M-q4_0.gguf` (17.5 MiB, approximately 24.4M parameters, Q4_0 quantization).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Three contexts are constructed from the same model: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision records, metrics files, and evidence bundles). The operator who released this artifact claims no personal authorship credit for the writing or results beyond making the artifact available. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims accordingly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Full-prefix baseline.** A 48-token synthetic prompt is decoded normally.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We investigate whether the existing KV-cache manipulation primitives in llama.cpp suffice to implement sparse, in-place importance-based cache compaction\u2014retaining a subset of KV cells, renumbering their positions, and continuing autoregressive decoding without copying or defragmenting the retained KV tensor data. A smoke-test harness using a 15M-parameter quantized model demonstrates that the mechanism is viable: cells can be removed via `seq_rm`, retained cells can be shifted to compact positi",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In-place compacted cache.** The same 48-token prompt is decoded.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Then 32 of 48 KV cells are removed using `llama_memory_seq_rm`, and the 16 retained cells (the first 8 as a prefix anchor, plus 8 sparse later positions) are shifted to compact positions 0\u201315 using `llama_memory_seq_add`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A single additional token is then decoded at position 16, forcing llama.cpp to apply pending K-shift updates through its normal `llama_kv_cache::update` path before computing attention.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Retained-only recompute.** Only the 16 retained tokens (in their original order) are presented as a fresh prompt to a new context.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated entirely by an AI system from automated research artifacts (run notes, decision records, metrics files, and evidence bundles). The operator who released this artifact claims no personal authorship credit for the writing or results beyond making the artifact available. Readers should treat this document as an unreviewed AI-generated research artifact and evaluate its claims accordingly.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "After decoding the post-compaction token, we compare the logit vectors: - **RMSE** between the compacted-cache logits and the recompute reference.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# In-Place KV-Cache Compaction via Importance Retention in llama.cpp: Mechanism Feasibility and Semantic Divergence",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "llama.cpp-in-place-kv-compaction-for-importance-retention",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

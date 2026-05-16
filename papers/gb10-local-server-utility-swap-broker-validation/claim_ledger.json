@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "GB10 Local Server Utility Swap Broker Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/logs/llama_server_pressure_np4_ctx8192.log",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/slots_after_multiseed.json",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/llama_metrics_after_multiseed.prom",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.md",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/aggregate_summary.json",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.md",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/summary.json",
-        "artifacts/pressure_multiseed/s36_c4_cap220_scale0.14_multiseed/seed_303/requests.csv"
+      "claim": "We evaluate a utility-based swap broker scheduling policy against a fixed FIFO baseline for local OpenAI-compatible LLM serving on a GB10 server.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this validation branch as latency-supported and carry forward the broker only with the caveat that throughput and cache-churn gains were not established.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Prior simulator-only evidence from a parent project suggested the utility broker could reduce tail latency under memory pressure, but required live-server validation with hardware telemetry.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the clean multiseed decision run, the utility broker reduced session p95 latency by a mean of 16.8% (median 18.9%, range 11.9%\u201319.5%) with zero request errors across all seeds, clearing a pre-registered 10% improvement threshold.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, request-level p95 reduction was inconsistent across seeds (mean 17.5%, but one seed showed a 3.2% regression), scheduler churn improved by only 5.3% on average, and throughput was essentially flat (mean +0.7%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The live evidence thus supports a latency-oriented broker benefit under the tested conditions, but does not establish throughput or cache-churn gains.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Results are bounded by the small model choice (Phi-4-mini-instruct Q4_K_M), modest GPU utilization (25\u201342%), and single-hardware configuration.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A fixed first-in-first-out (FIFO) admission policy processes requests in arrival order regardless of their expected resource cost or latency sensitivity.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a utility-based swap broker scheduling policy against a fixed FIFO baseline for local OpenAI-compatible LLM serving on a GB10 server. Prior simulator-only evidence from a parent project suggested the utility broker could reduce tail latency under memory pressure, but required live-server validation with hardware telemetry. We constructed a replay harness targeting a real llama.cpp server endpoint and conducted a three-phase validation: (1) a mock-server smoke test confirming harness ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An alternative approach assigns each request a utility score reflecting its expected contribution to session-level latency objectives and admits or reorders requests accordingly.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A prior project (parent project `source-record-redacted`) developed a simulator (`swap_broker_sim.py`) that produced moderate evidence supporting a utility-broker mechanism.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report results from a live-server replay harness that wraps the utility/FIFO policy comparison around a real llama.cpp server endpoint, recording request and session latency, throughput, scheduler churn, and hardware telemetry.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project established a pre-registered kill condition: the branch would be terminated if a real replay showed the utility broker failing to improve p95 latency or cache-churn/throughput by at least 10% versus FIFO under comparable request mix and memory-pressure settings.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Utility-Based Swap Broker Scheduling for Local LLM Serving: A Live-Server Validation Study",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We implemented `openai_swap_replay.py`, a dependency-free Python harness that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a utility-based swap broker scheduling policy against a fixed FIFO baseline for local OpenAI-compatible LLM serving on a GB10 server. Prior simulator-only evidence from a parent project suggested the utility broker could reduce tail latency under memory pressure, but required live-server validation with hardware telemetry. We constructed a replay harness targeting a real llama.cpp server endpoint and conducted a three-phase validation: (1) a mock-server smoke test confirming harness ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A clean three-seed llama.cpp live-server pressure run cleared the 10% session-p95 latency threshold with zero request errors, while additional same-branch reruns would mainly refine confidence rather than change the mechanism decision."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "gb10-local-server-utility-swap-broker-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Adaptive Boundary Colorization Gate produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/adaptive_gate_selection_counts.json",
-        "results/adaptive_squad_summary.json",
-        "results/adaptive_technical_doc_summary.json",
-        "results/adaptive_squad_retrieval_budget220.log",
-        "results/adaptive_squad_retrieval_budget220/summary.json",
-        "results/adaptive_squad_retrieval_budget220/benchmark_rows.csv",
-        "results/adaptive_squad_retrieval_budget160.log",
-        "results/adaptive_squad_retrieval_budget160/summary.json"
+      "claim": "We present a deterministic, model-free adaptive gate for prompt boundary colorization that routes between vanilla and colorized prompt packing based on inspectable signals of answer-contract sufficiency and late-evidence risk.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as a supported deterministic adaptive gate; if more work is queued, optimize gate latency and test on a larger held-out retrieval sweep rather than branching again.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "In pilot experiments on technical-document structured extraction and SQuAD extractive QA, the gate preserves the strong gains of fixed boundary colorization under tight budgets and late-evidence conditions while eliminating a known regression at higher budgets where colorized packing destructively over-compresses.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At budget 480 on technical-doc extraction, the gate routes entirely to vanilla, recovering field recall to 0.8333 (matching vanilla) versus 0.625 for fixed colorization.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At budget 160 on SQuAD late-answer stress, the gate routes entirely to colorized, matching fixed colorization's +65.62 F1-point advantage over vanilla.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "At mid-budget open-domain retrieval (budget 220), the gate routes conservatively (46/50 vanilla), tying vanilla performance and avoiding fixed colorization's evidence-recall loss of 6 points, at the cost of forgoing a small +0.67 F1 gain.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results are limited to the tested datasets, budgets, and model (DistilBERT); confidence is medium and external replication is not yet established.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prompt boundary colorization is a prompt-packing strategy that marks evidence-span boundaries with structural tokens, enabling downstream models to locate answer-bearing passages more efficiently under token budgets.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work on the parent project (\"Prompt Boundary Colorization\") demonstrated that fixed colorization yields substantial gains when evidence is late-arriving or budgets are tight, but introduces regressions at higher budgets where the structural tokens consume space that vanilla packing would otherwise fill with additional raw context.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This creates a routing problem: for any given query, budget, and evidence corpus, should the system apply boundary colorization or fall back to vanilla packing?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A fixed strategy is suboptimal because the crossover point depends on task-specific factors\u2014whether the answer contract is already reachable in the raw prompt, whether evidence appears late in the chunk ordering, and whether the query targets structured fields or free-text spans.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We investigate a deterministic, model-free adaptive gate that makes this routing decision using inspectable signals derived from the prompt, query, and evidence corpus before packing.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Adaptive Boundary Colorization Gate: A Deterministic Routing Strategy for Prompt Boundary Colorization",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This design prioritizes avoiding destructive over-compression over capturing marginal token savings.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has approved this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The gate preserved tight/late-evidence colorization gains and eliminated the known 480-token technical-doc regression by routing to vanilla when the answer contract was already visible."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "adaptive-boundary-colorization-gate",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

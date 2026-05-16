@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Using a synthetic categorical-distribution simulator across 40 random seeds and 24 generational cycles, we compare four scenarios: unfiltered recursive synthetic replacement, expert quarantine alone, real-data anchoring alone, and the full immune system (anchor plus experts).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The immune system reduced final Jensen-Shannon divergence from the true distribution by 61.9% versus the unfiltered baseline and by 8.4% versus anchoring alone.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Expert quarantine without real-data anchoring produced negligible improvement over baseline (Jensen-Shannon divergence reduction < 0.1%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Rare-mode retention improved from 1.9% to 11.0% of true rare mass under the immune system, but remained severely degraded relative to the original distribution.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report the negative finding that internal expert critique alone, absent external or real-data anchors, is ineffective in this setting, consistent with prior work on the limitations of unaided self-correction.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "(Nature, 2024) demonstrated that indiscriminate recursive training on model-generated data leads to progressive distributional narrowing and eventual collapse, with tail phenomena disappearing first and irreversibly.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "(arXiv:2404.01413, 2024) showed theoretically and empirically that accumulating real data alongside synthetic data can avert collapse, but the conditions under which this holds at scale remain incompletely characterized.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "(arXiv:2305.14325, 2023) reported factuality and reasoning improvements from multiagent debate, while Huang et al.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated by an AI system from automated research artifacts (run notes, simulation logs, decision records, and metrics files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "(arXiv:2310.01798, ICLR 2024) found that language models cannot reliably self-correct reasoning without external feedback.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Recursive training on model-generated data has been shown to cause progressive distributional collapse, with disproportionate loss in rare or tail phenomena. We investigate whether a controller architecture\u2014an \"expert immune system\"\u2014combining immutable provenance tracking, real-data anchoring, diverse expert verification, and quarantine of suspect outputs can mitigate this collapse. Using a synthetic categorical-distribution simulator across 40 random seeds and 24 generational cycles, we compare",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "(arXiv:2305.11738, ICLR 2024) demonstrated that tool-interactive critiquing outperforms introspective self-correction.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Recursive training on model-generated data has been shown to cause progressive distributional collapse, with disproportionate loss in rare or tail phenomena. We investigate whether a controller architecture\u2014an \"expert immune system\"\u2014combining immutable provenance tracking, real-data anchoring, diverse expert verification, and quarantine of suspect outputs can mitigate this collapse. Using a synthetic categorical-distribution simulator across 40 random seeds and 24 generational cycles, we compare",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We pose the question: can a controller that combines provenance tracking, real-data anchoring, diverse expert verification, and quarantine of suspect outputs plausibly reduce recursive collapse compared with unfiltered self-consumption?",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Anti-Collapse Expert Immune System: A Provenance-Anchored Controller for Mitigating Recursive AI Data Collapse",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We make the following contributions: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated by an AI system from automated research artifacts (run notes, simulation logs, decision records, and metrics files). The operator who released this artifact claims no personal authorship credit for the writing or results. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "anti-collapse-expert-immune-system",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

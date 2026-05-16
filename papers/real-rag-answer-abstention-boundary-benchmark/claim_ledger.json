@@ -1,42 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Real-RAG Answer-Abstention Boundary Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/summary.md",
-        "results/real_rag_metrics.json",
-        "results/real_rag_predictions.jsonl",
-        "results/smoke/summary.md",
-        "results/smoke/real_rag_metrics.json",
-        "results/smoke/real_rag_predictions.jsonl"
+      "claim": "Retrieval-augmented generation (RAG) systems must decide when to answer and when to abstain, yet the boundary conditions under which small instruction-tuned models fail to abstain remain underspecified.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Scale this same real-document benchmark to more SQuAD/Wikipedia examples and at least one stronger cached local model before publication-grade claims.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "We report a 32-example pilot benchmark constructed from SQuAD v2 development-set documents, covering four boundary types: plain supported questions, missing-evidence (unanswerable) questions, wrong-document retrieval distractors, and long-context needle-in-a-haystack cases.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Using a locally cached HuggingFaceTB/SmolLM2-1.7B-Instruct model on CUDA with direct Transformers inference, we observe that plain supported accuracy (0.625) substantially exceeds boundary accuracy (0.250).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Missing-evidence and wrong-document conditions each produced 6/8 false non-abstaining answers; long-context needles produced 3/8 over-abstentions and 3/8 wrong answers.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results suggest that the answer-abstention boundary failures previously observed in synthetic settings persist with real Wikipedia-derived contexts and a live local model, though the evidence remains limited to a single small model and a 32-example pilot.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The project decision is `finalize_positive` with hypothesis status `supported`, confidence `medium`, and evidence strength `moderate`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A core requirement for deployed RAG systems is appropriate answer abstention: the model should decline to answer when the retrieved context does not support a response.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We construct a small but structured pilot benchmark from SQuAD v2 development data, covering four boundary types that stress different facets of the answer-vs-abstain decision.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We evaluate a single small instruction-tuned model under local CUDA inference and report per-category accuracy, false-answer rates, and over-abstention rates.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The branch-specific kill condition specified that the pilot should be finalized negative if no measurable boundary failures were observed beyond ordinary QA errors, or if the boundary split did not change abstention/error patterns relative to supported real-document QA.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We used the locally cached `HuggingFaceTB/SmolLM2-1.7B-Instruct` model with direct HuggingFace Transformers inference on CUDA.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An initial probe for reusable local endpoints (Ollama on port 11434 and an OpenAI-compatible endpoint on port 8000) found neither available, so the benchmark proceeded with direct model inference without a helper server.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real-RAG Answer-Abstention Boundary Benchmark: A Pilot Study of Answer-vs-Abstain Failures on Real Documents with a Local Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A durable real-document/live-local-model pilot was implemented and showed the answer-abstention boundary signal survives beyond the synthetic MVP."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "real-rag-answer-abstention-boundary-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

@@ -1,108 +1,192 @@
 {
-  "schema": "enoch_claim_ledger_v1",
-  "audit_status": "strict_traceability_pass_candidate",
-  "audit_scope": "strict claim/evidence traceability only; not peer review, scientific correctness, independent replication, statistical power, semantic output quality, citation accuracy, or human-written status",
   "claims": [
     {
-      "id": "vllm-sink-001",
-      "claim": "The calibrated OpenAI-compatible continuous-serving sweep used a patched vLLM 0.19.1 install serving Qwen/Qwen2.5-3B-Instruct with float16, max_model_len=1024, max_num_batched_tokens=4096, max_num_seqs=16, and gpu_memory_utilization=0.50.",
-      "support": "supported_by_public_surrogate_trace",
+      "claim": "We report results from a continuous-serving stress campaign evaluating a per-request attention-sink retention patch for vLLM 0.19.1, using Qwen2.5-3B-Instruct under an OpenAI-compatible serving interface.",
       "evidence_refs": [
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-001",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "evidence_summary": "The public evidence bundle run-notes tail records the server configuration and retention policy used for the calibrated sweep.",
-      "audit_scope": "configuration_traceability_only",
-      "not_validated": [
-        "environment_recreation",
-        "vLLM patch correctness",
-        "model cache integrity"
-      ]
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "id": "vllm-sink-002",
-      "claim": "Across the four calibrated paired baseline/retention trials, the public bundle reports zero request errors and no retention p95 latency regression over the 10% kill gate; the worst reported p95 delta is +0.30%.",
-      "support": "supported_by_public_surrogate_trace",
+      "claim": "Across four paired baseline/retention configurations\u2014varying concurrency (c8, c16), request count (n96\u2013n256), and output length (64\u2013128 tokens)\u2014we observe zero request errors in all conditions and no paired p95 latency regression exceeding the pre-specified 10% kill gate.",
       "evidence_refs": [
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-002",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "evidence_summary": "The run-notes tail lists p95 deltas for n96/c8/out64 trials 1-2, n128/c16/out64, and n256/c16/out128, and states that no calibrated pair triggered the kill gate.",
-      "audit_scope": "reported_metric_traceability_only",
-      "not_validated": [
-        "statistical_power",
-        "independent_replication",
-        "scientific_correctness"
-      ]
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "id": "vllm-sink-003",
-      "claim": "The same public evidence reports non-zero output preview differences in all calibrated pairs: 2/96, 3/96, 7/128, and 17/256, so this artifact does not establish semantic equivalence.",
-      "support": "supported_by_public_surrogate_trace",
+      "claim": "Three of four pairs show p95 latency improvements of 8\u201311% with retention enabled; one pair (n96/c8/out64 trial 2) shows a negligible +0.30% p95 delta.",
       "evidence_refs": [
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-003",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "evidence_summary": "The run-notes tail explicitly cautions that output preview differences were low but non-zero and that only output previews, not full semantic grading, were compared.",
-      "audit_scope": "limitation_traceability_only",
-      "not_validated": [
-        "semantic_output_quality",
-        "human_evaluation",
-        "full_output_equivalence"
-      ]
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "id": "vllm-sink-004",
-      "claim": "The public evidence reports high GPU utilization during calibrated load (90-96% mean, 96% peak), engine RSS around 2.34-2.42 GB, and MemAvailable roughly 54.6-55.6 GB after warmup.",
-      "support": "supported_by_public_surrogate_trace",
+      "claim": "Output preview comparisons reveal non-zero text divergence (2\u201317 differing previews per trial), increasing with output length, which prevents a claim of semantic equivalence.",
       "evidence_refs": [
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-004",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark results, and decision JSON). The operator claims no personal authorship credit for the writing or the results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "evidence_summary": "These resource ranges are stated in the public run-notes tail and repeated in the paper resource-utilization subsection.",
-      "audit_scope": "reported_resource_metric_traceability_only",
-      "not_validated": [
-        "hardware_generalization",
-        "long-duration_memory_leak_behavior"
-      ]
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "id": "vllm-sink-005",
-      "claim": "The project decision in the public bundle is finalize_positive with hypothesis_status supported, confidence medium, and evidence_strength strong for the latency kill-gate dimension.",
-      "support": "supported_by_public_surrogate_trace",
+      "claim": "Evidence strength is strong for the latency kill gate and moderate for output quality.",
       "evidence_refs": [
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json#/claims/vllm-sink-005",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/evidence_bundle.json",
-        "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/paper.md"
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was generated entirely by an AI system from automated research artifacts (run notes, evidence bundles, claim ledgers, benchmark results, and decision JSON). The operator claims no personal authorship credit for the writing or the results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "evidence_summary": "The evidence bundle decision and status_json.project_decision fields carry the same decision/status/confidence/evidence-strength values and a stop reason tied to the latency kill gate.",
-      "audit_scope": "decision_metadata_traceability_only",
-      "not_validated": [
-        "peer_review",
-        "external_acceptance",
-        "scientific_correctness"
-      ]
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the viability of per-request attention-sink retention under the tested 3B serving envelope but do not establish generalizability to larger models, different hardware, or production workloads.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This technical report documents a stress campaign evaluating an installed per-request attention-sink retention patch for vLLM 0.19.1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The campaign was designed around a pre-specified kill gate: the patch would be rejected if it produced request errors or a p95 latency regression exceeding 10% relative to an unpatched baseline, measured under paired OpenAI-compatible continuous-serving conditions with Qwen2.5-3B-Instruct.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The contributions of this campaign are: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A calibrated latency characterization of per-request attention-sink retention across four serving configurations with paired baseline/retention trials.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Documentation of an API constraint in vLLM 0.19.1's OpenAI protocol that requires flat scalar `vllm_xargs` rather than nested policy objects.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An honest accounting of non-zero output divergence between baseline and retention conditions, which tempers any claim of output equivalence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# vLLM Per-Request Attention-Sink Retention Under Continuous Serving: A 3B-Model Stress Campaign",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "Model-authored draft; no human reviewer endorsement is implied.",
-    "Raw result JSON/log/archive files named by the generated evidence bundle are not present in this public repository.",
-    "The public surrogate evidence is derived from paper.md and evidence_bundle.json; it supports traceability of selected claims, not independent reproduction.",
-    "Output quality is not semantically validated; non-zero output preview divergence is explicitly preserved as a limitation."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "raw_result_file_status": {
-    "status": "not_in_public_corpus_export",
-    "public_surrogate": "papers/vllm-attention-sink-retention-3b-continuous-serving-stress-campaign/public_evidence/strict_claim_evidence_summary.json",
-    "unavailable_result_file_count": 20
-  },
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "d9da6a7e72014993acfe6c5bc7c432c1"
-  }
+  "paper_slug": "vllm-attention-sink-retention-3b-continuous-serving-stress-campaign",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

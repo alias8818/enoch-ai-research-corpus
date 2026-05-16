@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T074518510433+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "2961d0642b389958deb2fd6d5a08c67dd07ef2c02f67a458fa1976b45535e68e"
+    },
+    {
+      "bytes": 466,
+      "path": "metadata.json",
+      "sha256": "8161528e7bacd3571c1110e8199141fcf6bb03f403aa606918569b3eeee5fef1"
+    },
+    {
+      "bytes": 16006,
+      "path": "evidence/public_paper.md",
+      "sha256": "d58b1a8c7f1aa0cdb4757c7a42053b9a6bbcf3ffa081008873dc61fb31f82cd6"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "dense-prune-harness-benchmark",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

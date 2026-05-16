@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/uncertainty_gates/logprob_margin_deployment_review.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_extended_gate_summary.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_extended_gate_summary.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_gate_summary.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__question_shape_v1__logprob_margin_manifest.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_gate_summary.json",
-        "results/uncertainty_gates/gsm8k_test_seed7_rows400_599__arithmetic_structure_v1__logprob_margin_manifest.json",
-        "results/uncertainty_gates/smoke_arithmetic_logprob_manifest.json"
+      "claim": "We evaluate one-shot logprob-margin gating as a deployment safeguard for cheap-model inference, comparing it against a 3\u00d7 repeated-sampling baseline on 200 rows of GSM8K across two prompt families (arithmetic-structure and question-shape).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch as a positive-but-narrow deployment benchmark; use one-shot logprob-margin gating only if the 0.5pp loss and 20.5% cheap-acceptance tradeoff is acceptable.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "The logprob-margin gate accepts 20.5% of rows as cheap at a 0.5 percentage-point accuracy loss relative to all-promoted inference, while achieving a 6.3\u00d7 wall-clock speedup over the 3\u00d7 repeated-sampling fallback.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, the repeated-sampling baseline accepts roughly twice as many cheap rows (\u224839.0\u201339.5%) with exact static-baseline recovery.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is claimed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is positive but narrow: one-shot logprob-margin gating is a viable latency-reduction safeguard when a small accuracy loss and limited cheap-acceptance rate are acceptable, but it does not dominate repeated sampling when exact accuracy recovery and maximum cheap acceptance are required.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Confidence in this finding is medium, bounded by the single dataset, single model profile, and 200-row evaluation scope.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is claimed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Deploying language models under latency and compute constraints often involves routing inputs between a cheap (fast, small) model and a more capable (slow, large) model.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate one-shot logprob-margin gating as a deployment safeguard for cheap-model inference, comparing it against a 3\u00d7 repeated-sampling baseline on 200 rows of GSM8K across two prompt families (arithmetic-structure and question-shape). The logprob-margin gate accepts 20.5% of rows as cheap at a 0.5 percentage-point accuracy loss relative to all-promoted inference, while achieving a 6.3\u00d7 wall-clock speedup over the 3\u00d7 repeated-sampling fallback. However, the repeated-sampling baseline accepts",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A safeguard gate decides which inputs can safely be served by the cheap model without unacceptable accuracy loss.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Repeated-sampling gates can recover the full promoted-model baseline but require multiple forward passes per input, incurring latency proportional to the sample count.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is claimed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "One-shot logprob-margin gates require only a single forward pass but may accept fewer cheap rows and may not fully recover baseline accuracy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This work benchmarks one-shot logprob-margin gating against a 3\u00d7 repeated-sampling reference on GSM8K rows 400\u2013599, using Bonsai cheap-profile GGUF models served by local `llama-server` instances.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Bonsai-Up Logprob-Margin Safeguard Deployment Benchmark",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We report accuracy, cheap-acceptance fraction, recovered static-loss fraction, and wall-clock latency for both strategies across two prompt families.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is claimed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A Python harness (`capture_logprob_margin_benchmark.py`) launches local `llama-server` instances from `/tmp/enoch_llama_services`, verifies model availability via the `/models` endpoint, and issues one deterministic cheap completion per row with `n_probs=10` to capture the top-10 token logprobs at each position.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human review or endorsement is claimed.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The rows400_599 benchmark now has durable accuracy and latency artifacts showing logprob/top-k gating meets the branch kill threshold while being about 6.3x faster than 3x repeated sampling."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "bonsai-up-logprob-margin-safeguard-deployment-benchmark",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

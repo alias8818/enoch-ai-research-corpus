@@ -1,42 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Memory Pressure Admission Gate Live Serving Validation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/live_llama_cpp_ctx8192/summary.json",
-        "results/live_llama_cpp_ctx8192/memory_gate_responses.json",
-        "results/live_llama_cpp_ctx8192/throughput_only_responses.json",
-        "results/live_llama_cpp/summary.json",
-        "results/live_llama_cpp/memory_gate_responses.json",
-        "results/live_llama_cpp/throughput_only_responses.json"
+      "claim": "In a live benchmark against a local llama.cpp server running Phi-4-mini-instruct (Q4_K_M GGUF) on an NVIDIA GB10 host, the gate reduced p95 request latency by 69.0% and energy proxy by 71.0% with zero completion loss relative to a throughput-only baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch with the live llama.cpp validation artifacts and use them to decide whether to productize an OpenAI-compatible memory-gate proxy.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "However, peak server RSS increased by 6.4%, indicating the gate does not reduce process-level memory and may slightly increase it due to compression overhead.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Evidence strength is moderate: results come from a single server stack, a single quantized model, and a compact 16-request deterministic workload.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "When all available context slots are occupied by long, low-value prompts, both tail latency and throughput degrade.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a memory-pressure admission gate for OpenAI-compatible LLM serving endpoints. The gate compresses or defers low-value, context-heavy prompts when estimated prompt-pressure exceeds the available slot KV budget. In a live benchmark against a local llama.cpp server running Phi-4-mini-instruct (Q4_K_M GGUF) on an NVIDIA GB10 host, the gate reduced p95 request latency by 69.0% and energy proxy by 71.0% with zero completion loss relative to a throughput-only baseline. However, peak server ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work in this project lineage evaluated this mechanism in a deterministic simulator and found positive results.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice.** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this document.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "For each incoming request, the gate: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Estimates prompt pressure** by computing the token-length footprint of the prompt relative to the per-slot context budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The baseline condition (`throughput_only`) forwards all requests to the endpoint without modification, applying no compression or deferral.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The benchmark harness (`src/live_memory_gate_bench.py`) is a stdlib-first Python script that: - Constructs a deterministic 16-request mixed workload containing: (a) repeated-prefix prompts that benefit from cache reuse, (b) high-value medium-length prompts, and (c) low-value long prompts designed to pressure the KV budget.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Records per-request latency (request latency and arrival-to-finish latency), completion status, response content, server RSS via `/proc` sampling, GPU power via `nvidia-smi` polling, and an energy proxy (mean GPU power \u00d7 makespan).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate a memory-pressure admission gate for OpenAI-compatible LLM serving endpoints. The gate compresses or defers low-value, context-heavy prompts when estimated prompt-pressure exceeds the available slot KV budget. In a live benchmark against a local llama.cpp server running Phi-4-mini-instruct (Q4_K_M GGUF) on an NVIDIA GB10 host, the gate reduced p95 request latency by 69.0% and energy proxy by 71.0% with zero completion loss relative to a throughput-only baseline. However, peak server ",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The gate compressed 8 of 16 requests (the low-value long prompts), which is the expected gate behavior given the workload composition.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The gate produced substantial improvements in latency and energy metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Memory Pressure Admission Gate: Live Serving Validation on a Local LLM Endpoint",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: A real local OpenAI-compatible llama.cpp endpoint completed paired baseline/gate workloads and the gate improved p95 latency by 69.02% and energy proxy by 70.95% with no completion loss."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "memory-pressure-admission-gate-live-serving-validation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

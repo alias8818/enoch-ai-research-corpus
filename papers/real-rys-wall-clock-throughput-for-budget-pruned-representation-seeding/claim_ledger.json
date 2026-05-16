@@ -1,43 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "results/gpt2_medium_wall_clock_summary.json",
-        "results/gpt2_medium_block_winner_eval_budget_pruned_calibrated_rerun.json",
-        "results/gpt2_medium_wall_clock_throughput.json",
-        "results/gpt2_medium_budget_pruned_calibration.json",
-        "results/gpt2_medium_block_winner_eval_budget_pruned_calibrated.json",
-        "results/gpt2_medium_block_winners.json",
-        "results/gpt2_medium_seed_report_budget_pruned_calibrated.json"
+      "claim": "We report wall-clock throughput measurements for budget-pruned representation seeding, a method that reduces the candidate interval set in transformer block scanning from exhaustive contiguous enumeration to a calibrated ~5% subset.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this branch; optional future work is replication on additional model families or repeated cold/warm timing runs.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "On gpt2-medium with 10 text probes under CUDA float16, the calibrated budget-pruned candidate set (17 of 300 intervals, a 94.33% reduction) preserved full recall of all 45 blind winners identified by exhaustive search and reduced total scan time from 3.336 s to 0.203 s, yielding a 16.42\u00d7 wall-clock speedup.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Exhaustive enumeration of all contiguous intervals in a model with $L$ layers produces $L(L+1)/2$ candidates, which grows quadratically and can become a throughput bottleneck for larger models or repeated evaluation.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Budget-pruned representation seeding addresses this bottleneck by using representation-level signals to pre-select a small candidate interval set, ideally preserving the high-scoring intervals (\"winners\") found by exhaustive search while dramatically reducing the number of forward passes required.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior work in this project lineage established a calibrated 5% budget-pruned seed report for gpt2-medium and verified its recall against blind winners.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The branch-specific kill condition was: finalize negative if scanning only the calibrated 5% candidate set does not produce a meaningful end-to-end wall-clock speedup over exhaustive contiguous block scanning on the same gpt2-medium probe harness, or if the speedup only appears by changing model, task, or scoring semantics between arms.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Budget pruning then retains only the top fraction of these ranked intervals\u2014here, approximately 5%\u2014as the candidate set for full scoring.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The calibration and seed-report generation were performed in the parent project; this branch inherits the calibrated seed report artifact (`results/gpt2_medium_seed_report_budget_pruned_calibrated.json`) without modification.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A shared-harness benchmark (`scripts/benchmark_hf_block_scan_throughput.py`) was implemented to ensure that the two experimental arms differ only in their interval set: - **Exhaustive arm:** Scores all 300 contiguous intervals of gpt2-medium (24 layers; intervals of length 1 through 24).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Budget-pruned arm:** Scores only the 17 intervals specified by the calibrated seed report.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Each arm includes its own baseline forward pass (to account for model-load and warm-up effects) followed by interval-scoring forward passes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Real RYS Wall-Clock Throughput for Budget-Pruned Representation Seeding",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The blind winners were computed independently in the parent project and stored in `results/gpt2_medium_block_winners.json`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed this content.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The calibrated 5% candidate set preserved all 45 gpt2-medium blind winners and reduced same-harness wall-clock scan time from 3.336s to 0.203s (16.42x)."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "real-rys-wall-clock-throughput-for-budget-pruned-representation-seeding",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

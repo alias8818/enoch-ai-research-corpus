@@ -1,12 +1,192 @@
 {
-  "claims": [],
-  "limitations": [
-    "Model-authored draft; human claim audit required."
+  "claims": [
+    {
+      "claim": "Long-context inference systems that selectively rehydrate cached context segments can reduce resident memory, but routing decisions\u2014whether to skip, sketch-rehydrate, fall back to full context, or abstain\u2014must be made cheaply before full context is loaded.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We train a compact 72-parameter multiclass perceptron student to approximate a cost-aware guide teacher's routing policy using only cheap task and sketch features (anchor recall, sketch entropy, ambiguity, compression loss, budget pressure, answer criticality, locality, and unanswerable probability).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "On a synthetic policy-isolation benchmark spanning six task types (kv_recall, section_qa, reversible_compression, structured_extract, code_nav, unanswerable), the student matches guide-teacher labels at 98.01% mean accuracy across five random seeds (range 97.28%\u201398.50%).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The student achieves mean utility 0.8718 versus the guide-teacher oracle's 0.8771 (mean gap 0.0052), gains 0.3723 mean utility over a static hand-coded heuristic baseline, and reduces normalized cost by 27.17% compared to a full-context-always fallback (30.59 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The findings support the feasibility of cheap learned routing for cost-aware rehydration but require validation on real rehydration traces with downstream answer-quality metrics before any deployment claim.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Prior local experiments on section-sketch rehydration (project `source-record-redacted`) found that exact section anchors can preserve quality at much lower resident memory, while lossy topic-only sketches fail.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "Long-context inference systems that selectively rehydrate cached context segments can reduce resident memory, but routing decisions\u2014whether to skip, sketch-rehydrate, fall back to full context, or abstain\u2014must be made cheaply before full context is loaded. We train a compact 72-parameter multiclass perceptron student to approximate a cost-aware guide teacher's routing policy using only cheap task and sketch features (anchor recall, sketch entropy, ambiguity, compression loss, budget pressure, an",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Separately, prior local experiments with context-rehydration students (project `source-record-redacted`) found that task-specific student models can outperform undistilled heuristics on synthetic sketch-memory tasks.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The teacher's utility model is hand-constructed from prior local evidence about section-anchor effectiveness and sketch failure modes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The student is a 72-parameter multiclass perceptron trained on the eight cheap features to predict the guide teacher's action label.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Learning a Cost-Aware Context-Rehydration Routing Policy with a Compact Student Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A corrected 5-seed calibrated sweep was run using `src/run_guide_student_sweep.py`.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, decision logs, benchmark outputs, claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond making the artifact available. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Metrics include label accuracy against the guide teacher, mean utility, normalized cost, and per-seed consistency.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, decision logs, benchmark outputs, claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond making the artifact available. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "An initial smoke test and sweep were corrected to include the full-context baseline; all reported results use the corrected (v2) runs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was generated by an AI system from automated research artifacts (run notes, decision logs, benchmark outputs, claim ledgers). The operator who released this artifact claims no personal authorship credit for the writing or results beyond making the artifact available. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    }
   ],
-  "writer_provider": {
-    "base_url": "https://api.synthetic.new/openai/v1",
-    "model": "hf:zai-org/GLM-5.1",
-    "provider": "synthetic.new",
-    "response_id": "source-record-redacted"
-  }
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "rehydration-guide-student",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

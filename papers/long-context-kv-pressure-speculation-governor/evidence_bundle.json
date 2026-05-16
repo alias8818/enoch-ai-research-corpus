@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260506T053410576128+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "239656ae7ff4f2e2d3283b33f39d60f09f8a55511e784c292948161cdaef7cc9"
+    },
+    {
+      "bytes": 482,
+      "path": "metadata.json",
+      "sha256": "892eccd0cd04a88091b61c68443c563421ad312836a2387dd3466543ab9c1772"
+    },
+    {
+      "bytes": 18911,
+      "path": "evidence/public_paper.md",
+      "sha256": "57fb479c6f0f739d35630be77b7b3b71c262733f8ef128b84d6eaf96e447d26b"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "long-context-kv-pressure-speculation-governor",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

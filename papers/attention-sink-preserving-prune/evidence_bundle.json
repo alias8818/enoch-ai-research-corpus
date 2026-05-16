@@ -1,5 +1,36 @@
 {
-  "source": "langgraph_control_plane_mvp",
-  "project_id": "source-record-redacted",
-  "run_id": "source-record-redacted-20260430T044618429549+0000"
+  "file_inventory": [
+    {
+      "bytes": 292,
+      "path": "paper_manifest.json",
+      "sha256": "e0f223c4acb182c2c4e78963f8d6388edd3d406a30868166899d7ae5a87d6eaa"
+    },
+    {
+      "bytes": 468,
+      "path": "metadata.json",
+      "sha256": "284274fc625e7088bc8db43e61eb37450b4a9738f292c942cba000e6adadef38"
+    },
+    {
+      "bytes": 14971,
+      "path": "evidence/public_paper.md",
+      "sha256": "b71549b83c7ce0e108ba1d4642950cfd4f74e157b9a87929858280f779226103"
+    }
+  ],
+  "limitations": [
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
+  ],
+  "paper_slug": "attention-sink-preserving-prune",
+  "result_artifacts": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "result_file_refs": [
+    "paper_manifest.json",
+    "metadata.json",
+    "evidence/public_paper.md"
+  ],
+  "schema_version": "evidence_bundle.public_backfill.v1",
+  "source": "enoch_public_corpus_backfill"
 }

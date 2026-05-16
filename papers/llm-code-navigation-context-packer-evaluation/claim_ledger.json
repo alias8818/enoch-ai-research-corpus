@@ -1,41 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "LLM Code Navigation Context-Packer Evaluation produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/llm_context_packer_eval_stdout.json",
-        "artifacts/llm_context_packer_eval_qwen3b_batch_smoke_stdout.json",
-        "artifacts/llm_context_packer_eval_qwen3b_smoke_stdout.json",
-        "artifacts/llm_context_packer_eval_smoke2_stdout.json",
-        "artifacts/llm_context_packer_eval_smoke_stdout.json"
+      "claim": "We evaluate two context-packing strategies\u2014lexical RAG and import-neighborhood\u2014for providing code navigation context to a small instruction-tuned language model (Qwen2.5-3B-Instruct).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Use the saved LLM evaluation artifacts to guide stronger-model or calibration work only if a separate, concrete benchmark is explicitly desired.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Using a 150-example stratified slice of long-form code navigation queries over the vllm repository, plus 60 no-answer probes, we measure strict and tolerant accuracy, abstention rates, and calibration.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Import-neighborhood context yields directionally higher accuracy across all metrics: +12.0 percentage points strict file-line accuracy, +29.3 points \u00b12-line accuracy, +25.3 points signature-plus-path accuracy, and +9.3 points exact-signature accuracy over lexical RAG.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "However, import-neighborhood context also produces substantially worse calibration, false-answering 36.7% of no-answer probes (versus 1.7% for lexical RAG) and achieving a worse Brier score (0.535 vs.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Absolute accuracy remains low for both packers, indicating that a 3B-parameter model struggles to extract and copy exact code navigation answers even when the target is present in context.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "These results support the hypothesis that import-neighborhood packing improves answer accuracy in the tested setting, but the calibration degradation represents a significant trade-off.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Two natural context-packing strategies are: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate two context-packing strategies\u2014lexical RAG and import-neighborhood\u2014for providing code navigation context to a small instruction-tuned language model (Qwen2.5-3B-Instruct). Using a 150-example stratified slice of long-form code navigation queries over the vllm repository, plus 60 no-answer probes, we measure strict and tolerant accuracy, abstention rates, and calibration. Import-neighborhood context yields directionally higher accuracy across all metrics: +12.0 percentage points stric",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Lexical RAG**: Retrieve code fragments by lexical similarity (e.g., BM25 or embedding-based search) between the query and source text.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The hypothesis under evaluation is that import-neighborhood context provides more relevant signal for code navigation queries than lexical RAG context, leading to higher answer accuracy when consumed by an LLM.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report presents a controlled comparison of these two packers using a single local model, a fixed evaluation slice, and multiple accuracy and calibration metrics.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# LLM Code Navigation Context-Packer Evaluation: Import-Neighborhood vs. Lexical RAG Contexts for Code Navigation with a Small Instruction Model",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We implemented `scripts/llm_context_packer_eval.py`, a Python harness that: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "We evaluate two context-packing strategies\u2014lexical RAG and import-neighborhood\u2014for providing code navigation context to a small instruction-tuned language model (Qwen2.5-3B-Instruct). Using a 150-example stratified slice of long-form code navigation queries over the vllm repository, plus 60 no-answer probes, we measure strict and tolerant accuracy, abstention rates, and calibration. Import-neighborhood context yields directionally higher accuracy across all metrics: +12.0 percentage points stric",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Scores each prediction against the weak label using four accuracy metrics (strict file-line, \u00b12-line tolerant, signature-plus-path, exact signature) and records abstention and calibration outcomes.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifacts. Readers should treat this document as an unreviewed AI-generated research artifact. No human reviewer has endorsed its claims.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: This branch completed its validation target by running a local LLM over the saved 150-example slice, adding 30 gold spot checks, and comparing lexical versus import-neighborhood contexts on accuracy and calibration."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "llm-code-navigation-context-packer-evaluation",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

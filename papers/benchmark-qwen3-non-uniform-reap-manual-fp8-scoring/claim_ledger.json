@@ -1,44 +1,192 @@
 {
-  "paper_id": "source-record-redacted",
   "claims": [
     {
-      "claim": "Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring produced positive/supportive evidence in the recorded OMX run.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/summary.md",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_broader/benchmark_summary.json",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/summary.md",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/benchmark_summary.json",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/run_codeeval64.log",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/qwen3_manual_fp8_prompt_loss_report.json",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/global_plan_prompt_loss.json",
-        "artifacts/qwen3_coder_30b_fp8_manual_prompt_loss_codeeval64/uniform_baseline_plan_prompt_loss.json"
+      "claim": "We evaluate whether non-uniform (global/ragged) REAP pruning with manual FP8/BF16 scoring yields lower prompt-level loss than uniform baseline pruning on Qwen3-Coder-30B-A3B.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "high",
-      "allowed_wording": "The current project artifacts support this finding in the tested setting.",
-      "forbidden_wording": "This proves the method works universally."
+      "id": "C1",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The recommended next action is: Finalize this benchmark branch; only revisit with a materially new REAP-observer pruning plan or a separately cached canonical HumanEval/MBPP evaluation.",
-      "supporting_artifacts": [
-        ".omx/project_decision.json",
-        "run_notes.md"
+      "claim": "Two benchmark suites were executed: a 16-prompt mixed-topic slice and a 64-prompt code-evaluation fixture.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
       ],
-      "confidence": "medium",
-      "allowed_wording": "The project decision recommends this follow-up.",
-      "forbidden_wording": "This follow-up is guaranteed to succeed."
+      "id": "C2",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the 16-prompt suite, global/ragged pruning produced a mean loss of 10.892 versus uniform 10.902 (\u0394 = \u22120.0098), but the paired bootstrap confidence interval crossed zero.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C3",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "In the 64-prompt code-evaluation suite, global/ragged pruning produced a mean loss of 11.189 versus uniform 11.090 (\u0394 = +0.0992), again with a bootstrap 95% CI spanning zero (CI: [\u22120.119, +0.323]).",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C4",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The probability that global pruning yields lower loss was 0.191, and per-prompt wins were tied at 32/32.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C5",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "We conclude that the manual FP8/BF16 scoring pipeline is functional and reproducible, but the hypothesis that non-uniform global pruning improves prompt-level loss quality is not supported by the observed evidence.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C6",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The result is mixed and inconclusive rather than a decisive win for either pruning strategy.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C7",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "Mixture-of-experts (MoE) models such as Qwen3-Coder-30B-A3B activate only a subset of expert parameters per token, creating an opportunity for non-uniform pruning strategies that exploit the heterogeneous importance of different experts.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C8",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The central hypothesis under test is whether global/ragged pruning\u2014where the pruning budget is allocated non-uniformly across layers according to per-layer importance scores\u2014produces lower prompt-level loss than uniform baseline pruning when applied to Qwen3-Coder-30B-A3B under manual FP8/BF16 scoring.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C9",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "A secondary objective is to validate that the manual FP8/BF16 scoring pipeline itself functions correctly and produces reproducible loss measurements.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C10",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "This report documents a mixed and inconclusive result.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "# Benchmark Qwen3 Non-Uniform REAP Manual-FP8 Scoring: An Inconclusive Result on Global Pruning Quality",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C11",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
+    },
+    {
+      "claim": "The target model is Qwen3-Coder-30B-A3B, a mixture-of-experts architecture.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/public_paper.md",
+          "quote": "> **AI Provenance Notice:** This draft was AI-generated from automated research artifacts produced by the OMX research automation pipeline. The operator claims no personal authorship credit for the writing or results beyond releasing the artifact. Readers should treat this as an unreviewed AI-generated research artifact. No human reviewer has endorsed its conclusions.",
+          "source_path": "evidence/public_paper.md",
+          "support_level": "public_artifact_backfill"
+        }
+      ],
+      "id": "C12",
+      "notes": "Historical backfill linked the claim to already published artifacts; this is not independent source revalidation.",
+      "support_status": "weakly_supported_public_artifact"
     }
   ],
+  "ledger_status": "claims_reference_evidence",
   "limitations": [
-    "This draft is automatically generated for human review and must be checked before public release.",
-    "Claims are limited to the project artifacts listed in the evidence bundle.",
-    "External replication and broader hardware/model coverage are TODO unless explicitly present in the artifacts.",
-    "Project stop/decision rationale: The requested 50-100 prompt code-eval manual FP8/BF16 benchmark and paired bootstrap CI analysis completed, showing mixed/inconclusive pruning-quality evidence rather than a decisive global/ragged win."
+    "This historical backfill uses already published public artifacts when original worker evidence is unavailable in the public corpus checkout.",
+    "The strict audit verifies machine-readable references, not scientific correctness or independent replication."
   ],
-  "forbidden_global_claims": [
-    "Do not claim peer review or public validation.",
-    "Do not claim results on datasets, hardware, or models not present in artifacts.",
-    "Do not hide negative or inconclusive findings."
-  ]
+  "paper_slug": "benchmark-qwen3-non-uniform-reap-manual-fp8-scoring",
+  "schema_version": "claim_ledger.public_backfill.v1",
+  "unsupported_claim_count": 0
 }

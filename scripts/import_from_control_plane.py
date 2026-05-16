@@ -80,6 +80,7 @@ def sanitize_public_content(content: str, *, redactions: Iterable[str] = ()) -> 
         "Enoch/OMX control plane": "Enoch control plane",
         "Enoch/OMX": "Enoch",
         "No human reviewer has validated the claims herein.": "No independent human review has been performed on the code, results, or interpretation.",
+        "No human reviewer has validated these claims.": "No independent human review has been performed on the code, results, or interpretation.",
         "## Review Required": "## AI Provenance and Scope",
         "Human review and richer claim extraction are still required.": "No independent human review has been performed; richer claim extraction remains outside this packaging/provenance release gate.",
         "intended for human review before public submission": "released as an unreviewed AI-generated research artifact for corpus inspection",

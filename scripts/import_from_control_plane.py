@@ -26,6 +26,8 @@ TARGET_NAMES = {
     "claim_ledger_path": "claim_ledger.json",
     "manifest_path": "paper_manifest.json",
 }
+MAX_PUBLIC_EVIDENCE_FILES = 120
+MAX_PUBLIC_EVIDENCE_BYTES = 250_000
 TOKEN_PATTERNS = [
     re.compile(r"(?<![A-Za-z0-9])sk-[A-Za-z0-9_-]{20,}"),
     re.compile(r"(?<![A-Za-z0-9])gh[pousr]_[A-Za-z0-9_]{20,}"),
@@ -124,6 +126,34 @@ def artifact_content(base_url: str, token: str, paper_id: str, field: str) -> st
         f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}/artifact/{field}",
     )
     return str(artifact.get("content") or "")
+
+
+def write_public_evidence_files(paper_dir: Path, evidence_bundle_content: str, *, redactions: Iterable[str]) -> list[str]:
+    try:
+        bundle = json.loads(evidence_bundle_content)
+    except Exception:
+        return []
+    files = bundle.get("public_evidence_files")
+    if not isinstance(files, list):
+        return []
+    written: list[str] = []
+    for item in files[:MAX_PUBLIC_EVIDENCE_FILES]:
+        if not isinstance(item, dict):
+            continue
+        rel = str(item.get("path") or "").strip()
+        content = str(item.get("content") or "")
+        if not rel or rel.startswith("/") or ".." in Path(rel).parts:
+            continue
+        target = (paper_dir / rel).resolve()
+        try:
+            target.relative_to(paper_dir)
+        except ValueError:
+            continue
+        sanitized = sanitize_public_content(content[:MAX_PUBLIC_EVIDENCE_BYTES], redactions=redactions)
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(sanitized, encoding="utf-8")
+        written.append(str(target.relative_to(paper_dir)))
+    return written
 
 
 def public_content_issues(content: str) -> list[str]:
@@ -377,6 +407,7 @@ def main() -> int:
             paper_dir.mkdir(parents=True, exist_ok=True)
             (paper_dir / "metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             redactions = {paper_id, project_id, run_id}
+            sanitized_artifacts: dict[str, str] = {}
             for field in ARTIFACT_FIELDS:
                 try:
                     artifact = request_json(args.control_url, args.token, f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}/artifact/{field}")
@@ -384,7 +415,10 @@ def main() -> int:
                     (paper_dir / f"{field}.missing.txt").write_text(f"missing {field}: {type(exc).__name__}: {exc}\n", encoding="utf-8")
                     continue
                 content = sanitize_public_content(str(artifact.get("content") or ""), redactions=redactions)
+                sanitized_artifacts[field] = content
                 (paper_dir / TARGET_NAMES[field]).write_text(content, encoding="utf-8")
+            if "evidence_bundle_path" in sanitized_artifacts:
+                write_public_evidence_files(paper_dir, sanitized_artifacts["evidence_bundle_path"], redactions=redactions)
             known[fp] = paper_dir
             if existed:
                 updated += 1

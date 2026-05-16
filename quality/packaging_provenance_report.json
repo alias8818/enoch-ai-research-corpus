@@ -1,7 +1,7 @@
 {
   "claim_evidence_audit": {
-    "claim_ledgers_empty": 264,
-    "count": 385,
+    "claim_ledgers_empty": 265,
+    "count": 386,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
     "result_file_refs": 1429,
@@ -9,7 +9,7 @@
     "status": "blocked_audit_gaps",
     "strict_claim_evidence_pass_count": 3
   },
-  "count": 385,
+  "count": 386,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 385,
+  "passed": 386,
   "rows": [
     {
       "bytes": 16279,
@@ -2488,6 +2488,17 @@
       "passes": true,
       "slug": "native-tool-call-capability-lease-wrapper",
       "words": 1818
+    },
+    {
+      "bytes": 16482,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/paper.md",
+      "passes": true,
+      "slug": "natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models",
+      "words": 2344
     },
     {
       "bytes": 14475,

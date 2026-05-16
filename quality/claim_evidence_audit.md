@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 3 / 385
+Strict claim/evidence passed: 3 / 386
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,7 +8,7 @@ Status: `blocked_audit_gaps`
 
 ## Summary
 
-- Empty claim ledgers: 264 / 385
+- Empty claim ledgers: 265 / 386
 - Evidence `result_files` references: 1429
 - Publicly present result-file references: 22
 - Missing result-file references: 1387
@@ -258,6 +258,7 @@ Status: `blocked_audit_gaps`
 | `multi-tenant-cache-fairness-guard` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `n-m-quant-prune-joint-search` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `native-tool-call-capability-lease-wrapper` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
+| `natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `near-miss-tool-call-dataset` | False | 2 | 3 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |
 | `network-path-curiosity-agent` | False | 0 | 0 | ["claim_ledger_empty_claims"] |
 | `neural-endpoint-segment-order-sensitivity-validation` | False | 2 | 4 | ["claims_missing_evidence_refs", "evidence_result_files_missing_public_artifacts"] |

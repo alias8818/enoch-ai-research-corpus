@@ -1,6 +1,6 @@
 {
-  "claim_ledgers_empty": 264,
-  "count": 385,
+  "claim_ledgers_empty": 265,
+  "count": 386,
   "featured_artifacts_checked": 2,
   "featured_artifacts_strict_pass_count": 2,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
@@ -4765,6 +4765,24 @@
       "strict_pass": false
     },
     {
+      "audit_status": "blocked_empty_claims",
+      "claim_count": 0,
+      "claim_ledger_empty": true,
+      "claim_ledger_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/claim_ledger.json",
+      "claim_ledger_schema_status": "blocked_empty_claims",
+      "evidence_bundle_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/evidence_bundle.json",
+      "issues": [
+        "claim_ledger_empty_claims"
+      ],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 0,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 0,
+      "slug": "natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models",
+      "strict_pass": false
+    },
+    {
       "audit_status": "blocked_missing_result_files",
       "claim_count": 2,
       "claim_ledger_empty": false,
@@ -8083,7 +8101,7 @@
     }
   ],
   "status": "blocked_audit_gaps",
-  "strict_claim_evidence_failed_count": 382,
+  "strict_claim_evidence_failed_count": 383,
   "strict_claim_evidence_pass_count": 3,
   "validated": [
     "claim_ledger_schema_parseable",

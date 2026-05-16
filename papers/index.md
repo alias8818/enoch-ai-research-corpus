@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 385
+Count: 386
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 385/385 packaging/provenance lint pass and 3/385 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 386/386 packaging/provenance lint pass and 3/386 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -252,6 +252,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Multi-Tenant Cache Fairness Guard](multi-tenant-cache-fairness-guard/paper.md) | `enoch-paper-0309` | yes | yes | 0 | false | 0 |
 | [N:M Quant-Prune Joint Search](n-m-quant-prune-joint-search/paper.md) | `enoch-paper-0201` | yes | yes | 0 | false | 0 |
 | [Native Tool-Call Capability Lease Wrapper](native-tool-call-capability-lease-wrapper/paper.md) | `enoch-paper-0210` | yes | yes | 0 | false | 0 |
+| [Natural-corpus suffix-copy speculative decoding latency for GPT-2-class models](natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/paper.md) | `enoch-paper-0507` | yes | yes | 0 | false | 0 |
 | [Near-Miss Tool Call Dataset](near-miss-tool-call-dataset/paper.md) | `enoch-paper-0066` | yes | yes | 2 | false | 3 |
 | [Network Path Curiosity Agent](network-path-curiosity-agent/paper.md) | `enoch-paper-0132` | yes | yes | 0 | false | 0 |
 | [Neural Endpoint Segment Order Sensitivity Validation](neural-endpoint-segment-order-sensitivity-validation/paper.md) | `enoch-paper-0113` | yes | yes | 2 | false | 4 |

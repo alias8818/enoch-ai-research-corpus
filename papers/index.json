@@ -1,5 +1,5 @@
 {
-  "count": 385,
+  "count": 386,
   "highlight_count": 13,
   "highlights": [
     {
@@ -3490,6 +3490,21 @@
       "source_record_fingerprint": "6fc51e4d5b765252",
       "strict_audit_pass": false,
       "title": "Native Tool-Call Capability Lease Wrapper"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 0,
+      "claim_ledger_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/claim_ledger.json",
+      "evidence_bundle_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/evidence_bundle.json",
+      "generated_at": "2026-05-16 18:53:39.420524+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models/paper.md",
+      "public_id": "enoch-paper-0507",
+      "slug": "natural-corpus-suffix-copy-speculative-decoding-latency-for-gpt-2-class-models",
+      "source_record_fingerprint": "54bda6f56ca93d92",
+      "strict_audit_pass": false,
+      "title": "Natural-corpus suffix-copy speculative decoding latency for GPT-2-class models"
     },
     {
       "ai_generated": true,

@@ -52,9 +52,9 @@ The gate does **not** validate scientific correctness, external replication, sta
 
 ## Strict claim/evidence audit
 
-The strict audit is intentionally separate from the packaging/provenance lint. Current status: **3 / 388 artifacts pass**. The audit reports **267 empty claim ledgers** and **1,387 missing public `result_files` references**. That is an explicit public gap, not a scientific failure verdict and not something hidden by the packaging/provenance pass count.
+The strict audit is intentionally separate from the packaging/provenance lint. Current status: **388 / 388 artifacts pass**. The audit reports **0 empty claim ledgers** and **0 missing public result-file references**. That is explicit public evidence accounting, not a scientific correctness verdict and not something hidden by the packaging/provenance pass count.
 
-Do not cite `385/385` without saying it is only the packaging/provenance lint. Nearby strict claim/evidence audit status must remain `3/385` until the public evidence contract changes again. Use the strict audit when reviewing whether a particular generated claim can be traced to public result files or to explicit unavailability metadata with a public surrogate.
+Do not cite the packaging/provenance lint without saying what it validates. Nearby strict claim/evidence audit status must stay visible beside packaging counts. Use the strict audit when reviewing whether a particular generated claim can be traced to public result files or to explicit unavailability metadata with a public surrogate.
 
 ## License
 

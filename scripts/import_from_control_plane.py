@@ -37,6 +37,80 @@ PRIVATE_IP_RE = re.compile(r"\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3
 SOURCE_RECORD_RE = re.compile(r"\b(?:idea-)?[0-9a-f]{32}(?:-[0-9]{14})?\b")
 PUBLIC_ID_RE = re.compile(r"^enoch-paper-(\d{4,})$")
 DEFAULT_PAPER_STATUS = "publication_draft"
+EVIDENCE_LEDGER_STATUSES = {"claims_reference_evidence", "claims_require_review"}
+
+
+def _json_artifact(content: str, field: str) -> tuple[dict[str, Any], list[str]]:
+    try:
+        parsed = json.loads(content)
+    except Exception:
+        return {}, [f"{field}:invalid_json"]
+    if not isinstance(parsed, dict):
+        return {}, [f"{field}:not_object"]
+    return parsed, []
+
+
+def semantic_evidence_artifact_issues(artifacts: dict[str, str]) -> list[str]:
+    issues: list[str] = []
+    evidence, evidence_issues = _json_artifact(artifacts.get("evidence_bundle_path", ""), "evidence_bundle_path")
+    ledger, ledger_issues = _json_artifact(artifacts.get("claim_ledger_path", ""), "claim_ledger_path")
+    manifest, manifest_issues = _json_artifact(artifacts.get("manifest_path", ""), "manifest_path")
+    issues.extend(evidence_issues)
+    issues.extend(ledger_issues)
+    issues.extend(manifest_issues)
+
+    public_files = evidence.get("public_evidence_files")
+    if not isinstance(public_files, list) or not public_files:
+        issues.append("evidence_bundle_path:missing_public_evidence_files")
+    else:
+        has_public_evidence_content = False
+        for item in public_files:
+            if not isinstance(item, dict):
+                continue
+            if str(item.get("source_path") or "").strip() and str(item.get("content") or "").strip():
+                has_public_evidence_content = True
+                break
+        if not has_public_evidence_content:
+            issues.append("evidence_bundle_path:missing_public_evidence_content")
+
+    claims = ledger.get("claims")
+    if not isinstance(claims, list) or not claims:
+        issues.append("claim_ledger_path:missing_claims")
+    else:
+        for index, claim in enumerate(claims):
+            if not isinstance(claim, dict):
+                issues.append(f"claim_ledger_path:claim_{index}:not_object")
+                continue
+            refs = claim.get("evidence_refs")
+            if not isinstance(refs, list) or not any(isinstance(ref, dict) for ref in refs):
+                issues.append(f"claim_ledger_path:claim_{index}:missing_evidence_refs")
+    ledger_status = str(ledger.get("ledger_status") or "")
+    if ledger_status not in EVIDENCE_LEDGER_STATUSES:
+        issues.append("claim_ledger_path:unexpected_ledger_status")
+    try:
+        unsupported_claim_count = int(ledger.get("unsupported_claim_count") or 0)
+    except Exception:
+        unsupported_claim_count = 1
+    if unsupported_claim_count:
+        issues.append("claim_ledger_path:unsupported_claims_present")
+
+    try:
+        evidence_file_count = int(manifest.get("evidence_file_count") or 0)
+    except Exception:
+        evidence_file_count = 0
+    if evidence_file_count < 1:
+        issues.append("manifest_path:missing_evidence_file_count")
+    try:
+        claim_count = int(manifest.get("claim_count") or 0)
+    except Exception:
+        claim_count = 0
+    if claim_count < 1:
+        issues.append("manifest_path:missing_claim_count")
+    manifest_ledger_status = str(manifest.get("claim_ledger_status") or "")
+    if manifest_ledger_status not in EVIDENCE_LEDGER_STATUSES:
+        issues.append("manifest_path:unexpected_claim_ledger_status")
+
+    return sorted(set(issues))
 
 
 def slugify(value: str, fallback: str) -> str:
@@ -200,11 +274,13 @@ def dry_run_check(
     if "paper_review.finalization_package_prepared" not in event_types:
         issues.append("missing_finalization_event")
     artifact_checks: dict[str, Any] = {}
+    sanitized_artifacts: dict[str, str] = {}
     for field in ARTIFACT_FIELDS:
         target = paper_dir / TARGET_NAMES[field]
         try:
             raw_content = artifact_content(base_url, token, paper_id, field)
             sanitized = sanitize_public_content(raw_content, redactions=redactions)
+            sanitized_artifacts[field] = sanitized
             content_issues = public_content_issues(sanitized)
             if not sanitized.strip():
                 content_issues.append("empty_after_sanitize")
@@ -224,6 +300,10 @@ def dry_run_check(
                 "issues": [issue],
                 "error": f"{type(exc).__name__}: {exc}",
             }
+    semantic_issues = []
+    if all(field in sanitized_artifacts for field in ("evidence_bundle_path", "claim_ledger_path", "manifest_path")):
+        semantic_issues = semantic_evidence_artifact_issues(sanitized_artifacts)
+        issues.extend(semantic_issues)
     return {
         "paper_id_fingerprint": source_fingerprint(paper_id),
         "project_name": str(row.get("project_name") or paper_id or "Untitled Paper"),
@@ -237,6 +317,10 @@ def dry_run_check(
             "finalization_event": "paper_review.finalization_package_prepared" in event_types,
         },
         "artifact_checks": artifact_checks,
+        "semantic_evidence_gate": {
+            "ok": not semantic_issues,
+            "issues": semantic_issues,
+        },
         "issues": sorted(set(issues)),
     }
 
@@ -404,21 +488,27 @@ def main() -> int:
                 break
             continue
         try:
-            paper_dir.mkdir(parents=True, exist_ok=True)
-            (paper_dir / "metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
             redactions = {paper_id, project_id, run_id}
             sanitized_artifacts: dict[str, str] = {}
+            fetch_errors: list[str] = []
             for field in ARTIFACT_FIELDS:
                 try:
                     artifact = request_json(args.control_url, args.token, f"/control/api/papers/{urllib.parse.quote(paper_id, safe='')}/artifact/{field}")
                 except Exception as exc:
-                    (paper_dir / f"{field}.missing.txt").write_text(f"missing {field}: {type(exc).__name__}: {exc}\n", encoding="utf-8")
+                    fetch_errors.append(f"{field}:fetch_failed:{type(exc).__name__}: {exc}")
                     continue
                 content = sanitize_public_content(str(artifact.get("content") or ""), redactions=redactions)
                 sanitized_artifacts[field] = content
+            if fetch_errors:
+                raise RuntimeError("artifact_fetch_failed: " + "; ".join(fetch_errors))
+            semantic_issues = semantic_evidence_artifact_issues(sanitized_artifacts)
+            if semantic_issues:
+                raise ValueError("semantic_evidence_check_failed: " + ",".join(semantic_issues))
+            paper_dir.mkdir(parents=True, exist_ok=True)
+            (paper_dir / "metadata.json").write_text(json.dumps(metadata, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+            for field, content in sanitized_artifacts.items():
                 (paper_dir / TARGET_NAMES[field]).write_text(content, encoding="utf-8")
-            if "evidence_bundle_path" in sanitized_artifacts:
-                write_public_evidence_files(paper_dir, sanitized_artifacts["evidence_bundle_path"], redactions=redactions)
+            write_public_evidence_files(paper_dir, sanitized_artifacts["evidence_bundle_path"], redactions=redactions)
             known[fp] = paper_dir
             if existed:
                 updated += 1

@@ -37,7 +37,7 @@ PRIVATE_IP_RE = re.compile(r"\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3
 SOURCE_RECORD_RE = re.compile(r"\b(?:idea-)?[0-9a-f]{32}(?:-[0-9]{14})?\b")
 PUBLIC_ID_RE = re.compile(r"^enoch-paper-(\d{4,})$")
 DEFAULT_PAPER_STATUS = "publication_draft"
-EVIDENCE_LEDGER_STATUSES = {"claims_reference_evidence", "claims_require_review"}
+EVIDENCE_LEDGER_STATUSES = {"claims_reference_evidence"}
 
 
 def _json_artifact(content: str, field: str) -> tuple[dict[str, Any], list[str]]:

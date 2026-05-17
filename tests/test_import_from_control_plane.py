@@ -113,6 +113,62 @@ class ImportFromControlPlaneTests(unittest.TestCase):
         self.assertEqual(check["issues"], [])
         self.assertIs(check["semantic_evidence_gate"]["ok"], True)
 
+
+    def test_dry_run_rejects_claim_ledgers_that_require_review(self) -> None:
+        paper_id = "paper:run:arxiv_draft"
+        detail = {
+            "paper": {
+                "paper_id": paper_id,
+                "paper_status": "publication_draft",
+                "review_status": "finalized",
+                "finalization_package_path": "papers/example/paper_manifest.json",
+            },
+            "events": [
+                {"event_type": "paper.drafted"},
+                {"event_type": "paper_review.finalization_package_prepared"},
+            ],
+        }
+        artifacts = {
+            "draft_markdown_path": "# Paper\n\nEvidence-linked but review-required draft.\n",
+            "evidence_bundle_path": """{
+              "public_evidence_files": [
+                {"path": "evidence/run_notes.md", "source_path": "run_notes.md", "content": "measured result"}
+              ]
+            }""",
+            "claim_ledger_path": """{
+              "ledger_status": "claims_require_review",
+              "unsupported_claim_count": 0,
+              "claims": [
+                {"claim": "measured result", "evidence_refs": [{"path": "evidence/run_notes.md"}]}
+              ]
+            }""",
+            "manifest_path": """{
+              "evidence_file_count": 1,
+              "claim_count": 1,
+              "claim_ledger_status": "claims_require_review"
+            }""",
+        }
+
+        with (
+            mock.patch.object(importer, "paper_detail", return_value=detail),
+            mock.patch.object(importer, "artifact_content", side_effect=lambda base_url, token, pid, field: artifacts[field]),
+        ):
+            check = importer.dry_run_check(
+                "http://control",
+                "token",
+                row={"paper_id": paper_id, "project_name": "Example"},
+                paper_id=paper_id,
+                paper_dir=ROOT / "papers" / "example-test",
+                match_kind="new",
+                redactions={paper_id},
+                expected_paper_status="publication_draft",
+                expected_review_status="finalized",
+            )
+
+        self.assertIn("claim_ledger_path:unexpected_ledger_status", check["issues"])
+        self.assertIn("manifest_path:unexpected_claim_ledger_status", check["issues"])
+        self.assertIs(check["semantic_evidence_gate"]["ok"], False)
+
     def test_live_import_refuses_to_write_semantically_empty_artifacts(self) -> None:
         paper_id = "paper:run:arxiv_draft"
         artifacts = {

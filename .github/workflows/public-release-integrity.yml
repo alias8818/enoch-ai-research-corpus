@@ -23,6 +23,11 @@ jobs:
         with:
           repository: alias8818/enoch-agentic-research-system
           path: enoch-agentic-research-system
+      - name: Checkout promising signals repo
+        uses: actions/checkout@v4
+        with:
+          repository: alias8818/enoch-promising-signals
+          path: enoch-promising-signals
       - name: Checkout docs repo
         uses: actions/checkout@v4
         with:
@@ -41,5 +46,5 @@ jobs:
       - name: Validate committed public release accounting and wording
         working-directory: enoch-agentic-research-system
         run: |
-          python3 scripts/generate_ecosystem_manifest.py --corpus ../enoch-ai-research-corpus --docs ../enoch-docs --output /tmp/enoch-ecosystem.generated.json
-          python3 scripts/validate_public_release.py --system . --corpus ../enoch-ai-research-corpus --docs ../enoch-docs --profile ../alias8818.github.io --owner-profile ../alias8818 --generated-manifest /tmp/enoch-ecosystem.generated.json
+          python3 scripts/generate_ecosystem_manifest.py --corpus ../enoch-ai-research-corpus --docs ../enoch-docs --promising ../enoch-promising-signals --output /tmp/enoch-ecosystem.generated.json
+          python3 scripts/validate_public_release.py --system . --corpus ../enoch-ai-research-corpus --docs ../enoch-docs --promising ../enoch-promising-signals --profile ../alias8818.github.io --owner-profile ../alias8818 --generated-manifest /tmp/enoch-ecosystem.generated.json

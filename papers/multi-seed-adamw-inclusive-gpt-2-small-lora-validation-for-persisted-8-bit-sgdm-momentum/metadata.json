@@ -1,0 +1,12 @@
+{
+  "ai_generated": true,
+  "generated_at": "2026-05-28 13:52:52.158622+00:00",
+  "generated_by": "Enoch Agentic Research Pipeline",
+  "human_authorship_claimed": false,
+  "public_id": "enoch-paper-0510",
+  "released_by_role": "system operator and corpus maintainer",
+  "review_status": "AI-generated research artifact",
+  "source_record_fingerprint": "2ae3daf6cc4dcf3b",
+  "source_system": "Enoch control plane export",
+  "title": "Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum"
+}

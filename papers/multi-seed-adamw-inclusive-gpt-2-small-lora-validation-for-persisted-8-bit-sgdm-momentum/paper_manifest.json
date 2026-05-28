@@ -1,0 +1,16 @@
+{
+  "claim_count": 16,
+  "claim_ledger_path": "papers/source-record-redacted-20260527T050613216408+0000/claim_ledger.json",
+  "claim_ledger_status": "claims_reference_evidence",
+  "evidence_bundle_path": "papers/source-record-redacted-20260527T050613216408+0000/evidence_bundle.json",
+  "evidence_file_count": 3,
+  "generated_at": "2026-05-28T13:34:56.404446+00:00",
+  "paper_id": "source-record-redacted",
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "fallback_used": false,
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "source-record-redacted"
+  }
+}

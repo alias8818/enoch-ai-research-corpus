@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 388 / 388
+Strict claim/evidence passed: 389 / 389
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,9 +8,9 @@ Status: `strict_pass`
 
 ## Summary
 
-- Empty claim ledgers: 0 / 388
-- Evidence `result_files` references: 1164
-- Publicly present result-file references: 1164
+- Empty claim ledgers: 0 / 389
+- Evidence `result_files` references: 1167
+- Publicly present result-file references: 1167
 - Missing result-file references: 0
 - Featured artifacts strict-pass count: 2 / 2
 
@@ -257,6 +257,7 @@ Status: `strict_pass`
 | `minimum-curriculum-search` | True | 12 | 0 | [] |
 | `multi-model-real-span-boundary-corruption-benchmark` | True | 12 | 0 | [] |
 | `multi-objective-throughput-reward` | True | 12 | 0 | [] |
+| `multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum` | True | 16 | 0 | [] |
 | `multi-tenant-cache-fairness-guard` | True | 12 | 0 | [] |
 | `n-m-quant-prune-joint-search` | True | 12 | 0 | [] |
 | `native-tool-call-capability-lease-wrapper` | True | 12 | 0 | [] |

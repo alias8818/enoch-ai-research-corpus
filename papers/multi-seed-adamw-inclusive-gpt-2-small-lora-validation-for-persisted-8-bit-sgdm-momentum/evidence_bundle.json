@@ -1,0 +1,224 @@
+{
+  "file_inventory": [
+    {
+      "bytes": 7287,
+      "public_path": "evidence/run_notes.md",
+      "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "bytes": 2123,
+      "public_path": "evidence/enoch/project_decision.json",
+      "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "bytes": 2123,
+      "public_path": "evidence/omx/project_decision.json",
+      "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "limitations": [],
+  "metric_summaries": [
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 4,
+        "followup_hypothesis": "",
+        "followup_recommended": false,
+        "followup_stop_condition": "",
+        "followup_success_threshold": "",
+        "followup_title": "",
+        "followup_type": "",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop this depth-4 chain as no-paper useful evidence; do not spawn another deepen/retry follow-up from this run despite the bounded positive signal.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Limited to GPT-2-small, LoRA-only attention adapters, three small public corpora, 3000 optimizer steps per run, one LoRA rank, one SGDM and AdamW hyperparameter setting, and a non-fused Python quantize/dequantize optimizer implementation. It does not establish paper-ready behavior for larger models, full-parameter training, instruction tasks, tuned AdamW, long-horizon checkpoint persistence, or production memory/throughput.",
+        "stop_reason": "Direct multi-seed evidence supports the bounded mechanism, but the strict Tier-4 paper gate is not met because the scope is GPT-2-small LoRA on small corpora with one hyperparameter setting and a Python optimizer implementation.",
+        "useful_signal_summary": "Across seeds 17, 23, and 31, 8-bit SGDM final validation loss averaged 3.303361 versus 3.304570 for fp32 SGDM, 3.445815 for no-momentum SGD, and 3.343409 for AdamW. The 8-bit-vs-fp32 paired mean loss delta was -0.001209 with max absolute seed delta 0.002307; optimizer-state bytes were 442560 vs 1769472 for fp32 SGDM."
+      },
+      "source_path": ".enoch/project_decision.json"
+    },
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 4,
+        "followup_hypothesis": "",
+        "followup_recommended": false,
+        "followup_stop_condition": "",
+        "followup_success_threshold": "",
+        "followup_title": "",
+        "followup_type": "",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop this depth-4 chain as no-paper useful evidence; do not spawn another deepen/retry follow-up from this run despite the bounded positive signal.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Limited to GPT-2-small, LoRA-only attention adapters, three small public corpora, 3000 optimizer steps per run, one LoRA rank, one SGDM and AdamW hyperparameter setting, and a non-fused Python quantize/dequantize optimizer implementation. It does not establish paper-ready behavior for larger models, full-parameter training, instruction tasks, tuned AdamW, long-horizon checkpoint persistence, or production memory/throughput.",
+        "stop_reason": "Direct multi-seed evidence supports the bounded mechanism, but the strict Tier-4 paper gate is not met because the scope is GPT-2-small LoRA on small corpora with one hyperparameter setting and a Python optimizer implementation.",
+        "useful_signal_summary": "Across seeds 17, 23, and 31, 8-bit SGDM final validation loss averaged 3.303361 versus 3.304570 for fp32 SGDM, 3.445815 for no-momentum SGD, and 3.343409 for AdamW. The 8-bit-vs-fp32 paired mean loss delta was -0.001209 with max absolute seed delta 0.002307; optimizer-state bytes were 442560 vs 1769472 for fp32 SGDM."
+      },
+      "source_path": ".omx/project_decision.json"
+    }
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "public_evidence_files": [
+    {
+      "content": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum\n\n## Goal\n\nTest whether persisted per-tensor 8-bit SGDM momentum remains competitive with fp32 SGDM momentum across fixed seeds on a GPT-2-small LoRA language-modeling task, while adding a modern AdamW baseline and a no-momentum SGD control.\n\n## Experimental design\n\n- Model: Hugging Face `gpt2` / GPT-2-small, frozen base weights.\n- Adapter: LoRA rank 8 on each GPT-2 attention `c_attn` and `c_proj` Conv1D module.\n- Datasets: Alice in Wonderland from Project Gutenberg, Penn Treebank from the Zaremba split, and Tiny Shakespeare.\n- Optimizers: no-momentum SGD, fp32 SGDM, persisted 8-bit SGDM, and AdamW.\n- Direct metrics: aggregate and per-dataset validation cross-entropy/perplexity, paired seed deltas, optimizer-state bytes, throughput, and memory snapshots.\n- Fixed seeds planned for validation: `17`, `23`, `31`.\n\n## Commands and logs\n\n- Smoke:\n  - `set -o pipefail; python scripts/validate_lora_8bit_sgdm_adamw_multiseed.py --output-dir results/smoke --optimizers sgdm_8bit adamw --steps 2 --eval-batches 1 --train-examples-per-dataset 80 --val-examples-per-dataset 40 --train-blocks-per-dataset 8 --val-blocks-per-dataset 4 --batch-size 1 --grad-accum 1 --seq-len 64 --seeds 17 2>&1 | tee logs/smoke.log`\n  - Outcome: passed on NVIDIA GB10 with CUDA.\n\n## Resource calibration note\n\nHost and runtime:\n\n- GPU: NVIDIA GB10 available through CUDA.\n- Python: 3.12.3.\n- PyTorch: 2.12.0+cu130.\n- CPU threads: 20.\n- Memory at start: 121 GiB total, about 117 GiB MemAvailable, swap disabled.\n\nPlanned bounded validation:\n\n- Command family: `python scripts/validate_lora_8bit_sgdm_adamw_multiseed.py ...`.\n- Work: 3 fixed seeds x 4 optimizers x GPT-2-small LoRA train/eval runs.\n- Expected wall-clock: roughly 50-75 minutes for 3000 steps per optimizer/seed based on the predecessor 3000-step run taking about 250 seconds per optimizer and added AdamW/multi-seed overhead.\n- GPU use: GPT-2-small forward/backward with bf16 base weights and trainable LoRA parameters on GB10.\n- CPU use: one Python process, tokenizer/dataset preparation and PyTorch runtime threads; no CPU-only scale-out loop.\n- Memory: GPT-2-small parameters, activations for sequence length 128, batch size 4, gradient accumulation 4, and optimizer states. Expected far below 121 GiB UMA availability.\n- Checkpoint cadence: the harness writes per-optimizer partial JSON at least every 600 seconds and final per-optimizer JSON; with per-run wall-clock below 10 minutes, each optimizer run also leaves a final artifact before the 10-minute checkpoint threshold.\n- Why GB10 is the right host: the target claim is CUDA GPT-2-small LoRA training behavior and optimizer-state memory on model hardware; CPU execution would measure the wrong bottleneck.\n\n## Calibration\n\nCommand:\n\n`set -o pipefail; python scripts/validate_lora_8bit_sgdm_adamw_multiseed.py --output-dir results/calibration --optimizers sgd sgdm_fp32 sgdm_8bit adamw --steps 20 --eval-batches 5 --train-examples-per-dataset 800 --val-examples-per-dataset 300 --train-blocks-per-dataset 120 --val-blocks-per-dataset 40 --batch-size 4 --grad-accum 4 --seq-len 128 --checkpoint-interval-sec 600 --seeds 17 2>&1 | tee logs/calibration.log`\n\nOutcome: passed. At 20 steps, 8-bit SGDM was within `+0.005208` aggregate validation loss of fp32 SGDM, used `442560` optimizer-state bytes vs `1769472` for fp32 SGDM, and ran at `0.9505x` fp32 SGDM throughput. AdamW was also functional and strong enough to keep as the modern baseline.\n\n## Bounded validation\n\nCommand:\n\n`set -o pipefail; python scripts/validate_lora_8bit_sgdm_adamw_multiseed.py --output-dir results/validation_3seed_3000steps_adamw --optimizers sgd sgdm_fp32 sgdm_8bit adamw --steps 3000 --eval-batches 40 --train-examples-per-dataset 20000 --val-examples-per-dataset 5000 --train-blocks-per-dataset 2000 --val-blocks-per-dataset 300 --batch-size 4 --grad-accum 4 --seq-len 128 --checkpoint-interval-sec 600 --seeds 17 23 31 2>&1 | tee logs/validation_3seed_3000steps_adamw.log`\n\nArtifacts:\n\n- Summary: `results/validation_3seed_3000steps_adamw/multiseed_summary.json`\n- Per-seed summaries: `results/validation_3seed_3000steps_adamw/seed_17/summary.json`, `seed_23/summary.json`, `seed_31/summary.json`\n- Per-optimizer results and partials: `results/validation_3seed_3000steps_adamw/seed_*/{optimizer}_result.json`\n- Log: `logs/validation_3seed_3000steps_adamw.log`\n\nAggregate 3-seed metrics:\n\n| Optimizer | Mean final val loss | SD | Mean improvement | Tokens/sec last mean | Optimizer state bytes |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| SGD no momentum | 3.445815 | 0.004530 | 0.416722 | 24852.4 | 0 |\n| SGDM fp32 | 3.304570 | 0.007470 | 0.557968 | 24679.6 | 1769472 |\n| SGDM persisted 8-bit | 3.303361 | 0.007955 | 0.559177 | 23699.5 | 442560 |\n| AdamW | 3.343409 | 0.004779 | 0.519128 | 24785.7 | 1769664 |\n\nPaired deltas, expressed as 8-bit SGDM minus comparator final validation loss:\n\n| Comparator | Seed 17 | Seed 23 | Seed 31 | Mean | Max abs |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| fp32 SGDM | -0.001060 | -0.002307 | -0.000260 | -0.001209 | 0.002307 |\n| no-momentum SGD | -0.138058 | -0.150856 | -0.138449 | -0.142454 | 0.150856 |\n| AdamW | -0.036812 | -0.043192 | -0.040141 | -0.040048 | 0.043192 |\n\nSystem metrics:\n\n- 8-bit SGDM optimizer-state byte ratio vs fp32 SGDM: `0.250109`, about a 4x momentum-state reduction.\n- 8-bit SGDM throughput ratio vs fp32 SGDM: `0.960286`; the non-fused Python quantize/dequantize implementation costs about 4% throughput in this harness.\n- AdamW state bytes were `1769664`, effectively fp32 SGDM momentum state plus small scalar overhead in this LoRA-only parameter set.\n\n## Interpretation\n\nThe bounded mechanism is supported in the tested scope. Across three fixed seeds and three real text datasets, persisted per-tensor uint8 SGDM momentum matched fp32 SGDM validation loss within `0.00231` loss on every seed while using about 25% of fp32 SGDM momentum-state bytes. The no-momentum SGD control was materially worse on every seed, so the result is not explained by momentum being irrelevant. The AdamW baseline, with the configured `1e-3` LoRA learning rate and weight decay `0.01`, was also worse than both SGDM variants on all three seeds, so this run does not collapse once a modern optimizer baseline is included.\n\nThis is still not publication-ready. The evidence is direct and multi-seed, but it is limited to GPT-2-small, LoRA-only adaptation, three small public corpora, one LoRA rank, one SGDM/AdamW hyperparameter setting, and a Python optimizer implementation rather than a production blockwise/fused optimizer. A broader paper claim would need stronger task coverage, tuned AdamW/SGDM sweeps, longer-horizon and resume/persistence stress tests in the same multi-dataset setup, and a production implementation with accurate end-to-end memory accounting.\n\n## Final decision\n\nDecision: `finalize_negative` with `research_outcome: \"useful_signal\"`.\n\nRationale: the mechanism is strongly supported for the bounded local claim, but the strict Tier-4 paper gate is not met. Follow-up is not recommended because the controller follow-up depth is already 4; the next action is to stop this chain rather than spawn another deepen/retry follow-up.\n",
+      "path": "evidence/run_notes.md",
+      "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",\n  \"scale_limits\": \"Limited to GPT-2-small, LoRA-only attention adapters, three small public corpora, 3000 optimizer steps per run, one LoRA rank, one SGDM and AdamW hyperparameter setting, and a non-fused Python quantize/dequantize optimizer implementation. It does not establish paper-ready behavior for larger models, full-parameter training, instruction tasks, tuned AdamW, long-horizon checkpoint persistence, or production memory/throughput.\",\n  \"useful_signal_summary\": \"Across seeds 17, 23, and 31, 8-bit SGDM final validation loss averaged 3.303361 versus 3.304570 for fp32 SGDM, 3.445815 for no-momentum SGD, and 3.343409 for AdamW. The 8-bit-vs-fp32 paired mean loss delta was -0.001209 with max absolute seed delta 0.002307; optimizer-state bytes were 442560 vs 1769472 for fp32 SGDM.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop this depth-4 chain as no-paper useful evidence; do not spawn another deepen/retry follow-up from this run despite the bounded positive signal.\",\n  \"stop_reason\": \"Direct multi-seed evidence supports the bounded mechanism, but the strict Tier-4 paper gate is not met because the scope is GPT-2-small LoRA on small corpora with one hyperparameter setting and a Python optimizer implementation.\",\n  \"followup_recommended\": false,\n  \"followup_type\": \"\",\n  \"followup_title\": \"\",\n  \"followup_hypothesis\": \"\",\n  \"followup_required_evidence\": [],\n  \"followup_success_threshold\": \"\",\n  \"followup_stop_condition\": \"\",\n  \"followup_depth\": 4\n}\n",
+      "path": "evidence/enoch/project_decision.json",
+      "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",\n  \"scale_limits\": \"Limited to GPT-2-small, LoRA-only attention adapters, three small public corpora, 3000 optimizer steps per run, one LoRA rank, one SGDM and AdamW hyperparameter setting, and a non-fused Python quantize/dequantize optimizer implementation. It does not establish paper-ready behavior for larger models, full-parameter training, instruction tasks, tuned AdamW, long-horizon checkpoint persistence, or production memory/throughput.\",\n  \"useful_signal_summary\": \"Across seeds 17, 23, and 31, 8-bit SGDM final validation loss averaged 3.303361 versus 3.304570 for fp32 SGDM, 3.445815 for no-momentum SGD, and 3.343409 for AdamW. The 8-bit-vs-fp32 paired mean loss delta was -0.001209 with max absolute seed delta 0.002307; optimizer-state bytes were 442560 vs 1769472 for fp32 SGDM.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop this depth-4 chain as no-paper useful evidence; do not spawn another deepen/retry follow-up from this run despite the bounded positive signal.\",\n  \"stop_reason\": \"Direct multi-seed evidence supports the bounded mechanism, but the strict Tier-4 paper gate is not met because the scope is GPT-2-small LoRA on small corpora with one hyperparameter setting and a Python optimizer implementation.\",\n  \"followup_recommended\": false,\n  \"followup_type\": \"\",\n  \"followup_title\": \"\",\n  \"followup_hypothesis\": \"\",\n  \"followup_required_evidence\": [],\n  \"followup_success_threshold\": \"\",\n  \"followup_stop_condition\": \"\",\n  \"followup_depth\": 4\n}\n",
+      "path": "evidence/omx/project_decision.json",
+      "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "result_artifacts": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "result_file_refs": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "run_id": "source-record-redacted-20260527T050613216408+0000",
+  "schema_version": "evidence_bundle.v2",
+  "source": "enoch_control_plane",
+  "source_project_dir": "<control-plane-projects>/source-record-redacted",
+  "source_run_id": "source-record-redacted-20260527T050613216408+0000",
+  "sync_metadata": {
+    "enabled": true,
+    "http_sync": {
+      "files": 3,
+      "ok": true,
+      "paths": [
+        "run_notes.md",
+        ".enoch/project_decision.json",
+        ".omx/project_decision.json"
+      ],
+      "reason": "worker_http_synced",
+      "skipped": [
+        {
+          "error": "{\"detail\":\"paper artifact not found: .enoch/metrics.json\"}",
+          "path": ".enoch/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: .omx/metrics.json\"}",
+          "path": ".omx/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/hot_cold_sim_results.json\"}",
+          "path": "results/hot_cold_sim_results.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/smoke.json\"}",
+          "path": "results/smoke.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_probe/hotcold_probe.json\"}",
+          "path": "results/llamacpp_probe/hotcold_probe.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: papers/source-record-redacted-20260527T050613216408+0000/README.md\"}",
+          "path": "papers/source-record-redacted-20260527T050613216408+0000/README.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: papers/source-record-redacted-20260527T050613216408+0000/paper.md\"}",
+          "path": "papers/source-record-redacted-20260527T050613216408+0000/paper.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: papers/source-record-redacted-20260527T050613216408+0000/paper_manifest.json\"}",
+          "path": "papers/source-record-redacted-20260527T050613216408+0000/paper_manifest.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: papers/source-record-redacted-20260527T050613216408+0000/evidence_bundle.json\"}",
+          "path": "papers/source-record-redacted-20260527T050613216408+0000/evidence_bundle.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: papers/source-record-redacted-20260527T050613216408+0000/claim_ledger.json\"}",
+          "path": "papers/source-record-redacted-20260527T050613216408+0000/claim_ledger.json",
+          "status": 404
+        }
+      ],
+      "timeouts": 0
+    },
+    "local_evidence_present": true,
+    "method": "worker_http",
+    "reason": "worker_http_synced",
+    "synced": true
+  },
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "fallback_used": false,
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "source-record-redacted"
+  }
+}

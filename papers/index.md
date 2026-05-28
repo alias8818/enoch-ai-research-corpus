@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 388
+Count: 389
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 388/388 packaging/provenance lint pass and 388/388 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 389/389 packaging/provenance lint pass and 389/389 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -251,6 +251,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Minimum Curriculum Search](minimum-curriculum-search/paper.md) | `enoch-paper-0350` | yes | yes | 12 | true | 0 |
 | [Multi-Model Real-Span Boundary Corruption Benchmark](multi-model-real-span-boundary-corruption-benchmark/paper.md) | `enoch-paper-0081` | yes | yes | 12 | true | 0 |
 | [Multi-Objective Throughput Reward](multi-objective-throughput-reward/paper.md) | `enoch-paper-0290` | yes | yes | 12 | true | 0 |
+| [Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum](multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum/paper.md) | `enoch-paper-0510` | yes | yes | 16 | true | 0 |
 | [Multi-Tenant Cache Fairness Guard](multi-tenant-cache-fairness-guard/paper.md) | `enoch-paper-0309` | yes | yes | 12 | true | 0 |
 | [N:M Quant-Prune Joint Search](n-m-quant-prune-joint-search/paper.md) | `enoch-paper-0201` | yes | yes | 12 | true | 0 |
 | [Native Tool-Call Capability Lease Wrapper](native-tool-call-capability-lease-wrapper/paper.md) | `enoch-paper-0210` | yes | yes | 12 | true | 0 |

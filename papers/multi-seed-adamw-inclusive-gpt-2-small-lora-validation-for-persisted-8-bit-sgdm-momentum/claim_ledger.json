@@ -1,0 +1,483 @@
+{
+  "claims": [
+    {
+      "claim": "We evaluate persisted per-tensor 8-bit stochastic gradient descent with momentum (8-bit SGDM) as a memory-efficient alternative to fp32 SGDM for LoRA adapter fine-tuning.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6471,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5294,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5294,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C1",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Optimizer-state bytes were 442,560 for 8-bit SGDM versus 1,769,472 for fp32 SGDM, a 4\u00d7 reduction.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6154,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6154,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6154,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C2",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The non-fused Python quantize/dequantize implementation incurred approximately 4% throughput overhead relative to fp32 SGDM.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6923,
+          "path": "evidence/run_notes.md",
+          "quote": "Test whether persisted per-tensor 8-bit SGDM momentum remains competitive with fp32 SGDM momentum across fixed seeds on a GPT-2-small LoRA language-modeling task, while adding a modern AdamW baseline and a no-momentum SGD control.",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5385,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5385,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C3",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "These results are limited to GPT-2-small, LoRA-only attention adapters, three small corpora, one hyperparameter setting per optimizer, and 3,000 steps; they do not establish behavior for larger models, full-parameter training, instruction tasks, tuned AdamW, long-horizon checkpoint persistence, or production memory and throughput.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8684,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.8684,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.6842,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C4",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Quantized optimizer states reduce GPU memory consumption during training, which matters when memory rather than compute is the binding constraint.",
+      "evidence_refs": [
+        {
+          "match_score": 0.3889,
+          "path": "evidence/run_notes.md",
+          "quote": "- Datasets: Alice in Wonderland from Project Gutenberg, Penn Treebank from the Zaremba split, and Tiny Shakespeare.",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.2222,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.2222,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C5",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Prior work on 8-bit and blockwise quantized optimizers has focused primarily on Adam-family methods.",
+      "evidence_refs": [
+        {
+          "match_score": 0.4167,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C6",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "This study asks a narrow, bounded question: does persisting per-tensor uint8 quantized SGDM momentum across optimizer steps preserve training quality relative to fp32 SGDM, while delivering a meaningful memory reduction?",
+      "evidence_refs": [
+        {
+          "match_score": 0.5385,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4615,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4615,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C7",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We test this in a LoRA fine-tuning setting on GPT-2-small across three fixed seeds and three text corpora, including a no-momentum SGD control and an AdamW baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8947,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6842,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6842,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C8",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The hypothesis is supported in the tested scope, but the scope is intentionally narrow.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "- Datasets: Alice in Wonderland from Project Gutenberg, Penn Treebank from the Zaremba split, and Tiny Shakespeare.",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"hypothesis_status\": \"supported\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"hypothesis_status\": \"supported\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C9",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We report the results with explicit scale limits and do not claim publication readiness.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "Test whether persisted per-tensor 8-bit SGDM momentum remains competitive with fp32 SGDM momentum across fixed seeds on a GPT-2-small LoRA language-modeling task, while adding a modern AdamW baseline and a no-momentum SGD control.",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3333,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3333,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C10",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Base model:** Hugging Face `gpt2` (GPT-2-small, 124M parameters), frozen base weights in bf16.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8182,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.0909,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.0909,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C11",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "LoRA adapters:** Rank 8 applied to each GPT-2 attention `c_attn` and `c_proj` Conv1D module.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8333,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4167,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4167,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C12",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Three small public text corpora were concatenated for training and validation: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 0.9091,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.8182,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.8182,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C13",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Alice in Wonderland** (Project Gutenberg) 2.",
+      "evidence_refs": [
+        {
+          "match_score": 1.0,
+          "path": "evidence/run_notes.md",
+          "quote": "- Datasets: Alice in Wonderland from Project Gutenberg, Penn Treebank from the Zaremba split, and Tiny Shakespeare.",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C14",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Tiny Shakespeare** Training used 20,000 examples per dataset (2,000 training blocks); validation used 5,000 examples per dataset (300 validation blocks).",
+      "evidence_refs": [
+        {
+          "match_score": 0.6364,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5455,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5455,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C15",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The per-tensor 8-bit quantization operates as follows: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "# Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum",
+          "sha256": "391e1dde2f622ba2c4c9e192426c66e71be63dd86179e6e00febcc3175982d8c",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a 3-seed GPT-2-small LoRA fine-tuning harness over Alice in Wonderland, Penn Treebank, and Tiny Shakespeare, persisted per-tensor 8-bit SGDM momentum matched fp32 SGDM validation loss within 0.00231 loss on every seed, outperformed no-momentum SGD and the configured AdamW baseline, and used about 25% of fp32 SGDM momentum-state bytes.\",",
+          "sha256": "b2e819872faad8c9d9a172a7a21520a51d8ff00fa47403a1da094580b69dce2f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C16",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    }
+  ],
+  "evidence_bundle_path": "papers/source-record-redacted-20260527T050613216408+0000/evidence_bundle.json",
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260527T050613216408+0000",
+  "schema_version": "claim_ledger.v2",
+  "unsupported_claim_count": 0,
+  "writer_provider": {
+    "base_url": "https://api.synthetic.new/openai/v1",
+    "fallback_used": false,
+    "model": "hf:zai-org/GLM-5.1",
+    "provider": "synthetic.new",
+    "response_id": "source-record-redacted"
+  }
+}

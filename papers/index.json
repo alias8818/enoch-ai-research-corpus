@@ -1,5 +1,5 @@
 {
-  "count": 388,
+  "count": 389,
   "highlight_count": 13,
   "highlights": [
     {
@@ -3475,6 +3475,21 @@
       "source_record_fingerprint": "2d4507387484563d",
       "strict_audit_pass": true,
       "title": "Multi-Objective Throughput Reward"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 16,
+      "claim_ledger_path": "papers/multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum/claim_ledger.json",
+      "evidence_bundle_path": "papers/multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum/evidence_bundle.json",
+      "generated_at": "2026-05-28 13:52:52.158622+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum/paper.md",
+      "public_id": "enoch-paper-0510",
+      "slug": "multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum",
+      "source_record_fingerprint": "2ae3daf6cc4dcf3b",
+      "strict_audit_pass": true,
+      "title": "Multi-seed AdamW-inclusive GPT-2-small LoRA validation for persisted 8-bit SGDM momentum"
     },
     {
       "ai_generated": true,

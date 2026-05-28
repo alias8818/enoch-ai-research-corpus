@@ -1,15 +1,15 @@
 {
   "claim_evidence_audit": {
     "claim_ledgers_empty": 0,
-    "count": 388,
+    "count": 389,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
-    "result_file_refs": 1164,
+    "result_file_refs": 1167,
     "result_file_refs_missing": 0,
     "status": "strict_pass",
-    "strict_claim_evidence_pass_count": 388
+    "strict_claim_evidence_pass_count": 389
   },
-  "count": 388,
+  "count": 389,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 388,
+  "passed": 389,
   "rows": [
     {
       "bytes": 16279,
@@ -2477,6 +2477,17 @@
       "passes": true,
       "slug": "multi-objective-throughput-reward",
       "words": 1884
+    },
+    {
+      "bytes": 14648,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum/paper.md",
+      "passes": true,
+      "slug": "multi-seed-adamw-inclusive-gpt-2-small-lora-validation-for-persisted-8-bit-sgdm-momentum",
+      "words": 2145
     },
     {
       "bytes": 18170,

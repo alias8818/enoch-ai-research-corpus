@@ -15,31 +15,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout corpus repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: enoch-ai-research-corpus
       - name: Checkout system repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alias8818/enoch-agentic-research-system
           path: enoch-agentic-research-system
       - name: Checkout promising signals repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alias8818/enoch-promising-signals
           path: enoch-promising-signals
       - name: Checkout docs repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alias8818/enoch-docs
           path: enoch-docs
       - name: Checkout profile site repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alias8818/alias8818.github.io
           path: alias8818.github.io
       - name: Checkout owner profile repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: alias8818/alias8818
           path: alias8818

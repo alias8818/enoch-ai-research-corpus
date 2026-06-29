@@ -1,15 +1,15 @@
 {
   "claim_evidence_audit": {
     "claim_ledgers_empty": 0,
-    "count": 391,
+    "count": 393,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
-    "result_file_refs": 1173,
+    "result_file_refs": 1179,
     "result_file_refs_missing": 0,
     "status": "strict_pass",
-    "strict_claim_evidence_pass_count": 391
+    "strict_claim_evidence_pass_count": 393
   },
-  "count": 391,
+  "count": 393,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 391,
+  "passed": 393,
   "rows": [
     {
       "bytes": 16279,
@@ -2127,6 +2127,17 @@
       "words": 2080
     },
     {
+      "bytes": 24846,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/live-or-open-weight-llm-api-replay-drift-ledger-validation/paper.md",
+      "passes": true,
+      "slug": "live-or-open-weight-llm-api-replay-drift-ledger-validation",
+      "words": 3424
+    },
+    {
       "bytes": 16430,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3082,6 +3093,17 @@
       "passes": true,
       "slug": "real-document-retrieval-compression-teacher-validation",
       "words": 1684
+    },
+    {
+      "bytes": 22884,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/real-independent-trace-corpus-evidence-ledger-verification/paper.md",
+      "passes": true,
+      "slug": "real-independent-trace-corpus-evidence-ledger-verification",
+      "words": 3366
     },
     {
       "bytes": 13813,

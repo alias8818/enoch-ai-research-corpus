@@ -1,0 +1,16 @@
+{
+  "claim_count": 16,
+  "claim_ledger_path": "papers/source-record-redacted-20260601T024431325238+0000/claim_ledger.json",
+  "claim_ledger_status": "claims_reference_evidence",
+  "evidence_bundle_path": "papers/source-record-redacted-20260601T024431325238+0000/evidence_bundle.json",
+  "evidence_file_count": 3,
+  "generated_at": "2026-06-28T22:11:36.990404+00:00",
+  "paper_id": "source-record-redacted",
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735206-gXJo6JCJNio4RqdqNUH1"
+  }
+}

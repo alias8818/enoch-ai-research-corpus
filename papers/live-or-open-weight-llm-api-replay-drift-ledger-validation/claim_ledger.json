@@ -1,0 +1,483 @@
+{
+  "claims": [
+    {
+      "claim": "The operator of the automation claims no personal authorship credit for the writing or for the underlying experimental results beyond releasing those artifacts into the automated drafting pipeline.",
+      "evidence_refs": [
+        {
+          "match_score": 0.2,
+          "path": "evidence/run_notes.md",
+          "quote": "- Checkpoint cadence: the full run prints progress every 25 tasks and writes CSV/JSON artifacts at completion; projected runtime is below the 10-minute checkpoint threshold.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.05,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"scale_limits\": \"The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.05,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"scale_limits\": \"The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C1",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We report a bounded Tier 3 validation of a normalized hash-chain replay ledger for detecting and localizing drift across the request, open-weight model-fingerprint, semantic-response, tool-observation, and state components of an LLM HTTP API.",
+      "evidence_refs": [
+        {
+          "match_score": 0.64,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.64,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.56,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C2",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The validation uses cached open-weight GPT-2-family models \u2014 `distilgpt2` as the primary model and `sshleifer/tiny-gpt2` for smoke and cross-check \u2014 served through a local `POST /v1/completions` endpoint, replacing the in-process hand-coded completion service of the prior iteration.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8621,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3448,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3448,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C3",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "With fixed seeds {11, 17, 23, 31, 43}, 100 prompt traces per bounded run, and 700 replay cases per validator (100 each across seven injected conditions), the full ledger (`ledger_full`) achieved 500/500 = 1.000 material drift detection, 0/200 = 0.000 benign false positives, and 500/500 = 1.000 first-component localization.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8333,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6111,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6111,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C4",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The output-only baseline detected only 192/500 = 0.384 of material cases and localized none; the raw-transcript baseline matched the detection rate but flagged 100/200 = 0.500 of benign formatting cases as material; component ablations lost exactly the detection or localization signal associated with the removed component.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8529,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6471,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6471,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C5",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The project decision recorded in the artifacts is `finalize_negative` with `research_outcome: useful_signal`: the mechanism is supported under the stated controlled conditions but the evidence is not publication-grade.",
+      "evidence_refs": [
+        {
+          "match_score": 0.7368,
+          "path": "evidence/run_notes.md",
+          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5789,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5789,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C6",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "All drift was injected at the local serving boundary; live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing failures, long multi-tool agents, external side effects, and naturally occurring longitudinal drift were not tested.",
+      "evidence_refs": [
+        {
+          "match_score": 0.9143,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.9143,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.8857,
+          "path": "evidence/run_notes.md",
+          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C7",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Its reliability depends on whether small divergences between two runs \u2014 a reworded system prompt, a new model checkpoint, a different decoder seed, a different API serialization, or a modified tool result \u2014 can be detected, ignored when benign, and localized to the responsible component.",
+      "evidence_refs": [
+        {
+          "match_score": 0.3636,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.2727,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.2727,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C8",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Two structural properties are tested: - **Detection.** Does any hash in the step change between the recorded and replayed traces?",
+      "evidence_refs": [
+        {
+          "match_score": 0.4706,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.1765,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.1765,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C9",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The prior iteration of this work validated the ledger against a deterministic in-process completion service.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6667,
+          "path": "evidence/run_notes.md",
+          "quote": "- Expected wall-clock before full run: tiny GPT-2 smoke under 1 minute; bounded full run under 15 minutes because this is CPU-only and should not occupy GB10-class resources.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.25,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.25,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C10",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The present iteration closes that gap by serving a cached open-weight GPT-2-family model over a real local HTTP boundary, while preserving the controlled-drift experimental design.",
+      "evidence_refs": [
+        {
+          "match_score": 0.619,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4286,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4286,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C11",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The decision gate recorded in the artifacts returned `finalize_negative` with `useful_signal`, meaning the mechanism is supported in this regime but the evidence is not yet publication-grade; this draft documents what was actually run, not what a fully paper-ready version of the work would have looked like.",
+      "evidence_refs": [
+        {
+          "match_score": 0.4242,
+          "path": "evidence/run_notes.md",
+          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3636,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3636,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C12",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Serving is implemented as a local threaded HTTP server exposing a `POST /v1/completions` endpoint.",
+      "evidence_refs": [
+        {
+          "match_score": 0.9,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C13",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The model is loaded from cached Hugging Face safetensors and tokenizer artifacts and run with NumPy-only inference; no GPU, llama.cpp hook prototype, or CUDA copy-calibration code paths are exercised in this validation.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6667,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.2222,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.2222,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C14",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Smoke and cross-check model.** `sshleifer/tiny-gpt2`.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6667,
+          "path": "evidence/run_notes.md",
+          "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C15",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Cached safetensors are approximately 2.5 MB.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6667,
+          "path": "evidence/run_notes.md",
+          "quote": "- Memory: cached `sshleifer/tiny-gpt2` safetensors are about 2.5 MB; expected RSS well below 1 GB; host `MemAvailable` before setup was about 21.6 GB.",
+          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.1667,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",",
+          "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C16",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    }
+  ],
+  "evidence_bundle_path": "papers/source-record-redacted-20260529T020213376416+0000/evidence_bundle.json",
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260529T020213376416+0000",
+  "schema_version": "claim_ledger.v2",
+  "unsupported_claim_count": 0,
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735315-Svzeo2pfOWHQsmntWfH7"
+  }
+}

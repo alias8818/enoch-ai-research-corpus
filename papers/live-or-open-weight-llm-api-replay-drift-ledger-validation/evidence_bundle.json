@@ -1,0 +1,238 @@
+{
+  "file_inventory": [
+    {
+      "bytes": 8670,
+      "public_path": "evidence/run_notes.md",
+      "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "bytes": 2068,
+      "public_path": "evidence/enoch/project_decision.json",
+      "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "bytes": 2068,
+      "public_path": "evidence/omx/project_decision.json",
+      "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "limitations": [],
+  "metric_summaries": [
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.",
+        "compute_scale_blocked": false,
+        "confidence": "medium",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "",
+        "followup_recommended": false,
+        "followup_stop_condition": "",
+        "followup_success_threshold": "",
+        "followup_title": "",
+        "followup_type": "",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop as no-paper useful signal; only a live or production-like longitudinal API study with streaming/retry/tool side effects should revisit paper readiness.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.",
+        "stop_reason": "The result is direct bounded open-weight mechanism support, not publication-grade evidence, because all drift was controlled/injected and the task/model setting is too narrow.",
+        "useful_signal_summary": "On the bounded DistilGPT-2 run, the full ledger achieved 500/500 material drift detection, 0/200 benign false positives, and 500/500 material localization. Output-only detected only 192/500 material cases, raw transcript detected 500/500 material cases but produced 100/200 benign false positives, and ablations lost the expected component-specific localization or detection signal."
+      },
+      "source_path": ".enoch/project_decision.json"
+    },
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.",
+        "compute_scale_blocked": false,
+        "confidence": "medium",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "",
+        "followup_recommended": false,
+        "followup_stop_condition": "",
+        "followup_success_threshold": "",
+        "followup_title": "",
+        "followup_type": "",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop as no-paper useful signal; only a live or production-like longitudinal API study with streaming/retry/tool side effects should revisit paper readiness.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.",
+        "stop_reason": "The result is direct bounded open-weight mechanism support, not publication-grade evidence, because all drift was controlled/injected and the task/model setting is too narrow.",
+        "useful_signal_summary": "On the bounded DistilGPT-2 run, the full ledger achieved 500/500 material drift detection, 0/200 benign false positives, and 500/500 material localization. Output-only detected only 192/500 material cases, raw transcript detected 500/500 material cases but produced 100/200 benign false positives, and ablations lost the expected component-specific localization or detection signal."
+      },
+      "source_path": ".omx/project_decision.json"
+    }
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "public_evidence_files": [
+    {
+      "content": "# Run Notes\n\n## Resource Calibration\n\n- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.\n- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.\n- Expected wall-clock before full run: tiny GPT-2 smoke under 1 minute; bounded full run under 15 minutes because this is CPU-only and should not occupy GB10-class resources.\n- CPU/processes: one Python process, one local threaded HTTP server, NumPy single-process inference; visible affinity in `lscpu` shows 8 online CPUs from a 40-vCPU host.\n- Memory: cached `sshleifer/tiny-gpt2` safetensors are about 2.5 MB; expected RSS well below 1 GB; host `MemAvailable` before setup was about 21.6 GB.\n- Checkpoint cadence: the full run prints progress every 25 tasks and writes CSV/JSON artifacts at completion; projected runtime is below the 10-minute checkpoint threshold.\n- Why this host: the controller routed the project to a CPU worker and the next meaningful bounded test is CPU-open-weight API replay, not GB10 GPU utilization.\n\n## Hypothesis\n\nA replay drift ledger that records normalized request hashes, open-weight model fingerprint hashes, semantic response hashes, tool/state hashes, and a chained entry hash should detect and localize drift at a real API boundary better than output-only and raw-transcript baselines, while avoiding false positives from benign response formatting changes.\n\nThis follow-up deepens the prior local deterministic API harness by replacing the hand-coded completion service with a cached open-weight GPT-2-family model served through a local HTTP endpoint.\n\n## Experiment Design\n\nImplemented `scripts/open_weight_replay_drift_ledger.py`.\n\nDirectly tested:\n- A real HTTP API boundary: local `POST /v1/completions` calls through `urllib`, not in-process function calls.\n- Cached open-weight GPT-2-family models loaded from Hugging Face artifacts with NumPy + safetensors:\n  - `sshleifer/tiny-gpt2` for smoke and fast full harness confirmation.\n  - `distilgpt2` for the bounded Tier 3 run.\n- Fixed seeds: `11, 17, 23, 31, 43`.\n- 100 prompt traces per full model run, each with two model-backed API steps and a deterministic tool/state observation.\n- 700 replay cases per validator: 100 each for `none`, `format_drift`, `request_drift`, `decoder_drift`, `model_fingerprint_drift`, `api_response_drift`, and `tool_state_drift`.\n\nValidators and controls:\n- `ledger_full`: request + model fingerprint + semantic response + tool + state hashes.\n- `output_only`: final token only.\n- `raw_transcript`: raw JSON responses only.\n- `ledger_raw_response`: full ledger except raw response hashes replace semantic response hashes.\n- Ablations: `ledger_no_request`, `ledger_no_model_fingerprint`, `ledger_no_response`, `ledger_no_tool_state`.\n\nOnly proxied or controlled:\n- Drift was injected at the local serving boundary; this did not wait for natural provider-side model updates.\n- The traces used next-token GPT-2 completions and a deterministic tool, not broad chat/instruction agents with real external side effects.\n- No streaming, retries, rate limits, API billing, or provider failover behavior was tested.\n\nDirect/full evidence required to make this publication-ready:\n- Repeat the same ledger and metrics against a live provider or an open-weight serving stack with real chat/tool traces, streaming/retry paths, and longitudinal natural drift windows.\n- Use larger instruction-tuned models and externally meaningful tasks rather than next-token GPT-2 continuations.\n\n## Commands\n\nSmoke:\n\n```bash\nset -o pipefail; uv run --with numpy --with safetensors --with tokenizers python -m py_compile scripts/open_weight_replay_drift_ledger.py && uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --seeds 11 --tasks-per-seed 2 --outdir results/smoke 2>&1 | tee logs/smoke.log\n```\n\nTiny GPT-2 full harness:\n\n```bash\nset -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --seeds 11 17 23 31 43 --tasks-per-seed 20 --outdir results/open_weight_full 2>&1 | tee logs/open_weight_full.log\n```\n\nDistilGPT-2 calibration:\n\n```bash\nset -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-dir /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 --tasks-per-seed 1 --outdir results/distilgpt2_calibration 2>&1 | tee logs/distilgpt2_calibration.log\n```\n\nDistilGPT-2 bounded full run with checkpoints every 5 traces:\n\n```bash\nset -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-name distilgpt2 --model-dir /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 17 23 31 43 --tasks-per-seed 20 --checkpoint-every 5 --outdir results/distilgpt2_full 2>&1 | tee logs/distilgpt2_full.log\n```\n\n## Results\n\nPrimary DistilGPT-2 artifacts:\n- `results/distilgpt2_full/summary.json`\n- `results/distilgpt2_full/mode_breakdown.json`\n- `results/distilgpt2_full/validator_records.csv`\n- `results/distilgpt2_full/raw_runs_sample.json`\n- `logs/distilgpt2_full.log`\n\nDistilGPT-2 resource use:\n- Wall-clock: 1:14:33.\n- Max RSS: 747,452 KB.\n- CPU: 216%.\n- Exit status: 0.\n- Checkpoints: `results/distilgpt2_full/partial_*` refreshed every 5 traces.\n\nPrimary DistilGPT-2 summary:\n\n| Validator | Material detection | Benign false positives | Material localization |\n| --- | ---: | ---: | ---: |\n| `ledger_full` | 500/500 = 1.000 | 0/200 = 0.000 | 500/500 = 1.000 |\n| `output_only` | 192/500 = 0.384 | 0/200 = 0.000 | 0/500 = 0.000 |\n| `raw_transcript` | 500/500 = 1.000 | 100/200 = 0.500 | 0/500 = 0.000 |\n| `ledger_no_model_fingerprint` | 400/500 = 0.800 | 0/200 = 0.000 | 400/500 = 0.800 |\n| `ledger_no_request` | 500/500 = 1.000 | 0/200 = 0.000 | 400/500 = 0.800 |\n| `ledger_no_response` | 500/500 = 1.000 | 0/200 = 0.000 | 300/500 = 0.600 |\n| `ledger_no_tool_state` | 500/500 = 1.000 | 0/200 = 0.000 | 400/500 = 0.800 |\n| `ledger_raw_response` | 500/500 = 1.000 | 100/200 = 0.500 | 300/500 = 0.600 |\n\nMode-level DistilGPT-2 findings for `ledger_full`:\n- `request_drift`: 100/100 detected and localized.\n- `decoder_drift`: 100/100 detected and localized.\n- `model_fingerprint_drift`: 100/100 detected and localized.\n- `api_response_drift`: 100/100 detected and localized.\n- `tool_state_drift`: 100/100 detected and localized.\n- `none` and `format_drift`: 0/200 false positives.\n\nTiny GPT-2 full run reproduced the same full-ledger rates in 17.3 seconds with max RSS 82,424 KB; output-only was weaker there at 100/500 material detections.\n\n## Interpretation\n\nThe bounded direct open-weight validation supports the mechanism. The full ledger cleanly separated material replay drift from benign formatting drift and localized the first changed component. Baselines exposed the expected weaknesses: output-only missed most non-final-output drift, raw transcript comparison detected all injected material changes but also falsely flagged every benign formatting drift case, and ablations lost exactly the component-specific localization signal they removed.\n\nThis is not paper-positive evidence. The strongest claim is scoped to controlled open-weight GPT-2-family HTTP replay with injected drift. It does not yet establish robustness under live provider changes, instruction-tuned chat behavior, streaming deltas, retry semantics, rate limiting, tool side effects, or naturally occurring longitudinal drift.\n\n## Final Decision\n\nDecision: `finalize_negative` with `research_outcome: useful_signal`.\n\nStop rationale: bounded open-weight evidence supports the replay-ledger mechanism with direct metrics, baselines, fixed seeds, controls, ablations, and a 100-trace DistilGPT-2 run, but the drift is still injected and the tasks are too narrow for publication readiness.\n",
+      "path": "evidence/run_notes.md",
+      "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"medium\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",\n  \"scale_limits\": \"The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.\",\n  \"useful_signal_summary\": \"On the bounded DistilGPT-2 run, the full ledger achieved 500/500 material drift detection, 0/200 benign false positives, and 500/500 material localization. Output-only detected only 192/500 material cases, raw transcript detected 500/500 material cases but produced 100/200 benign false positives, and ablations lost the expected component-specific localization or detection signal.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop as no-paper useful signal; only a live or production-like longitudinal API study with streaming/retry/tool side effects should revisit paper readiness.\",\n  \"stop_reason\": \"The result is direct bounded open-weight mechanism support, not publication-grade evidence, because all drift was controlled/injected and the task/model setting is too narrow.\",\n  \"followup_recommended\": false,\n  \"followup_type\": \"\",\n  \"followup_title\": \"\",\n  \"followup_hypothesis\": \"\",\n  \"followup_required_evidence\": [],\n  \"followup_success_threshold\": \"\",\n  \"followup_stop_condition\": \"\",\n  \"followup_depth\": 3\n}\n",
+      "path": "evidence/enoch/project_decision.json",
+      "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"medium\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"In a controlled local HTTP API serving cached open-weight GPT-2-family models, a normalized request/model-fingerprint/semantic-response/tool/state hash-chain replay ledger detected and localized all tested injected material drift while avoiding benign formatting false positives across 100 fixed-seed DistilGPT-2 traces.\",\n  \"scale_limits\": \"The validation used GPT-2-family next-token completions, local HTTP serving, deterministic tool/state observations, and injected drift modes. It did not test live provider model changes, instruction-tuned chat models, streaming deltas, retries, rate limits, billing/API failures, long multi-tool agents, external side effects, or naturally occurring longitudinal drift.\",\n  \"useful_signal_summary\": \"On the bounded DistilGPT-2 run, the full ledger achieved 500/500 material drift detection, 0/200 benign false positives, and 500/500 material localization. Output-only detected only 192/500 material cases, raw transcript detected 500/500 material cases but produced 100/200 benign false positives, and ablations lost the expected component-specific localization or detection signal.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop as no-paper useful signal; only a live or production-like longitudinal API study with streaming/retry/tool side effects should revisit paper readiness.\",\n  \"stop_reason\": \"The result is direct bounded open-weight mechanism support, not publication-grade evidence, because all drift was controlled/injected and the task/model setting is too narrow.\",\n  \"followup_recommended\": false,\n  \"followup_type\": \"\",\n  \"followup_title\": \"\",\n  \"followup_hypothesis\": \"\",\n  \"followup_required_evidence\": [],\n  \"followup_success_threshold\": \"\",\n  \"followup_stop_condition\": \"\",\n  \"followup_depth\": 3\n}\n",
+      "path": "evidence/omx/project_decision.json",
+      "sha256": "463ba1a97a27ded732121a3cb4e61580fe378a927be28dea802f25aabc4a848e",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "result_artifacts": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "result_file_refs": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "run_id": "source-record-redacted-20260529T020213376416+0000",
+  "schema_version": "evidence_bundle.v2",
+  "source": "enoch_control_plane",
+  "source_project_dir": "<control-plane-projects>/source-record-redacted",
+  "source_run_id": "source-record-redacted-20260529T020213376416+0000",
+  "sync_metadata": {
+    "enabled": true,
+    "http_sync": {
+      "files": 0,
+      "ok": false,
+      "paths": [],
+      "reason": "worker_read_failed",
+      "skipped": [
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "run_notes.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/hot_cold_sim_results.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/smoke.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_probe/hotcold_probe.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T020213376416+0000/README.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T020213376416+0000/paper.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T020213376416+0000/paper_manifest.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T020213376416+0000/evidence_bundle.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T020213376416+0000/claim_ledger.json",
+          "status": 404
+        }
+      ],
+      "timeouts": 0
+    },
+    "method": "worker_http+ssh",
+    "reason": "command_failed",
+    "remote_dir": "<local-path-redacted>",
+    "ssh_returncode": 1,
+    "stderr": "bash: line 1: cd: <local-path-redacted> No such file or directory\n",
+    "stdout": "",
+    "synced": true
+  },
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735315-Svzeo2pfOWHQsmntWfH7"
+  }
+}

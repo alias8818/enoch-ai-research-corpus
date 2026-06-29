@@ -1,0 +1,236 @@
+{
+  "file_inventory": [
+    {
+      "bytes": 5703,
+      "public_path": "evidence/run_notes.md",
+      "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "bytes": 3256,
+      "public_path": "evidence/enoch/project_decision.json",
+      "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "bytes": 3256,
+      "public_path": "evidence/omx/project_decision.json",
+      "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "limitations": [],
+  "metric_summaries": [
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "When real Codex/Enoch trace evidence is converted into final claim adjudication tasks, anchored-root ledger verification will reject poisoned evidence that raw/schema/hash-only replay accepts, reducing accepted poisoned final claims to at most 5% while preserving at least 95% clean claim acceptance.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "A deterministic conversion from real trace ledger records to claim/evidence adjudication cases",
+          "No-attack clean controls and fixed-seed poison injections using the same real trace corpus",
+          "Raw JSON, schema-only, hash-chain-only, anchored-root, and anchored-root-source-bound replay policies",
+          "Accepted poisoned final claim rate, clean claim acceptance, abstention rate, and per-attack failure analysis"
+        ],
+        "followup_stop_condition": "Stop if trace-derived claims cannot be constructed without private/human evidence, or if raw/schema/hash-only accepted poisoned claim rate remains below 0.10 with confidence intervals excluding the 0.30 threshold.",
+        "followup_success_threshold": "Across at least 500 real trace-derived adjudication cases, raw/schema/hash-only accepted poisoned claim rate >= 0.30 for at least one realistic attack class, anchored policies accepted poisoned claim rate <= 0.05, and anchored clean acceptance >= 0.95.",
+        "followup_title": "Real trace ledger verification impact on final claim acceptance",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop this run as useful no-paper evidence; the concrete next bounded test is to replay real trace-derived evidence into an answer/claim adjudication task and measure whether anchored verification reduces accepted poisoned final claims without harming clean acceptance.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Local trace-integrity validation only; no private production logs, no live LLM answer replay, no human adjudication of final answers, and no deployed signing/key-management system beyond local anchored manifests.",
+        "stop_reason": "The run produced direct real-corpus integrity evidence, but it is not publication-ready because it validates trace tamper detection rather than downstream agent answer correctness or operational signing/key-management assumptions.",
+        "useful_signal_summary": "Anchored-root verification had 100% clean acceptance and 100% tamper detection across output mutation, exit-code mutation, deletion, adjacent reorder, unanchored append, tail truncation, and fully recomputed-chain attacks. Raw JSON and schema-only baselines detected 0% of tampering; hash-chain-only missed append, truncate, and recomputed-chain attacks."
+      },
+      "source_path": ".enoch/project_decision.json"
+    },
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "When real Codex/Enoch trace evidence is converted into final claim adjudication tasks, anchored-root ledger verification will reject poisoned evidence that raw/schema/hash-only replay accepts, reducing accepted poisoned final claims to at most 5% while preserving at least 95% clean claim acceptance.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "A deterministic conversion from real trace ledger records to claim/evidence adjudication cases",
+          "No-attack clean controls and fixed-seed poison injections using the same real trace corpus",
+          "Raw JSON, schema-only, hash-chain-only, anchored-root, and anchored-root-source-bound replay policies",
+          "Accepted poisoned final claim rate, clean claim acceptance, abstention rate, and per-attack failure analysis"
+        ],
+        "followup_stop_condition": "Stop if trace-derived claims cannot be constructed without private/human evidence, or if raw/schema/hash-only accepted poisoned claim rate remains below 0.10 with confidence intervals excluding the 0.30 threshold.",
+        "followup_success_threshold": "Across at least 500 real trace-derived adjudication cases, raw/schema/hash-only accepted poisoned claim rate >= 0.30 for at least one realistic attack class, anchored policies accepted poisoned claim rate <= 0.05, and anchored clean acceptance >= 0.95.",
+        "followup_title": "Real trace ledger verification impact on final claim acceptance",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop this run as useful no-paper evidence; the concrete next bounded test is to replay real trace-derived evidence into an answer/claim adjudication task and measure whether anchored verification reduces accepted poisoned final claims without harming clean acceptance.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Local trace-integrity validation only; no private production logs, no live LLM answer replay, no human adjudication of final answers, and no deployed signing/key-management system beyond local anchored manifests.",
+        "stop_reason": "The run produced direct real-corpus integrity evidence, but it is not publication-ready because it validates trace tamper detection rather than downstream agent answer correctness or operational signing/key-management assumptions.",
+        "useful_signal_summary": "Anchored-root verification had 100% clean acceptance and 100% tamper detection across output mutation, exit-code mutation, deletion, adjacent reorder, unanchored append, tail truncation, and fully recomputed-chain attacks. Raw JSON and schema-only baselines detected 0% of tampering; hash-chain-only missed append, truncate, and recomputed-chain attacks."
+      },
+      "source_path": ".omx/project_decision.json"
+    }
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "public_evidence_files": [
+    {
+      "content": "# Real Independent Trace Corpus Evidence Ledger Verification\n\n## Hypothesis\n\nAn externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.\n\n## Resource Calibration\n\nThis is CPU-only trace parsing and SHA-256 hashing over local JSONL logs. It does not require GB10 GPU/model hardware. The planned full pass uses at most 33 independent project logs discovered under `/mnt/usb<local-path-redacted>`, five fixed seeds, eight attack settings, and five verification policies. Expected wall-clock is under 15 minutes on 20 CPU cores, with a single Python process, memory below 2 GB, and durable outputs written after the run to `results/real_trace_ledger/`. Because it is CPU-only and short, no long GB10 run is justified.\n\nCommands will use `set -o pipefail` before `tee` so failed experiments are not hidden by logging.\n\n## Implementation\n\nAdded `scripts/ledger_verify_real_traces.py`.\n\nThe script discovers real stored Codex/Enoch traces under `*/.enoch/logs/*.codex.jsonl`, parses each JSONL event, canonicalizes the event plus source path and line index, and builds a SHA-256 hash chain. Each trace also receives an anchored manifest containing `trace_id`, `source_path`, `source_sha256`, `event_count`, and final `root_hash`.\n\nPolicies:\n\n- `raw_json_accept`: accepts any parseable JSON records.\n- `schema_only`: checks ledger record fields and hash string shape, but not hash correctness.\n- `hash_chain_only`: checks per-record hash and previous-hash links, but has no external expected root/count.\n- `anchored_root`: checks schema, chain, event count, and expected anchored root.\n- `anchored_root_source_bound`: additionally checks all records match the anchored source path.\n\nAttacks:\n\n- `mutate_command_output`\n- `mutate_exit_code`\n- `delete_event`\n- `reorder_adjacent`\n- `append_unanchored`\n- `truncate_tail`\n- `recompute_after_mutation`\n\nFixed seeds: `101, 202, 303, 404, 505`.\n\n## Commands\n\n- Smoke: `set -o pipefail; python3 scripts/ledger_verify_real_traces.py --result-dir results/smoke --limit 2 --min-traces 2 2>&1 | tee logs/smoke_ledger_verify.log`\n- Full: `set -o pipefail; python3 scripts/ledger_verify_real_traces.py --result-dir results/real_trace_ledger --min-traces 500 2>&1 | tee logs/full_ledger_verify.log`\n- Summary inspection: inline Python over `results/real_trace_ledger/summary_metrics.json`.\n\n## Artifacts\n\n- Code: `scripts/ledger_verify_real_traces.py`\n- Full summary: `results/real_trace_ledger/summary_metrics.json`\n- Per-case rows: `results/real_trace_ledger/per_case_results.csv`\n- Sample ledgers/manifests: `results/real_trace_ledger/sample_ledgers.json`\n- Logs: `logs/smoke_ledger_verify.log`, `logs/full_ledger_verify.log`\n\n## Full Corpus\n\n- Real trace logs: 2,559\n- Events: 171,568\n- Bytes on disk: 284,021,224\n- Median events per trace: 64\n- Full verification wall-clock: 44.217 seconds\n- Throughput reported by script: 776,021.8 event-policy checks/sec\n- Per-case rows: 511,750\n\n## Key Metrics\n\nClean acceptance:\n\n| Policy | Clean accept rate |\n| --- | ---: |\n| raw_json_accept | 1.000 |\n| schema_only | 1.000 |\n| hash_chain_only | 1.000 |\n| anchored_root | 1.000 |\n| anchored_root_source_bound | 1.000 |\n\nTamper detection rate by policy:\n\n| Attack | raw_json_accept | schema_only | hash_chain_only | anchored_root | anchored_root_source_bound |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| mutate_command_output | 0.000 | 0.000 | 1.000 | 1.000 | 1.000 |\n| mutate_exit_code | 0.000 | 0.000 | 1.000 | 1.000 | 1.000 |\n| delete_event | 0.000 | 0.000 | 0.984 | 1.000 | 1.000 |\n| reorder_adjacent | 0.000 | 0.000 | 1.000 | 1.000 | 1.000 |\n| append_unanchored | 0.000 | 0.000 | 0.000 | 1.000 | 1.000 |\n| truncate_tail | 0.000 | 0.000 | 0.000 | 1.000 | 1.000 |\n| recompute_after_mutation | 0.000 | 0.000 | 0.000 | 1.000 | 1.000 |\n\nAnchored-root policies had Wilson 95% lower bounds above 0.99969 for all tamper classes and clean acceptance. Hash-chain-only found direct non-recomputed mutations but missed append, truncation, and recomputed-chain attacks exactly as expected when no external root/count is known.\n\n## Interpretation\n\nThe real-corpus result supports the scoped mechanism: for independently produced stored agent traces, an externally anchored root plus event count converts trace-integrity checking from best-effort local consistency into reliable tamper detection. Raw JSON and schema-only baselines provide no tamper detection. Hash-chain-only is a partial control: it catches local content mutations and most middle deletions, but it cannot detect a valid appended record, tail truncation, or a fully recomputed chain without an external anchor.\n\nThis is direct evidence on real trace logs, not synthetic traces. It is not end-to-end evidence that a live agent's final answer is protected from poisoned evidence, and it does not test private production logs, human adjudication, or cryptographic signing/key management beyond a local anchored manifest. The result is useful no-paper evidence, not publication readiness.\n\n## Decision\n\nFinal decision: `finalize_negative`.\n\nResearch outcome: `useful_signal`.\n\nHypothesis status: `supported` for the scoped trace-ledger verification mechanism. Evidence strength is `strong` for local real-corpus integrity verification, but the claim remains below paper readiness because it does not validate downstream answer quality or operational key-management assumptions.\n",
+      "path": "evidence/run_notes.md",
+      "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"bounded_paper_ready\": false,\n  \"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",\n  \"compute_scale_blocked\": false,\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"followup_depth\": 3,\n  \"followup_hypothesis\": \"When real Codex/Enoch trace evidence is converted into final claim adjudication tasks, anchored-root ledger verification will reject poisoned evidence that raw/schema/hash-only replay accepts, reducing accepted poisoned final claims to at most 5% while preserving at least 95% clean claim acceptance.\",\n  \"followup_recommended\": true,\n  \"followup_required_evidence\": [\n    \"A deterministic conversion from real trace ledger records to claim/evidence adjudication cases\",\n    \"No-attack clean controls and fixed-seed poison injections using the same real trace corpus\",\n    \"Raw JSON, schema-only, hash-chain-only, anchored-root, and anchored-root-source-bound replay policies\",\n    \"Accepted poisoned final claim rate, clean claim acceptance, abstention rate, and per-attack failure analysis\"\n  ],\n  \"followup_stop_condition\": \"Stop if trace-derived claims cannot be constructed without private/human evidence, or if raw/schema/hash-only accepted poisoned claim rate remains below 0.10 with confidence intervals excluding the 0.30 threshold.\",\n  \"followup_success_threshold\": \"Across at least 500 real trace-derived adjudication cases, raw/schema/hash-only accepted poisoned claim rate >= 0.30 for at least one realistic attack class, anchored policies accepted poisoned claim rate <= 0.05, and anchored clean acceptance >= 0.95.\",\n  \"followup_title\": \"Real trace ledger verification impact on final claim acceptance\",\n  \"followup_type\": \"deepen\",\n  \"hypothesis_status\": \"supported\",\n  \"novelty_progress\": true,\n  \"project_decision\": \"finalize_negative\",\n  \"recommended_next_action\": \"Stop this run as useful no-paper evidence; the concrete next bounded test is to replay real trace-derived evidence into an answer/claim adjudication task and measure whether anchored verification reduces accepted poisoned final claims without harming clean acceptance.\",\n  \"research_outcome\": \"useful_signal\",\n  \"results_changed\": true,\n  \"scale_limits\": \"Local trace-integrity validation only; no private production logs, no live LLM answer replay, no human adjudication of final answers, and no deployed signing/key-management system beyond local anchored manifests.\",\n  \"stop_reason\": \"The run produced direct real-corpus integrity evidence, but it is not publication-ready because it validates trace tamper detection rather than downstream agent answer correctness or operational signing/key-management assumptions.\",\n  \"useful_signal_summary\": \"Anchored-root verification had 100% clean acceptance and 100% tamper detection across output mutation, exit-code mutation, deletion, adjacent reorder, unanchored append, tail truncation, and fully recomputed-chain attacks. Raw JSON and schema-only baselines detected 0% of tampering; hash-chain-only missed append, truncate, and recomputed-chain attacks.\"\n}\n",
+      "path": "evidence/enoch/project_decision.json",
+      "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"bounded_paper_ready\": false,\n  \"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",\n  \"compute_scale_blocked\": false,\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"followup_depth\": 3,\n  \"followup_hypothesis\": \"When real Codex/Enoch trace evidence is converted into final claim adjudication tasks, anchored-root ledger verification will reject poisoned evidence that raw/schema/hash-only replay accepts, reducing accepted poisoned final claims to at most 5% while preserving at least 95% clean claim acceptance.\",\n  \"followup_recommended\": true,\n  \"followup_required_evidence\": [\n    \"A deterministic conversion from real trace ledger records to claim/evidence adjudication cases\",\n    \"No-attack clean controls and fixed-seed poison injections using the same real trace corpus\",\n    \"Raw JSON, schema-only, hash-chain-only, anchored-root, and anchored-root-source-bound replay policies\",\n    \"Accepted poisoned final claim rate, clean claim acceptance, abstention rate, and per-attack failure analysis\"\n  ],\n  \"followup_stop_condition\": \"Stop if trace-derived claims cannot be constructed without private/human evidence, or if raw/schema/hash-only accepted poisoned claim rate remains below 0.10 with confidence intervals excluding the 0.30 threshold.\",\n  \"followup_success_threshold\": \"Across at least 500 real trace-derived adjudication cases, raw/schema/hash-only accepted poisoned claim rate >= 0.30 for at least one realistic attack class, anchored policies accepted poisoned claim rate <= 0.05, and anchored clean acceptance >= 0.95.\",\n  \"followup_title\": \"Real trace ledger verification impact on final claim acceptance\",\n  \"followup_type\": \"deepen\",\n  \"hypothesis_status\": \"supported\",\n  \"novelty_progress\": true,\n  \"project_decision\": \"finalize_negative\",\n  \"recommended_next_action\": \"Stop this run as useful no-paper evidence; the concrete next bounded test is to replay real trace-derived evidence into an answer/claim adjudication task and measure whether anchored verification reduces accepted poisoned final claims without harming clean acceptance.\",\n  \"research_outcome\": \"useful_signal\",\n  \"results_changed\": true,\n  \"scale_limits\": \"Local trace-integrity validation only; no private production logs, no live LLM answer replay, no human adjudication of final answers, and no deployed signing/key-management system beyond local anchored manifests.\",\n  \"stop_reason\": \"The run produced direct real-corpus integrity evidence, but it is not publication-ready because it validates trace tamper detection rather than downstream agent answer correctness or operational signing/key-management assumptions.\",\n  \"useful_signal_summary\": \"Anchored-root verification had 100% clean acceptance and 100% tamper detection across output mutation, exit-code mutation, deletion, adjacent reorder, unanchored append, tail truncation, and fully recomputed-chain attacks. Raw JSON and schema-only baselines detected 0% of tampering; hash-chain-only missed append, truncate, and recomputed-chain attacks.\"\n}\n",
+      "path": "evidence/omx/project_decision.json",
+      "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "result_artifacts": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "result_file_refs": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "run_id": "source-record-redacted-20260601T024431325238+0000",
+  "schema_version": "evidence_bundle.v2",
+  "source": "enoch_control_plane",
+  "source_project_dir": "<control-plane-projects>/source-record-redacted",
+  "source_run_id": "source-record-redacted-20260601T024431325238+0000",
+  "sync_metadata": {
+    "enabled": true,
+    "http_sync": {
+      "files": 3,
+      "ok": true,
+      "paths": [
+        "run_notes.md",
+        ".enoch/project_decision.json",
+        ".omx/project_decision.json"
+      ],
+      "reason": "worker_http_synced",
+      "skipped": [
+        {
+          "error": "{\"detail\":\"paper artifact not found: metrics.json\"}",
+          "path": ".enoch/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: metrics.json\"}",
+          "path": ".omx/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: hot_cold_sim_results.json\"}",
+          "path": "results/hot_cold_sim_results.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: smoke.json\"}",
+          "path": "results/smoke.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: hotcold_probe.json\"}",
+          "path": "results/llamacpp_probe/hotcold_probe.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: qwen32b_hotcold_residency.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: qwen32b_hotcold_fixed_budget_pager_sweep.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: qwen32b_hotcold_reuse_pager_sweep.json\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: qwen32b_hotcold_reuse_pager_sweep_summary.csv\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: README.md\"}",
+          "path": "papers/source-record-redacted-20260601T024431325238+0000/README.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: paper.md\"}",
+          "path": "papers/source-record-redacted-20260601T024431325238+0000/paper.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: paper_manifest.json\"}",
+          "path": "papers/source-record-redacted-20260601T024431325238+0000/paper_manifest.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: evidence_bundle.json\"}",
+          "path": "papers/source-record-redacted-20260601T024431325238+0000/evidence_bundle.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"paper artifact not found: claim_ledger.json\"}",
+          "path": "papers/source-record-redacted-20260601T024431325238+0000/claim_ledger.json",
+          "status": 404
+        }
+      ],
+      "timeouts": 0
+    },
+    "local_evidence_present": true,
+    "method": "worker_http",
+    "reason": "worker_http_synced",
+    "synced": true
+  },
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735206-gXJo6JCJNio4RqdqNUH1"
+  }
+}

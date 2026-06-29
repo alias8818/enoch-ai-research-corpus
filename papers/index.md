@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 391
+Count: 393
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 391/391 packaging/provenance lint pass and 391/391 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 393/393 packaging/provenance lint pass and 393/393 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -219,6 +219,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Layer Skip under Memory Pressure](layer-skip-under-memory-pressure/paper.md) | `enoch-paper-0286` | yes | yes | 12 | true | 0 |
 | [Layerwise Calibration Observer for Dense](layerwise-calibration-observer-for-dense/paper.md) | `enoch-paper-0343` | yes | yes | 12 | true | 0 |
 | [Live Agent Feature-Flag Rehearsal Benchmark](live-agent-feature-flag-rehearsal-benchmark/paper.md) | `enoch-paper-0501` | yes | yes | 12 | true | 0 |
+| [Live or open-weight LLM API replay drift ledger validation](live-or-open-weight-llm-api-replay-drift-ledger-validation/paper.md) | `enoch-paper-0513` | yes | yes | 16 | true | 0 |
 | [llama.cpp GGUF hot-warm-cold mmap instrumentation](llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/paper.md) | `enoch-paper-0254` | yes | yes | 12 | true | 0 |
 | [llama.cpp In-Place KV Compaction for Importance Retention](llama.cpp-in-place-kv-compaction-for-importance-retention/paper.md) | `enoch-paper-0250` | yes | yes | 12 | true | 0 |
 | [LLM-Backed Log-to-Patch Memory Benchmark](llm-backed-log-to-patch-memory-benchmark/paper.md) | `enoch-paper-0225` | yes | yes | 12 | true | 0 |
@@ -306,6 +307,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Qwen32B Speculative Workflow Robustness Suite](qwen32b-speculative-workflow-robustness-suite/paper.md) | `enoch-paper-0248` | yes | yes | 12 | true | 0 |
 | [Real-Corpus Row-ID Citation QA Integration Benchmark](real-corpus-row-id-citation-qa-integration-benchmark/paper.md) | `enoch-paper-0074` | yes | yes | 12 | true | 0 |
 | [Real-Document Retrieval Compression Teacher Validation](real-document-retrieval-compression-teacher-validation/paper.md) | `enoch-paper-0114` | yes | yes | 12 | true | 0 |
+| [Real Independent Trace Corpus Evidence Ledger Verification](real-independent-trace-corpus-evidence-ledger-verification/paper.md) | `enoch-paper-0514` | yes | yes | 16 | true | 0 |
 | [Real-Mode Stress Regularization](real-mode-stress-regularization/paper.md) | `enoch-paper-0268` | yes | yes | 12 | true | 0 |
 | [Real-Model Negative-Exit Controller on Math and Code Search Traces](real-model-negative-exit-controller-on-math-and-code-search-traces/paper.md) | `enoch-paper-0108` | yes | yes | 12 | true | 0 |
 | [Real-RAG Answer-Abstention Boundary Benchmark](real-rag-answer-abstention-boundary-benchmark/paper.md) | `enoch-paper-0068` | yes | yes | 12 | true | 0 |

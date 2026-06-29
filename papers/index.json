@@ -1,5 +1,5 @@
 {
-  "count": 391,
+  "count": 393,
   "highlight_count": 13,
   "highlights": [
     {
@@ -2998,6 +2998,21 @@
     },
     {
       "ai_generated": true,
+      "claim_count": 16,
+      "claim_ledger_path": "papers/live-or-open-weight-llm-api-replay-drift-ledger-validation/claim_ledger.json",
+      "evidence_bundle_path": "papers/live-or-open-weight-llm-api-replay-drift-ledger-validation/evidence_bundle.json",
+      "generated_at": "2026-06-29 12:09:02.102623+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/live-or-open-weight-llm-api-replay-drift-ledger-validation/paper.md",
+      "public_id": "enoch-paper-0513",
+      "slug": "live-or-open-weight-llm-api-replay-drift-ledger-validation",
+      "source_record_fingerprint": "ae8a46559415d2af",
+      "strict_audit_pass": true,
+      "title": "Live or open-weight LLM API replay drift ledger validation"
+    },
+    {
+      "ai_generated": true,
       "claim_count": 12,
       "claim_ledger_path": "papers/llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/claim_ledger.json",
       "evidence_bundle_path": "papers/llama.cpp-gguf-hot-warm-cold-mmap-instrumentation/evidence_bundle.json",
@@ -4300,6 +4315,21 @@
       "source_record_fingerprint": "f5975690442a73f1",
       "strict_audit_pass": true,
       "title": "Real-Document Retrieval Compression Teacher Validation"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 16,
+      "claim_ledger_path": "papers/real-independent-trace-corpus-evidence-ledger-verification/claim_ledger.json",
+      "evidence_bundle_path": "papers/real-independent-trace-corpus-evidence-ledger-verification/evidence_bundle.json",
+      "generated_at": "2026-06-29 12:09:56.052490+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/real-independent-trace-corpus-evidence-ledger-verification/paper.md",
+      "public_id": "enoch-paper-0514",
+      "slug": "real-independent-trace-corpus-evidence-ledger-verification",
+      "source_record_fingerprint": "ba83dccdcef1a0ac",
+      "strict_audit_pass": true,
+      "title": "Real Independent Trace Corpus Evidence Ledger Verification"
     },
     {
       "ai_generated": true,

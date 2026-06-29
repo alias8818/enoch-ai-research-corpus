@@ -1,0 +1,29 @@
+{
+  "bounded_paper_ready": false,
+  "claim_scope": "On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.",
+  "compute_scale_blocked": false,
+  "confidence": "high",
+  "evidence_strength": "strong",
+  "followup_depth": 3,
+  "followup_hypothesis": "When real Codex/Enoch trace evidence is converted into final claim adjudication tasks, anchored-root ledger verification will reject poisoned evidence that raw/schema/hash-only replay accepts, reducing accepted poisoned final claims to at most 5% while preserving at least 95% clean claim acceptance.",
+  "followup_recommended": true,
+  "followup_required_evidence": [
+    "A deterministic conversion from real trace ledger records to claim/evidence adjudication cases",
+    "No-attack clean controls and fixed-seed poison injections using the same real trace corpus",
+    "Raw JSON, schema-only, hash-chain-only, anchored-root, and anchored-root-source-bound replay policies",
+    "Accepted poisoned final claim rate, clean claim acceptance, abstention rate, and per-attack failure analysis"
+  ],
+  "followup_stop_condition": "Stop if trace-derived claims cannot be constructed without private/human evidence, or if raw/schema/hash-only accepted poisoned claim rate remains below 0.10 with confidence intervals excluding the 0.30 threshold.",
+  "followup_success_threshold": "Across at least 500 real trace-derived adjudication cases, raw/schema/hash-only accepted poisoned claim rate >= 0.30 for at least one realistic attack class, anchored policies accepted poisoned claim rate <= 0.05, and anchored clean acceptance >= 0.95.",
+  "followup_title": "Real trace ledger verification impact on final claim acceptance",
+  "followup_type": "deepen",
+  "hypothesis_status": "supported",
+  "novelty_progress": true,
+  "project_decision": "finalize_negative",
+  "recommended_next_action": "Stop this run as useful no-paper evidence; the concrete next bounded test is to replay real trace-derived evidence into an answer/claim adjudication task and measure whether anchored verification reduces accepted poisoned final claims without harming clean acceptance.",
+  "research_outcome": "useful_signal",
+  "results_changed": true,
+  "scale_limits": "Local trace-integrity validation only; no private production logs, no live LLM answer replay, no human adjudication of final answers, and no deployed signing/key-management system beyond local anchored manifests.",
+  "stop_reason": "The run produced direct real-corpus integrity evidence, but it is not publication-ready because it validates trace tamper detection rather than downstream agent answer correctness or operational signing/key-management assumptions.",
+  "useful_signal_summary": "Anchored-root verification had 100% clean acceptance and 100% tamper detection across output mutation, exit-code mutation, deletion, adjacent reorder, unanchored append, tail truncation, and fully recomputed-chain attacks. Raw JSON and schema-only baselines detected 0% of tampering; hash-chain-only missed append, truncate, and recomputed-chain attacks."
+}

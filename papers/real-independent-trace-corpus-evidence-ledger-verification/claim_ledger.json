@@ -1,0 +1,483 @@
+{
+  "claims": [
+    {
+      "claim": "The paper-readiness decision recorded in the project metadata is `finalize_negative`; this draft documents the bounded mechanism result and its scope, not a publication-grade end-to-end claim.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "An externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C1",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We report a bounded evaluation of a SHA-256 evidence ledger with an externally anchored root hash and event count against real, independently stored Codex/Enoch JSONL agent trace logs.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8333,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.7917,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.7917,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C2",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The corpus comprises 2,559 trace logs containing 171,568 events and 284,021,224 bytes of trace data, with a median of 64 events per trace.",
+      "evidence_refs": [
+        {
+          "match_score": 0.85,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.65,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.65,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C3",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The full pass over five fixed random seeds, seven post-hoc tampering classes, and five verification policies produced 511,750 per-case evaluation rows in 44.217 seconds of wall-clock time on a CPU-only single Python process.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8276,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.2759,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.2759,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C4",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Anchored-root verification achieved a 1.000 clean acceptance rate and a 1.000 tamper detection rate across `mutate_command_output`, `mutate_exit_code`, `delete_event`, `reorder_adjacent`, `append_unanchored`, `truncate_tail`, and `recompute_after_mutation` attacks, with Wilson 95% lower bounds above 0.99969 for every tamper class on the anchored policies.",
+      "evidence_refs": [
+        {
+          "match_score": 0.871,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4516,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4516,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C5",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Raw JSON parsing and schema-only baselines detected 0% of tampering.",
+      "evidence_refs": [
+        {
+          "match_score": 0.75,
+          "path": "evidence/run_notes.md",
+          "quote": "An externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.75,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.75,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C6",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "A hash-chain-only baseline that lacks an external anchor correctly detected direct content mutations and most interior deletions but missed unanchored appends, tail truncations, and fully recomputed chains.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5833,
+          "path": "evidence/run_notes.md",
+          "quote": "An externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4583,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4583,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C7",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The result is scoped to local trace-integrity validation: it does not establish that downstream agent answers are protected from poisoned evidence, nor that operational signing or key-management practices are deployed beyond a local anchored manifest.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8148,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6667,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6667,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C8",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We report this as useful mechanism evidence rather than a publication-grade end-to-end claim, and identify a downstream claim-adjudication follow-up with pre-registered success thresholds.",
+      "evidence_refs": [
+        {
+          "match_score": 0.4737,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4737,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4737,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C9",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "These traces are used downstream as evidence in evaluations, audits, and replay-based debugging.",
+      "evidence_refs": [
+        {
+          "match_score": 0.4545,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.2727,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.2727,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C10",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "This paper is concerned with a narrow, scoped question: *if we apply a SHA-256 evidence ledger with an externally anchored root hash and event count to real, independently produced Codex/Enoch trace logs, does it detect post-hoc tampering that the weaker baselines miss, while accepting unmodified traces?* This evaluation is bounded.",
+      "evidence_refs": [
+        {
+          "match_score": 0.725,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.625,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.625,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C11",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The result is a real-corpus CPU-only verification outcome; it is not a toy simulation, not a llama.cpp hook-prototype result, not a CUDA copy calibration, and not a final production validation.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6667,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3889,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3889,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C12",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The full pass used 2,559 trace logs, 171,568 events, and 284,021,224 bytes of trace data.",
+      "evidence_refs": [
+        {
+          "match_score": 0.875,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5625,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5625,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C13",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The median number of events per trace was 64.",
+      "evidence_refs": [
+        {
+          "match_score": 0.625,
+          "path": "evidence/run_notes.md",
+          "quote": "# Real Independent Trace Corpus Evidence Ledger Verification",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.375,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.375,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C14",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "A SHA-256 hash chain is then computed over the sequence of canonical records, with each record's hash binding its own canonical bytes together with the previous record's hash.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "An externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.25,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.25,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C15",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "`source_sha256`: the SHA-256 of the file bytes.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6,
+          "path": "evidence/run_notes.md",
+          "quote": "An externally anchored evidence ledger over real agent trace logs should detect post-hoc trace tampering that passes raw JSON parsing, schema-only validation, and in some cases hash-chain-only validation. The direct target metric is tamper detection rate on real stored Codex/Enoch JSONL traces, with clean acceptance as the false-positive control.",
+          "sha256": "d38b257dff7313b8281ab49767d8c41b801cd29dc8e2314ef773b24bdfa6e443",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"On 2,559 real stored Codex/Enoch JSONL agent trace logs containing 171,568 events and 284 MB of trace data, a SHA-256 evidence ledger with an externally anchored root hash and event count detected all tested post-hoc tampering classes while accepting all clean traces.\",",
+          "sha256": "6780165ad053bccbd31127a7b5978ec462d8336d8b10126ef720e20b05b91c3f",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C16",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    }
+  ],
+  "evidence_bundle_path": "papers/source-record-redacted-20260601T024431325238+0000/evidence_bundle.json",
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260601T024431325238+0000",
+  "schema_version": "claim_ledger.v2",
+  "unsupported_claim_count": 0,
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735206-gXJo6JCJNio4RqdqNUH1"
+  }
+}

@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 391 / 391
+Strict claim/evidence passed: 393 / 393
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,9 +8,9 @@ Status: `strict_pass`
 
 ## Summary
 
-- Empty claim ledgers: 0 / 391
-- Evidence `result_files` references: 1173
-- Publicly present result-file references: 1173
+- Empty claim ledgers: 0 / 393
+- Evidence `result_files` references: 1179
+- Publicly present result-file references: 1179
 - Missing result-file references: 0
 - Featured artifacts strict-pass count: 2 / 2
 
@@ -225,6 +225,7 @@ Status: `strict_pass`
 | `layer-skip-under-memory-pressure` | True | 12 | 0 | [] |
 | `layerwise-calibration-observer-for-dense` | True | 12 | 0 | [] |
 | `live-agent-feature-flag-rehearsal-benchmark` | True | 12 | 0 | [] |
+| `live-or-open-weight-llm-api-replay-drift-ledger-validation` | True | 16 | 0 | [] |
 | `llama.cpp-gguf-hot-warm-cold-mmap-instrumentation` | True | 12 | 0 | [] |
 | `llama.cpp-in-place-kv-compaction-for-importance-retention` | True | 12 | 0 | [] |
 | `llm-backed-log-to-patch-memory-benchmark` | True | 12 | 0 | [] |
@@ -312,6 +313,7 @@ Status: `strict_pass`
 | `qwen32b-speculative-workflow-robustness-suite` | True | 12 | 0 | [] |
 | `real-corpus-row-id-citation-qa-integration-benchmark` | True | 12 | 0 | [] |
 | `real-document-retrieval-compression-teacher-validation` | True | 12 | 0 | [] |
+| `real-independent-trace-corpus-evidence-ledger-verification` | True | 16 | 0 | [] |
 | `real-mode-stress-regularization` | True | 12 | 0 | [] |
 | `real-model-negative-exit-controller-on-math-and-code-search-traces` | True | 12 | 0 | [] |
 | `real-rag-answer-abstention-boundary-benchmark` | True | 12 | 0 | [] |

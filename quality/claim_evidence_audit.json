@@ -1,6 +1,6 @@
 {
   "claim_ledgers_empty": 0,
-  "count": 389,
+  "count": 391,
   "featured_artifacts_checked": 2,
   "featured_artifacts_strict_pass_count": 2,
   "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
@@ -15,9 +15,9 @@
     "semantic_output_quality",
     "citation_accuracy"
   ],
-  "result_file_refs": 1167,
+  "result_file_refs": 1173,
   "result_file_refs_missing": 0,
-  "result_file_refs_public_present": 1167,
+  "result_file_refs_public_present": 1173,
   "rows": [
     {
       "audit_status": "strict_pass",
@@ -2353,6 +2353,22 @@
       "result_file_refs_missing": 0,
       "result_file_refs_public_present": 3,
       "slug": "fact-frequency-flattener",
+      "strict_pass": true
+    },
+    {
+      "audit_status": "strict_pass",
+      "claim_count": 16,
+      "claim_ledger_empty": false,
+      "claim_ledger_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/claim_ledger.json",
+      "claim_ledger_schema_status": "claims_reference_evidence",
+      "evidence_bundle_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/evidence_bundle.json",
+      "issues": [],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 3,
+      "slug": "falsifiable-claim-verification-ledger-for-small-reasoning-agents",
       "strict_pass": true
     },
     {
@@ -4693,6 +4709,22 @@
     },
     {
       "audit_status": "strict_pass",
+      "claim_count": 16,
+      "claim_ledger_empty": false,
+      "claim_ledger_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/claim_ledger.json",
+      "claim_ledger_schema_status": "claims_reference_evidence",
+      "evidence_bundle_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/evidence_bundle.json",
+      "issues": [],
+      "missing_result_file_refs_sample": [],
+      "result_file_ref_count": 3,
+      "result_file_refs_declared_unavailable": 0,
+      "result_file_refs_missing": 0,
+      "result_file_refs_public_present": 3,
+      "slug": "replay-real-captured-agent-traces-with-repository-scale-snapshot-binding",
+      "strict_pass": true
+    },
+    {
+      "audit_status": "strict_pass",
       "claim_count": 12,
       "claim_ledger_empty": false,
       "claim_ledger_path": "papers/repo-pulse-index-real-repo-pilot/claim_ledger.json",
@@ -6246,7 +6278,7 @@
   ],
   "status": "strict_pass",
   "strict_claim_evidence_failed_count": 0,
-  "strict_claim_evidence_pass_count": 389,
+  "strict_claim_evidence_pass_count": 391,
   "validated": [
     "claim_ledger_schema_parseable",
     "claims_non_empty",

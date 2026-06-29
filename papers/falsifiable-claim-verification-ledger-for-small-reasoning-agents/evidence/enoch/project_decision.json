@@ -1,0 +1,29 @@
+{
+  "project_decision": "finalize_negative",
+  "research_outcome": "useful_signal",
+  "hypothesis_status": "supported",
+  "confidence": "medium",
+  "evidence_strength": "moderate",
+  "claim_scope": "In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.",
+  "scale_limits": "Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.",
+  "useful_signal_summary": "At noise rate 0.25 across 10,000 tasks per condition, baseline accuracy was 0.6721 with 12,759 accepted false intermediate claims; ledger_full accuracy was 1.0 with 0 accepted false claims after checking 50,000 claims and rejecting 9,976. No-noise controls showed no ledger accuracy gain.",
+  "bounded_paper_ready": false,
+  "compute_scale_blocked": false,
+  "novelty_progress": true,
+  "results_changed": true,
+  "recommended_next_action": "Run a bounded deepen follow-up with a real small LLM/tool-using agent on natural-language tabular QA with noisy retrieval and imperfect verifier tools.",
+  "stop_reason": "No-paper closure: this run provides controlled mechanism evidence only, not direct publication-grade evidence for real small reasoning agents.",
+  "followup_recommended": true,
+  "followup_type": "deepen",
+  "followup_title": "Real small-model ledger test on noisy natural-language tabular QA",
+  "followup_hypothesis": "For a real small LLM/tool-using agent, requiring atomic falsifiable ledger entries and verifier calls before final answers will reduce unsupported false intermediate claims and improve answer accuracy under noisy retrieval compared with the same agent without the ledger.",
+  "followup_required_evidence": [
+    "At least one real small model or small API model evaluated with and without the ledger protocol",
+    "Natural-language tabular QA or multi-hop fact tasks with controlled noisy retrieval",
+    "Audited ledger traces showing atomic claims, verifier outcomes, repairs, and final answers",
+    "Accuracy, unsupported-claim rate, refusal/abstention rate, and latency/cost comparison against no-ledger baseline"
+  ],
+  "followup_success_threshold": "On at least 500 held-out tasks, ledger condition improves accuracy by at least 5 absolute percentage points or cuts unsupported false claims by at least 50% without increasing abstention by more than 10 absolute points.",
+  "followup_stop_condition": "Stop as negative if the model cannot reliably emit auditable atomic claims, if verifier-call failures erase the accuracy gain, or if unsupported false claims are not reduced by at least 25% on a 100-task pilot.",
+  "followup_depth": 0
+}

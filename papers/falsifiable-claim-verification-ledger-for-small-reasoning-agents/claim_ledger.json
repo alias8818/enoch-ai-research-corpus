@@ -1,0 +1,483 @@
+{
+  "claims": [
+    {
+      "claim": "The evidence basis consists of `run_notes.md`, `.enoch/project_decision.json`, `.omx/project_decision.json`, the local `evidence_bundle.json`, and the local `claim_ledger.json` and `paper_manifest.json` synced to the control plane.",
+      "evidence_refs": [
+        {
+          "match_score": 0.3125,
+          "path": "evidence/run_notes.md",
+          "quote": "Can a lightweight ledger of falsifiable intermediate claims reduce unchecked false claims and improve task accuracy for a small reasoning agent?",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3125,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3125,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C1",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The internal project decision recorded in this run is `finalize_negative` with `research_outcome: useful_signal`; the manuscript reflects that scope and does not make claims beyond what the controlled evidence supports.",
+      "evidence_refs": [
+        {
+          "match_score": 0.64,
+          "path": "evidence/run_notes.md",
+          "quote": "Can a lightweight ledger of falsifiable intermediate claims reduce unchecked false claims and improve task accuracy for a small reasoning agent?",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.52,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.52,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"project_decision\": \"finalize_negative\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C2",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We study whether a lightweight, per-claim falsifiability protocol can reduce the propagation of false intermediate claims in a small reasoning agent.",
+      "evidence_refs": [
+        {
+          "match_score": 0.75,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C3",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We instantiate the protocol on a deterministic synthetic tabular reasoning harness with noisy agent memory and a perfect verifier over generated tables, and compare three conditions: `baseline` (no ledger), `ledger_facts` (verifies and repairs atomic fact claims), and `ledger_full` (additionally verifies and repairs arithmetic and selection claims).",
+      "evidence_refs": [
+        {
+          "match_score": 0.9091,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.697,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.697,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C4",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "At a memory corruption rate of 0.25 over 10,000 tasks per condition, the baseline reaches 0.6721 accuracy while accepting 12,759 false intermediate claims; both ledger conditions reach 1.0000 accuracy while verifying and rejecting false claims before they affect the answer.",
+      "evidence_refs": [
+        {
+          "match_score": 0.75,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5938,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5938,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C5",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The same trend holds at noise rates 0.1 and 0.4; at 0.0 the ledger yields no accuracy gain, consistent with no spurious benefit.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5556,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4444,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4444,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C6",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "These results are bounded mechanism evidence supporting the falsifiable-claim-ledger protocol under controlled corruption.",
+      "evidence_refs": [
+        {
+          "match_score": 0.7692,
+          "path": "evidence/run_notes.md",
+          "quote": "On synthetic multi-hop tabular reasoning tasks with noisy agent memory, a ledger that requires each intermediate fact and calculation to be checked against a verifier will reduce accepted false claims and improve final-answer accuracy versus the same agent without the ledger.",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.6154,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"scale_limits\": \"Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6154,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"scale_limits\": \"Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C7",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "They do not validate real language-model behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8571,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.8571,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "On synthetic multi-hop tabular reasoning tasks with noisy agent memory, a ledger that requires each intermediate fact and calculation to be checked against a verifier will reduce accepted false claims and improve final-answer accuracy versus the same agent without the ledger.",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C8",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "A natural mitigation is to require each intermediate claim to be falsifiable \u2014 to expose a mechanism by which it can be checked \u2014 and to reject claims that fail the check before they are used.",
+      "evidence_refs": [
+        {
+          "match_score": 0.7391,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3913,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3913,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C9",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The contributions are presented as a bounded-evidence technical note rather than as a general claim about deployed agents: 1.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.3571,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.3571,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C10",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "A controlled comparison of accuracy, accepted false intermediate claims, and verifier-call counts at multiple corruption rates.",
+      "evidence_refs": [
+        {
+          "match_score": 0.6923,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.6923,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.6154,
+          "path": "evidence/run_notes.md",
+          "quote": "Can a lightweight ledger of falsifiable intermediate claims reduce unchecked false claims and improve task accuracy for a small reasoning agent?",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C11",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "An explicit statement of what this evidence does and does not support, and a concrete proposal for a real-model follow-up.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4286,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4286,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C12",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "The remainder of the paper presents the design, the harness, the metrics, the controls, and the limits of the evidence, and ends with a reproducibility checklist.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5333,
+          "path": "evidence/run_notes.md",
+          "quote": "Can a lightweight ledger of falsifiable intermediate claims reduce unchecked false claims and improve task accuracy for a small reasoning agent?",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.4,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C13",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We test the following scoped claim verbatim, as recorded in the project-decision artifact: > In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.",
+      "evidence_refs": [
+        {
+          "match_score": 0.8235,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.8235,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        },
+        {
+          "match_score": 0.7647,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        }
+      ],
+      "id": "C14",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "Claims beyond this scope \u2014 including claims about real LLMs, natural-language retrieval, imperfect verifiers, training effects, or deployment latency \u2014 are out of scope for this paper and are addressed only as design notes for a follow-up.",
+      "evidence_refs": [
+        {
+          "match_score": 0.5769,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5385,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5385,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C15",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    },
+    {
+      "claim": "We compare three conditions: - `baseline` \u2014 noisy memory, no ledger, no verifier.",
+      "evidence_refs": [
+        {
+          "match_score": 0.75,
+          "path": "evidence/run_notes.md",
+          "quote": "# Falsifiable claim-verification ledger for small reasoning agents",
+          "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+          "source_path": "run_notes.md"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/enoch/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".enoch/project_decision.json"
+        },
+        {
+          "match_score": 0.5,
+          "path": "evidence/omx/project_decision.json",
+          "quote": "\"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",",
+          "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+          "source_path": ".omx/project_decision.json"
+        }
+      ],
+      "id": "C16",
+      "notes": "Matched by lexical overlap against synced worker artifacts.",
+      "support_status": "supported"
+    }
+  ],
+  "evidence_bundle_path": "papers/source-record-redacted-20260530T085753691945+0000/evidence_bundle.json",
+  "ledger_status": "claims_reference_evidence",
+  "limitations": [],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "run_id": "source-record-redacted-20260530T085753691945+0000",
+  "schema_version": "claim_ledger.v2",
+  "unsupported_claim_count": 0,
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735438-DT6BHXmHzgdSW5KJZbqP"
+  }
+}

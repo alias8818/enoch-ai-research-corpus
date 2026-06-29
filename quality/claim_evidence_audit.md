@@ -1,6 +1,6 @@
 # Strict claim/evidence audit
 
-Strict claim/evidence passed: 389 / 389
+Strict claim/evidence passed: 391 / 391
 
 This audit is separate from the packaging/provenance lint. It requires non-empty claim ledgers with evidence references and public result-file references, or explicit unavailability metadata.
 
@@ -8,9 +8,9 @@ Status: `strict_pass`
 
 ## Summary
 
-- Empty claim ledgers: 0 / 389
-- Evidence `result_files` references: 1167
-- Publicly present result-file references: 1167
+- Empty claim ledgers: 0 / 391
+- Evidence `result_files` references: 1173
+- Publicly present result-file references: 1173
 - Missing result-file references: 0
 - Featured artifacts strict-pass count: 2 / 2
 
@@ -180,6 +180,7 @@ Status: `strict_pass`
 | `experiment-autopsy-agent` | True | 12 | 0 | [] |
 | `expert-upcycling-for-verification-models` | True | 12 | 0 | [] |
 | `fact-frequency-flattener` | True | 12 | 0 | [] |
+| `falsifiable-claim-verification-ledger-for-small-reasoning-agents` | True | 16 | 0 | [] |
 | `field-importance-multi-task-tuning` | True | 12 | 0 | [] |
 | `fieldwise-recall-probe-real-trace-multi-model-validation` | True | 12 | 0 | [] |
 | `file-delta-personalization-tuning` | True | 12 | 0 | [] |
@@ -326,6 +327,7 @@ Status: `strict_pass`
 | `rehydration-guide-student` | True | 12 | 0 | [] |
 | `rejection-mode-targeted-abstention-refusal-tuning` | True | 12 | 0 | [] |
 | `rejection-span-distillation` | True | 12 | 0 | [] |
+| `replay-real-captured-agent-traces-with-repository-scale-snapshot-binding` | True | 16 | 0 | [] |
 | `repo-pulse-index-real-repo-pilot` | True | 12 | 0 | [] |
 | `reproducibility-capsule-messy-workflow-validation` | True | 12 | 0 | [] |
 | `research-agent-treaty-protocol` | True | 12 | 0 | [] |

@@ -1,0 +1,248 @@
+{
+  "file_inventory": [
+    {
+      "bytes": 6680,
+      "public_path": "evidence/run_notes.md",
+      "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "bytes": 3022,
+      "public_path": "evidence/enoch/project_decision.json",
+      "sha256": "a2e6100de53e7f55bfce666999e5aac02618cd792a7a0c14bbf5b56e4f7c46fa",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "bytes": 3022,
+      "public_path": "evidence/omx/project_decision.json",
+      "sha256": "a2e6100de53e7f55bfce666999e5aac02618cd792a7a0c14bbf5b56e4f7c46fa",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "limitations": [],
+  "metric_summaries": [
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "On 6,247 read-only shell command events from 775 local real Enoch/Codex trace logs, binding commands to their originating project workspace improves exact exit+output replay from 18.23% under a current-workspace baseline and 17.62% under a shuffled-project control to 58.11%.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "Adding per-command or periodic filesystem manifests/snapshots to origin repository binding will raise exact read-only command replay above 80% on the same real Enoch/Codex trace corpus and substantially reduce find/rg/wc drift failures.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "Instrument or reconstruct pre-command file manifests for a bounded set of real agent traces.",
+          "Replay the same read-only command corpus with origin-final-snapshot, origin-plus-manifest, current-workspace, and shuffled-project controls.",
+          "Report exact exit+output match, exit-only match, output-only match, paired confidence intervals, and failure taxonomy."
+        ],
+        "followup_stop_condition": "Stop if manifest/snapshot binding improves exact replay by less than 10 percentage points over final-snapshot origin binding or if reconstructing pre-command manifests requires unavailable private/external trace data.",
+        "followup_success_threshold": "Origin-plus-manifest exact exit+output replay >=80% and at least +20 percentage points over origin-final-snapshot binding on matched commands, with timeout rate below 1%.",
+        "followup_title": "Pre-command Merkle manifests for high-fidelity agent trace replay",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop paper escalation for this run; the next bounded deepening test should add pre-command Merkle manifests or periodic filesystem snapshots and measure whether exact replay rises above the final-snapshot 58.11% ceiling on the same trace corpus.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "The validation uses local Enoch traces only, excludes mutating/install/network commands, replays shell commands rather than full agent decisions, and binds to final project workspaces rather than historical pre-command filesystem snapshots.",
+        "stop_reason": "Direct bounded validation supports repository binding as a mechanism but falsifies final workspace snapshot binding as sufficient for high-fidelity replay; this is useful no-paper evidence, not publication-grade closure.",
+        "useful_signal_summary": "Origin repository binding gives a large paired exact-match lift of +39.88 percentage points over current-workspace replay and +40.48 points over shuffled-project replay, but final-snapshot binding alone leaves 41.89% of commands non-exact, especially file-inventory commands affected by later workspace drift."
+      },
+      "source_path": ".enoch/project_decision.json"
+    },
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "On 6,247 read-only shell command events from 775 local real Enoch/Codex trace logs, binding commands to their originating project workspace improves exact exit+output replay from 18.23% under a current-workspace baseline and 17.62% under a shuffled-project control to 58.11%.",
+        "compute_scale_blocked": false,
+        "confidence": "high",
+        "evidence_strength": "strong",
+        "followup_depth": 3,
+        "followup_hypothesis": "Adding per-command or periodic filesystem manifests/snapshots to origin repository binding will raise exact read-only command replay above 80% on the same real Enoch/Codex trace corpus and substantially reduce find/rg/wc drift failures.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "Instrument or reconstruct pre-command file manifests for a bounded set of real agent traces.",
+          "Replay the same read-only command corpus with origin-final-snapshot, origin-plus-manifest, current-workspace, and shuffled-project controls.",
+          "Report exact exit+output match, exit-only match, output-only match, paired confidence intervals, and failure taxonomy."
+        ],
+        "followup_stop_condition": "Stop if manifest/snapshot binding improves exact replay by less than 10 percentage points over final-snapshot origin binding or if reconstructing pre-command manifests requires unavailable private/external trace data.",
+        "followup_success_threshold": "Origin-plus-manifest exact exit+output replay >=80% and at least +20 percentage points over origin-final-snapshot binding on matched commands, with timeout rate below 1%.",
+        "followup_title": "Pre-command Merkle manifests for high-fidelity agent trace replay",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Stop paper escalation for this run; the next bounded deepening test should add pre-command Merkle manifests or periodic filesystem snapshots and measure whether exact replay rises above the final-snapshot 58.11% ceiling on the same trace corpus.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "The validation uses local Enoch traces only, excludes mutating/install/network commands, replays shell commands rather than full agent decisions, and binds to final project workspaces rather than historical pre-command filesystem snapshots.",
+        "stop_reason": "Direct bounded validation supports repository binding as a mechanism but falsifies final workspace snapshot binding as sufficient for high-fidelity replay; this is useful no-paper evidence, not publication-grade closure.",
+        "useful_signal_summary": "Origin repository binding gives a large paired exact-match lift of +39.88 percentage points over current-workspace replay and +40.48 points over shuffled-project replay, but final-snapshot binding alone leaves 41.89% of commands non-exact, especially file-inventory commands affected by later workspace drift."
+      },
+      "source_path": ".omx/project_decision.json"
+    }
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "public_evidence_files": [
+    {
+      "content": "# Replay real captured agent traces with repository-scale snapshot binding\n\n## Hypothesis and target metric\n\nHypothesis tested: captured agent shell traces become substantially more replayable when each command is bound back to its originating repository/workspace snapshot, compared with replaying the same command from a generic current workspace or a mismatched repository.\n\nDirect target metric: command-level replay agreement for real captured Codex `command_execution` events, measured as exact exit-code match, exact stdout/stderr aggregate match, and combined exact match.\n\nBaselines/controls:\n- `origin`: run the command in the project directory inferred from the trace path.\n- `current`: run the same command from this project directory, ignoring the captured repository binding.\n- `shuffled`: run the same command from another fixed-seed randomly selected project directory.\n\nOnly read-only shell commands are replayed. Mutating, installation, network, process-control, and long-running commands are excluded by a conservative static filter. This is a direct replayability test for captured shell traces, but it is not a full agent-decision replay and it does not restore historical intermediate filesystem states.\n\n## Resource calibration\n\nHost class: CPU worker (`cpu-proxmox-1`), no GPU required. This task is trace parsing and bounded command replay; GB10/model hardware is not the right host.\n\nPlanned run:\n- Input: local real Enoch/Codex JSONL traces under `/var/lib/enoch-cpu-worker/projects/*/.enoch/logs/*.jsonl`.\n- Sample: fixed seed, bounded command count after read-only filtering.\n- Process count: up to 8 worker subprocesses.\n- Per-command timeout: 4 seconds.\n- Expected wall-clock: smoke <1 minute, full bounded replay <15 minutes CPU-worker wall time.\n- Memory: low, expected <500 MB RSS; commands are short read-only shell commands.\n- Checkpoint cadence: every command writes one JSON object to `results/replay_events.jsonl`; final aggregate to `results/replay_summary.json`.\n- Stop condition: complete fixed sample or stop if wall-clock approaches CPU-only 15 minute limit.\n\n## Commands and logs\n\nCommands run:\n- `python3 scripts/replay_trace_bindings.py --limit 20 --workers 4 --timeout 3 ...` logged to `logs/smoke_replay.log` and `logs/smoke_replay_rerun.log`.\n- `python3 scripts/replay_trace_bindings.py --limit 0 --workers 16 --timeout 3 ...` logged to `logs/replay_full.log`.\n- Stable final run: `python3 scripts/replay_trace_bindings.py --limit 0 --workers 16 --timeout 3 --exclude-current-project ...` logged to `logs/replay_full_exclude_current.log`.\n- Diagnostic analysis logged to `logs/analyze_replay_final.log`.\n\nPrimary artifacts:\n- Harness: `scripts/replay_trace_bindings.py`.\n- Per-command replay rows: `results/replay_events.jsonl`.\n- Aggregate metrics: `results/replay_summary.json`.\n- Paired confidence intervals and failure diagnostics: `results/replay_diagnostics.json`.\n- Sample manifest and project fingerprints: `results/replay_manifest.json`.\n\n## Final bounded validation result\n\nDataset: 775 local real Enoch/Codex JSONL trace logs under `/var/lib/enoch-cpu-worker/projects`, excluding this evaluation project from the final replay corpus. The parser saw 16,103 completed command events. The conservative read-only filter admitted 6,256 safe commands, then excluded 9 from this current project, leaving 6,247 commands. Each command was replayed under three bindings (`origin`, `current`, `shuffled`) for 18,741 total command executions.\n\nFinal aggregate metrics from `results/replay_summary.json`:\n\n| Binding | n | exact exit+output match | exit match | output match | timeout |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| origin repository binding | 6,247 | 58.11% | 99.50% | 58.14% | 0.29% |\n| current-workspace baseline | 6,247 | 18.23% | 90.04% | 18.26% | 0.29% |\n| shuffled-repository control | 6,247 | 17.62% | 90.52% | 17.66% | 0.29% |\n\nPaired bootstrap exact-match lift from `results/replay_diagnostics.json`:\n- origin minus current baseline: +39.88 percentage points, 95% bootstrap CI [38.64, 41.17].\n- origin minus shuffled control: +40.48 percentage points, 95% bootstrap CI [39.23, 41.78].\n\nCommand family diagnostics:\n- `sed`: 3,145 commands, origin exact 81.18%, current exact 14.69%.\n- `jq`: 64 commands, origin exact 92.19%, current exact 3.13%.\n- `wc`: 148 commands, origin exact 60.81%, current exact 1.35%.\n- `tail`: 158 commands, origin exact 58.86%, current exact 2.53%.\n- `find`: 1,448 commands, origin exact only 13.74%, current exact 9.12%, showing that repository binding alone does not reconstruct historical file inventories after later artifacts/logs are added.\n\n## Interpretation\n\nThe mechanism is supported for the scoped claim: binding real captured shell commands back to their originating repository/workspace materially improves replayability over both a generic current workspace and mismatched repositories. This is not a small synthetic proxy; it used all safe read-only commands found in the local captured trace corpus and included real baselines/controls.\n\nThe result is not publication-ready as a general agent-trace replay system. Exact replay under origin binding is still only 58.11%. Failure examples in `results/replay_diagnostics.json` show that many mismatches are commands whose output depends on mutable workspace inventories (`find`, `rg --files`, `wc` over growing logs/results) or historical intermediate files. A repository-scale final snapshot binding is therefore helpful but insufficient: faithful replay needs per-command or periodic historical filesystem snapshots/manifests, not just a binding to the final project directory.\n\nDirectly tested:\n- Real captured Codex command traces from local Enoch projects.\n- Read-only shell command replay with exact output/exit-code comparison.\n- Origin repository binding vs current-workspace baseline and shuffled-repository control.\n\nOnly proxied/not tested:\n- Full agent-decision replay.\n- Mutating command replay.\n- Network/install commands.\n- Restoration of historical intermediate filesystem states.\n- External/non-Enoch trace corpora.\n\nEvidence that would overturn or deepen this result:\n- A replay system with pre-command Merkle manifests or filesystem snapshots that raises exact replay well beyond the 58% origin-final-snapshot ceiling on the same corpus.\n- The same origin-binding lift on an independent external corpus of captured agent traces.\n\n## Final decision\n\nNo paper-positive closure. The run produced a useful, direct, bounded signal: repository/workspace binding is necessary and gives a large replayability lift, but final-snapshot binding alone is insufficient for high-fidelity repository-scale replay.\n",
+      "path": "evidence/run_notes.md",
+      "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"On 6,247 read-only shell command events from 775 local real Enoch/Codex trace logs, binding commands to their originating project workspace improves exact exit+output replay from 18.23% under a current-workspace baseline and 17.62% under a shuffled-project control to 58.11%.\",\n  \"scale_limits\": \"The validation uses local Enoch traces only, excludes mutating/install/network commands, replays shell commands rather than full agent decisions, and binds to final project workspaces rather than historical pre-command filesystem snapshots.\",\n  \"useful_signal_summary\": \"Origin repository binding gives a large paired exact-match lift of +39.88 percentage points over current-workspace replay and +40.48 points over shuffled-project replay, but final-snapshot binding alone leaves 41.89% of commands non-exact, especially file-inventory commands affected by later workspace drift.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop paper escalation for this run; the next bounded deepening test should add pre-command Merkle manifests or periodic filesystem snapshots and measure whether exact replay rises above the final-snapshot 58.11% ceiling on the same trace corpus.\",\n  \"stop_reason\": \"Direct bounded validation supports repository binding as a mechanism but falsifies final workspace snapshot binding as sufficient for high-fidelity replay; this is useful no-paper evidence, not publication-grade closure.\",\n  \"followup_recommended\": true,\n  \"followup_type\": \"deepen\",\n  \"followup_title\": \"Pre-command Merkle manifests for high-fidelity agent trace replay\",\n  \"followup_hypothesis\": \"Adding per-command or periodic filesystem manifests/snapshots to origin repository binding will raise exact read-only command replay above 80% on the same real Enoch/Codex trace corpus and substantially reduce find/rg/wc drift failures.\",\n  \"followup_required_evidence\": [\n    \"Instrument or reconstruct pre-command file manifests for a bounded set of real agent traces.\",\n    \"Replay the same read-only command corpus with origin-final-snapshot, origin-plus-manifest, current-workspace, and shuffled-project controls.\",\n    \"Report exact exit+output match, exit-only match, output-only match, paired confidence intervals, and failure taxonomy.\"\n  ],\n  \"followup_success_threshold\": \"Origin-plus-manifest exact exit+output replay >=80% and at least +20 percentage points over origin-final-snapshot binding on matched commands, with timeout rate below 1%.\",\n  \"followup_stop_condition\": \"Stop if manifest/snapshot binding improves exact replay by less than 10 percentage points over final-snapshot origin binding or if reconstructing pre-command manifests requires unavailable private/external trace data.\",\n  \"followup_depth\": 3\n}\n",
+      "path": "evidence/enoch/project_decision.json",
+      "sha256": "a2e6100de53e7f55bfce666999e5aac02618cd792a7a0c14bbf5b56e4f7c46fa",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"high\",\n  \"evidence_strength\": \"strong\",\n  \"claim_scope\": \"On 6,247 read-only shell command events from 775 local real Enoch/Codex trace logs, binding commands to their originating project workspace improves exact exit+output replay from 18.23% under a current-workspace baseline and 17.62% under a shuffled-project control to 58.11%.\",\n  \"scale_limits\": \"The validation uses local Enoch traces only, excludes mutating/install/network commands, replays shell commands rather than full agent decisions, and binds to final project workspaces rather than historical pre-command filesystem snapshots.\",\n  \"useful_signal_summary\": \"Origin repository binding gives a large paired exact-match lift of +39.88 percentage points over current-workspace replay and +40.48 points over shuffled-project replay, but final-snapshot binding alone leaves 41.89% of commands non-exact, especially file-inventory commands affected by later workspace drift.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Stop paper escalation for this run; the next bounded deepening test should add pre-command Merkle manifests or periodic filesystem snapshots and measure whether exact replay rises above the final-snapshot 58.11% ceiling on the same trace corpus.\",\n  \"stop_reason\": \"Direct bounded validation supports repository binding as a mechanism but falsifies final workspace snapshot binding as sufficient for high-fidelity replay; this is useful no-paper evidence, not publication-grade closure.\",\n  \"followup_recommended\": true,\n  \"followup_type\": \"deepen\",\n  \"followup_title\": \"Pre-command Merkle manifests for high-fidelity agent trace replay\",\n  \"followup_hypothesis\": \"Adding per-command or periodic filesystem manifests/snapshots to origin repository binding will raise exact read-only command replay above 80% on the same real Enoch/Codex trace corpus and substantially reduce find/rg/wc drift failures.\",\n  \"followup_required_evidence\": [\n    \"Instrument or reconstruct pre-command file manifests for a bounded set of real agent traces.\",\n    \"Replay the same read-only command corpus with origin-final-snapshot, origin-plus-manifest, current-workspace, and shuffled-project controls.\",\n    \"Report exact exit+output match, exit-only match, output-only match, paired confidence intervals, and failure taxonomy.\"\n  ],\n  \"followup_success_threshold\": \"Origin-plus-manifest exact exit+output replay >=80% and at least +20 percentage points over origin-final-snapshot binding on matched commands, with timeout rate below 1%.\",\n  \"followup_stop_condition\": \"Stop if manifest/snapshot binding improves exact replay by less than 10 percentage points over final-snapshot origin binding or if reconstructing pre-command manifests requires unavailable private/external trace data.\",\n  \"followup_depth\": 3\n}\n",
+      "path": "evidence/omx/project_decision.json",
+      "sha256": "a2e6100de53e7f55bfce666999e5aac02618cd792a7a0c14bbf5b56e4f7c46fa",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "result_artifacts": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "result_file_refs": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "run_id": "source-record-redacted-20260529T211520945643+0000",
+  "schema_version": "evidence_bundle.v2",
+  "source": "enoch_control_plane",
+  "source_project_dir": "<control-plane-projects>/source-record-redacted",
+  "source_run_id": "source-record-redacted-20260529T211520945643+0000",
+  "sync_metadata": {
+    "enabled": true,
+    "http_sync": {
+      "files": 0,
+      "ok": false,
+      "paths": [],
+      "reason": "worker_read_failed",
+      "skipped": [
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "run_notes.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/hot_cold_sim_results.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/smoke.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_probe/hotcold_probe.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T211520945643+0000/README.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T211520945643+0000/paper.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T211520945643+0000/paper_manifest.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T211520945643+0000/evidence_bundle.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260529T211520945643+0000/claim_ledger.json",
+          "status": 404
+        }
+      ],
+      "timeouts": 0
+    },
+    "method": "worker_http+ssh",
+    "reason": "command_failed",
+    "remote_dir": "<local-path-redacted>",
+    "ssh_returncode": 1,
+    "stderr": "bash: line 1: cd: <local-path-redacted> No such file or directory\n",
+    "stdout": "",
+    "synced": true
+  },
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735372-9QOE5FlMPQOFNeX2Q13W"
+  }
+}

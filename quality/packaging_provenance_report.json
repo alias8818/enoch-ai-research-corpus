@@ -1,15 +1,15 @@
 {
   "claim_evidence_audit": {
     "claim_ledgers_empty": 0,
-    "count": 389,
+    "count": 391,
     "gap_summary": "Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.",
     "gate_name": "strict_claim_evidence_audit",
-    "result_file_refs": 1167,
+    "result_file_refs": 1173,
     "result_file_refs_missing": 0,
     "status": "strict_pass",
-    "strict_claim_evidence_pass_count": 389
+    "strict_claim_evidence_pass_count": 391
   },
-  "count": 389,
+  "count": 391,
   "failed": 0,
   "gate_name": "packaging_provenance_gate",
   "gate_scope": "artifact packaging, provenance, placeholder, and overclaim linting",
@@ -23,7 +23,7 @@
     "citation_accuracy",
     "strict_claim_evidence_audit"
   ],
-  "passed": 389,
+  "passed": 391,
   "rows": [
     {
       "bytes": 16279,
@@ -1632,6 +1632,17 @@
       "words": 2336
     },
     {
+      "bytes": 22518,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/paper.md",
+      "passes": true,
+      "slug": "falsifiable-claim-verification-ledger-for-small-reasoning-agents",
+      "words": 3149
+    },
+    {
       "bytes": 14666,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
@@ -3236,6 +3247,17 @@
       "passes": true,
       "slug": "rejection-span-distillation",
       "words": 2140
+    },
+    {
+      "bytes": 20548,
+      "has_claim_ledger": true,
+      "has_evidence_bundle": true,
+      "has_provenance": true,
+      "issues": {},
+      "paper_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/paper.md",
+      "passes": true,
+      "slug": "replay-real-captured-agent-traces-with-repository-scale-snapshot-binding",
+      "words": 3075
     },
     {
       "bytes": 12456,

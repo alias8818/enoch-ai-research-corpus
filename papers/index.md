@@ -1,8 +1,8 @@
 # Paper index
 
-Count: 389
+Count: 391
 
-This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 389/389 packaging/provenance lint pass and 389/389 strict claim/evidence audit pass.
+This index distinguishes metadata-file presence from strict claim/evidence audit status. Current corpus state is 391/391 packaging/provenance lint pass and 391/391 strict claim/evidence audit pass.
 
 ## Highlighted artifacts
 
@@ -174,6 +174,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Experiment Autopsy Agent](experiment-autopsy-agent/paper.md) | `enoch-paper-0142` | yes | yes | 12 | true | 0 |
 | [Expert Upcycling for Verification Models](expert-upcycling-for-verification-models/paper.md) | `enoch-paper-0130` | yes | yes | 12 | true | 0 |
 | [Fact Frequency Flattener](fact-frequency-flattener/paper.md) | `enoch-paper-0197` | yes | yes | 12 | true | 0 |
+| [Falsifiable claim-verification ledger for small reasoning agents](falsifiable-claim-verification-ledger-for-small-reasoning-agents/paper.md) | `enoch-paper-0511` | yes | yes | 16 | true | 0 |
 | [Field Importance Multi-Task Tuning](field-importance-multi-task-tuning/paper.md) | `enoch-paper-0121` | yes | yes | 12 | true | 0 |
 | [Fieldwise Recall Probe Real-Trace Multi-Model Validation](fieldwise-recall-probe-real-trace-multi-model-validation/paper.md) | `enoch-paper-0085` | yes | yes | 12 | true | 0 |
 | [File-Delta Personalization Tuning](file-delta-personalization-tuning/paper.md) | `enoch-paper-0184` | yes | yes | 12 | true | 0 |
@@ -320,6 +321,7 @@ These launch highlights are a curated inspection set, not a peer-review ranking.
 | [Rehydration Guide Student](rehydration-guide-student/paper.md) | `enoch-paper-0157` | yes | yes | 12 | true | 0 |
 | [Rejection-Mode Targeted Abstention Refusal Tuning](rejection-mode-targeted-abstention-refusal-tuning/paper.md) | `enoch-paper-0075` | yes | yes | 12 | true | 0 |
 | [Rejection-Span Distillation](rejection-span-distillation/paper.md) | `enoch-paper-0327` | yes | yes | 12 | true | 0 |
+| [Replay real captured agent traces with repository-scale snapshot binding](replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/paper.md) | `enoch-paper-0512` | yes | yes | 16 | true | 0 |
 | [Repo Pulse Index Real-Repo Pilot](repo-pulse-index-real-repo-pilot/paper.md) | `enoch-paper-0237` | yes | yes | 12 | true | 0 |
 | [Reproducibility Capsule Messy Workflow Validation](reproducibility-capsule-messy-workflow-validation/paper.md) | `enoch-paper-0502` | yes | yes | 12 | true | 0 |
 | [Research Agent Treaty Protocol](research-agent-treaty-protocol/paper.md) | `enoch-paper-0172` | yes | yes | 12 | true | 0 |

@@ -1,0 +1,28 @@
+{
+  "project_decision": "finalize_negative",
+  "research_outcome": "useful_signal",
+  "hypothesis_status": "supported",
+  "confidence": "high",
+  "evidence_strength": "strong",
+  "claim_scope": "On 6,247 read-only shell command events from 775 local real Enoch/Codex trace logs, binding commands to their originating project workspace improves exact exit+output replay from 18.23% under a current-workspace baseline and 17.62% under a shuffled-project control to 58.11%.",
+  "scale_limits": "The validation uses local Enoch traces only, excludes mutating/install/network commands, replays shell commands rather than full agent decisions, and binds to final project workspaces rather than historical pre-command filesystem snapshots.",
+  "useful_signal_summary": "Origin repository binding gives a large paired exact-match lift of +39.88 percentage points over current-workspace replay and +40.48 points over shuffled-project replay, but final-snapshot binding alone leaves 41.89% of commands non-exact, especially file-inventory commands affected by later workspace drift.",
+  "bounded_paper_ready": false,
+  "compute_scale_blocked": false,
+  "novelty_progress": true,
+  "results_changed": true,
+  "recommended_next_action": "Stop paper escalation for this run; the next bounded deepening test should add pre-command Merkle manifests or periodic filesystem snapshots and measure whether exact replay rises above the final-snapshot 58.11% ceiling on the same trace corpus.",
+  "stop_reason": "Direct bounded validation supports repository binding as a mechanism but falsifies final workspace snapshot binding as sufficient for high-fidelity replay; this is useful no-paper evidence, not publication-grade closure.",
+  "followup_recommended": true,
+  "followup_type": "deepen",
+  "followup_title": "Pre-command Merkle manifests for high-fidelity agent trace replay",
+  "followup_hypothesis": "Adding per-command or periodic filesystem manifests/snapshots to origin repository binding will raise exact read-only command replay above 80% on the same real Enoch/Codex trace corpus and substantially reduce find/rg/wc drift failures.",
+  "followup_required_evidence": [
+    "Instrument or reconstruct pre-command file manifests for a bounded set of real agent traces.",
+    "Replay the same read-only command corpus with origin-final-snapshot, origin-plus-manifest, current-workspace, and shuffled-project controls.",
+    "Report exact exit+output match, exit-only match, output-only match, paired confidence intervals, and failure taxonomy."
+  ],
+  "followup_success_threshold": "Origin-plus-manifest exact exit+output replay >=80% and at least +20 percentage points over origin-final-snapshot binding on matched commands, with timeout rate below 1%.",
+  "followup_stop_condition": "Stop if manifest/snapshot binding improves exact replay by less than 10 percentage points over final-snapshot origin binding or if reconstructing pre-command manifests requires unavailable private/external trace data.",
+  "followup_depth": 3
+}

@@ -1,0 +1,250 @@
+{
+  "file_inventory": [
+    {
+      "bytes": 5888,
+      "public_path": "evidence/run_notes.md",
+      "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "bytes": 2924,
+      "public_path": "evidence/enoch/project_decision.json",
+      "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "bytes": 2924,
+      "public_path": "evidence/omx/project_decision.json",
+      "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "limitations": [],
+  "metric_summaries": [
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.",
+        "compute_scale_blocked": false,
+        "confidence": "medium",
+        "evidence_strength": "moderate",
+        "followup_depth": 0,
+        "followup_hypothesis": "For a real small LLM/tool-using agent, requiring atomic falsifiable ledger entries and verifier calls before final answers will reduce unsupported false intermediate claims and improve answer accuracy under noisy retrieval compared with the same agent without the ledger.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "At least one real small model or small API model evaluated with and without the ledger protocol",
+          "Natural-language tabular QA or multi-hop fact tasks with controlled noisy retrieval",
+          "Audited ledger traces showing atomic claims, verifier outcomes, repairs, and final answers",
+          "Accuracy, unsupported-claim rate, refusal/abstention rate, and latency/cost comparison against no-ledger baseline"
+        ],
+        "followup_stop_condition": "Stop as negative if the model cannot reliably emit auditable atomic claims, if verifier-call failures erase the accuracy gain, or if unsupported false claims are not reduced by at least 25% on a 100-task pilot.",
+        "followup_success_threshold": "On at least 500 held-out tasks, ledger condition improves accuracy by at least 5 absolute percentage points or cuts unsupported false claims by at least 50% without increasing abstention by more than 10 absolute points.",
+        "followup_title": "Real small-model ledger test on noisy natural-language tabular QA",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Run a bounded deepen follow-up with a real small LLM/tool-using agent on natural-language tabular QA with noisy retrieval and imperfect verifier tools.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.",
+        "stop_reason": "No-paper closure: this run provides controlled mechanism evidence only, not direct publication-grade evidence for real small reasoning agents.",
+        "useful_signal_summary": "At noise rate 0.25 across 10,000 tasks per condition, baseline accuracy was 0.6721 with 12,759 accepted false intermediate claims; ledger_full accuracy was 1.0 with 0 accepted false claims after checking 50,000 claims and rejecting 9,976. No-noise controls showed no ledger accuracy gain."
+      },
+      "source_path": ".enoch/project_decision.json"
+    },
+    {
+      "format": "json",
+      "metrics": {
+        "bounded_paper_ready": false,
+        "claim_scope": "In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.",
+        "compute_scale_blocked": false,
+        "confidence": "medium",
+        "evidence_strength": "moderate",
+        "followup_depth": 0,
+        "followup_hypothesis": "For a real small LLM/tool-using agent, requiring atomic falsifiable ledger entries and verifier calls before final answers will reduce unsupported false intermediate claims and improve answer accuracy under noisy retrieval compared with the same agent without the ledger.",
+        "followup_recommended": true,
+        "followup_required_evidence": [
+          "At least one real small model or small API model evaluated with and without the ledger protocol",
+          "Natural-language tabular QA or multi-hop fact tasks with controlled noisy retrieval",
+          "Audited ledger traces showing atomic claims, verifier outcomes, repairs, and final answers",
+          "Accuracy, unsupported-claim rate, refusal/abstention rate, and latency/cost comparison against no-ledger baseline"
+        ],
+        "followup_stop_condition": "Stop as negative if the model cannot reliably emit auditable atomic claims, if verifier-call failures erase the accuracy gain, or if unsupported false claims are not reduced by at least 25% on a 100-task pilot.",
+        "followup_success_threshold": "On at least 500 held-out tasks, ledger condition improves accuracy by at least 5 absolute percentage points or cuts unsupported false claims by at least 50% without increasing abstention by more than 10 absolute points.",
+        "followup_title": "Real small-model ledger test on noisy natural-language tabular QA",
+        "followup_type": "deepen",
+        "hypothesis_status": "supported",
+        "novelty_progress": true,
+        "project_decision": "finalize_negative",
+        "recommended_next_action": "Run a bounded deepen follow-up with a real small LLM/tool-using agent on natural-language tabular QA with noisy retrieval and imperfect verifier tools.",
+        "research_outcome": "useful_signal",
+        "results_changed": true,
+        "scale_limits": "Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.",
+        "stop_reason": "No-paper closure: this run provides controlled mechanism evidence only, not direct publication-grade evidence for real small reasoning agents.",
+        "useful_signal_summary": "At noise rate 0.25 across 10,000 tasks per condition, baseline accuracy was 0.6721 with 12,759 accepted false intermediate claims; ledger_full accuracy was 1.0 with 0 accepted false claims after checking 50,000 claims and rejecting 9,976. No-noise controls showed no ledger accuracy gain."
+      },
+      "source_path": ".omx/project_decision.json"
+    }
+  ],
+  "paper_id": "source-record-redacted",
+  "project_id": "source-record-redacted",
+  "public_evidence_files": [
+    {
+      "content": "# Falsifiable claim-verification ledger for small reasoning agents\n\n## Research question\n\nCan a lightweight ledger of falsifiable intermediate claims reduce unchecked false claims and improve task accuracy for a small reasoning agent?\n\n## Concrete hypothesis\n\nOn synthetic multi-hop tabular reasoning tasks with noisy agent memory, a ledger that requires each intermediate fact and calculation to be checked against a verifier will reduce accepted false claims and improve final-answer accuracy versus the same agent without the ledger.\n\n## Experiment design\n\n- Directly tested: a deterministic small-agent harness with three conditions:\n  - `baseline`: uses noisy memory and no claim ledger.\n  - `ledger_facts`: verifies and repairs fact claims before use.\n  - `ledger_full`: verifies and repairs fact claims plus arithmetic/selection claims.\n- Tasks: generated tabular worlds over groups and attributes, with `sum_two`, `difference`, `max_group`, and `count_above` queries.\n- Noise model: each remembered fact is independently corrupted with probability 0.25 by a bounded integer perturbation.\n- Metrics: final-answer accuracy, checked claims, rejected claims, accepted false claims, and latency.\n\n## Resource calibration\n\nThis is CPU-only, single-process Python and is intentionally scoped below 15 minutes. Expected wall clock for the main run is under 10 seconds on the 8-vCPU CPU worker, memory under 100 MB, no GPU use, and no checkpoints required because the run is short. GB10 is not required or used.\n\n## Commands\n\n- Smoke test:\n  - `set -o pipefail; python3 scripts/ledger_experiment.py --seeds 1 --tasks-per-seed 20 --out results/smoke 2>&1 | tee logs/smoke.log`\n- Main run:\n  - `set -o pipefail; python3 scripts/ledger_experiment.py --seeds 50 --tasks-per-seed 200 --noise-rate 0.25 --out results/main 2>&1 | tee logs/main.log`\n- Controls:\n  - `set -o pipefail; python3 scripts/ledger_experiment.py --seeds 20 --tasks-per-seed 200 --noise-rate 0.0 --out results/control_no_noise 2>&1 | tee logs/control_no_noise.log`\n  - `set -o pipefail; python3 scripts/ledger_experiment.py --seeds 20 --tasks-per-seed 200 --noise-rate 0.1 --out results/control_low_noise 2>&1 | tee logs/control_low_noise.log`\n  - `set -o pipefail; python3 scripts/ledger_experiment.py --seeds 20 --tasks-per-seed 200 --noise-rate 0.4 --out results/control_high_noise 2>&1 | tee logs/control_high_noise.log`\n- Validation:\n  - `set -o pipefail; python3 -m py_compile scripts/ledger_experiment.py 2>&1 | tee logs/py_compile.log`\n- Aggregated metrics:\n  - `results/aggregate_summary.csv`\n\n## Results\n\nMain run at noise rate 0.25 over 10,000 tasks per condition:\n\n| Condition | Accuracy | 95% Wilson CI | Accepted false claims | Checked claims | Rejected claims | Mean latency ms |\n| --- | ---: | --- | ---: | ---: | ---: | ---: |\n| `baseline` | 0.6721 | [0.6628, 0.6812] | 12,759 | 0 | 0 | 0.00936 |\n| `ledger_facts` | 1.0000 | [0.9996, 1.0000] | 0 | 40,000 | 9,976 | 0.00889 |\n| `ledger_full` | 1.0000 | [0.9996, 1.0000] | 0 | 50,000 | 9,976 | 0.00913 |\n\nControls:\n\n| Noise rate | Baseline accuracy | Ledger-full accuracy | Baseline accepted false claims | Ledger rejected claims |\n| ---: | ---: | ---: | ---: | ---: |\n| 0.0 | 1.0000 | 1.0000 | 0 | 0 |\n| 0.1 | 0.8560 | 1.0000 | 2,113 | 1,627 |\n| 0.25 | 0.6721 | 1.0000 | 12,759 | 9,976 |\n| 0.4 | 0.5370 | 1.0000 | 7,972 | 6,406 |\n\nArtifacts:\n\n- `scripts/ledger_experiment.py`: reproducible harness.\n- `results/main/summary.json`, `results/main/task_results.csv`, `results/main/ledger_claims.csv`: main run outputs.\n- `results/control_no_noise/`, `results/control_low_noise/`, `results/control_high_noise/`: control outputs.\n- `results/aggregate_summary.csv`: compact cross-run metric table.\n- `logs/*.log`: command logs.\n\n## Interpretation\n\nThe falsifiable ledger mechanism is supported in the controlled setting. When the small agent's memory is corrupted, the baseline accepts false intermediate claims and final accuracy falls. The ledger conditions expose and repair those claims before they affect the answer, eliminating accepted false claims and restoring accuracy on these tasks. The no-noise control shows the ledger does not create an artificial benefit when there are no false claims to catch.\n\nThe result is useful but not paper-ready. The verifier is a perfect synthetic oracle over generated tables, and the \"small reasoning agent\" is a deterministic harness rather than a learned LLM or deployed tool-using agent. This directly tests the claim-ledger mechanism under controlled corruption, not whether real small language models will reliably formulate verifiable claims, call verifiers, or preserve answer quality under realistic evidence retrieval failures.\n\n## Limitations\n\n- Synthetic generated data, not natural language or real retrieval.\n- Perfect verifier with full access to ground truth.\n- Deterministic programmatic agent, not a prompted or fine-tuned small model.\n- Latency is Python function-call overhead only and does not estimate LLM/tool-call cost.\n- The ledger-full condition did not add benefit beyond fact verification in this task family because arithmetic used repaired facts and was deterministic.\n\nTo overturn or strengthen this result, direct evidence would need to run the same ledger protocol with a real small LLM/tool-using agent, imperfect retrieval/verifier tools, held-out natural-language tasks, and an audit of whether the model produces sufficiently atomic falsifiable claims.\n\n## Final decision\n\nDecision: `finalize_negative` with `research_outcome: useful_signal`.\n\nStop rationale: bounded synthetic evidence supports the mechanism, but this is not a publication-grade validation of real small reasoning agents. The concrete next action is a bounded deepen follow-up using a real small open-weight or API model on natural-language tabular QA with noisy retrieval and the same ledger/no-ledger comparison.\n",
+      "path": "evidence/run_notes.md",
+      "sha256": "cc68895f494d1f6e8a04255a90343bfeb1a05557d848f44c3debd138efce5e9d",
+      "source_path": "run_notes.md",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"medium\",\n  \"evidence_strength\": \"moderate\",\n  \"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",\n  \"scale_limits\": \"Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.\",\n  \"useful_signal_summary\": \"At noise rate 0.25 across 10,000 tasks per condition, baseline accuracy was 0.6721 with 12,759 accepted false intermediate claims; ledger_full accuracy was 1.0 with 0 accepted false claims after checking 50,000 claims and rejecting 9,976. No-noise controls showed no ledger accuracy gain.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Run a bounded deepen follow-up with a real small LLM/tool-using agent on natural-language tabular QA with noisy retrieval and imperfect verifier tools.\",\n  \"stop_reason\": \"No-paper closure: this run provides controlled mechanism evidence only, not direct publication-grade evidence for real small reasoning agents.\",\n  \"followup_recommended\": true,\n  \"followup_type\": \"deepen\",\n  \"followup_title\": \"Real small-model ledger test on noisy natural-language tabular QA\",\n  \"followup_hypothesis\": \"For a real small LLM/tool-using agent, requiring atomic falsifiable ledger entries and verifier calls before final answers will reduce unsupported false intermediate claims and improve answer accuracy under noisy retrieval compared with the same agent without the ledger.\",\n  \"followup_required_evidence\": [\n    \"At least one real small model or small API model evaluated with and without the ledger protocol\",\n    \"Natural-language tabular QA or multi-hop fact tasks with controlled noisy retrieval\",\n    \"Audited ledger traces showing atomic claims, verifier outcomes, repairs, and final answers\",\n    \"Accuracy, unsupported-claim rate, refusal/abstention rate, and latency/cost comparison against no-ledger baseline\"\n  ],\n  \"followup_success_threshold\": \"On at least 500 held-out tasks, ledger condition improves accuracy by at least 5 absolute percentage points or cuts unsupported false claims by at least 50% without increasing abstention by more than 10 absolute points.\",\n  \"followup_stop_condition\": \"Stop as negative if the model cannot reliably emit auditable atomic claims, if verifier-call failures erase the accuracy gain, or if unsupported false claims are not reduced by at least 25% on a 100-task pilot.\",\n  \"followup_depth\": 0\n}\n",
+      "path": "evidence/enoch/project_decision.json",
+      "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+      "source_path": ".enoch/project_decision.json",
+      "truncated": false
+    },
+    {
+      "content": "{\n  \"project_decision\": \"finalize_negative\",\n  \"research_outcome\": \"useful_signal\",\n  \"hypothesis_status\": \"supported\",\n  \"confidence\": \"medium\",\n  \"evidence_strength\": \"moderate\",\n  \"claim_scope\": \"In a reproducible synthetic tabular reasoning harness with noisy agent memory and a perfect verifier, a falsifiable claim ledger eliminates accepted false intermediate claims and improves final-answer accuracy versus a no-ledger baseline.\",\n  \"scale_limits\": \"Evidence is limited to deterministic synthetic agents, generated tables, perfect verification, and short CPU-only runs. It does not validate real LLM behavior, natural-language retrieval, verifier imperfections, training effects, or deployment latency.\",\n  \"useful_signal_summary\": \"At noise rate 0.25 across 10,000 tasks per condition, baseline accuracy was 0.6721 with 12,759 accepted false intermediate claims; ledger_full accuracy was 1.0 with 0 accepted false claims after checking 50,000 claims and rejecting 9,976. No-noise controls showed no ledger accuracy gain.\",\n  \"bounded_paper_ready\": false,\n  \"compute_scale_blocked\": false,\n  \"novelty_progress\": true,\n  \"results_changed\": true,\n  \"recommended_next_action\": \"Run a bounded deepen follow-up with a real small LLM/tool-using agent on natural-language tabular QA with noisy retrieval and imperfect verifier tools.\",\n  \"stop_reason\": \"No-paper closure: this run provides controlled mechanism evidence only, not direct publication-grade evidence for real small reasoning agents.\",\n  \"followup_recommended\": true,\n  \"followup_type\": \"deepen\",\n  \"followup_title\": \"Real small-model ledger test on noisy natural-language tabular QA\",\n  \"followup_hypothesis\": \"For a real small LLM/tool-using agent, requiring atomic falsifiable ledger entries and verifier calls before final answers will reduce unsupported false intermediate claims and improve answer accuracy under noisy retrieval compared with the same agent without the ledger.\",\n  \"followup_required_evidence\": [\n    \"At least one real small model or small API model evaluated with and without the ledger protocol\",\n    \"Natural-language tabular QA or multi-hop fact tasks with controlled noisy retrieval\",\n    \"Audited ledger traces showing atomic claims, verifier outcomes, repairs, and final answers\",\n    \"Accuracy, unsupported-claim rate, refusal/abstention rate, and latency/cost comparison against no-ledger baseline\"\n  ],\n  \"followup_success_threshold\": \"On at least 500 held-out tasks, ledger condition improves accuracy by at least 5 absolute percentage points or cuts unsupported false claims by at least 50% without increasing abstention by more than 10 absolute points.\",\n  \"followup_stop_condition\": \"Stop as negative if the model cannot reliably emit auditable atomic claims, if verifier-call failures erase the accuracy gain, or if unsupported false claims are not reduced by at least 25% on a 100-task pilot.\",\n  \"followup_depth\": 0\n}\n",
+      "path": "evidence/omx/project_decision.json",
+      "sha256": "1b21101bdca68d6c7d29830426936c431bd10f17d572d8e7e8f179e5c23b058a",
+      "source_path": ".omx/project_decision.json",
+      "truncated": false
+    }
+  ],
+  "result_artifacts": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "result_file_refs": [
+    "evidence/run_notes.md",
+    "evidence/enoch/project_decision.json",
+    "evidence/omx/project_decision.json"
+  ],
+  "run_id": "source-record-redacted-20260530T085753691945+0000",
+  "schema_version": "evidence_bundle.v2",
+  "source": "enoch_control_plane",
+  "source_project_dir": "<control-plane-projects>/source-record-redacted",
+  "source_run_id": "source-record-redacted-20260530T085753691945+0000",
+  "sync_metadata": {
+    "enabled": true,
+    "http_sync": {
+      "files": 0,
+      "ok": false,
+      "paths": [],
+      "reason": "worker_read_failed",
+      "skipped": [
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "run_notes.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".enoch/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/project_decision.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": ".omx/metrics.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/hot_cold_sim_results.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/smoke.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_probe/hotcold_probe.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_residency.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_fixed_budget_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "results/llamacpp_hotcold_residency/qwen32b_hotcold_reuse_pager_sweep_summary.csv",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260530T085753691945+0000/README.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260530T085753691945+0000/paper.md",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260530T085753691945+0000/paper_manifest.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260530T085753691945+0000/evidence_bundle.json",
+          "status": 404
+        },
+        {
+          "error": "{\"detail\":\"project directory not found: source-record-redacted\"}",
+          "path": "papers/source-record-redacted-20260530T085753691945+0000/claim_ledger.json",
+          "status": 404
+        }
+      ],
+      "timeouts": 0
+    },
+    "method": "worker_http+ssh",
+    "reason": "command_failed",
+    "remote_dir": "<local-path-redacted>",
+    "ssh_returncode": 1,
+    "stderr": "bash: line 1: cd: <local-path-redacted> No such file or directory\n",
+    "stdout": "",
+    "synced": true
+  },
+  "writer_provider": {
+    "base_url": "https://openrouter.ai/api/v1",
+    "fallback_used": false,
+    "model": "minimax/minimax-m3",
+    "provider": "openrouter",
+    "response_id": "gen-1782735438-DT6BHXmHzgdSW5KJZbqP"
+  }
+}

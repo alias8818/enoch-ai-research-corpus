@@ -1,7 +1,7 @@
 # Corpus public audit reports
 
-Packaging/provenance lint: 389 / 389 pass
-Strict claim/evidence audit: 389 / 389 pass
+Packaging/provenance lint: 391 / 391 pass
+Strict claim/evidence audit: 391 / 391 pass
 Scientific correctness, replication, peer review, statistical power, semantic output quality, and citation accuracy: not validated.
 
 This compatibility report deliberately shows both counts on the first screen. The packaging/provenance lint checks artifact packaging, provenance language, placeholder/overclaim patterns, and presence of evidence/claim metadata files. It does not validate strict claim/evidence auditability.
@@ -27,7 +27,7 @@ This compatibility report deliberately shows both counts on the first screen. Th
 
 ## Strict claim/evidence audit
 
-Strict claim/evidence passed: 389 / 389
+Strict claim/evidence passed: 391 / 391
 Status: `strict_pass`
 Gap summary: Claim ledgers are empty or result_file references are not publicly present; packaging/provenance lint must not be read as deep claim audit.
 
@@ -179,6 +179,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `experiment-autopsy-agent` | True | {} |
 | `expert-upcycling-for-verification-models` | True | {} |
 | `fact-frequency-flattener` | True | {} |
+| `falsifiable-claim-verification-ledger-for-small-reasoning-agents` | True | {} |
 | `field-importance-multi-task-tuning` | True | {} |
 | `fieldwise-recall-probe-real-trace-multi-model-validation` | True | {} |
 | `file-delta-personalization-tuning` | True | {} |
@@ -325,6 +326,7 @@ Gap summary: Claim ledgers are empty or result_file references are not publicly 
 | `rehydration-guide-student` | True | {} |
 | `rejection-mode-targeted-abstention-refusal-tuning` | True | {} |
 | `rejection-span-distillation` | True | {} |
+| `replay-real-captured-agent-traces-with-repository-scale-snapshot-binding` | True | {} |
 | `repo-pulse-index-real-repo-pilot` | True | {} |
 | `reproducibility-capsule-messy-workflow-validation` | True | {} |
 | `research-agent-treaty-protocol` | True | {} |

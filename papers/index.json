@@ -1,5 +1,5 @@
 {
-  "count": 389,
+  "count": 391,
   "highlight_count": 13,
   "highlights": [
     {
@@ -2323,6 +2323,21 @@
     },
     {
       "ai_generated": true,
+      "claim_count": 16,
+      "claim_ledger_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/claim_ledger.json",
+      "evidence_bundle_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/evidence_bundle.json",
+      "generated_at": "2026-06-29 12:01:34.223660+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/falsifiable-claim-verification-ledger-for-small-reasoning-agents/paper.md",
+      "public_id": "enoch-paper-0511",
+      "slug": "falsifiable-claim-verification-ledger-for-small-reasoning-agents",
+      "source_record_fingerprint": "cbe6bb330e597aa1",
+      "strict_audit_pass": true,
+      "title": "Falsifiable claim-verification ledger for small reasoning agents"
+    },
+    {
+      "ai_generated": true,
       "claim_count": 12,
       "claim_ledger_path": "papers/field-importance-multi-task-tuning/claim_ledger.json",
       "evidence_bundle_path": "papers/field-importance-multi-task-tuning/evidence_bundle.json",
@@ -4510,6 +4525,21 @@
       "source_record_fingerprint": "68162515235d7154",
       "strict_audit_pass": true,
       "title": "Rejection-Span Distillation"
+    },
+    {
+      "ai_generated": true,
+      "claim_count": 16,
+      "claim_ledger_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/claim_ledger.json",
+      "evidence_bundle_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/evidence_bundle.json",
+      "generated_at": "2026-06-29 12:04:47.112903+00:00",
+      "human_authorship_claimed": false,
+      "missing_result_refs": 0,
+      "paper_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/paper.md",
+      "public_id": "enoch-paper-0512",
+      "slug": "replay-real-captured-agent-traces-with-repository-scale-snapshot-binding",
+      "source_record_fingerprint": "8e06d6cb74fd5481",
+      "strict_audit_pass": true,
+      "title": "Replay real captured agent traces with repository-scale snapshot binding"
     },
     {
       "ai_generated": true,

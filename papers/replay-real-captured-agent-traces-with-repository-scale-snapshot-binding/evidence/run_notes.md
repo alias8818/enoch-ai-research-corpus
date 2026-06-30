@@ -20,10 +20,10 @@ Only read-only shell commands are replayed. Mutating, installation, network, pro
 
 ## Resource calibration
 
-Host class: CPU worker (`cpu-proxmox-1`), no GPU required. This task is trace parsing and bounded command replay; GB10/model hardware is not the right host.
+Host class: CPU worker (`<cpu-worker-host>`), no GPU required. This task is trace parsing and bounded command replay; GB10/model hardware is not the right host.
 
 Planned run:
-- Input: local real Enoch/Codex JSONL traces under `/var/lib/enoch-cpu-worker/projects/*/.enoch/logs/*.jsonl`.
+- Input: local real Enoch/Codex JSONL traces under `<worker-project-root>/*/.enoch/logs/*.jsonl`.
 - Sample: fixed seed, bounded command count after read-only filtering.
 - Process count: up to 8 worker subprocesses.
 - Per-command timeout: 4 seconds.
@@ -49,7 +49,7 @@ Primary artifacts:
 
 ## Final bounded validation result
 
-Dataset: 775 local real Enoch/Codex JSONL trace logs under `/var/lib/enoch-cpu-worker/projects`, excluding this evaluation project from the final replay corpus. The parser saw 16,103 completed command events. The conservative read-only filter admitted 6,256 safe commands, then excluded 9 from this current project, leaving 6,247 commands. Each command was replayed under three bindings (`origin`, `current`, `shuffled`) for 18,741 total command executions.
+Dataset: 775 local real Enoch/Codex JSONL trace logs under the CPU worker's project root, excluding this evaluation project from the final replay corpus. The parser saw 16,103 completed command events. The conservative read-only filter admitted 6,256 safe commands, then excluded 9 from this current project, leaving 6,247 commands. Each command was replayed under three bindings (`origin`, `current`, `shuffled`) for 18,741 total command executions.
 
 Final aggregate metrics from `results/replay_summary.json`:
 

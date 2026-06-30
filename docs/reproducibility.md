@@ -14,8 +14,8 @@ Each packaged artifact is expected to include:
 
 The public quality reports separate two different gates:
 
-- **Packaging/provenance lint**: currently `496/496`. This checks release hygiene, public provenance, evidence/ledger file presence, and placeholder/secret patterns.
-- **Strict claim/evidence audit**: currently `3/496`. This stricter audit only passes when generated claims can be traced to public result files or explicit public unavailability metadata.
+- **Packaging/provenance lint**: currently `393/393`. This checks release hygiene, public provenance, evidence/ledger file presence, and placeholder/secret patterns.
+- **Strict claim/evidence audit**: currently `393/393`. This stricter audit only passes when generated claims can be traced to public result files or explicit public unavailability metadata.
 
 Do not treat the packaging/provenance pass count as scientific validation. It is a publication-hygiene gate.
 

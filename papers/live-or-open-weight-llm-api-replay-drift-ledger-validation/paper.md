@@ -35,7 +35,7 @@ A single script, `scripts/open_weight_replay_drift_ledger.py`, performs serving,
 ### 2.2 Models
 
 - **Smoke and cross-check model.** `sshleifer/tiny-gpt2`. Cached safetensors are approximately 2.5 MB. Used to confirm the harness end-to-end and reproduce the structure of the larger run.
-- **Bounded Tier 3 model.** `distilgpt2`, served from the cached snapshot at `/var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/`.
+- **Bounded Tier 3 model.** `distilgpt2`, served from the cached snapshot at `<local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/`.
 
 ### 2.3 Seeds and traces
 
@@ -80,7 +80,7 @@ For each validator we report three rates over the 700 replay cases:
 
 ### 2.7 Execution environment
 
-The validation ran on a CPU worker (`cpu-proxmox-1`), not on a GPU host. `lscpu` exposes 8 online CPUs from a 40-vCPU host, with `MemAvailable ≈ 21.6 GB` before setup. Resource use is reported in §3.4.
+The validation ran on a CPU worker (`<cpu-worker-host>`), not on a GPU host. `lscpu` exposes 8 online CPUs from a 40-vCPU host, with `MemAvailable ≈ 21.6 GB` before setup. Resource use is reported in §3.4.
 
 ### 2.8 Scope-distinguishing disclaimer
 
@@ -182,7 +182,7 @@ The decision gate returned `finalize_negative` with `useful_signal`. The followi
 | Modes | `none`, `format_drift`, `request_drift`, `decoder_drift`, `model_fingerprint_drift`, `api_response_drift`, `tool_state_drift` | `run_notes.md` |
 | Validators | `ledger_full`, `output_only`, `raw_transcript`, `ledger_raw_response`, `ledger_no_request`, `ledger_no_model_fingerprint`, `ledger_no_response`, `ledger_no_tool_state` | `run_notes.md` |
 | Metrics | material detection (n=500), benign false positives (n=200), material localization (n=500) | `run_notes.md` |
-| Host | `cpu-proxmox-1` (CPU worker, 8 online CPUs from a 40-vCPU host) | `run_notes.md` |
+| Host | `<cpu-worker-host>` (CPU worker, 8 online CPUs from a 40-vCPU host) | `run_notes.md` |
 | DistilGPT-2 resource use | wall-clock 1:14:33; max RSS 747,452 KB; CPU 216%; exit 0 | `run_notes.md` |
 | Checkpoint cadence | `partial_*` artifacts every 5 traces | `run_notes.md` |
 | Tiny GPT-2 runtime | 17.3 s; max RSS 82,424 KB | `run_notes.md` |
@@ -215,7 +215,7 @@ External citations were not present in the source artifact set and have been omi
 - `papers/source-record-redacted-20260529T020213376416+0000/claim_ledger.json` — `claims: []`, `ledger_status: claims_require_review`, `unsupported_claim_count: 0`; explicit note that no atomic claims were extracted from the draft.
 - `papers/source-record-redacted-20260529T020213376416+0000/evidence_bundle.json` — file inventory (`run_notes.md`, `.enoch/project_decision.json`, `.omx/project_decision.json`), limitations `[]`, metric summaries derived from the two decision JSON files.
 - `papers/source-record-redacted-20260529T020213376416+0000/paper_manifest.json` — paper id, writer provider metadata (`minimax/minimax-m3` via OpenRouter), `claim_count: 0`, `evidence_file_count: 3`.
-- Project metadata block — `project_id`, run id, machine target (`cpu-proxmox-1`), publication policy (`ai_generated: true`, operator credit claim `none`).
+- Project metadata block — `project_id`, run id, machine target (`<cpu-worker-host>`), publication policy (`ai_generated: true`, operator credit claim `none`).
 - `evidence_sync.http_sync.skipped` — per-file `worker_read_failed` (HTTP 404) and SSH error log recording the missing remote project directory.
 
 The following result files were referenced by `run_notes.md` but were not directly re-fetched by this draft because the evidence-sync worker read failed for the corresponding paths: `results/distilgpt2_full/summary.json`, `results/distilgpt2_full/mode_breakdown.json`, `results/distilgpt2_full/validator_records.csv`, `results/distilgpt2_full/raw_runs_sample.json`, `logs/distilgpt2_full.log`, and the `results/distilgpt2_full/partial_*` checkpoint artifacts.

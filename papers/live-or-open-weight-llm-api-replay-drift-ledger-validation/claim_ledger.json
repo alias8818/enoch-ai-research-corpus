@@ -7,7 +7,7 @@
           "match_score": 0.2,
           "path": "evidence/run_notes.md",
           "quote": "- Checkpoint cadence: the full run prints progress every 25 tasks and writes CSV/JSON artifacts at completion; projected runtime is below the 10-minute checkpoint threshold.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -50,7 +50,7 @@
           "match_score": 0.56,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         }
       ],
@@ -65,7 +65,7 @@
           "match_score": 0.8621,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -94,7 +94,7 @@
           "match_score": 0.8333,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -123,7 +123,7 @@
           "match_score": 0.8529,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -151,8 +151,8 @@
         {
           "match_score": 0.7368,
           "path": "evidence/run_notes.md",
-          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "quote": "- Host: CPU worker (`<cpu-worker-host>`), not GB10/GPU.",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -194,8 +194,8 @@
         {
           "match_score": 0.8857,
           "path": "evidence/run_notes.md",
-          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "quote": "- Host: CPU worker (`<cpu-worker-host>`), not GB10/GPU.",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         }
       ],
@@ -210,7 +210,7 @@
           "match_score": 0.3636,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -239,7 +239,7 @@
           "match_score": 0.4706,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -268,7 +268,7 @@
           "match_score": 0.6667,
           "path": "evidence/run_notes.md",
           "quote": "- Expected wall-clock before full run: tiny GPT-2 smoke under 1 minute; bounded full run under 15 minutes because this is CPU-only and should not occupy GB10-class resources.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -297,7 +297,7 @@
           "match_score": 0.619,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -325,8 +325,8 @@
         {
           "match_score": 0.4242,
           "path": "evidence/run_notes.md",
-          "quote": "- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "quote": "- Host: CPU worker (`<cpu-worker-host>`), not GB10/GPU.",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -355,7 +355,7 @@
           "match_score": 0.9,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -384,7 +384,7 @@
           "match_score": 0.6667,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -413,7 +413,7 @@
           "match_score": 0.6667,
           "path": "evidence/run_notes.md",
           "quote": "- Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {
@@ -442,7 +442,7 @@
           "match_score": 0.6667,
           "path": "evidence/run_notes.md",
           "quote": "- Memory: cached `sshleifer/tiny-gpt2` safetensors are about 2.5 MB; expected RSS well below 1 GB; host `MemAvailable` before setup was about 21.6 GB.",
-          "sha256": "f14d8dbc78f50c0599427a3aad6a4d74220ba1e4dd131afc023e560fec971ae5",
+          "sha256": "03670418a71299dfabb414ac647b26ceff2b500852397b41d8443dbd3433a233",
           "source_path": "run_notes.md"
         },
         {

@@ -27,7 +27,7 @@ The run is recorded as a direct bounded validation, not as a paper-positive clos
 
 ### 2.1 Trace corpus
 
-We use local real Enoch/Codex JSONL trace logs located under `/var/lib/enoch-cpu-worker/projects/*/.enoch/logs/*.jsonl`. The final bounded run uses 775 such trace logs; the current evaluation project is excluded from the corpus to avoid self-referential replay. The parser saw 16,103 completed `command_execution` events.
+We use local real Enoch/Codex JSONL trace logs located under `<worker-project-root>/*/.enoch/logs/*.jsonl`. The final bounded run uses 775 such trace logs; the current evaluation project is excluded from the corpus to avoid self-referential replay. The parser saw 16,103 completed `command_execution` events.
 
 ### 2.2 Read-only filtering
 
@@ -114,7 +114,7 @@ What the result does not support:
 
 The following are explicit, recorded limitations from the project decision and run notes:
 
-1. Local traces only. The validation uses local Enoch/Codex trace logs under `/var/lib/enoch-cpu-worker/projects`. The result is not demonstrated on external or non-Enoch corpora.
+1. Local traces only. The validation uses local Enoch/Codex trace logs under the CPU worker's project root. The result is not demonstrated on external or non-Enoch corpora.
 2. Read-only only. Mutating, installation, network, process-control, and long-running commands are excluded by a conservative static filter. The reported lifts apply only to the read-only subset.
 3. Shell commands only. The harness replays shell commands, not full agent decisions. Higher-level agent planning, tool selection, and context management are not evaluated.
 4. Final-snapshot binding only. The harness binds each command to the project's final-snapshot directory state, not to a pre-command Merkle manifest or to a per-command historical filesystem snapshot. This is the direct cause of the residual 41.89% non-exact match rate, concentrated in `find` and related file-inventory commands.
@@ -135,14 +135,14 @@ The following items are taken from the run notes, project decision, and evidence
 - Paired bootstrap CIs and failure diagnostics: `results/replay_diagnostics.json`.
 - Sample manifest and project fingerprints: `results/replay_manifest.json`.
 - Run logs: `logs/smoke_replay.log`, `logs/smoke_replay_rerun.log`, `logs/replay_full.log`, `logs/replay_full_exclude_current.log`, `logs/analyze_replay_final.log`.
-- Trace corpus: 775 local JSONL trace logs under `/var/lib/enoch-cpu-worker/projects/*/.enoch/logs/*.jsonl`, excluding the current evaluation project.
+- Trace corpus: 775 local JSONL trace logs under `<worker-project-root>/*/.enoch/logs/*.jsonl`, excluding the current evaluation project.
 - Parser-stage event count: 16,103 completed `command_execution` events seen.
 - Filtering rules: conservative static read-only filter; 6,256 admitted, 9 excluded as self-referential, 6,247 replayed.
 - Bindings: `origin`, `current`, `shuffled`; shuffled uses a fixed seed (seed value not transcribed in the local context excerpt).
 - Concurrency: up to 16 worker subprocesses.
 - Per-command timeout: 3 s (stable final run).
 - Wall-clock budget: <15 minutes CPU-only worker wall time; expected peak RSS <500 MB.
-- Hardware: CPU worker host `cpu-proxmox-1`. No GPU is used or required.
+- Hardware: CPU worker host `<cpu-worker-host>`. No GPU is used or required.
 - Bootstrap configuration: 95% percentile intervals; iteration count not transcribed in the local context excerpt.
 - External corpora: not used.
 - External dependencies beyond Python 3 and the standard library: not transcribed in the local context excerpt.
@@ -169,7 +169,7 @@ The following local artifacts are referenced by this paper and were used as the 
 - `results/replay_diagnostics.json` — paired bootstrap CIs and per-family failure diagnostics (the source of the +39.88 pp / +40.48 pp lifts and the [+38.64, +41.17] / [+39.23, +41.78] intervals).
 - `results/replay_manifest.json` — sample manifest and project fingerprints.
 - `logs/smoke_replay.log`, `logs/smoke_replay_rerun.log`, `logs/replay_full.log`, `logs/replay_full_exclude_current.log`, `logs/analyze_replay_final.log` — harness run logs.
-- Trace corpus: 775 local JSONL trace logs under `/var/lib/enoch-cpu-worker/projects/*/.enoch/logs/*.jsonl`, excluding the current evaluation project.
+- Trace corpus: 775 local JSONL trace logs under `<worker-project-root>/*/.enoch/logs/*.jsonl`, excluding the current evaluation project.
 - `papers/.../evidence_bundle.json` — file inventory and metric summaries for the run.
 - `papers/.../claim_ledger.json` — claim ledger for the paper draft; status `claims_require_review`, no atomic claims extracted.
 - `papers/.../paper_manifest.json` — paper metadata, including evidence file count and writer provider.

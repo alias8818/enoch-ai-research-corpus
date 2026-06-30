@@ -7,7 +7,7 @@
 
 ## Resource Calibration
 
-- Host: CPU worker (`cpu-proxmox-1`), not GB10/GPU.
+- Host: CPU worker (`<cpu-worker-host>`), not GB10/GPU.
 - Workload: local open-weight GPT-2-family next-token API served over HTTP, then replay-ledger validation with fixed prompts, drift controls, baselines, and ablations.
 - Expected wall-clock before full run: tiny GPT-2 smoke under 1 minute; bounded full run under 15 minutes because this is CPU-only and should not occupy GB10-class resources.
 - CPU/processes: one Python process, one local threaded HTTP server, NumPy single-process inference; visible affinity in `lscpu` shows 8 online CPUs from a 40-vCPU host.
@@ -67,13 +67,13 @@ set -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with 
 DistilGPT-2 calibration:
 
 ```bash
-set -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-dir /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 --tasks-per-seed 1 --outdir results/distilgpt2_calibration 2>&1 | tee logs/distilgpt2_calibration.log
+set -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-dir <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 --tasks-per-seed 1 --outdir results/distilgpt2_calibration 2>&1 | tee logs/distilgpt2_calibration.log
 ```
 
 DistilGPT-2 bounded full run with checkpoints every 5 traces:
 
 ```bash
-set -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-name distilgpt2 --model-dir /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer /var/lib/enoch-cpu-worker/.cache/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 17 23 31 43 --tasks-per-seed 20 --checkpoint-every 5 --outdir results/distilgpt2_full 2>&1 | tee logs/distilgpt2_full.log
+set -o pipefail; /usr/bin/time -v uv run --with numpy --with safetensors --with tokenizers python scripts/open_weight_replay_drift_ledger.py --model-name distilgpt2 --model-dir <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa --config <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/config.json --tokenizer <local-cache>/huggingface/hub/models--distilgpt2/snapshots/2290a62682d06624634c1f46a6ad5be0f47f38aa/tokenizer.json --seeds 11 17 23 31 43 --tasks-per-seed 20 --checkpoint-every 5 --outdir results/distilgpt2_full 2>&1 | tee logs/distilgpt2_full.log
 ```
 
 ## Results

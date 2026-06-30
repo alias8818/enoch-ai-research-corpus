@@ -7,7 +7,7 @@
           "match_score": 0.6296,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -36,7 +36,7 @@
           "match_score": 0.3158,
           "path": "evidence/run_notes.md",
           "quote": "Hypothesis tested: captured agent shell traces become substantially more replayable when each command is bound back to its originating repository/workspace snapshot, compared with replaying the same command from a generic current workspace or a mismatched repository.",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -65,7 +65,7 @@
           "match_score": 0.3793,
           "path": "evidence/run_notes.md",
           "quote": "## Hypothesis and target metric",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -94,7 +94,7 @@
           "match_score": 0.7,
           "path": "evidence/run_notes.md",
           "quote": "## Hypothesis and target metric",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -123,7 +123,7 @@
           "match_score": 0.6818,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -152,7 +152,7 @@
           "match_score": 0.8966,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -181,7 +181,7 @@
           "match_score": 0.8421,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -210,7 +210,7 @@
           "match_score": 0.9524,
           "path": "evidence/run_notes.md",
           "quote": "## Hypothesis and target metric",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -239,7 +239,7 @@
           "match_score": 0.5,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -268,7 +268,7 @@
           "match_score": 0.9091,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -297,7 +297,7 @@
           "match_score": 0.7576,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -326,7 +326,7 @@
           "match_score": 0.7,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -355,7 +355,7 @@
           "match_score": 0.5,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -384,7 +384,7 @@
           "match_score": 0.75,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -413,7 +413,7 @@
           "match_score": 0.7778,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {
@@ -442,7 +442,7 @@
           "match_score": 0.5556,
           "path": "evidence/run_notes.md",
           "quote": "# Replay real captured agent traces with repository-scale snapshot binding",
-          "sha256": "f2d2e4261cf375cce059312c00ecd984cc82eed6e9914d45815241eede64775b",
+          "sha256": "32c97dcbbb7230bf02b699a27c5702300d37517bea8419be8d1e6e83eeb444ca",
           "source_path": "run_notes.md"
         },
         {

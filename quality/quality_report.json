@@ -2127,7 +2127,7 @@
       "words": 2080
     },
     {
-      "bytes": 24846,
+      "bytes": 24839,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -2135,7 +2135,7 @@
       "paper_path": "papers/live-or-open-weight-llm-api-replay-drift-ledger-validation/paper.md",
       "passes": true,
       "slug": "live-or-open-weight-llm-api-replay-drift-ledger-validation",
-      "words": 3424
+      "words": 3420
     },
     {
       "bytes": 16430,
@@ -3271,7 +3271,7 @@
       "words": 2140
     },
     {
-      "bytes": 20548,
+      "bytes": 20506,
       "has_claim_ledger": true,
       "has_evidence_bundle": true,
       "has_provenance": true,
@@ -3279,7 +3279,7 @@
       "paper_path": "papers/replay-real-captured-agent-traces-with-repository-scale-snapshot-binding/paper.md",
       "passes": true,
       "slug": "replay-real-captured-agent-traces-with-repository-scale-snapshot-binding",
-      "words": 3075
+      "words": 3066
     },
     {
       "bytes": 12456,

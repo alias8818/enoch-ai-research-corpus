@@ -39,7 +39,7 @@ Both prompt styles were run with `--no-debug-json` (no debug labels injected int
 A vLLM 0.19.0 server was launched as a production-style OpenAI-compatible endpoint with the following configuration:
 
 - **Model**: `Qwen/Qwen2.5-3B-Instruct` (served as `qwen2.5-3b-instruct`)
-- **Host**: `127.0.0.1:18090`
+- **Host**: `<loopback-redacted>:18090`
 - **Max model length**: 4096 tokens
 - **GPU memory utilization**: 0.70
 - **Tool-call parser**: Not enabled (the endpoint was not launched with `--enable-auto-tool-choice` or `--tool-call-parser`)

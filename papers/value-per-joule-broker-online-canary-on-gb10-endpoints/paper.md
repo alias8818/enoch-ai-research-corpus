@@ -81,8 +81,8 @@ All rollback guards passed.
 
 The live canary ran against temporary local llama.cpp servers:
 
-- **Small route**: SmolLM2-135M-Instruct-Q4_K_M on `127.0.0.1:8001`
-- **Frontier route**: Qwen3-0.6B-Q4_K_M on `127.0.0.1:8002`
+- **Small route**: SmolLM2-135M-Instruct-Q4_K_M on `<loopback-redacted>:8001`
+- **Frontier route**: Qwen3-0.6B-Q4_K_M on `<loopback-redacted>:8002`
 
 Results relative to the confidence-only baseline:
 

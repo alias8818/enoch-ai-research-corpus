@@ -44,7 +44,7 @@ Missing-policy detection flags cases where a policy section expected for a given
 Two benchmark runs were executed:
 
 1. **Smoke calibration** (20 projects): validating pipeline correctness and measuring baseline throughput.
-2. **Full real-workflow benchmark** (803 projects): scanning the complete local project tree at `/mnt/usb<local-path-redacted>`.
+2. **Full real-workflow benchmark** (803 projects): scanning the complete local project tree at `<local-path-redacted>`.
 
 Both runs were executed on a single machine with approximately 122 GB available memory and zero swap. The scanner is single-threaded and Python-based. Unit tests were executed via `python3 -m unittest discover -s scripts -p 'test_*.py'`.
 
@@ -153,7 +153,7 @@ Manual audit of all 2,537 prompt sources would require opening 2,537 files and r
 - **Code available:** `scripts/frozen_prompt_archive.py`, `scripts/run_real_workflow_benchmark.py`, `scripts/test_real_workflow_benchmark.py` (SHA-256 hashes recorded in Artifacts table above).
 - **Unit tests:** Executed via `python3 -m unittest discover -s scripts -p 'test_*.py'`; log at `artifacts/logs/unit_tests.log`.
 - **Benchmark command:** `python3 scripts/run_real_workflow_benchmark.py --root <path> --out <out_dir> --include-logs`.
-- **Input data:** Local Enoch/OMX project directory at `/mnt/usb<local-path-redacted>`. This path is operator-specific and not publicly available; the archive manifest (`artifacts/real_workflow_full/archive/manifest.jsonl`) captures the scanned content.
+- **Input data:** Local Enoch/OMX project directory at `<local-path-redacted>`. This path is operator-specific and not publicly available; the archive manifest (`artifacts/real_workflow_full/archive/manifest.jsonl`) captures the scanned content.
 - **Output data:** `artifacts/real_workflow_full/reports/metrics.json`, `artifacts/real_workflow_full/reports/surfaces.jsonl`, `artifacts/real_workflow_full/archive/manifest.jsonl`.
 - **Randomness:** The scanner is deterministic; no random seeds are involved.
 - **Hardware:** Single machine, ~122 GB RAM, 0 kB swap. CPU details not recorded in artifacts.

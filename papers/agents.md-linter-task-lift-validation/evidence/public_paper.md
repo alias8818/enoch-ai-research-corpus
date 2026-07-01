@@ -162,4 +162,4 @@ The recommended next step is to run the same scenario matrix with live, sandboxe
 | Final review log | `logs/final_review_20260430T225902Z.log` |
 | Project decision record | `.omx/project_decision.json` |
 | Run notes | `run_notes.md` |
-| Prior linter source (seed) | `/mnt/usb<local-path-redacted>` |
+| Prior linter source (seed) | `<local-path-redacted>` |

@@ -71,7 +71,7 @@ After the largest run, a fresh Python process (not the driver) independently que
 - LangGraph 1.1.10
 - `langgraph-checkpoint-postgres`
 - Postgres 16-alpine in Docker container `enoch-lg-pg-restart-6072ebb35f`
-- DSN: `postgresql://postgres:postgres@127.0.0.1:55432/postgres?sslmode=disable`
+- DSN: `postgresql://postgres:postgres@<loopback-redacted>:55432/postgres?sslmode=disable`
 - Single local machine; no replication or multi-host configuration
 
 ## 3. Results
@@ -154,7 +154,7 @@ This validation is subject to the following significant constraints, which limit
 - **Result files**: `results/*_summary.json` (scenario metrics), `results/*_events.jsonl` (per-step process events).
 - **Log files**: `logs/run_validation_full.log` (smoke through bounded runs), `logs/run_bounded_large.log` (large bounded run), `logs/fresh_state_audit.log` (independent audit).
 - **Environment**: Python 3.13.11, LangGraph 1.1.10, `langgraph-checkpoint-postgres`, Postgres 16-alpine (Docker).
-- **Database DSN**: `postgresql://postgres:postgres@127.0.0.1:55432/postgres?sslmode=disable` (local Docker container `enoch-lg-pg-restart-6072ebb35f`).
+- **Database DSN**: `postgresql://postgres:postgres@<loopback-redacted>:55432/postgres?sslmode=disable` (local Docker container `enoch-lg-pg-restart-6072ebb35f`).
 - **Seed**: Fixed seed `6072` used for the large bounded run; per-thread seed computed as `6072 + i` for thread index `i`.
 - **Concurrency**: `ProcessPoolExecutor` with `max_workers` as specified per scenario (4, 8, 8, 8, 16, 32).
 - **Reproduction commands**: Documented in run notes; exact command lines for each scenario and the independent audit are provided there.

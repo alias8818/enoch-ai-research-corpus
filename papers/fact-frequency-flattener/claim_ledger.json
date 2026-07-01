@@ -91,7 +91,7 @@
       "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The server listened on `127.0.0.1:8123`.",
+      "claim": "The server listened on `<loopback-redacted>:8123`.",
       "evidence_refs": [
         {
           "match_score": 1.0,

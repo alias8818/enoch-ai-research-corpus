@@ -32,7 +32,7 @@ All experiments ran on a single machine with the following configuration:
 - **GPU:** NVIDIA GB10, CUDA backend as reported by llama.cpp
 - **System memory:** MemAvailable remained above 117 GiB throughout all runs; SwapTotal reported as 0 kB (no swap configured)
 - **Model:** Phi-4-mini-instruct, Q4_K_M GGUF quantization (`lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf`)
-- **Inference engine:** llama.cpp, built from `/mnt/usb<local-path-redacted>`, with CUDA offload (`-ngl 99`)
+- **Inference engine:** llama.cpp, built from `<local-path-redacted>`, with CUDA offload (`-ngl 99`)
 
 ### Prompt-Prefill Benchmark
 

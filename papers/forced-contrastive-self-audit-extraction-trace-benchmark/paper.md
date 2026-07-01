@@ -74,7 +74,7 @@ The evaluated model is **Qwen2.5-0.5B-Instruct** (0.5 billion parameters), loade
 [redacted-local-hf-cache]/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775
 ```
 
-The shim was launched on `127.0.0.1:18000` and verified functional before benchmark execution. Runtime dependencies included PyTorch with CUDA 13.0 support, Transformers, Accelerate, FastAPI, and uvicorn.
+The shim was launched on `<loopback-redacted>:18000` and verified functional before benchmark execution. Runtime dependencies included PyTorch with CUDA 13.0 support, Transformers, Accelerate, FastAPI, and uvicorn.
 
 ### 2.5 Output Parsing
 

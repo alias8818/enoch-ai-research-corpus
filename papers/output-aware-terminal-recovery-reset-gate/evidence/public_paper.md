@@ -111,7 +111,7 @@ The 7 runs classified as having no useful output were not in a state that trigge
 
 - **Source code available**: `scripts/output_aware_terminal_recovery_eval.py` (dependency-free Python 3.12).
 - **Fixture cases**: Five deterministic cases embedded in the harness; all passed.
-- **Input data**: Wake-gate run records at `~/.local/state/omx-wake-gate/runs`; project directories resolved to `/mnt/usb<local-path-redacted>`.
+- **Input data**: Wake-gate run records at `~/.local/state/omx-wake-gate/runs`; project directories resolved to `<local-path-redacted>`.
 - **Output data**: `results/output_aware_terminal_recovery_metrics.json`, `results/smoke_metrics.json`, `results/summary.md`.
 - **Logs**: `logs/environment.log`, `logs/smoke_eval.log`, `logs/final_eval.log`, `logs/validate_metrics.log`.
 - **Validation script**: Inline Python validation in run notes; asserts `all_passed`, `passed`, baseline candidates ≥ 1, suppressed resets ≥ 1, and false-positive resets after gate == 0.

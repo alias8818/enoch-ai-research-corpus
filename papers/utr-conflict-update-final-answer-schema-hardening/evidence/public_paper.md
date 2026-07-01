@@ -44,7 +44,7 @@ The branch was to be finalized as negative if the schema guard did not reduce th
 ### 3.1 Model and Serving
 
 - **Model**: Qwen2.5-7B-Instruct, quantized to Q4_K_M (GGUF format).
-- **Serving**: llama.cpp server launched from cached artifacts at `/tmp/utr_conflict_llama_server`, bound to `127.0.0.1:8088`.
+- **Serving**: llama.cpp server launched from cached artifacts at `/tmp/utr_conflict_llama_server`, bound to `<loopback-redacted>:8088`.
 - **Verification**: The `/v1/models` endpoint was confirmed responsive before calibration and main runs. The server was stopped after evaluation.
 
 ### 3.2 Dataset

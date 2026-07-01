@@ -114,7 +114,7 @@ The 240-record smoke test confirmed that both direct and rescue protocols achiev
 ## Reproducibility Checklist
 
 - **Model**: Qwen2.5-7B-Instruct Q4_K_M (GGUF format). Specific GGUF file used in testing.
-- **Serving**: llama.cpp server, context window 32,768 tokens, full GPU offload (`-ngl 999`), no warm-up (`--no-warmup`), host 127.0.0.1, port 18080, metrics enabled.
+- **Serving**: llama.cpp server, context window 32,768 tokens, full GPU offload (`-ngl 999`), no warm-up (`--no-warmup`), host <loopback-redacted>, port 18080, metrics enabled.
 - **Script**: `scripts/lost_middle_rescue_eval.py` (validated via `python3 -m py_compile`).
 - **Seeds**: 100 (smoke), 200 (calibration), 201 (replication), 300 (stress).
 - **Hardware**: Host with CUDA GPU; GB10 telemetry confirmed ~5.5 GiB model/context/compute self-use and >112 GiB free device memory; swap disabled (0 B confirmed in telemetry).

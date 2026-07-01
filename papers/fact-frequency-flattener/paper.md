@@ -22,7 +22,7 @@ The core hypothesis is that a lightweight external histogram over selected fact-
 
 ### 2.1 Model and Runtime
 
-All experiments used a locally hosted Qwen2.5-7B-Instruct model quantized to Q4_K_M format (GGUF), sourced from the `bartowski` repository. The model was served via `llama-server` built from the llama.cpp codebase, launched with full CUDA offload (`-ngl 99`) and a context window of 2048 tokens on a GB10 machine. The server listened on `127.0.0.1:8123`.
+All experiments used a locally hosted Qwen2.5-7B-Instruct model quantized to Q4_K_M format (GGUF), sourced from the `bartowski` repository. The model was served via `llama-server` built from the llama.cpp codebase, launched with full CUDA offload (`-ngl 99`) and a context window of 2048 tokens on a GB10 machine. The server listened on `<loopback-redacted>:8123`.
 
 This configuration constitutes a llama.cpp hook-prototype setup: the controller communicates with the model exclusively through the standard OpenAI-compatible completion API exposed by `llama-server`, with no custom logits hooks, sampler modifications, or model patches.
 
@@ -108,7 +108,7 @@ These system metrics confirm that the prototype ran without resource contention 
 ## 5. Reproducibility Checklist
 
 - **Model**: Qwen2.5-7B-Instruct Q4_K_M (GGUF), sourced from `bartowski` on Hugging Face.
-- **Runtime**: llama.cpp `llama-server`, built locally, launched with `-ngl 99 -c 2048 --port 8123 --host 127.0.0.1`.
+- **Runtime**: llama.cpp `llama-server`, built locally, launched with `-ngl 99 -c 2048 --port 8123 --host <loopback-redacted>`.
 - **Hardware**: GB10 machine with CUDA-capable GPU; swap disabled; ~117 GB RAM available during run.
 - **Script**: `scripts/fact_frequency_flattener_eval.py` — accepts `--n` and `--outdir` arguments.
 - **Exact command**: `python3 scripts/fact_frequency_flattener_eval.py --n 36 --outdir results/fact_frequency_flattener_full`

@@ -143,7 +143,7 @@ All applicable kill conditions are cleared.
 - **Packers compared:** `topk_fill`, `answerability_cutoff_evidence_first`.
 - **Token budgets:** 120, 180, 260 (extractive); 180 (endpoint).
 - **Model:** Qwen2.5-7B-Instruct Q4_K_M via llama.cpp server (`llama-server` binary, flags: `-c 2048 -ngl all -np 2 -b 512 -ub 256 --metrics --slots`).
-- **Endpoint:** `http://127.0.0.1:18082`.
+- **Endpoint:** `http://<local-llm-endpoint>`.
 - **Scoring:** Deterministic extractive scoring (Phase 1); LLM generation with per-task-family metrics (Phase 2).
 - **Test suite:** 8 pytest cases pass (`tests/test_production_benchmark.py`, `tests/test_generation_validation.py`).
 - **Benchmark scripts:** `scripts/run_production_benchmark.py`, `scripts/run_generation_validation.py`.

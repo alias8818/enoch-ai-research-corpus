@@ -22,7 +22,7 @@ This paper reports on the implementation and evaluation of that integration.
 
 ### System Architecture
 
-The lifecycle gate was implemented as a set of changes to the Enoch wake-gate control plane at `/mnt/usb<local-path-redacted>`:
+The lifecycle gate was implemented as a set of changes to the Enoch wake-gate control plane at `<local-path-redacted>`:
 
 1. **`lifecycle.py` (new module):** A durable-artifact lifecycle evaluator. It inspects Notion/project metadata, run fields, `run_notes.md`, and `.omx/project_decision.json` to determine the lifecycle state of each project row. Projects with evidence artifacts but no terminal decision are classified as `needs_review`; projects with a terminal decision are advanced to `archive` (or the appropriate terminal state).
 

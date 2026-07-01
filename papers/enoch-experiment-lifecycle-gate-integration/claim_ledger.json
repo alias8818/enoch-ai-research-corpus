@@ -136,7 +136,7 @@
       "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The lifecycle gate was implemented as a set of changes to the Enoch wake-gate control plane at `/mnt/usb<local-path-redacted>`: 1.",
+      "claim": "The lifecycle gate was implemented as a set of changes to the Enoch wake-gate control plane at `<local-path-redacted>`: 1.",
       "evidence_refs": [
         {
           "match_score": 1.0,

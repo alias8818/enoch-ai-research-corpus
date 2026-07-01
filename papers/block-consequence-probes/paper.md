@@ -132,7 +132,7 @@ The results are narrow, and the following limitations constrain any generalizati
 
 ## Reproducibility Checklist
 
-- **Model identifier:** `lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` (local path: `/mnt/usb<local-path-redacted>`)
+- **Model identifier:** `lmstudio-community/Phi-4-mini-instruct-GGUF/Phi-4-mini-instruct-Q4_K_M.gguf` (local path: `<local-path-redacted>`)
 - **Runtime:** Python `llama_cpp` binding, `n_gpu_layers=-1`, `n_ctx=1024`, `temperature=0.0`
 - **Hardware:** Linux aarch64, NVIDIA GB10, swap disabled, >122 GB RAM available
 - **Probe harness:** `scripts/block_consequence_probe.py`

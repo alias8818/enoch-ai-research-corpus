@@ -20,7 +20,7 @@ The contributions are: (1) evidence that the Qwen3-32B/Qwen3-0.6B speculative pa
 
 ### 2.1 Hardware and Software Environment
 
-All runs were executed on a single GB10 host (`Linux gx10-efe8`, aarch64, 20 CPU cores) with an NVIDIA GB10 GPU and CUDA 13.0 driver. Swap was disabled (`Swap: 0B`) for the duration of the suite. The llama.cpp binary was located at `/mnt/usb<local-path-redacted>`. System memory availability was sampled via `/proc/meminfo MemAvailable` by the harness throughout execution.
+All runs were executed on a single GB10 host (`Linux gx10-efe8`, aarch64, 20 CPU cores) with an NVIDIA GB10 GPU and CUDA 13.0 driver. Swap was disabled (`Swap: 0B`) for the duration of the suite. The llama.cpp binary was located at `<local-path-redacted>`. System memory availability was sampled via `/proc/meminfo MemAvailable` by the harness throughout execution.
 
 ### 2.2 Models
 

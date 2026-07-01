@@ -17,6 +17,14 @@ STALE_RELEASE_COUNT = re.compile(r"\b120\s+(?:AI-generated|generated research|ar
 UNSCOPED_QUALITY_GATE = re.compile(r"quality gate pass", re.I)
 PACKAGING_PASS = re.compile(r"(?:Packaging/provenance(?: lint)?(?: passed| pass)?:?\s*\d+\s*/\s*\d+|\d+\s*/\s*\d+[^\n]{0,80}packaging/provenance(?: lint)?)", re.I)
 AUDITED_CLAIMS = re.compile(r"(?<!un)audited claims", re.I)
+PRIVATE_PATH_ROOT = re.compile(r"(?:/home/jeremy|/var/lib/enoch|/opt/enoch|/etc/enoch|/mnt/usb|/root)\b")
+PRIVATE_OR_LOOPBACK_IPV4 = re.compile(
+    r"\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|127\.\d{1,3}\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2\d|3[0-1])\.\d{1,3}\.\d{1,3})\b"
+)
+PRIVATE_NETWORK_DETAIL = re.compile(
+    r"\b(?:enoch-core\.exe\.xyz|ping-responsive|ssh-like|non-interactive\s+ssh|remote\s+peers?)\b",
+    re.I,
+)
 
 PUBLIC_EXTRA_FILES = [ROOT / "README.md", PAPERS / "index.md"]
 
@@ -38,6 +46,30 @@ def public_markdown_files() -> list[Path]:
     files.extend(sorted(QUALITY.glob("*.md")))
     files.extend(sorted(PAPERS.glob("*/paper.md")))
     return [path for path in files if path.exists()]
+
+
+def public_text_files() -> list[Path]:
+    files = public_markdown_files()
+    files.extend(sorted(PAPERS.glob("*/evidence/public_paper.md")))
+    files.extend(sorted(PAPERS.glob("*/claim_ledger.json")))
+    files.extend(sorted(QUALITY.glob("*.json")))
+    files.append(PAPERS / "index.json")
+    return [path for path in files if path.exists()]
+
+
+def check_private_details_are_redacted() -> None:
+    for path in public_text_files():
+        text = path.read_text(encoding="utf-8", errors="replace")
+        rel = path.relative_to(ROOT)
+        for pattern in (
+            PRIVATE_PATH_ROOT,
+            PRIVATE_OR_LOOPBACK_IPV4,
+            PRIVATE_NETWORK_DETAIL,
+        ):
+            for match in pattern.finditer(text):
+                fail(
+                    f"{rel}:{line_for(text, match.start())} private detail leaked: {match.group(0)!r}"
+                )
 
 
 def check_public_text() -> None:
@@ -143,6 +175,7 @@ def check_absolute_path_refs_do_not_pass() -> None:
 
 def main() -> int:
     check_public_text()
+    check_private_details_are_redacted()
     check_quality_report_header()
     check_packaging_pass_has_strict_context()
     check_index_claim_columns()

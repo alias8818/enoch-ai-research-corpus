@@ -28,7 +28,7 @@ We used Qwen2.5-7B-Instruct in the Q4_K_M GGUF quantization, served locally via 
 
 - **Host:** GB10 environment (20 ARM cores, 121 GiB RAM, swap disabled)
 - **GPU:** NVIDIA GB10 (visible via nvidia-smi)
-- **Server command:** `llama-server -m Qwen2.5-7B-Instruct-Q4_K_M.gguf --host 127.0.0.1 --port 18082 -ngl 999 -c 4096 --flash-attn on`
+- **Server command:** `llama-server -m Qwen2.5-7B-Instruct-Q4_K_M.gguf --host <loopback-redacted> --port 18082 -ngl 999 -c 4096 --flash-attn on`
 - **Context length:** 4096 tokens
 - **Flash attention:** Enabled
 - **All layers offloaded to GPU** (`-ngl 999`)

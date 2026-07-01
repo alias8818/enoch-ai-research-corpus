@@ -106,7 +106,7 @@ The branch kill condition was not met: the real vLLM run demonstrated >5% p95 la
 - **Serving framework**: vLLM with `--enable-prefix-caching` and `/metrics` endpoint enabled.
 - **Model**: `Qwen/Qwen2.5-0.5B-Instruct` (publicly available).
 - **Hardware**: GB10 node with NVIDIA GPU (specific model recorded in `nvidia-smi` telemetry; memory fields partially reported as `[N/A]`).
-- **Command for real-endpoint run**: `python3 src/local_serving_harness.py run --base-url http://127.0.0.1:38082/v1 --metrics-url http://127.0.0.1:38082/metrics --model local-model --requests 60 --concurrency 4 --max-tokens 24 --timeout 120 --scenarios enterprise_faq_local,high_prefix_sharing,mixed_workload --outdir results/local_serving_vllm_qwen05b_energy`
+- **Command for real-endpoint run**: `python3 src/local_serving_harness.py run --base-url http://<local-llm-endpoint>/v1 --metrics-url http://<local-llm-endpoint>/metrics --model local-model --requests 60 --concurrency 4 --max-tokens 24 --timeout 120 --scenarios enterprise_faq_local,high_prefix_sharing,mixed_workload --outdir results/local_serving_vllm_qwen05b_energy`
 - **Command for shim smoke**: `python3 src/local_serving_harness.py smoke --requests 160 --concurrency 8 --shim-cache-capacity 12 --scenarios enterprise_faq_local --outdir results/local_serving_smoke`
 - **Result artifacts**: JSON and CSV summaries, per-request logs, and server log paths are recorded (see Referenced Artifacts).
 - **Randomness control**: The harness uses deterministic synthetic trace generation; shim responses are deterministic. Real model outputs introduce sampling variability, but answer-key matching is exact.

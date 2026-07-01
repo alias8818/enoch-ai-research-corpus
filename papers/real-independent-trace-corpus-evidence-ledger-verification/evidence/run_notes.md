@@ -11,7 +11,7 @@ An externally anchored evidence ledger over real agent trace logs should detect 
 
 ## Resource Calibration
 
-This is CPU-only trace parsing and SHA-256 hashing over local JSONL logs. It does not require GB10 GPU/model hardware. The planned full pass uses at most 33 independent project logs discovered under `/mnt/usb<local-path-redacted>`, five fixed seeds, eight attack settings, and five verification policies. Expected wall-clock is under 15 minutes on 20 CPU cores, with a single Python process, memory below 2 GB, and durable outputs written after the run to `results/real_trace_ledger/`. Because it is CPU-only and short, no long GB10 run is justified.
+This is CPU-only trace parsing and SHA-256 hashing over local JSONL logs. It does not require GB10 GPU/model hardware. The planned full pass uses at most 33 independent project logs discovered under `<local-path-redacted>`, five fixed seeds, eight attack settings, and five verification policies. Expected wall-clock is under 15 minutes on 20 CPU cores, with a single Python process, memory below 2 GB, and durable outputs written after the run to `results/real_trace_ledger/`. Because it is CPU-only and short, no long GB10 run is justified.
 
 Commands will use `set -o pipefail` before `tee` so failed experiments are not hidden by logging.
 

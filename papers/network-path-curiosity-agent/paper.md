@@ -109,7 +109,7 @@ The prototype was exercised on a GB10-class machine with the following observed 
 - **MemAvailable**: ~122,373,808 kB at smoke start
 - **SwapTotal**: 0 kB (consistent with GB10 no-swap constraint)
 - **Default route**: <private-ip-redacted> via enP7p1s0, source <private-ip-redacted>
-- **ping 127.0.0.1** (5 counts): 0% loss, avg ~0.017 ms
+- **ping <loopback-redacted>** (5 counts): 0% loss, avg ~0.017 ms
 - **ping <private-ip-redacted>** (5 counts): 0% loss, avg ~0.466 ms
 
 This test confirmed basic probing functionality and hardware telemetry posture. It did not provide labeled real incidents and does not constitute detection-quality evidence. The absence of packet loss on these trivial paths is expected and uninformative regarding anomaly detection capability.

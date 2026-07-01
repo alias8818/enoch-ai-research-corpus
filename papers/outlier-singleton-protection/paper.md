@@ -47,7 +47,7 @@ To move beyond the retention proxy and test whether retained spans actually supp
 
 ```
 llama-server -m Qwen2.5-7B-Instruct-Q4_K_M.gguf \
-  --host 127.0.0.1 --port 18086 -c 4096 -ngl 99 -fa on --parallel 1 --no-webui
+  --host <loopback-redacted> --port 18086 -c 4096 -ngl 99 -fa on --parallel 1 --no-webui
 ```
 
 Three prompt configurations were compared over 12 cases at a 4/64 retained-record budget:

@@ -116,7 +116,7 @@ The exact sign / McNemar-style *p*-value is 0.25. This does not meet conventiona
 - [x] **Command log available.** `artifacts/logs/server_experiment_final_20260501T204301Z.log`.
 - [x] **System environment documented.** `artifacts/logs/system_probe_20260501T203329Z.log`. NVIDIA GB10 / aarch64 Ubuntu, ~116 GiB RAM, no swap.
 - [x] **Model identifiers specified.** Strong: `Qwen2.5-7B-Instruct-Q4_K_M.gguf` (bartowski GGUF). Weak: `Qwen2.5-0.5B-Instruct-Q4_K_M.gguf` (Hugging Face GGUF).
-- [x] **Inference engine specified.** `llama.cpp` server, binary at `/mnt/usb<local-path-redacted>`.
+- [x] **Inference engine specified.** `llama.cpp` server, binary at `<local-path-redacted>`.
 - [x] **Gold labels and task structure documented.** Balanced sequence A, B, C, A, B, C, A, B; per-task logs in `artifacts/logs/server_*_{task_id}_*.prompt.txt` and `.response.json`.
 - [x] **Prompt and parser corrections documented.** Initial `A|B|C` format replaced; earlier runs superseded.
 - [ ] **Held-out test set.** Not applicable; all 8 items were used in the pilot with no held-out set.

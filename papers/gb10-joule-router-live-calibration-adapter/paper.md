@@ -34,7 +34,7 @@ Calibration used 8 sibling vLLM runs on the NVIDIA GB10 GPU, model hint Qwen/Qwe
 
 ### 2.3 Live Endpoint Provisioning
 
-A llama.cpp server (`llama-server`) was started on `127.0.0.1:18240` with full GPU offload (`-ngl 99`) using the cached GGUF model `Qwen3-0.6B-Q4_K_M`. The server reported its CUDA device as `NVIDIA GB10` and served OpenAI-compatible `/v1/models` and `/v1/chat/completions` endpoints. The server was stopped after the live benchmark completed.
+A llama.cpp server (`llama-server`) was started on `<loopback-redacted>:18240` with full GPU offload (`-ngl 99`) using the cached GGUF model `Qwen3-0.6B-Q4_K_M`. The server reported its CUDA device as `NVIDIA GB10` and served OpenAI-compatible `/v1/models` and `/v1/chat/completions` endpoints. The server was stopped after the live benchmark completed.
 
 ### 2.4 Shadow-Routing Validation
 
@@ -138,7 +138,7 @@ All 6 regression tests passed, covering power parsing, power integration, calibr
 | Hardware specified | NVIDIA GB10 GPU |
 | Model specified (calibration) | Qwen/Qwen3-4B (vLLM) |
 | Model specified (live) | Qwen3-0.6B-Q4_K_M (llama.cpp GGUF) |
-| llama.cpp server configuration documented | `127.0.0.1:18240`, `-ngl 99`, model alias `Qwen3-0.6B-Q4_K_M` |
+| llama.cpp server configuration documented | `<loopback-redacted>:18240`, `-ngl 99`, model alias `Qwen3-0.6B-Q4_K_M` |
 | Random seeds | Not recorded; sample requests are deterministic chat completions |
 | External dependencies | Python standard library + `requests`; llama.cpp binary at documented path |
 

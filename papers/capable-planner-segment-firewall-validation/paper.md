@@ -68,11 +68,11 @@ A planner that does not meet these criteria is not considered capable for this v
 
 ### Model Provisioning
 
-No pre-existing OpenAI-compatible endpoint was found on local ports (127.0.0.1:{18080, 8000, 11434, 1234}). Two models were evaluated:
+No pre-existing OpenAI-compatible endpoint was found on local ports (<loopback-redacted>:{18080, 8000, 11434, 1234}). Two models were evaluated:
 
 1. **Phi-4-mini** (cached, served via llama.cpp): Negative control. Failed the capable-planner gate with full-context clean success of 0.333, firewall clean success of 0.0, and full-context injection success of 0.0. This model was too weak or unstable for the validation tasks.
 
-2. **Qwen2.5-3B-Instruct** (Q4_K_M GGUF, ~2.0 GiB, downloaded from Hugging Face): Served via llama.cpp on 127.0.0.1:18081. The helper server was stopped after the run. This model met the capable-planner gate.
+2. **Qwen2.5-3B-Instruct** (Q4_K_M GGUF, ~2.0 GiB, downloaded from Hugging Face): Served via llama.cpp on <loopback-redacted>:18081. The helper server was stopped after the run. This model met the capable-planner gate.
 
 ---
 
@@ -131,7 +131,7 @@ The key empirical contrast is between the segment-firewall and binary-block cond
 - [x] **Unit tests pass.** `python -m unittest discover -s tests -v` yields 7 passing tests.
 - [x] **Static compilation check.** `python -m py_compile` passes on all source and experiment files.
 - [x] **Deterministic benchmarks reproducible.** `experiments/synthetic_benchmark.py` and `experiments/realistic_web_benchmark.py` produce results without external dependencies.
-- [x] **Model acquisition documented.** Model source (Hugging Face `Qwen/Qwen2.5-3B-Instruct-GGUF`, variant `qwen2.5-3b-instruct-q4_k_m.gguf`), local path, and serving command (llama.cpp on 127.0.0.1:18081) are recorded.
+- [x] **Model acquisition documented.** Model source (Hugging Face `Qwen/Qwen2.5-3B-Instruct-GGUF`, variant `qwen2.5-3b-instruct-q4_k_m.gguf`), local path, and serving command (llama.cpp on <loopback-redacted>:18081) are recorded.
 - [x] **Result files preserved.** Primary result (`results/realistic_model_planner_qwen25_3b_10x.json`), negative control (`results/realistic_model_planner_phi4mini_parallel1.json`), endpoint probe (`results/realistic_model_planner_probe_no_endpoint.json`), and validation report (`results/capable_planner_validation_report.json`) are present.
 - [x] **Claim ledger present.** `papers/.../claim_ledger.json` records allowed wording and supporting artifacts for each claim.
 - [x] **Evidence bundle present.** `papers/.../evidence_bundle.json` aggregates decision, report, run notes, and result file paths.

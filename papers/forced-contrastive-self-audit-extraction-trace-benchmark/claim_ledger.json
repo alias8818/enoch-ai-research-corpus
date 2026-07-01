@@ -136,7 +136,7 @@
       "support_status": "weakly_supported_public_artifact"
     },
     {
-      "claim": "The evaluated model is **Qwen2.5-0.5B-Instruct** (0.5 billion parameters), loaded from: The shim was launched on `127.0.0.1:18000` and verified functional before benchmark execution.",
+      "claim": "The evaluated model is **Qwen2.5-0.5B-Instruct** (0.5 billion parameters), loaded from: The shim was launched on `<loopback-redacted>:18000` and verified functional before benchmark execution.",
       "evidence_refs": [
         {
           "match_score": 1.0,

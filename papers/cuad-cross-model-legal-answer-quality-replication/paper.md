@@ -39,7 +39,7 @@ The benchmark harness (`scripts/run_cuad_llm_answer_quality_benchmark.py`) was a
 
 The cross-model replication answerer is Phi-4-mini-instruct-Q4_K_M (3.84B parameters, 131k training context metadata), served via llama.cpp server with the following configuration:
 
-- Host: 127.0.0.1, Port: 8088
+- Host: <loopback-redacted>, Port: 8088
 - Context length: 4096, GPU layers: 99, Batch size: 1024, Micro-batch: 256
 - Flash attention enabled, memory mapping disabled
 - Maximum answer tokens: 96, Request timeout: 180s

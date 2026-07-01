@@ -22,7 +22,7 @@ We approach this as a viability study. We measure actual prefill and decode thro
 
 ### Hardware and Model Configuration
 
-All measurements were collected on an NVIDIA GB10 system with CUDA. The inference engine was llama.cpp, built from the local installation at `/mnt/usb<local-path-redacted>`. The model was Qwen2.5-7B-Instruct quantized to Q4_K_M (GGUF format), loaded from the local model cache.
+All measurements were collected on an NVIDIA GB10 system with CUDA. The inference engine was llama.cpp, built from the local installation at `<local-path-redacted>`. The model was Qwen2.5-7B-Instruct quantized to Q4_K_M (GGUF format), loaded from the local model cache.
 
 Hardware telemetry captured during benchmark runs included GPU utilization (sampled peak: 96%), GPU power draw (sampled peak: 48.13 W), and available system memory (minimum observed: 110.93 GiB). Hardware identification details are preserved in `logs/hardware_smoke.log`.
 
